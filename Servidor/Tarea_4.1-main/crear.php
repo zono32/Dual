@@ -64,12 +64,9 @@
                 $book_author_ids = $_POST["author_ids"];
             }
             $exito = createBook($title, $isbn, $pdate_converted, $pub_Id, $book_author_ids);
-
         }
 
     ?>
-
-
 
     <div class="container-fluid">
 
@@ -100,11 +97,14 @@
                 <div class='col-6'>
                     <select name="publisher" id="publisher" class="form-control col-3" required>
                         <option value="" disabled>----</option>
+
                         <?php
                         if (count($publishers) > 0) :
                             foreach ($publishers as $publisher) :
                         ?>
-                                <option value="<?= $publisher["publisher_id"] ?>"><?= $publisher["name"] ?></option>
+
+                        <option value="<?= $publisher["publisher_id"] ?>"><?= $publisher["name"] ?></option>
+                                
                         <?php
                             endforeach;
                         endif;
@@ -120,19 +120,18 @@
                     <select name="author_ids[]" id="authors" class="form-control" multiple>
 
                         <option value="">----</option>
-                        <?php
 
-                        if (count($authors) > 0) :
-                            foreach ($authors as $author) :
-                        ?>
-                                <option value="<?= $author["author_id"] ?>"><?= $author["name"] ?></option>
                         <?php
-                            endforeach;
-                        endif;
+                            if (count($authors) > 0) :
+                                foreach ($authors as $author) :
                         ?>
 
+                        <option value="<?= $author["author_id"] ?>"><?= $author["name"] ?></option>
 
-
+                        <?php
+                                endforeach;
+                            endif;
+                        ?>
                     </select>
                 </div>
 
@@ -164,13 +163,9 @@
             function findAllPublishers(): array
             {
                 $conProyecto = getConnection();
-
                 $pdostmt = $conProyecto->prepare("SELECT *FROM publishers ORDER BY name");
-
                 $pdostmt->execute();
                 $array = $pdostmt->fetchAll(PDO::FETCH_ASSOC);
-
-
                 return $array;
             }
             /**
@@ -186,13 +181,24 @@
             {
                 //completar
                 $conProyecto = getConnection();
-                $pdostmt_authors = $conProyecto->prepare("SELECT author_id, TRIM(CONCAT(COALESCE(first_name, ''), COALESCE(middle_name, ''), COALESCE(last_name, ''))) as name, author_id              
-                                    FROM authors ORDER BY  last_name");
+                $pdostmt_authors = $conProyecto->prepare("SELECT author_id, TRIM(CONCAT(COALESCE(last_name, ' '),(' '), COALESCE(first_name, ' '),(' '), COALESCE(middle_name, ' '))) as name, author_id              
+                                    FROM authors 
+                                    ORDER BY last_name ASC");
 
                 $pdostmt_authors->execute();
                 $array = $pdostmt_authors->fetchAll(PDO::FETCH_ASSOC);
                 return $array;
             }
+            /**
+             * Summary of createBook
+             * @param string $title
+             * @param string $isbn
+             * @param DateTimeImmutable $pdate
+             * @param int $editor
+             * @param array $authors
+             * @throws \Exception
+             * @return bool
+             */
             function createBook(string $title, string $isbn, DateTimeImmutable $pdate, int $editor, array $authors): bool
             {
                 $date = $pdate->format('dd-mm-yyyy');
