@@ -5,17 +5,17 @@
 
     function getConnection($file = 'db_settings.ini')
     {
-    
-    
-        if (!$settings = parse_ini_file($file, TRUE)) throw new exception('Unable to open ' . $file . '.');
-       $con = null;
         try {
-            $dns = $settings['database']['dns'] .
+    
+            if (!$settings = parse_ini_file($file, TRUE)) throw new exception('Unable to open ' . $file . '.');
+            $con = null;
+        
+            $dns = $settings['database']['driver'] .
             ':host=' . $settings['database']['host'] .
             ((!empty($settings['database']['port'])) ? (';port=' . $settings['database']['port']) : '') .
-            ';dbname=' . $settings['database']['bd'];        //Se llama al constructor del padre, la clase PD          
+            ';dbname=' . $settings['database']['schema'];        //Se llama al constructor del padre, la clase PD          
     
-           $con = new PDO($dns, $settings['database']['user'], $settings['database']['pass'], array(
+           $con = new PDO($dns, $settings['database']['username'], $settings['database']['password'], array(
                 PDO::ATTR_PERSISTENT => true));
             
     
@@ -36,4 +36,6 @@
  * Crea un objeto PDO
  * @return PDO|null un objeto PDO si ha habido éxito creando la conexión, null en caso contrario
  */
+
+
 
