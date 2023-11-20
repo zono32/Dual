@@ -201,7 +201,7 @@
              */
             function createBook(string $title, string $isbn, DateTimeImmutable $pdate, int $editor, array $authors): bool
             {
-                $date = $pdate->format('dd-mm-yyyy');
+                $date = $pdate->format('Y-m-d');
 
                 try {
                     $conProyecto = getConnection();
