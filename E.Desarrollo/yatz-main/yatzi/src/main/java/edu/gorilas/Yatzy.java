@@ -1,17 +1,6 @@
 package edu.gorilas;
 
-/**
- * Hello world!
- *
- 
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
-    }
-}
-*/
+
 public class Yatzy {
 
     public static int chance(int d1, int d2, int d3, int d4, int d5)
