@@ -16,27 +16,28 @@
 
     $autor = datosAutor($id_autor);
    //var_dump($autor);
+   //echo ($autor['author_id'])
     ?>
 
         <form action="modificar_datos_autor.php" method="post">
 
-        <input type="hidden" name="id" id="id" value= "<?php echo $autor[0]['author_id'];?>">
+        <input type="hidden" name="author_id" value= "<?php echo $autor['author_id'];?>">
 
             <p>
                 <label for="nombre">Nombre del Autor: </label>
-                <input type="text" name="nombre" value= "<?php echo $autor[0]['first_name']?> " >
+                <input type="text" name="nombre" value= "<?php echo $autor['first_name']?> " >
             </p>
             <p>
                 <label for="apellido1">Primer apellido: </label>
-                <input type="text" name="apellido1"  value= "<?php echo $autor[0]['middle_name']?> ">
+                <input type="text" name="apellido1"  value= "<?php echo $autor['middle_name']?> ">
             </p>
             <p>
                 <label for="apellido2">Segundo apellido: </label>
-                <input type="text" name="apellido2" value= "<?php echo $autor[0]['last_name']?> ">
+                <input type="text" name="apellido2" value= "<?php echo $autor['last_name']?> ">
             </p>
             <p>
                 <label for="cumpleaños">cumpleaños del Autor: </label>
-                <input type="date" name="cumple" value= "<?php echo $autor[0]['birth_date']?> "> 
+                <input type="date" name="cumple" value= "<?php echo $autor['birth_date']?> "> 
             </p>
             <input type="submit" value= "modificar">
             <br> 

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>listado autores</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -30,15 +31,31 @@ foreach ($datosAutores as $key => $value) {
     echo ($key + 1 .".- ");
     echo ($nombre. ' ' . $apellido. '<br>');
     ?>
+    <div class="contenedor_boton">
+    <form action="mostrar_autor.php" method="post">
+        <input type="hidden"name="id" id="id" value="<?php echo $value["author_id"] ?>">
+       <p>
+            <input class="boton" type="submit" value ="ver datos">
+       </p> 
+    </form>
     <form action="modificar.php" method="post">
         <input type="hidden" name="id" id="id" value="<?php echo $value["author_id"] ?>">
-        <input type="submit" value ="actializar">
+        <p>
+            <input  class="boton" type="submit" value ="actializar">
+        </p>
+       
     </form>
     <form action="borrar.php" method="post">
         <input type="hidden"name="id" id="id" value="<?php echo $value["author_id"] ?>">
-        <input type="submit" value ="eliminar">
+        <p>
+            <input  class="boton" type="submit" value ="eliminar">
+        </p>
+        
     </form>
+    
+    </div>
     <hr>
+    
     
     <?php
  }
