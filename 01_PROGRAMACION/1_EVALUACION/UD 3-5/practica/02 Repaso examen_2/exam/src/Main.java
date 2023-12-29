@@ -2,63 +2,55 @@ import javax.swing.plaf.IconUIResource;
 import java.util.Arrays;
 
 
-public class examen {
+public class Main {
     public static void main(String[] args) {
         System.out.println("Buena suerte!");
         //1
-        //System.out.println(getPrimes(2,100));
+        System.out.println(getPrimes(2,20));
         //2
-        //System.out.println(getPrice(2, 75));
+        System.out.println(getPrice(2, 75));
         //3
-        /*
         int[]arraynumb = {1,2,3,4,5};
+        getReverse(arraynumb);
 
-        int[] rever =getReverse(arraynumb);
-        for (int value: rever) {
-            System.out.println(value);
-        }*/
         //4a
+
         int [][] matrix = {{1,2,3,},{4,5,6,},{7,8,9}};
-        int [] result = getMultiples(matrix,5);
+        int [] result = getMultiples(matrix,1);
         for (int values: result) {
             System.out.println(values);
         }
+
         //4b
-       int[] vector =  getMaxRow(matrix);
-        for (int values: vector) {
-            System.out.println(values);
-        }
+        getMaxRow(matrix);
     }
 
 
 //1
-    public static boolean isPrime(int n) {
-        if (n < 2) {
-            return false;
-        }
-        for (int i = 2; i <= Math.sqrt(n); i++) {
-            if (n % i == 0) {
-                return false;
-            }
-        }
-        return true;
-    }
+
     public static int getPrimes(int num1, int num2){
         int count = 0;
-            if(num1<num2) {
-                for (int i = num1; i < num2 ; i++) {
-                    if (isPrime(i)) {
-                        count++;
+
+
+        if(( num1 <num2) && (num1 >1))
+            for (int i = num1; i < num2-1 ; i++) {
+                for (int j = num1; j < num2-1; j++) {
+                    if(i % j != 0 ){
                     }
                 }
+                count ++;
             }
-        if(num1>num2) {
-            for (int i = num2; i <num1 ; i++) {
-                if (isPrime(i)){
-                    count++;
+
+        if(( num1 >num2) && (num2 >1))
+            count = 0;
+        for (int i = num2; i <num1-1 ; i++) {
+            for (int j = num2; j <num1-1 ; j++) {
+                if(i % j != 0 ){
                 }
             }
+            count ++;
         }
+
         return count;
     }
 
@@ -79,17 +71,20 @@ public class examen {
         return totalImpote;
     }
     //3
-    public static int[] getReverse(int[] array){
 
-        int[] rever = new int[array.length];
-        int cont =0;
-        for (int j = array.length-1; j >= 0 ; j--) {
-                rever[cont] = array[j];
-               // System.out.println(rever[cont]);
-                cont++;
+    public static int[] getReverse(int[] array){
+        int[]array2 = new int[array.length];
+        //array2 = Arrays.stream(array).spliterator();
+        for (int i = 0; i < array.length ; i++) {
+            System.out.println(array[i]);
+            for (int j = array.length; j > 0 ; j--) {
+                System.out.println(array[j]);
             }
 
-       return rever;
+        }
+
+
+        return null;
     }
 
     public static int[] getMultiples(int[][] matrix, int num){
@@ -124,10 +119,11 @@ public class examen {
         for (int fila = 0; fila <matrix.length ; fila++) {
             for (int columna = 0; columna < matrix[0].length; columna++) {
                 arrayNumbers[fila]= matrix[fila][columna];
-                //System.out.println(arrayNumbers);
-                vector[fila] = Arrays.stream(arrayNumbers).max().orElse(-1);
+                System.out.println(arrayNumbers);
             }
+             vector[fila] = Arrays.stream(arrayNumbers).max().orElse(-1);
         }
+
         return vector;
     }
 
