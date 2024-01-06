@@ -17,7 +17,7 @@ function usuarios()
     }
     catch(PDOException $e)
     {
-        echo "ha ocurrido un erros".$e->getMessage();
+        echo "ha ocurrido un error".$e->getMessage();
     }
    
 

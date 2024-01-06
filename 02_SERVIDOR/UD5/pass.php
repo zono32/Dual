@@ -13,9 +13,12 @@ require_once "conexion.php";
 require_once "queryUser.php";
 
 $user = usuarios();
-//var_dump($user);
-
-
+/*
+echo "<pre>";
+print_r($user);
+print_r($user[0]["email"]);
+echo"</pre>";
+*/ 
 ?>
 <h1>Registrar Usuario</h1>
 <br>
@@ -40,17 +43,32 @@ $user = usuarios();
 <?php
 if (isset($_POST["email"]) && isset($_POST["pwd"]) && isset($_POST["pwd2"])){
     $email = $_POST["email"];
-    $pwd = password_hash($_POST["pwd"], PASSWORD_BCRYPT);
-    $pwd2 = password_hash($_POST["pwd2"],PASSWORD_BCRYPT);
+    $pwd = $_POST["pwd"];
+    $pwd2 = $_POST["pwd2"];
+    $pwdH = password_hash($_POST["pwd"], PASSWORD_BCRYPT);
+    $pwd2H = password_hash($_POST["pwd2"],PASSWORD_BCRYPT);
     //var_dump($email, $pwd, $pwd2);
-    if ($_POST["pwd"] == $_POST["pwd2"]) {
+
+    function existeUsuario($email){
+      global $user;      
+       for ($i = 0; $i < count($user); $i++) {
+         if(($user[$i]["email"]) == $email)
+         return true;    
+       }
+    }
+
+    if (existeUsuario($email))
+    echo"El usuario ya existe";
+
+    else{
+      if ( $pwd == $pwd2 ) {
         try {
             $con = getConnection();
             $query = "INSERT INTO usuario (email, pwdhash )
-            VALUES (:email, :pwd')";
+            VALUES (:email, :pwdhash)";
             $stmt = $con->prepare($query);
             $stmt->bindValue("email", $email);
-            $stmt->bindValue("pwd", $pwd);
+            $stmt->bindValue("pwdhash", $pwdH);
             $stmt->execute();
             $userValue = $con->lastInsertId();
             echo "El usuario se ha creado correctamente";
@@ -60,8 +78,9 @@ if (isset($_POST["email"]) && isset($_POST["pwd"]) && isset($_POST["pwd2"])){
             echo "ha ocurrido un error" . $e->getMessage();
         }
     } else
-       echo "las contraseñas no coinciden";
+      echo "las contraseñas no coinciden";
 
+  }
 }
 
 /*
