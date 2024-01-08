@@ -20,26 +20,34 @@ print_r($user[0]["email"]);
 echo"</pre>";
 */ 
 ?>
-<h1>Registrar Usuario</h1>
-<br>
-<form role="form" method="post">
-  <div class="form-group">
-    <label for="email">Email address:</label>
-    <input type="email" name="email" class="form-control" id="email">
-  </div>
-  <div class="form-group">
-    <label for="pwd">Password:</label>
-    <input type="password" name="pwd" class="form-control" id="pwd">
-  </div>
-  <div class="form-group">
-    <label for="pwd2">Confirm Password:</label>
-    <input type="password" name="pwd2" class="form-control" id="pwd2">
-  </div>
-  <button type="submit" class="btn btn-default">Submit</button>
-</form>
-    
-</body>
-</html>
+<div class="container">
+  <h1>Registrar Usuario</h1>
+  <br>
+  <form role="form" method="post">
+    <div class="form-group">
+      <label for="email">Email address:</label>
+      <input type="email" name="email" class="form-control" id="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" name="pwd" class="form-control" id="pwd">
+    </div>
+    <div class="form-group">
+      <label for="pwd2">Confirm Password:</label>
+      <input type="password" name="pwd2" class="form-control" id="pwd2">
+    </div>
+    <div class="form-group">
+      <label for="rol">seleccione el rol</label>
+      <select name="rol" id="rol">
+        <option value="admin">admin</option>
+        <option value="user">user</option>
+      </select>
+
+    </div>
+    <button type="submit" class="btn btn-default">REGISTRO</button>
+  </form>
+</div>
+
 <?php
 if (isset($_POST["email"]) && isset($_POST["pwd"]) && isset($_POST["pwd2"])){
     $email = $_POST["email"];
@@ -90,3 +98,5 @@ var_dump($exito);
 echo $password;
 */
 ?>
+</body>
+</html>
