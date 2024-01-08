@@ -22,4 +22,20 @@ function usuarios()
    
 
 }
+function rol(){
+    try{
+        $con = getConnection();
+        $query = " SELECT `rol`.`id`,
+        `rol`.`name`
+        FROM `notas`.`rol`";
+        $stmt = $con->prepare($query);
+        $stmt->execute();
+        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $result;
+    }
+    catch(PDOException $e)
+    {
+        echo "ha ocurrido un error".$e->getMessage();
+    }
+}
 ?>

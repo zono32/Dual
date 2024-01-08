@@ -13,6 +13,11 @@ require_once "conexion.php";
 require_once "queryUser.php";
 
 $user = usuarios();
+
+$rols = rol();
+
+var_dump($rols);
+
 /*
 echo "<pre>";
 print_r($user);
@@ -38,9 +43,17 @@ echo"</pre>";
     </div>
     <div class="form-group">
       <label for="rol">seleccione el rol</label>
-      <select name="rol" id="rol">
-        <option value="admin">admin</option>
-        <option value="user">user</option>
+      <select name="rol" id="rol">         
+
+        <?php 
+            if (count($rols) > 0) :
+                foreach ($rols as $rol) :
+        ?>
+        <option value="<?= $rol["id"] ?>"><?= $rol["name"] ?></option>
+        <?php 
+                endforeach;
+            endif;        
+        ?>
       </select>
 
     </div>
@@ -55,6 +68,8 @@ if (isset($_POST["email"]) && isset($_POST["pwd"]) && isset($_POST["pwd2"])){
     $pwd2 = $_POST["pwd2"];
     $pwdH = password_hash($_POST["pwd"], PASSWORD_BCRYPT);
     $pwd2H = password_hash($_POST["pwd2"],PASSWORD_BCRYPT);
+    $rol = $_POST["rol"];
+  //var_dump($rol);
     //var_dump($email, $pwd, $pwd2);
 
     function existeUsuario($email){
@@ -65,13 +80,16 @@ if (isset($_POST["email"]) && isset($_POST["pwd"]) && isset($_POST["pwd2"])){
        }
     }
 
-    if (existeUsuario($email))
-    echo"El usuario ya existe";
-
+  if (existeUsuario($email)) {
+    echo '<div class="alert alert-danger" role="alert">';
+    echo "El usuario ya existe";
+    echo '</div>';
+  }
     else{
       if ( $pwd == $pwd2 ) {
         try {
             $con = getConnection();
+            $con->beginTransaction();
             $query = "INSERT INTO usuario (email, pwdhash )
             VALUES (:email, :pwdhash)";
             $stmt = $con->prepare($query);
@@ -79,14 +97,41 @@ if (isset($_POST["email"]) && isset($_POST["pwd"]) && isset($_POST["pwd2"])){
             $stmt->bindValue("pwdhash", $pwdH);
             $stmt->execute();
             $userValue = $con->lastInsertId();
-            echo "El usuario se ha creado correctamente";
+            $stmt_usuario_rol = $con->prepare("INSERT INTO usuario_rol (idUsuario, idRol) VALUES (:user_id, :rol_id)");
+            $stmt_usuario_rol->bindParam("user_id", $userValue);
 
+            
+              $stmt_usuario_rol->bindParam("rol_id", $rol);
+              if (!$stmt_usuario_rol->execute()) {
+                  throw new Exception();
+              }
+          
+            
 
+            $con->commit();
+            ?>
+            <div class="alert alert-success" role="alert">
+              El usuario se ha creado correctamente
+              </div>
+             
+            <?php
+            
         } catch (PDOException $e) {
-            echo "ha ocurrido un error" . $e->getMessage();
+          $con->rollBack();
+          ?>
+          <div class="alert  alert-danger" role="alert">
+            Ha ocurrido un error
+            </div>
+           
+          <?php $e->getMessage();
         }
     } else
-      echo "las contraseñas no coinciden";
+    ?>
+    <div class="alert  alert-danger" role="alert">
+      Las contraseñas no coinciden
+      </div>
+     
+    <?php
 
   }
 }
