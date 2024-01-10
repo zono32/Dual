@@ -2,8 +2,7 @@
 
 require_once "conexion.php" ;
 
-function usuarios()
-{
+function usuarios(){
     try{
         $con = getConnection();
         $query = " SELECT `usuario`.`id`,
@@ -18,8 +17,7 @@ function usuarios()
     catch(PDOException $e)
     {
         echo "ha ocurrido un error".$e->getMessage();
-    }
-   
+    }  
 
 }
 function rol(){
