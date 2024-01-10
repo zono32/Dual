@@ -38,4 +38,21 @@ function rol(){
         echo "ha ocurrido un error".$e->getMessage();
     }
 }
+
+function user_rol(){
+    try{
+        $con = getConnection();
+        $query = "SELECT `usuario_rol`.`idUsuario`,
+        `usuario_rol`.`idRol`
+    FROM `notas`.`usuario_rol`";
+        $stmt = $con->prepare($query);
+        $stmt->execute();
+        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $result;
+    }
+    catch(PDOException $e)
+    {
+        echo "ha ocurrido un error".$e->getMessage();
+    }
+}
 ?>
