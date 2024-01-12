@@ -3,6 +3,7 @@ Examen refactorización
 ************************************
 ******JOAQUIN LAFUENTE ESPINO ******
 ************************************
+
 Refactoriza el código Java proporcionado sin cambiar su comportamiento, es decir, de modo que siga pasando los casos test proporcionados e intenta encontrar el defecto que produce que falle el último de los casos test.
 
 La lógica de la aplicación es la que se explica en el epígrafe II.
