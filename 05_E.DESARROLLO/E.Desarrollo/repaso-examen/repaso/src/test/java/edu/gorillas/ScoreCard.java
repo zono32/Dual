@@ -4,9 +4,9 @@ public class ScoreCard {
 
     // Properties of the class //
 
-    private int strike = 10;
-    private int spare = 10;
-    private int zero = 0;
+    private final int STRIKE = 10;
+    private final int SPARE = 10;
+    private final int ZERO = 0;
     private String scoreCard;
     private int totalScore;
     private String pins = "-123456789";
@@ -34,11 +34,7 @@ public class ScoreCard {
     // Behaviours //
 
     public boolean normalRoll(char roll) {
-        if (roll != 'X' && roll != '/') {
-            return true;
-        } else {
-            return false;
-        }
+        return (roll != 'X' && roll != '/');
     }
 
     public int computePins(char pin) {
@@ -46,34 +42,26 @@ public class ScoreCard {
     }
 
     public  boolean strike(char strike) {
-        if (strike == 'X') {
-            return true;
-        } else {
-            return false;
-        }
+        return (strike == 'X');
     }
 
     public int computeStrike(char strike) {
         if (strike == 'X') {
-            return this.strike;
+            return this.STRIKE;
         } else {
-            return this.zero;
+            return this.ZERO;
         }
     }
 
     public  boolean spare(char spare) {
-        if (spare == '/') {
-            return true;
-        } else {
-            return false;
-        }
+        return (spare == '/');
     }
 
     public int computeSpare(char spare) {
         if (spare == '/') {
-            return this.spare;
+            return this.SPARE;
         } else {
-            return this.zero;
+            return this.ZERO;
         }
     }
 
