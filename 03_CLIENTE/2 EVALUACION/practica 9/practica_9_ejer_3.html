@@ -9,9 +9,29 @@ botón (mousedown, mouseup, click, contextmenu, dblclick).-->
     <title>ejercicio 3 practica 9</title>
 </head>
 <body>
+    <form action="" name="formulario">
+        <input type="button" name="boton" id="boton" value="probar">
+    </form>
+    
+    <!--<textarea name="ratonEvent" id="ratonEvent" cols="30" rows="10"></textarea> -->
+    <div id="eventos"></div>
 
-    <button id="boton"> Pobar </button>
-    
-    
+    <script type="text/javascript">
+
+        function eventoRaton(evento){
+            let tipo = evento.type;
+
+            document.getElementById("eventos").innerHTML += tipo + "</br>";
+        }
+
+        window.onload = ()=>{
+            document.formulario.boton.addEventListener('mousedown', eventoRaton);
+            document.formulario.boton.addEventListener('mouseup', eventoRaton);
+            document.formulario.boton.addEventListener('click', eventoRaton);
+            document.formulario.boton.addEventListener('contextmenu', eventoRaton);
+            document.formulario.boton.addEventListener('dblclick', eventoRaton);
+        }
+
+    </script>
 </body>
 </html>
