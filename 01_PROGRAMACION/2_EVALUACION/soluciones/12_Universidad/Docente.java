@@ -5,10 +5,7 @@
  */
 package MasEjercicios.Universidad;
 
-/**
- *
- * @author nccasares
- */
+
 public class Docente extends Persona {
 
     private String materia;
