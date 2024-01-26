@@ -4,9 +4,10 @@
         if (isset($_SESSION['cesta'])) {
 
             $cantidad = count($_SESSION['cesta']);
-           // $multiplicador = $_POST['multiplicador'];
-           // var_dump($multiplicador);
-            echo "<input type='text' disabled class='form-control mr-2 bg-transparent text-white' value='$cantidad' size='2px'>";
+            $multiplicador =(int) $_POST['multiplicador'];
+            var_dump($multiplicador);
+            $cantidad = $cantidad * $multiplicador;
+            echo "<input type='text' disabled class='form-control mr-2 bg-transparent text-white' value='($cantidad)' size='2px'>";
         } else {
             echo "<input type='text' disabled class='form-control mr-2 bg-transparent text-white' value='0' size='2px'>";
         }

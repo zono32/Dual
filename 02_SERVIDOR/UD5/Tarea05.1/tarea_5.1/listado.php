@@ -65,14 +65,15 @@ if (isset($_POST['comprar'])) {
                 <?php
                 while ($filas = $stmt->fetch(PDO::FETCH_OBJ)) {
                     echo "<tr><th scope='row' class='text-center'>";
-                    echo "<form action='{$_SERVER['PHP_SELF']}' method='POST'>";
+                    echo "<form action='{$_SERVER['PHP_SELF']}' method='POST' id='multiplicador'>";
                     echo "<input type='hidden' name='id' value='{$filas->id}'>";
                     echo "<input type='submit' class='btn btn-primary' name='comprar' value='Añadir'>";
                     echo "</form>";
                     echo "</th>";
                     echo "<td>{$filas->nombre}, Precio: {$filas->pvp} (€)</td>";
-                    echo "<td class='text-center'>";                       
-                    echo "<input type='number' name='multiplicador' min ='1' max ='3'>";
+                    echo "<td class='text-center'>"; 
+                    echo "<input type='hidden' name='id' value='{$filas->id}'>";                      
+                    echo "<input form='multiplicador' type='number' name='multiplicador' id='multiplicador'  min ='1' max ='3' value='1'>";
                     echo "<td class='text-center'>";
                     if (isset($_SESSION['cesta'][$filas->id])) {
                         echo "<i class='fas fa-check fa-2x'></i>";
