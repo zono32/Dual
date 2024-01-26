@@ -4,7 +4,7 @@ package edu.gorillas;
  * Hello world!
  *
  */
-public class Pin 
+public class PinPals 
 {
     public static void main( String[] args )
     {
