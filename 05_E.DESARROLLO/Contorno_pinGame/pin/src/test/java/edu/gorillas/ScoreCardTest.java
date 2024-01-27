@@ -1,11 +1,9 @@
 package edu.gorillas;
 
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
 
 public class ScoreCardTest {
 
@@ -21,9 +19,19 @@ public class ScoreCardTest {
     @Test
 
     public void calculateScoreTest() {
-        String point = "12345123451234512345";
-        int totalScore = scoreCard.calculateScore(point);
+        scoreCard.setScoreCard("12345123451234512345");
+        int totalScore = scoreCard.calculateScore();
         assertEquals(60, totalScore);
     }
+    
+    @Test
+
+    public void calculatePerfectTest() {
+        scoreCard.setScoreCard("XXXXXXXXXXXX");
+        int totalScore = scoreCard.calculateScore();
+        assertEquals(300, totalScore);
+    }
+
+
     
 }
