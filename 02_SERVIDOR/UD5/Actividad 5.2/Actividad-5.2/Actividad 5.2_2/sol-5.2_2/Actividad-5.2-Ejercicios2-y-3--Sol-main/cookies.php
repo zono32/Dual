@@ -67,7 +67,7 @@
         </div>
 
         <?php show_table_cookies(); ?>
-
+    </div>
 
 
 </body>
