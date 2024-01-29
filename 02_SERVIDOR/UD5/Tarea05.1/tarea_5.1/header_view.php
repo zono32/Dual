@@ -8,7 +8,6 @@
         foreach ($_SESSION['cesta'] as $key => $value) {
             $cantidad+= $value;
         }
-
      
         echo "<input type='text' disabled class='form-control mr-2 bg-transparent text-white' value='($cantidad)' size='2px'>";
     } else {

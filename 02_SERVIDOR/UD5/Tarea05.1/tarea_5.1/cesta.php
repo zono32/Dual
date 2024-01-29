@@ -6,8 +6,9 @@ if (!isset($_SESSION['nombre'])) {
 require_once 'conexion.php';
 if (isset($_SESSION['cesta'])) {
     foreach ($_SESSION['cesta'] as $k => $v) {
+        
         $producto = consultarProducto($k);
-        $listado[$k] = [$producto->nombre, $producto->pvp];
+        $listado[$k] = [$producto->nombre, $producto->pvp, $v, ($producto->pvp*$v)];
         $producto = null;
     }
     cerrar($conProyecto);
@@ -16,48 +17,68 @@ if (isset($_SESSION['cesta'])) {
 ?>
 <!doctype html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- css para usar Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- css Fontawesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <title>Cesta de la compra</title>
 </head>
+
 <body style="background: gray">
-<?php require_once 'header_view.php'?>
-<br>
-<h4 class="container text-center mt-4 font-weight-bold">Comprar Productos</h4>
-<div class="container mt-3">
-    <div class="card text-white bg-success mb-3 m-auto" style="width:40rem">
-        <div class="card-body">
-            <h5 class="card-title"><i class="fa fa-shopping-cart mr-2"></i>Carrito</h5>
-            <?php
-            if (!isset($_SESSION['cesta'])) {
-                echo "<p class='card-text'>Carrito Vacio</p>";
-            } else {
-                $total = 0;
-                echo "<p class='card-text'>";
-                echo "<ul>";
-                foreach ($listado as $k => $v) {
-                    echo "<li>$v[0], PVP ($v[1]) €.</li>";
-                    $total += $v[1];
+    <?php require_once 'header_view.php' ?>
+    <br>
+    <h4 class="container text-center mt-4 font-weight-bold">Comprar Productos</h4>
+    <div class="container mt-3">
+        <div class="card text-white bg-success mb-3 m-auto" style="width:40rem">
+            <div class="card-body">
+                <h5 class="card-title"><i class="fa fa-shopping-cart mr-2"></i>Carrito</h5>
+                <?php
+                if (!isset($_SESSION['cesta'])) {
+                    echo "<p class='card-text'>Carrito Vacio</p>";
+                } else {
+                    $total = 0;
+                    echo "<p class='card-text'>";
+                    echo "<table>";
+                ?>
+                    <thead>
+                        <tr class="text-center">
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Precio Unidad</th>
+                            <th scope="col">Unidades</th>
+                            <th scope="col">Sub Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <?php
+                    
+
+                    foreach ($listado as $k => $v) {
+                        echo "<tr>";
+                        echo "<td>$v[0]</td>";
+                        echo "<td>PVP ($v[1]) € </td> ";
+                        echo "<td> $v[2] </td>";
+                        echo "<td>$v[3]</td>";
+
+                        $total += $v[3];
+                    }
+                   
+                    
+                    echo "</table></p>";
+                    echo "<hr style='border:none; height:2px; background-color: white'>";
+                    echo "<p class='card-text'><b>Total:</b><span class='ml-3'>$total (€)</span></p>";
                 }
-                echo "</ul></p>";
-                echo "<hr style='border:none; height:2px; background-color: white'>";
-                echo "<p class='card-text'><b>Total:</b><span class='ml-3'>$total (€)</span></p>";
-            }
-            ?>
-            <a href="listado.php" class="btn btn-primary mr-2">Volver</a>
-            <a href="pagar.php" class="btn btn-danger">Pagar</a>
+                    ?>
+                    <a href="listado.php" class="btn btn-primary mr-2">Volver</a>
+                    <a href="pagar.php" class="btn btn-danger">Pagar</a>
+            </div>
         </div>
     </div>
-</div>
 </body>
+
 </html>
 
