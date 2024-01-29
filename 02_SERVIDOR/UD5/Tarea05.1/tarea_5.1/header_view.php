@@ -1,12 +1,15 @@
 <div class="float float-right d-inline-flex mt-2">
         <i class="fa fa-shopping-cart mr-2 fa-2x"></i>
         <?php
-        if (isset($_SESSION['cesta'])) {
+        if (isset($_POST['unidades'])) {
 
-            $cantidad = count($_SESSION['cesta']);
-            $multiplicador =(int) $_POST['multiplicador'];
-            var_dump($multiplicador);
-            $cantidad = $cantidad * $multiplicador;
+            $unid[] = (int)$_POST['unidades'];           
+            //var_dump($cantidad);          
+            var_dump($unid);
+            $cantidad = array_sum($unid);
+           
+
+            //$cantidad = $cantidad * $unid;
             echo "<input type='text' disabled class='form-control mr-2 bg-transparent text-white' value='($cantidad)' size='2px'>";
         } else {
             echo "<input type='text' disabled class='form-control mr-2 bg-transparent text-white' value='0' size='2px'>";
