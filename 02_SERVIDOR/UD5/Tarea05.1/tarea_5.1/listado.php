@@ -35,9 +35,10 @@ if (isset($_POST['vaciar'])) {
     unset($_SESSION['cesta']);
 }
 if (isset($_POST['comprar'])) {
+    $unidades = $_POST['unidades'];
     $datos = consultarProducto($_POST['id']);
     if ($datos !== false) {
-        $_SESSION['cesta'][$datos->id] = $datos->id;
+        $_SESSION['cesta'][$datos->id] = $unidades;
         
         gestionar_cookie_familia($datos->familia);
     }
@@ -66,13 +67,13 @@ if (isset($_POST['comprar'])) {
                 <?php
                 while ($filas = $stmt->fetch(PDO::FETCH_OBJ)) {
                     echo "<tr><th scope='row' class='text-center'>";
-                    echo "<form action='{$_SERVER['PHP_SELF']}' method='POST' id='unidades'>";
+                    echo "<form action='{$_SERVER['PHP_SELF']}' method='POST' id='{$filas->id}'>";
                     echo "<input type='hidden' name='id' value='{$filas->id}'>";
                     echo "<input type='submit' class='btn btn-primary' name='comprar' value='Añadir'>";
                     echo "</form>";
                     echo "</th>";
                     echo "<td>{$filas->nombre}, Precio: {$filas->pvp} (€)</td>";
-                    echo "<td><input type='number' name ='unidades' min='1' max='3' value='1' form='unidades'></td>";
+                    echo "<td><input type='number' name ='unidades' min='1' max='3' value='1' form='{$filas->id}'></td>";
                     echo "<td class='text-center'>";
                     if (isset($_SESSION['cesta'][$filas->id])) {
                         echo "<i class='fas fa-check fa-2x'></i>";
