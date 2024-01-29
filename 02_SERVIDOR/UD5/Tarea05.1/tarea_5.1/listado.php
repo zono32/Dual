@@ -38,8 +38,16 @@ if (isset($_POST['comprar'])) {
     $unidades = $_POST['unidades'];
     $datos = consultarProducto($_POST['id']);
     if ($datos !== false) {
-        $_SESSION['cesta'][$datos->id] = $unidades;
-        
+        //$_SESSION['cesta'][$datos->id] = $unidades;
+
+        if(!isset($_SESSION['cesta'][$datos->id])){
+            $unid = (int)$_POST['unidades'];
+            $_SESSION['cesta'][$datos->id] = $unid;
+          }
+          else{
+            $unid = (int)$_POST['unidades'];
+            $_SESSION['cesta'][$datos->id] += $unid;
+        }
         gestionar_cookie_familia($datos->familia);
     }
 }

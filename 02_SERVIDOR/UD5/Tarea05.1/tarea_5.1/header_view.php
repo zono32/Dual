@@ -3,20 +3,13 @@
     <?php
     if ((isset($_SESSION['cesta'])) && (isset($_POST['unidades']))) {
 
-        foreach ($_SESSION['cesta'] as $key => $value) {         
-          
-        }
-        $unid[] = (int)$_POST['unidades'];
-        $_SESSION['cesta'][$datos->id] = $unid;
-
-
         
-        //var_dump($cantidad);          
-        //var_dump($unid);
-        $cantidad = array_sum($unid);
+        $cantidad = 0;
+        foreach ($_SESSION['cesta'] as $key => $value) {
+            $cantidad+= $value;
+        }
 
-
-        //$cantidad = $cantidad * $unid;
+     
         echo "<input type='text' disabled class='form-control mr-2 bg-transparent text-white' value='($cantidad)' size='2px'>";
     } else {
         echo "<input type='text' disabled class='form-control mr-2 bg-transparent text-white' value='0' size='2px'>";
