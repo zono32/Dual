@@ -1,7 +1,7 @@
 <div class="float float-right d-inline-flex mt-2">
     <i class="fa fa-shopping-cart mr-2 fa-2x"></i>
     <?php
-    if ((isset($_SESSION['cesta'])) && (isset($_POST['unidades']))) {
+    if (isset($_SESSION['cesta'])) {
 
         
         $cantidad = 0;
@@ -9,7 +9,7 @@
             $cantidad+= $value;
         }
      
-        echo "<input type='text' disabled class='form-control mr-2 bg-transparent text-white' value='($cantidad)' size='2px'>";
+        echo "<input type='text' disabled class='form-control mr-2 bg-transparent text-white' value='$cantidad' size='2px'>";
     } else {
         echo "<input type='text' disabled class='form-control mr-2 bg-transparent text-white' value='0' size='2px'>";
     }
