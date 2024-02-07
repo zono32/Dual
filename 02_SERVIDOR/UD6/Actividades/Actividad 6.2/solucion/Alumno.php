@@ -16,12 +16,14 @@ final class Alumno extends Persoa {
 
     private $numClases;
 
-    public function __construct(string $nome, string $apelidos,
-            string $mobil,
-            $numClases = 0) {
-        parent::__construct($nome, $apelidos, $mobil);
-        $this->numClases = $numClases;
-    }
+    //Se podría no declarar un constructor y 
+    //se heredaría el constructor del padre
+    // public function __construct(string $nome, string $apelidos,
+    //         string $mobil,
+    //         $numClases = 0) {
+    //     parent::__construct($nome, $apelidos, $mobil);
+    //     $this->numClases = $numClases;
+    // }
 
     //Otra opción sería no añadir un constructor en esta clase
     //y cuando se llame a new Alumno($nome, $apelidos, $mobil) se llamaría

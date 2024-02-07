@@ -48,7 +48,7 @@ class Persoa {
        $cadea = implode (" ", 
                [$this->nome,  $this->apelidos, 
                    "(".$this->mobil.")<br/>"]);
-       echo $cadea;
+       return $cadea;
    }
 
 }

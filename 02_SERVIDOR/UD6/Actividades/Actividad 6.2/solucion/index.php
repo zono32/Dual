@@ -21,18 +21,18 @@ $tango = new Baile("Tango", 16);
 $afro = new Baile("AFRO", 18);
 $afro2 = new Baile("AFRO", 8);
 
-$profe1->engadir($salsa);
-$profe1->engadir($bachata);
-$profe1->engadir($tango);
-$profe1->engadir($afro);
-$profe1->engadir($afro2);
+// $profe1->engadir($salsa);
+// $profe1->engadir($bachata);
+// $profe1->engadir($tango);
+// $profe1->engadir($afro);
+// $profe1->engadir($afro2);
 
 //Para probar o segundo método: 
-// $profe1->engadirSoDiferenteNome($salsa);
-// $profe1->engadirSoDiferenteNome($bachata);
-// $profe1->engadirSoDiferenteNome($tango);
-// $profe1->engadirSoDiferenteNome($afro);
-// $profe1->engadirSoDiferenteNome($afro2);
+$profe1->engadirSoDiferenteNome($salsa);
+$profe1->engadirSoDiferenteNome($bachata);
+$profe1->engadirSoDiferenteNome($tango);
+$profe1->engadirSoDiferenteNome($afro);
+$profe1->engadirSoDiferenteNome($afro2);
 
 $alumno1 = new Alumno("Juan", "Antas Ulla", "650650650");
 $alumno2 = new Alumno("Rita", "Román Rueda", "652652652");
@@ -46,7 +46,7 @@ $academia->engadirAlumno($alumno2);
 $academia->engadirProfe($profe1);
 
 echo "<h2>{$profe1->getNome()}->verInformacion()</h2>";
-$profe1->verInformacion();
+echo $profe1->verInformacion();
 
 echo "<h2>{$profe1->getNome()}->calcularSoldo(2)</h2>";
 $soldo = $profe1->calcularSoldo(2);
@@ -62,7 +62,8 @@ mostrarImporte($alumno2);
 
 
 echo "<h2>{$profe1->getNome()}->eliminar baile...</h2>";
-$profe1->eliminar(new Baile("AFRO"));
+//$profe1->eliminar(new Baile("AFRO"));
+$profe1->eliminarSoConIgualNome (new Baile("AFRO"));
 $profe1->mostrarBailes();
 
 
