@@ -16,6 +16,8 @@ create view vista_pedidos_Clientes as
     from cliente join pedido on cliente.codigo_cliente = pedido.codigo_cliente;
 #-------------------------------------------------------------------------------------------
 #	3. Crea una vista de los productos que se hallen en stock, mostrando código y nombre del producto y su cantidad en stock
+
+#-------------------------------------------------------------------------------------------
 drop view if exists vista_productos_en_stock;
 create view vista_productos_en_stock as
 	select codigo_producto as Código, nombre as Producto, cantidad_en_stock as Stock from producto
@@ -23,19 +25,31 @@ create view vista_productos_en_stock as
 
 
 #-------------------------------------------------------------------------------------------
-
-#-------------------------------------------------------------------------------------------
 #	4. Crea una vista sobre los pagos realizados, mostrando el nombre de la empresa cliente, la transacción efectuada, el tipo, fecha y total de pago abonada
 #-------------------------------------------------------------------------------------------
+drop view if exists vista_Pagos_realizados;
+create view vista_Pagos_realizados as 
+	select cliente.nombre_cliente as Empresa, pago.id_transaccion,pago.forma_pago as 'Tipo de pago', pago.fecha_pago as Fecha, pago.total as Total from pago join cliente on pago.codigo_cliente = cliente.codigo_cliente;
 
 #-------------------------------------------------------------------------------------------
 #	5. Crea una vista de los pedidos pendientes de atender, mostrando código de pedido, fecha de realización del pedido y fecha esperada de recepción
 #-------------------------------------------------------------------------------------------
-
+drop view if exists vista_pedidos_pendientes;
+create view vista_pedidos_pendientes as 
+	select codigo_pedido as codigo, fecha_pedido as 'fecha de realización', fecha_esperada as recepcion from pedido
+    where estado in ('pendiente');
 #-------------------------------------------------------------------------------------------
 #	6. Crea una vista de ventas en función de la gama del producto, mostrando la gama, número de ventas efectuadas y total del dinero obtenido en cada gama
 #-------------------------------------------------------------------------------------------
-
+drop view if exists vista_ventas_por_gama;
+CREATE view	vista_ventas_por_gama as
+	select gama_producto.gama as Gama, count(detalle_pedido.codigo_pedido) as Ventas, (sum(cantidad * precio_unidad)) as 'Importe total',
+    (sum(cantidad *precio_unidad)/count(detalle_pedido.codigo_pedido)) as 'Importe medio por venta'
+    from gama_producto left join producto on gama_producto.gama = producto.gama
+						left join detalle_pedido on producto.codigo_producto = detalle_pedido.codigo_producto
+                        group by gama_producto.gama
+                        having ventas > 0
+                        order by 3;
 #-------------------------------------------------------------------------------------------
 #	7. Crea una vista mostrando el nombre del país y el número total de clientes que tiene cada uno
 #-------------------------------------------------------------------------------------------
@@ -83,4 +97,16 @@ create view vista_productos_en_stock as
 #-------------------------------------------------------------------------------------------
 #  18. Crea una vista mostrando el número de pagos efectuados en cada forma de pago
 #-------------------------------------------------------------------------------------------
+
+SELECT * FROM jardineria.vista_productos_en_stock 
+order by 3;
+
+# Muestra solo los productos cuya cantidad sea mayor a 4
+
+SELECT producto, Stock FROM jardineria.vista_productos_en_stock where Stock > 4 
+order by 2;
+
+
+
+
 
