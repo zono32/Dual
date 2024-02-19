@@ -23,8 +23,9 @@ select 	__ as 'Concello',
         __ as 'Comarca',
         __ as 'Provincia'
         from Concello;
-        
-CREATE VIEW	DatosConcellos	AS	__;
+ DROP VIEW IF EXISTS VistaDatosConcellos;       
+CREATE VIEW	VistaDatosConcellos	AS	select T1.idconcello as 'concello',
+					nombre as ;
 #*******************************************************************************************
 #	COMARCAS CON CÓDIGO, NOMBRE, SUPERFICIE, MUJERES Y HOMBRES
 #*******************************************************************************************
