@@ -1,4 +1,6 @@
-table{
+    table{
+    align-items: center;
+    
     border-collapse: collapse;
     border: black 1px solid;
     }
@@ -24,5 +26,8 @@ table{
     font-size:30;
     font-weight:bold;
     text-align:center;
+    }
+    h1{
+        text-align: center;
     }
     
