@@ -1,10 +1,9 @@
-    table{
-    align-items: center;
-    
+    table{      
     border-collapse: collapse;
     border: black 1px solid;
     }
     tr{
+      
     border: 1px;
     border-style: solid;
     border-color: black;
@@ -30,4 +29,8 @@
     h1{
         text-align: center;
     }
-    
+   
+    .container{
+        display: flex;
+        justify-content: center;
+    }
