@@ -32,11 +32,13 @@ window.onload = () =>{
 
     
     vistaNumero.forEach(element => {
-        console.log(element.id);
+        //console.log(element.id);
         if (numeros.includes(parseInt(element.id))) {
             element.innerText = element.id 
         } 
-        if(includes(numerosUsuario) 
+        if ((numerosUsuario.includes(element.id) ) && (numeros.includes(parseInt(element.id)))){
+            element.setAttribute('style', 'background-color: yellow')
+        }
        
             
     });
