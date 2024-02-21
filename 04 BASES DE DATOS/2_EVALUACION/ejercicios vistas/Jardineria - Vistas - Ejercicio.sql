@@ -53,6 +53,9 @@ CREATE view	vista_ventas_por_gama as
 #-------------------------------------------------------------------------------------------
 #	7. Crea una vista mostrando el nombre del país y el número total de clientes que tiene cada uno
 #-------------------------------------------------------------------------------------------
+drop view if exists vista_cliente_por_pais;
+create view vista_cliente_por_pais as 
+select count(nombre_cliente) as Cliente, pais as Pais from cliente group by pais;
 
 #-------------------------------------------------------------------------------------------
 #	8. Crea una vista que muestre el código y nombre del producto que se hallen agotados
