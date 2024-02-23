@@ -166,6 +166,15 @@ create user 'Fulgencio', 'Fulgencia','Guillermino', 'Guillermina','Pancracio', '
 #	Apolonio y Apolonia						Todos los datos de Equipos, Jugadores, Estadisticas y Partidos de la División Sudoeste
 #	Luzdivino y Luzdivina					Todos los datos de Equipos, Jugadores, Estadisticas y Partidos de la División Noroeste
 #--------------------------------------------------------------------------------------------
+GRANT ALL PRIVILEGES ON nba.equipos TO 'fulgencio'@'localhost';
+GRANT ALL PRIVILEGES ON nba.jugadores TO 'fulgencio'@'localhost';
+GRANT ALL PRIVILEGES ON nba.estadisticas TO 'fulgencio'@'localhost';
+GRANT ALL PRIVILEGES ON nba.partidos TO 'fulgencio'@'localhost';
+
+GRANT ALL PRIVILEGES ON nba.equipos TO 'fulgencia'@'localhost';
+GRANT ALL PRIVILEGES ON nba.jugadores TO 'fulgencia'@'localhost';
+GRANT ALL PRIVILEGES ON nba.estadisticas TO 'fulgencia'@'localhost';
+GRANT ALL PRIVILEGES ON nba.partidos TO 'fulgencia'@'localhost';
 
 
 #--------------------------------------------------------------------------------------------
