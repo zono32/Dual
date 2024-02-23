@@ -77,10 +77,9 @@ drop user if exists Luzdivina;
 create user Luzdivina identified by 'abc';
 
 
-drop user if exists 'Fulgencio', 'Fulgencia','Guillermino', 'Guillermina','Pancracio', 'Pancracia','Filomeno', 'Filomena','Anaximandro', 'Anaximandra','Romino', 'Romina','Agapito',
- 'Agapita','Apolonio', 'Apolonia','Luzdivino', 'Luzdivina';
-create user 'Fulgencio', 'Fulgencia','Guillermino', 'Guillermina','Pancracio', 'Pancracia','Filomeno', 'Filomena','Anaximandro', 'Anaximandra','Romino', 'Romina','Agapito',
- 'Agapita','Apolonio', 'Apolonia','Luzdivino', 'Luzdivina' identified by 'abc';
+# 'Agapita','Apolonio', 'Apolonia','Luzdivino', 'Luzdivina';
+#create user 'Fulgencio', 'Fulgencia','Guillermino', 'Guillermina','Pancracio', 'Pancracia','Filomeno', 'Filomena','Anaximandro', 'Anaximandra','Romino', 'Romina','Agapito',
+#'Agapita','Apolonio', 'Apolonia','Luzdivino', 'Luzdivina' identified by 'abc';
 
 #--------------------------------------------------------------------------------------------
 #	3. BORRAMOS Y CREAMOS LAS VISTAS
