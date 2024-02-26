@@ -12,6 +12,24 @@
 #	CREATE ROLE <rol>
 #--------------------------------------------------------------------------------------------
 
+DROP ROLE IF EXISTS nba;
+CREATE ROLE nba;
+DROP ROLE IF EXISTS conferencia_este;
+CREATE ROLE conferencia_este;
+DROP ROLE IF EXISTS conferencia_oeste;
+CREATE ROLE conferencia_oeste;
+DROP ROLE IF EXISTS division_atlantico;
+CREATE ROLE division_atlantico;
+DROP ROLE IF EXISTS division_sudeste;
+CREATE ROLE division_sudeste;
+DROP ROLE IF EXISTS division_central;
+CREATE ROLE division_central;
+DROP ROLE IF EXISTS division_pacifico;
+CREATE ROLE division_pacifico;
+DROP ROLE IF EXISTS division_sudoeste;
+CREATE ROLE division_sudoeste;
+DROP ROLE IF EXISTS division_noroeste;
+CREATE ROLE division_noroeste;
 
 #--------------------------------------------------------------------------------------------
 #	3. BORRAMOS Y CREAMOS LAS VISTAS
@@ -86,6 +104,51 @@
 #	GRANT <privilegio>	ON <vista>	TO 	<rol>
 #--------------------------------------------------------------------------------------------
 
+GRANT ALL ON NBA_EQUIPOS TO nba;
+GRANT ALL ON NBA_JUGADORES TO nba;
+GRANT ALL ON NBA_ESTADISTICAS TO nba;
+GRANT ALL ON NBA_PARTIDOS TO nba;
+
+GRANT ALL ON CONFERENCIA_ESTE_EQUIPOS TO conferencia_este;
+GRANT ALL ON CONFERENCIA_ESTE_JUGADORES TO conferencia_este;
+GRANT ALL ON CONFERENCIA_ESTE_ESTADISTICAS TO conferencia_este;
+GRANT ALL ON CONFERENCIA_ESTE_PARTIDOS TO conferencia_este;
+
+GRANT ALL ON CONFERENCIA_OESTE_EQUIPOS TO conferencia_oeste;
+GRANT ALL ON CONFERENCIA_OESTE_JUGADORES TO conferencia_oeste;
+GRANT ALL ON CONFERENCIA_OESTE_ESTADISTICAS TO conferencia_oeste;
+GRANT ALL ON CONFERENCIA_OESTE_PARTIDOS TO conferencia_oeste;
+
+GRANT ALL ON DIVISION_ATLANTICA_EQUIPOS TO division_atlantico;
+GRANT ALL ON DIVISION_ATLANTICA_JUGADORES TO division_atlantico;
+GRANT ALL ON DIVISION_ATLANTICA_ESTADISTICAS TO division_atlantico;
+GRANT ALL ON DIVISION_ATLANTICA_PARTIDOS TO division_atlantico;
+
+GRANT ALL ON DIVISION_SUDESTE_EQUIPOS TO division_sudeste;
+GRANT ALL ON DIVISION_SUDESTE_JUGADORES TO division_sudeste;
+GRANT ALL ON DIVISION_SUDESTE_ESTADISTICAS TO division_sudeste;
+GRANT ALL ON DIVISION_SUDESTE_PARTIDOS TO division_sudeste;
+
+GRANT ALL ON DIVISION_CENTRAL_EQUIPOS TO division_central;
+GRANT ALL ON DIVISION_CENTRAL_JUGADORES TO division_central;
+GRANT ALL ON DIVISION_CENTRAL_ESTADISTICAS TO division_central;
+GRANT ALL ON DIVISION_CENTRAL_PARTIDOS TO division_central;
+
+GRANT ALL ON DIVISION_PACIFICO_EQUIPOS TO division_pacifico;
+GRANT ALL ON DIVISION_PACIFICO_JUGADORES TO division_pacifico;
+GRANT ALL ON DIVISION_PACIFICO_ESTADISTICAS TO division_pacifico;
+GRANT ALL ON DIVISION_PACIFICO_PARTIDOS TO division_pacifico;
+
+GRANT ALL ON DIVISION_SUDOESTE_EQUIPOS TO division_sudoeste;
+GRANT ALL ON DIVISION_SUDOESTE_JUGADORES TO division_sudoeste;
+GRANT ALL ON DIVISION_SUDOESTE_ESTADISTICAS TO division_sudoeste;
+GRANT ALL ON DIVISION_SUDOESTE_PARTIDOS TO division_sudoeste;
+
+GRANT ALL ON DIVISION_NOROESTE_EQUIPOS TO division_noroeste;
+GRANT ALL ON DIVISION_NOROESTE_JUGADORES TO division_noroeste;
+GRANT ALL ON DIVISION_NOROESTE_ESTADISTICAS TO division_noroeste;
+GRANT ALL ON DIVISION_NOROESTE_PARTIDOS TO division_noroeste;
+
    
 #--------------------------------------------------------------------------------------------
 #	5. 	BORRAMOS Y CREAMOS LOS USUARIOS, ASINGNÁNDOLES POR DEFECTO SU ROL ASOCIADO
@@ -103,8 +166,96 @@
 #	Apolonio y Apolonia
 #	Luzdivino y Luzdivina
 #--------------------------------------------------------------------------------------------
- 
- 
+	 DROP USER IF EXISTS Fulgencio;
+	CREATE USER Fulgencio IDENTIFIED BY 'abc';
+	GRANT nba TO Fulgencio;
+	SET DEFAULT ROLE nba FOR Fulgencio;
+
+	DROP USER IF EXISTS Fulgencia;
+	CREATE USER Fulgencia IDENTIFIED BY 'abc';
+	GRANT nba TO Fulgencia;
+	SET DEFAULT ROLE nba FOR Fulgencia;
+
+	DROP USER IF EXISTS Guillermino;
+	CREATE USER Guillermino IDENTIFIED BY 'abc';
+	GRANT conferencia_este TO Guillermino;
+	SET DEFAULT ROLE conferencia_este FOR Guillermino;
+
+	DROP USER IF EXISTS Guillermina;
+	CREATE USER Guillermina IDENTIFIED BY 'abc';
+	GRANT conferencia_este TO Guillermina;
+	SET DEFAULT ROLE conferencia_este FOR Guillermina;
+
+	DROP USER IF EXISTS Pancracio;
+	CREATE USER Pancracio IDENTIFIED BY 'abc';
+	GRANT conferencia_oeste TO Guillermino;
+	SET DEFAULT ROLE conferencia_oeste FOR Guillermino;
+
+	DROP USER IF EXISTS Pancracia;
+	CREATE USER Pancracia IDENTIFIED BY 'abc';
+	GRANT conferencia_oeste TO Pancracia;
+	SET DEFAULT ROLE conferencia_oeste FOR Pancracia;
+
+	DROP USER IF EXISTS Filomeno;
+	CREATE USER Filomeno IDENTIFIED BY 'abc';
+	GRANT division_atlantico TO Filomeno;
+	SET DEFAULT ROLE division_atlantico FOR Filomeno;
+
+	DROP USER IF EXISTS Filomena;
+	CREATE USER Filomena IDENTIFIED BY 'abc';
+	GRANT division_atlantico TO Filomena;
+	SET DEFAULT ROLE division_atlantico FOR Filomena;
+
+	DROP USER IF EXISTS Anaximandro;
+	CREATE USER Anaximandro IDENTIFIED BY 'abc';
+	GRANT division_sudeste TO Anaximandro;
+	SET DEFAULT ROLE division_sudeste FOR Anaximandro;
+
+	DROP USER IF EXISTS Anaximandra;
+	CREATE USER Anaximandra IDENTIFIED BY 'abc';
+	GRANT division_sudeste TO Anaximandra;
+	SET DEFAULT ROLE division_sudeste FOR Anaximandra;
+
+	DROP USER IF EXISTS Romino;
+	CREATE USER Romino IDENTIFIED BY 'abc';
+	GRANT division_central TO Romino;
+	SET DEFAULT ROLE division_central FOR Romino;
+
+	DROP USER IF EXISTS Romina;
+	CREATE USER Romina IDENTIFIED BY 'abc';
+	GRANT division_central TO Romina;
+	SET DEFAULT ROLE division_central FOR Romina;
+
+	DROP USER IF EXISTS Agapito;
+	CREATE USER Agapito IDENTIFIED BY 'abc';
+	GRANT division_pacifico TO Agapito;
+	SET DEFAULT ROLE division_pacifico FOR Agapito;
+
+	DROP USER IF EXISTS Agapita;
+	CREATE USER Agapita IDENTIFIED BY 'abc';
+	GRANT division_pacifico TO Agapita;
+	SET DEFAULT ROLE division_pacifico FOR Agapita;
+
+	DROP USER IF EXISTS Apolonio;
+	CREATE USER Apolonio IDENTIFIED BY 'abc';
+	GRANT division_sudoeste TO Apolonio;
+	SET DEFAULT ROLE division_sudoeste FOR Apolonio;
+
+	DROP USER IF EXISTS Apolonia;
+	CREATE USER Apolonia IDENTIFIED BY 'abc';
+	GRANT division_sudoeste TO Apolonia;
+	SET DEFAULT ROLE division_sudoeste FOR Apolonia;
+
+	DROP USER IF EXISTS Luzdivino;
+	CREATE USER Luzdivino IDENTIFIED BY 'abc';
+	GRANT division_noroeste TO Luzdivino;
+	SET DEFAULT ROLE division_noroeste FOR Luzdivino;
+
+	DROP USER IF EXISTS Luzdivina;
+	CREATE USER Luzdivina IDENTIFIED BY 'abc';
+	GRANT division_noroeste TO Luzdivina;
+	SET DEFAULT ROLE division_noroeste FOR Luzdivina;
+	 
 #--------------------------------------------------------------------------------------------
 #	6. REFRESCA LOS PRIVILEGIOS
 #--------------------------------------------------------------------------------------------
