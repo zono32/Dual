@@ -127,50 +127,50 @@ CREATE ROLE division_noroeste;
 #	GRANT <privilegio>	ON <vista>	TO 	<rol>
 #--------------------------------------------------------------------------------------------
 
-GRANT ALL ON NBA_EQUIPOS TO nba;
-GRANT ALL ON NBA_JUGADORES TO nba;
-GRANT ALL ON NBA_ESTADISTICAS TO nba;
-GRANT ALL ON NBA_PARTIDOS TO nba;
+GRANT ALL ON VistaNBA_EQUIPOS TO nba;
+GRANT ALL ON VistaNBA_JUGADORES TO nba;
+GRANT ALL ON VistaNBA_ESTADISTICAS TO nba;
+GRANT ALL ON VistaNBA_PARTIDOS TO nba;
 
-GRANT ALL ON CONFERENCIA_ESTE_EQUIPOS TO conferencia_este;
-GRANT ALL ON CONFERENCIA_ESTE_JUGADORES TO conferencia_este;
-GRANT ALL ON CONFERENCIA_ESTE_ESTADISTICAS TO conferencia_este;
-GRANT ALL ON CONFERENCIA_ESTE_PARTIDOS TO conferencia_este;
+GRANT ALL ON VistaCONFERENCIA_ESTE_EQUIPOS TO conferencia_este;
+GRANT ALL ON VistaCONFERENCIA_ESTE_JUGADORES TO conferencia_este;
+GRANT ALL ON VistaCONFERENCIA_ESTE_ESTADISTICAS TO conferencia_este;
+GRANT ALL ON VistaCONFERENCIA_ESTE_PARTIDOS TO conferencia_este;
 
-GRANT ALL ON CONFERENCIA_OESTE_EQUIPOS TO conferencia_oeste;
-GRANT ALL ON CONFERENCIA_OESTE_JUGADORES TO conferencia_oeste;
-GRANT ALL ON CONFERENCIA_OESTE_ESTADISTICAS TO conferencia_oeste;
-GRANT ALL ON CONFERENCIA_OESTE_PARTIDOS TO conferencia_oeste;
+GRANT ALL ON VistaCONFERENCIA_OESTE_EQUIPOS TO conferencia_oeste;
+GRANT ALL ON VistaCONFERENCIA_OESTE_JUGADORES TO conferencia_oeste;
+GRANT ALL ON VistaCONFERENCIA_OESTE_ESTADISTICAS TO conferencia_oeste;
+GRANT ALL ON VistaCONFERENCIA_OESTE_PARTIDOS TO conferencia_oeste;
 
-GRANT ALL ON DIVISION_ATLANTICA_EQUIPOS TO division_atlantico;
-GRANT ALL ON DIVISION_ATLANTICA_JUGADORES TO division_atlantico;
-GRANT ALL ON DIVISION_ATLANTICA_ESTADISTICAS TO division_atlantico;
-GRANT ALL ON DIVISION_ATLANTICA_PARTIDOS TO division_atlantico;
+GRANT ALL ON VistaDIVISION_ATLANTICA_EQUIPOS TO division_atlantico;
+GRANT ALL ON VistaDIVISION_ATLANTICA_JUGADORES TO division_atlantico;
+GRANT ALL ON VistaDIVISION_ATLANTICA_ESTADISTICAS TO division_atlantico;
+GRANT ALL ON VistaDIVISION_ATLANTICA_PARTIDOS TO division_atlantico;
 
-GRANT ALL ON DIVISION_SUDESTE_EQUIPOS TO division_sudeste;
-GRANT ALL ON DIVISION_SUDESTE_JUGADORES TO division_sudeste;
-GRANT ALL ON DIVISION_SUDESTE_ESTADISTICAS TO division_sudeste;
-GRANT ALL ON DIVISION_SUDESTE_PARTIDOS TO division_sudeste;
+GRANT ALL ON VistaDIVISION_SUDESTE_EQUIPOS TO division_sudeste;
+GRANT ALL ON VistaDIVISION_SUDESTE_JUGADORES TO division_sudeste;
+GRANT ALL ON VistaDIVISION_SUDESTE_ESTADISTICAS TO division_sudeste;
+GRANT ALL ON VistaDIVISION_SUDESTE_PARTIDOS TO division_sudeste;
 
-GRANT ALL ON DIVISION_CENTRAL_EQUIPOS TO division_central;
-GRANT ALL ON DIVISION_CENTRAL_JUGADORES TO division_central;
-GRANT ALL ON DIVISION_CENTRAL_ESTADISTICAS TO division_central;
-GRANT ALL ON DIVISION_CENTRAL_PARTIDOS TO division_central;
+GRANT ALL ON VistaDIVISION_CENTRAL_EQUIPOS TO division_central;
+GRANT ALL ON VistaDIVISION_CENTRAL_JUGADORES TO division_central;
+GRANT ALL ON VistaDIVISION_CENTRAL_ESTADISTICAS TO division_central;
+GRANT ALL ON VistaDIVISION_CENTRAL_PARTIDOS TO division_central;
 
-GRANT ALL ON DIVISION_PACIFICO_EQUIPOS TO division_pacifico;
-GRANT ALL ON DIVISION_PACIFICO_JUGADORES TO division_pacifico;
-GRANT ALL ON DIVISION_PACIFICO_ESTADISTICAS TO division_pacifico;
-GRANT ALL ON DIVISION_PACIFICO_PARTIDOS TO division_pacifico;
+GRANT ALL ON VistaDIVISION_PACIFICO_EQUIPOS TO division_pacifico;
+GRANT ALL ON VistaDIVISION_PACIFICO_JUGADORES TO division_pacifico;
+GRANT ALL ON VistaDIVISION_PACIFICO_ESTADISTICAS TO division_pacifico;
+GRANT ALL ON VistaDIVISION_PACIFICO_PARTIDOS TO division_pacifico;
 
-GRANT ALL ON DIVISION_SUDOESTE_EQUIPOS TO division_sudoeste;
-GRANT ALL ON DIVISION_SUDOESTE_JUGADORES TO division_sudoeste;
-GRANT ALL ON DIVISION_SUDOESTE_ESTADISTICAS TO division_sudoeste;
-GRANT ALL ON DIVISION_SUDOESTE_PARTIDOS TO division_sudoeste;
+GRANT ALL ON VistaDIVISION_SUDOESTE_EQUIPOS TO division_sudoeste;
+GRANT ALL ON VistaDIVISION_SUDOESTE_JUGADORES TO division_sudoeste;
+GRANT ALL ON VistaDIVISION_SUDOESTE_ESTADISTICAS TO division_sudoeste;
+GRANT ALL ON VistaDIVISION_SUDOESTE_PARTIDOS TO division_sudoeste;
 
-GRANT ALL ON DIVISION_NOROESTE_EQUIPOS TO division_noroeste;
-GRANT ALL ON DIVISION_NOROESTE_JUGADORES TO division_noroeste;
-GRANT ALL ON DIVISION_NOROESTE_ESTADISTICAS TO division_noroeste;
-GRANT ALL ON DIVISION_NOROESTE_PARTIDOS TO division_noroeste;
+GRANT ALL ON VistaDIVISION_NOROESTE_EQUIPOS TO division_noroeste;
+GRANT ALL ON VistaDIVISION_NOROESTE_JUGADORES TO division_noroeste;
+GRANT ALL ON VistaDIVISION_NOROESTE_ESTADISTICAS TO division_noroeste;
+GRANT ALL ON VistaDIVISION_NOROESTE_PARTIDOS TO division_noroeste;
 
    
 #--------------------------------------------------------------------------------------------
@@ -191,40 +191,40 @@ GRANT ALL ON DIVISION_NOROESTE_PARTIDOS TO division_noroeste;
 #--------------------------------------------------------------------------------------------
 
 #	Fulgencio y Fulgencia
-	DROP USER IF EXISTS Fulgencio; 		CREATE USER Fulgencio IDENTIFIED BY 'abc';		GRANT nba TO Fulgencio; 	SET DEFAULT ROLE nba to Fulgencio;  #for????
-	DROP USER IF EXISTS Fulgencia;		CREATE USER Fulgencia IDENTIFIED BY 'abc'; 		GRANT nba TO Fulgencia;		SET DEFAULT ROLE nba to Fulgencia;
+	DROP USER IF EXISTS Fulgencio; 		CREATE USER Fulgencio IDENTIFIED BY 'abc';		GRANT nba TO Fulgencio; 	SET DEFAULT ROLE nba for Fulgencio;  
+	DROP USER IF EXISTS Fulgencia;		CREATE USER Fulgencia IDENTIFIED BY 'abc'; 		GRANT nba TO Fulgencia;		SET DEFAULT ROLE nba for Fulgencia;
     
 #	Guillermino y Guillermina
-	DROP USER IF EXISTS Guillermino; 	CREATE USER Guillermino IDENTIFIED BY 'abc';	GRANT nba TO Guillermino; 	SET DEFAULT ROLE nba to Guillermino;
-	DROP USER IF EXISTS Guillermina;	CREATE USER Guillermina IDENTIFIED BY 'abc'; 	GRANT nba TO Guillermina;	SET DEFAULT ROLE nba to Guillermina;
+	DROP USER IF EXISTS Guillermino; 	CREATE USER Guillermino IDENTIFIED BY 'abc';	GRANT nba TO Guillermino; 	SET DEFAULT ROLE nba for Guillermino;
+	DROP USER IF EXISTS Guillermina;	CREATE USER Guillermina IDENTIFIED BY 'abc'; 	GRANT nba TO Guillermina;	SET DEFAULT ROLE nba for Guillermina;
     
 #	Pancracio y Pancracia
-	DROP USER IF EXISTS Pancracio; 		CREATE USER Pancracio IDENTIFIED BY 'abc';		GRANT nba TO Pancracio; 	SET DEFAULT ROLE nba to Pancracio;
-	DROP USER IF EXISTS Pancracia;		CREATE USER Pancracia IDENTIFIED BY 'abc'; 		GRANT nba TO Pancracia;		SET DEFAULT ROLE nba to Pancracia;
+	DROP USER IF EXISTS Pancracio; 		CREATE USER Pancracio IDENTIFIED BY 'abc';		GRANT nba TO Pancracio; 	SET DEFAULT ROLE nba for Pancracio;
+	DROP USER IF EXISTS Pancracia;		CREATE USER Pancracia IDENTIFIED BY 'abc'; 		GRANT nba TO Pancracia;		SET DEFAULT ROLE nba for Pancracia;
     
 #	Filomeno y Filomena
-	DROP USER IF EXISTS Filomeno; 		CREATE USER Filomeno IDENTIFIED BY 'abc';		GRANT nba TO Filomeno; 		SET DEFAULT ROLE nba to Filomeno;
-	DROP USER IF EXISTS Filomena;		CREATE USER Filomena IDENTIFIED BY 'abc'; 		GRANT nba TO Filomena;		SET DEFAULT ROLE nba to Filomena;
+	DROP USER IF EXISTS Filomeno; 		CREATE USER Filomeno IDENTIFIED BY 'abc';		GRANT nba TO Filomeno; 		SET DEFAULT ROLE nba for Filomeno;
+	DROP USER IF EXISTS Filomena;		CREATE USER Filomena IDENTIFIED BY 'abc'; 		GRANT nba TO Filomena;		SET DEFAULT ROLE nba for Filomena;
     
 #	Anaximandro y Anaximandra
-	DROP USER IF EXISTS Anaximandro; 	CREATE USER Anaximandro IDENTIFIED BY 'abc';	GRANT nba TO Anaximandro; 	SET DEFAULT ROLE nba to Anaximandro;
-	DROP USER IF EXISTS Anaximandra;	CREATE USER Anaximandra IDENTIFIED BY 'abc'; 	GRANT nba TO Anaximandra; 	SET DEFAULT ROLE nba to Anaximandra;
+	DROP USER IF EXISTS Anaximandro; 	CREATE USER Anaximandro IDENTIFIED BY 'abc';	GRANT nba TO Anaximandro; 	SET DEFAULT ROLE nba for Anaximandro;
+	DROP USER IF EXISTS Anaximandra;	CREATE USER Anaximandra IDENTIFIED BY 'abc'; 	GRANT nba TO Anaximandra; 	SET DEFAULT ROLE nba for Anaximandra;
 
 #	Romino y Romina
-	DROP USER IF EXISTS Romino; 		CREATE USER Romino IDENTIFIED BY 'abc';			GRANT nba TO Romino; 		SET DEFAULT ROLE nba to Romino;
-	DROP USER IF EXISTS Romina;			CREATE USER Romina IDENTIFIED BY 'abc'; 		GRANT nba TO Romina;		SET DEFAULT ROLE nba to Romina;
+	DROP USER IF EXISTS Romino; 		CREATE USER Romino IDENTIFIED BY 'abc';			GRANT nba TO Romino; 		SET DEFAULT ROLE nba for Romino;
+	DROP USER IF EXISTS Romina;			CREATE USER Romina IDENTIFIED BY 'abc'; 		GRANT nba TO Romina;		SET DEFAULT ROLE nba for Romina;
     
 #	Agapito y Agapita
-	DROP USER IF EXISTS Agapito; 		CREATE USER Agapito IDENTIFIED BY 'abc';		GRANT nba TO Agapito; 		SET DEFAULT ROLE nba to Agapito;
-	DROP USER IF EXISTS Agapita;		CREATE USER Agapita IDENTIFIED BY 'abc'; 		GRANT nba TO Agapita;		SET DEFAULT ROLE nba to Agapita;
+	DROP USER IF EXISTS Agapito; 		CREATE USER Agapito IDENTIFIED BY 'abc';		GRANT nba TO Agapito; 		SET DEFAULT ROLE nba for Agapito;
+	DROP USER IF EXISTS Agapita;		CREATE USER Agapita IDENTIFIED BY 'abc'; 		GRANT nba TO Agapita;		SET DEFAULT ROLE nba for Agapita;
     
 #	Apolonio y Apolonia
-	DROP USER IF EXISTS Apolonio; 		CREATE USER Apolonio IDENTIFIED BY 'abc';		GRANT nba TO Apolonio; 		SET DEFAULT ROLE nba to Apolonio;
-	DROP USER IF EXISTS Apolonia;		CREATE USER Apolonia IDENTIFIED BY 'abc'; 		GRANT nba TO Apolonia;		SET DEFAULT ROLE nba to Apolonia;
+	DROP USER IF EXISTS Apolonio; 		CREATE USER Apolonio IDENTIFIED BY 'abc';		GRANT nba TO Apolonio; 		SET DEFAULT ROLE nba for Apolonio;
+	DROP USER IF EXISTS Apolonia;		CREATE USER Apolonia IDENTIFIED BY 'abc'; 		GRANT nba TO Apolonia;		SET DEFAULT ROLE nba for Apolonia;
     
 #	Luzdivino y Luzdivina
-	DROP USER IF EXISTS Luzdivino; 		CREATE USER Luzdivino IDENTIFIED BY 'abc';		GRANT nba TO Luzdivino; 	SET DEFAULT ROLE nba to Luzdivino;
-	DROP USER IF EXISTS Luzdivina;		CREATE USER Luzdivina IDENTIFIED BY 'abc'; 		GRANT nba TO Luzdivina;		SET DEFAULT ROLE nba to Luzdivina;
+	DROP USER IF EXISTS Luzdivino; 		CREATE USER Luzdivino IDENTIFIED BY 'abc';		GRANT nba TO Luzdivino; 	SET DEFAULT ROLE nba for Luzdivino;
+	DROP USER IF EXISTS Luzdivina;		CREATE USER Luzdivina IDENTIFIED BY 'abc'; 		GRANT nba TO Luzdivina;		SET DEFAULT ROLE nba for Luzdivina;
 	
 	 
 #--------------------------------------------------------------------------------------------
