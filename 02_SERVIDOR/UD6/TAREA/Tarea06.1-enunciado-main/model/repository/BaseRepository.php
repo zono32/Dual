@@ -43,7 +43,7 @@ abstract class BaseRepository implements IBaseRepository
 
     public function delete($id): bool
     {
-
+        $resultado = false;
         try {
 
             $pdostmt = $this->conn->prepare(
@@ -62,7 +62,7 @@ abstract class BaseRepository implements IBaseRepository
             throw $ex;
         }
 
-        return ($pdostmt->rowCount() == 1);
+        return $resultado;
     }
 
     public function findAll(): array
