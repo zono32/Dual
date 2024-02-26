@@ -126,7 +126,7 @@ CREATE ROLE division_noroeste;
 #--------------------------------------------------------------------------------------------
 #	GRANT <privilegio>	ON <vista>	TO 	<rol>
 #--------------------------------------------------------------------------------------------
-GRANT role_Admin, create user  on *.* to nba;
+
 GRANT ALL ON VistaNBA_EQUIPOS TO nba;
 GRANT ALL ON VistaNBA_JUGADORES TO nba;
 GRANT ALL ON VistaNBA_ESTADISTICAS TO nba;
@@ -190,61 +190,41 @@ GRANT ALL ON VistaDIVISION_NOROESTE_PARTIDOS TO division_noroeste;
 #	Luzdivino y Luzdivina
 #--------------------------------------------------------------------------------------------
 
-
-
 #	Fulgencio y Fulgencia
-	DROP USER IF EXISTS Fulgencio;
-    CREATE USER Fulgencio IDENTIFIED BY 'abc';		GRANT nba TO Fulgencio; 				SET DEFAULT ROLE nba for Fulgencio;  
-	DROP USER IF EXISTS Fulgencia;
-    CREATE USER Fulgencia IDENTIFIED BY 'abc'; 		GRANT nba TO Fulgencia;					SET DEFAULT ROLE nba for Fulgencia;
+	DROP USER IF EXISTS Fulgencio; 		CREATE USER Fulgencio IDENTIFIED BY 'abc';		GRANT nba TO Fulgencio; 				SET DEFAULT ROLE nba for Fulgencio;  
+	DROP USER IF EXISTS Fulgencia;		CREATE USER Fulgencia IDENTIFIED BY 'abc'; 		GRANT nba TO Fulgencia;					SET DEFAULT ROLE nba for Fulgencia;
     
 #	Guillermino y Guillermina
-	DROP USER IF EXISTS Guillermino;
- 	CREATE USER Guillermino IDENTIFIED BY 'abc';	GRANT conferencia_este TO Guillermino; 	SET DEFAULT ROLE conferencia_este for Guillermino;
-	DROP USER IF EXISTS Guillermina;
-	CREATE USER Guillermina IDENTIFIED BY 'abc'; 	GRANT conferencia_este TO Guillermina;	SET DEFAULT ROLE conferencia_este for Guillermina;
+	DROP USER IF EXISTS Guillermino; 	CREATE USER Guillermino IDENTIFIED BY 'abc';	GRANT conferencia_este TO Guillermino; 	SET DEFAULT ROLE conferencia_este for Guillermino;
+	DROP USER IF EXISTS Guillermina;	CREATE USER Guillermina IDENTIFIED BY 'abc'; 	GRANT conferencia_este TO Guillermina;	SET DEFAULT ROLE conferencia_este for Guillermina;
     
 #	Pancracio y Pancracia
-	DROP USER IF EXISTS Pancracio;
-    CREATE USER Pancracio IDENTIFIED BY 'abc';		GRANT conferencia_oeste TO Pancracio; 	SET DEFAULT ROLE conferencia_oeste for Pancracio;
-	DROP USER IF EXISTS Pancracia;
-    CREATE USER Pancracia IDENTIFIED BY 'abc'; 		GRANT conferencia_oeste TO Pancracia;	SET DEFAULT ROLE conferencia_oeste for Pancracia;
+	DROP USER IF EXISTS Pancracio; 		CREATE USER Pancracio IDENTIFIED BY 'abc';		GRANT conferencia_oeste TO Pancracio; 	SET DEFAULT ROLE conferencia_oeste for Pancracio;
+	DROP USER IF EXISTS Pancracia;		CREATE USER Pancracia IDENTIFIED BY 'abc'; 		GRANT conferencia_oeste TO Pancracia;	SET DEFAULT ROLE conferencia_oeste for Pancracia;
     
 #	Filomeno y Filomena
-	DROP USER IF EXISTS Filomeno;
-    CREATE USER Filomeno IDENTIFIED BY 'abc';		GRANT division_atlantico TO Filomeno; 	SET DEFAULT ROLE division_atlantico for Filomeno;
-	DROP USER IF EXISTS Filomena;
-    CREATE USER Filomena IDENTIFIED BY 'abc'; 		GRANT division_atlantico TO Filomena;	SET DEFAULT ROLE division_atlantico for Filomena;
+	DROP USER IF EXISTS Filomeno; 		CREATE USER Filomeno IDENTIFIED BY 'abc';		GRANT division_atlantico TO Filomeno; 	SET DEFAULT ROLE division_atlantico for Filomeno;
+	DROP USER IF EXISTS Filomena;		CREATE USER Filomena IDENTIFIED BY 'abc'; 		GRANT division_atlantico TO Filomena;	SET DEFAULT ROLE division_atlantico for Filomena;
     
 #	Anaximandro y Anaximandra
-	DROP USER IF EXISTS Anaximandro;
- 	CREATE USER Anaximandro IDENTIFIED BY 'abc';	GRANT division_sudeste TO Anaximandro; 	SET DEFAULT ROLE division_sudeste for Anaximandro;
-	DROP USER IF EXISTS Anaximandra;
-	CREATE USER Anaximandra IDENTIFIED BY 'abc'; 	GRANT division_sudeste TO Anaximandra; 	SET DEFAULT ROLE division_sudeste for Anaximandra;
+	DROP USER IF EXISTS Anaximandro; 	CREATE USER Anaximandro IDENTIFIED BY 'abc';	GRANT division_sudeste TO Anaximandro; 	SET DEFAULT ROLE division_sudeste for Anaximandro;
+	DROP USER IF EXISTS Anaximandra;	CREATE USER Anaximandra IDENTIFIED BY 'abc'; 	GRANT division_sudeste TO Anaximandra; 	SET DEFAULT ROLE division_sudeste for Anaximandra;
 
 #	Romino y Romina
-	DROP USER IF EXISTS Romino;
-    CREATE USER Romino IDENTIFIED BY 'abc';			GRANT division_central TO Romino; 		SET DEFAULT ROLE division_central for Romino;
-	DROP USER IF EXISTS Romina;
-    CREATE USER Romina IDENTIFIED BY 'abc'; 		GRANT division_central TO Romina;		SET DEFAULT ROLE division_central for Romina;
+	DROP USER IF EXISTS Romino; 		CREATE USER Romino IDENTIFIED BY 'abc';			GRANT division_central TO Romino; 		SET DEFAULT ROLE division_central for Romino;
+	DROP USER IF EXISTS Romina;			CREATE USER Romina IDENTIFIED BY 'abc'; 		GRANT division_central TO Romina;		SET DEFAULT ROLE division_central for Romina;
     
 #	Agapito y Agapita
-	DROP USER IF EXISTS Agapito;
-    CREATE USER Agapito IDENTIFIED BY 'abc';		GRANT division_pacifico TO Agapito; 	SET DEFAULT ROLE division_pacifico for Agapito;
-	DROP USER IF EXISTS Agapita;
-    CREATE USER Agapita IDENTIFIED BY 'abc'; 		GRANT division_pacifico TO Agapita;		SET DEFAULT ROLE division_pacifico for Agapita;
+	DROP USER IF EXISTS Agapito; 		CREATE USER Agapito IDENTIFIED BY 'abc';		GRANT division_pacifico TO Agapito; 	SET DEFAULT ROLE division_pacifico for Agapito;
+	DROP USER IF EXISTS Agapita;		CREATE USER Agapita IDENTIFIED BY 'abc'; 		GRANT division_pacifico TO Agapita;		SET DEFAULT ROLE division_pacifico for Agapita;
     
 #	Apolonio y Apolonia
-	DROP USER IF EXISTS Apolonio;
-    CREATE USER Apolonio IDENTIFIED BY 'abc';		GRANT division_sudoeste TO Apolonio; 	SET DEFAULT ROLE division_sudoeste for Apolonio;
-	DROP USER IF EXISTS Apolonia;
-    CREATE USER Apolonia IDENTIFIED BY 'abc'; 		GRANT division_sudoeste TO Apolonia;	SET DEFAULT ROLE division_sudoeste for Apolonia;
+	DROP USER IF EXISTS Apolonio; 		CREATE USER Apolonio IDENTIFIED BY 'abc';		GRANT division_sudoeste TO Apolonio; 	SET DEFAULT ROLE division_sudoeste for Apolonio;
+	DROP USER IF EXISTS Apolonia;		CREATE USER Apolonia IDENTIFIED BY 'abc'; 		GRANT division_sudoeste TO Apolonia;	SET DEFAULT ROLE division_sudoeste for Apolonia;
     
 #	Luzdivino y Luzdivina
-	DROP USER IF EXISTS Luzdivino;
-    CREATE USER Luzdivino IDENTIFIED BY 'abc';		GRANT division_noroeste TO Luzdivino; 	SET DEFAULT ROLE division_noroeste for Luzdivino;
-	DROP USER IF EXISTS Luzdivina;
-    CREATE USER Luzdivina IDENTIFIED BY 'abc'; 		GRANT division_noroeste TO Luzdivina;	SET DEFAULT ROLE division_noroeste for Luzdivina;
+	DROP USER IF EXISTS Luzdivino; 		CREATE USER Luzdivino IDENTIFIED BY 'abc';		GRANT division_noroeste TO Luzdivino; 	SET DEFAULT ROLE division_noroeste for Luzdivino;
+	DROP USER IF EXISTS Luzdivina;		CREATE USER Luzdivina IDENTIFIED BY 'abc'; 		GRANT division_noroeste TO Luzdivina;	SET DEFAULT ROLE division_noroeste for Luzdivina;
 	
 	 
 #--------------------------------------------------------------------------------------------
