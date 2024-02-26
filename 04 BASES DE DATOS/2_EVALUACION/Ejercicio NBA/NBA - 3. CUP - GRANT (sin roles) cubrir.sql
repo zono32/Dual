@@ -77,9 +77,6 @@ drop user if exists Luzdivina;
 create user Luzdivina identified by 'abc';
 
 
-# 'Agapita','Apolonio', 'Apolonia','Luzdivino', 'Luzdivina';
-#create user 'Fulgencio', 'Fulgencia','Guillermino', 'Guillermina','Pancracio', 'Pancracia','Filomeno', 'Filomena','Anaximandro', 'Anaximandra','Romino', 'Romina','Agapito',
-#'Agapita','Apolonio', 'Apolonia','Luzdivino', 'Luzdivina' identified by 'abc';
 
 #--------------------------------------------------------------------------------------------
 #	3. BORRAMOS Y CREAMOS LAS VISTAS
@@ -97,6 +94,7 @@ create user Luzdivina identified by 'abc';
 #		Vista de Equipos, Jugadores, Estadísticas y Partidos sobre la División Noroeste
 #--------------------------------------------------------------------------------------------
 
+    #		Vista General de TODOS los Equipos, otra para TODOS los Jugadores, otra para TODAS las Estadísticas y otra para TODOS los partidos
 
     DROP VIEW IF EXISTS VistaNBA_EQUIPOS;						CREATE VIEW VistaNBA_EQUIPOS						AS SELECT * FROM NBA.equipos;
 	DROP VIEW IF EXISTS VistaNBA_JUGADORES;						CREATE VIEW VistaNBA_JUGADORES						AS SELECT * FROM NBA.jugadores;
@@ -104,47 +102,68 @@ create user Luzdivina identified by 'abc';
 	DROP VIEW IF EXISTS VistaNBA_PARTIDOS;						CREATE VIEW VistaNBA_PARTIDOS						AS SELECT * FROM NBA.partidos;
 
 
+#		Vista de Equipos, Jugadores, Estadísticas y Partidos sobre la Conferencia ESTE
     
     DROP VIEW IF EXISTS VistaCONFERENCIA_ESTE_EQUIPOS;			CREATE VIEW VistaCONFERENCIA_ESTE_EQUIPOS			AS SELECT * FROM NBA.equipos 		where Conferencia = 'East';
 	DROP VIEW IF EXISTS VistaCONFERENCIA_ESTE_JUGADORES;		CREATE VIEW	VistaCONFERENCIA_ESTE_JUGADORES			AS SELECT * FROM NBA.jugadores 		where Equipo 	  IN (select nombre from VistaCONFERENCIA_ESTE_EQUIPOS);
     DROP VIEW IF EXISTS VistaCONFERENCIA_ESTE_ESTADISTICAS;		CREATE VIEW VistaCONFERENCIA_ESTE_ESTADISTICAS		AS SELECT * FROM NBA.estadisticas	where jugador 	  IN (select codigo from VistaCONFERENCIA_ESTE_JUGADORES);
 	DROP VIEW IF EXISTS VistaCONFERENCIA_ESTE_PARTIDOS;			CREATE VIEW VistaCONFERENCIA_ESTE_PARTIDOS			AS SELECT * FROM NBA.partidos		where EquipoLocal IN (select nombre from VistaCONFERENCIA_ESTE_EQUIPOS) AND EquipoVisitante IN (select nombre from VistaCONFERENCIA_ESTE_EQUIPOS);
     
+   
+#		Vista de Equipos, Jugadores, Estadísticas y Partidos sobre la Conferencia OESTE
+
 	DROP VIEW IF EXISTS VistaCONFERENCIA_OESTE_EQUIPOS;			CREATE VIEW VistaCONFERENCIA_OESTE_EQUIPOS			AS SELECT * FROM NBA.equipos 		where Conferencia = 'West';
     DROP VIEW IF EXISTS VistaCONFERENCIA_OESTE_JUGADORES;		CREATE VIEW	VistaCONFERENCIA_OESTE_JUGADORES		AS SELECT * FROM NBA.jugadores 		where Equipo 	  IN (select nombre from VistaCONFERENCIA_OESTE_EQUIPOS);
 	DROP VIEW IF EXISTS VistaCONFERENCIA_OESTE_ESTADISTICAS;	CREATE VIEW VistaCONFERENCIA_OESTE_ESTADISTICAS		AS SELECT * FROM NBA.estadisticas	where jugador 	  IN (select codigo from VistaCONFERENCIA_OESTE_JUGADORES);
     DROP VIEW IF EXISTS VistaCONFERENCIA_OESTE_PARTIDOS;		CREATE VIEW VistaCONFERENCIA_OESTE_PARTIDOS			AS SELECT * FROM NBA.partidos		where EquipoLocal IN (select nombre from VistaCONFERENCIA_OESTE_EQUIPOS) AND EquipoVisitante IN (select nombre from VistaCONFERENCIA_OESTE_EQUIPOS);
     
+    
+#		Vista de Equipos, Jugadores, Estadísticas y Partidos sobre la División Atlantica
+
     DROP VIEW IF EXISTS VistaDIVISION_ATLANTICA_EQUIPOS;		CREATE VIEW	VistaDIVISION_ATLANTICA_EQUIPOS			AS SELECT * FROM NBA.equipos		where Division = 'Atlantic';
 	DROP VIEW IF EXISTS VistaDIVISION_ATLANTICA_JUGADORES;		CREATE VIEW	VistaDIVISION_ATLANTICA_JUGADORES		AS SELECT * FROM NBA.jugadores 		where Equipo 	  IN (select nombre from VistaDIVISION_ATLANTICA_EQUIPOS);
     DROP VIEW IF EXISTS VistaDIVISION_ATLANTICA_ESTADISTICAS;	CREATE VIEW	VistaDIVISION_ATLANTICA_ESTADISTICAS	AS SELECT * FROM NBA.estadisticas	where jugador 	  IN (select codigo from VistaDIVISION_ATLANTICA_JUGADORES);
 	DROP VIEW IF EXISTS VistaDIVISION_ATLANTICA_PARTIDOS;		CREATE VIEW VistaDIVISION_ATLANTICA_PARTIDOS		AS SELECT * FROM NBA.partidos		where EquipoLocal IN (select nombre from VistaDIVISION_ATLANTICA_EQUIPOS) AND EquipoVisitante IN (select nombre from VistaDIVISION_ATLANTICA_EQUIPOS);
+
+
+#		Vista de Equipos, Jugadores, Estadísticas y Partidos sobre la División Sudeste
 
 	DROP VIEW IF EXISTS VistaDIVISION_SUDESTE_EQUIPOS;			CREATE VIEW	VistaDIVISION_SUDESTE_EQUIPOS			AS SELECT * FROM NBA.equipos		where Division = 'SouthEast';
     DROP VIEW IF EXISTS VistaDIVISION_SUDESTE_JUGADORES;		CREATE VIEW	VistaDIVISION_SUDESTE_JUGADORES			AS SELECT * FROM NBA.jugadores		where Equipo 	  IN (select nombre from VistaDIVISION_SUDESTE_EQUIPOS);
 	DROP VIEW IF EXISTS VistaDIVISION_SUDESTE_ESTADISTICAS;  	CREATE VIEW	VistaDIVISION_SUDESTE_ESTADISTICAS		AS SELECT * FROM NBA.estadisticas	where jugador 	  IN (select codigo from VistaDIVISION_SUDESTE_JUGADORES);
     DROP VIEW IF EXISTS VistaDIVISION_SUDESTE_PARTIDOS;			CREATE VIEW	VistaDIVISION_SUDESTE_PARTIDOS			AS SELECT * FROM NBA.partidos		where EquipoLocal IN (select nombre from VistaDIVISION_SUDESTE_EQUIPOS) AND EquipoVisitante IN (select nombre from VistaDIVISION_ATLANTICA_EQUIPOS);
 
+
+#		Vista de Equipos, Jugadores, Estadísticas y Partidos sobre la División Central
+
     DROP VIEW IF EXISTS VistaDIVISION_CENTRAL_EQUIPOS;			CREATE VIEW	VistaDIVISION_CENTRAL_EQUIPOS			AS SELECT * FROM NBA.equipos		where Division = 'Central';
 	DROP VIEW IF EXISTS VistaDIVISION_CENTRAL_JUGADORES;		CREATE VIEW	VistaDIVISION_CENTRAL_JUGADORES			AS SELECT * FROM NBA.jugadores		where Equipo 	  IN (select nombre from VistaDIVISION_SUDESTE_EQUIPOS);
     DROP VIEW IF EXISTS VistaDIVISION_CENTRAL_ESTADISTICAS;		CREATE VIEW	VistaDIVISION_CENTRAL_ESTADISTICAS		AS SELECT * FROM NBA.estadisticas	where jugador 	  IN (select codigo from VistaDIVISION_CENTRAL_JUGADORES);
 	DROP VIEW IF EXISTS VistaDIVISION_CENTRAL_PARTIDOS;			CREATE VIEW	VistaDIVISION_CENTRAL_PARTIDOS			AS SELECT * FROM NBA.partidos		where EquipoLocal IN (select nombre from VistaDIVISION_CENTRAL_EQUIPOS) AND EquipoVisitante IN (select nombre from VistaDIVISION_CENTRAL_EQUIPOS);
+
+
+#		Vista de Equipos, Jugadores, Estadísticas y Partidos sobre la División Pacífico
 
 	DROP VIEW IF EXISTS VistaDIVISION_PACIFIC_EQUIPOS;			CREATE VIEW	VistaDIVISION_PACIFIC_EQUIPOS			AS SELECT * FROM NBA.equipos		where Division = 'Pacific';
 	DROP VIEW IF EXISTS VistaDIVISION_PACIFIC_JUGADORES;		CREATE VIEW	VistaDIVISION_PACIFIC_JUGADORES			AS SELECT * FROM NBA.jugadores 		where Equipo 	  IN (select nombre from VistaDIVISION_PACIFIC_EQUIPOS);
     DROP VIEW IF EXISTS VistaDIVISION_PACIFIC_ESTADISTICAS;		CREATE VIEW	VistaDIVISION_PACIFIC_ESTADISTICAS		AS SELECT * FROM NBA.estadisticas	where jugador 	  IN (select codigo from VistaDIVISION_PACIFIC_JUGADORES);
 	DROP VIEW IF EXISTS VistaDIVISION_PACIFIC_PARTIDOS;			CREATE VIEW VistaDIVISION_PACIFIC_PARTIDOS			AS SELECT * FROM NBA.partidos		where EquipoLocal IN (select nombre from VistaDIVISION_PACIFIC_EQUIPOS) AND EquipoVisitante IN (select nombre from VistaDIVISION_PACIFIC_EQUIPOS);
 
+
+#		Vista de Equipos, Jugadores, Estadísticas y Partidos sobre la División Sudoeste
+
 	DROP VIEW IF EXISTS VistaDIVISION_SUDOESTE_EQUIPOS;			CREATE VIEW	VistaDIVISION_SUDOESTE_EQUIPOS			AS SELECT * FROM NBA.equipos		where Division = 'SouthWest';
     DROP VIEW IF EXISTS VistaDIVISION_SUDOESTE_JUGADORES;		CREATE VIEW	VistaDIVISION_SUDOESTE_JUGADORES		AS SELECT * FROM NBA.jugadores		where Equipo 	  IN (select nombre from VistaDIVISION_SUDOESTE_EQUIPOS);
 	DROP VIEW IF EXISTS VistaDIVISION_SUDOESTE_ESTADISTICAS; 	CREATE VIEW	VistaDIVISION_SUDOESTE_ESTADISTICAS		AS SELECT * FROM NBA.estadisticas	where jugador 	  IN (select codigo from VistaDIVISION_SUDOESTE_JUGADORES);
     DROP VIEW IF EXISTS VistaDIVISION_SUDOESTE_PARTIDOS;		CREATE VIEW	VistaDIVISION_SUDOESTE_PARTIDOS			AS SELECT * FROM NBA.partidos		where EquipoLocal IN (select nombre from VistaDIVISION_SUDOESTE_EQUIPOS) AND EquipoVisitante IN (select nombre from VistaDIVISION_SUDOESTE_EQUIPOS);
 
+
+#		Vista de Equipos, Jugadores, Estadísticas y Partidos sobre la División Noroeste
+
     DROP VIEW IF EXISTS VistaDIVISION_NOROESTE_EQUIPOS;			CREATE VIEW	VistaDIVISION_NOROESTE_EQUIPOS			AS SELECT * FROM NBA.equipos		where Division = 'NorthWest';
 	DROP VIEW IF EXISTS VistaDIVISION_NOROESTE_JUGADORES;		CREATE VIEW	VistaDIVISION_NOROESTE_JUGADORES		AS SELECT * FROM NBA.jugadores		where Equipo 	  IN (select nombre from VistaDIVISION_NOROESTE_EQUIPOS);
     DROP VIEW IF EXISTS VistaDIVISION_NOROESTE_ESTADISTICAS;	CREATE VIEW	VistaDIVISION_NOROESTE_ESTADISTICAS		AS SELECT * FROM NBA.estadisticas	where jugador 	  IN (select codigo from VistaDIVISION_NOROESTE_JUGADORES);
 	DROP VIEW IF EXISTS VistaDIVISION_NOROESTE_PARTIDOS;		CREATE VIEW	VistaDIVISION_NOROESTE_PARTIDOS			AS SELECT * FROM NBA.partidos		where EquipoLocal IN (select nombre from VistaDIVISION_NOROESTE_EQUIPOS) AND EquipoVisitante IN (select nombre from VistaDIVISION_NOROESTE_EQUIPOS);
-
 
 
 
@@ -166,6 +185,7 @@ create user Luzdivina identified by 'abc';
 #	Luzdivino y Luzdivina					Todos los datos de Equipos, Jugadores, Estadisticas y Partidos de la División Noroeste
 #--------------------------------------------------------------------------------------------
 
+#	Fulgencio y Fulgencia					Todos los datos de Equipos, Jugadores, Estadisticas y Partidos
 
 GRANT ALL PRIVILEGES ON VistaNBA_EQUIPOS   		TO fulgencio;
 GRANT ALL PRIVILEGES ON VistaNBA_JUGADORES 		TO fulgencio;
@@ -177,6 +197,9 @@ GRANT ALL PRIVILEGES ON VistaNBA_JUGADORES 		TO fulgencia;
 GRANT ALL PRIVILEGES ON VistaNBA_ESTADISTICAS 	TO fulgencia;
 GRANT ALL PRIVILEGES ON VistaNBA_PARTIDOS 		TO fulgencia;
 
+
+#	Guillermino y Guillermina				Todos los datos de Equipos, Jugadores, Estadisticas y Partidos de la Conferencia ESTE
+
 GRANT ALL PRIVILEGES ON VistaCONFERENCIA_ESTE_EQUIPOS  		TO Guillermino;
 GRANT ALL PRIVILEGES ON VistaCONFERENCIA_ESTE_JUGADORES 	TO Guillermino;
 GRANT ALL PRIVILEGES ON VistaCONFERENCIA_ESTE_ESTADISTICAS 	TO Guillermino;
@@ -186,6 +209,9 @@ GRANT ALL PRIVILEGES ON VistaCONFERENCIA_ESTE_EQUIPOS  		TO Guillermina;
 GRANT ALL PRIVILEGES ON VistaCONFERENCIA_ESTE_JUGADORES 	TO Guillermina;
 GRANT ALL PRIVILEGES ON VistaCONFERENCIA_ESTE_ESTADISTICAS 	TO Guillermina;
 GRANT ALL PRIVILEGES ON VistaCONFERENCIA_ESTE_PARTIDOS  	TO Guillermina;
+
+
+#	Pancracio y Pancracia					Todos los datos de Equipos, Jugadores, Estadisticas y Partidos de la Conferencia OESTE
 
 GRANT ALL PRIVILEGES ON VistaCONFERENCIA_OESTE_EQUIPOS  	TO Pancracio;
 GRANT ALL PRIVILEGES ON VistaCONFERENCIA_OESTE_JUGADORES 	TO Pancracio;
@@ -197,6 +223,9 @@ GRANT ALL PRIVILEGES ON VistaCONFERENCIA_OESTE_JUGADORES	TO Pancracia;
 GRANT ALL PRIVILEGES ON VistaCONFERENCIA_OESTE_ESTADISTICAS TO Pancracia;
 GRANT ALL PRIVILEGES ON VistaCONFERENCIA_OESTE_PARTIDOS  	TO Pancracia;
 
+
+#   Filomeno y Filomena						Todos los datos de Equipos, Jugadores, Estadisticas y Partidos de la División Atlántica
+
 GRANT ALL PRIVILEGES ON VistaDIVISION_ATLANTICA_EQUIPOS  	 TO Filomeno;
 GRANT ALL PRIVILEGES ON VistaDIVISION_ATLANTICA_JUGADORES 	 TO Filomeno;
 GRANT ALL PRIVILEGES ON VistaDIVISION_ATLANTICA_ESTADISTICAS TO Filomeno;
@@ -206,6 +235,9 @@ GRANT ALL PRIVILEGES ON VistaDIVISION_ATLANTICA_EQUIPOS  	 TO Filomena;
 GRANT ALL PRIVILEGES ON VistaDIVISION_ATLANTICA_JUGADORES 	 TO Filomena;
 GRANT ALL PRIVILEGES ON VistaDIVISION_ATLANTICA_ESTADISTICAS TO Filomena;
 GRANT ALL PRIVILEGES ON VistaDIVISION_ATLANTICA_PARTIDOS  	 TO Filomena;
+
+
+#	Anaximandro y Anaximandra				Todos los datos de Equipos, Jugadores, Estadisticas y Partidos de la División Sudeste
 
 GRANT ALL PRIVILEGES ON VistaDIVISION_SUDESTE_EQUIPOS  		TO Anaximandro;
 GRANT ALL PRIVILEGES ON VistaDIVISION_SUDESTE_JUGADORES		TO Anaximandro;
@@ -217,6 +249,9 @@ GRANT ALL PRIVILEGES ON VistaDIVISION_SUDESTE_JUGADORES		TO Anaximandra;
 GRANT ALL PRIVILEGES ON VistaDIVISION_SUDESTE_ESTADISTICAS 	TO Anaximandra;
 GRANT ALL PRIVILEGES ON VistaDIVISION_SUDESTE_PARTIDOS  	TO Anaximandra;
 
+
+#	Romino y Romina							Todos los datos de Equipos, Jugadores, Estadisticas y Partidos de la División Central
+
 GRANT ALL PRIVILEGES ON VistaDIVISION_CENTRAL_EQUIPOS  		TO Romino;
 GRANT ALL PRIVILEGES ON VistaDIVISION_CENTRAL_JUGADORES		TO Romino;
 GRANT ALL PRIVILEGES ON VistaDIVISION_CENTRAL_ESTADISTICAS 	TO Romino;
@@ -226,6 +261,9 @@ GRANT ALL PRIVILEGES ON VistaDIVISION_CENTRAL_EQUIPOS  		TO Romina;
 GRANT ALL PRIVILEGES ON VistaDIVISION_CENTRAL_JUGADORES		TO Romina;
 GRANT ALL PRIVILEGES ON VistaDIVISION_CENTRAL_ESTADISTICAS 	TO Romina;
 GRANT ALL PRIVILEGES ON VistaDIVISION_CENTRAL_PARTIDOS  	TO Romina;
+
+
+#	Agapito y Agapita						Todos los datos de Equipos, Jugadores, Estadisticas y Partidos de la División Pacífico
 
 GRANT ALL PRIVILEGES ON VistaDIVISION_PACIFIC_EQUIPOS  		TO Agapito;
 GRANT ALL PRIVILEGES ON VistaDIVISION_PACIFIC_JUGADORES		TO Agapito;
@@ -237,6 +275,9 @@ GRANT ALL PRIVILEGES ON VistaDIVISION_PACIFIC_JUGADORES		TO Agapita;
 GRANT ALL PRIVILEGES ON VistaDIVISION_PACIFIC_ESTADISTICAS 	TO Agapita;
 GRANT ALL PRIVILEGES ON VistaDIVISION_PACIFIC_PARTIDOS  	TO Agapita;
 
+
+#	Apolonio y Apolonia						Todos los datos de Equipos, Jugadores, Estadisticas y Partidos de la División Sudoeste
+
 GRANT ALL PRIVILEGES ON VistaDIVISION_SUDOESTE_EQUIPOS  		TO Apolonio;
 GRANT ALL PRIVILEGES ON VistaDIVISION_SUDOESTE_JUGADORES		TO Apolonio;
 GRANT ALL PRIVILEGES ON VistaDIVISION_SUDOESTE_ESTADISTICAS 	TO Apolonio;
@@ -246,6 +287,9 @@ GRANT ALL PRIVILEGES ON VistaDIVISION_SUDOESTE_EQUIPOS  		TO Apolonia;
 GRANT ALL PRIVILEGES ON VistaDIVISION_SUDOESTE_JUGADORES		TO Apolonia;
 GRANT ALL PRIVILEGES ON VistaDIVISION_SUDOESTE_ESTADISTICAS 	TO Apolonia;
 GRANT ALL PRIVILEGES ON VistaDIVISION_SUDOESTE_PARTIDOS  		TO Apolonia;
+
+
+#	Luzdivino y Luzdivina					Todos los datos de Equipos, Jugadores, Estadisticas y Partidos de la División Noroeste
 
 GRANT ALL PRIVILEGES ON VistaDIVISION_NOROESTE_EQUIPOS  		TO Luzdivino;
 GRANT ALL PRIVILEGES ON VistaDIVISION_NOROESTE_JUGADORES		TO Luzdivino;

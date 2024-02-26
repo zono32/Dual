@@ -47,48 +47,71 @@ CREATE ROLE division_noroeste;
 #		Vista de Equipos, Jugadores, Estadísticas y Partidos sobre la División Noroeste
 #--------------------------------------------------------------------------------------------
 	
-    
+#		Vista General de TODOS los Equipos, otra para TODOS los Jugadores, otra para TODAS las Estadísticas y otra para TODOS los partidos
+
     DROP VIEW IF EXISTS VistaNBA_EQUIPOS;						CREATE VIEW VistaNBA_EQUIPOS						AS SELECT * FROM NBA.equipos;
 	DROP VIEW IF EXISTS VistaNBA_JUGADORES;						CREATE VIEW VistaNBA_JUGADORES						AS SELECT * FROM NBA.jugadores;
 	DROP VIEW IF EXISTS VistaNBA_ESTADISTICAS;					CREATE VIEW VistaNBA_ESTADISTICAS					AS SELECT * FROM NBA.estadisticas;
 	DROP VIEW IF EXISTS VistaNBA_PARTIDOS;						CREATE VIEW VistaNBA_PARTIDOS						AS SELECT * FROM NBA.partidos;
 
 
+#		Vista de Equipos, Jugadores, Estadísticas y Partidos sobre la Conferencia ESTE
     
     DROP VIEW IF EXISTS VistaCONFERENCIA_ESTE_EQUIPOS;			CREATE VIEW VistaCONFERENCIA_ESTE_EQUIPOS			AS SELECT * FROM NBA.equipos 		where Conferencia = 'East';
 	DROP VIEW IF EXISTS VistaCONFERENCIA_ESTE_JUGADORES;		CREATE VIEW	VistaCONFERENCIA_ESTE_JUGADORES			AS SELECT * FROM NBA.jugadores 		where Equipo 	  IN (select nombre from VistaCONFERENCIA_ESTE_EQUIPOS);
     DROP VIEW IF EXISTS VistaCONFERENCIA_ESTE_ESTADISTICAS;		CREATE VIEW VistaCONFERENCIA_ESTE_ESTADISTICAS		AS SELECT * FROM NBA.estadisticas	where jugador 	  IN (select codigo from VistaCONFERENCIA_ESTE_JUGADORES);
 	DROP VIEW IF EXISTS VistaCONFERENCIA_ESTE_PARTIDOS;			CREATE VIEW VistaCONFERENCIA_ESTE_PARTIDOS			AS SELECT * FROM NBA.partidos		where EquipoLocal IN (select nombre from VistaCONFERENCIA_ESTE_EQUIPOS) AND EquipoVisitante IN (select nombre from VistaCONFERENCIA_ESTE_EQUIPOS);
     
+   
+#		Vista de Equipos, Jugadores, Estadísticas y Partidos sobre la Conferencia OESTE
+
 	DROP VIEW IF EXISTS VistaCONFERENCIA_OESTE_EQUIPOS;			CREATE VIEW VistaCONFERENCIA_OESTE_EQUIPOS			AS SELECT * FROM NBA.equipos 		where Conferencia = 'West';
     DROP VIEW IF EXISTS VistaCONFERENCIA_OESTE_JUGADORES;		CREATE VIEW	VistaCONFERENCIA_OESTE_JUGADORES		AS SELECT * FROM NBA.jugadores 		where Equipo 	  IN (select nombre from VistaCONFERENCIA_OESTE_EQUIPOS);
 	DROP VIEW IF EXISTS VistaCONFERENCIA_OESTE_ESTADISTICAS;	CREATE VIEW VistaCONFERENCIA_OESTE_ESTADISTICAS		AS SELECT * FROM NBA.estadisticas	where jugador 	  IN (select codigo from VistaCONFERENCIA_OESTE_JUGADORES);
     DROP VIEW IF EXISTS VistaCONFERENCIA_OESTE_PARTIDOS;		CREATE VIEW VistaCONFERENCIA_OESTE_PARTIDOS			AS SELECT * FROM NBA.partidos		where EquipoLocal IN (select nombre from VistaCONFERENCIA_OESTE_EQUIPOS) AND EquipoVisitante IN (select nombre from VistaCONFERENCIA_OESTE_EQUIPOS);
     
+    
+#		Vista de Equipos, Jugadores, Estadísticas y Partidos sobre la División Atlantica
+
     DROP VIEW IF EXISTS VistaDIVISION_ATLANTICA_EQUIPOS;		CREATE VIEW	VistaDIVISION_ATLANTICA_EQUIPOS			AS SELECT * FROM NBA.equipos		where Division = 'Atlantic';
 	DROP VIEW IF EXISTS VistaDIVISION_ATLANTICA_JUGADORES;		CREATE VIEW	VistaDIVISION_ATLANTICA_JUGADORES		AS SELECT * FROM NBA.jugadores 		where Equipo 	  IN (select nombre from VistaDIVISION_ATLANTICA_EQUIPOS);
     DROP VIEW IF EXISTS VistaDIVISION_ATLANTICA_ESTADISTICAS;	CREATE VIEW	VistaDIVISION_ATLANTICA_ESTADISTICAS	AS SELECT * FROM NBA.estadisticas	where jugador 	  IN (select codigo from VistaDIVISION_ATLANTICA_JUGADORES);
 	DROP VIEW IF EXISTS VistaDIVISION_ATLANTICA_PARTIDOS;		CREATE VIEW VistaDIVISION_ATLANTICA_PARTIDOS		AS SELECT * FROM NBA.partidos		where EquipoLocal IN (select nombre from VistaDIVISION_ATLANTICA_EQUIPOS) AND EquipoVisitante IN (select nombre from VistaDIVISION_ATLANTICA_EQUIPOS);
+
+
+#		Vista de Equipos, Jugadores, Estadísticas y Partidos sobre la División Sudeste
 
 	DROP VIEW IF EXISTS VistaDIVISION_SUDESTE_EQUIPOS;			CREATE VIEW	VistaDIVISION_SUDESTE_EQUIPOS			AS SELECT * FROM NBA.equipos		where Division = 'SouthEast';
     DROP VIEW IF EXISTS VistaDIVISION_SUDESTE_JUGADORES;		CREATE VIEW	VistaDIVISION_SUDESTE_JUGADORES			AS SELECT * FROM NBA.jugadores		where Equipo 	  IN (select nombre from VistaDIVISION_SUDESTE_EQUIPOS);
 	DROP VIEW IF EXISTS VistaDIVISION_SUDESTE_ESTADISTICAS;  	CREATE VIEW	VistaDIVISION_SUDESTE_ESTADISTICAS		AS SELECT * FROM NBA.estadisticas	where jugador 	  IN (select codigo from VistaDIVISION_SUDESTE_JUGADORES);
     DROP VIEW IF EXISTS VistaDIVISION_SUDESTE_PARTIDOS;			CREATE VIEW	VistaDIVISION_SUDESTE_PARTIDOS			AS SELECT * FROM NBA.partidos		where EquipoLocal IN (select nombre from VistaDIVISION_SUDESTE_EQUIPOS) AND EquipoVisitante IN (select nombre from VistaDIVISION_ATLANTICA_EQUIPOS);
 
+
+#		Vista de Equipos, Jugadores, Estadísticas y Partidos sobre la División Central
+
     DROP VIEW IF EXISTS VistaDIVISION_CENTRAL_EQUIPOS;			CREATE VIEW	VistaDIVISION_CENTRAL_EQUIPOS			AS SELECT * FROM NBA.equipos		where Division = 'Central';
 	DROP VIEW IF EXISTS VistaDIVISION_CENTRAL_JUGADORES;		CREATE VIEW	VistaDIVISION_CENTRAL_JUGADORES			AS SELECT * FROM NBA.jugadores		where Equipo 	  IN (select nombre from VistaDIVISION_SUDESTE_EQUIPOS);
     DROP VIEW IF EXISTS VistaDIVISION_CENTRAL_ESTADISTICAS;		CREATE VIEW	VistaDIVISION_CENTRAL_ESTADISTICAS		AS SELECT * FROM NBA.estadisticas	where jugador 	  IN (select codigo from VistaDIVISION_CENTRAL_JUGADORES);
 	DROP VIEW IF EXISTS VistaDIVISION_CENTRAL_PARTIDOS;			CREATE VIEW	VistaDIVISION_CENTRAL_PARTIDOS			AS SELECT * FROM NBA.partidos		where EquipoLocal IN (select nombre from VistaDIVISION_CENTRAL_EQUIPOS) AND EquipoVisitante IN (select nombre from VistaDIVISION_CENTRAL_EQUIPOS);
+
+
+#		Vista de Equipos, Jugadores, Estadísticas y Partidos sobre la División Pacífico
 
 	DROP VIEW IF EXISTS VistaDIVISION_PACIFIC_EQUIPOS;			CREATE VIEW	VistaDIVISION_PACIFIC_EQUIPOS			AS SELECT * FROM NBA.equipos		where Division = 'Pacific';
 	DROP VIEW IF EXISTS VistaDIVISION_PACIFIC_JUGADORES;		CREATE VIEW	VistaDIVISION_PACIFIC_JUGADORES			AS SELECT * FROM NBA.jugadores 		where Equipo 	  IN (select nombre from VistaDIVISION_PACIFIC_EQUIPOS);
     DROP VIEW IF EXISTS VistaDIVISION_PACIFIC_ESTADISTICAS;		CREATE VIEW	VistaDIVISION_PACIFIC_ESTADISTICAS		AS SELECT * FROM NBA.estadisticas	where jugador 	  IN (select codigo from VistaDIVISION_PACIFIC_JUGADORES);
 	DROP VIEW IF EXISTS VistaDIVISION_PACIFIC_PARTIDOS;			CREATE VIEW VistaDIVISION_PACIFIC_PARTIDOS			AS SELECT * FROM NBA.partidos		where EquipoLocal IN (select nombre from VistaDIVISION_PACIFIC_EQUIPOS) AND EquipoVisitante IN (select nombre from VistaDIVISION_PACIFIC_EQUIPOS);
 
+
+#		Vista de Equipos, Jugadores, Estadísticas y Partidos sobre la División Sudoeste
+
 	DROP VIEW IF EXISTS VistaDIVISION_SUDOESTE_EQUIPOS;			CREATE VIEW	VistaDIVISION_SUDOESTE_EQUIPOS			AS SELECT * FROM NBA.equipos		where Division = 'SouthWest';
     DROP VIEW IF EXISTS VistaDIVISION_SUDOESTE_JUGADORES;		CREATE VIEW	VistaDIVISION_SUDOESTE_JUGADORES		AS SELECT * FROM NBA.jugadores		where Equipo 	  IN (select nombre from VistaDIVISION_SUDOESTE_EQUIPOS);
 	DROP VIEW IF EXISTS VistaDIVISION_SUDOESTE_ESTADISTICAS; 	CREATE VIEW	VistaDIVISION_SUDOESTE_ESTADISTICAS		AS SELECT * FROM NBA.estadisticas	where jugador 	  IN (select codigo from VistaDIVISION_SUDOESTE_JUGADORES);
     DROP VIEW IF EXISTS VistaDIVISION_SUDOESTE_PARTIDOS;		CREATE VIEW	VistaDIVISION_SUDOESTE_PARTIDOS			AS SELECT * FROM NBA.partidos		where EquipoLocal IN (select nombre from VistaDIVISION_SUDOESTE_EQUIPOS) AND EquipoVisitante IN (select nombre from VistaDIVISION_SUDOESTE_EQUIPOS);
+
+
+#		Vista de Equipos, Jugadores, Estadísticas y Partidos sobre la División Noroeste
 
     DROP VIEW IF EXISTS VistaDIVISION_NOROESTE_EQUIPOS;			CREATE VIEW	VistaDIVISION_NOROESTE_EQUIPOS			AS SELECT * FROM NBA.equipos		where Division = 'NorthWest';
 	DROP VIEW IF EXISTS VistaDIVISION_NOROESTE_JUGADORES;		CREATE VIEW	VistaDIVISION_NOROESTE_JUGADORES		AS SELECT * FROM NBA.jugadores		where Equipo 	  IN (select nombre from VistaDIVISION_NOROESTE_EQUIPOS);
@@ -166,95 +189,43 @@ GRANT ALL ON DIVISION_NOROESTE_PARTIDOS TO division_noroeste;
 #	Apolonio y Apolonia
 #	Luzdivino y Luzdivina
 #--------------------------------------------------------------------------------------------
-	 DROP USER IF EXISTS Fulgencio;
-	CREATE USER Fulgencio IDENTIFIED BY 'abc';
-	GRANT nba TO Fulgencio;
-	SET DEFAULT ROLE nba FOR Fulgencio;
 
-	DROP USER IF EXISTS Fulgencia;
-	CREATE USER Fulgencia IDENTIFIED BY 'abc';
-	GRANT nba TO Fulgencia;
-	SET DEFAULT ROLE nba FOR Fulgencia;
+#	Fulgencio y Fulgencia
+	DROP USER IF EXISTS Fulgencio; 		CREATE USER Fulgencio IDENTIFIED BY 'abc';		GRANT nba TO Fulgencio; 	SET DEFAULT ROLE nba to Fulgencio;  #for????
+	DROP USER IF EXISTS Fulgencia;		CREATE USER Fulgencia IDENTIFIED BY 'abc'; 		GRANT nba TO Fulgencia;		SET DEFAULT ROLE nba to Fulgencia;
+    
+#	Guillermino y Guillermina
+	DROP USER IF EXISTS Guillermino; 	CREATE USER Guillermino IDENTIFIED BY 'abc';	GRANT nba TO Guillermino; 	SET DEFAULT ROLE nba to Guillermino;
+	DROP USER IF EXISTS Guillermina;	CREATE USER Guillermina IDENTIFIED BY 'abc'; 	GRANT nba TO Guillermina;	SET DEFAULT ROLE nba to Guillermina;
+    
+#	Pancracio y Pancracia
+	DROP USER IF EXISTS Pancracio; 		CREATE USER Pancracio IDENTIFIED BY 'abc';		GRANT nba TO Pancracio; 	SET DEFAULT ROLE nba to Pancracio;
+	DROP USER IF EXISTS Pancracia;		CREATE USER Pancracia IDENTIFIED BY 'abc'; 		GRANT nba TO Pancracia;		SET DEFAULT ROLE nba to Pancracia;
+    
+#	Filomeno y Filomena
+	DROP USER IF EXISTS Filomeno; 		CREATE USER Filomeno IDENTIFIED BY 'abc';		GRANT nba TO Filomeno; 		SET DEFAULT ROLE nba to Filomeno;
+	DROP USER IF EXISTS Filomena;		CREATE USER Filomena IDENTIFIED BY 'abc'; 		GRANT nba TO Filomena;		SET DEFAULT ROLE nba to Filomena;
+    
+#	Anaximandro y Anaximandra
+	DROP USER IF EXISTS Anaximandro; 	CREATE USER Anaximandro IDENTIFIED BY 'abc';	GRANT nba TO Anaximandro; 	SET DEFAULT ROLE nba to Anaximandro;
+	DROP USER IF EXISTS Anaximandra;	CREATE USER Anaximandra IDENTIFIED BY 'abc'; 	GRANT nba TO Anaximandra; 	SET DEFAULT ROLE nba to Anaximandra;
 
-	DROP USER IF EXISTS Guillermino;
-	CREATE USER Guillermino IDENTIFIED BY 'abc';
-	GRANT conferencia_este TO Guillermino;
-	SET DEFAULT ROLE conferencia_este FOR Guillermino;
-
-	DROP USER IF EXISTS Guillermina;
-	CREATE USER Guillermina IDENTIFIED BY 'abc';
-	GRANT conferencia_este TO Guillermina;
-	SET DEFAULT ROLE conferencia_este FOR Guillermina;
-
-	DROP USER IF EXISTS Pancracio;
-	CREATE USER Pancracio IDENTIFIED BY 'abc';
-	GRANT conferencia_oeste TO Guillermino;
-	SET DEFAULT ROLE conferencia_oeste FOR Guillermino;
-
-	DROP USER IF EXISTS Pancracia;
-	CREATE USER Pancracia IDENTIFIED BY 'abc';
-	GRANT conferencia_oeste TO Pancracia;
-	SET DEFAULT ROLE conferencia_oeste FOR Pancracia;
-
-	DROP USER IF EXISTS Filomeno;
-	CREATE USER Filomeno IDENTIFIED BY 'abc';
-	GRANT division_atlantico TO Filomeno;
-	SET DEFAULT ROLE division_atlantico FOR Filomeno;
-
-	DROP USER IF EXISTS Filomena;
-	CREATE USER Filomena IDENTIFIED BY 'abc';
-	GRANT division_atlantico TO Filomena;
-	SET DEFAULT ROLE division_atlantico FOR Filomena;
-
-	DROP USER IF EXISTS Anaximandro;
-	CREATE USER Anaximandro IDENTIFIED BY 'abc';
-	GRANT division_sudeste TO Anaximandro;
-	SET DEFAULT ROLE division_sudeste FOR Anaximandro;
-
-	DROP USER IF EXISTS Anaximandra;
-	CREATE USER Anaximandra IDENTIFIED BY 'abc';
-	GRANT division_sudeste TO Anaximandra;
-	SET DEFAULT ROLE division_sudeste FOR Anaximandra;
-
-	DROP USER IF EXISTS Romino;
-	CREATE USER Romino IDENTIFIED BY 'abc';
-	GRANT division_central TO Romino;
-	SET DEFAULT ROLE division_central FOR Romino;
-
-	DROP USER IF EXISTS Romina;
-	CREATE USER Romina IDENTIFIED BY 'abc';
-	GRANT division_central TO Romina;
-	SET DEFAULT ROLE division_central FOR Romina;
-
-	DROP USER IF EXISTS Agapito;
-	CREATE USER Agapito IDENTIFIED BY 'abc';
-	GRANT division_pacifico TO Agapito;
-	SET DEFAULT ROLE division_pacifico FOR Agapito;
-
-	DROP USER IF EXISTS Agapita;
-	CREATE USER Agapita IDENTIFIED BY 'abc';
-	GRANT division_pacifico TO Agapita;
-	SET DEFAULT ROLE division_pacifico FOR Agapita;
-
-	DROP USER IF EXISTS Apolonio;
-	CREATE USER Apolonio IDENTIFIED BY 'abc';
-	GRANT division_sudoeste TO Apolonio;
-	SET DEFAULT ROLE division_sudoeste FOR Apolonio;
-
-	DROP USER IF EXISTS Apolonia;
-	CREATE USER Apolonia IDENTIFIED BY 'abc';
-	GRANT division_sudoeste TO Apolonia;
-	SET DEFAULT ROLE division_sudoeste FOR Apolonia;
-
-	DROP USER IF EXISTS Luzdivino;
-	CREATE USER Luzdivino IDENTIFIED BY 'abc';
-	GRANT division_noroeste TO Luzdivino;
-	SET DEFAULT ROLE division_noroeste FOR Luzdivino;
-
-	DROP USER IF EXISTS Luzdivina;
-	CREATE USER Luzdivina IDENTIFIED BY 'abc';
-	GRANT division_noroeste TO Luzdivina;
-	SET DEFAULT ROLE division_noroeste FOR Luzdivina;
+#	Romino y Romina
+	DROP USER IF EXISTS Romino; 		CREATE USER Romino IDENTIFIED BY 'abc';			GRANT nba TO Romino; 		SET DEFAULT ROLE nba to Romino;
+	DROP USER IF EXISTS Romina;			CREATE USER Romina IDENTIFIED BY 'abc'; 		GRANT nba TO Romina;		SET DEFAULT ROLE nba to Romina;
+    
+#	Agapito y Agapita
+	DROP USER IF EXISTS Agapito; 		CREATE USER Agapito IDENTIFIED BY 'abc';		GRANT nba TO Agapito; 		SET DEFAULT ROLE nba to Agapito;
+	DROP USER IF EXISTS Agapita;		CREATE USER Agapita IDENTIFIED BY 'abc'; 		GRANT nba TO Agapita;		SET DEFAULT ROLE nba to Agapita;
+    
+#	Apolonio y Apolonia
+	DROP USER IF EXISTS Apolonio; 		CREATE USER Apolonio IDENTIFIED BY 'abc';		GRANT nba TO Apolonio; 		SET DEFAULT ROLE nba to Apolonio;
+	DROP USER IF EXISTS Apolonia;		CREATE USER Apolonia IDENTIFIED BY 'abc'; 		GRANT nba TO Apolonia;		SET DEFAULT ROLE nba to Apolonia;
+    
+#	Luzdivino y Luzdivina
+	DROP USER IF EXISTS Luzdivino; 		CREATE USER Luzdivino IDENTIFIED BY 'abc';		GRANT nba TO Luzdivino; 	SET DEFAULT ROLE nba to Luzdivino;
+	DROP USER IF EXISTS Luzdivina;		CREATE USER Luzdivina IDENTIFIED BY 'abc'; 		GRANT nba TO Luzdivina;		SET DEFAULT ROLE nba to Luzdivina;
+	
 	 
 #--------------------------------------------------------------------------------------------
 #	6. REFRESCA LOS PRIVILEGIOS
