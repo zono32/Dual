@@ -2,8 +2,8 @@
 class Usuario implements JsonSerializable{
 
     use ViewData;
-    private int $id;
-    private string $email;
+    private ? int $id = null;
+    private string $email ="";
 
     public function __construct(int $id, string $email)
     {

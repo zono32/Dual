@@ -1,13 +1,15 @@
 <?php
-class UsuarioControler{
-    public string $page_title;
-    public string $view;
-    private INotaServicio $notaServicio;
 
-    private const VIEW_FOLDER ="nota".DIRECTORY_SEPARATOR;
+class NotaController {
+
+    public $page_title;
+    public $view;
+    private $notaServicio;
+    
+    const VIEW_FOLDER='note';
 
     public function __construct() {
-        $this->view = self::VIEW_FOLDER.'list_note';
+        $this->view = self::VIEW_FOLDER.DIRECTORY_SEPARATOR.'list_note';
         $this->page_title = '';
         $this->notaServicio = new NotaServicio();
     }
@@ -16,6 +18,7 @@ class UsuarioControler{
 
     public function list() {
         $this->page_title = 'Listado de notas';
+
         return $this->notaServicio->getNotas();
     }
 
@@ -23,7 +26,7 @@ class UsuarioControler{
 
     public function edit($id = null) {
         $this->page_title = 'Editar nota';
-        $this->view = self::VIEW_FOLDER.'edit_note';
+        $this->view =self::VIEW_FOLDER.DIRECTORY_SEPARATOR.'edit_note';
         /* Id can from get param or method param */
         if (isset($_GET["id"])) {
             $id = $_GET["id"];
@@ -39,17 +42,15 @@ class UsuarioControler{
     /* Create or update note */
 
     public function save() {
-        $this->view = self::VIEW_FOLDER.'edit_note';
+        $this->view =self::VIEW_FOLDER.DIRECTORY_SEPARATOR.'edit_note';
         $this->page_title = 'Editar nota';
-        
-        $id=null;
-        $title="";
-        $content="";
-        
-        if (isset($_POST["id"]) and $_POST["id"] != '') {
-            $id = $_POST["id"];
+
+        if (isset($_POST["id"]) && trim($_POST["id"]) !== "" && is_numeric($_POST["id"])) {
+            $id = (int) $_POST["id"];
+        } else {
+            $id = null;
         }
-           /* Received values */
+
         if (isset($_POST["title"])) {
             $title = $_POST["title"];
         }
@@ -57,17 +58,20 @@ class UsuarioControler{
             $content = $_POST["content"];
         }
         
-        $nota = new Nota($id, $title, $content);   
-
-        $notaGuardada = $this->notaServicio->save($nota);
+        $nota = new Nota();
+        $nota->setTitulo($title);
+        $nota->setContenido($content);
+        $nota->setId($id);
+        
+         $notaGuardada = $this->notaServicio->save($nota, $_FILES["fichero"]);
         //para saber si ha habido error o no
-        //Solo se establece un campo "error" si se ha realizado un (save) exitoso o no
-        if ($notaGuardada == null) {
-            $notaGuardada = new Nota(); //creamos una nota vacía para poder añadirle el estado
-            $notaGuardada->setEstado(Util::OPERATION_NOK);
-        } else {
-            $notaGuardada->setEstado(Util::OPERATION_OK);
-        }
+                  
+
+//        if ($notaGuardada == null) {
+//            $notaGuardada->setStatus(Util::OPERATION_NOK);
+//        } else {
+//            $notaGuardada->setStatus(Util::OPERATION_OK);
+//        }
 
 
         return $notaGuardada;
@@ -77,7 +81,7 @@ class UsuarioControler{
 
     public function confirmDelete() {
         $this->page_title = 'Eliminar nota';
-        $this->view = self::VIEW_FOLDER.'confirm_delete_note';
+        $this->view = self::VIEW_FOLDER.DIRECTORY_SEPARATOR.'confirm_delete_note';
         return $this->notaServicio->getNoteById($_GET["id"]);
     }
 
@@ -85,9 +89,10 @@ class UsuarioControler{
 
     public function delete(): bool {
         $this->page_title = 'Listado de notas';
-        $this->view = self::VIEW_FOLDER. 'delete_note';
+        $this->view =self::VIEW_FOLDER.DIRECTORY_SEPARATOR. 'delete_note';
         return $this->notaServicio->deleteNoteById($_POST["id"]);
     }
 
 }
 
+?>
