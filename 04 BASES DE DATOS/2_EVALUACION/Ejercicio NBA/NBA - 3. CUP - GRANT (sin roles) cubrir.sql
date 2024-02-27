@@ -187,15 +187,15 @@ create user Luzdivina identified by 'abc';
 
 #	Fulgencio y Fulgencia					Todos los datos de Equipos, Jugadores, Estadisticas y Partidos
 
-GRANT ALL PRIVILEGES ON VistaNBA_EQUIPOS   		TO fulgencio;
-GRANT ALL PRIVILEGES ON VistaNBA_JUGADORES 		TO fulgencio;
-GRANT ALL PRIVILEGES ON VistaNBA_ESTADISTICAS 	TO fulgencio;
-GRANT ALL PRIVILEGES ON VistaNBA_PARTIDOS 		TO fulgencio;
+GRANT ALL PRIVILEGES ON VistaNBA_EQUIPOS   		TO Fulgencio;
+GRANT ALL PRIVILEGES ON VistaNBA_JUGADORES 		TO Fulgencio;
+GRANT ALL PRIVILEGES ON VistaNBA_ESTADISTICAS 	TO Fulgencio;
+GRANT ALL PRIVILEGES ON VistaNBA_PARTIDOS 		TO Fulgencio;
 
-GRANT ALL PRIVILEGES ON VistaNBA_EQUIPOS 		TO fulgencia;
-GRANT ALL PRIVILEGES ON VistaNBA_JUGADORES 		TO fulgencia;
-GRANT ALL PRIVILEGES ON VistaNBA_ESTADISTICAS 	TO fulgencia;
-GRANT ALL PRIVILEGES ON VistaNBA_PARTIDOS 		TO fulgencia;
+GRANT ALL PRIVILEGES ON VistaNBA_EQUIPOS 		TO Fulgencia;
+GRANT ALL PRIVILEGES ON VistaNBA_JUGADORES 		TO Fulgencia;
+GRANT ALL PRIVILEGES ON VistaNBA_ESTADISTICAS 	TO Fulgencia;
+GRANT ALL PRIVILEGES ON VistaNBA_PARTIDOS 		TO Fulgencia;
 
 
 #	Guillermino y Guillermina				Todos los datos de Equipos, Jugadores, Estadisticas y Partidos de la Conferencia ESTE
