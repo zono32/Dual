@@ -8,33 +8,34 @@ class UsuarioRepository extends BaseRepository implements IUsuarioRepository{
         $this->table_name = "usuario";
         $this->pk_name = "id";
         $this->class_name = "Usuario";        
-        $this->default_order_column = "nombre";
+        $this->default_order_column = "email";
 
     }
-    public function findUsuarioByEmail($email): Usuario    {
-        $stmt = $this->conn->prepare("SELECT id, email, pwdhash FROM usuario WHERE email = ?");
-        $stmt->execute([$email]);
-        $row = $stmt->fetch(PDO::FETCH_ASSOC);
-
-        if (!$row) {
-            return null; // El usuario no fue encontrado
-        }
-
-        $usuario = new Usuario();
-        $usuario->setId($row['id']);
-        $usuario->setEmail($row['email']);
-        $usuario->setPwdhash($row['pwdhash']);
-        // Puedes cargar los roles del usuario aquí si también los tienes en la base de datos
-
-        return $usuario;
-    }
-
+    
     public function update($object): bool{
-       return true;
+        return true;
+ 
+     }
+     public function create($object){        
+             return null;
+     }
+ 
+    public function findUsuarioByEmail($email): Usuario    {
+        $consulta = "SELECT * FROM $this->table_name
+            WHERE email = :email";
+        $pdostmt = $this->conn->prepare($consulta);
+        $pdostmt->bindValue("email", $email);
+        $pdostmt->execute();
+        $object = $pdostmt->fetchAll(PDO::FETCH_ASSOC, $this->class_name);
+        
 
-    }
-    public function create($object){        
+        if (!$object ) {
             return null;
+             
+        } else{
+            $usuario = new Usuario;
+            return $usuario;
+        } 
     }
 
    
