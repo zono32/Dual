@@ -26,10 +26,21 @@ public function __construct(){
         return $usuarios;
     }
 
-    public function login(string $user, string $pwd, $rolId)//: ?Usuario
-    {
-        //TODO
-    }
+    public function login(string $user, string $pwd, $rolId): ?Usuario{
+       $usuario = $this->userRepository->findUsuarioByEmail($user);
+        $passCorrecta = password_verify($pwd, $usuario->getPwdhash());
+        if($passCorrecta){
+            $roles = $this->rolRepository->findRolesByUserId($usuario->getId());
+            $usuario->setRoles($roles);
+            $rolValido = $this->isUserInRole($usuario, $rolId);
+            if($rolValido){
+                return $usuario;
+            }else{
+                return null;
+            }
+        }
+        return null;
+       }
 
     public function getRoles(): array
     {
@@ -41,12 +52,7 @@ public function __construct(){
 
     public function getRoleById(int $roleId): ?Rol
     {
-
         return $this->rolRepository->read($roleId);
-
-
-
-
     }
 
     private function isUserInRole(Usuario $usuario, int $roleId): bool
@@ -61,7 +67,4 @@ public function __construct(){
         return false;
     }
 
-
 }
-
-?>
