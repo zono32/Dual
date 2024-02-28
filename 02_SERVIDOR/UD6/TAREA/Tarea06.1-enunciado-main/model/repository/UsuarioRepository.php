@@ -27,7 +27,7 @@ class UsuarioRepository extends BaseRepository implements IUsuarioRepository{
         $pdostmt->bindValue("email", $email);
         $pdostmt->execute();
         $object = $pdostmt->fetchAll(PDO::FETCH_ASSOC, $this->class_name);
-        
+        var_dump($object);
 
         if (!$object ) {
             return null;
