@@ -11,14 +11,19 @@ class UsuarioServicio
 
 
 public function __construct(){
-    $this->userRepository = new UsuarioRepository;
-    $this->rolRepository = new RolRepository;   
+    $this->userRepository = new UsuarioRepository();
+    $this->rolRepository = new RolRepository();   
 }
 
-    public function getUsuarios()//: array
+    public function getUsuarios(): array
     {
-        //TODO
-
+        $usuarios = $this->userRepository->findAll();
+        foreach ($usuarios as $usuario) {
+            $idUsuario = $usuario->getId();
+            $roles = $this->rolRepository->findRolesByUserId($idUsuario);
+            $usuario->setRoles($roles);            
+        }
+        return $usuarios;
     }
 
     public function login(string $user, string $pwd, $rolId)//: ?Usuario
