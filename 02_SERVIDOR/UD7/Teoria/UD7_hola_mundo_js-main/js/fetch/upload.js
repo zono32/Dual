@@ -1,7 +1,7 @@
 
 
-window.onload = function () {
-    onceLoaded();
+window.onload = async function () {
+   await onceLoaded();
 
 
 };
