@@ -24,40 +24,7 @@ select 	__ as 'Concello',
         __ as 'Provincia'
         from Concello;
         
-        
- DROP VIEW IF EXISTS VistaDatosConcellos;       
-CREATE VIEW	VistaDatosConcellos	AS	select T1.idconcello as 'concello',
-					nombre as ;
-                    
-                    
-		# mostramos los concellos con menor superficie:
-        
-select * from VistaDatosConcellos where supericie = (select min(superficie) from VistaDatosConcellos);
-select * from VistaDatosConcellos where supericie in (select min(superficie) from VistaDatosConcellos);
-select * from VistaDatosConcellos where supericie <= all (select superficie from VistaDatosConcellos);
-select * from VistaDatosConcellos where supericie = any (select min(superficie) from VistaDatosConcellos);
-
-		# mostramos los concellos con mayor superficie:
-        
-select * from VistaDatosConcellos where supericie = (select max(superficie) from VistaDatosConcellos);
-select * from VistaDatosConcellos where supericie in (select max(superficie) from VistaDatosConcellos);
-select * from VistaDatosConcellos where supericie >= all (select superficie from VistaDatosConcellos);
-select * from VistaDatosConcellos where supericie = any (select max(superficie) from VistaDatosConcellos);
-
-        # concello con la mayor diferencia entre hombres y mujeres:
-        
-select abs(mujeres-hombres), nombre from VistaDatosConcellos order by 1 desc limit 1;        
-select abs(mujeres-hombres), nombre from VistaDatosConcellos where abs(mujeres-hombres) =
-		(select max(abs(mujeres-hombres)) from VistaDatosConcellos);
-        
- # concello con la menor diferencia entre hombres y mujeres:
-        
-select abs(mujeres-hombres), nombre from VistaDatosConcellos order by 1 asc limit 1;        
-select abs(mujeres-hombres), nombre from VistaDatosConcellos where abs(mujeres-hombres) =
-		(select min(abs(mujeres-hombres)) from VistaDatosConcellos);
-        
-
-
+CREATE VIEW	DatosConcellos	AS	__;
 #*******************************************************************************************
 #	COMARCAS CON CÓDIGO, NOMBRE, SUPERFICIE, MUJERES Y HOMBRES
 #*******************************************************************************************

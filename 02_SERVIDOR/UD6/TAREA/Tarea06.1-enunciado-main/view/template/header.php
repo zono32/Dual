@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<title></title>
@@ -7,6 +8,7 @@
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </head>
+
 <body>
 	<div class="container-fluid">
 		<header class="mb-5">
@@ -15,16 +17,20 @@
 				<h4 class="mb-3">-</h4>
 			</div>
 
-			<?php 
-                if (SessionManager::iniciarSesion() && isset($_SESSION["userId"])) { 
-                 
-                    ?>
-                    <div class="d-flex  justify-content-end  align-items-center">
-                        <div class="d-flex mx-2 align-items-center justify-content-end">
-                            <p class="lead">¡Hola <?=$_SESSION["email"]?>!</p>
-                        </div>                        
-                         <input type="submit" class="btn btn-primary btn-block" value="Cerrar sesión" name="btnCerrar"></button>                        
-                    </div>
-                <?php } ?>
-		</header>
+			<?php
+			if (SessionManager::iniciarSesion() && isset($_SESSION["userId"])) {
 
+			?>
+				<div class="d-flex  justify-content-end  align-items-center">
+					<div class="d-flex mx-2 align-items-center justify-content-end">
+						<p class="lead">¡Hola <?= $_SESSION["email"] ?>!</p>
+					</div>
+					<form action="FrontController.php?controller=Usuario&action=logout" method="post">
+						<input type="submit" class="btn btn-primary btn-block" value="Cerrar sesión" name="btnCerrar"></button>
+					</form>
+				</div>
+
+
+
+			<?php } ?>
+		</header>

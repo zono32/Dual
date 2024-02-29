@@ -61,7 +61,7 @@ class Util {
         return $instance;
     }
 
-    public static function stringToDateTimeISO8601($cadena): DateTimeImmutable {
+    public static function stringToDateTimeISO8601($cadena): ?DateTimeImmutable {
         if (($date = DateTimeImmutable::createFromFormat('Y-m-d', $cadena)) !== false) {
             return $date;
         } else {

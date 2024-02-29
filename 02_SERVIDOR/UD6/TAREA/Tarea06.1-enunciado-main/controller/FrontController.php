@@ -34,7 +34,7 @@
      //Se invoca el método y se establecen los datos que devuelve el controlador  para que estén disponibles para la vista
      $dataToView["data"] = $controller->{$_GET["action"]}();
  }
- 
+
  
  /* Load views */
  require_once dirname(__FILE__, 2) . DIRECTORY_SEPARATOR . 'view'. DIRECTORY_SEPARATOR. 'template' . DIRECTORY_SEPARATOR.'header.php';
@@ -42,4 +42,3 @@
  require_once dirname(__FILE__, 2) . DIRECTORY_SEPARATOR . 'view'. DIRECTORY_SEPARATOR. 'template' . DIRECTORY_SEPARATOR.'footer.php';
  
 ob_end_flush();
-?>
