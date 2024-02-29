@@ -24,7 +24,7 @@ USE CicloDAW;
 #		Índice							->	Horas
 #*******************************************************************************************
    
-
+DROP TABLE IF EXISTS Modulo;
 CREATE TABLE Modulo (
     ID 			INT 			AUTO_INCREMENT,
     Siglas 		VARCHAR(5),
@@ -100,8 +100,12 @@ CREATE ROLE ALUMNADO;
 #		PROFESORADO		Posibilidad de privilegios de acceso (role_admin) y creación de  usuarios (create user)
 #		ALUMNADO		Sólo visibilidad (select)
 #*******************************************************************************************
-GRANT ALL ON Modulo TO PROFESORADO;
+-- Para el grupo PROFESORADO
+GRANT ALL PRIVILEGES ON *.* TO PROFESORADO WITH GRANT OPTION;
+
+-- Para el grupo ALUMNADO
 GRANT SELECT ON Modulo TO ALUMNADO;
+
     
 #*******************************************************************************************
 #	7.	ASIGNAMOS A CADA GRUPO SUS USUARIOS CREADOS
