@@ -24,7 +24,7 @@ USE CicloDAW;
 #		Índice							->	Horas
 #*******************************************************************************************
    
-DROP TABLE IF EXISTS Modulo;
+
 CREATE TABLE Modulo (
     ID 			INT 			AUTO_INCREMENT,
     Siglas 		VARCHAR(5),
@@ -80,10 +80,13 @@ DROP USER IF EXISTS  Alumn_01, Alumn_02, Alumn_03, Alumn_04, Alumn_05, Alumn_06,
 CREATE USER Alumn_01 IDENTIFIED BY 'abc', Alumn_02 IDENTIFIED BY 'abc', Alumn_03 IDENTIFIED BY 'abc', Alumn_04 IDENTIFIED BY 'abc', Alumn_05 IDENTIFIED BY 'abc', 
 Alumn_06 IDENTIFIED BY 'abc', Alumn_07 IDENTIFIED BY 'abc', Alumn_08 IDENTIFIED BY 'abc', Alumn_09 IDENTIFIED BY 'abc', Alumn_10 IDENTIFIED BY 'abc';
 
-DROP USER IF EXISTS  Prof_01, Prof_02, Prof_03, Prof_04, Prof_05, Prof_06, Prof_07, Prof_08, Prof_09, Prof_10;
-CREATE USER Prof_01 IDENTIFIED BY 'abc', Prof_02 IDENTIFIED BY 'abc', Prof_03 IDENTIFIED BY 'abc', Prof_04 IDENTIFIED BY 'abc', Prof_05 IDENTIFIED BY 'abc', 
-Prof_06 IDENTIFIED BY 'abc', Prof_07 IDENTIFIED BY 'abc', Prof_08 IDENTIFIED BY 'abc', Prof_09 IDENTIFIED BY 'abc', Prof_10 IDENTIFIED BY 'abc';
-    
+DROP USER IF EXISTS  Prof_01, Prof_02, Prof_03, Prof_04, Prof_05;
+CREATE USER Prof_01 IDENTIFIED BY 'abc',
+			Prof_02 IDENTIFIED BY 'abc',
+			Prof_03 IDENTIFIED BY 'abc',
+			Prof_04 IDENTIFIED BY 'abc',
+			Prof_05 IDENTIFIED BY 'abc';
+
 #*******************************************************************************************
 #	5.	CREAMOS DOS GRUPOS DE USUARIOS:	ALUMNADO, PROFESORADO
 #		PROFESORADO -> ACCESO TOTAL
@@ -110,16 +113,12 @@ GRANT SELECT ON Modulo TO ALUMNADO;
 #*******************************************************************************************
 #	7.	ASIGNAMOS A CADA GRUPO SUS USUARIOS CREADOS
 #*******************************************************************************************
-GRANT PROFESORADO TO Prof_01; 
-GRANT PROFESORADO TO Prof_02;
-GRANT PROFESORADO TO Prof_03;
-GRANT PROFESORADO TO Prof_04;
-GRANT PROFESORADO TO Prof_05;
-GRANT PROFESORADO TO Prof_06;
-GRANT PROFESORADO TO Prof_07;
-GRANT PROFESORADO TO Prof_08;
-GRANT PROFESORADO TO Prof_09;
-GRANT PROFESORADO TO Prof_10;
+GRANT PROFESORADO TO Prof_01 WITH ADMIN OPTION; 
+GRANT PROFESORADO TO Prof_02 WITH ADMIN OPTION;
+GRANT PROFESORADO TO Prof_03 WITH ADMIN OPTION;
+GRANT PROFESORADO TO Prof_04 WITH ADMIN OPTION;
+GRANT PROFESORADO TO Prof_05 WITH ADMIN OPTION;
+
 
 GRANT ALUMNADO TO Alumn_01;
 GRANT ALUMNADO TO Alumn_02;
@@ -141,11 +140,7 @@ SET DEFAULT ROLE PROFESORADO for Prof_02;
 SET DEFAULT ROLE PROFESORADO for Prof_03;
 SET DEFAULT ROLE PROFESORADO for Prof_04;
 SET DEFAULT ROLE PROFESORADO for Prof_05;
-SET DEFAULT ROLE PROFESORADO for Prof_06;
-SET DEFAULT ROLE PROFESORADO for Prof_07;
-SET DEFAULT ROLE PROFESORADO for Prof_08;
-SET DEFAULT ROLE PROFESORADO for Prof_09;
-SET DEFAULT ROLE PROFESORADO for Prof_10;
+
 
 SET DEFAULT ROLE ALUMNADO for Alumn_01;
 SET DEFAULT ROLE ALUMNADO for Alumn_02;
