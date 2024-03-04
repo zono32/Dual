@@ -71,16 +71,13 @@ class UsuarioController
         else {
             return $loginViewData;
         }
-    }
-  
+    }  
     
     public function logout() {   
             
         SessionManager::cerrarSesion();
         $this->redirectTo("Usuario", "login");      
     }
-
-
 
     private function redirectTo(string $controller, string $action): void
     {
