@@ -25,7 +25,9 @@ function crearAlumno(e) {
     const direccion = document.getElementById("addDireccion").value;
     
     const alumno = new Alumno(nombre, dni, direccion);
+    console.log(alumno);
     localStorage.setItem(alumno.getDni(), JSON.stringify(alumno));
+
 }
 
 window.onload = () => {
@@ -38,20 +40,75 @@ window.onload = () => {
     
     
 
-    function modificar(nombre, direccion, dni){}
+    function modificar(nombre, direccion, dni) { }
+    
+    function borrar(dni) {
+
+        localStorage.forEach(element => {
+
+            console.log(element);
+            
+            
+        });
+        
+    }
     
     function mostrar() {
         const divAlumno = document.getElementById("alumnos");
 
         const tableAlumnos = document.createElement("table");
-        divAlumno.appendChild(tableAlumnos);
-        const titleTable = document.createElement("caption");
-        titleTable.innerHTML = "tabla Alumnos";
-        tableAlumnos.appendChild(titleTable);
-        const cabecera = cocument.createElement("th");
-        const datosCabeceraDni = document.createElement("td")
+        divAlumno.replaceChildren(tableAlumnos);
+
+        const cabecera = document.createElement("thead");
+        tableAlumnos.appendChild(cabecera);
+        const tr = document.createElement("tr");
+        cabecera.appendChild(tr);
+
+        const datosCabeceraDni = document.createElement("th");
+        datosCabeceraDni.innerHTML = "DNI";
+        tr.appendChild(datosCabeceraDni);
+
+        const datosCabeceraNombre = document.createElement("th");
+        datosCabeceraNombre.innerHTML = "Nombre";
+        tr.appendChild(datosCabeceraNombre);
+
+        const datosCabeceraDireccion = document.createElement("th");
+        datosCabeceraDireccion.innerHTML = "Direccion";
+        tr.appendChild(datosCabeceraDireccion);
+
+        const body = document.createElement("tbody")
+        tableAlumnos.appendChild(body);
+
+        const trBody = document.createElement("tr");
+        body.appendChild(trBody);
+
+        for (let i = 0; i < localStorage.length; i++) {           
+            const trfor = document.createElement("tr");
+
+            const alumnoDni = document.createElement("td");
+            let alumno = JSON.parse(localStorage.getItem(localStorage.key(i)));
+           
+            alumnoDni.innerHTML = alumno.dni;
+            trfor.appendChild(alumnoDni);
+            
+            const alumnoNombre = document.createElement("td");         
+            alumnoNombre.innerHTML = alumno.nombre;
+            trfor.appendChild(alumnoNombre);
+    
+            const alumnoDireccion = document.createElement("td");            
+            alumnoDireccion.innerHTML = alumno.direccion;
+            trfor.appendChild(alumnoDireccion);
+
+            body.appendChild(trfor);
+            
+        }
         
-        const datosCabeceraNombre = document.createElement("td")
+
+       
+
+        
+        
+
 
 
     }
