@@ -61,6 +61,7 @@ public abstract class Persona {
     }
 
     public void setFechaIncorporacion(LocalTime fechaIncorporacion) {
+
         this.fechaIncorporacion = fechaIncorporacion;
     }
 }
