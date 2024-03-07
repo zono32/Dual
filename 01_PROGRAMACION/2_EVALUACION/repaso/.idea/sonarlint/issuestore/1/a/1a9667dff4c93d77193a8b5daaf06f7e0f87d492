@@ -1,0 +1,10 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(³’Åû
+<
+java:S1170"!Make this final field static too.(éè¶µùÿÿÿÿ
+c
+java:S1845<"MRename method "plus" to prevent any misunderstanding/clash with field "plus".(±å’
+O
+java:S5993"9Change the visibility of this constructor to "protected".(Ÿ•¼ª
+K
+java:S1068"0Remove this unused "sueldoDiario" private field.(¯œ˜Íþÿÿÿÿ

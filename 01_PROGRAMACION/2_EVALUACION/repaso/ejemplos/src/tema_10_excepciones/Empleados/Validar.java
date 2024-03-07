@@ -1,6 +1,6 @@
 
 
-package Empleados;
+package tema_10_excepciones.Empleados;
 
 //Expresiones regulares de java
 

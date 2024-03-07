@@ -1,13 +1,14 @@
 package Excepciones.Excepciones_instituto;
 
 import java.time.LocalTime;
+import java.util.Date;
 
 public class Profesor extends Persona implements Bonificacion{
     String tipoJornada;
     double Salario;
     String especialidadImpartida;
 
-    public Profesor(String dni, String nombre, int edad, String direccion, LocalTime fechaIncorporacion, String tipoJornada, double salario, String especialidadImpartida) {
+    public Profesor(String dni, String nombre, int edad, String direccion, Date fechaIncorporacion, String tipoJornada, double salario, String especialidadImpartida) {
         super(dni, nombre, edad, direccion, fechaIncorporacion);
         this.tipoJornada = tipoJornada;
         this.Salario = salario;
@@ -50,7 +51,7 @@ public class Profesor extends Persona implements Bonificacion{
         String nombre = this.getNombre();
         int edad = this.getEdad();
         String direccion = this.getDireccion();
-        LocalTime fechaIncorporacion = this.getFechaIncorporacion();
+        Date fechaIncorporacion = this.getFechaIncorporacion();
         return "Profesor{" +
                 "tipoJornada='" + tipoJornada + '\'' +
                 ", Salario=" + Salario +

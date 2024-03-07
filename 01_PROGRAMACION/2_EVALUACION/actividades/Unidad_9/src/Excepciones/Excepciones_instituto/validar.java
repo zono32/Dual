@@ -6,7 +6,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class validar {
-/*
+
     public static String nombre(String nombre)  {
         Scanner sc = new Scanner(System.in);
     do {
@@ -29,34 +29,31 @@ public class validar {
     }while (true);
 
     }
-    public static int (String fecha)  {
+
+    public static String validarFechaIncorporacion(String fecha){
         Scanner sc = new Scanner(System.in);
-        do {
+        do{
             try{
-                Pattern pat = Pattern.compile("[0-9]{2}-{2}-{4}");
+
+                Pattern pat = Pattern.compile("[0-3]{2}[0-2]{2}[0-9]{4}");
                 Matcher mat = pat.matcher(fecha);
 
                 if(!mat.matches()){
-
-
+                    throw new Exception("la fecha que has introducido no esta en el formato correcto");
                 }else {
-
+                    return (fecha);
                 }
-            return ;
 
-            }catch( ){
+            }catch (Exception e){
+                System.out.println("por favor introduzca la fecha con el formato correcto dd/MM/yyyy gracias");
+                fecha = (sc.next());
+            }
+        }while (true);
+    }
 
 
-        } catch (Excep e) {
-
-            } while (true);
 
     }
 
-/*
-        this.dni = dni;
 
-        this.edad = edad;
-        this.direccion = direccion;
-        this.fechaIncorporacion = fechaIncorporacion;*/
-}
+

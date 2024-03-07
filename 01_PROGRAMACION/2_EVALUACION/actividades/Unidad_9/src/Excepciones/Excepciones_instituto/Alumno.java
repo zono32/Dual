@@ -1,6 +1,7 @@
 package Excepciones.Excepciones_instituto;
 
 import java.time.LocalTime;
+import java.util.Date;
 
 public class Alumno extends Persona implements Bonificacion{
 
@@ -8,7 +9,7 @@ public class Alumno extends Persona implements Bonificacion{
     private double mediaNotas;
     private double importeMatricula;
 
-    public Alumno(String dni, String nombre, int edad, String direccion, LocalTime fechaIncorporacion, String ciclo, double mediaNotas, double importeMatricula) {
+    public Alumno(String dni, String nombre, int edad, String direccion, Date fechaIncorporacion, String ciclo, double mediaNotas, double importeMatricula) {
         super(dni, nombre, edad, direccion, fechaIncorporacion);
         this.ciclo = ciclo;
         this.mediaNotas = mediaNotas;
@@ -52,7 +53,7 @@ public class Alumno extends Persona implements Bonificacion{
         String nombre = this.getNombre();
         int edad = this.getEdad();
         String direccion = this.getDireccion();
-        LocalTime fechaIncorporacion = this.getFechaIncorporacion();
+        Date fechaIncorporacion = this.getFechaIncorporacion();
         return "Alumno{" +
                 "ciclo='" + ciclo + '\'' +
                 ", mediaNotas=" + mediaNotas +
@@ -67,7 +68,10 @@ public class Alumno extends Persona implements Bonificacion{
 
     @Override
     public double aplicarBonificacion(double importe) {
-//mas de dos años un 10% menos
+
+        Date fechaActual = new Date();
+            //mas de dos años un 10% menos
+
         return 0;
     }
 }

@@ -23,7 +23,7 @@ public class Miembro {
             opcion = scan.nextInt();
             switch (opcion) {
                 case 1:
-                    //dar de alta a un miembro        emp.add(Operaciones.recogerDatosEmpleado(c));
+                    //dar de alta a un miembro emp.add(Operaciones.recogerDatosEmpleado(c));
                     c++;
                     break;
                 case 2:

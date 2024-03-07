@@ -1,15 +1,16 @@
 package Excepciones.Excepciones_instituto;
 
 import java.time.LocalTime;
+import java.util.Date;
 
 public abstract class Persona {
     private String dni;
     private String nombre;
     private int edad;
     private String direccion;
-    private LocalTime fechaIncorporacion;
+    private Date fechaIncorporacion;
 
-    public Persona(String dni, String nombre, int edad, String direccion, LocalTime fechaIncorporacion) {
+    public Persona(String dni, String nombre, int edad, String direccion, Date fechaIncorporacion) {
         this.dni = dni;
         this.nombre = nombre;
         this.edad = edad;
@@ -21,7 +22,7 @@ public abstract class Persona {
         this.nombre = "nombre";
         this.edad = 0;
         this.direccion = "direccion";
-        this.fechaIncorporacion = LocalTime.now();
+        this.fechaIncorporacion = new Date();
     }
 
     public String getDni() {
@@ -56,11 +57,11 @@ public abstract class Persona {
         this.direccion = direccion;
     }
 
-    public LocalTime getFechaIncorporacion() {
+    public Date getFechaIncorporacion() {
         return fechaIncorporacion;
     }
 
-    public void setFechaIncorporacion(LocalTime fechaIncorporacion) {
+    public void setFechaIncorporacion(Date fechaIncorporacion) {
 
         this.fechaIncorporacion = fechaIncorporacion;
     }

@@ -1,4 +1,4 @@
-package Empleados;
+package tema_10_excepciones.Empleados;
 
 import java.util.Scanner;
 

@@ -1,6 +1,6 @@
 
 
-package Empleados;
+package tema_10_excepciones.Empleados;
 
 public class Excep extends Exception {
 

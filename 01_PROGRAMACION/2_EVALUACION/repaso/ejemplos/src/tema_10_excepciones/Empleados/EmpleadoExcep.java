@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package Empleados;
+package tema_10_excepciones.Empleados;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -38,7 +38,7 @@ public class EmpleadoExcep {
     private static void menu() {
         //Encabezado
         System.out.println("--------------------");
-        System.out.println("Menú de Empleados");
+        System.out.println("Menú de tema_10_excepciones.Empleados");
         System.out.println("--------------------");
 
         System.out.println("Seleccione lo que desea realizar:");
@@ -48,9 +48,9 @@ public class EmpleadoExcep {
     }
 
     private static void listarEmpleados(ArrayList<Empleado> emp) {
-        //Listamos de Empleados
+        //Listamos de tema_10_excepciones.Empleados
         System.out.println("----------------------");
-        System.out.println("Empleados comprobados");
+        System.out.println("tema_10_excepciones.Empleados comprobados");
         System.out.println("----------------------");
         for (int i = 0; i < emp.size(); i++) {
             System.out.println("Nombre Empleado " + (i + 1) + ": " + emp.get(i).getNombre());
