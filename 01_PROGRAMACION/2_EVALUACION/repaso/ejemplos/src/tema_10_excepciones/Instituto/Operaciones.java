@@ -1,4 +1,4 @@
-package EjInstituto2;
+package tema_10_excepciones.Instituto;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

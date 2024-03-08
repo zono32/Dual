@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package EjInstituto2;
+package tema_10_excepciones.Instituto;
 
 /**
  *
  * @author nccasares
  */
-public class Especial idad {
+public class Especialidad {
 
     private int id;
     private String nombre;
