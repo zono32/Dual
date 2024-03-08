@@ -15,7 +15,7 @@ public class Comercial extends Empleado {
     private double comision;
  
     //Constructores
-    public Comercial(double comis ion, String nombre,String dni, int edad, double salario) {
+    public Comercial(double comision, String nombre,String dni, int edad, double salario) {
         super(nombre,dni, edad, salario);
         this.comision = comision;
     }
