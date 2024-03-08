@@ -22,7 +22,7 @@
                     <p class="lead">¡Hola <span class='d-none' id='email_header'></span>!</p>
                 </div>
 
-                <form method="post" class="d-flex mx-2 align-items-center justify-content-start">
+                <form method="post" id="spacerrar" class="d-flex mx-2 align-items-center justify-content-start">
                     <input type="submit" class="btn btn-primary btn-block" value="Cerrar sesión" name="btnCerrar" id="btnCerrar"></button>
                 </form>
             </div>
@@ -75,13 +75,31 @@
             <h2>Esto es el main</h2>
 
         </main>
+        <div class="modal fade" id="spa_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal_title">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id='modal_msg'>
 
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                            id='opt_cancel'>Cancelar</button>
+                        <button type="button" class="btn btn-primary" id='opt_ok'>Aceptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
     </section>
 
     <script src="../../js/global.js" type="text/javascript"></script>
     <script src="../../js/cargarDatos.js" type="text/javascript"></script>
+    <script src="../../js/modal.js" type="text/javascript"></script>
     <script src="../../js/manejarSesion.js" type="text/javascript"></script>
 
 </body>
