@@ -55,7 +55,7 @@ class UsuarioServicio {
         return $roles;
     }
 
-    public function getRoleById(int $roleId): Rol {
+    public function getRoleById(int $roleId):? Rol {
 
         $roles = $this->rolRepository->findAll();
         foreach ($roles as $rol) {

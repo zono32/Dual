@@ -58,6 +58,8 @@ function showModal(modal_id, title, msg,
             if (opt_ok_function !== null) {
                 //llamamos a la función de aceptación
                 opt_ok_function();
+                //TODO:: Al llamar la función que pasamos por parámetro, dicha función no tiene manera de saber de como oculta el modal.s
+                myModal.hide();
             }
         } else {
             if (cancel_clicked === true) {
@@ -83,7 +85,7 @@ function showModal(modal_id, title, msg,
         //establecemos los flags del botón sobre el que se ha hecho clic y  reiniciamos el valor del otro botón a false
         ok_clicked = true;
         cancel_clicked = false;
-
+        window.location.reload(); // para que borre los datos al inicio.
         myModal.hide();
     };
     optcancel_el.onclick = function () {
@@ -91,6 +93,7 @@ function showModal(modal_id, title, msg,
         ok_clicked = false;
 
         myModal.hide();
+        
     };
 
     //Establecemos el foco en OK button con el evento que nos avisa de que se ha mostrado el modal al usuario
@@ -101,6 +104,7 @@ function showModal(modal_id, title, msg,
         optok_el.focus();
     }, { once: true });
 
+    
     //Finalmente mostramos el modal
     myModal.show();
 
