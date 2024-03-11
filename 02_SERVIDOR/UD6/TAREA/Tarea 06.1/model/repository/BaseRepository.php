@@ -68,8 +68,6 @@ abstract class BaseRepository implements IBaseRepository
     public function findAll(): array
     {
         $pdostmt = $this->conn->prepare("SELECT *  FROM $this->table_name ORDER BY $this->default_order_column");
-
-
         //$pdostmt->debugDumpParams();
         $pdostmt->execute();
         //$pdostmt->debugDumpParams();

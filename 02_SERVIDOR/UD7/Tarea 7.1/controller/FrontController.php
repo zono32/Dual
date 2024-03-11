@@ -49,4 +49,3 @@ if (isset($_GET["controller"]) && (isset($_GET["action"]))) {
 }
 
 ob_end_flush();
-?>

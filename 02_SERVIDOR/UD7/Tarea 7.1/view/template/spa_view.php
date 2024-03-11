@@ -22,7 +22,7 @@
                     <p class="lead">¡Hola <span class='d-none' id='email_header'></span>!</p>
                 </div>
 
-                <form method="post" id="spacerrar" class="d-flex mx-2 align-items-center justify-content-start">
+                <form action = "FrontController.php" method="post" id="spacerrar" class="d-flex mx-2 align-items-center justify-content-start">
                     <input type="submit" class="btn btn-primary btn-block" value="Cerrar sesión" name="btnCerrar" id="btnCerrar"></button>
                 </form>
             </div>
@@ -52,15 +52,13 @@
                         <div class="form-group mb-4">
                             <label class="form-label" for="rol">Seleccione el rol:</label>
 
-                            <select name="rol" id="rol" required>
-
-                            </select>
+                            <select name="rol" id="rol" required></select>
                         </div>
 
                         <div class="form-group mb-4 alert alert-danger d-none" id="errorLogin" role="alert">
                         </div>
                         <!-- Submit button -->
-                        <input type="submit" class="btn btn-primary btn-block mb-4" value="Iniciar sesión">
+                        <input type="Submit" class="btn btn-primary btn-block mb-4" value="Iniciar sesión">
 
                     </form>
 

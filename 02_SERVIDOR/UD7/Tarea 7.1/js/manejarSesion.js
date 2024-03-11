@@ -101,7 +101,7 @@ function showErrorLogin(msg, show, html_id) {
 }
 
 function logoutCliente() {
-    showModal();
+   
   if (userId != null || userId != undefined) {
     let logout_url = "?controller=Usuario&action=logout";
 
@@ -137,3 +137,16 @@ function logoutCliente() {
 }
 
 
+function logoutModal(e) {
+  e.preventDefault();
+  showModal(
+    "spa_modal",
+    "Confirmación cierre de sesión",
+    "¿Está seguro/a de que desea cerrar sesión?",
+    "Aceptar",
+    "Cancelar",
+    logoutCliente
+    
+  );
+  
+}

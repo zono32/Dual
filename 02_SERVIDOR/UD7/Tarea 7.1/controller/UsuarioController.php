@@ -92,7 +92,7 @@ class UsuarioController
     public function logout()
     {
         SessionManager::cerrarSesion();
-        
+               
         $data = json_decode(file_get_contents("php://input"), true);
 
         $userIdSesion = $_SESSION["userId"];
@@ -115,6 +115,7 @@ class UsuarioController
             $response["error"] = true;
             return json_encode($response);
         }
+        
     }
 
 }

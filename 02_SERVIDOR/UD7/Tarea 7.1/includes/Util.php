@@ -64,3 +64,6 @@ class Util {
     }
 
 }
+//user1@edu.es  con roles user y admin y contraseña de acceso abc123.
+//user2@edu.es con rol user y contraseña de acceso abc123.
+//
