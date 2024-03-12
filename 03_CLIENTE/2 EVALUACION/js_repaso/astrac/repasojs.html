@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var zoe = {
+        nombre: "zoe",
+        edad: 10,
+        bio: function () {
+          return this.nombre + " tiene " + this.edad + " años";
+        },
+      };
+      document.write(zoe.bio());
+
+      function Persona(nombre, edad, pais) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.pais = pais;
+      }
+
+      var kinso = new Persona("kinso", 46, "españa");
+
+      document.write("<br>");
+      document.write(kinso.nombre);
+
+      class Usuario {
+        constructor(nombre, edad) {
+          this.nombre = nombre;
+          this.edad = edad;
+        }
+      }
+
+      
+      class PersonaA {
+        constructor() {
+          if (this.constructor === PersonaA)
+            throw new Error("La clase personaA es abstracto");
+        }
+        habla() {
+          throw new Error(
+            "Este es un método abstracto y se debe sobreescribir en las subclases"
+          );
+        }
+      }
+
+      class Estudiante extends PersonaA {
+        habla() {
+          return "El empleado habla español";
+        }
+      }
+
+      let estudiante = new Estudiante();
+      console.log(estudiante.habla());
+      //let personaA=new PersonaA();
+    </script>
+  </body>
+</html>
