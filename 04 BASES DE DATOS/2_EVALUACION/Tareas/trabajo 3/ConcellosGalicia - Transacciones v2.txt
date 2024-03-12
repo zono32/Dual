@@ -146,23 +146,48 @@ create table Poblacion (
 #*******************************************************************************************
 #		TABLA Provincia
 #*******************************************************************************************
-
-	 start transaction;                  #	Creación de la Transacción
-
-	ALTER TABLE Provincia	AUTO_INCREMENT = 10;
+	ALTER TABLE Provincia	AUTO_INCREMENT = 10;	
+    
+    START TRANSACTION;           #	Creación de la Transacción
+	
 	INSERT INTO Provincia( nombre )	VALUES( 'A Coruña' );
     
-     savepoint primerPunto;				#	Creación del primer punto de Restauración
+    SAVEPOINT primer_Punto_Guardado;				#	Creación del primer punto de Restauración
     
 	INSERT INTO Provincia( nombre )	VALUES( 'Lugo' );
+    INSERT INTO Provincia( nombre )	VALUES( 'Ourense' );
     
-     savepoint segundoPunto;				#	Creación del segundo punto de Restauración
+    SAVEPOINT segundo_Punto_Guardado;				#	Creación del segundo punto de Restauración    
+	
+	INSERT INTO Provincia( nombre )	VALUES( 'Pontevedra' );
     
+    SELECT * FROM provincia; #	Mostramos todos los datos introducidos
+    
+    ROLLBACK TO SAVEPOINT primer_Punto_Guardado;  #Restauramos en el ---- punto de Restauración
+    
+    SELECT * FROM provincia;    #	Mostramos todos los valores de la tabla
+    
+    ROLLBACK TO SAVEPOINT primer_Punto_Guardado;
+    
+    INSERT INTO Provincia( nombre )	VALUES( 'Lugo' );    #Introducimos los valores faltantes (podemos mostrar los valores de la tabla)
 	INSERT INTO Provincia( nombre )	VALUES( 'Ourense' );
-	INSERT INTO Provincia( nombre )	VALUES( 'Pontevedra' ); 
+    SAVEPOINT segundo_Punto_Guardado;				#	hay que volver a crear el segundo punto de Restauración 
+    INSERT INTO Provincia( nombre )	VALUES( 'Pontevedra' );
     
-	  select * from provincia; #	Mostramos todos los datos introducidos
+    SELECT * FROM provincia;    #	Mostramos todos los valores de la tabla
     
+    ROLLBACK;   #	Borramos todos los valores de la tabla
+    
+    SELECT * FROM provincia;    #	Mostramos todos los valores de la tabla
+    
+    INSERT INTO Provincia( nombre )	VALUES( 'A Coruña' );   #	Introducimos todos los valores
+	INSERT INTO Provincia( nombre )	VALUES( 'Lugo' );
+    INSERT INTO Provincia( nombre )	VALUES( 'Ourense' );
+	INSERT INTO Provincia( nombre )	VALUES( 'Pontevedra' );
+    
+    COMMIT;    #	Confirmamos los valores introducidos
+    
+    SELECT * FROM provincia;    #	Mostramos todos los valores de la tabla
     
 #*******************************************************************************************
 #		TABLA Comarca
