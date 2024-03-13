@@ -56,6 +56,50 @@
       let estudiante = new Estudiante();
       console.log(estudiante.habla());
       //let personaA=new PersonaA();
+
+
+
+
+      class Person{
+        constructor(){
+          if(this.constructor === Person){
+            throw new Error("la clase Person es de tipo abstracto ");          }
+        }
+
+        anda(){
+          throw new Error("Este es un metodo abstracto y debe subscribirse en las subclases "); 
+        }
+      }
+
+      class Trabajador extends Person{
+      constructor (nombre, edad){
+        super();
+        this.nombre = nombre;
+        this.edad = edad;      
+      }
+        anda() {
+          document.write ("El trabajador anda");
+        }
+      }
+
+      let trabajador1 = new Trabajador("juan",30);
+
+      trabajador1.anda();
+
+      let trabajador = {
+        nombre: 'Pedro',
+        edad: 20,
+        bio: function () {
+          console.log(this.nombre + ' tiene '+ this.edad+ ' años')
+        }
+      }
+
+      trabajador.bio();
+
+      trabajador.corre = true;
+
+      console.log(trabajador.corre);
+
     </script>
   </body>
 </html>
