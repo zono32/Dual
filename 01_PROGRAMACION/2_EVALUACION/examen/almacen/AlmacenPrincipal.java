@@ -17,6 +17,7 @@ public class AlmacenPrincipal {
         int opcion = 0;
         do {
             menu();
+            opcion = sc.nextInt();
             switch(opcion){
                 case 1:
                     productos.add(Operaciones.recogerDatosProducto());

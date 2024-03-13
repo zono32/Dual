@@ -1,0 +1,16 @@
+
+·
+java:S1598"tThis file "Validar.java" should be located in "ZZ_EXAMEN" directory, not in "C:\Users\a21joaquinle\Desktop\almacen".(ñö÷Ã8ô¬ïÅã1J$d8fd2e9a-3501-4404-b086-432b9e224496
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ñö÷Ã8õ¬ïÅã1J$20852919-7022-4c1d-ac7c-1f401f1c1186
+‚
+java:S1118
+":Add a private constructor to hide the implicit public one.(õ¯¹òøÿÿÿÿ8ø¬ïÅã1J$cb520c29-30d7-413a-85c7-215cdf9c1aa3
+r	java:S106"+Replace this use of System.out by a logger.(ô÷›Ûÿÿÿÿÿ8ü¬ïÅã1J$eba6bca6-d55d-41c9-a1bc-44b237bed03d
+‚
+java:S1854!"?Remove this useless assignment to local variable "fechaActual".(º¸Äµ8ı¬ïÅã1J$3b44fc21-e42c-4fdd-90d8-13ba303a4f07
+s
+java:S1481!"0Remove this unused "fechaActual" local variable.(º¸Äµ8ş¬ïÅã1J$8a801a20-7886-4aec-a889-63a0ea6bb591
+~	java:S125$"<This block of commented-out lines of code should be removed.(Š”Ä’8€­ïÅã1J$53d0f8e3-2060-419a-9026-212aac639e95
+r	java:S1062"+Replace this use of System.out by a logger.(¼´Œçøÿÿÿÿ8­ïÅã1J$22056863-fffc-4a7a-9e02-d658b3797814
+R
+java:S1128"0Remove this unused import 'java.time.LocalDate'.(›‘¬èıÿÿÿÿ8õÌ¿Èã1

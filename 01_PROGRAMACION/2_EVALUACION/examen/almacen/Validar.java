@@ -14,12 +14,12 @@ public class Validar {
         Scanner sc = new Scanner(System.in);
         do{
             try{
-                if(precio<0){
+                if(precio < 0){
                     throw new Excep(Excep.NUMERO_NEGATIVO);
                 }
                 return precio;
             }catch (Excep e){
-                e.getMessage();
+                    System.out.println(e.getMessage());
                     System.out.println("Por favor inserte un número válido");
                 precio = sc.nextInt();
             }

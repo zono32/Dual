@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c07055c-71e3-4b0d-b619-0deb8b7d7ad2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../actividades/Unidad_9/src/Excepciones/EmpleadosReparto/Excep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Excep.java" beforeDir="false" afterPath="$PROJECT_DIR$/Excep.java" afterDir="false" />
-    </list>
+    <list default="true" id="1c07055c-71e3-4b0d-b619-0deb8b7d7ad2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +23,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/kinso/OneDrive/Escritorio/Workspace/01 DUAL/Dual/01_PROGRAMACION/2_EVALUACION/actividades/Unidad_9"
+    "last_opened_file_path": "C:/Users/kinso/OneDrive/Escritorio/Workspace/01 DUAL/Dual/01_PROGRAMACION/2_EVALUACION/examen"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

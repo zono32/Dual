@@ -1,0 +1,35 @@
+
+À
+java:S1598"}This file "AlmacenPrincipal.java" should be located in "ZZ_EXAMEN" directory, not in "C:\Users\a21joaquinle\Desktop\almacen".(ñö÷Ã8›±·Èã1J$533a377f-16cf-44e7-ba55-c4000f17e77b
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ñö÷Ã8œ±·Èã1J$14b26529-ca94-4a5f-9f32-65a3cbb699b5
+j
+java:S2189""Add an end condition to this loop.(ü§è½ùÿÿÿÿ8èŠÇÈã1J$d1d1e01a-4622-4bea-8e68-1046f83a66a0
+Ã
+java:S1186t"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ßÊÜ58ù±·Èã1J$0c90a681-def8-49e0-8f3b-f2e065c59976
+Ä
+java:S1186z"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(õÜİö8ù±·Èã1J$5040d108-d907-4048-adfa-96c90be92c27
+Ã
+java:S1186}"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(”óôd8ù±·Èã1J$c2a40078-1043-46e8-a838-354c03434f79
+Ä
+java:S1186ƒ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¦²T8ù±·Èã1J$04c7b8b1-0001-487d-a06c-b415cf58ff8f
+~
+java:S1854"6Remove this useless assignment to local variable "sc".(ğÛ²¸øÿÿÿÿ8û±·Èã1J$c5a2f44e-f59e-46fb-aa61-5df5b30a4cae
+o
+java:S1481"'Remove this unused "sc" local variable.(ğÛ²¸øÿÿÿÿ8ı±·Èã1J$e62b10dc-8590-4369-9a01-ed814250996d
+d	java:S131""Add a default case to this switch.(°€àâ8úÄÈã1J$5b1ccf77-9444-410e-9ebc-9eceaa631e45
+m	java:S106/"+Replace this use of System.out by a logger.(Œ€ÿ8€²·Èã1J$5f7ba2d8-8eb0-4855-a380-3c2329ba4cd7
+m	java:S1060"+Replace this use of System.out by a logger.(¶Æ®š8€²·Èã1J$182b7072-7e24-4ebe-9dd3-f87bf3d1491b
+m	java:S1061"+Replace this use of System.out by a logger.(Œ€ÿ8€²·Èã1J$ea434add-e69c-42b3-b8ec-531e72c95188
+m	java:S1063"+Replace this use of System.out by a logger.(½¸ÿ¸8€²·Èã1J$20a39188-8c3e-427c-94c8-2cffe28c769d
+r	java:S1064"+Replace this use of System.out by a logger.(©Ü–¡ûÿÿÿÿ8€²·Èã1J$311e812c-fb3f-4ee6-8f1a-775bc3fd7546
+r	java:S1065"+Replace this use of System.out by a logger.(óÕÚ›úÿÿÿÿ8€²·Èã1J$b6b964dd-efbe-4fcd-a3dd-2389c608c904
+l	java:S1066"+Replace this use of System.out by a logger.(Œ÷É98€²·Èã1J$1eb4eb7c-7891-4023-8b8a-65036ef07b8e
+r	java:S1067"+Replace this use of System.out by a logger.(Ş´¤‡øÿÿÿÿ8€²·Èã1J$2abe833b-9e7a-4074-821a-f160c631172c
+l	java:S1068"+Replace this use of System.out by a logger.(õ¬Ø8€²·Èã1J$bb35184a-3a47-4828-87b9-31a0304b47e0
+m	java:S1069"+Replace this use of System.out by a logger.(ã¥Æş8€²·Èã1J$59b9054a-da54-4092-91cb-32fcdb22b0df
+r	java:S106:"+Replace this use of System.out by a logger.(£‹í†üÿÿÿÿ8€²·Èã1J$7ba8d639-99a6-4048-b867-b6dedc41f058
+}	java:S125="<This block of commented-out lines of code should be removed.(­¦Ê78²·Èã1J$3be5c5a1-dd49-43bc-b3a8-b27e700e7f1d
+ƒ	java:S125S"<This block of commented-out lines of code should be removed.(‹ª˜íúÿÿÿÿ8²·Èã1J$a8db3ae0-41dd-47fd-82a7-8e803519f64e
+ƒ	java:S125l"<This block of commented-out lines of code should be removed.(ığá˜ÿÿÿÿÿ8²·Èã1J$29d67bbc-5e75-44c0-b532-d3f7724df2fb
+z
+java:S1128"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛ8ÕëÅÈã1J$13e2cdbe-417b-4bb8-ba8e-343bffb25e0f
