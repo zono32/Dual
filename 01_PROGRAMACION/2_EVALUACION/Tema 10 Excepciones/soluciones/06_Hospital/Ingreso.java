@@ -7,10 +7,7 @@ package EjHospital;
 
 import java.util.Date;
 
-/**
- *
- * @author nccasares
- */
+
 public class Ingreso {
     private Date fechaIngreso;
     private Date fechaAlta;
