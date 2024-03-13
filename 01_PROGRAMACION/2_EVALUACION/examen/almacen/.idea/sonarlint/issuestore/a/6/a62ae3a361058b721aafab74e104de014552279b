@@ -1,0 +1,22 @@
+
+¡
+java:S1488;"YImmediately return this expression instead of assigning it to the temporary variable "c".(Ÿ‰òÒÿÿÿÿÿ8İ€Èã1J$0c59073a-b119-4818-b3b1-8563d569a007
+„
+java:S4973"<Strings and Boxed types should be compared using "equals()".(Û›ÓÊùÿÿÿÿ8Ş€Èã1J$7b4fee3a-099d-4acc-ae28-29f51560e038
+»
+java:S1598"xThis file "Operaciones.java" should be located in "ZZ_EXAMEN" directory, not in "C:\Users\a21joaquinle\Desktop\almacen".(ñö÷Ã8ß€Èã1J$c9a9219e-12d9-4a00-9a7d-b15f05ad0fc2
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ñö÷Ã8ß€Èã1J$aa1df92e-e770-4660-919f-0f8206487064
+‚
+java:S1118":Add a private constructor to hide the implicit public one.(€Æñ®øÿÿÿÿ8â€Èã1J$311e1f86-9794-4d29-b89d-4cad2083e889
+Œ
+java:S1854
+"DRemove this useless assignment to local variable "fechaDeCaducidad".(·÷‚»üÿÿÿÿ8ã€Èã1J$13824da2-5909-49ad-b2e8-b61926d2c1f6
+r	java:S106"+Replace this use of System.out by a logger.(®Âà³üÿÿÿÿ8å€Èã1J$f29de507-7fca-4209-8a7a-c87dd8b3d150
+r	java:S106"+Replace this use of System.out by a logger.(Å¼çÿÿÿÿÿ8å€Èã1J$2dae4d69-42ea-4031-9b6a-d2d032d393d3
+m	java:S106"+Replace this use of System.out by a logger.(ÇĞÒø8å€Èã1J$bd3b39bd-9e43-4a21-97fc-9f02ffa9f535
+r	java:S106"+Replace this use of System.out by a logger.(Û¹ëˆşÿÿÿÿ8å€Èã1J$05fe0eac-b582-4035-84f3-7946f27cc255
+r	java:S106 "+Replace this use of System.out by a logger.(‘´èüÿÿÿÿ8æ€Èã1J$78e174d8-6273-41ff-bd79-5f61f5f68c5e
+r	java:S106/"+Replace this use of System.out by a logger.(şÅùÿÿÿÿ8æ€Èã1J$8e38f976-e67b-4f39-b3f6-41d8d7129e20
+r	java:S1062"+Replace this use of System.out by a logger.(Áëˆıÿÿÿÿ8æ€Èã1J$e1f0b3e1-dff1-4d77-b71f-1051ebc0c3b2
+r	java:S1065"+Replace this use of System.out by a logger.(şÅùÿÿÿÿ8æ€Èã1J$401206b7-e71c-4e16-ac5d-2de52f224353
+l	java:S1068"+Replace this use of System.out by a logger.(‚™…8ç€Èã1J$6ea975b8-e9b9-4951-9984-3e04318db343
