@@ -9,10 +9,6 @@ import java.time.LocalDateTime;
 import java.util.Calendar;
 import java.util.Date;
 
-/**
- *
- * @author nuria
- */
 public class Alumno extends Miembro {
 
     private String ciclo;

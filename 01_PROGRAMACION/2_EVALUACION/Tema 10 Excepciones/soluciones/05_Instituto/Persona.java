@@ -8,10 +8,6 @@ package EjInstituto2;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
-/**
- *
- * @author nuria
- */
 public class Persona {
     private String DNI;
     private String nombre;

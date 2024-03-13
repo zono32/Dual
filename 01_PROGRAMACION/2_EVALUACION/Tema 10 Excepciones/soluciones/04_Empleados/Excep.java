@@ -11,14 +11,8 @@ static final int EDAD_NUMERO_MAL = 4;
 static final int SUELDO_NUMERO_MAL = 5;
 static final int ERROR_DESCONOCIDO = 6;
 
-
 private String fallo;
-
-
-
 public Excep (){}
-
-
 public Excep (String s) {
  super(s); 
 }

@@ -9,10 +9,6 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-/**
- *
- * @author nuria
- */
 public abstract class Miembro extends Persona{
     private Date fechaIncorporacion;
 

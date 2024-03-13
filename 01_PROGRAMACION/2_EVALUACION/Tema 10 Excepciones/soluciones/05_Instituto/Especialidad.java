@@ -5,10 +5,6 @@
  */
 package EjInstituto2;
 
-/**
- *
- * @author nccasares
- */
 public class Especialidad {
 
     private int id;
