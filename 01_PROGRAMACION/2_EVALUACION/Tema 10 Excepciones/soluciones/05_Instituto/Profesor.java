@@ -8,10 +8,6 @@ package EjInstituto2;
 import java.util.Calendar;
 import java.util.Date;
 
-/**
- *
- * @author nuria
- */
 public class Profesor extends Miembro{
     private String tipoJornada;
     private double sueldo;

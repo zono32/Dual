@@ -3,12 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package EjInstituto2;
+package EjHospital;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-
-public class Persona {
+/**
+ *
+ * @author nuria
+ */
+public abstract class Persona {
     private String DNI;
     private String nombre;
     private int edad;
@@ -52,11 +53,6 @@ public class Persona {
     public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
-    public String toString() {
-        DateFormat dateFormat = new SimpleDateFormat("dd-mm-yyyy");
-        return "DNI: " + this.getDNI() +
-                "\nNombre: " + this.nombre +
-                "\nEdad: " + this.edad +
-                "\nDireccion: " + this.direccion;
-    }
+    
+    public abstract double calcularCosteAnual();
 }

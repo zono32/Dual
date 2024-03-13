@@ -3,14 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package EjInstituto2;
+package EjHospital;
 
-public class Especialidad {
+
+public class Area {
 
     private int id;
     private String nombre;
 
-    public Especialidad(int id, String nombre) {
+    public Area(int id, String nombre) {
         this.id = id;
         this.nombre = nombre;
     }
@@ -29,9 +30,5 @@ public class Especialidad {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }
-
-    public String toString() {
-        return "\nId esp: " + this.id + "\nNombre esp: " + this.nombre + "\n";
     }
 }
