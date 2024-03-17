@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api fetch</title>
+</head>
+<body>
+    <button id="mostrarTexto"> Muestra el archivo de texto</button>
+    <div id="contenido"></div>
+
+    <button id="mostrarTabla"> Muestra la tabla</button>
+    <table>
+        <thead>
+            <tr>
+                <th>Codigo</th>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Club</th>                
+            </tr>
+        </thead>
+        <tbody id="tabla"></tbody>
+    </table>    
+</body>
+<script>
+
+    document.getElementById("mostrarTexto").addEventListener("click", mostrarTexto);
+    let texto = document.querySelector("#contenido");
+
+    function mostrarTexto() {
+
+        fetch("texto.txt")
+        .then(data => data.text()) 
+        .then(data2 =>{console.log(data2);
+        texto.innerHTML= data2 })   
+    }
+
+    document.getElementById("mostrarTabla").addEventListener("click", mostrarTabla);
+    let tabla = document.querySelector("#tabla");
+
+    function mostrarTabla(){
+        fetch("tabla.json")
+        .then(data => data.json())
+        .then(data2=> {console.log(data2);
+            dibujarTabla(data2);
+            
+        })
+    }
+    function dibujarTabla(datos){
+        tabla.innerHTML="";
+        for (let valor of datos) {
+            tabla.innerHTML += `
+            <tr>
+                <th>${valor.codigo}</th>
+                <td>${valor.nombre}</td>
+                <td>${valor.edad}</td>
+                <td>${valor.club ? "es del club" : "No es del club"}</td>
+            </tr>    `
+        }
+    }
+
+
+</script>
+</html>

@@ -91,7 +91,6 @@ function showModal(modal_id, title, msg,
     optcancel_el.onclick = function () {
         cancel_clicked = true;
         ok_clicked = false;
-
         myModal.hide();
         
     };

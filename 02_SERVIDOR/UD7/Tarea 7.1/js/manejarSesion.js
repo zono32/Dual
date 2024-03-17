@@ -143,8 +143,8 @@ function logoutModal(e) {
     "spa_modal",
     "Confirmación cierre de sesión",
     "¿Está seguro/a de que desea cerrar sesión?",
-    "Aceptar",
-    "Cancelar",
+    OK_TEXT,
+    CANCEL_TEXT,
     logoutCliente
     
   );
