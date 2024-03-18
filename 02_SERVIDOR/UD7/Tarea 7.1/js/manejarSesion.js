@@ -111,25 +111,26 @@ function logoutCliente() {
     });
     fetch(request)
       .then((response) => {
+
+        console.log("error 400");
+        console.log("Something went wrong on API server!");
+
         if (response.status === 200) {
           return response.json();
           //bad request
-        } else if (response.status === 400 || response.status === 401) {
-          console.log("error 400");
+        } else if (response.status === 400 || response.status === 401) {         
           return false;
-        } else {
-          console.log("Something went wrong on API server!");
+        } else {         
           return false;
         }
       })
-      .then((response) => {
-        console.log(response);
-        
-          toggleLoginMain("");
 
+      .then((response) => {
+        console.log(response);        
+          toggleLoginMain("");
           userId = null;
         
-      })
+        })
       .catch((error) => {
         console.error("Ha ocurrido un error en logout" + error);
       });

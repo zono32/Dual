@@ -95,10 +95,10 @@
 
     </section>
 
-    <script src="../../js/global.js" type="text/javascript"></script>
-    <script src="../../js/cargarDatos.js" type="text/javascript"></script>
-    <script src="../../js/modal.js" type="text/javascript"></script>
-    <script src="../../js/manejarSesion.js" type="text/javascript"></script>
+    <script src="../js/global.js" type="text/javascript"></script>
+    <script src="../js/cargarDatos.js" type="text/javascript"></script>
+    <script src="../js/modal.js" type="text/javascript"></script>
+    <script src="../js/manejarSesion.js" type="text/javascript"></script>
 
 </body>
 

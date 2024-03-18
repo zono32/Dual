@@ -91,7 +91,7 @@ class UsuarioController
 
     public function logout()
     {
-        SessionManager::cerrarSesion();
+      
                
         $data = json_decode(file_get_contents("php://input"), true);
 
@@ -102,17 +102,21 @@ class UsuarioController
            if($userIdSesion == $data["userId"]){
             http_response_code(200);
             $response["error"] = false;
+            SessionManager::cerrarSesion();
             return json_encode($response);
 
            } else {
             http_response_code(400);
             $response["error"] = "Authenticated user does not match logging out user. Logging out anyway";
-            return json_encode($response);            
+            SessionManager::cerrarSesion();
+            return json_encode($response);  
+            
             }
 
         } else {
             http_response_code(400);
             $response["error"] = true;
+            SessionManager::cerrarSesion();
             return json_encode($response);
         }
         
