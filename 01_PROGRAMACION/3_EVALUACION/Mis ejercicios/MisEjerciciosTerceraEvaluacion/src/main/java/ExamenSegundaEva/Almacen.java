@@ -3,6 +3,7 @@ package ExamenSegundaEva;
 import java.text.SimpleDateFormat;
 import java.util.Collection;
 import java.util.*;
+import java.util.Scanner;
 
 public class Almacen {
     public static void main(String[] args) {
@@ -68,7 +69,7 @@ public class Almacen {
         System.out.println("-------- Alta productos ---------");
 
         System.out.println("Introduzca nombre");
-        nombre = sc.next();
+        nombre = Validacion.validarNombre(sc.next());
 
         System.out.println("Introduzca precio");
         precio = Validacion.validarPrecio(sc.nextDouble());
