@@ -12,16 +12,19 @@ public class Validacion {
 
     public static double validarPrecio( double precio){
         Scanner sc = new Scanner(System.in);
+
         do {
             try {
                 if(precio < 0){
                     throw new Excep(Excep.NUMERO_NO_VALIDO);
                 }
-                return  precio;
+                if(String.valueOf(precio).contains("."))
+
+             return  precio;
 
             }catch (Excep e){
-                System.out.println(e.getMessage());;
-                System.out.printf("Por favor introduzca un número correcto");
+                System.out.println(e.getMessage());
+                System.out.println("Por favor introduzca un número correcto");
                 precio = sc.nextDouble();
             }
         }

@@ -72,7 +72,10 @@ public class Almacen {
         nombre = Validacion.validarNombre(sc.next());
 
         System.out.println("Introduzca precio");
-        precio = Validacion.validarPrecio(sc.nextDouble());
+        double precioTem =  sc.nextDouble();
+
+        precio = Validacion.validarPrecio(precioTem);
+
 
         System.out.println("Introduzca categoría (Comestible C /Bazar B)");
         categoria = Validacion.opcionComestibleBazar(sc.next());
