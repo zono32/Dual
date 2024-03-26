@@ -3,22 +3,22 @@ package AlmacenPac.AlmacenProductos;
 import java.time.LocalDate;
 
 public class Comestible extends Producto {
-    private LocalDate fechaCaducidad;
+    private String fechaCaducidad;
 
-    public Comestible(double precio, String nombre, LocalDate fechaCaducidad) {
+    public Comestible(double precio, String nombre, String fechaCaducidad) {
         super(precio, nombre);
         this.fechaCaducidad = fechaCaducidad;
     }
     public Comestible(){
         super();
-        this.fechaCaducidad = LocalDate.now();
+        this.fechaCaducidad = "";
     }
 
-    public LocalDate getFechaCaducidad() {
+    public String getFechaCaducidad() {
         return fechaCaducidad;
     }
 
-    public void setFechaCaducidad(LocalDate fechaCaducidad) {
+    public void setFechaCaducidad(String fechaCaducidad) {
         this.fechaCaducidad = fechaCaducidad;
     }
 
