@@ -1,5 +1,8 @@
+package AlmacenPac;
+
 import AlmacenPac.AlmacenComercial.Comercial;
 import AlmacenPac.AlmacenProductos.Bazar;
+import AlmacenPac.AlmacenProductos.Comestible;
 import AlmacenPac.AlmacenProductos.Producto;
 import AlmacenPac.Excepciones.ExceepcionNumeroNegativo;
 import AlmacenPac.Utils.Util;
@@ -21,14 +24,16 @@ public class Almacen {
 
             menu();
             opcion = sc.nextInt();
-            
+
             switch (opcion){
 
                 case 1:
                     Producto producto = altaProducto();
-                break;
+                    productos.add(producto);
+                    break;
                 case 2:
-                   Comercial comercial  = altaComercial();
+                    Comercial comercial  = altaComercial();
+                    comerciales.add(comercial);
                     break;
                 case 3:
                     eliminarProductosLimpieza();
@@ -70,37 +75,33 @@ public class Almacen {
     private static Producto altaProducto() {
         Scanner sc = new Scanner(System.in);
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-        Producto p = new Bazar();
+        Producto p;
         double precio;
         String nombre, categoria;
+
         System.out.println("-------- Alta productos ---------");
 
         System.out.println("Introduzca nombre");
         nombre = sc.next();
 
-        boolean precioValido = false;
+        System.out.println("Introduzca precio");
+        precio = Util.validarPrecio(sc.nextDouble());
 
-            do {
-                try{
-                    System.out.println("Introduzca precio");
-                    precio = sc.nextDouble();
-                    precioValido = Util.validarPrecio(precio);
-                    if (!precioValido ){
-                        throw new ExceepcionNumeroNegativo();
-                    }
-                }catch (Exception e){
-                    System.out.println(e.getMessage());
-                    sc.next();
-                }
-            }
+        System.out.println("Introduzca categoría (Comestible/Bazar)");
+        categoria = sc.next();
 
-            while (precioValido == false);
-
-            System.out.println("Introduzca categoría (Comestible/Bazar)");
-            categoria = sc.next();
-
-            return p;
+        if( categoria.equalsIgnoreCase("C") ){
+            System.out.println("por favor indique la caducidad del producto");
+            String  fechaCaducidad = Util.validarFecha(sc.next());
+            p= new Comestible(precio,nombre,fechaCaducidad);
+        }else{
+            System.out.println("Por favor indique el tipo de producto");
+            String  tipo = sc.next();
+            p= new Bazar(precio,nombre,tipo);
         }
+
+        return p;
+    }
 
     private static Comercial altaComercial() {
         Scanner sc = new Scanner(System.in);
@@ -123,17 +124,17 @@ public class Almacen {
 
         return new Comercial(nombre, apellidos, edad, zona);//, crearRegistroComercial());
     }
-/*
-    // En el siguiente mÃ©todo, cambiar tipo de dato de retorno al tipo de colecciÃ³n elegida para el registro de los comerciales
-    // Los elementos en el registro pueden introducirse manualmente, sin necesidad de solicitarlos por teclado.
-    private static Collection<> crearRegistroComercial() {
-        Collection<> reg ;
-        reg.add(.....);
-        reg.add(.....);
+    /*
+        // En el siguiente mÃ©todo, cambiar tipo de dato de retorno al tipo de colecciÃ³n elegida para el registro de los comerciales
+        // Los elementos en el registro pueden introducirse manualmente, sin necesidad de solicitarlos por teclado.
+        private static Collection<> crearRegistroComercial() {
+            Collection<> reg ;
+            reg.add(.....);
+            reg.add(.....);
 
-        return reg;
-    }
-*/
+            return reg;
+        }
+    */
     private static void eliminarProductosLimpieza() {}
 
     private static void especialidadComerciales() {}
