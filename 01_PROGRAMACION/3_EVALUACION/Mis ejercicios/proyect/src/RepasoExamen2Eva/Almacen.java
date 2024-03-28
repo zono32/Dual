@@ -1,39 +1,36 @@
-package AlmacenPac;
+package RepasoExamen2Eva;
 
-import AlmacenPac.AlmacenComercial.Comercial;
-import AlmacenPac.AlmacenProductos.Bazar;
-import AlmacenPac.AlmacenProductos.Comestible;
-import AlmacenPac.AlmacenProductos.Producto;
-import AlmacenPac.Excepciones.ExceepcionNumeroNegativo;
-import AlmacenPac.Utils.Util;
+import RepasoExamen2Eva.Empleados.Comercial;
+import RepasoExamen2Eva.Products.Bazar;
+import RepasoExamen2Eva.Products.Producto;
 
+import java.lang.reflect.Array;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class Almacen {
 
+    static ArrayList<Producto>productos = new ArrayList<>();
+    static ArrayList<Comercial>comerciales = new ArrayList<>();
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        ArrayList<Producto>productos=new ArrayList<>();
-        ArrayList<Comercial>comerciales =new ArrayList<>();
+        Producto []comestibles = new Producto[3];
+        Producto []bazar = new Producto[3];
+
 
         int opcion;
-
         do {
-
             menu();
             opcion = sc.nextInt();
 
             switch (opcion){
-
                 case 1:
-                    Producto producto = altaProducto();
-                    productos.add(producto);
+                    productos.add(altaProducto());
                     break;
                 case 2:
-                    Comercial comercial  = altaComercial();
-                    comerciales.add(comercial);
+                    comerciales.add(altaComercial());
                     break;
                 case 3:
                     eliminarProductosLimpieza();
@@ -48,8 +45,7 @@ public class Almacen {
                     productosCaducidadProxima();
                     break;
                 default:
-                    System.out.println("escoge una opción válida");;
-                    break;
+                    System.out.println("Por favor escoja una opción correcta");
             }
 
         }
@@ -59,7 +55,7 @@ public class Almacen {
     private static void menu() {
         //Encabezado
         System.out.println("--------------------");
-        System.out.println("MenÃº de Almacen");
+        System.out.println("Menú de Almacen");
         System.out.println("--------------------");
 
         System.out.println("Seleccione lo que desea realizar:");
@@ -68,37 +64,30 @@ public class Almacen {
         System.out.println("3: Eliminar productos de Limpieza");
         System.out.println("4: Mostrar especialidades de los comerciales");
         System.out.println("5: Coste medio de comestibles");
-        System.out.println("6: Productos de caducidad prÃ³xima");
+        System.out.println("6: Productos de caducidad próxima");
         System.out.println("7: Salir");
     }
 
     private static Producto altaProducto() {
         Scanner sc = new Scanner(System.in);
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-        Producto p;
+        Producto p = new Bazar();
         double precio;
         String nombre, categoria;
-
         System.out.println("-------- Alta productos ---------");
 
         System.out.println("Introduzca nombre");
-        nombre = sc.next();
+        nombre = sc.nextLine();
 
+        sc = new Scanner(System.in);
         System.out.println("Introduzca precio");
-        precio = Util.validarPrecio();
+        precio = sc.nextDouble();
 
+        sc = new Scanner(System.in);
         System.out.println("Introduzca categoría (Comestible/Bazar)");
-        categoria = sc.next();
+        categoria = sc.nextLine();
 
-        if( categoria.equalsIgnoreCase("C") ){
-            System.out.println("por favor indique la caducidad del producto");
-            String  fechaCaducidad = Util.validarFecha(sc.next());
-            p= new Comestible(precio,nombre,fechaCaducidad);
-        }else{
-            System.out.println("Por favor indique el tipo de producto");
-            String  tipo = sc.next();
-            p= new Bazar(precio,nombre,tipo);
-        }
+
 
         return p;
     }
@@ -122,24 +111,42 @@ public class Almacen {
         System.out.println("Introduzca edad");
         edad = sc.nextInt();
 
-        return new Comercial(nombre, apellidos, edad, zona);//, crearRegistroComercial());
+        return new Comercial(nombre, apellidos, edad, zona, crearRegistroComercial( new Producto[6]));
     }
-    /*
-        // En el siguiente mÃ©todo, cambiar tipo de dato de retorno al tipo de colecciÃ³n elegida para el registro de los comerciales
-        // Los elementos en el registro pueden introducirse manualmente, sin necesidad de solicitarlos por teclado.
-        private static Collection<> crearRegistroComercial() {
-            Collection<> reg ;
-            reg.add(.....);
-            reg.add(.....);
 
-            return reg;
+    // En el siguiente método, cambiar tipo de dato de retorno al tipo de colección elegida para el registro de los comerciales
+    // Los elementos en el registro pueden introducirse manualmente, sin necesidad de solicitarlos por teclado.
+    private static HashMap<Integer, Producto> crearRegistroComercial( Producto[] productos) {
+       HashMap<Integer,Producto> productosHashMap = new HashMap<>();
+        int cont = 0;
+       for (Producto p : productos){
+         cont++;
+           productosHashMap.put(cont, p);
+       }
+        return productosHashMap;
+    }
+
+    private static void eliminarProductosLimpieza() {
+
+        ArrayList<Producto> eliminarProducto = new ArrayList<>();
+
+        for (int index = 0; index < productos.size() ; index++) {
+            if(productos.get(index) instanceof Bazar){
+                Bazar productoEliminar = (Bazar) productos.get(index);
+                if( productoEliminar.getTipo().equalsIgnoreCase("limpieza") ){
+                    eliminarProducto.add(productoEliminar);
+                }
+            }
         }
-    */
-    private static void eliminarProductosLimpieza() {}
+        productos.removeAll(eliminarProducto);
+    }
 
-    private static void especialidadComerciales() {}
+    private static void especialidadComerciales() {
+    }
 
-    private static void costeProductos() {}
+    private static void costeProductos() {
+    }
 
-    private static void productosCaducidadProxima() {}
+    private static void productosCaducidadProxima() {
+    }
 }

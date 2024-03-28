@@ -5,30 +5,37 @@ import AlmacenPac.Excepciones.ExcepcionFecha;
 import Fechas.Excep;
 import jdk.swing.interop.SwingInterOpUtils;
 
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Util {
 
-    public static double validarPrecio(double precio){
+    public static double validarPrecio(){
         Scanner sc =new Scanner(System.in);
+        double precio =0;
+        boolean inputValido = false;
 
         do{
             try{
+                String input = sc.next();
+                precio = Double.parseDouble(input);
 
                 if (precio < 0){
                     throw new ExceepcionNumeroNegativo();
                 }
-                return precio;
-            }catch (Exception e){
+                inputValido = true;
+            } catch (NumberFormatException e) {
+                System.out.println("Por favor introduce un precio válido.");
+            } catch (ExceepcionNumeroNegativo e) {
                 System.out.println(e.getMessage());
-                System.out.println("por favor introduzca un preso correcto");
-                precio = sc.nextDouble();
             }
-        }while (true);
-
+        }while (!inputValido);
+        return precio;
     }
 
     public static String validarFecha(String fecha){
@@ -51,4 +58,5 @@ public class Util {
         }
         while (true);
     }
-}
+
+ }
