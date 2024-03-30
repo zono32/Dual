@@ -3,8 +3,8 @@ package RepasoExamen2Eva.Exceptions;
 import java.util.PrimitiveIterator;
 
 public class ExcepNum extends Exception{
-    static final int NUMERO_INVALIDO = 1;
-    static final int NUMERO_NEGATIVO = 2;
+    public static final int NUMERO_INVALIDO = 1;
+    public static final int NUMERO_NEGATIVO = 2;
 
     private String fallo;
 

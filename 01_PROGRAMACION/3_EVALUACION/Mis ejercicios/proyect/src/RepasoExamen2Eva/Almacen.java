@@ -2,10 +2,14 @@ package RepasoExamen2Eva;
 
 import RepasoExamen2Eva.Empleados.Comercial;
 import RepasoExamen2Eva.Products.Bazar;
+import RepasoExamen2Eva.Products.Comestible;
 import RepasoExamen2Eva.Products.Producto;
+import RepasoExamen2Eva.Utils.Operacion;
 
 import java.lang.reflect.Array;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 public class Almacen {
@@ -71,24 +75,35 @@ public class Almacen {
     private static Producto altaProducto() {
         Scanner sc = new Scanner(System.in);
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-        Producto p = new Bazar();
+        Producto p;
         double precio;
-        String nombre, categoria;
+        String nombre, categoria, tipo;
         System.out.println("-------- Alta productos ---------");
 
         System.out.println("Introduzca nombre");
-        nombre = sc.nextLine();
+        nombre = sc.next();
 
         sc = new Scanner(System.in);
         System.out.println("Introduzca precio");
-        precio = sc.nextDouble();
+        precio = Operacion.devuelvePrecioValidado(sc.nextDouble());
 
         sc = new Scanner(System.in);
         System.out.println("Introduzca categoría (Comestible/Bazar)");
-        categoria = sc.nextLine();
+        categoria = sc.next();
 
+        if(categoria.equalsIgnoreCase("Bazar")){
+            System.out.println("Introduzca el tipo de producto");
+            tipo = sc.next();
+            p = new Bazar(precio, nombre, tipo);
 
-
+        }else{
+            System.out.println("Introduzca la fecha de caducidad con el siguiente formato por favor dd-MM-yyyy ");
+            String fechaString = sc.next();
+            DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+            LocalDate fecha = LocalDate.parse(fechaString, formato);
+            LocalDate fechaCaducidad = Operacion.devuelveFechaCorrecta(fecha);
+            p = new Comestible(precio, nombre,fechaCaducidad);
+        }
         return p;
     }
 

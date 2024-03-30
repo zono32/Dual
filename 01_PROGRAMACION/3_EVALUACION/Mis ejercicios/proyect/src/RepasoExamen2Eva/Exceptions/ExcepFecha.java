@@ -1,22 +1,26 @@
 package RepasoExamen2Eva.Exceptions;
 
-public class ExcepFecha {
-    public class ExcepNum extends Exception{
-        static final int PRODUCTO_CADUCADO = 1;
+public class ExcepFecha extends Exception {
+
+        public static final int PRODUCTO_CADUCADO = 1;
+        public static final int FECHA_FORMATO_INCORRECTO = 2;
 
         private String fallo;
 
-        public ExcepNum(){
+        public ExcepFecha(){
 
         }
-        public ExcepNum(String s){
+        public ExcepFecha(String s){
             super(s);
         }
 
-        public ExcepNum(int f){
+        public ExcepFecha(int f){
             switch (f){
                 case 1 :
                     fallo = "ERROR: el producto esta caducado";
+                    break;
+                case 2 :
+                    fallo = "ERROR: el formato de la fecha es incorrecto";
                     break;
                 default:
                     fallo= "ERROR DESCONOCIDO";
@@ -26,6 +30,6 @@ public class ExcepFecha {
         public String getMessage(){
             return fallo;
         }
-    }
+
 
 }
