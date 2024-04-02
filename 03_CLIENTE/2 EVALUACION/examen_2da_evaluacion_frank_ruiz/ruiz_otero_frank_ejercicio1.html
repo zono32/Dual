@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Examen_Ejercicio 1: Valoracion: 3 puntos</title>
+</head>
+
+<body>
+  <script>
+
+    // EJERCICIO 1.1: PUNTUACION 0,75 PUNTOS
+
+    //Crea la clase abstracta Mamifero con nombre, edad, y método comer
+
+    class Mamifero {
+
+      constructor(nombre, edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+        if (this.constructor === Mamifero) {
+          throw new Error("Es una clase abastracta");
+        }
+      }
+
+      comer(comida) {
+        throw new Error("Es un método abstracto, es necesario sobreescribirlo");
+
+      }
+    }
+
+
+    // Crea la clase Persona que hereda de Mamífero
+
+    class Persona extends Mamifero {
+
+      constructor(nombre, edad) {
+        super(nombre, edad);
+        console.log(`${nombre} tiene ${edad} años`);
+      }
+
+      comer(comida) {
+        console.log(`La persona ${this.nombre} come ${comida}`);
+      }
+
+    }
+
+
+    // Crea un objeto Mamífero. Razona el resultado en el momento que se crea un objeto de tipo Mamifero
+
+    //Respuesta: Al tratarse de una clase abstracta no se puede instanciar.
+    // let mamifero = new Mamifero("juan", 30);
+
+
+
+    // Crea un objeto Persona. Muestra los datos por la consola
+    let persona = new Persona("pedro", 3);
+    persona.comer("carne");
+
+
+    // EJERCICIO 1.2: PUNTUACION 1 PUNTO:
+
+    // Crea el objeto manzanaRoja con los siguientes atributo: nombre, tamaño, tipo (dulce/amarga),
+    // utilizando un constructor de objetos
+
+    let manzanaRoja = {
+      nombre: "manzanaRoja",
+      tamaño: "grande",
+      tipo: "dulce"
+    }
+
+    manzanaRoja["color"] = "rojo";
+
+
+
+    // Añadir atributos al objeto manzanaRoja en este caso se añade un nuevo atributo que es el color
+
+    //Recorrer las propiedades del objeto manzanaRoja
+
+    console.log("Mostrar las propiedades del objeto manzana roja");
+
+    for (const key in manzanaRoja) {
+
+      console.log(key);
+
+    }
+
+
+    //Muestra el objeto manzanaRoja para ello debes crear el método imprime manzana. Además debes mostrar en
+    //otra linea el color de la manzana
+    let textoAMostrar = "";
+
+    manzanaRoja["imprimirManzanaRoja"] = imprimirManzana;
+
+    textoAMostrar = `<h1>Mostrar los daos de: ${manzanaRoja.nombre} de tamaño ${manzanaRoja.tamaño} y de tipo ${manzanaRoja.tipo}</h1> 
+      <h2>El color de la manzana es ${manzanaRoja.color} </h2>
+      
+      `;
+
+    function imprimirManzana() {
+      document.write(textoAMostrar);
+    }
+
+    imprimirManzana();
+
+    // EJERCICIO 1.3: PUNTUACION 1,25 PUNTOS:
+
+    //Crear la clase vehiculo con los atributos marca, modelo, numOcupantes, precio. Admás tiene una propiedad de tipo Array
+    //que es ocupantes donde se almacena el nombre de dada ocupate. Para ello debes utilizar el método agregarOcupantes
+
+    class Vehiculo {
+      constructor(marca, modelo, numOcupantes, precio) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.numOcupantes = numOcupantes;
+        this.precio = precio;
+        this.ocupantes = [];
+      }
+
+      agregarOcupantes(ocupantes) {
+        this.ocupantes = ocupantes;
+      }
+
+      imprimirOcupantes() {
+        for (const ocupante of this.ocupantes) {
+          console.log(ocupante);
+        }
+      }
+
+      imprimeVehiculo() {
+        let texto = `<h1> El coche ${this.marca} - ${this.modelo} con un precio ${this.precio} tiene como ocupantes ${this.ocupantes.join("-")} </h1>`;
+        document.write(texto);
+      }
+
+    }
+
+    // Método agregar ocupantes, que recorre el array para asignar el nombre
+
+
+
+
+    //Metodo imprime ocupantes, muestra los datos de los ocupantes
+
+
+
+
+
+    //Metodo imprime el vehiculo
+
+    let ocupantes = ["ana", "sara", "pedro", "juan"];
+
+    let vehiculo = new Vehiculo("Seat", "Trans", 4, 1200);
+    vehiculo.agregarOcupantes(ocupantes);
+    vehiculo.imprimeVehiculo();
+
+
+  </script>
+</body>
+
+</html>

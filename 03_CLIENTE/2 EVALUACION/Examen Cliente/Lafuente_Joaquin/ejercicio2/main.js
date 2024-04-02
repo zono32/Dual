@@ -9,7 +9,7 @@ class LineaTicket {
   }
   mostrarDatos() {
     return `<tr class='comprados'><td> ${this.articulo} </td><td> ${this.precio}   €/Kg</td><td>$
-        {this.cantidad}  kg</td><td class='precioTabla'> ${this.total}</tr> `;
+        ${this.cantidad}  kg</td><td class='precioTabla'> ${this.total}</tr> `;
   }
 }
 
@@ -35,8 +35,8 @@ let frutas = [uvas, naranja, fresa, sandia];
 let productName = document.querySelectorAll("artH1");
 let productPrice = document.querySelectorAll("precio");
 frutas.forEach(art, (index) => {
-  productName[index].innerHTML = art.nombre;
-  productPrice[index].innerHTML = art.precio;
+  productName[index].innerHTML = art[index].nombre;
+  productPrice[index].innerHTML = art[index].precio;
 });
 
 let comprar = document.querySelector("comprar");

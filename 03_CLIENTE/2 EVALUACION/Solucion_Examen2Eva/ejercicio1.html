@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Examen_Ejercicio 3: Valoracion: 1,5 puntos</title>
+</head>
+
+<body>
+  <script>
+
+    // Crea la clase abstracta Mamifero con nombre, edad, y método comer
+    class Mamifero {
+      constructor(nombre, edad) {
+        if (this.constructor === Mamifero) {
+          throw new Error("La clase Mamifero es abstracta");
+        }
+        this.nombre;
+        this.edad;
+      }
+      comer() {
+        throw new Error(
+          "Este es un método abstracto y se debe sobreescribir en las subclases"
+        );
+      }
+    }
+
+    // Crea la clase Persona que hereda de Mamífero
+    class Persona extends Mamifero {
+      constructor(nombre, edad) {
+        super();
+        this.nombre = nombre;
+        this.edad = edad;
+      }
+
+      comer() {
+        return (`La persona ${this.nombre} come carne`);
+      }
+    }
+
+    // Crea un objeto Mamífero
+    //const mamifero = new Mamifero();
+
+    // Crea un objeto Persona
+    const pedro = new Persona("Pedro", 3);
+    console.log(`${pedro.nombre} tiene ${pedro.edad} años`);
+    console.log(pedro.comer());
+
+    // Crea el objeto manzanaRoja con los siguientes atributo: nombre, tamaño, tipo (dulce/amarga),
+    // utilizando un constructor de objetos
+
+    const manzanaRoja = {
+      nombre: "manzanaRoja",
+      tamaño: "grande",
+      tipo: "dulce",
+
+      // Los metodos son funciones dentro de un objeto
+      imprimeManzanaRoja: function () {
+        return (` ${this.nombre} de tamaño ${this.tamaño} y de tipo ${this.tipo}`);
+      }
+
+    };
+
+
+    // Añadir atributos al objeto manzanaRoja en este caso se añade un nuevo atributo que es el color
+    manzanaRoja.color = "rojo";
+
+
+    //Recorrer las propiedades del objeto manzanaRoja
+    console.log("MOSTRAR LAS PROPIEDADES DEL OBJETO MANZANA ROJA")
+    for (let propiedad in manzanaRoja) {
+      console.log(propiedad);
+    }
+
+    //Muestra el objeto manzanaRoja para ello debes crear el método imprime manzana. Además debes mostrar en
+    //otra linea el color de la manzana
+    document.write("<h2> Mostrar los datos de:  " + manzanaRoja.imprimeManzanaRoja() + "<\h3>");
+		document.write("<h3>El color de la manzana es " + manzanaRoja.color + "<\h3>");
+
+    //Crear la clase vehiculo 
+
+    class Vehiculo {
+      constructor(marca, modelo, numOcupantes, precio) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.numOcupantes = numOcupantes;
+        this.ocupantes = new Array();
+        this.precio = precio;
+      }
+
+
+      // Métodos
+      agregarOcupantes = function (numOcupantes, nombre) {
+
+        for (let i = 0; i < numOcupantes; i++) {
+          this.ocupantes.push(nombre[i]);
+        }
+
+      };
+
+      imprimeOcupantes = function (numOcupantes) {
+        let cadena = new String();
+        for (let i = 0; i < numOcupantes; i++) {
+          cadena += (this.ocupantes[i] + "-");
+        }
+        return cadena;
+      }
+
+
+      mostrarVehiculo = function () {
+        return (`<h1> El coche ${this.marca}  - ${this.modelo} con un precio ${this.precio} tiene como ocupantes a ${this.imprimeOcupantes(this.numOcupantes)}`);
+      }
+
+    }
+    let vehiculo = new Vehiculo("Seat", "Trans", 4, 1200);
+    vehiculo.agregarOcupantes(vehiculo.numOcupantes, ["Ana", "Sara", "Pedro", "Juan"]);
+    document.write(vehiculo.mostrarVehiculo());
+
+
+  </script>
+</body>
+
+</html>
