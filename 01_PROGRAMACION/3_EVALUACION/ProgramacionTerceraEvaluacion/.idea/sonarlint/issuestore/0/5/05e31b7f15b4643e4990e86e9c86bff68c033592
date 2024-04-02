@@ -1,0 +1,16 @@
+
+	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ˆÀûÿé1J$b52b9b25-af77-4b95-9d5d-2ea755e35142
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶¼ÅŠ8‰Àûÿé1J$ec48c391-b0d1-4d48-b90e-9ef21e3a9a55
+
+java:S2095"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(¥àŠÿøÿÿÿÿ8ŒÀûÿé1J$10872228-d73a-426c-ad35-c9a95fdc5635
+ƒ
+java:S1854";Remove this useless assignment to local variable "nombres".(ê½˜øÿÿÿÿ8Àûÿé1J$59eb09cd-bffa-454d-9d9a-01d25f0f29bc
+~
+java:S1854"6Remove this useless assignment to local variable "fw".(¥àŠÿøÿÿÿÿ8Àûÿé1J$6a1a1ab4-2b50-43f0-b757-18806a197d11
+r	java:S106"+Replace this use of System.out by a logger.(šÙù®ûÿÿÿÿ8Àûÿé1J$51c4d961-a322-4790-b3d7-9b324d5141c8
+t
+java:S1481",Remove this unused "nombres" local variable.(ê½˜øÿÿÿÿ8‘Àûÿé1J$63efdc81-af64-4316-9bad-0f1fa8dca0f8
+o
+java:S1481"'Remove this unused "fw" local variable.(¥àŠÿøÿÿÿÿ8‘Àûÿé1J$101c15f3-271c-4754-82c7-54d3144607d5
+l
+java:S1128")Remove this unused import 'java.io.File'.(†Ğ¥Å8’Àûÿé1J$2c62ef3b-ca31-4e3d-aa04-a7e0fa646880
