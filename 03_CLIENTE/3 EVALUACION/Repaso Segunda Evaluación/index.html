@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Carrito de la compra</title>
+    <style type="text/css">
+      .frutas {
+        width: 50px;
+        height: 50px;
+      }
+      .precio {
+        font-size: large;
+        font-weight: 100px !important;
+        color: darkgreen;
+      }
+      #carrito {
+        margin: 20px;
+        float: right;
+      }
+      #productos {
+        float: left;
+      }
+    </style>
+    <script src="/main.js" type="module"></script>
+  </head>
+  <body>
+    <div id="productos">
+      <br />
+      <div id="uvas">
+        <img src="/imagenes/uvas.jpg" class="frutas" />
+        <h1 class="artH1"></h1>
+        <div class="precio"></div>
+
+        <fieldset>
+          <label for="precio">Cantidad </label>
+          <input type="number" class="cantidad" />
+          <input type="button" class="botonComprar" value="Comprar" />
+        </fieldset>
+      </div>
+      <br />
+      <div id="naranjas">
+        <img src="/imagenes/naranjas.jpg" class="frutas" />
+        <h1 class="artH1"></h1>
+        <div class="precio"></div>
+        <fieldset>
+          <label for="precio">Cantidad </label>
+          <input type="number" class="cantidad" />
+          <input type="button" class="botonComprar" value="Comprar" />
+        </fieldset>
+      </div>
+      <br />
+      <div id="fresa">
+        <img src="/imagenes/fresa.jpg" class="frutas" />
+        <h1 class="artH1"></h1>
+        <div class="precio"></div>
+        <fieldset>
+          <label for="precio">Cantidad </label>
+          <input type="number" class="cantidad" />
+          <input type="button" class="botonComprar" value="Comprar" />
+        </fieldset>
+      </div>
+      <br />
+      <div id="sandia">
+        <img src="/imagenes/sandia.jpg" class="frutas" />
+        <h1 class="artH1"></h1>
+        <div class="precio"></div>
+        <fieldset>
+          <label for="precio">Cantidad </label>
+          <input type="number" class="cantidad" />
+          <input type="button" class="botonComprar" value="Comprar" />
+        </fieldset>
+      </div>
+    </div>
+    <div id="#carrito">
+      <table id="tablaCarrito">
+        <tr>
+          <th>Producto</th>
+          <th>Precio kilo</th>
+          <th>Cantidad</th>
+          <th>Precio</th>
+          <th></th>
+        </tr>
+      </table>
+      <div id="total">€</div>
+      <input type="button" id="vaciar" value="Vaciar" />
+    </div>
+  </body>
+</html>
