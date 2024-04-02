@@ -1,50 +1,18 @@
-package ZZ_EXAMEN;
+package Almacen;
 
 import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class AlmacenPrincipal {
 
-
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
-        ArrayList<Producto2> productos = new ArrayList<>();
-        ArrayList<Comercial> comerciales = new ArrayList<>();
-
-
-        int opcion = 0;
+        int opcion;
         do {
             menu();
-            opcion = sc.nextInt() ;
 
-            switch(opcion){
-                case 1:
-                    productos.add(Operaciones.recogerDatosProducto());
-                    break;
-                case 2:
-                    comerciales.add(Operaciones.recogerDatosEmpleado());
-                    break;
-                case 3:
-                   eliminarProductosLimpieza();
-                    break;
-                case 4:
-                    especialidadComerciales();
-                    break;
-                case 5:
-                    costeProductos();
-                    break;
-                case 6:
-                    productosCaducidadProxima();
-                    break;
-                default:
-                    System.out.println("por favor selecciona una opción correcta");
-                    break;
-            }
-
-        }while (opcion != 7);
-
+        }
+        while (opcion != 7);
     }
 
     private static void menu() {
@@ -62,7 +30,7 @@ public class AlmacenPrincipal {
         System.out.println("6: Productos de caducidad próxima");
         System.out.println("7: Salir");
     }
-/*
+
     private static Producto altaProducto() {
         Scanner sc = new Scanner(System.in);
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
@@ -83,8 +51,8 @@ public class AlmacenPrincipal {
         categoria = sc.nextLine();
 
         return p;
-    }*/
-/*
+    }
+
     private static Comercial altaComercial() {
         Scanner sc = new Scanner(System.in);
         Comercial c;
@@ -105,34 +73,28 @@ public class AlmacenPrincipal {
         edad = sc.nextInt();
 
         return new Comercial(nombre, apellidos, edad, zona, crearRegistroComercial());
-    }*/
+    }
 
     // En el siguiente método, cambiar tipo de dato de retorno al tipo de colección elegida para el registro de los comerciales
     // Los elementos en el registro pueden introducirse manualmente, sin necesidad de solicitarlos por teclado.
-    /*
     private static Collection<> crearRegistroComercial() {
         Collection<> reg ;
         reg.add(.....);
         reg.add(.....);
 
         return reg;
-    }*/
+    }
 
     private static void eliminarProductosLimpieza() {
-
-
-
     }
 
     private static void especialidadComerciales() {
     }
 
     private static void costeProductos() {
-
-
-
     }
 
     private static void productosCaducidadProxima() {
     }
 }
+
