@@ -5,6 +5,7 @@ import RepasoExamen2Eva.Products.Bazar;
 import RepasoExamen2Eva.Products.Comestible;
 import RepasoExamen2Eva.Products.Producto;
 import RepasoExamen2Eva.Utils.Operacion;
+import RepasoExamen2Eva.Utils.Validacion;
 
 import java.lang.reflect.Array;
 import java.text.SimpleDateFormat;
@@ -47,6 +48,9 @@ public class Almacen {
                     break;
                 case 6:
                     productosCaducidadProxima();
+                    break;
+                case 7:
+                    System.out.println("hasta pronto");
                     break;
                 default:
                     System.out.println("Por favor escoja una opción correcta");
@@ -99,10 +103,8 @@ public class Almacen {
         }else{
             System.out.println("Introduzca la fecha de caducidad con el siguiente formato por favor dd-MM-yyyy ");
             String fechaString = sc.next();
-            DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd-MM-yyyy");
-            LocalDate fecha = LocalDate.parse(fechaString, formato);
-            LocalDate fechaCaducidad = Operacion.devuelveFechaCorrecta(fecha);
-            p = new Comestible(precio, nombre,fechaCaducidad);
+            LocalDate fechaCaducidad = Operacion.devuelveFechaCorrecta(fechaString);
+            p = new Comestible(precio, nombre, fechaCaducidad);
         }
         return p;
     }

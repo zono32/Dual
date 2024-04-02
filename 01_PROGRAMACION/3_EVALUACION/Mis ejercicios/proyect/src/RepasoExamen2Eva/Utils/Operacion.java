@@ -1,5 +1,6 @@
 package RepasoExamen2Eva.Utils;
 
+import Fechas.DifernciaDias.Fecha;
 import RepasoExamen2Eva.Exceptions.ExcepFecha;
 import RepasoExamen2Eva.Exceptions.ExcepNum;
 
@@ -7,9 +8,8 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
-import static RepasoExamen2Eva.Utils.Validacion.validarPrecioNumero;
-import static RepasoExamen2Eva.Utils.Validacion.validarPrecioPositivo;
-import static RepasoExamen2Eva.Utils.Validacion.ValidarFecha;
+import static RepasoExamen2Eva.Utils.Validacion.*;
+
 public class Operacion {
 
     public static double devuelvePrecioValidado(double precio){
@@ -30,19 +30,33 @@ public class Operacion {
         } while (true);
     }
 
-    public static LocalDate devuelveFechaCorrecta(LocalDate fecha){
+    public static LocalDate devuelveFechaCorrecta(String fecha){
         Scanner sc = new Scanner(System.in);
+        LocalDate hoy = LocalDate.now();
+
+        DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        LocalDate fechanew = null;
+        String hoyString = hoy.format(formato);
+
         do {
             try{
-                if(!ValidarFecha(fecha)){
+                fechanew = LocalDate.parse(fecha, formato);
+                if(!ValidarFecha(fechanew)){
                     throw new ExcepFecha(ExcepFecha.PRODUCTO_CADUCADO);
                 }
-                return fecha;
+                if(!ValidarFormatoFecha(fechanew)){
+                    throw new ExcepFecha(ExcepFecha.FECHA_FORMATO_INCORRECTO);
+                }
+                return fechanew;
             }catch (ExcepFecha e){
                 System.out.println(e.getMessage());
+
                 System.out.printf("Desea introducir una nueva fecha? s/n");
                 String resp = sc.next();
+
                 if (resp.equalsIgnoreCase("s")){
+                    System.out.printf("por favor indique una fecha posterior a " + hoyString + "\nCon el formato dd-MM-yyyy");
+                    fechanew = LocalDate.parse(sc.next(), formato);
 
                 }else{
                     break;
@@ -50,7 +64,7 @@ public class Operacion {
 
             }
         }while (true);
-        return fecha;
+        return fechanew;
 
     }
 }
