@@ -1,35 +1,50 @@
 package org.programacion.unidad_11.Actividades.BoletinFicheros;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+//A partir de un array con nombres de persona, escribir en un fichero denominado
+// “datos.txt”dichos nombres, cada uno en una línea.
+// A continuación, leer los datos de nuevo del fichero ymostrarlos por pantalla,
+// indicando el índice de la posición que ocupa. Ejemplo de ejecución
+
+import java.io.*;
 import java.util.Scanner;
 
 public class Ej1 {
 
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
-        String ruta = sc.next();
-        ruta= ruta+"datos.txt";
-        System.out.println("dame la ruta del fichero: ");
-        String[] nombres = new String[3];
 
-        try {
-            FileWriter fw = new FileWriter(ruta);
+            String[] nombres = {"Juan", "Maria", "Pedro", "Ana"};
 
+            // Escribir los nombres en el archivo datos.txt
+            try {
+                FileWriter fileWriter = new FileWriter("datos.txt");
+                BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
 
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+                for (String nombre : nombres) {
+                    bufferedWriter.write(nombre);
+                    bufferedWriter.newLine();
+                }
 
+                bufferedWriter.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
 
+            // Leer los nombres del archivo y mostrarlos por pantalla
+            try {
+                FileReader fileReader = new FileReader("datos.txt");
+                BufferedReader bufferedReader = new BufferedReader(fileReader);
 
+                String line;
+                int index = 0;
+                while ((line = bufferedReader.readLine()) != null) {
+                    System.out.println("Nombre en la posición " + index + ": " + line);
+                    index++;
+                }
 
+                bufferedReader.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
     }
-
-
-
-
-
 }

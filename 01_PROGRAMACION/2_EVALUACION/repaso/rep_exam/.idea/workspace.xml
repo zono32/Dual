@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6dba493-b6eb-4d0e-81bd-183cf94fdb93" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../../03_CLIENTE/2 EVALUACION/Examen Cliente/Lafuente_Joaquin/ejercicio2/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../03_CLIENTE/2 EVALUACION/Examen Cliente/Lafuente_Joaquin/ejercicio2/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3_EVALUACION/ProgramacionTerceraEvaluacion/.idea/sonarlint/issuestore/0/5/05e31b7f15b4643e4990e86e9c86bff68c033592" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3_EVALUACION/ProgramacionTerceraEvaluacion/.idea/sonarlint/issuestore/0/5/05e31b7f15b4643e4990e86e9c86bff68c033592" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3_EVALUACION/ProgramacionTerceraEvaluacion/.idea/sonarlint/issuestore/0/f/0f88015ba47ac25eb8502fcface0d2bbab24a93f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3_EVALUACION/ProgramacionTerceraEvaluacion/.idea/sonarlint/issuestore/7/5/7560a25f1e06fcda4a0f360521a73caca56aa0da" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3_EVALUACION/ProgramacionTerceraEvaluacion/.idea/sonarlint/issuestore/7/a/7a2349ed23170aa9b9cba3fc4588e091ba98e066" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3_EVALUACION/ProgramacionTerceraEvaluacion/.idea/sonarlint/issuestore/7/a/7a2349ed23170aa9b9cba3fc4588e091ba98e066" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3_EVALUACION/ProgramacionTerceraEvaluacion/.idea/sonarlint/issuestore/e/b/ebdc0308afb6c52bdcb27d881ad1da601f935680" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3_EVALUACION/ProgramacionTerceraEvaluacion/.idea/sonarlint/issuestore/e/b/ebdc0308afb6c52bdcb27d881ad1da601f935680" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3_EVALUACION/ProgramacionTerceraEvaluacion/.idea/sonarlint/issuestore/f/c/fcb8643b7f6cbcdae92c215f3347cd1ec19dfc78" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3_EVALUACION/ProgramacionTerceraEvaluacion/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3_EVALUACION/ProgramacionTerceraEvaluacion/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3_EVALUACION/ProgramacionTerceraEvaluacion/.idea/sonarlint/securityhotspotstore/0/f/0f88015ba47ac25eb8502fcface0d2bbab24a93f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3_EVALUACION/ProgramacionTerceraEvaluacion/.idea/sonarlint/securityhotspotstore/7/5/7560a25f1e06fcda4a0f360521a73caca56aa0da" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3_EVALUACION/ProgramacionTerceraEvaluacion/.idea/sonarlint/securityhotspotstore/f/c/fcb8643b7f6cbcdae92c215f3347cd1ec19dfc78" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3_EVALUACION/ProgramacionTerceraEvaluacion/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3_EVALUACION/ProgramacionTerceraEvaluacion/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,23 +26,23 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2dd3ZzM2ucBVOkN8W0YNbtOWNKo" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
