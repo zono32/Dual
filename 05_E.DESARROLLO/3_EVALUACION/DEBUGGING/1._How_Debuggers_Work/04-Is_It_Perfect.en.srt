@@ -1,0 +1,15 @@
+1
+00:00:00,000 --> 00:00:07,000
+Y ahora, para una prueba: ¿cuál de estas entradas no se despoja adecuadamente del marcador HTML?
+
+2
+00:00:07,000 --> 00:00:16,000
+¿Es "foo", es un enlace a una página llamada "foo.html" seguido del texto "foo"
+
+3
+00:00:16,000 --> 00:00:23,000
+y el final del enlace, ¿es un enlace vacío o es un enlace a una página llamada "greater than"?
+
+4
+00:00:23,000 --> 99:59:59,000
+Marca todas las que correspondan.

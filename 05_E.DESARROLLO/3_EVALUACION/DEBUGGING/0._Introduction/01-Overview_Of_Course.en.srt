@@ -1,0 +1,197 @@
+1
+00:00:00,000 --> 00:00:05,000
+Mi nombre es Andreas Zeller. Soy investigador en la Universidad de Saarland en Alemania.
+
+2
+00:00:05,000 --> 00:00:11,000
+Y estoy investigando sobre programas grandes y por qué fallan.
+
+3
+00:00:11,000 --> 00:00:19,000
+He realizado algunos trabajos sobre depuración automática, también sobre la extracción de historiales de programas.
+
+4
+00:00:19,000 --> 00:00:23,000
+He trabajado con empresas como Microsoft, SAP o Google,
+
+5
+00:00:23,000 --> 00:00:30,000
+examinando sus errores, descubriendo qué estaba mal, y me di cuenta
+
+6
+00:00:30,000 --> 00:00:38,000
+de que casi no hay material docente disponible sobre depuración y cómo depurar programas.
+
+7
+00:00:38,000 --> 00:00:45,000
+Así que hoy, voy a comenzar contigo un curso sobre cómo hacer depuración de manera sistemática,
+
+8
+00:00:45,000 --> 00:00:51,000
+efectiva y, en muchos casos, incluso de manera automática. Disfrútalo.
+
+9
+00:00:51,000 --> 00:00:54,000
+Bienvenido al curso de Udacity sobre depuración.
+
+10
+00:00:54,000 --> 00:00:58,000
+El objetivo de este curso es enseñar un enfoque sistemático para la depuración
+
+11
+00:00:58,000 --> 00:01:04,000
+e incluso vamos a explorar una serie de herramientas automáticas que hacen la depuración por ti.
+
+12
+00:01:04,000 --> 00:01:07,000
+Vamos a explorar cómo funcionan los depuradores.
+
+13
+00:01:07,000 --> 00:01:11,000
+En particular, el método científico de depuración mediante el cual
+
+14
+00:01:11,000 --> 00:01:15,000
+a través de una serie de experimentos vamos refinando gradualmente una hipótesis
+
+15
+00:01:15,000 --> 00:01:19,000
+hasta llegar a un diagnóstico sobre por qué falló el programa.
+
+16
+00:01:19,000 --> 00:01:23,000
+Además de eso, vamos a construir nuestro propio depurador interactivo en Python.
+
+17
+00:01:23,000 --> 00:01:25,000
+En la próxima unidad, voy a presentarte una de las herramientas de depuración más
+
+18
+00:01:25,000 --> 00:01:29,000
+poderosas jamás inventadas, que son las aserciones.
+
+19
+00:01:29,000 --> 00:01:33,000
+Las aserciones son declaraciones en el programa que verifican automáticamente
+
+20
+00:01:33,000 --> 00:01:36,000
+si el estado del programa sigue siendo correcto.
+
+21
+00:01:36,000 --> 00:01:39,000
+Es decir, mientras tu programa se está ejecutando, la computadora monitorea constantemente
+
+22
+00:01:39,000 --> 00:01:42,000
+el programa para ver si ha ocurrido un error.
+
+23
+00:01:42,000 --> 00:01:48,000
+Esto te permite encontrar muy rápidamente y de manera efectiva dónde se introdujo primero un error.
+
+24
+00:01:48,000 --> 00:01:54,000
+Además de eso, vamos a construir una herramienta que te permita inferir aserciones a partir de ejecuciones.
+
+25
+00:01:54,000 --> 00:01:58,000
+En la unidad 3, te mostraré una técnica llamada depuración delta
+
+26
+00:01:58,000 --> 00:02:01,000
+que simplifica automáticamente los problemas.
+
+27
+00:02:01,000 --> 00:02:07,000
+Por ejemplo, aquí hay un archivo HTML de 900 líneas que hace que un programa se bloquee al procesarlo.
+
+28
+00:02:07,000 --> 00:02:10,000
+Con la depuración delta, puedes reducir esto a solo los ocho caracteres
+
+29
+00:02:10,000 --> 00:02:14,000
+que producen el error igual de bien y todo esto de manera automática.
+
+30
+00:02:14,000 --> 00:02:21,000
+En la próxima unidad, te mostraré cómo averiguar de dónde proviene un fallo específico.
+
+31
+00:02:21,000 --> 00:02:23,000
+Ves una ejecución como una serie de estados.
+
+32
+00:02:23,000 --> 00:02:26,000
+Vamos a explorar técnicas que te ayudarán a rastrear
+
+33
+00:02:26,000 --> 00:02:29,000
+el camino de un error a lo largo de la ejecución del programa.
+
+34
+00:02:29,000 --> 00:02:35,000
+Y además de eso, vamos a construir una herramienta que aísle automáticamente dicho cambio de causa-efecto.
+
+35
+00:02:35,000 --> 00:02:39,000
+En la unidad 5, hemos estado mirando cómo reproducir fallos.
+
+36
+00:02:39,000 --> 00:02:43,000
+Vamos a examinar todas las diversas fuentes de entrada para tu programa
+
+37
+00:02:43,000 --> 00:02:47,000
+y discutir cómo capturar y reproducirlas de manera que puedas
+
+38
+00:02:47,000 --> 00:02:49,000
+reproducir fielmente un fallo que ocurre en el campo.
+
+39
+00:02:49,000 --> 00:02:54,000
+Además, vamos a explorar la depuración estadística que recopila datos del campo
+
+40
+00:02:54,000 --> 00:03:00,000
+para decirte qué partes de tu programa son más propensas a estar relacionadas con el fallo.
+
+41
+00:03:00,000 --> 00:03:04,000
+En la unidad 6, vamos a ver cómo extraer información
+
+42
+00:03:04,000 --> 00:03:08,000
+de
+
+ bases de datos de errores y de cambios para averiguar
+
+43
+00:03:08,000 --> 00:03:13,000
+dónde han estado los errores en tu programa en el pasado, dónde se acumulan,
+
+44
+00:03:13,000 --> 00:03:18,000
+y qué partes de tu programa, por lo tanto, serán más propensas a errores en el futuro.
+
+45
+00:03:18,000 --> 00:03:21,000
+Y nuevamente, esta es una técnica totalmente automática.
+
+46
+00:03:21,000 --> 00:03:28,000
+Hasta ahora, no has disfrutado de la depuración porque simplemente te quita la vida.
+
+47
+00:03:28,000 --> 00:03:33,000
+El objetivo de este curso es quitarte la mayor parte del esfuerzo de depuración de encima
+
+48
+00:03:33,000 --> 00:03:38,000
+porque puedes hacer que la computadora se encargue de la mayor parte del trabajo de depuración.
+
+49
+00:03:38,000 --> 00:03:42,000
+Así que tu mente está libre para hacer algo más creativo que depurar.

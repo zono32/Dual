@@ -1,0 +1,31 @@
+1
+00:00:00,000 --> 00:00:04,000
+Como con cualquier guía del diablo, por supuesto, no debes hacer lo que se indica aquí,
+
+2
+00:00:04,000 --> 00:00:07,000
+sino que debes hacer lo contrario.
+
+3
+00:00:07,000 --> 00:00:12,000
+Esto significa que debes ir y arreglar el problema y no el síntoma,
+
+4
+00:00:12,000 --> 00:00:18,000
+entender qué debería hacer tu programa y finalmente proceder sistemáticamente.
+
+5
+00:00:18,000 --> 00:00:24,000
+Déjame crear un cuestionario aquí: antes de aplicar una solución, ¿qué deberías hacer?
+
+6
+00:00:24,000 --> 00:00:31,000
+Entender cuál es el problema, entender qué debería hacer el código, o/y
+
+7
+00:00:31,000 --> 00:00:35,000
+ser capaz de predecir cómo la solución abordaría el problema.
+
+8
+00:00:35,000 --> 99:59:59,000
+La palabra es tuya.

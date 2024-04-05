@@ -1,0 +1,123 @@
+1
+00:00:00,000 --> 00:00:06,000
+A veces ayuda mucho simplemente contarle a un colega o amigo en qué estás trabajando.
+
+2
+00:00:06,000 --> 00:00:08,000
+Este es el problema en el que estoy trabajando,
+
+3
+00:00:08,000 --> 00:00:11,000
+esto es lo que estoy viendo, esto es lo que he intentado.
+
+4
+00:00:11,000 --> 00:00:14,000
+En mi experiencia, en 2 de cada 3 casos,
+
+5
+00:00:14,000 --> 00:00:18,000
+el problema se resuelve simplemente al contarlo.
+
+6
+00:00:18,000 --> 00:00:22,000
+Cuando era asistente de enseñanza en la universidad,
+
+7
+00:00:22,000 --> 00:00:26,000
+los estudiantes venían a mí con todo tipo de problemas.
+
+8
+00:00:26,000 --> 00:00:28,000
+Ahora soy profesor; solo vienen con los problemas difíciles.
+
+9
+00:00:28,000 --> 00:00:30,000
+Pero cuando era asistente de enseñanza, venían y decían
+
+10
+00:00:30,000 --> 00:00:35,000
+algo así como, "Oh, Andrés, Andrés, sabes, tengo este problema aquí.
+
+11
+00:00:35,000 --> 00:00:40,000
+Ves, aquí está este bucle, y en este bucle tenemos este árbol de búsqueda binario,
+
+12
+00:00:40,000 --> 00:00:43,000
+y sabes, he estado agregando 2 elementos aquí, agregué 3 elementos aquí,
+
+13
+00:00:43,000 --> 00:00:45,000
+y más y más y más, y ahora estoy haciendo esto y aquello,
+
+14
+00:00:45,000 --> 00:00:47,000
+estoy eliminando aquí, pero..."
+
+15
+00:00:47,000 --> 00:00:49,000
+Y por supuesto, no entendía nada.
+
+16
+00:00:49,000 --> 00:00:53,000
+Pero aún así estaba allí asintiendo y diciendo "sí, sí, sí, claro," como se hace,
+
+17
+00:00:53,000 --> 00:00:55,000
+pero luego el estudiante diría,
+
+18
+00:00:55,000 --> 00:01:00,000
+"Oh, de hecho, ahora que lo digo, no estoy eliminando nada en absoluto.
+
+19
+00:01:00,000 --> 00:01:04,000
+¡Creo, sí! ¡Debe ser! Si el elemento no está en el árbol,
+
+20
+00:01:04,000 --> 00:01:06,000
+¡Sí, el elemento no está en el árbol, por eso no lo está eliminando!
+
+21
+00:01:06,000 --> 00:01:10,000
+Gracias Andrés! ¡Muchas gracias, todo es simplemente hermoso!
+
+22
+00:01:10,000 --> 00:01:12,000
+Muchas gracias por ayudarme aquí."
+
+23
+00:01:12,000 --> 00:01:15,000
+Yo estaba feliz, el estudiante estaba feliz, y yo no había hecho nada.
+
+24
+00:01:15,000 --> 00:01:18,000
+Por supuesto, ocasionalmente también había problemas
+
+25
+00:01:18,000 --> 00:01:21,000
+donde los estudiantes realmente venían y tenían problemas reales,
+
+26
+00:01:21,000 --> 00:01:24,000
+y luego me preguntaban con una gran cara de desconcierto, y luego tenía que volver a decir,
+
+27
+00:01:24,000 --> 00:01:26,000
+"Okay, okay. ¿Puedes repetir esto un poco más lento?
+
+28
+00:01:26,000 --> 00:01:30,000
+¿Qué es esta cosa sobre foo y un árbol binario y las comillas y las etiquetas y todo?"
+
+29
+00:01:30,000 --> 00:01:34,000
+Y luego entraríamos en la depuración regular, pero en dos tercios de los casos, ¡sí!
+
+30
+00:01:34,000 --> 00:01:36,000
+Simplemente escuchando, sería capaz de depurar.
+
+31
+00:01:36,000 --> 99:59:59,000
+¡Hey! Yo era el rey de la depuración.

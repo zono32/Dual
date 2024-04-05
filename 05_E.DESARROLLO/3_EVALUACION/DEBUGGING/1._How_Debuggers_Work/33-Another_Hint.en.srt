@@ -1,0 +1,91 @@
+1
+00:00:00,000 --> 00:00:02,000
+Echemos otro vistazo a nuestro ejemplo.
+
+2
+00:00:02,000 --> 00:00:08,000
+Vemos que la condición aquí no solo maneja comillas dobles sino también comillas simples.
+
+3
+00:00:08,000 --> 00:00:13,000
+La pregunta es, ¿hay alguna diferencia en cómo la condición maneja comillas dobles y comillas simples?
+
+4
+00:00:13,000 --> 00:00:17,000
+Todavía tenemos esta hipótesis caracterizando el error.
+
+5
+00:00:17,000 --> 00:00:22,000
+Veamos si se generaliza a comillas arbitrarias, es decir, comillas generales se eliminan de la entrada,
+
+6
+00:00:22,000 --> 00:00:25,000
+ya sean dobles o simples.
+
+7
+00:00:25,000 --> 00:00:29,000
+Para verificar esta hipótesis, ahora usamos una entrada 'foo' entre comillas simples
+
+8
+00:00:29,000 --> 00:00:34,000
+y esperamos que la salida también tenga comillas simples como lo que está sucediendo aquí.
+
+9
+00:00:34,000 --> 00:00:36,000
+Aquí tenemos nuestro programa nuevamente.
+
+10
+00:00:36,000 --> 00:00:40,000
+Ahora necesitamos eliminar estas afirmaciones para restaurarlo a su estado original.
+
+11
+00:00:40,000 --> 00:00:44,000
+Y ahora, vamos a invocar esto con 'foo' y comillas simples
+
+12
+00:00:44,000 --> 00:00:48,000
+y nuevamente, necesitamos encerrar esto con comillas para convertirlo en una cadena de Python.
+
+13
+00:00:48,000 --> 00:00:51,000
+Regla general, si tienes comillas simples en una cadena de Python,
+
+14
+00:00:51,000 --> 00:00:53,000
+necesitamos encerrarla entre comillas dobles.
+
+15
+00:00:53,000 --> 00:00:56,000
+Si tienes comillas dobles en una cadena de Python, necesitamos encerrarla entre comillas simples.
+
+16
+00:00:56,000 --> 00:01:00,000
+Y si tienes ambas, necesitamos crear cadenas múltiples adicionales
+
+17
+00:01:00,000 --> 00:01:02,000
+encerradas entre comillas simples y dobles.
+
+18
+00:01:02,000 --> 00:01:07,000
+Entonces, aquí vamos, ponemos 'foo' y comillas simples en el programa y ahora veamos qué pasa.
+
+19
+00:01:07,000 --> 00:01:11,000
+Sorpresa, lo que ves aquí, si pones comillas simples, no se eliminan
+
+20
+00:01:11,000 --> 00:01:16,000
+mientras que solo para verificar, las comillas dobles; sin embargo, son eliminadas de la entrada.
+
+21
+00:01:16,000 --> 00:01:20,000
+Eso es importante. Las comillas dobles son eliminadas y las comillas simples no lo son.
+
+22
+00:01:20,000 --> 00:01:25,000
+Entonces, la salida realmente contiene comillas simples, lo que significa que nuestra hipótesis como aquí
+
+23
+00:01:25,000 --> 99:59:59,000
+es rechazada--las comillas simples no se eliminan.

@@ -1,0 +1,23 @@
+1
+00:00:00,000 --> 00:00:04,000
+Bienvenido a la primera unidad sobre cómo funcionan los depuradores.
+
+2
+00:00:04,000 --> 00:00:08,000
+En esta unidad, te voy a introducir al método científico de depuración,
+
+3
+00:00:08,000 --> 00:00:12,000
+que es un proceso mediante el cual, a través de un experimento sistemático,
+
+4
+00:00:12,000 --> 00:00:16,000
+serás guiado lentamente hacia la causa del problema.
+
+5
+00:00:16,000 --> 00:00:21,000
+También vamos a ver por qué hablar con un oso de peluche puede ser un método efectivo
+
+6
+00:00:21,000 --> 99:59:59,000
+para descubrir qué está yendo mal, y al final, vamos a construir un depurador interactivo. Disfruta.

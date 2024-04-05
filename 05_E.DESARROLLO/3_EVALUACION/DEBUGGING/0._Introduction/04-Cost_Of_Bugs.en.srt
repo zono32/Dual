@@ -1,0 +1,59 @@
+1
+00:00:00,000 --> 00:00:05,000
+El problema de que la depuración sea tan consumidora de tiempo y todo eso
+
+2
+00:00:05,000 --> 00:00:09,000
+se traduce realmente en dinero y esfuerzo a gran escala.
+
+3
+00:00:09,000 --> 00:00:15,000
+Una cifra comúnmente citada en la literatura es que en cualquier proyecto de software,
+
+4
+00:00:15,000 --> 00:00:19,000
+al menos el 50% del esfuerzo se gasta en pruebas y depuración.
+
+5
+00:00:19,000 --> 00:00:23,000
+Este número incluso puede llegar al 75%.
+
+6
+00:00:23,000 --> 00:00:30,000
+Según un estudio realizado en 2002, los errores de software están costando a la economía de EE. UU.
+
+7
+00:00:30,000 --> 00:00:39,000
+solo $59.5 mil millones al año y mejoras en las pruebas y depuración podrían reducir
+
+8
+00:00:39,000 --> 00:00:45,000
+este costo de errores de software en $30 mil millones o $22 mil millones al año.
+
+9
+00:00:45,000 --> 00:00:50,000
+El principal problema con la depuración, sin embargo, no es que tome tiempo.
+
+10
+00:00:50,000 --> 00:00:55,000
+Lo peor es que es un proceso cuya duración es impredecible.
+
+11
+00:00:55,000 --> 00:01:02,000
+Puede llevar desde unos minutos, unas horas, y a veces incluso días y semanas.
+
+12
+00:01:02,000 --> 00:01:08,000
+Incluso si no sabes cuánto tiempo llevará, asegúrate de utilizar el proceso sistemático,
+
+13
+00:01:08,000 --> 00:01:14,000
+que te lleva gradualmente hacia la causa del problema, pero incluso si nunca sabes
+
+14
+00:01:14,000 --> 00:01:17,000
+cuánto tiempo llevará un error, es un poco una bendición
+
+15
+00:01:17,000 --> 99:59:59,000
+utilizar un proceso que te lleve gradualmente hacia su causa.

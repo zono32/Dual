@@ -1,0 +1,19 @@
+1
+00:00:00,000 --> 00:00:06,000
+Así que, aquí viene el cuestionario. ¿Qué puedes hacer para evitar una situación como esta?
+
+2
+00:00:06,000 --> 00:00:14,000
+¿Deberías beber más café, dejar de fumar, no contestar llamadas telefónicas,
+
+3
+00:00:14,000 --> 00:00:19,000
+no cometer errores en primer lugar, obtener un depurador mejor,
+
+4
+00:00:19,000 --> 00:00:23,000
+o hacer el curso de Udacity sobre depuración?
+
+5
+00:00:23,000 --> 99:59:59,000
+Pista. La respuesta correcta está marcada con un círculo.

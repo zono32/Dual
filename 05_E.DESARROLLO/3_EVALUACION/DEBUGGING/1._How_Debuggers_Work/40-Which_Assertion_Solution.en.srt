@@ -1,0 +1,71 @@
+1
+00:00:00,000 --> 00:00:04,000
+Este cuestionario puede responderse fácilmente si recuerdas nuestro diagrama de estado inicial.
+
+2
+00:00:04,000 --> 00:00:08,000
+Inicialmente, estábamos en el estado sin comillas, sin etiqueta.
+
+3
+00:00:08,000 --> 00:00:13,000
+Si vemos el comienzo de una etiqueta, entramos en el modo sin comillas y con etiqueta.
+
+4
+00:00:13,000 --> 00:00:19,000
+Y en este modo, podemos entrar en el modo con comillas y etiqueta, del cual salimos
+
+5
+00:00:19,000 --> 00:00:22,000
+nuevamente al ver una comilla de cierre, y cuando vemos la etiqueta de cierre,
+
+6
+00:00:22,000 --> 00:00:24,000
+volvemos al modo sin comillas, sin etiqueta.
+
+7
+00:00:24,000 --> 00:00:29,000
+Estos son los tres estados en los que puede estar un programa. ¿Qué estado falta?
+
+8
+00:00:29,000 --> 00:00:33,000
+El estado que falta es el estado en el que tendríamos comillas,
+
+9
+00:00:33,000 --> 00:00:35,000
+pero estamos fuera de las etiquetas.
+
+10
+00:00:35,000 --> 00:00:39,000
+Este es exactamente el problema que estaríamos manejando en nuestro programa.
+
+11
+00:00:39,000 --> 00:00:41,000
+Nos encargaríamos de las comillas, incluso fuera de las etiquetas.
+
+12
+00:00:41,000 --> 00:00:43,000
+Este estado no debería alcanzarse.
+
+13
+00:00:43,000 --> 00:00:46,000
+Entonces, ¿cómo podemos expresar esto con nuestra declaración de afirmación?
+
+14
+00:00:46,000 --> 00:00:49,000
+Lo que queremos asegurarnos es que este estado nunca pueda alcanzarse.
+
+15
+00:00:49,000 --> 00:00:55,000
+Por lo tanto, esto es comillas y no etiqueta. La inversión de esto es etiqueta o no comillas.
+
+16
+00:00:55,000 --> 00:01:00,000
+Puedes ver que o bien estamos en modo sin comillas, o si estamos en modo con comillas
+
+17
+00:01:00,000 --> 00:01:05,000
+entonces estamos en modo de etiqueta, y la afirmación que realmente verifica esto es esta.
+
+18
+00:01:05,000 --> 99:59:59,000
+Por lo tanto, esta es la respuesta correcta.

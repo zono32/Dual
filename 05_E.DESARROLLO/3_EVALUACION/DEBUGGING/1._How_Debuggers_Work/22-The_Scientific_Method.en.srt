@@ -1,0 +1,109 @@
+
+
+1
+00:00:00,000 --> 00:00:03,000
+Al principio, tienes alguna observación inicial.
+
+2
+00:00:03,000 --> 00:00:07,000
+A partir de esta observación inicial, derivamos una hipótesis.
+
+3
+00:00:07,000 --> 00:00:11,000
+Una posible explicación para lo que acabas de observar.
+
+4
+00:00:11,000 --> 00:00:16,000
+Si la hipótesis explica tu observación, la hipótesis debe ser útil para hacer una predicción.
+
+5
+00:00:16,000 --> 00:00:20,000
+En nuestro ejemplo, la observación inicial fue la caída de la manzana.
+
+6
+00:00:20,000 --> 00:00:25,000
+La hipótesis sería, bueno, todos los objetos sólidos caen hacia abajo y luego una predicción sería,
+
+7
+00:00:25,000 --> 00:00:31,000
+si tomo este plato y lo dejo caer, va a caer recto hacia abajo hacia el suelo.
+
+8
+00:00:31,000 --> 00:00:34,000
+También podría romperse en el camino. Esto es para un niño de 3 años.
+
+9
+00:00:34,000 --> 00:00:39,000
+El experimento significa verificar realmente la predicción, así que tomamos el plato y lo dejamos caer.
+
+10
+00:00:39,000 --> 00:00:43,000
+Del experimento proviene la observación. ¿Qué ves?
+
+11
+00:00:43,000 --> 00:00:48,000
+Bueno, el plato realmente fue atraído hacia el suelo y así que ahora puedes ir
+
+12
+00:00:48,000 --> 00:00:53,000
+y verificar si lo que acabas de observar en tu experimento es como se predijo
+
+13
+00:00:53,000 --> 00:00:58,000
+y por lo tanto, satisface la hipótesis y decimos que apoya la hipótesis
+
+14
+00:00:58,000 --> 00:01:01,000
+y luego podemos refinar la hipótesis.
+
+15
+00:01:01,000 --> 00:01:05,000
+Nuestra línea de caso dice que podemos generalizarlo hacia otros objetos
+
+16
+00:01:05,000 --> 00:01:07,000
+y para llegar a una hipótesis más general.
+
+17
+00:01:07,000 --> 00:01:15,000
+Si la observación, sin embargo, no está en línea con tu predicción, entonces la hipótesis es rechazada,
+
+18
+00:01:15,000 --> 00:01:19,000
+y si la hipótesis es rechazada, necesitas proponer una nueva hipótesis,
+
+19
+00:01:19,000 --> 00:01:25,000
+y este ciclo va desde la hipótesis a través de la predicción a través del experimento a través de la observación
+
+20
+00:01:25,000 --> 00:01:30,000
+y gradualmente estamos encontrando la hipótesis o proponiendo alternativas.
+
+21
+00:01:30,000 --> 00:01:34,000
+Esto es algo que repites una y otra vez hasta que tu hipótesis
+
+22
+00:01:34,000 --> 00:01:39,000
+sea consistente con todas las observaciones y tenga tanto poder predictivo
+
+23
+00:01:39,000 --> 00:01:42,000
+que se convierte en lo que uno llama una teoría.
+
+24
+00:01:42,000 --> 00:01:48,000
+En una teoría repites el proceso de refinar la hipótesis a través de la predicción, el experimento,
+
+25
+00:01:48,000 --> 00:01:54,000
+la observación o la creación de nuevas hipótesis--nuevamente pasando por el círculo una y otra vez
+
+26
+00:01:54,000 --> 00:01:57,000
+hasta que tu hipótesis se convierte en una teoría
+
+27
+00:01:57,000 --> 99:59:59,000
+que es una descripción predictiva y completa de algún aspecto de la realidad.

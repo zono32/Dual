@@ -1,0 +1,27 @@
+1
+00:00:00,000 --> 00:00:07,000
+Y ahora, para una pregunta. Hay una entrada que todavía produce salida con marcado HTML.
+
+2
+00:00:07,000 --> 00:00:09,000
+Así que todavía tenemos el error en este código.
+
+3
+00:00:09,000 --> 00:00:17,000
+¿Es esto "foo" en un marcado HTML en negrita, es lo mismo que arriba pero con "foo" entre comillas dobles,
+
+4
+00:00:17,000 --> 00:00:22,000
+o es lo mismo que el primero pero con las comillas fuera del texto,
+
+5
+00:00:22,000 --> 00:00:28,000
+o es lo mismo que el primero pero con los nombres de las etiquetas HTML entre comillas dobles.
+
+6
+00:00:28,000 --> 00:00:30,000
+Prueba por ti mismo.
+
+7
+00:00:30,000 --> 99:59:59,000
+¿Cuál de estos todavía incluye marcado HTML en la salida de eliminar el marcado HTML?

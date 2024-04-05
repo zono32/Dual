@@ -1,0 +1,107 @@
+1
+00:00:00,000 --> 00:00:05,000
+En este punto, se supone que nuestro programa está completo, pero todavía tiene un error.
+
+2
+00:00:05,000 --> 00:00:12,000
+Si ingresamos "foo" en negrita, entre comillas como entrada, ¿qué esperaríamos como salida? "foo", ¿verdad?
+
+3
+00:00:12,000 --> 00:00:14,000
+Sin embargo, lo que obtenemos es una salida completamente diferente.
+
+4
+00:00:14,000 --> 00:00:21,000
+Obtenemos una salida donde las comillas son eliminadas pero las etiquetas HTML todavía están ahí
+
+5
+00:00:21,000 --> 00:00:27,000
+y obviamente, la salida no coincide con lo que realmente esperamos, tenemos un error aquí.
+
+6
+00:00:27,000 --> 00:00:30,000
+Cuando era estudiante, nunca recibí capacitación formal en depuración.
+
+7
+00:00:30,000 --> 00:00:36,000
+Tuve que descubrir cómo hacer la depuración yo mismo. Lo que aprendí fue cómo usar la salida de depuración.
+
+8
+00:00:36,000 --> 00:00:41,000
+Es decir, iba y colocaba declaraciones de salida en todas partes en mi programa.
+
+9
+00:00:41,000 --> 00:00:44,000
+En Python, esta sería la famosa declaración print.
+
+10
+00:00:44,000 --> 00:00:51,000
+Así que aquí de nuevo, aquí está nuestro programa y aquí está la única entrada que falla.
+
+11
+00:00:51,000 --> 00:00:58,000
+Si presionas ejecutar, lo que obtenemos es que las comillas se eliminan pero el marcado HTML todavía está ahí.
+
+12
+00:00:58,000 --> 00:01:02,000
+Cuando era estudiante, nunca recibí capacitación formal en depuración,
+
+13
+00:01:02,000 --> 00:01:05,000
+así que tuve que descubrir por mí mismo qué salió mal.
+
+14
+00:01:05,000 --> 00:01:12,000
+Lo único que sabía era cómo usar la salida de depuración, así que usaría la declaración print en Python
+
+15
+00:01:12,000 --> 00:01:14,000
+para descubrir qué había salido mal.
+
+16
+00:01:14,000 --> 00:01:18,000
+Básicamente, iría y dispersaría declaraciones print por todas partes.
+
+17
+00:01:18,000 --> 00:01:23,000
+Por ejemplo, podría imprimir todas las variables locales aquí. Genial.
+
+18
+00:01:23,000 --> 00:01:28,000
+Así que sé cuál es el carácter, sé cuál es el estado de la etiqueta y la comilla.
+
+19
+00:01:28,000 --> 00:01:32,000
+Ahora, haremos clic en ejecutar--oh sí, y aquí viene mi gran salida.
+
+20
+00:01:32,000 --> 00:01:34,000
+Ahora, puedo desplazarme aquí abajo y decir, "Oh sí, claro, claro, claro."
+
+21
+00:01:34,000 --> 00:01:39,000
+Obviamente, por supuesto ahora puedes ver de inmediato qué está pasando aquí.
+
+22
+00:01:39,000 --> 00:01:43,000
+No, me temo que no puedo porque esta es solo una lista larga, larga.
+
+23
+00:01:43,000 --> 00:01:46,000
+Piensa en una entrada de 1000 caracteres en este momento.
+
+24
+00:01:46,000 --> 00:01:50,000
+Si tienes una entrada de 1000 caracteres, no tienes que revisar 3000 líneas de registros.
+
+25
+00:01:50,000 --> 00:01:54,000
+Esto puede ayudarte pero es una pérdida total de tiempo.
+
+26
+00:01:54,000 --> 00:01:59,000
+Tienes que ingresar estas declaraciones, usarlas para la depuración y luego quitarlas nuevamente.
+
+27
+00:01:59,000 --> 99:59:59,000
+Es una pesadilla total de mantenimiento.

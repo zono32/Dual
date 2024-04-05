@@ -1,0 +1,61 @@
+
+
+1
+00:00:00,000 --> 00:00:04,000
+Cuando estamos depurando, procedemos de la misma manera.
+
+2
+00:00:04,000 --> 00:00:08,000
+De hecho, tratamos los errores como si fueran fenómenos naturales.
+
+3
+00:00:08,000 --> 00:00:14,000
+Entonces, nuestra hipótesis se basaría en la observación inicial del fallo
+
+4
+00:00:14,000 --> 00:00:18,000
+y posiblemente también en todo el conocimiento que tenemos sobre nuestro programa.
+
+5
+00:00:18,000 --> 00:00:22,000
+La ejecución fallida, más ejecuciones, el fallo original, el código del programa--
+
+6
+00:00:22,000 --> 00:00:25,000
+todo esto se tiene en cuenta al formular una hipótesis.
+
+7
+00:00:25,000 --> 00:00:30,000
+Al final del proceso, obtenemos una descripción coherente de cómo surgió el fallo.
+
+8
+00:00:30,000 --> 00:00:33,000
+No llamamos a esto una teoría. La teoría es un poco exagerada para un simple fallo.
+
+9
+00:00:33,000 --> 00:00:38,000
+En cambio, llamamos a esto un diagnóstico del fallo original.
+
+10
+00:00:38,000 --> 00:00:41,000
+Puede sonar un poco exagerado aplicar un método
+
+11
+00:00:41,000 --> 00:00:44,000
+que ha sido diseñado para estudiar fenómenos naturales
+
+12
+00:00:44,000 --> 00:00:50,000
+y para proponer teorías sobre fenómenos naturales en algo tan artificial como los errores.
+
+13
+00:00:50,000 --> 00:00:56,000
+Sin embargo, los errores y la naturaleza tienen algo en común, ninguno de ellos está bajo nuestro control.
+
+14
+00:00:56,000 --> 00:00:59,000
+Y el método científico es precisamente el método que necesitas
+
+15
+00:00:59,000 --> 99:59:59,000
+para explicar algo que no está bajo nuestro control.

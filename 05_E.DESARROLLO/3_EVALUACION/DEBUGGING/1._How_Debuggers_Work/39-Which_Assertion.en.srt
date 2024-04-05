@@ -1,0 +1,19 @@
+1
+00:00:00,000 --> 00:00:04,000
+En nuestro caso, hay una sola afirmación que podría colocarse en el cuerpo del bucle
+
+2
+00:00:04,000 --> 00:00:09,000
+para detectar este tipo de errores, y de hecho, una afirmación que podría permanecer en el código.
+
+3
+00:00:09,000 --> 00:00:14,000
+Es una afirmación que captura la relación entre las variables tag.
+
+4
+00:00:14,000 --> 00:00:20,000
+¿Cuál es la afirmación correcta? ¿Es assert quote y no tag? ¿O quote o no tag?
+
+5
+00:00:20,000 --> 99:59:59,000
+¿O tag o no quote? ¿O es assert tag y no quote?

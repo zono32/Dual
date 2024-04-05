@@ -1,0 +1,31 @@
+1
+00:00:00,000 --> 00:00:03,500
+Aquí hay una historia que es reportada por Kernighan y Pike
+
+2
+00:00:03,500 --> 00:00:05,800
+en su libro, "The Practice of Programming."
+
+3
+00:00:05,800 --> 00:00:11,000
+Un centro informático universitario mantenía un oso de peluche cerca del mostrador de ayuda.
+
+4
+00:00:11,000 --> 00:00:17,000
+A los estudiantes con errores misteriosos se les exigía explicar los problemas al oso
+
+5
+00:00:17,000 --> 00:00:20,000
+antes de poder hablar con un consejero humano.
+
+6
+00:00:20,000 --> 00:00:24,000
+Imagínese eso--hablar con un oso, y en dos tercios de todos los casos,
+
+7
+00:00:24,000 --> 00:00:26,000
+el problema se resolvería por sí mismo.
+
+8
+00:00:26,000 --> 99:59:59,000
+Así de efectiva es la depuración explícita.

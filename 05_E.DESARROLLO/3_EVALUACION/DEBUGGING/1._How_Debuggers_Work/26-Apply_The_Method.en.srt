@@ -1,0 +1,57 @@
+
+
+1
+00:00:00,000 --> 00:00:06,000
+Ahora apliquemos el método científico a un programa de Python que elimina el marcado HTML.
+
+2
+00:00:06,000 --> 00:00:10,000
+En primer lugar, escribamos de nuevo lo que hemos observado hasta ahora,
+
+3
+00:00:10,000 --> 00:00:12,000
+qué esperábamos y cuál fue el resultado.
+
+4
+00:00:12,000 --> 00:00:19,000
+Si nuestra entrada era "foo" con marcado HTML, entonces esperaríamos la salida "foo",
+
+5
+00:00:19,000 --> 00:00:23,000
+y la salida real fue "foo", así que está perfecto.
+
+6
+00:00:23,000 --> 00:00:28,000
+Si nuestra entrada era lo mismo entre comillas dobles, esperaríamos que las comillas dobles
+
+7
+00:00:28,000 --> 00:00:32,000
+también aparecieran en la salida, pero en cambio obtenemos el marcado HTML aún incluido en la salida.
+
+8
+00:00:32,000 --> 00:00:37,000
+Todo esto falla debido a todas las observaciones que hicimos y a partir de esto,
+
+9
+00:00:37,000 --> 00:00:40,000
+necesitamos proponer la primera hipótesis sobre qué causa el error.
+
+10
+00:00:40,000 --> 00:00:45,000
+Entonces, aquí tienes un cuestionario. ¿Qué hipótesis son consistentes con nuestras observaciones hasta ahora?
+
+11
+00:00:45,000 --> 00:00:47,000
+Marca todas las que apliquen.
+
+12
+00:00:47,000 --> 00:00:54,000
+¿Es que se eliminan las comillas dobles de la entrada etiquetada, es que las etiquetas entre comillas dobles
+
+13
+00:00:54,000 --> 00:01:00,000
+no se eliminan, es que la etiqueta para negrita siempre se elimina de la entrada,
+
+14
+00:01:00,000 --> 99:59:59,000
+o es que las palabras de cuatro letras se eliminan.

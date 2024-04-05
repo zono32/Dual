@@ -1,0 +1,75 @@
+1
+00:00:00,000 --> 00:00:06,000
+Entonces, aquí estás, sentado frente a tu depurador interactivo,
+
+2
+00:00:06,000 --> 00:00:14,000
+avanzando en el programa, mirando las variables, avanzando, avanzando y avanzando.
+
+3
+00:00:14,000 --> 00:00:22,000
+Estableciendo puntos de interrupción tratando de entender qué está pasando y sin pedir tiempo.
+
+4
+00:00:22,000 --> 00:00:31,000
+Estás frente a tu pantalla. Estás cavando en el código paso a paso, paso a paso.
+
+5
+00:00:31,000 --> 00:00:39,000
+Y ves cómo las variables individuales aparecen y desaparecen. El tiempo pasa.
+
+6
+00:00:39,000 --> 00:00:47,000
+Ya es tarde, así que pides una pizza. Tal vez una taza de café.
+
+7
+00:00:47,000 --> 00:00:53,000
+Sigues mirando la pantalla y un poco más de café
+
+8
+00:00:53,000 --> 00:01:00,000
+y simplemente sigues avanzando y avanzando en tu programa a medida que pasa el tiempo.
+
+9
+00:01:00,000 --> 00:01:12,000
+Ya es bastante tarde y sigues concentrado, avanzando, avanzando, avanzando.
+
+10
+00:01:12,000 --> 00:01:22,000
+Estás muy cerca ahora. Ahí es cuando suena el teléfono. Ring. Ring. Ring.
+
+11
+00:01:22,000 --> 00:01:26,000
+¿Quién está llamando? ¿Quién está llamando?
+
+12
+00:01:26,000 --> 00:01:33,000
+Es tu pareja importante preguntándote: "¿Cuándo demonios piensas volver a casa?"
+
+13
+00:01:33,000 --> 00:01:37,000
+Estás en una situación sin salida.
+
+14
+00:01:37,000 --> 00:01:43,000
+O pierdes tu concentración o pierdes a tu pareja importante.
+
+15
+00:01:43,000 --> 00:01:51,000
+Te quedan 30 segundos hasta que pierdas toda la concentración que has construido cuidadosamente.
+
+16
+00:01:51,000 --> 00:01:53,000
+Tienes 30 segundos para decidir qué hacer.
+
+17
+00:01:53,000 --> 00:01:56,000
+Conozco a varios programadores que, ante
+
+18
+00:01:56,000 --> 00:02:01,000
+un problema así, han tomado la única decisión correcta.
+
+19
+00:02:01,000 --> 99:59:59,000
+Y creo que la depuración es el principal motivo de divorcio para los programadores.

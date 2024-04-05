@@ -1,0 +1,40 @@
+1
+00:00:00,000 --> 00:00:03,000
+Después de haber corregido el programa, necesitamos verificar dos cosas.
+
+2
+00:00:03,000 --> 00:00:06,000
+Primero, debemos verificar si se ha cometido el mismo error en otro lugar.
+
+3
+00:00:06,000 --> 00:00:11,000
+En nuestro caso, si hay un programador que ha confundido la precedencia
+de "or" y "and", puede ser bueno revisar el código en otros lugares,
+
+4
+00:00:11,000 --> 00:00:15,000
+y asegurarnos de que todos estos tengan paréntesis adecuados alrededor de ellos,
+
+5
+00:00:15,000 --> 00:00:20,000
+lo cual de todos modos es una buena práctica de programación.
+
+6
+00:00:20,000 --> 00:00:22,000
+Segundo, queremos asegurarnos de que el error no ocurra nuevamente.
+
+7
+00:00:22,000 --> 00:00:25,000
+y podemos hacerlo ya sea escribiendo pruebas apropiadas, consulte el otro Udacity
+
+8
+00:00:25,000 --> 00:00:28,000
+curso para saber cómo hacerlo.
+
+9
+00:00:28,000 --> 00:00:31,000
+O, podemos incluir afirmaciones apropiadas en el código que aseguren que el error no ocurra nuevamente.
+
+10
+00:00:31,000 --> 99:59:59,000
+O bien, podemos incluir afirmaciones apropiadas en el código que se aseguren de que el error no vuelva a ocurrir.

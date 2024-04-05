@@ -1,0 +1,71 @@
+1
+00:00:00,000 --> 00:00:03,000
+Aquí tienes un ejemplo de un punto de partida alternativo.
+
+2
+00:00:03,000 --> 00:00:06,000
+Podríamos haber comenzado con la observación de que, si tengo una cadena "foo"
+
+3
+00:00:06,000 --> 00:00:12,000
+contenida dentro de etiquetas, contenida dentro de comillas, entonces las comillas se eliminan
+
+4
+00:00:12,000 --> 00:00:14,000
+pero las etiquetas aún están presentes.
+
+5
+00:00:14,000 --> 00:00:18,000
+A partir de eso podríamos haber formulado la hipótesis de que las etiquetas en
+
+6
+00:00:18,000 --> 00:00:20,000
+comillas dobles no se eliminan.
+
+7
+00:00:20,000 --> 00:00:24,000
+Si echamos un vistazo a nuestro código, nuevamente en la versión con errores,
+
+8
+00:00:24,000 --> 00:00:28,000
+para que la marca HTML aparezca en la salida, la etiqueta debe ser falsa.
+
+9
+00:00:28,000 --> 00:00:33,000
+Para que la etiqueta permanezca falsa, la comilla debe estar establecida.
+
+10
+00:00:33,000 --> 00:00:38,000
+Y la comilla solo puede establecerse en esta línea, y luego esto también nos habría dejado
+
+11
+00:00:38,000 --> 00:00:40,000
+con esta condición precisa para observar.
+
+12
+00:00:40,000 --> 00:00:45,000
+Así que aunque comenzamos con una hipótesis diferente, terminamos en el mismo diagnóstico,
+
+13
+00:00:45,000 --> 00:00:48,000
+y también terminamos con la misma solución. Y aquí vamos.
+
+14
+00:00:48,000 --> 00:00:52,000
+Así que a partir de nuestra hipótesis, podemos deducir que la etiqueta debe ser falsa,
+
+15
+00:00:52,000 --> 00:00:55,000
+porque de lo contrario la marca no estaría en la salida.
+
+16
+00:00:55,000 --> 00:00:58,000
+Por lo tanto, la comilla debe ser verdadera, y por lo tanto tenemos nuevamente nuestra
+
+17
+00:00:58,000 --> 00:01:01,000
+condición errónea, que establece la comilla.
+
+18
+00:01:01,000 --> 99:59:59,000
+Hipótesis de inicio alternativa, mismo diagnóstico y misma solución.

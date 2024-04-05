@@ -1,0 +1,39 @@
+1
+00:00:00,000 --> 00:00:05,000
+Dejar declaraciones de depuración en el código incluso puede generar un problema de seguridad.
+
+2
+00:00:05,000 --> 00:00:13,000
+En las versiones 10.7.2/10.7.3 de Mac OS, hubo un problema de seguridad porque un programador
+
+3
+00:00:13,000 --> 00:00:17,000
+había dejado declaraciones de depuración en el código.
+
+4
+00:00:17,000 --> 00:00:23,000
+Esto resultaría en la siguiente situación: tú como usuario ingresarías tu contraseña en la Mac
+
+5
+00:00:23,000 --> 00:00:30,000
+la Mac luego te dejaría entrar o no te dejaría entrar pero al mismo tiempo almacenaría tu contraseña
+
+6
+00:00:30,000 --> 00:00:35,000
+en texto plano en un registro que sería visible para cualquiera--
+
+7
+00:00:35,000 --> 00:00:41,000
+cualquiera con acceso a la máquina, por supuesto, y esto nuevamente requeriría una contraseña.
+
+8
+00:00:41,000 --> 00:00:46,000
+En una máquina multiusuario, por ejemplo, o alguien que tenga acceso físico a un disco duro,
+
+9
+00:00:46,000 --> 00:00:52,000
+un astuto comprobador no podría ir y recuperar tu contraseña en texto plano,
+
+10
+00:00:52,000 --> 99:59:59,000
+y eso es simplemente debido a alguna declaración de depuración dejada allí.

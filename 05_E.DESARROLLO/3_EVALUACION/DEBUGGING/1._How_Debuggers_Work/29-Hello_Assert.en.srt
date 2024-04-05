@@ -1,0 +1,61 @@
+
+
+1
+00:00:00,000 --> 00:00:06,000
+El error se debe a que la variable tag está siendo establecida. ¿Cómo sabemos que esta variable se está estableciendo?
+
+2
+00:00:06,000 --> 00:00:09,000
+Permítanme presentarles una de las herramientas de depuración más poderosas
+
+3
+00:00:09,000 --> 00:00:12,000
+jamás inventadas, que es la declaración assert.
+
+4
+00:00:12,000 --> 00:00:19,000
+La declaración assert seguida de una condición evalúa la condición y aborta la ejecución
+
+5
+00:00:19,000 --> 00:00:25,000
+lanzando una excepción si la condición es falsa: es decir, si la condición se cumple, procedemos como de costumbre.
+
+6
+00:00:25,000 --> 00:00:29,000
+Si la condición no se cumple, lanzamos una excepción.
+
+7
+00:00:29,000 --> 00:00:33,000
+Con la declaración, ahora podemos ir y verificar el valor de tag a lo largo del bucle.
+
+8
+00:00:33,000 --> 00:00:39,000
+Entonces, nuevamente decimos, en nuestra hipótesis, tag se está estableciendo y usamos assert para verificar eso.
+
+9
+00:00:39,000 --> 00:00:45,000
+Con esta declaración assert not tag, si tag nunca se establece, obtendremos inmediatamente una excepción.
+
+10
+00:00:45,000 --> 00:00:49,000
+Y nuevamente podemos verificar esto con foo encerrado entre comillas dobles.
+
+11
+00:00:49,000 --> 00:00:55,000
+Entonces, para confirmar la hipótesis, esperaríamos una excepción assert.
+
+12
+00:00:55,000 --> 00:00:57,000
+¿Cuál sería entonces la salida? Hagamos de esto un cuestionario.
+
+13
+00:00:57,000 --> 00:01:02,000
+Ahora que cambiamos el programa para incluir assert not tag, ¿qué va a suceder?
+
+14
+00:01:02,000 --> 00:01:08,000
+¿El programa genera una excepción o sigue siendo el caso de que la salida es todavía foo como antes?
+
+15
+00:01:08,000 --> 99:59:59,000
+La afirmación no se viola y tag no se establece durante todo el bucle. La decisión está en tus manos.
