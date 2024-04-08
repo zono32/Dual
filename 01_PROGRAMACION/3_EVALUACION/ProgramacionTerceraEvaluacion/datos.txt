@@ -1,0 +1,4 @@
+Agua 0.75
+Leche 0.95
+Jabón 2.15
+Yogur 1.5

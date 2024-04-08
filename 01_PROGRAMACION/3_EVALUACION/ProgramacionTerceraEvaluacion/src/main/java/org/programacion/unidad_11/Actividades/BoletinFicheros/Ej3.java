@@ -4,67 +4,46 @@ package org.programacion.unidad_11.Actividades.BoletinFicheros;
 // y lo elimine del listado (del fichero). Deberá mostrar también su información porpantalla
 // (nombre y precio)
 
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.io.*;
 
-public class Ej3 {
-    public static void main(String[] args) {
-        String[] productos = {"Producto1", "Producto2", "Producto3"};
-        double[] precios = {10.5, 20.0, 15.75};
+public class Ej3{
 
-        // Escribir los datos en el archivo productos.txt
-        try {
-            FileWriter fileWriter = new FileWriter("productos.txt");
-            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+    private static void cargarFichero(){
+        String[] productos = {"Agua", "Leche", "Jabón", "Yogur"};
+        Double[] precios = {0.75, 0.95, 2.15, 1.50};
 
-            for (int i = 0; i < productos.length; i++) {
-                bufferedWriter.write(productos[i] + " " + precios[i]);
-                bufferedWriter.newLine();
+        try ( FileWriter fw = new FileWriter("datos.txt")){
+            for ( int i = 0 ; i< productos.length; i++){
+                fw.write(productos[i]+ " "+ precios[i]+ "\n");
             }
-
-            bufferedWriter.close();
-        } catch (IOException e) {
-            e.printStackTrace();
         }
-
-        // Solicitar nombre de producto a eliminar
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Introduce el nombre del producto a eliminar: ");
-        String productoAEliminar = scanner.nextLine();
-
-        // Eliminar producto del listado y mostrar su información
-        try {
-            FileReader fileReader = new FileReader("productos.txt");
-            BufferedReader bufferedReader = new BufferedReader(fileReader);
-
-            ArrayList<String> lines = new ArrayList<>();
-            String line;
-            while ((line = bufferedReader.readLine()) != null) {
-                if (line.startsWith(productoAEliminar)) {
-                    System.out.println("Producto eliminado: " + line);
-                } else {
-                    lines.add(line);
-                }
-            }
-
-            bufferedReader.close();
-
-            FileWriter fileWriter = new FileWriter("productos.txt");
-            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-
-            for (String item : lines) {
-                bufferedWriter.write(item);
-                bufferedWriter.newLine();
-            }
-
-            bufferedWriter.close();
-        } catch (IOException e) {
-            e.printStackTrace();
+        catch (IOException e) {
+            throw new RuntimeException(e);
         }
     }
+
+    private static void leerFichero(){
+        try(FileReader fr = new FileReader("datos.txt");
+            BufferedReader br = new BufferedReader(fr)) {
+            String s;
+            int i = 1;
+            while ((s = br.readLine())!=null){
+                System.out.println(i +". " + s );
+                i++;
+            }
+
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
+    public static void main(String[] args) {
+        leerFichero();
+
+
+    }
 }
+

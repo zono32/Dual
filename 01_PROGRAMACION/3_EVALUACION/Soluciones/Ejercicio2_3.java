@@ -1,5 +1,9 @@
 package ActividadesStreams.Boletin;
 
+//Desarrolla un programa que lea datos de 2 arrays, uno con nombres de productos y el otrocon sus precios.
+// Almacenar dicho contenido en un fichero, donde cada línea constará denombre de producto y precio.
+
+
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -22,6 +26,11 @@ public class Ejercicio2_3 {
             throw new RuntimeException(e);
         }
     }
+
+//A partir del ejercicio anterior, implementa un método que solicite un nombre de producto alusuario
+// y lo elimine del listado (del fichero). Deberá mostrar también su información porpantalla
+// (nombre y precio)
+
 
     private void borrado () throws IOException {
         Scanner sc = new Scanner(System.in);

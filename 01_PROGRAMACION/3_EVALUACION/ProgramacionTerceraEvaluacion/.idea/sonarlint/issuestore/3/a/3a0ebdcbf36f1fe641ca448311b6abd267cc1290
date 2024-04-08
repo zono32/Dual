@@ -1,12 +1,10 @@
 
-–
-java:S1192"NDefine a constant instead of duplicating this literal "productos.txt" 3 times.(ûüºÿÿÿÿÿ8¶¦‘Ôê1J$b94112c5-cdf9-48d3-acfe-aca584aab49b
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶¼ÅŠ8·¦‘Ôê1J$2ead0ebc-8d9f-422d-b2c9-8ee04d721c81
-
-java:S2095"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(ğ­Ï8‘§‘Ôê1J$ad948be8-782f-4251-a52c-5a15736a1e3c
-
-java:S2095:"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(ğ­Ï8‘§‘Ôê1J$94826ba8-2395-4b54-af6f-5a6c2e8f13fc
-”
-java:S2095+"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(µÎ Àúÿÿÿÿ8‘§‘Ôê1J$5d05dbd4-6c09-40fb-adf2-9774e7e14ba4
-m	java:S106%"+Replace this use of System.out by a logger.(à§¼†8™§‘Ôê1J$55dc9a29-1bae-423a-879f-550bdbc2ad14
-l	java:S1061"+Replace this use of System.out by a logger.(‡Œİ(8¡§‘Ôê1J$b8fc10fb-87d8-4f51-b180-e255cde7999d
+	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8åØ÷ë1J$930b48c9-2c53-4b89-ba8a-7a1dfd5c3813
+	java:S112$"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8åØ÷ë1J$ada0a96f-0c6a-44f5-99f1-b05445937a88
+	java:S112&"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8åØ÷ë1J$919bdcc4-190a-46e7-ab08-e553ff015b51
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶¼ÅŠ8åØ÷ë1J$91294abf-37d6-4ce1-9f8b-9dcc3ae2ae67
+‡
+java:S2147%"DCombine this catch with the one at line 35, which has the same body.(ï­£Ä8˜åØ÷ë1J$fab891d5-c676-4da8-b9e1-fd9e15bd7a60
+m	java:S106"+Replace this use of System.out by a logger.(ÉŠ€Ù8™åØ÷ë1J$48a84e87-3562-4590-b971-46440ef2da4d
+z
+java:S1144"2Remove this unused private "cargarFichero" method.(èÉŒ•şÿÿÿÿ8›åØ÷ë1J$80597a26-b37e-49fb-ad67-4e6312db734a
