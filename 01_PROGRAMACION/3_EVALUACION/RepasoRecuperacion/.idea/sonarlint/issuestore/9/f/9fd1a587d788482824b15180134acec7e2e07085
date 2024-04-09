@@ -1,0 +1,8 @@
+
+…
+java:S1319"cThe type of "ventas" should be an interface such as "Map" rather than the implementation "HashMap".(—¨º§üÿÿÿÿ8ü‰øì1
+
+java:S13195"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(âÂšÌşÿÿÿÿ8ü‰øì1
+€
+java:S13199"cThe type of "ventas" should be an interface such as "Map" rather than the implementation "HashMap".(Ù€µ8ü‰øì1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¸¹Ö¼ıÿÿÿÿ8ş‰øì1
