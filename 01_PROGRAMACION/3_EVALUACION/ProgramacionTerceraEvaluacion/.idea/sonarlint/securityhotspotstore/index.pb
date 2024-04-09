@@ -23,3 +23,5 @@ Msrc/main/java/org/programacion/unidad_11/Actividades/BoletinFicheros/Ej6.java,
 Msrc/main/java/org/programacion/unidad_11/Actividades/BoletinFicheros/Ej7.java,e\6\e687a421a4e8e022602043a6d918169bdadc1d66
 l
 <src/main/java/org/programacion/unidad_11/Acceso_ficheros.pdf,2\d\2d1ccfbfd810d842228cc6a7aeea5a866a42cf5f
+
+Osrc/main/java/org/programacion/unidad_11/Actividades/BoletinFicheros/Ej2_2.java,1\5\1576f101bb759b62e9609e32f47482d1552199de
