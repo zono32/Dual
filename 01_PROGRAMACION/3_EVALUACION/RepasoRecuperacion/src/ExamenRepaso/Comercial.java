@@ -3,19 +3,25 @@ package ExamenRepaso;
 import java.util.HashMap;
 
 public class Comercial {
-
     String nombre;
     String apellidos;
     int edad;
-    int zona;
-    HashMap< Integer, Producto > ventas;
+    String zona;
+    HashMap< Integer, Producto> producto ;
 
-    public Comercial(String nombre, String apellidos, int edad, int zona, HashMap<Integer, Producto> ventas) {
+    public Comercial(String nombre, String apellidos, int edad, String zona, HashMap<Integer, Producto> producto) {
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.edad = edad;
         this.zona = zona;
-        this.ventas = ventas;
+        this.producto = producto;
+    }
+    public Comercial() {
+        this.nombre = "";
+        this.apellidos = "";
+        this.edad = 0;
+        this.zona = "";
+        this.producto = null;
     }
 
     public String getNombre() {
@@ -42,20 +48,20 @@ public class Comercial {
         this.edad = edad;
     }
 
-    public int getZona() {
+    public String getZona() {
         return zona;
     }
 
-    public void setZona(int zona) {
+    public void setZona(String zona) {
         this.zona = zona;
     }
 
-    public HashMap<Integer, Producto> getVentas() {
-        return ventas;
+    public HashMap<Integer, Producto> getProducto() {
+        return producto;
     }
 
-    public void setVentas(HashMap<Integer, Producto> ventas) {
-        this.ventas = ventas;
+    public void setProducto(HashMap<Integer, Producto> producto) {
+        this.producto = producto;
     }
 
     @Override
@@ -65,7 +71,9 @@ public class Comercial {
                 ", apellidos='" + apellidos + '\'' +
                 ", edad=" + edad +
                 ", zona=" + zona +
-                ", ventas=" + ventas +
+                ", producto=" + producto +
                 '}';
     }
 }
+
+

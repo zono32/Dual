@@ -1,0 +1,59 @@
+
+r
+java:S3740r"/Provide the parametrized type for this generic.(›Ο°8±£τμ1J$26b4fa1e-58a4-4015-a5cb-56e259e6ab46
+
+java:S1488r"[Immediately return this expression instead of assigning it to the temporary variable "reg".(›Ο°8‰±£τμ1J$9ffb20ae-ce78-4f1d-9285-8841880ffceb
+΅	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ΈΉΦΌύÿÿÿÿ8±£τμ1J$0a1bbe82-adce-432a-b1ab-f311f1b50cd3
+Γ
+java:S1186z"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ίΚά58±£τμ1J$f8594e8f-2ae0-4989-a9f7-df10958a720f
+Δ
+java:S1186}"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(υάέφ8±£τμ1J$297c4f1f-bfa7-423d-8a24-954dc0aeb101
+Δ
+java:S1186€"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(”στd8±£τμ1J$346d3f37-5d4d-414f-b278-8a2b0671ff30
+Δ
+java:S1186ƒ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¦²T8±£τμ1J$30a02d7a-f886-40cf-984c-3508bd5a14eb
+l	java:S106%"+Replace this use of System.out by a logger.(€X8’±£τμ1J$351d9d6e-42dc-46d3-a100-e417686b3558
+m	java:S106("+Replace this use of System.out by a logger.(ΡΒΖ£8“±£τμ1J$630bb86d-2eda-4700-af6e-b3d9f04c92d8
+m	java:S1062"+Replace this use of System.out by a logger.(€ÿ8“±£τμ1J$6fd5566c-a698-4b4e-955c-db13d77d0135
+m	java:S1063"+Replace this use of System.out by a logger.(¶Ζ®8“±£τμ1J$f0a37b9c-da94-484f-a895-8ca6cf5d1985
+m	java:S1064"+Replace this use of System.out by a logger.(€ÿ8“±£τμ1J$9178e80e-1109-45dd-9fde-213b9881a1d7
+m	java:S1066"+Replace this use of System.out by a logger.(½ΈÿΈ8“±£τμ1J$59d188b3-a7d9-43da-8db8-0e5899b04699
+r	java:S1067"+Replace this use of System.out by a logger.(©ά–΅ϋÿÿÿÿ8“±£τμ1J$d2b8e41a-7705-4891-ab41-e9ee245e910c
+r	java:S1068"+Replace this use of System.out by a logger.(σΥΪ›ϊÿÿÿÿ8“±£τμ1J$61a27a8c-418b-4f76-88e9-4b82eccbe85c
+l	java:S1069"+Replace this use of System.out by a logger.(χΙ98“±£τμ1J$d8215d99-ea17-4c4f-ae59-095b28a23a22
+r	java:S106:"+Replace this use of System.out by a logger.(ή΄¤‡ψÿÿÿÿ8“±£τμ1J$0c9c3acb-b815-4363-afda-f13f06f6955c
+l	java:S106;"+Replace this use of System.out by a logger.(υ¬Ψ8“±£τμ1J$6b670c5e-a03d-4d84-a300-6f821f86c2ba
+m	java:S106<"+Replace this use of System.out by a logger.(γ¥Ζώ8”±£τμ1J$f73131ca-a572-4378-8265-733bd612f937
+r	java:S106="+Replace this use of System.out by a logger.(£‹ν†όÿÿÿÿ8”±£τμ1J$8922f58b-9630-45ee-a17e-6019d56a65f7
+…
+java:S1854S"=Remove this useless assignment to local variable "categoria".(Οχϋÿÿÿÿ8”±£τμ1J$8010aa00-74e4-4325-8209-7ecada91ce34
+}
+java:S1854O":Remove this useless assignment to local variable "precio".(Χσ 8”±£τμ1J$f420dfe8-3277-4a91-840a-739a8451a65a
+‚
+java:S1854K":Remove this useless assignment to local variable "nombre".(Ζ†Μ―ψÿÿÿÿ8”±£τμ1J$ed0796e5-aa32-4af6-bd7b-f817b335bed0
+
+java:S1854C"7Remove this useless assignment to local variable "sdf".(ΣΜ¤ζύÿÿÿÿ8”±£τμ1J$06b91c0a-a88c-46df-85b2-367ccc5b5d68
+o
+java:S1659G"'Declare "categoria" on a separate line.(³«Ούÿÿÿÿ8•±£τμ1J$277108f0-1dd4-4d00-9d85-d229cfbd4bab
+p
+java:S1481C"(Remove this unused "sdf" local variable.(ΣΜ¤ζύÿÿÿÿ8–±£τμ1J$02cf0d6e-1b5c-4e53-ad88-bf0fe0ed7293
+n
+java:S1481F"+Remove this unused "precio" local variable.(έ©’8–±£τμ1J$b8c3205f-12bf-42af-8795-d82a718984a3
+s
+java:S1481G"+Remove this unused "nombre" local variable.(³«Ούÿÿÿÿ8–±£τμ1J$e70fee5b-6e8a-4472-83b6-72c514f7efac
+v
+java:S1481G".Remove this unused "categoria" local variable.(³«Ούÿÿÿÿ8–±£τμ1J$93b976d5-48b2-4330-ba27-537ff5a71862
+m	java:S106H"+Replace this use of System.out by a logger.(·„ΎΉ8–±£τμ1J$04cdecf8-6a91-49e6-aaa0-d490df402d1e
+m	java:S106J"+Replace this use of System.out by a logger.(“ωΚ8–±£τμ1J$369531c2-5b77-454a-8050-245164e8b63c
+l	java:S106N"+Replace this use of System.out by a logger.(­Ό8–±£τμ1J$3da38c3b-2495-4e7a-95c5-aba989f86a1e
+r	java:S106R"+Replace this use of System.out by a logger.(£Τσύÿÿÿÿ8–±£τμ1J$ae1a80d8-7780-461a-aa4e-e8b0d9401e7e
+
+java:S1659\"FDeclare "apellidos" and all following declarations on a separate line.(Ήιεαωÿÿÿÿ8—±£τμ1J$dfbfd67f-2791-4392-8bd4-9a4f45441609
+i
+java:S1481Z"&Remove this unused "c" local variable.(Ώτη¥8—±£τμ1J$ae28a1b6-d850-4bb1-ba3f-1707e75e82f0
+r	java:S106]"+Replace this use of System.out by a logger.(ήΕ“ϋÿÿÿÿ8—±£τμ1J$1155b616-bbc6-4423-9440-5db4919c1f2b
+m	java:S106_"+Replace this use of System.out by a logger.(“ωΚ8—±£τμ1J$0332d09b-ed90-4169-b584-51a651a6f1b9
+m	java:S106b"+Replace this use of System.out by a logger.(†ν±ω8—±£τμ1J$bf80d482-859e-4a47-8b9b-9e6459f5946c
+r	java:S106e"+Replace this use of System.out by a logger.(υƒύ‡ωÿÿÿÿ8—±£τμ1J$c474fbbd-b724-43eb-8fbe-b7db85d8e9ff
+m	java:S106h"+Replace this use of System.out by a logger.(ϋ‚’“8—±£τμ1J$d5fbc8b2-d4af-4517-a47d-6152e0bc794a
+ƒ	java:S125s"<This block of commented-out lines of code should be removed.(σή¶ƒώÿÿÿÿ8™±£τμ1J$cbf922fb-ab1f-42cb-aa94-a5da246990d8

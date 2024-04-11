@@ -5,13 +5,41 @@ import java.util.*;
 
 public class AlmacenPrincipal {
 
+    ArrayList<Producto> productos = new ArrayList<>();
+    ArrayList<Comercial> comerciales = new ArrayList<>();
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int opcion;
-
         do {
+            opcion = sc.nextInt();
             menu();
-            opcion= sc.nextInt();
+            switch (opcion) {
+                case 1:
+                    altaProducto();
+                    break;
+                case 2:
+                    altaComercial();
+                    break;
+                case 3:
+                    eliminarProductosLimpieza();
+                    break;
+                case 4:
+                    especialidadComerciales();
+                    break;
+                case 5:
+                    costeProductos();
+                    break;
+                case 6:
+                    productosCaducidadProxima();
+                    break;
+                case 7:
+                    System.out.println("Hasta pronto");
+                    break;
+                default:
+                    System.out.println("Por favor escoja una opción válida");
+                    break;
+            }
 
         }
         while (opcion != 7);
@@ -34,9 +62,11 @@ public class AlmacenPrincipal {
     }
 
     private static Producto altaProducto() {
+
         Scanner sc = new Scanner(System.in);
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-        Producto p;
+
+        Producto p = null;
         double precio;
         String nombre, categoria;
         System.out.println("-------- Alta productos ---------");
@@ -74,21 +104,20 @@ public class AlmacenPrincipal {
         System.out.println("Introduzca edad");
         edad = sc.nextInt();
 
-        Hashmap<Integer,Producto> x = crearRegistroComercial();
-        Comercial comercial = new Comercial(nombre, apellidos, edad, zona);
-        comercial.setRegistro(x);
-        return comercial;
+        return new Comercial(nombre, apellidos, edad, zona, crearRegistroComercial());
     }
 
     // En el siguiente método, cambiar tipo de dato de retorno al tipo de colección elegida para el registro de los comerciales
     // Los elementos en el registro pueden introducirse manualmente, sin necesidad de solicitarlos por teclado.
-    private static Hashmap<Integer,Producto> crearRegistroComercial() {
-        Hashmap<Integer,Producto> reg ;
-        reg.put(.....);
-        reg.put(.....);
+    private static HashMap<Integer ,Producto> crearRegistroComercial() {
 
-   //     return reg;
-    //}
+        HashMap<Integer, Producto> reg = new HashMap();
+           // reg.put();
+           // reg.put();
+
+
+        return reg;
+    }
 
     private static void eliminarProductosLimpieza() {
     }
