@@ -1,0 +1,363 @@
+1
+00:00:00,000 --> 00:00:04,000
+Bienvenido a la última unidad de nuestro curso de depuración donde revisamos
+
+2
+00:00:04,000 --> 00:00:08,000
+el material que hemos visto hasta ahora y lo ponemos todo junto.
+
+3
+00:00:08,000 --> 00:00:12,000
+Ahora al final del curso, vamos a unir todo para ver
+
+4
+00:00:12,000 --> 00:00:15,000
+qué hacemos cuando nos encontramos con un nuevo error.
+
+5
+00:00:15,000 --> 00:00:21,000
+Cuando vemos un nuevo error, lo primero que hacemos es asegurarnos de que se procese.
+
+6
+00:00:21,000 --> 00:00:24,000
+Así que lo ingresamos en la base de datos de problemas.
+
+7
+00:00:24,000 --> 00:00:28,000
+Hemos visto las etapas por las que pasa el informe de problemas, desde no confirmado
+
+8
+00:00:28,000 --> 00:00:32,000
+pasando por nuevo hasta asignado, cuando se asigna a un desarrollador individual,
+
+9
+00:00:32,000 --> 00:00:35,000
+y finalmente resuelto y cerrado.
+
+10
+00:00:35,000 --> 00:00:43,000
+Cualquier problema nuevo debe ingresar en la base de datos de problemas.
+
+11
+00:00:43,000 --> 00:00:50,000
+A largo plazo, verificar problemas también te ayuda a crear estadísticas
+
+12
+00:00:50,000 --> 00:00:55,000
+sobre cuánto tiempo te lleva corregir un error, cuántos errores hay que aún necesitan corregirse,
+
+13
+00:00:55,000 --> 00:00:59,000
+así como dónde están los errores que necesitan ser corregidos.
+
+14
+00:00:59,000 --> 00:01:04,000
+De modo que en tu programa, sabes dónde están las ubicaciones
+
+15
+00:01:04,000 --> 00:01:10,000
+que con el tiempo tienen la mayor densidad de errores y, por lo tanto, necesitan atención especial.
+
+16
+00:01:10,000 --> 00:01:16,000
+Para todo esto, el seguimiento del problema es el primer requisito previo.
+
+17
+00:01:16,000 --> 00:01:23,000
+El siguiente paso es reproducir el problema porque solo cuando estás reproduciendo un problema,
+
+18
+00:01:23,000 --> 00:01:27,000
+sabes si realmente podrás solucionarlo.
+
+19
+00:01:27,000 --> 00:01:34,000
+Hemos visto cuáles son las entradas individuales que influyen en la ejecución de un programa.
+
+20
+00:01:34,000 --> 00:01:41,000
+Lo más importante es la data estática, la interacción del usuario y la interacción con el entorno
+
+21
+00:01:41,000 --> 00:01:48,000
+pero también problemas más complicados como el depurador que influye en el programa
+
+22
+00:01:48,000 --> 00:01:53,000
+o la aleatoriedad del tiempo y otros problemas que pueden ser difíciles de controlar.
+
+23
+00:01:53,000 --> 00:01:59,000
+Para reproducir el problema, debes tener todo esto bajo control.
+
+24
+00:01:59,000 --> 00:02:05,000
+Reproducir tu problema puede ser particularmente difícil cuando estás recopilando datos de campo
+
+25
+00:02:05,000 --> 00:02:10,000
+porque los datos y la interacción del usuario pueden contener datos sensibles.
+
+26
+00:02:10,000 --> 00:02:17,000
+Por eso también hemos visto las técnicas de depuración estadística que relacionan características de ejecución
+
+27
+00:02:17,000 --> 00:02:23,000
+como permitir que el programa se ejecute en ese momento a fallas y éxitos
+
+28
+00:02:23,000 --> 00:02:27,000
+al recopilar tales datos de campo, podrás descubrir
+
+29
+00:02:27,000 --> 00:02:32,000
+cuáles características de la ejecución se correlacionan con fallas
+
+30
+00:02:32,000 --> 00:02:38,000
+y estas características pueden ser características como líneas ejecutadas o valores devueltos de funciones.
+
+31
+00:02:38,000 --> 00:02:43,000
+El siguiente paso en la depuración es automatizar y simplificar.
+
+32
+00:02:43,000 --> 00:02:46,000
+La idea es que escribas una puerta de prueba
+
+33
+00:02:46,000 --> 00:02:51,000
+en la que puedas reproducir el error en cualquier momento automáticamente.
+
+34
+00:02:51,000 --> 00:02:56,000
+Al principio, esto es útil, por supuesto, para realizar pruebas de regresión
+
+35
+00:02:56,000 --> 00:03:00,000
+de modo que siempre puedas verificar si el problema está presente o no.
+
+36
+00:03:00,000 --> 00:03:05,000
+Sin embargo, los resultados también son útiles para simplificar automáticamente el problema
+
+37
+00:03:05,000 --> 00:03:11,000
+si tienes una entrada grande que causa una falla, entonces una prueba automática
+
+38
+00:03:11,000 --> 00:03:15,000
+puede ayudarte a simplificar automáticamente esta entrada.
+
+39
+00:03:15,000 --> 00:03:21,000
+La técnica de depuración delta toma esta entrada grande y con la ayuda de una prueba automática
+
+40
+00:03:21,000 --> 00:03:29,000
+la simplifica automáticamente a una entrada en la que cada elemento es relevante para reproducir la falla.
+
+41
+00:03:29,000 --> 00:03:36,000
+Esto puede ser de gran ayuda cuando se trata de comprender qué hace que ocurra la falla y qué no.
+
+42
+00:03:36,000 --> 00:03:43,000
+Una vez que hayas simpl
+
+ificado el problema, el siguiente paso será encontrar posibles orígenes de la infección.
+
+43
+00:03:43,000 --> 00:03:48,000
+Si tu programa falla, puedes ver su ejecución como una sucesión de estados.
+
+44
+00:03:48,000 --> 00:03:55,000
+El último estado es lo que ves como una falla y quieres averiguar de dónde vino esta falla.
+
+45
+00:03:55,000 --> 00:03:59,000
+El concepto de dependencias te ayuda a averiguar
+
+46
+00:03:59,000 --> 00:04:04,000
+las posibles fuentes de una infección y descartar todas las demás.
+
+47
+00:04:04,000 --> 00:04:07,000
+Cuando estás rastreando de dónde vino una falla,
+
+48
+00:04:07,000 --> 00:04:11,000
+a menudo tienes la opción de mirar múltiples posibles orígenes.
+
+49
+00:04:11,000 --> 00:04:17,000
+Pero lo que quieres hacer es enfocarte primero en aquellos orígenes que son más probables.
+
+50
+00:04:17,000 --> 00:04:23,000
+Si sabes que algún estado ya está infectado, es incorrecto, te enfocarás en este primero.
+
+51
+00:04:23,000 --> 00:04:29,000
+Si sabes desde algún estado anterior que esto causó este estado posterior,
+
+52
+00:04:29,000 --> 00:04:32,000
+también querrás enfocarte en este.
+
+53
+00:04:32,000 --> 00:04:39,000
+Si sabes de la depuración estadística que alguna característica está correlacionada con la falla, ve por ella.
+
+54
+00:04:39,000 --> 00:04:45,000
+Y si tienes razones para creer que algún estado en particular es probablemente defectuoso de todos modos,
+
+55
+00:04:45,000 --> 00:04:49,000
+por ejemplo, debido a su historial de errores, también ve por ello.
+
+56
+00:04:49,000 --> 00:04:54,000
+Y hemos visto técnicas para determinar todo esto, en particular afirmaciones
+
+57
+00:04:54,000 --> 00:05:00,000
+que ayudan mucho a descubrir inmediatamente durante la ejecución
+
+58
+00:05:00,000 --> 00:05:03,000
+si alguna parte del estado es errónea o no.
+
+59
+00:05:03,000 --> 00:05:08,000
+El sexto paso es aislar la cadena de infección.
+
+60
+00:05:08,000 --> 00:05:14,000
+Lo que esto significa es que para cada posible origen, realizas un experimento
+
+61
+00:05:14,000 --> 00:05:17,000
+para ver si realmente es la causa de la falla.
+
+62
+00:05:17,000 --> 00:05:22,000
+Para esto, utilizas el método científico. Estableces una hipótesis.
+
+63
+00:05:22,000 --> 00:05:26,000
+Esto podría ser la causa. Esto podría ser la causa. Esto podría ser la causa.
+
+64
+00:05:26,000 --> 00:05:29,000
+Haces una predicción adecuada.
+
+65
+00:05:29,000 --> 00:05:33,000
+Estableces un experimento y basado en la observación,
+
+66
+00:05:33,000 --> 00:05:38,000
+o bien refinan tu hipótesis o bien la rechazas.
+
+67
+00:05:38,000 --> 00:05:44,000
+Asegúrate de hacer estos pasos explícitos ya que ayuda a estructurar tu pensamiento
+
+68
+00:05:44,000 --> 00:05:50,000
+y te ayuda a interrumpir y reanudar tus actividades de depuración según sea necesario.
+
+69
+00:05:50,000 --> 00:05:56,000
+Repite esto retrocediendo a lo largo del programa hasta que llegues a un lugar
+
+70
+00:05:56,000 --> 00:06:03,000
+donde los datos de entrada sean los mismos pero los datos de salida estén infectados.
+
+71
+00:06:03,000 --> 00:06:11,000
+La declaración que genera esta infección es el defecto. Este es el último paso de la depuración.
+
+72
+00:06:11,000 --> 00:06:17,000
+Para corregir el defecto, de modo que ya no produzca una infección
+
+73
+00:06:17,000 --> 00:06:21,000
+sino que realmente haga que el programa se comporte correctamente.
+
+74
+00:06:21,000 --> 00:06:29,000
+Antes de corregir el defecto, debes estar seguro de que el defecto realmente es el defecto.
+
+75
+00:06:29,000 --> 00:06:34,000
+Es decir, que al cambiarlo apropiadamente, el problema se solucionará.
+
+76
+00:06:34,000 --> 00:06:40,000
+Debes tener un entendimiento claro sobre cómo tu corrección soluciona el defecto.
+
+77
+00:06:40,000 --> 00:06:43,000
+Y luego, también hay algunas tareas por hacer.
+
+78
+00:06:43,000 --> 00:06:46,000
+Necesitas verificar que la falla ya no ocurra.
+
+79
+00:06:46,000 --> 00:06:52,000
+Necesitas asegurarte de que tu corrección no haya introducido nuevos problemas
+
+80
+00:06:52,000 --> 00:06:57,000
+y nuevamente, las afirmaciones, como las hemos visto en este curso, te ayudaron mucho con eso.
+
+81
+00:06:57,000 --> 00:07:02,000
+También puedes desear buscar en tu código para verificar si se cometió el mismo error
+
+82
+00:07:02,000 --> 00:07:06,000
+en otros lugares y corregir estas ubicaciones también.
+
+83
+00:07:06,000 --> 00:07:12,000
+Nota cómo estos siete pasos de depuración pueden ser
+
+ fácilmente memorizados al mirar sus primeras letras
+
+84
+00:07:12,000 --> 00:07:15,000
+que forman la palabra TRAFFIC.
+
+85
+00:07:15,000 --> 00:07:21,000
+El tráfico puede que no esté relacionado inmediatamente con la depuración a menos que
+
+86
+00:07:21,000 --> 00:07:27,000
+estés depurando programas de tráfico, pero la forma en que las infecciones se propagan al programa
+
+87
+00:07:27,000 --> 00:07:30,000
+y lo que está sucediendo durante la ejecución de un programa
+
+88
+00:07:30,000 --> 00:07:35,000
+puede ser tan confuso como el tráfico en una ciudad grande y real.
+
+89
+00:07:35,000 --> 00:07:41,000
+Con estos siete pasos, has terminado con la depuración. ¡Felicidades!
+
+90
+00:07:41,000 --> 99:59:59,000
+Y ahora, pasemos a la siguiente parte.

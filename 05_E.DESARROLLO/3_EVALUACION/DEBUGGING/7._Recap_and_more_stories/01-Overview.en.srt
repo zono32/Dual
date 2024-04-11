@@ -1,0 +1,19 @@
+1
+00:00:00,000 --> 00:00:04,000
+Vamos a la séptima y última unidad en nuestro curso de depuración.
+
+2
+00:00:04,000 --> 00:00:11,000
+En esta unidad, vamos a hacer dos cosas: primero, vamos a repasar el material de las otras unidades
+
+3
+00:00:11,000 --> 00:00:19,000
+y nos aseguraremos de que todas encajen bien juntas, y segundo, vamos a explorar algunas opciones
+
+4
+00:00:19,000 --> 00:00:23,000
+sobre qué hacer para evitar la depuración por completo.
+
+5
+00:00:23,000 --> 99:59:59,000
+Además, vamos a tener una colección de las mejores historias de errores. ¡Disfruten!

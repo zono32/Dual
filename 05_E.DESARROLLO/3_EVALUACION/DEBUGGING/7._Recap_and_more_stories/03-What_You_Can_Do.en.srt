@@ -1,0 +1,217 @@
+1
+00:00:00,000 --> 00:00:05,800
+Al final del día, todos preferiríamos crear en lugar de depurar.
+
+2
+00:00:05,800 --> 00:00:08,380
+Entonces, ¿cómo podemos evitar la depuración desde el principio?
+
+3
+00:00:08,380 --> 00:00:11,350
+Aquí tienes algunas sugerencias sobre qué puedes hacer.
+
+4
+00:00:11,350 --> 00:00:15,120
+Primero, asegúrate de tener tus requisitos correctos.
+
+5
+00:00:15,120 --> 00:00:22,600
+Solo si sabes exactamente qué hacer podrás saber qué no hacer.
+
+6
+00:00:22,600 --> 00:00:30,820
+Es decir, solo con requisitos precisos podrás distinguir el fracaso del éxito.
+
+7
+00:00:30,820 --> 00:00:34,910
+Una cita famosa de Brian Kernighan:
+
+8
+00:00:34,910 --> 00:00:39,880
+"Sin especificación, no hay errores, solo sorpresas".
+
+9
+00:00:39,880 --> 00:00:43,990
+Así que podrías pensar que si no tienes especificaciones,
+
+10
+00:00:43,990 --> 00:00:46,660
+entonces no tendrías que hacer ninguna depuración.
+
+11
+00:00:46,660 --> 00:00:51,720
+Desafortunadamente, las sorpresas también necesitan ser depuradas,
+
+12
+00:00:51,720 --> 00:00:55,150
+excepto que depurar sorpresas es más difícil
+
+13
+00:00:55,150 --> 00:00:59,090
+porque no sabes cómo evitar que te sorprendan.
+
+14
+00:00:59,090 --> 00:01:03,160
+Aumenta la precisión y la automatización, siguiente sugerencia.
+
+15
+00:01:03,160 --> 00:01:06,700
+Al final, tienes este gran programa
+
+16
+00:01:06,700 --> 00:01:11,070
+y quieres poder encontrar tantos errores como sea posible.
+
+17
+00:01:11,070 --> 00:01:18,040
+Por supuesto, puedes hacer que los desarrolladores lo lean, lo revisen, lo prueben,
+
+18
+00:01:18,040 --> 00:01:24,560
+pero al final, el tiempo de tus desarrolladores siempre será un recurso valioso.
+
+19
+00:01:24,560 --> 00:01:28,820
+En otras palabras, no tendrás a los desarrolladores, no tendrás el tiempo,
+
+20
+00:01:28,820 --> 00:01:31,570
+y así te verás presionado para enviar de todos modos.
+
+21
+00:01:31,570 --> 00:01:37,600
+Si puedes automatizar estas tareas, entonces los recursos serán mucho menos problema
+
+22
+00:01:37,600 --> 00:01:42,850
+porque puedes tener un número arbitrario de computadoras haciendo la verificación por ti.
+
+23
+00:01:42,850 --> 00:01:48,580
+Esto requiere técnicas como contratos, afirmaciones u otras formas de especificación
+
+24
+00:01:48,580 --> 00:01:51,880
+que puedan ser validadas automáticamente,
+
+25
+00:01:51,880 --> 00:01:55,920
+además, por supuesto, mucha prueba automatizada que siga.
+
+26
+00:01:55,920 --> 00:01:59,900
+El siguiente paso es reducir la complejidad.
+
+27
+00:01:59,900 --> 00:02:03,030
+Cuanto mayor sea la complejidad estructural de un programa,
+
+28
+00:02:03,030 --> 00:02:08,210
+más formas habrá para que una parte del programa influya en otra
+
+29
+00:02:08,210 --> 00:02:11,360
+y más fácil será para las infecciones propagarse.
+
+30
+00:02:11,360 --> 00:02:19,190
+Además, cuanto mayor sea la complejidad en un programa, más fuentes posibles de infecciones habrá,
+
+31
+00:02:19,190 --> 00:02:22,440
+y todo esto hace que la depuración sea mucho más difícil.
+
+32
+00:02:22,440 --> 00:02:25,220
+Próximo paso, establecer afirmaciones.
+
+33
+00:02:25,220 --> 00:02:30,910
+Cada afirmación descarta grandes partes del programa o del estado del programa
+
+34
+00:02:30,910 --> 00:02:33,600
+como causa de una infección.
+
+35
+00:02:33,600 --> 00:02:40,510
+Y cuantas más afirmaciones establezcas, menos estado y declaraciones tendrás que examinar
+
+36
+00:02:40,510 --> 00:02:43,990
+para averiguar de dónde vino la infección.
+
+37
+00:02:43,990 --> 00:02:47,
+
+420
+Siguiente cosa, prueba temprano y prueba a menudo.
+
+38
+00:02:47,420 --> 00:02:52,180
+Cuanto antes pruebes, más precisa será tu especificación.
+
+39
+00:02:52,180 --> 00:02:56,190
+Y cuanto más pruebes, más defectos atraparás de inmediato.
+
+40
+00:02:56,190 --> 00:03:04,210
+Además, si pruebas con frecuencia, podrás aislar el cambio que llevó a que la prueba fallara
+
+41
+00:03:04,210 --> 00:03:08,050
+basándote en el historial de pruebas exitosas.
+
+42
+00:03:08,050 --> 00:03:13,250
+Después, revisa tu código o haz que lo revisen tus colegas.
+
+43
+00:03:13,250 --> 00:03:18,400
+Hacer que tu código sea inspeccionado por otros ha demostrado una y otra vez
+
+44
+00:03:18,400 --> 00:03:25,140
+aumentar significativamente la productividad, la calidad y la estabilidad del proyecto.
+
+45
+00:03:25,140 --> 00:03:30,510
+Próximo paso, analiza el historial de problemas de tu proyecto
+
+46
+00:03:30,510 --> 00:03:37,970
+para averiguar qué componentes han mostrado riesgo en el pasado y cuáles no.
+
+47
+00:03:37,970 --> 00:03:45,270
+Obviamente, los componentes que tuvieron problemas en el pasado siempre serían los primeros en los que enfocarse
+
+48
+00:03:45,270 --> 00:03:48,170
+en cuanto a mejorar la calidad.
+
+49
+00:03:48,170 --> 00:03:52,730
+Analiza su historial, sus características comunes, causas comunes,
+
+50
+00:03:52,730 --> 00:03:55,890
+y ajusta el proceso de desarrollo en consecuencia.
+
+51
+00:03:55,890 --> 00:03:59,370
+Por último, aprende de tus errores.
+
+52
+00:03:59,370 --> 00:04:02,030
+Cada error que cometes es un error de más.
+
+53
+00:04:02,030 --> 00:04:08,390
+Mejora tu proceso de desarrollo para que los errores se detecten lo más rápido posible.
+
+54
+00:04:08,390 --> 99:59:59,000
+Si un error se escapa a producción, asegúrate de que no vuelva a ocurrir.
