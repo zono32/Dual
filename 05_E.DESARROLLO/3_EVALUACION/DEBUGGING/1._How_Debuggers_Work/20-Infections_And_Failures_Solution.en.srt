@@ -1,0 +1,91 @@
+1
+00:00:00,000 --> 00:00:05,000
+Aquí está la respuesta a nuestro complicado cuestionario de palabras. Vamos a revisar estas respuestas una por una.
+
+2
+00:00:05,000 --> 00:00:10,000
+Primero, cada infección puede ser rastreada hasta un defecto que la causa.
+
+3
+00:00:10,000 --> 00:00:14,000
+Esto es realmente correcto porque si tenemos una infección si tenemos
+
+4
+00:00:14,000 --> 00:00:20,000
+un error en el estado del programa, es decir, podemos averiguar qué defecto lo causa, es decir,
+
+5
+00:00:20,000 --> 00:00:24,000
+la parte en el programa que obtuvo el mismo estado como entrada
+
+6
+00:00:24,000 --> 00:00:28,000
+y que produjo un estado erróneo de infección como salida.
+
+7
+00:00:28,000 --> 00:00:34,000
+Segundo, cada ejecución de un defecto causa una infección. Eso realmente no es el caso.
+
+8
+00:00:34,000 --> 00:00:39,000
+Puede ser que haya un defecto en el código, que funcione solo bajo ciertas circunstancias,
+
+9
+00:00:39,000 --> 00:00:43,000
+que funcione bien la mayor parte del tiempo y solo bajo ciertas circunstancias produzca una infección.
+
+10
+00:00:43,000 --> 00:00:47,000
+Así que esto no es correcto. Cada infección termina en un fallo.
+
+11
+00:00:47,000 --> 00:00:51,000
+Si tan solo fuera así, entonces sería mucho más fácil hacer que un programa esté libre de defectos.
+
+12
+00:00:51,000 --> 00:00:57,000
+Nota, como las infecciones reales, pueden extinguirse antes de que causen algún daño real.
+
+13
+00:00:57,000 --> 00:01:01,000
+Finalmente, cada defecto puede causar un fallo. ¿Cómo? Eso es complicado.
+
+14
+00:01:01,000 --> 00:01:05,000
+Recuerda que un defecto es un error en el código,
+
+15
+00:01:05,000 --> 00:01:09,000
+un fallo es un error en la ejecución y una infección es un error en el estado.
+
+16
+00:01:09,000 --> 00:01:14,000
+Un defecto es un error en el código y puedes tener un error en el código
+
+17
+00:01:14,000 --> 00:01:19,000
+incluso en código que nunca se ejecuta o en código que es inalcanzable en realidad.
+
+18
+00:01:19,000 --> 00:01:21,000
+¿Cómo puede ser un error si nunca puede ser ejecutado?
+
+19
+00:01:21,000 --> 00:01:26,000
+Bueno, puede ser que con el tiempo, cuando se mantiene el programa,
+
+20
+00:01:26,000 --> 00:01:31,000
+el error realmente se vuelva ejecutable y entonces puede causar un fallo.
+
+21
+00:01:31,000 --> 00:01:35,000
+No es el caso que cada defecto siempre pueda causar un fallo porque los defectos
+
+22
+00:01:35,000 --> 00:01:39,000
+no pueden ser un código inalcanzable y por lo tanto, es posible que no causen un fallo.
+
+23
+00:01:39,000 --> 99:59:59,000
+Así que esto tampoco es correcto.

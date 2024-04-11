@@ -1,0 +1,79 @@
+1
+00:00:00,000 --> 00:00:03,000
+¿Qué es lo que hemos visto? Hemos comenzado con una hipótesis inicial.
+
+2
+00:00:03,000 --> 00:00:07,000
+A partir de esta hipótesis, hemos hecho predicciones. Hemos realizado experimentos.
+
+3
+00:00:07,000 --> 00:00:10,000
+Hemos verificado con los experimentos, validado la predicción.
+
+4
+00:00:10,000 --> 00:00:16,000
+Si lo hacían, hemos refinado nuestra hipótesis. Si no lo hacían, hemos ideado una hipótesis alternativa.
+
+5
+00:00:16,000 --> 00:00:19,000
+Hemos repetido el proceso hasta llegar a un diagnóstico.
+
+6
+00:00:19,000 --> 00:00:24,000
+Es decir, una teoría que sea consistente con nuestras observaciones anteriores, y que también
+
+7
+00:00:24,000 --> 00:00:29,000
+predice observaciones futuras. En nuestro caso, el comportamiento correcto.
+
+8
+00:00:29,000 --> 00:00:33,000
+Basándonos en este diagnóstico, cómo se produjo el fallo, hemos corregido el código
+
+9
+00:00:33,000 --> 00:00:37,000
+en consecuencia, y hemos visto en nuestros experimentos adicionales que la teoría se sostiene.
+
+10
+00:00:37,000 --> 00:00:40,000
+Es decir, el diagnóstico fue válido desde el principio,
+
+11
+00:00:40,000 --> 00:00:44,000
+y por lo tanto, fue una explicación correcta de cómo se produjo el fallo.
+
+12
+00:00:44,000 --> 00:00:47,000
+Nótese que hay muchas formas de idear una hipótesis inicial.
+
+13
+00:00:47,000 --> 00:00:52,000
+También hay muchas formas de refinar una hipótesis y rechazar una hipótesis.
+
+14
+00:00:52,000 --> 00:00:54,000
+Nótese que puede haber múltiples hipótesis para empezar,
+
+15
+00:00:54,000 --> 00:00:59,000
+y también, por supuesto, durante el método científico, puedes idear diferentes hipótesis.
+
+16
+00:00:59,000 --> 00:01:03,000
+Si tienes dos hipótesis competidoras para el mismo fallo,
+
+17
+00:01:03,000 --> 00:01:09,000
+lo que haces es establecer un experimento que decida cuál de las hipótesis
+
+18
+00:01:09,000 --> 00:01:13,000
+es compatible, y cuál de las hipótesis es rechazada.
+
+19
+00:01:13,000 --> 00:01:16,000
+Al final, debería haber solo una hipótesis, debería haber solo una
+
+20
+00:01:16,000 --> 99:59:59,000
+teoría, y debería haber solo un diagnóstico sobre cómo se produjo el fallo.

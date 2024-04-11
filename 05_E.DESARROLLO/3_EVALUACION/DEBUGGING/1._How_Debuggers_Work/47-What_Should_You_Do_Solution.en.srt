@@ -1,0 +1,47 @@
+1
+00:00:00,000 --> 00:00:02,500
+¿Arreglar un error tan pronto como detectes el problema?
+
+2
+00:00:02,500 --> 00:00:06,000
+Bueno, si puedes arreglar un error, sí.
+
+3
+00:00:06,000 --> 00:00:10,500
+Pero normalmente te gustaría pensar en el problema, si puedes generalizarlo,
+
+4
+00:00:10,500 --> 00:00:16,800
+encontrar el mejor lugar para arreglarlo, razonar sobre él hasta que tengas un diagnóstico muy bueno,
+
+5
+00:00:16,800 --> 00:00:18,000
+así que esto definitivamente no es cierto.
+
+6
+00:00:18,000 --> 00:00:20,500
+Siempre mantener todos los detalles en tu cabeza.
+
+7
+00:00:20,500 --> 00:00:24,500
+Bueno, el nombre de la última parte fue "Depuración Explícita",
+
+8
+00:00:24,500 --> 00:00:28,300
+así que no siempre debes intentar mantener todos los detalles en tu cabeza. Esto es incorrecto.
+
+9
+00:00:28,300 --> 00:00:32,800
+Explicar el problema puede ser útil. Sí--hay muchas pruebas anecdóticas de eso.
+
+10
+00:00:32,800 --> 00:00:35,400
+Y finalmente, hasta el 50% al 70% del esfuerzo de desarrollo de software
+
+11
+00:00:35,400 --> 00:00:36,500
+se dedica a la validación y depuración.
+
+12
+00:00:36,500 --> 99:59:59,000
+Esto también es cierto, y esto es algo que realmente, realmente, realmente debemos cambiar.

@@ -109,6 +109,29 @@ delimiter //
         end
 // delimiter ;
 
+
+#-----------------------------------------------------------------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------------------------------------------------------------------
+delimiter //
+	drop procedure if exists numeroRomano //
+    create procedure numeroRomano( numero int )
+    begin
+		declare cadena varchar(255);    
+		set cadena ='';
+        M: while numero >= 1000 do
+        set cadena = concat( cadena, 'M');
+        set numero = numero -1000;
+        end while M;
+        if (numero >= 900) then
+        set cadena = concat( cadena, 'MC');
+		set numero = numero -900;
+        end if;
+     end
+// delimiter ;
+
+#-----------------------------------------------------------------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------------------------------------------------------------------
+
 SET @nombre = '';
 call nombreCompleto();
 select @nombre;
@@ -124,3 +147,4 @@ select nombre_Completo( 'Fulgencio', 'Guillermino', 'Pancracio' ), nombre_comple
 call calculos(1,2,4);
 call tablaMultiplicar( 6 );
 call numeroRomano( 555 );
+call numeroRomano( 5000 );

@@ -1,0 +1,72 @@
+1
+00:00:00,000 --> 00:00:08,000
+Ahora vamos a proceder un poco sistemáticamente. La situación en la que nos encontramos es clásica.
+
+2
+00:00:08,000 --> 00:00:14,000
+Tenemos un programa y el programa recibe alguna entrada y resulta en un fallo
+
+3
+00:00:14,000 --> 00:00:16,000
+que puede ser visto por el usuario.
+
+4
+00:00:16,000 --> 00:00:21,000
+¿Qué es un fallo aquí? Un fallo es un error.
+
+5
+00:00:21,000 --> 00:00:26,000
+Un error que es visible externamente, que es visible por el usuario.
+
+6
+00:00:26,000 --> 00:00:33,000
+¿Qué es un error? Un error es algo que se desvía de lo que es correcto, justo o verdadero.
+
+7
+00:00:33,000 --> 00:00:41,000
+Los errores son típicamente no deseados y no intencionales. Los fallos son errores. Un defecto también es un error.
+
+8
+00:00:41,000 --> 00:00:44,000
+Un defecto, sin embargo, está en algún lugar en el código.
+
+9
+00:00:44,000 --> 00:00:49,000
+El defecto es lo que convierte una entrada válida en última instancia en un fallo.
+
+10
+00:00:49,000 --> 00:00:53,000
+El término defecto es un error en el código como en varios sinónimos.
+
+11
+00:00:53,000 --> 00:00:58,000
+Algunas personas también lo llaman una falta pero entonces una falta también puede aplicarse a los datos.
+
+12
+00:00:58,000 --> 00:01:04,000
+Sin embargo, la palabra más común para defecto es, por supuesto, bug.
+
+13
+00:01:04,000 --> 00:01:12,000
+Hay un bug en mi código en algún lugar como si de alguna manera se hubiera colado en mi código.
+
+14
+00:01:12,000 --> 00:01:16,000
+Aquí está este extranjero pero, este es mi código, no pertenece aquí. Está bien.
+
+15
+00:01:16,000 --> 00:01:22,000
+Al final, somos nosotros, los programadores, quienes realmente introducimos estos bugs allí
+
+16
+00:01:22,000 --> 00:01:25,000
+y por eso preferimos mucho el término defecto.
+
+17
+00:01:25,000 --> 00:01:31,000
+El objetivo de depurar es encontrar el defecto que causa el problema.
+
+18
+00:01:31,000 --> 99:59:59,000
+Para esto, quiero que mires un poco más profundamente cómo ejecuta un programa en realidad.
+

@@ -1,9 +1,8 @@
 
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶¼ÅŠ8Ñˆ„Òê1J$ea37a57b-0fa8-4638-8111-9b9687850ae2
-
-java:S2095"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(ğ­Ï8èˆ„Òê1J$3cb34eba-07d7-48ea-94f7-d17e978263ec
-”
-java:S2095$"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(µÎ Àúÿÿÿÿ8èˆ„Òê1J$733ed0e8-9d6d-4a37-930c-eb396515968e
-r	java:S106)"+Replace this use of System.out by a logger.(œÌ›©ûÿÿÿÿ8îˆ„Òê1J$fb59b69f-f36e-47d6-9823-cf704cfecff4
-v
-java:S1128	".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ8ïˆ„Òê1J$68ee375f-e098-4643-9622-dd1f308b36b2
+	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ÅØ¡÷ë1J$142615b4-4eb4-4e5d-98d4-fa74616804e9
+	java:S112#"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ÅØ¡÷ë1J$fbae6092-850e-435e-b760-440feb3c927b
+	java:S112%"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ÅØ¡÷ë1J$ebccb438-6d01-44e3-8f86-7031a5d43663
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶¼ÅŠ8ÆØ¡÷ë1J$0cbcb141-5da4-4a32-bf0a-654575443ca6
+‡
+java:S2147$"DCombine this catch with the one at line 34, which has the same body.(ï­£Ä8ÍØ¡÷ë1J$e8424d7e-140e-4c50-9380-b846223fd9ae
+m	java:S106"+Replace this use of System.out by a logger.(ÉŠ€Ù8ÎØ¡÷ë1J$6e40bbb7-a9c5-42ea-b8ca-a0848fc801f3

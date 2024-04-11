@@ -1,0 +1,33 @@
+Aquí está la traducción:
+
+1
+00:00:00,000 --> 00:00:05,000
+Aquí está nuestro programa, la afirmación incluida con nuestra entrada como antes
+
+2
+00:00:05,000 --> 00:00:08,000
+y si tag debería establecerse en algún lugar durante la ejecución de este programa,
+
+3
+00:00:08,000 --> 00:00:10,000
+entonces la afirmación debería fallar.
+
+4
+00:00:10,000 --> 00:00:14,000
+Así que presionamos en ejecutar y vemos--oh, la salida sigue siendo verdadera.
+
+5
+00:00:14,000 --> 00:00:21,000
+La afirmación no ha fallado y esto muestra que durante la ejecución, tag nunca se ha establecido en verdadero.
+
+6
+00:00:21,000 --> 00:00:25,000
+Entonces, la respuesta correcta es que la salida sigue siendo verdadera.
+
+7
+00:00:25,000 --> 00:00:29,000
+Dado que no obtenemos una excepción, ahora podemos rechazar nuestra hipótesis.
+
+8
+00:00:29,000 --> 99:59:59,000
+Así que sabemos que tag no se está estableciendo. Tag siempre es falso. Así que volvamos a nuestro código.

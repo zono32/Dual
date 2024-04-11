@@ -1,0 +1,55 @@
+1
+00:00:00,000 --> 00:00:05,000
+Y ahora la respuesta. Esto es algo que podemos descubrir mejor probando.
+
+2
+00:00:05,000 --> 00:00:10,000
+Aquí está nuestra primera entrada, aquí viene la segunda, la tercera con las comillas por fuera,
+
+3
+00:00:10,000 --> 00:00:13,000
+y la cuarta con las comillas dentro del texto.
+
+4
+00:00:13,000 --> 00:00:16,000
+Para la primera entrada, la salida debería ser solo el texto "foo".
+
+5
+00:00:16,000 --> 00:00:20,000
+Para la segunda, debería ser lo mismo pero encerrado entre comillas dobles,
+
+6
+00:00:20,000 --> 00:00:22,000
+lo mismo que para la tercera.
+
+7
+00:00:22,000 --> 00:00:26,000
+Para la cuarta, simplemente esperaríamos el texto "foo". Vamos a probar esto.
+
+8
+00:00:26,000 --> 00:00:30,000
+Sorpresa, sorpresa. La salida es muy diferente de lo que esperábamos.
+
+9
+00:00:30,000 --> 00:00:34,000
+Para empezar, la tercera salida todavía tiene marcado HTML,
+
+10
+00:00:34,000 --> 00:00:39,000
+pero para la segunda entrada también hay algo raro porque las comillas
+
+11
+00:00:39,000 --> 00:00:41,000
+que en realidad eran parte del texto han sido eliminadas.
+
+12
+00:00:41,000 --> 00:00:44,000
+En nuestra prueba, solo nos importaba el marcado HTML,
+
+13
+00:00:44,000 --> 00:00:48,000
+así que la tercera entrada definitivamente produce marcado HTML.
+
+14
+00:00:48,000 --> 99:59:59,000
+Y por lo tanto, esta es la respuesta correcta.

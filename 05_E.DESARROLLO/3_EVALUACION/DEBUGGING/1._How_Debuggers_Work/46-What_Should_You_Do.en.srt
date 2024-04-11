@@ -1,0 +1,27 @@
+1
+00:00:00,000 --> 00:00:04,800
+¿Deberías solucionar un error tan pronto como detectes el problema?
+
+2
+00:00:04,800 --> 00:00:08,000
+¿Siempre asegúrate de mantener todos los detalles en tu cabeza
+
+3
+00:00:08,000 --> 00:00:11,000
+porque escribirlos toma demasiado tiempo?
+
+4
+00:00:11,000 --> 00:00:14,800
+Explicar el problema--quizás a un oso de peluche,
+
+5
+00:00:14,800 --> 00:00:17,800
+a un colega o a un amigo--puede ser útil.
+
+6
+00:00:17,800 --> 00:00:23,000
+Y finalmente, hasta el 50% al 70% del esfuerzo de desarrollo de software
+
+7
+00:00:23,000 --> 99:59:59,000
+se dedica a la validación y depuración.

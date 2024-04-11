@@ -1,0 +1,63 @@
+1
+00:00:00,000 --> 00:00:06,000
+El problema que tenemos aquí es que no estamos teniendo en cuenta las comillas en el marcado HTML.
+
+2
+00:00:06,000 --> 00:00:13,000
+De hecho, cualquier cosa que esté dentro de estas comillas en el marcado HTML no debería finalizar el marcado HTML.
+
+3
+00:00:13,000 --> 00:00:18,000
+En particular, no el signo mayor aquí, así que necesitamos extender un programa adecuadamente.
+
+4
+00:00:18,000 --> 00:00:23,000
+La idea era la siguiente: en lugar de tener dos estados, uno para texto regular
+
+5
+00:00:23,000 --> 00:00:26,000
+y otro para el marcado HTML, vamos a tener un tercer estado,
+
+6
+00:00:26,000 --> 00:00:29,000
+que manejaría cualquier cosa que esté dentro de comillas.
+
+7
+00:00:29,000 --> 00:00:35,000
+Al igual que antes, comenzamos en un modo no etiqueta y cuando vemos un signo menor, entramos en el modo de etiqueta.
+
+8
+00:00:35,000 --> 00:00:40,000
+Esto es lo que hacemos cuando tenemos esta misma entrada y permanecemos en este modo hasta que encontramos una comilla--
+
+9
+00:00:40,000 --> 00:00:44,000
+ahí es cuando entramos en el modo de comilla y permanecemos en el modo de comilla hasta que encontramos otra comilla.
+
+10
+00:00:44,000 --> 00:00:48,000
+Entonces volvemos al modo de etiqueta, lo que sucede justo aquí.
+
+11
+00:00:48,000 --> 00:00:52,000
+Cuando vemos el signo mayor, salimos del modo de etiqueta y procesamos los caracteres individuales,
+
+12
+00:00:52,000 --> 00:00:54,000
+y los agregamos a la salida.
+
+13
+00:00:54,000 --> 00:00:57,000
+Así que nuestra salida ahora debería ser "foo" como se esperaba.
+
+14
+00:00:57,000 --> 00:01:00,000
+El marcado restante se procesa tal como antes.
+
+15
+00:01:00,000 --> 00:01:03,000
+Para implementar esto, vamos a usar dos variables--
+
+16
+00:01:03,000 --> 99:59:59,000
+una variable de etiqueta y una variable de comilla para indicar los tres diferentes estados en los que puede estar un programa.

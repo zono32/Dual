@@ -1,0 +1,75 @@
+1
+00:00:00,000 --> 00:00:05,000
+No solo empezaría a usar declaraciones de depuración arbitrarias en todas partes,
+
+2
+00:00:05,000 --> 00:00:14,000
+también intentaría depurar el programa hasta que funcione. Solo cambiar las cosas hasta que funcionen.
+
+3
+00:00:14,000 --> 00:00:18,000
+Déjame intentarlo. El error puede tener algo que ver con las comillas.
+
+4
+00:00:18,000 --> 00:00:23,000
+Así que no simplemente elimines todas estas comprobaciones de comillas adicionales aquí.
+
+5
+00:00:23,000 --> 00:00:28,000
+Déjame ver si esto hace alguna diferencia. Bien. He eliminado todas las comprobaciones de comillas.
+
+6
+00:00:28,000 --> 00:00:34,000
+Veamos si funciona ahora, y ejecutamos el programa y vemos--es foo.
+
+7
+00:00:34,000 --> 00:00:39,000
+La salida es foo. Es casi correcto. Solo faltan las comillas.
+
+8
+00:00:39,000 --> 00:00:44,000
+Bueno, ahora podemos manejar las comillas--tal vez simplemente las eliminaremos para alinearlas aquí,
+
+9
+00:00:44,000 --> 00:00:47,000
+y tal vez podamos cambiar las cosas hasta que estén bien.
+
+10
+00:00:47,000 --> 00:00:52,000
+Veamos si esto funciona. Igual. Oh sí, genial. Déjame ver. Bien.
+
+11
+00:00:52,000 --> 00:00:59,000
+Y puedo ejecutar la cosa de nuevo y--sin embargo, creo que eliminé demasiado en este momento
+
+12
+00:00:59,000 --> 00:01:08,000
+porque si recuerdas nuestro ejemplo original--el que tenía el signo mayor aquí en la URL de destino
+
+13
+00:01:08,000 --> 00:01:13,000
+que ahora todavía obtenemos este error aquí, la comilla está aquí que debería estar aquí,
+
+14
+00:01:13,000 --> 00:01:17,000
+por eso introducimos el manejo de comillas en primer lugar.
+
+15
+00:01:17,000 --> 00:01:21,000
+Así que ahora realmente, tal vez debería volver a esta versión anterior,
+
+16
+00:01:21,000 --> 00:01:23,000
+pero ¿cómo vuelvo a la versión anterior?
+
+17
+00:01:23,000 --> 00:01:26,000
+Bueno, por supuesto, nunca hice una copia de seguridad de mi versión anterior.
+
+18
+00:01:26,000 --> 00:01:33,000
+Así que ni siquiera sé cuál era la versión anterior. Esto fue más o menos mi estado de depuración.
+
+19
+00:01:33,000 --> 99:59:59,000
+Así es como depuraba como estudiante, que no era la manera perfecta de hacerlo.

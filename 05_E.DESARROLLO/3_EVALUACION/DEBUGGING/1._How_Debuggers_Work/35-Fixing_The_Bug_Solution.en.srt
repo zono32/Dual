@@ -1,0 +1,87 @@
+1
+00:00:00,000 --> 00:00:03,000
+Esta es la forma correcta de escribir esta condición.
+
+2
+00:00:03,000 --> 00:00:09,000
+En Python y la mayoría de los otros lenguajes de programación, 'or' tiene menos precedencia que 'and'.
+
+3
+00:00:09,000 --> 00:00:16,000
+Y si escribes esto sin paréntesis, el efecto de esto es que, esto se priorizará implícitamente como esto,
+
+4
+00:00:16,000 --> 00:00:21,000
+lo que significa que la condición de que la etiqueta debe ser verdadera se aplica solo para comillas simples
+
+5
+00:00:21,000 --> 00:00:24,000
+pero no para comillas dobles que siempre serán eliminadas.
+
+6
+00:00:24,000 --> 00:00:28,000
+Y esta es la razón por la cual las comillas dobles son eliminadas mientras que las comillas simples no lo son.
+
+7
+00:00:28,000 --> 00:00:32,000
+Bueno, son eliminadas pero solo cuando estamos en modo de etiqueta
+
+8
+00:00:32,000 --> 00:00:36,000
+y cuando estamos en modo de etiqueta, entonces los caracteres de todos modos no aparecerán.
+
+9
+00:00:36,000 --> 00:00:41,000
+Podemos aplicar esta misma corrección en nuestro programa simplemente poniendo paréntesis
+
+10
+00:00:41,000 --> 00:00:46,000
+alrededor de esta unión aquí, de modo que esta unión tenga prioridad sobre la conjunción.
+
+11
+00:00:46,000 --> 00:00:51,000
+Veamos si nuestro ejemplo con las comillas dobles ahora funciona. Sí, lo hace.
+
+12
+00:00:51,000 --> 00:00:55,000
+Ahora, de hecho, obtenemos las comillas correctamente aquí. Probémoslo unas veces más.
+
+13
+00:00:55,000 --> 00:00:59,000
+Entonces, veamos si las comillas simples todavía funcionan también y mientras lo hacemos
+
+14
+00:00:59,000 --> 00:01:04,000
+incluso podemos agregar algunas más a eso; veamos cuál será el resultado.
+
+15
+00:01:04,000 --> 00:01:07,000
+Primer ejemplo, las comillas dobles todavía están allí, no se eliminan.
+
+16
+00:01:07,000 --> 00:01:10,000
+Segundo ejemplo, comillas simples, no eliminadas.
+
+17
+00:01:10,000 --> 00:01:14,000
+Tercer ejemplo, solo el marcado HTML, el marcado HTML se elimina.
+
+18
+00:01:14,000 --> 00:01:18,000
+El siguiente, comillas alrededor del marcado HTML, las comillas permanecieron, el marcado HTML se eliminó.
+
+19
+00:01:18,000 --> 00:01:22,000
+Entonces, el marcado HTML se elimina en todos los casos.
+
+20
+00:01:22,000 --> 00:01:27,000
+¿Qué tal nuestro ejemplo casi complejo, tenemos la referencia con comillas dentro de la etiqueta?
+
+21
+00:01:27,000 --> 00:01:32,000
+¿Se eliminan correctamente? Lo probamos. Sí, todo se elimina correctamente.
+
+22
+00:01:32,000 --> 99:59:59,000
+Las comillas y los signos de mayor que se manejan tal como deberían.

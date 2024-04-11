@@ -1,0 +1,139 @@
+1
+00:00:00,000 --> 00:00:06,000
+Ahora que sabemos cómo va a ser el fallo, veamos cómo encontrar sistemáticamente nuestras causas.
+
+2
+00:00:06,000 --> 00:00:10,000
+Lo que necesitamos es una forma de organizar el proceso de depuración
+
+3
+00:00:10,000 --> 00:00:14,000
+y para esto, usamos el proceso llamado el método científico.
+
+4
+00:00:14,000 --> 00:00:16,000
+Ese es un nombre genial, ¿no?
+
+5
+00:00:16,000 --> 00:00:22,000
+En realidad, es un nombre grande para una cosa pequeña, pero esta pequeña cosa tiene grandes consecuencias.
+
+6
+00:00:22,000 --> 00:00:26,000
+Lo que hace el método científico es proporcionar un proceso sistemático
+
+7
+00:00:26,000 --> 00:00:34,000
+al convertir algún aspecto de la realidad en una teoría que explica cómo funciona este aspecto de la realidad,
+
+8
+00:00:34,000 --> 00:00:39,000
+y que hace predicciones exactas sobre esta realidad.
+
+9
+00:00:39,000 --> 00:00:43,000
+Permítanme dar un ejemplo simple de cómo funciona el método científico.
+
+10
+00:00:43,000 --> 00:00:46,000
+Suponga que eres un humano, digamos, Isaac Newton,
+
+11
+00:00:46,000 --> 00:00:52,000
+estás acostado en tu huerto y de repente estás viendo caer una manzana.
+
+12
+00:00:52,000 --> 00:00:57,000
+Entonces ahora te preguntas, bueno, acabo de ver caer esta manzana. Este es un aspecto de la realidad.
+
+13
+00:00:57,000 --> 00:00:59,000
+¿Por qué caen las manzanas?
+
+14
+00:00:59,000 --> 00:01:02,000
+Lo que hace el método científico es proporcionarte una forma
+
+15
+00:01:02,000 --> 00:01:06,000
+de llegar al método de predicción más general disponible.
+
+16
+00:01:06,000 --> 00:01:10,000
+Entonces puedes pensar que si una manzana cae y puedes repetir este experimento una y otra vez
+
+17
+00:01:10,000 --> 00:01:14,000
+dejando caer una manzana, también puedes pensar en bueno, ¿caen los ladrillos?
+
+18
+00:01:14,000 --> 00:01:16,000
+Aquí hay un ladrillo y he aquí, cae.
+
+19
+00:01:16,000 --> 00:01:22,000
+¿Caen los platos? Oh sí lo hacen. ¿Caen también las tazas? Oh sí lo hacen.
+
+20
+00:01:22,000 --> 00:01:27,000
+Póngase en la mente de un niño de 3 años y encontrará que todo cae,
+
+21
+00:01:27,000 --> 00:01:30,000
+y todo realmente significa todo.
+
+22
+00:01:30,000 --> 00:01:33,000
+Así que fácilmente puedo generalizar que todo cae.
+
+23
+00:01:33,000 --> 00:01:36,000
+A menos que suceda que veas, digamos, un globo.
+
+24
+00:01:36,000 --> 00:01:39,000
+Aquí está el globo y he aquí, el globo sube.
+
+25
+00:01:39,000 --> 00:01:42,000
+Entonces no todo cae, pero puedes extender fácilmente tu teoría
+
+26
+00:01:42,000 --> 00:01:45,000
+para decir--bueno, un globo es más grande que el aire.
+
+27
+00:01:45,000 --> 00:01:51,000
+Si el aire cae, entonces el globo debe subir. Así que aún todo cae.
+
+28
+00:01:51,000 --> 00:01:55,000
+¿Qué significa "abajo" en realidad? Abajo significa hacia el centro de la tierra.
+
+29
+00:01:55,000 --> 00:01:57,000
+Todo es atraído hacia el centro de la tierra.
+
+30
+00:01:57,000 --> 00:02:02,000
+Bueno, el sol no es atraído hacia el centro de la tierra. Es más bien al revés.
+
+31
+00:02:02,000 --> 00:02:07,000
+Entonces ves que a partir de estas observaciones e incluso experimentos que puedes realizar,
+
+32
+00:02:07,000 --> 00:02:12,000
+eventualmente podrás llegar a una teoría completa que explique
+
+33
+00:02:12,000 --> 00:02:16,000
+hacia dónde se moverán las cosas, que explique a qué velocidad se moverán,
+
+34
+00:02:16,000 --> 00:02:19,000
+que explique dónde estará la aceleración.
+
+35
+00:02:19,000 --> 99:59:59,000
+En el caso de Isaac Newton, eso se convirtió en la teoría de la gravitación.

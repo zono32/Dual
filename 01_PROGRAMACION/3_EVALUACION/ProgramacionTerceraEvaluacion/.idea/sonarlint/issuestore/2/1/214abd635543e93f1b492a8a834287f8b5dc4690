@@ -1,4 +1,8 @@
 
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶¼ÅŠ8¢Ï Óê1J$42d407ee-0d3d-4fbb-ab77-9d90e2971c60
-
-java:S2095"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(ğ­Ï8«Ï Óê1J$940caea4-c385-4be1-bc0d-48f84c6fab76
+	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ÁÓòöë1J$168f3dc4-3b26-4c65-b703-feb57f7ccdfb
+	java:S112$"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8±”­÷ë1J$f6261fda-af55-4c20-b794-fff6844b7c28
+	java:S112&"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8²”­÷ë1J$6da31d05-260e-4e42-81be-d4c8c6919471
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶¼ÅŠ8ÂÓòöë1J$75d739d3-a0cc-4878-b0ca-39501f99ebe9
+‡
+java:S2147%"DCombine this catch with the one at line 35, which has the same body.(ï­£Ä8¼”­÷ë1J$a40184d4-f8bb-4b29-895d-2e9d9bb8870b
+m	java:S106"+Replace this use of System.out by a logger.(ÉŠ€Ù8½”­÷ë1J$b4b73db9-7ed7-447e-9c0f-f7629953ad6d

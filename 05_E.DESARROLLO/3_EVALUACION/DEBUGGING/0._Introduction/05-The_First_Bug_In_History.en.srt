@@ -1,0 +1,43 @@
+1
+00:00:00,000 --> 00:00:05,000
+Aquí están los errores. ¿De dónde proviene el término "bug"?
+
+2
+00:00:05,000 --> 00:00:10,000
+Hay una historia de una máquina Harvard Mark II en la cual
+
+3
+00:00:10,000 --> 00:00:15,000
+el 9 de septiembre de 1947, una polilla quedó atrapada en el relé.
+
+4
+00:00:15,000 --> 00:00:22,000
+La polilla se carbonizó y luego causó un cortocircuito en la máquina,
+
+5
+00:00:22,000 --> 00:00:24,000
+lo que hizo que la máquina se averiara.
+
+6
+00:00:24,000 --> 00:00:30,000
+Los técnicos recuperaron la polilla del relé y esto se registró
+
+7
+00:00:30,000 --> 00:00:34,000
+como el primer error encontrado realmente en una computadora.
+
+8
+00:00:34,000 --> 00:00:38,000
+El error ahora está en exhibición en el Smithsonian en Washington.
+
+9
+00:00:38,000 --> 00:00:44,000
+El término "bug", como puedes ver, ya era conocido en 1947, y de hecho es mucho más antiguo que eso.
+
+10
+00:00:44,000 --> 00:00:50,000
+Incluso puedes rastrearlo hasta Shakespeare, quien usaba el término para
+
+11
+00:00:50,000 --> 99:59:59,000
+describir alguna forma de espectro sentado en el pecho de las personas por la noche y causándoles pesadillas.

@@ -1,0 +1,53 @@
+
+
+1
+00:00:00,000 --> 00:00:03,000
+Vamos a verificar nuestras hipótesis individuales.
+
+2
+00:00:03,000 --> 00:00:06,000
+Entonces, las comillas dobles siempre se eliminan de la entrada etiquetada.
+
+3
+00:00:06,000 --> 00:00:09,000
+Bueno, aquí están las comillas dobles. Se eliminan. Esto es correcto.
+
+4
+00:00:09,000 --> 00:00:14,000
+A continuación, las etiquetas entre comillas dobles no se eliminan. Bueno, si tenemos etiquetas aquí, se eliminan.
+
+5
+00:00:14,000 --> 00:00:17,000
+Si están entre comillas dobles, no se eliminan. Así que esto también es correcto.
+
+6
+00:00:17,000 --> 00:00:23,000
+La etiqueta en negrita siempre se elimina de la entrada. No es el caso. Veamos aquí. Así que no es correcto.
+
+7
+00:00:23,000 --> 00:00:25,000
+Y las palabras de cuatro letras se eliminan--bueno, en realidad no sabemos esto
+
+8
+00:00:25,000 --> 00:00:29,000
+porque no tenemos una palabra de cuatro letras aquí, pero en este punto,
+
+9
+00:00:29,000 --> 00:00:31,000
+no hay razón para creer que las palabras de cuatro letras se eliminarían.
+
+10
+00:00:31,000 --> 00:00:33,000
+Todavía puedes probar esto tú mismo.
+
+11
+00:00:33,000 --> 00:00:39,000
+Lo que tenemos ahora son dos hipótesis que son consistentes con nuestras observaciones hasta ahora.
+
+12
+00:00:39,000 --> 00:00:44,000
+Tal vez sean dos problemas separados, pero es probable que estén realmente relacionados entre sí.
+
+13
+00:00:44,000 --> 99:59:59,000
+Centrémonos en la primera hipótesis porque es más simple.

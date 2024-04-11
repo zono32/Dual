@@ -1,0 +1,15 @@
+1
+00:00:00,000 --> 00:00:03,000
+Con eso en mente, pasemos a un cuestionario.
+
+2
+00:00:03,000 --> 00:00:09,000
+¿Cuál de lo siguiente no es verdad? --cada infección puede ser rastreada hasta un defecto que la causa,
+
+3
+00:00:09,000 --> 00:00:17,000
+cada ejecución de un defecto causa una infección, cada infección termina en un fallo,
+
+4
+00:00:17,000 --> 00:00:21,000
+y finalmente, cada defecto puede causar un fallo--tú decides.

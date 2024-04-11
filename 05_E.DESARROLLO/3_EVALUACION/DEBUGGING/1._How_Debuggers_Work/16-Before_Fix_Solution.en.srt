@@ -1,0 +1,23 @@
+1
+00:00:00,000 --> 00:00:05,000
+De hecho, la respuesta es que debes entender cuál es el problema,
+
+2
+00:00:05,000 --> 00:00:09,000
+porque si no comprendes cuál es el problema, ¿cómo podrías solucionarlo?
+
+3
+00:00:09,000 --> 00:00:14,000
+Comprende qué debería hacer el código, porque nuevamente, si no sabes qué debería hacer el código,
+
+4
+00:00:14,000 --> 00:00:16,000
+no sabrás cómo arreglarlo.
+
+5
+00:00:16,000 --> 00:00:20,000
+Y finalmente, también aplica una solución que aborde el problema
+
+6
+00:00:20,000 --> 99:59:59,000
+y no solo el síntoma, sino la causa real.

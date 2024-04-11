@@ -1,0 +1,63 @@
+1
+00:00:00,000 --> 00:00:05,000
+Todas estas estrategias provienen de un capítulo titulado "La Guía del Diablo para la Depuración,"
+
+2
+00:00:05,000 --> 00:00:09,000
+que fue escrito por un tipo llamado Steve McConnell.
+
+3
+00:00:09,000 --> 00:00:16,000
+El libro se llama "Code Complete" en 1993 y abarca toda la sabiduría
+
+4
+00:00:16,000 --> 00:00:19,000
+sobre programación que Steve McConnell tenía en ese momento.
+
+5
+00:00:19,000 --> 00:00:23,000
+Lo que hemos visto hasta ahora son solo tres de estas reglas.
+
+6
+00:00:23,000 --> 00:00:28,000
+La primera es esparcir declaraciones de salida por todas partes en el código.
+
+7
+00:00:28,000 --> 00:00:33,000
+Salida lo que sea, donde sea, solo ponlo ahí de manera que
+
+8
+00:00:33,000 --> 00:00:37,000
+siempre puedas averiguar qué estaba pasando o no.
+
+9
+00:00:37,000 --> 00:00:41,000
+La segunda es depurar el programa hasta que funcione.
+
+10
+00:00:41,000 --> 00:00:46,000
+Solo sigue agregando declaraciones y eliminándolas hasta que funcione.
+
+11
+00:00:46,000 --> 00:00:49,000
+Nunca hagas copias de seguridad de versiones anteriores de tu código.
+
+12
+00:00:49,000 --> 00:00:54,000
+Quiero decir, ¿quién no puede recordar lo que ha hecho hace solo 7 minutos?
+
+13
+00:00:54,000 --> 00:00:59,000
+La regla número 4, no te molestes en entender qué debería hacer el programa.
+
+14
+00:00:59,000 --> 00:01:04,000
+Quiero decir, es obvio, ¿verdad? Si no es obvio, hazlo obvio.
+
+15
+00:01:04,000 --> 00:01:11,000
+Aunque mi favorita de todos los tiempos es la número 5, usa la solución más obvia.
+
+16
+00:01:11,000 --> 99:59:59,000
+Eso significa arreglar el síntoma en lugar del problema.

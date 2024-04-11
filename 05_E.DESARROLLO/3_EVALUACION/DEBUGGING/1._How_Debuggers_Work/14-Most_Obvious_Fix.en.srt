@@ -1,0 +1,27 @@
+1
+00:00:00,000 --> 00:00:07,000
+Esta técnica de usar la solución más obvia, ¡tan hermosa! Realmente me gustaría mostrártela.
+
+2
+00:00:07,000 --> 00:00:12,000
+Así que aquí tenemos un programa completo nuevamente. Logré restaurarlo desde una copia de seguridad anterior.
+
+3
+00:00:12,000 --> 00:00:18,000
+Y de nuevo, si ejecutamos esto, verás que la marca HTML no se elimina.
+
+4
+00:00:18,000 --> 00:00:23,000
+Entonces, la técnica de usar la solución más obvia es muy simple.
+
+5
+00:00:23,000 --> 00:00:29,000
+Simplemente verificamos la entrada que está incorrecta y devolvemos la salida correcta.
+
+6
+00:00:29,000 --> 00:00:36,000
+¡Y voilà! Esta técnica funciona maravillosamente y devuelve la salida correcta.
+
+7
+00:00:36,000 --> 99:59:59,000
+Se rumorea que algunos programadores usan esta técnica exacta para hacer que sus pruebas unitarias funcionen.

@@ -1,0 +1,93 @@
+
+
+1
+00:00:00,000 --> 00:00:04,000
+Ahora, para las respuestas. Una teoría es el resultado del método científico.
+
+2
+00:00:04,000 --> 00:00:08,000
+Una teoría también es una hipótesis particularmente útil
+
+3
+00:00:08,000 --> 00:00:11,000
+porque refinamos la hipótesis hasta que se convierte en una teoría.
+
+4
+00:00:11,000 --> 00:00:15,000
+Y también es un marco que explica y predice observaciones.
+
+5
+00:00:15,000 --> 00:00:18,000
+Esta es la definición oficial de teoría.
+
+6
+00:00:18,000 --> 00:00:21,000
+Sin embargo, una teoría no es una suposición vaga
+
+7
+00:00:21,000 --> 00:00:24,000
+cuando hablas del significado científico de esta teoría.
+
+8
+00:00:24,000 --> 00:00:28,000
+Cuando tienes científicos hablando sobre teoría, están hablando del marco
+
+9
+00:00:28,000 --> 00:00:32,000
+que es consistente con todas las observaciones anteriores y predice muchas y muchas observaciones futuras.
+
+10
+00:00:32,000 --> 00:00:35,000
+Y es en realidad el mejor marco en la mayoría de los casos.
+
+11
+00:00:35,000 --> 00:00:39,000
+Cuando tienes profanos hablando sobre teoría, es más como "tengo esta teoría"
+
+12
+00:00:39,000 --> 00:00:44,000
+sobre cómo podrían ser las cosas, lo cual no necesariamente tiene la misma fuerza que una teoría científica.
+
+13
+00:00:44,000 --> 00:00:50,000
+El malentendido entre la teoría en el sentido de cómo la usa un profano
+
+14
+00:00:50,000 --> 00:00:56,000
+y la teoría tal como la usan los científicos es la causa de mucha confusión en los debates políticos.
+
+15
+00:00:56,000 --> 00:00:58,000
+Piensa en la teoría de la evolución.
+
+16
+00:00:58,000 --> 00:01:02,000
+Para los científicos, la teoría de la evolución es exactamente eso, una exponencial
+
+17
+00:01:02,000 --> 00:01:04,000
+y predicción de muchas y muchas observaciones.
+
+18
+00:01:04,000 --> 00:01:07,000
+Un marco muy consistente y que forma muchos hermosos modelos.
+
+19
+00:01:07,000 --> 00:01:12,000
+Para otros, oh, esto es solo una teoría de la evolución que la diseminan como una suposición vaga.
+
+20
+00:01:12,000 --> 00:01:19,000
+Ten cuidado cuando escuches la palabra teoría. Su significado depende mucho de quien lo dice.
+
+21
+00:01:19,000 --> 00:01:22,000
+En nuestro contexto, por supuesto, estamos usando una teoría para explicar
+
+22
+00:01:22,000 --> 00:01:27,000
+cuál es la causa de un fallo y en nuestro contexto no estamos buscando suposiciones vagas,
+
+23
+00:01:27,000 --> 99:59:59,000
+estamos buscando algo que explique todas las observaciones anteriores y prediga las futuras.

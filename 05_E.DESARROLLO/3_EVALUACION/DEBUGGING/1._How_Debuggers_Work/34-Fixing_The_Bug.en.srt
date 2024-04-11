@@ -1,0 +1,31 @@
+1
+00:00:00,000 --> 00:00:04,000
+Entonces, lo que tenemos en este punto es que la condición en nuestro código se vuelve verdadera
+
+2
+00:00:04,000 --> 00:00:10,000
+cuando vemos una comilla doble y se vuelve falsa cuando vemos una comilla simple.
+
+3
+00:00:10,000 --> 00:00:14,000
+En este punto, deberíamos tener suficiente material para resolver el problema.
+
+4
+00:00:14,000 --> 00:00:17,000
+¿Cuál es la forma correcta de corregir esta condición?
+
+5
+00:00:17,000 --> 00:00:21,000
+¿Debería ser una verificación solo para comillas dobles y comillas simples y etiquetas,
+
+6
+00:00:21,000 --> 00:00:26,000
+¿Deberíamos invertir la condición de manera que no se verifique la etiqueta,
+
+7
+00:00:26,000 --> 00:00:29,000
+¿Deberíamos poner paréntesis alrededor de la condición de or,
+
+8
+00:00:29,000 --> 99:59:59,000
+o debería ser ninguna de las anteriores y algo completamente diferente.

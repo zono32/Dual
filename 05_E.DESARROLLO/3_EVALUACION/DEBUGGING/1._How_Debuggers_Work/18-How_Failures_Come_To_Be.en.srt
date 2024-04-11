@@ -1,0 +1,175 @@
+
+
+1
+00:00:00,000 --> 00:00:05,000
+Podemos ver que el programa tiene una sucesión de estados del programa.
+
+2
+00:00:05,000 --> 00:00:09,000
+Cada estado del programa consiste en varias variables con valores.
+
+3
+00:00:09,000 --> 00:00:14,000
+A medida que un programa se ejecuta, procesa estos estados y los transforma en nuevos estados.
+
+4
+00:00:14,000 --> 00:00:19,000
+Por ejemplo, leyendo variables y escribiendo variables. Este es el modo normal de operación.
+
+5
+00:00:19,000 --> 00:00:24,000
+Ahora, sin embargo, dado que al principio tenemos una entrada normal y al final tenemos un fallo,
+
+6
+00:00:24,000 --> 00:00:29,000
+debe haber un defecto en alguna parte de nuestro programa que en realidad causa el problema.
+
+7
+00:00:29,000 --> 00:00:33,000
+Así que permítanme asumir que esta declaración que estamos ejecutando aquí en realidad tiene un defecto.
+
+8
+00:00:33,000 --> 00:00:38,000
+Lo que sucede ahora es que, cuando se ejecuta, introduce
+
+9
+00:00:38,000 --> 00:00:42,000
+un error en el estado del programa que llamamos una infección.
+
+10
+00:00:42,000 --> 00:00:47,000
+Esta infección ahora se está propagando posiblemente a otros estados
+
+11
+00:00:47,000 --> 00:00:52,000
+y eventualmente se convierte en visible como un fallo para el usuario.
+
+12
+00:00:52,000 --> 00:00:56,000
+Lo que obtenemos aquí es en realidad una cadena completa de causa y efecto.
+
+13
+00:00:56,000 --> 00:01:01,000
+Ves estos fallos que son una infección causada por infecciones anteriores
+
+14
+00:01:01,000 --> 00:01:11,000
+y si estamos en un estado donde la infección no tiene más origen, es decir, la entrada es el mismo estado,
+
+15
+00:01:11,000 --> 00:01:16,000
+y la salida está infectada, y conocemos la declaración que se ejecutó en este preciso momento
+
+16
+00:01:16,000 --> 00:01:20,000
+que causó esta transición del mismo estado al estado infectado,
+
+17
+00:01:20,000 --> 00:01:26,000
+esta es la declaración que causó la infección, esta es la declaración que tiene el defecto.
+
+18
+00:01:26,000 --> 00:01:31,000
+Cuando depuramos ahora, necesitamos identificar esta cadena de causa y efecto
+
+19
+00:01:31,000 --> 00:01:36,000
+no solo necesitamos identificarla, sino que también necesitamos romper la cadena de causa y efecto.
+
+20
+00:01:36,000 --> 00:01:42,000
+Si podemos romper esta cadena de causa y efecto desde el defecto hasta el fallo, entonces hemos terminado con la depuración.
+
+21
+00:01:42,000 --> 00:01:47,000
+Así que todo esto parece muy simple; sin embargo, en la vida real, es mucho más complicado que eso.
+
+22
+00:01:47,000 --> 00:01:51,000
+Para empezar, no todo defecto causa automáticamente un fallo.
+
+23
+00:01:51,000 --> 00:01:56,000
+Puede ser que el defecto cause una infección que luego simplemente no es
+
+24
+00:01:56,000 --> 00:01:59,000
+propagada como una infección de la vida real igualmente.
+
+25
+00:01:59,000 --> 00:02:03,000
+Así que la infección no se propaga y nunca se vuelve visible para el usuario.
+
+26
+00:02:03,000 --> 00:02:08,000
+Puede que ni siquiera cause un fallo en absoluto o que la declaración ??? ni siquiera se ejecute
+
+27
+00:02:08,000 --> 00:02:14,000
+o solo bajo circunstancias muy específicas realmente cause una infección y luego un fallo.
+
+28
+00:02:14,000 --> 00:02:18,000
+Este es el problema de la prueba. Puedes ejecutar un programa una y otra vez.
+
+29
+00:02:18,000 --> 00:02:24,000
+Nunca tener un fallo y aún así tener un defecto allí; sin embargo, si un programa falla,
+
+30
+00:02:24,000 --> 00:02:33,000
+es decir, si realmente vemos un fallo, entonces siempre podemos rastrearlo hasta el defecto que lo causa.
+
+31
+00:02:33,000 --> 00:02:38,000
+Así que si hay un fallo, siempre podemos arreglarlo siguiendo la cadena de causa y efecto hacia atrás.
+
+32
+00:02:38,000 --> 00:02:43,000
+Pero luego el siguiente problema es que estos estados son enormes.
+
+33
+00:02:43,000 --> 00:02:50,000
+Así que aquí tenemos 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 variables. Lindo.
+
+34
+00:02:50,000 --> 00:02:57,000
+En realidad, tenemos 10,000 de esas variables y no solo tenemos 10,000 de esas variables,
+
+35
+00:02:57,000 --> 00:03:02,000
+también tenemos 10,000 de pasos entre el defecto y el fallo.
+
+36
+00:03:02,000 --> 00:03:06,000
+Entonces, rastrear la cadena de causa y efecto puede ser mucho,
+
+37
+00:03:06,000 --> 00:03:10,000
+mucho más complicado de lo que es en esta imagen simple.
+
+38
+00:03:10,000 --> 00:03:14,000
+Cuanto más larga sea la cadena de causa y efecto, es decir, cuanto más tiempo tengamos que cubrir
+
+.
+
+39
+00:03:14,000 --> 00:03:19,000
+Cuántos más estados tengamos que cubrir, más difícil será depurarlo,
+
+40
+00:03:19,000 --> 00:03:23,000
+y también cuanto más grande sea el estado, más tendremos que buscar una infección.
+
+41
+00:03:23,000 --> 00:03:27,000
+Nuevamente, esto hace que la depuración sea más y más difícil.
+
+42
+00:03:27,000 --> 00:03:31,000
+Es como encontrar una aguja en un pajar excepto que el pajar
+
+43
+00:03:31,000 --> 99:59:59,000
+a veces es más grande que cualquier pajar que encontrarás en la tierra.
