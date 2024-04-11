@@ -38,7 +38,7 @@ window.onload = () => {
     let productos = document.getElementById("productos");
 
     console.log(productos)
-    let uvas =productos.getElementById("uvas")
+    let uvas =productos.getElementById("uvas").value
     console.log(uvas);
 
 
