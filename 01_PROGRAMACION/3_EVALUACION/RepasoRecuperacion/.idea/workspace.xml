@@ -5,13 +5,146 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0decfb27-f538-4c5a-9f43-ed005ab9b763" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../05_E.DESARROLLO/E.Desarrollo/repaso-examen/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../05_E.DESARROLLO/E.Desarrollo/repaso-examen/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../05_E.DESARROLLO/E.Desarrollo/repaso-examen/repaso/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../05_E.DESARROLLO/E.Desarrollo/repaso-examen/repaso/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../05_E.DESARROLLO/E.Desarrollo/repaso-examen/repaso/src/test/java/edu/gorilas/ScoreCardTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../05_E.DESARROLLO/E.Desarrollo/repaso-examen/repaso/src/test/java/edu/gorillas/PinPals.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../05_E.DESARROLLO/E.Desarrollo/repaso-examen/repaso/src/test/java/edu/gorillas/ScoreCard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2_EVALUACION/ZZ_EXAMEN_Solucion/AlmacenPrincipal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2_EVALUACION/ZZ_EXAMEN_Solucion/AlmacenPrincipalvacio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2_EVALUACION/ZZ_EXAMEN_Solucion/Bazar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2_EVALUACION/ZZ_EXAMEN_Solucion/CaducidadAnteriorException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2_EVALUACION/ZZ_EXAMEN_Solucion/Comercial.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2_EVALUACION/ZZ_EXAMEN_Solucion/Comestible.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2_EVALUACION/ZZ_EXAMEN_Solucion/PrecioNegativoException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2_EVALUACION/ZZ_EXAMEN_Solucion/Principal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2_EVALUACION/ZZ_EXAMEN_Solucion/Producto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/MisEjerciciosTerceraEvaluacion/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/MisEjerciciosTerceraEvaluacion/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/MisEjerciciosTerceraEvaluacion/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/MisEjerciciosTerceraEvaluacion/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/MisEjerciciosTerceraEvaluacion/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/MisEjerciciosTerceraEvaluacion/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/MisEjerciciosTerceraEvaluacion/src/main/java/ExamenSegundaEva/Almacen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/MisEjerciciosTerceraEvaluacion/src/main/java/ExamenSegundaEva/Bazar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/MisEjerciciosTerceraEvaluacion/src/main/java/ExamenSegundaEva/Comercial.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/MisEjerciciosTerceraEvaluacion/src/main/java/ExamenSegundaEva/Comestibles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/MisEjerciciosTerceraEvaluacion/src/main/java/ExamenSegundaEva/Excep.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/MisEjerciciosTerceraEvaluacion/src/main/java/ExamenSegundaEva/Producto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/MisEjerciciosTerceraEvaluacion/src/main/java/ExamenSegundaEva/Validacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/MisEjerciciosTerceraEvaluacion/src/main/java/org/ejercicios/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/MisEjerciciosTerceraEvaluacion/src/test/java/org/ejercicios/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/proyect/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/proyect/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/proyect/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/proyect/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/proyect/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/proyect/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/proyect/proyect.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/proyect/src/AlmacenPac/Almacen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/proyect/src/AlmacenPac/AlmacenComercial/Comercial.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/proyect/src/AlmacenPac/AlmacenComercial/Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/proyect/src/AlmacenPac/AlmacenProductos/Bazar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/proyect/src/AlmacenPac/AlmacenProductos/Comestible.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/proyect/src/AlmacenPac/AlmacenProductos/Producto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/proyect/src/AlmacenPac/Excepciones/ExceepcionNumeroNegativo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/proyect/src/AlmacenPac/Excepciones/ExcepcionFecha.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/proyect/src/AlmacenPac/Utils/Util.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/proyect/src/Fechas/DifernciaDias/Fecha.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/proyect/src/Fechas/Excep.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/proyect/src/Fechas/Localdate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/proyect/src/Fechas/Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/proyect/src/Fechas/Principal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/proyect/src/RepasoExamen2Eva/Almacen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/proyect/src/RepasoExamen2Eva/Empleados/Comercial.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/proyect/src/RepasoExamen2Eva/Exceptions/ExcepFecha.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/proyect/src/RepasoExamen2Eva/Exceptions/ExcepNum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/proyect/src/RepasoExamen2Eva/Products/Bazar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/proyect/src/RepasoExamen2Eva/Products/Comestible.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/proyect/src/RepasoExamen2Eva/Products/Producto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/proyect/src/RepasoExamen2Eva/Utils/Operacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/proyect/src/RepasoExamen2Eva/Utils/Validacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/untitled/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/untitled/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/untitled/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/untitled/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/untitled/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/untitled/src/Almacen/Almacen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mis ejercicios/untitled/untitled.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/.idea/sonarlint/issuestore/0/5/05e31b7f15b4643e4990e86e9c86bff68c033592" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/.idea/sonarlint/issuestore/0/9/090cc7f56f1111bf2bd9a5fee206926a4130851c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/.idea/sonarlint/issuestore/1/5/1576f101bb759b62e9609e32f47482d1552199de" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/.idea/sonarlint/issuestore/2/1/214abd635543e93f1b492a8a834287f8b5dc4690" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/.idea/sonarlint/issuestore/2/d/2d1ccfbfd810d842228cc6a7aeea5a866a42cf5f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/.idea/sonarlint/issuestore/3/a/3a0ebdcbf36f1fe641ca448311b6abd267cc1290" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/.idea/sonarlint/issuestore/5/8/58b410736c9fa46d3888a843ba63938737ad03a2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/.idea/sonarlint/issuestore/6/b/6bcf9a0233e32de71f8368a695a3e51f3a32c214" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/.idea/sonarlint/issuestore/7/a/7a2349ed23170aa9b9cba3fc4588e091ba98e066" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/.idea/sonarlint/issuestore/e/6/e687a421a4e8e022602043a6d918169bdadc1d66" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/.idea/sonarlint/issuestore/e/b/ebdc0308afb6c52bdcb27d881ad1da601f935680" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/.idea/sonarlint/issuestore/f/9/f99f831e6bb3e48e0ebd5ff0274a978f5f4bbcb5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/.idea/sonarlint/securityhotspotstore/0/5/05e31b7f15b4643e4990e86e9c86bff68c033592" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/.idea/sonarlint/securityhotspotstore/0/9/090cc7f56f1111bf2bd9a5fee206926a4130851c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/.idea/sonarlint/securityhotspotstore/1/5/1576f101bb759b62e9609e32f47482d1552199de" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/.idea/sonarlint/securityhotspotstore/2/1/214abd635543e93f1b492a8a834287f8b5dc4690" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/.idea/sonarlint/securityhotspotstore/2/d/2d1ccfbfd810d842228cc6a7aeea5a866a42cf5f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/.idea/sonarlint/securityhotspotstore/3/a/3a0ebdcbf36f1fe641ca448311b6abd267cc1290" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/.idea/sonarlint/securityhotspotstore/5/8/58b410736c9fa46d3888a843ba63938737ad03a2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/.idea/sonarlint/securityhotspotstore/6/b/6bcf9a0233e32de71f8368a695a3e51f3a32c214" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/.idea/sonarlint/securityhotspotstore/7/a/7a2349ed23170aa9b9cba3fc4588e091ba98e066" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/.idea/sonarlint/securityhotspotstore/e/6/e687a421a4e8e022602043a6d918169bdadc1d66" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/.idea/sonarlint/securityhotspotstore/e/b/ebdc0308afb6c52bdcb27d881ad1da601f935680" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/.idea/sonarlint/securityhotspotstore/f/9/f99f831e6bb3e48e0ebd5ff0274a978f5f4bbcb5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/datos.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/src/main/java/org/programacion/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/src/main/java/org/programacion/unidad_11/Acceso_ficheros.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/src/main/java/org/programacion/unidad_11/Actividades/Actividad1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/src/main/java/org/programacion/unidad_11/Actividades/Actividad2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/src/main/java/org/programacion/unidad_11/Actividades/BoletinFicheros/Boletin.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/src/main/java/org/programacion/unidad_11/Actividades/BoletinFicheros/Ej1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/src/main/java/org/programacion/unidad_11/Actividades/BoletinFicheros/Ej2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/src/main/java/org/programacion/unidad_11/Actividades/BoletinFicheros/Ej2_2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/src/main/java/org/programacion/unidad_11/Actividades/BoletinFicheros/Ej3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/src/main/java/org/programacion/unidad_11/Actividades/BoletinFicheros/Ej4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/src/main/java/org/programacion/unidad_11/Actividades/BoletinFicheros/Ej5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/src/main/java/org/programacion/unidad_11/Actividades/BoletinFicheros/Ej6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/src/main/java/org/programacion/unidad_11/Actividades/BoletinFicheros/Ej7.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgramacionTerceraEvaluacion/src/test/java/org/programacion/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Soluciones/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Soluciones/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Soluciones/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Soluciones/.idea/sonarlint/issuestore/2/a/2a22af062729762c8bfc4c04f30356bf7c16d871" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Soluciones/.idea/sonarlint/issuestore/d/d/dd30d487789c495be2503e87ef64b97d97f86fb7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Soluciones/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Soluciones/.idea/sonarlint/securityhotspotstore/2/a/2a22af062729762c8bfc4c04f30356bf7c16d871" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Soluciones/.idea/sonarlint/securityhotspotstore/d/d/dd30d487789c495be2503e87ef64b97d97f86fb7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Soluciones/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Soluciones/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Soluciones/Ejercicio1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Soluciones/Ejercicio2_3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Soluciones/Soluciones.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Soluciones/datos.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Soluciones/out/production/Soluciones/ActividadesStreams/Boletin/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Soluciones/out/production/Soluciones/ActividadesStreams/Boletin/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Soluciones/out/production/Soluciones/ActividadesStreams/Boletin/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Soluciones/out/production/Soluciones/ActividadesStreams/Boletin/.idea/sonarlint/issuestore/2/a/2a22af062729762c8bfc4c04f30356bf7c16d871" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Soluciones/out/production/Soluciones/ActividadesStreams/Boletin/.idea/sonarlint/issuestore/d/d/dd30d487789c495be2503e87ef64b97d97f86fb7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Soluciones/out/production/Soluciones/ActividadesStreams/Boletin/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Soluciones/out/production/Soluciones/ActividadesStreams/Boletin/.idea/sonarlint/securityhotspotstore/2/a/2a22af062729762c8bfc4c04f30356bf7c16d871" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Soluciones/out/production/Soluciones/ActividadesStreams/Boletin/.idea/sonarlint/securityhotspotstore/d/d/dd30d487789c495be2503e87ef64b97d97f86fb7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Soluciones/out/production/Soluciones/ActividadesStreams/Boletin/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Soluciones/out/production/Soluciones/ActividadesStreams/Boletin/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Soluciones/out/production/Soluciones/ActividadesStreams/Boletin/Ejercicio1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Soluciones/out/production/Soluciones/ActividadesStreams/Boletin/Ejercicio2_3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Soluciones/out/production/Soluciones/ActividadesStreams/Boletin/Soluciones.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../04 BASES DE DATOS/3_EVALUACION/UD-7/APUNTES/Procedure nombreCompleto.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../../04 BASES DE DATOS/3_EVALUACION/UD-7/APUNTES/Procedure nombreCompleto.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../04 BASES DE DATOS/3_EVALUACION/UD-7/EJERCICIOS/DatosConcello - Rellenar Funciones.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../../04 BASES DE DATOS/3_EVALUACION/UD-7/EJERCICIOS/DatosConcello - Rellenar Funciones.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +185,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Principal.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
@@ -59,7 +193,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Principal">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="RepasoRecuperacion" />
@@ -67,8 +201,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ExamenRepaso.Principal" />
+      <module name="RepasoRecuperacion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ExamenRepaso.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Principal" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>

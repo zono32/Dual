@@ -1,11 +1,10 @@
 package ExamenRepaso;
 
 public class Producto {
-
     private String nombre;
-    private Double precio;
+    private double precio;
 
-    public Producto(String nombre, Double precio) {
+    public Producto(String nombre, double precio) {
         this.nombre = nombre;
         this.precio = precio;
     }
@@ -18,11 +17,11 @@ public class Producto {
         this.nombre = nombre;
     }
 
-    public Double getPrecio() {
+    public double getPrecio() {
         return precio;
     }
 
-    public void setPrecio(Double precio) {
+    public void setPrecio(double precio) {
         this.precio = precio;
     }
 

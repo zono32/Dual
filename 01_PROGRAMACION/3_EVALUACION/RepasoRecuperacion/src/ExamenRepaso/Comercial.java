@@ -3,24 +3,22 @@ package ExamenRepaso;
 import java.util.HashMap;
 
 public class Comercial {
-    String nombre;
-    String apellidos;
-    int edad;
-    String zona;
-    HashMap< Integer, Producto> producto ;
+    private String nombre, apellidos, zona;
+    private int edad;
+    private HashMap<Integer, Producto> producto;
 
     public Comercial(String nombre, String apellidos, int edad, String zona, HashMap<Integer, Producto> producto) {
         this.nombre = nombre;
         this.apellidos = apellidos;
-        this.edad = edad;
         this.zona = zona;
+        this.edad = edad;
         this.producto = producto;
     }
     public Comercial() {
         this.nombre = "";
         this.apellidos = "";
-        this.edad = 0;
         this.zona = "";
+        this.edad = 0;
         this.producto = null;
     }
 
@@ -40,20 +38,20 @@ public class Comercial {
         this.apellidos = apellidos;
     }
 
-    public int getEdad() {
-        return edad;
-    }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
-    }
-
     public String getZona() {
         return zona;
     }
 
     public void setZona(String zona) {
         this.zona = zona;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
     }
 
     public HashMap<Integer, Producto> getProducto() {
@@ -69,11 +67,9 @@ public class Comercial {
         return "Comercial{" +
                 "nombre='" + nombre + '\'' +
                 ", apellidos='" + apellidos + '\'' +
+                ", zona='" + zona + '\'' +
                 ", edad=" + edad +
-                ", zona=" + zona +
                 ", producto=" + producto +
                 '}';
     }
 }
-
-

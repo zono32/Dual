@@ -1,0 +1,49 @@
+
+	java:S112n"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ïÕµí1J$798b4ab8-b979-40ea-853f-86f580de8b4f
+¦
+java:S1488§"]Immediately return this expression instead of assigning it to the temporary variable "fecha".(˜¥øÂşÿÿÿÿ8ğÕµí1J$23eeadb5-801f-4432-9572-048cd0756483
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¸¹Ö¼ıÿÿÿÿ8ñÕµí1J$10e5a02c-433c-4771-aa60-6449ab7dac7c
+Å
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(õÜİö8‰Öµí1J$76cd564e-e0cb-4d9c-9113-6a8499f32e63
+Ä
+java:S1186 "€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(”óôd8‰Öµí1J$edbe76dc-5985-4449-a4d3-326442f9a93c
+Ä
+java:S1186£"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¦²T8‰Öµí1J$76d230a0-c075-46db-a232-ebacee1aca25
+r	java:S106,"+Replace this use of System.out by a logger.(ŠÉŸğÿÿÿÿÿ8Öµí1J$84c82543-31c6-4bc6-89d6-39dd0085701b
+m	java:S1067"+Replace this use of System.out by a logger.(Œ€ÿ8Öµí1J$a810f28a-33f7-430a-8641-731b7edae6e7
+m	java:S1068"+Replace this use of System.out by a logger.(¶Æ®š8Öµí1J$0cf048ce-5025-4706-ad9b-e598f8bef23e
+m	java:S1069"+Replace this use of System.out by a logger.(Œ€ÿ8Öµí1J$bd2eaaba-4a2e-4740-8e1f-0dca1de28193
+m	java:S106;"+Replace this use of System.out by a logger.(½¸ÿ¸8Öµí1J$cd69a620-862b-4823-a2db-1f336b4f59e0
+r	java:S106<"+Replace this use of System.out by a logger.(©Ü–¡ûÿÿÿÿ8Öµí1J$5083dcaa-cfd3-4be9-8e59-aac78677acfe
+r	java:S106="+Replace this use of System.out by a logger.(óÕÚ›úÿÿÿÿ8Öµí1J$4a0e7213-0bb0-4fb9-ad62-d046b5987359
+l	java:S106>"+Replace this use of System.out by a logger.(Œ÷É98Öµí1J$dfadfe96-7032-4566-820f-db2ff064c3d7
+r	java:S106?"+Replace this use of System.out by a logger.(Ş´¤‡øÿÿÿÿ8Öµí1J$fefbdf3d-9a9b-48f7-a5ef-138042e01fef
+l	java:S106@"+Replace this use of System.out by a logger.(õ¬Ø8Öµí1J$cb18b05a-fe8e-4b12-8281-c64c16621adc
+m	java:S106A"+Replace this use of System.out by a logger.(ã¥Æş8Öµí1J$169f329f-4ccf-4863-a8de-df253f58366b
+r	java:S106B"+Replace this use of System.out by a logger.(£‹í†üÿÿÿÿ8Öµí1J$976186d9-874f-455b-a5ef-e3f6397d1a3c
+
+java:S1854G"7Remove this useless assignment to local variable "sdf".(ÓÌ¤æıÿÿÿÿ8Öµí1J$e275f090-3c36-4430-aca6-ad494eb1e7dd
+o
+java:S1659J"'Declare "categoria" on a separate line.(³«Ïœıÿÿÿÿ8‘Öµí1J$dbd5e939-d06e-49df-868d-cbe70e260284
+p
+java:S1481G"(Remove this unused "sdf" local variable.(ÓÌ¤æıÿÿÿÿ8’Öµí1J$7bc2d83a-5b06-4e5d-83ea-c81993d84763
+m	java:S106K"+Replace this use of System.out by a logger.(·„¾¹8“Öµí1J$fea7d723-87a7-4626-aab7-d0100dcd18f1
+m	java:S106M"+Replace this use of System.out by a logger.(“ùÊ8“Öµí1J$653ef12a-a183-45b1-98e4-cc4bd2ee7a53
+l	java:S106Q"+Replace this use of System.out by a logger.(­¼ˆ8“Öµí1J$fd344db2-af1d-42e7-8493-b8746a0f970c
+r	java:S106Z"+Replace this use of System.out by a logger.(£Ôóıÿÿÿÿ8“Öµí1J$664bb736-2713-4f16-8661-ff060c184bad
+m	java:S106^"+Replace this use of System.out by a logger.(·€©ã8”Öµí1J$53b21fe5-a3bd-4432-ade6-7305a511ab8c
+m	java:S106i"+Replace this use of System.out by a logger.(Îğ‡³8”Öµí1J$ba57c8c3-71b4-4580-8ecf-20bfd43e7c17
+
+java:S1659y"FDeclare "apellidos" and all following declarations on a separate line.(¹éåáùÿÿÿÿ8•Öµí1J$94d5566f-d6d0-4d1b-bdab-2cfa380dba9e
+i
+java:S1481w"&Remove this unused "c" local variable.(¿ôç¥8•Öµí1J$d93fc459-5b62-42ce-a9ff-993a4c0b2a5b
+r	java:S106z"+Replace this use of System.out by a logger.(ŞŠÅ“ûÿÿÿÿ8•Öµí1J$a17bbe70-f430-4f99-a07d-56bf015e32db
+m	java:S106|"+Replace this use of System.out by a logger.(“ùÊ8•Öµí1J$eeae7dbc-2258-46e4-bf90-10ba4258cd6c
+m	java:S106"+Replace this use of System.out by a logger.(†í±ù8•Öµí1J$5ef9aed6-7113-4473-81cd-f79625d4e7aa
+s	java:S106‚"+Replace this use of System.out by a logger.(õƒı‡ùÿÿÿÿ8•Öµí1J$fca24696-bf61-4218-a76e-c987f13cd4f6
+n	java:S106…"+Replace this use of System.out by a logger.(û‚’“8–Öµí1J$10d6b682-92a5-4685-ba25-ac66c36249c1
+
+java:S6201™"DReplace this instanceof check and cast with 'instanceof Bazar bazar'(­ë’íüÿÿÿÿ8·÷Éí1J$15b7811d-889d-4778-9e53-4734221c3268
+‘	java:S100¦"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒı¬í8˜Öµí1J$17a0e4af-3046-47c5-b0e8-3aced0b0449a
+y
+java:S1172¦"5Remove this unused method parameter "fechaCaducidad".(ƒı¬í8™Öµí1J$9fc94049-cb1f-458b-93fc-1415dd33f6e5

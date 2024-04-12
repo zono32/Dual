@@ -1,0 +1,43 @@
+
+Ş
+java:S1598"ÇThis file "AlmacenPrincipal.java" should be located in "ZZ_EXAMEN" directory, not in "C:\Users\a21joaquinle\Desktop\workspace\DUAL\01_PROGRAMACION\3_EVALUACION\RepasoRecuperacion\ZZ_EXAMEN_Solucion".(ñö÷Ã
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ñö÷Ã
+@	java:S106'"+Replace this use of System.out by a logger.(·ƒé°
+@	java:S106/"+Replace this use of System.out by a logger.(Œ€ÿ
+@	java:S1060"+Replace this use of System.out by a logger.(¶Æ®š
+@	java:S1061"+Replace this use of System.out by a logger.(Œ€ÿ
+@	java:S1063"+Replace this use of System.out by a logger.(½¸ÿ¸
+E	java:S1064"+Replace this use of System.out by a logger.(©Ü–¡ûÿÿÿÿ
+E	java:S1065"+Replace this use of System.out by a logger.(óÕÚ›úÿÿÿÿ
+?	java:S1066"+Replace this use of System.out by a logger.(Œ÷É9
+E	java:S1067"+Replace this use of System.out by a logger.(Ş´¤‡øÿÿÿÿ
+?	java:S1068"+Replace this use of System.out by a logger.(õ¬Ø
+@	java:S1069"+Replace this use of System.out by a logger.(ã¥Æş
+E	java:S106:"+Replace this use of System.out by a logger.(£‹í†üÿÿÿÿ
+B
+java:S1659B"'Declare "categoria" on a separate line.(³«Ïœıÿÿÿÿ
+@	java:S106C"+Replace this use of System.out by a logger.(·„¾¹
+@	java:S106F"+Replace this use of System.out by a logger.(“ùÊ
+?	java:S106J"+Replace this use of System.out by a logger.(­¼ˆ
+E	java:S106P"+Replace this use of System.out by a logger.(£Ôóıÿÿÿÿ
+E	java:S106T"+Replace this use of System.out by a logger.(‚×ÙÛüÿÿÿÿ
+E	java:S106X"+Replace this use of System.out by a logger.(Ğ‰¾ôùÿÿÿÿ
+@	java:S106\"+Replace this use of System.err by a logger.(¥ËÛò
+E	java:S106`"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ
+a
+java:S1659i"FDeclare "apellidos" and all following declarations on a separate line.(ö„ß²şÿÿÿÿ
+E	java:S106j"+Replace this use of System.out by a logger.(ŞŠÅ“ûÿÿÿÿ
+@	java:S106l"+Replace this use of System.out by a logger.(“ùÊ
+@	java:S106o"+Replace this use of System.out by a logger.(†í±ù
+E	java:S106r"+Replace this use of System.out by a logger.(õƒı‡ùÿÿÿÿ
+@	java:S106u"+Replace this use of System.out by a logger.(û‚’“
+E	java:S106x"+Replace this use of System.out by a logger.(–Ü²’ÿÿÿÿÿ
+>
+java:S1659"'Declare "contBazar" on a separate line.(„‚®†
+F	java:S106™"+Replace this use of System.out by a logger.(¦±Éüÿÿÿÿ
+C
+java:S1659",Declare "numComestibles" on a separate line.(çëš
+F	java:S106¦"+Replace this use of System.out by a logger.(›À®Ùúÿÿÿÿ
+F	java:S106¨"+Replace this use of System.out by a logger.(í¦Šÿÿÿÿÿ
+F	java:S106°"+Replace this use of System.out by a logger.(¤şÖûÿÿÿÿ
+A	java:S106¿"+Replace this use of System.out by a logger.(Ç”Ôà

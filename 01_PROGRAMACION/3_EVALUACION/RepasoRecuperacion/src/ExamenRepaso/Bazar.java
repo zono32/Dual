@@ -4,7 +4,7 @@ public class Bazar extends Producto{
 
     private String tipo;
 
-    public Bazar(String nombre, Double precio, String tipo) {
+    public Bazar(String nombre, double precio, String tipo) {
         super(nombre, precio);
         this.tipo = tipo;
     }

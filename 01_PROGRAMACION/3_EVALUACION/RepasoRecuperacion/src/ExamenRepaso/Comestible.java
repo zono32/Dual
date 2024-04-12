@@ -6,12 +6,12 @@ public class Comestible extends Producto{
 
     private LocalDate fechaCaducidad;
 
-    public Comestible(String nombre, Double precio, LocalDate fechaCaducidad) {
+    public Comestible(String nombre, double precio, LocalDate fechaCaducidad) {
         super(nombre, precio);
         this.fechaCaducidad = fechaCaducidad;
     }
     public Comestible() {
-        super("",0.0);
+        super("", 0.0);
         this.fechaCaducidad = null;
     }
 
