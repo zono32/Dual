@@ -232,13 +232,71 @@ INSERT INTO Salario ( puestoTrabajo, sueldoBase, incrementoAnual, productividad 
 #	1. Procedimiento agregarDatosEmpresa
 #		Agregamos los datos de las cuatro tablas
 #---------------------------------------------------------------------------------------
+DELIMITER //
+DROP PROCEDURE IF EXISTS agregarDatosEmpresa //
+
+CREATE PROCEDURE agregarDatosEmpresa(
+    IN nombreOficina VARCHAR(255),
+    IN numeroOficina INT,
+    IN dimension VARCHAR(255),
+    IN ubicacion VARCHAR(255),
+    IN numeroMesas INT,
+    IN NIFEmpleado VARCHAR(255),
+    IN nombreEmpleado VARCHAR(255),
+    IN apellidosEmpleado VARCHAR(255),
+    IN fechaIncorporacion DATE,
+    IN tipoContrato VARCHAR(255),
+    IN inicioContratacion DATE,
+    IN finContratacion DATE,
+    IN puestoTrabajo VARCHAR(255),
+    IN Jefe VARCHAR(255),
+    IN sueldoBase DECIMAL(10, 2),
+    IN incrementoAnual DECIMAL(5, 2),
+    IN productividad DECIMAL(5, 2)
+)
+BEGIN
+    -- Insertar en la tabla Oficina
+    INSERT INTO Oficina (nombreOficina, numeroOficina, dimension, ubicacion, numeroMesas)
+    VALUES (nombreOficina, numeroOficina, dimension, ubicacion, numeroMesas);
+
+    -- Insertar en la tabla Empleado
+    INSERT INTO Empleado (NIFEmpleado, nombreEmpleado, apellidosEmpleado, fechaIncorporacion)
+    VALUES (NIFEmpleado, nombreEmpleado, apellidosEmpleado, fechaIncorporacion);
+
+    -- Insertar en la tabla Contratacion
+    INSERT INTO Contratacion (tipoContrato, inicioContratacion, finContratacion, Empleado, Oficina, puestoTrabajo, Jefe)
+    VALUES (tipoContrato, inicioContratacion, finContratacion, NIFEmpleado, nombreOficina, puestoTrabajo, Jefe);
+
+    -- Insertar en la tabla Salario
+    INSERT INTO Salario (puestoTrabajo, sueldoBase, incrementoAnual, productividad)
+    VALUES (puestoTrabajo, sueldoBase, incrementoAnual, productividad);
+    
+END //
+
+DELIMITER ;
 
 
 #---------------------------------------------------------------------------------------
 #	2. Procedimiento agregarOficinas - AGREGAMOS LAS OCHO OFICINAS
 #---------------------------------------------------------------------------------------
 
+DELIMITER //
+DROP PROCEDURE IF EXISTS agregarOficinas //
 
+CREATE PROCEDURE agregarOficinas(
+    IN nombreOficina VARCHAR(255),
+    IN numeroOficina INT,
+    IN dimension VARCHAR(255),
+    IN ubicacion VARCHAR(255),
+    IN numeroMesas INT   
+)
+BEGIN
+    -- Insertar en la tabla Oficina
+    INSERT INTO Oficina (nombreOficina, numeroOficina, dimension, ubicacion, numeroMesas)
+    VALUES (nombreOficina, numeroOficina, dimension, ubicacion, numeroMesas);   
+END //
+
+DELIMITER ;
 #---------------------------------------------------------------------------------------
 #	3. Procedimiento agregarEmpleados - AGREGAMOS LOS 48 EMPLEADOS
 #---------------------------------------------------------------------------------------
