@@ -492,8 +492,8 @@ CREATE PROCEDURE despedirTrabajador(
     
 	BEGIN    
 		UPDATE contratacion    
-		SET finContratacion = Despido
-		WHERE Empleado = Trabajador;
+		SET finContratacion = Despido 
+		WHERE Empleado = Trabajador AND finContratacion IS NULL;
     END //
 DELIMITER ;
 
