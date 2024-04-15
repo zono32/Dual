@@ -487,13 +487,11 @@ DELIMITER //
 DROP PROCEDURE IF EXISTS  despedirTrabajador //
 CREATE PROCEDURE despedirTrabajador(
 
-	Trabajador VARCHAR(40), 
+	Trabajador INT, 
     Despido DATE)
     
-	BEGIN
-    
-    UPDATE contratacion
-    
+	BEGIN    
+		UPDATE contratacion    
 		SET finContratacion = Despido
 		WHERE Empleado = Trabajador;
     END //
@@ -506,23 +504,31 @@ DELIMITER //
 DROP PROCEDURE IF EXISTS  contratarTrabajador //
 CREATE PROCEDURE contratarTrabajador(
 
-	Trabajador VARCHAR(40), 
-    Alta DATE)
+	Trabajador INT, 
+    Contrato VARCHAR(40),
+    Fecha DATE	,
+    OficinaTrabajo INT,
+    Puesto VARCHAR(50),
+    Jefe INT)
     
-	BEGIN
-    
-    
-    
-    
-		SET finContratacion = Despido
-		WHERE Empleado = Trabajador;
-    END //
+    BEGIN
+	INSERT INTO Contratacion
+			( tipoContrato, inicioContratacion, Empleado, Oficina, puestoTrabajo, Jefe )	
+            VALUES
+			( Contrato, Fecha, Trabajador, OficinaTrabajo, Puesto, Jefe);
+	END //
 DELIMITER ;
 
 #---------------------------------------------------------------------------------------
 #  11. Procedimiento mostrarContratosTrabajador( trabajador )
 #---------------------------------------------------------------------------------------
-
+DELIMITER //
+DROP PROCEDURE IF EXISTS mostrarContratosTrabajador //
+CREATE PROCEDURE mostrarContratosTrabajador (IN Trabajador INT)
+BEGIN
+  SELECT * FROM Contratacion WHERE Empleado = Trabajador;
+END // 
+DELIMITER ; 
 
 #---------------------------------------------------------------------------------------
 #---------------------------------------------------------------------------------------
@@ -541,3 +547,24 @@ DELIMITER ;
 #---------------------------------------------------------------------------------------
 #---------------------------------------------------------------------------------------
 #---------------------------------------------------------------------------------------
+
+#	- Despide al trabajador/es que desees con fecha de '2024-03-02'
+CALL despedirTrabajador(32, '2024-03-02');
+#	- Contrata a ese mismo trabajador/es para realizar un 'Proyecto' como contrato, con fecha de '2024-03-02', asigna una oficina de trabajo, un puesto y un jefe
+CALL contratarTrabajador(32,'Proyecto','2024-03-02',5,'Trabajador de Desarrollo de Productos',7);
+#	- Despide a ese trabajador/es con fecha de '2024-03-12'
+CALL despedirTrabajador(32, '2024-03-12');
+#	- Contrata a ese mismo trabajador/es para realizar otro 'Proyecto' como contrato, con fecha de '2024-03-14', asigna una oficina de trabajo, un puesto y un jefe
+CALL contratarTrabajador(32,'Proyecto','2024-03-14',3,'Trabajador de Recursos Humanos',2);
+#	- Despide a ese trabajador/es con fecha de '2024-03-17'
+CALL despedirTrabajador(32,'2024-03-17');
+#	- Contrata a ese mismo trabajador/es con contrato indefinido, con fecha de '2024-03-20', asigna una oficina de trabajo, un puesto y un jefe
+CALL contratarTrabajador(32,'Indefinido','2024-03-20',2,'Trabajador Ventas',5);
+#	- Despide a ese trabajador/es con fecha de '2024-03-27'
+CALL despedirTrabajador(32,'2024-03-27');
+#	- Contrata a ese mismo trabajador/es con contrato indefinido, con fecha de '2024-03-30', asigna una oficina de trabajo, un puesto y un jefe
+CALL contratarTrabajador(32,'Indefinido','2024-03-30',4,'Trabajador de Atención al Cliente',4);
+#	- Despide a ese trabajador/es con fecha de '2024-04-12'
+CALL despedirTrabajador(32,'2024-04-12');
+#	- Muestra los Contratos de ese trabajador/es
+CALL mostrarContratosTrabajador(32);
