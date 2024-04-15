@@ -5,174 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0decfb27-f538-4c5a-9f43-ed005ab9b763" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/.env.test" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/.vscode/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/assets/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/assets/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/assets/controllers.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/assets/controllers/hello_controller.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/assets/js/inicio.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/assets/styles/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/bin/console" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/bin/phpunit" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/composer.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/config/bundles.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/config/packages/asset_mapper.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/config/packages/cache.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/config/packages/debug.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/config/packages/doctrine.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/config/packages/doctrine_migrations.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/config/packages/framework.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/config/packages/mailer.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/config/packages/messenger.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/config/packages/monolog.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/config/packages/notifier.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/config/packages/routing.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/config/packages/security.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/config/packages/translation.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/config/packages/twig.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/config/packages/validator.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/config/packages/web_profiler.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/config/preload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/config/routes.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/config/routes/framework.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/config/routes/security.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/config/routes/web_profiler.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/config/services.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/importmap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/migrations/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/phpunit.xml.dist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/public/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/src/Controller/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/src/Controller/LuckyController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/src/Controller/TableController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/src/Entity/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/src/Kernel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/src/Repository/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/symfony.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/templates/base.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/templates/lucky/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/templates/table/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/tests/bootstrap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.1-sol-main/Actividad8.1-sol-main/translations/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/.env.test" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/.vscode/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/assets/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/assets/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/assets/controllers.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/assets/controllers/hello_controller.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/assets/js/inicio.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/assets/styles/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/bin/console" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/bin/phpunit" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/composer.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/config/bundles.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/config/packages/asset_mapper.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/config/packages/cache.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/config/packages/debug.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/config/packages/doctrine.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/config/packages/doctrine_migrations.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/config/packages/framework.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/config/packages/mailer.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/config/packages/messenger.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/config/packages/monolog.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/config/packages/notifier.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/config/packages/routing.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/config/packages/security.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/config/packages/translation.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/config/packages/twig.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/config/packages/validator.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/config/packages/web_profiler.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/config/preload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/config/routes.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/config/routes/framework.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/config/routes/security.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/config/routes/web_profiler.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/config/services.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/importmap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/migrations/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/phpunit.xml.dist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/public/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/src/Controller/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/src/Controller/LuckyController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/src/Controller/RamdonControlerController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/src/Controller/TableController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/src/Entity/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/src/Entity/Nota.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/src/Kernel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/src/Repository/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/src/Repository/NotaRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/symfony.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/templates/base.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/templates/lucky/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/templates/ramdon_controler/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/templates/table/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/tests/bootstrap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.2/translations/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/.env.test" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/.vscode/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/assets/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/assets/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/assets/controllers.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/assets/controllers/hello_controller.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/assets/js/inicio.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/assets/styles/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/bin/console" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/bin/phpunit" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/composer.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/config/bundles.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/config/packages/asset_mapper.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/config/packages/cache.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/config/packages/debug.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/config/packages/doctrine.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/config/packages/doctrine_migrations.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/config/packages/framework.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/config/packages/mailer.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/config/packages/messenger.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/config/packages/monolog.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/config/packages/notifier.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/config/packages/routing.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/config/packages/security.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/config/packages/translation.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/config/packages/twig.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/config/packages/validator.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/config/packages/web_profiler.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/config/preload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/config/routes.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/config/routes/framework.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/config/routes/security.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/config/routes/web_profiler.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/config/services.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/enunciado.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/importmap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/migrations/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/phpunit.xml.dist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/public/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/src/Controller/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/src/Controller/LuckyController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/src/Controller/RamdonControlerController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/src/Controller/TableController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/src/Entity/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/src/Entity/Nota.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/src/Kernel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/src/Repository/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/src/Repository/NotaRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/symfony.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/templates/base.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/templates/lucky/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/templates/ramdon_controler/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/templates/table/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/tests/bootstrap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_SERVIDOR/UD8/Symfony/Actividad_8.3/translations/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEMA12/APP_Productos/.idea/sonarlint/issuestore/5/9/5997c0aff62903e57ee479e2fa06c5f55432e89a" beforeDir="false" afterPath="$PROJECT_DIR$/../TEMA12/APP_Productos/.idea/sonarlint/issuestore/5/9/5997c0aff62903e57ee479e2fa06c5f55432e89a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEMA12/APP_Productos/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../TEMA12/APP_Productos/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEMA12/APP_Productos/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../TEMA12/APP_Productos/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEMA12/APP_Productos/EjemploConectores/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TEMA12/APP_Productos/EjemploConectores/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,21 +46,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.Principal.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/a21joaquinle/Desktop/workspace/DUAL/01_PROGRAMACION/3_EVALUACION/TEMA12/APP_Productos",
-    "onboarding.tips.debug.path": "C:/Users/a21joaquinle/Desktop/workspace/DUAL/01_PROGRAMACION/3_EVALUACION/RepasoRecuperacion/src/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Principal.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/a21joaquinle/Desktop/workspace/DUAL/01_PROGRAMACION/3_EVALUACION/TEMA12/APP_Productos&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/a21joaquinle/Desktop/workspace/DUAL/01_PROGRAMACION/3_EVALUACION/RepasoRecuperacion/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Principal">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />

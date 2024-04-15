@@ -9,7 +9,6 @@ public class Main {
         Statement sentencia = null;
         Connection conexion = null;
 
-
         int op = 0;
 
         try {
