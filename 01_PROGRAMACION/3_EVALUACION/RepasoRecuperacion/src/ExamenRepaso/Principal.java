@@ -1,9 +1,11 @@
 package ExamenRepaso;
 
 import java.text.SimpleDateFormat;
+import java.time.DateTimeException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Principal {
@@ -102,12 +104,13 @@ public class Principal {
 
             }
             else{
-                System.out.println("Por favor escoja una respuesta correcta");
+                System.out.println("Categoría no válida. Empiece de nuevo");
                 altaProducto();
             }
 
-        } catch (ExcepNumNegativo e) {
-            throw new RuntimeException(e);
+        } catch (InputMismatchException | ExcepNumNegativo e) {
+            System.out.println(e.getMessage());
+            altaProducto();
         }
 
 
@@ -150,7 +153,7 @@ public class Principal {
     }
 
     private static void eliminarProductosLimpieza() {
-        productos.removeIf(p-> p instanceof Bazar && ((Bazar) p).getTipo().equalsIgnoreCase("Limpieza"));
+        productos.removeIf(p -> p instanceof Bazar && ((Bazar)p).getTipo().equalsIgnoreCase("limpieza"));
 
     }
 
@@ -163,9 +166,31 @@ public class Principal {
     private static void productosCaducidadProxima() {
     }
 
-    private static LocalDate ValidarFechaCaducidad(String fechaCaducidad){
+    private static LocalDate ValidarFechaCaducidad( String fechaCaducidad){
         LocalDate fecha = null;
+
+        try{
+            fecha =LocalDate.parse(fechaCaducidad);
+            LocalDate now = LocalDate.now();
+
+            if(fecha.isBefore(now)){
+                throw new ExcepFechaCaducidad("ERROR:El producto está caducado");
+
+            }
+        } catch (DateTimeException | ExcepFechaCaducidad e) {
+            System.out.println("La fecha introducida es incorrecta. Vuelva a introducir los datos.");;
+            altaProducto();
+        }
+
 
         return fecha;
     }
+
 }
+
+
+
+
+
+
+
