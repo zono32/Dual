@@ -13,5 +13,3 @@ V
 &src/ExamenRepaso/ExcepNumNegativo.java,b\5\b5e1b32f42277d7207bd6104c77667bb9370dcc2
 X
 (ZZ_EXAMEN_Solucion/AlmacenPrincipal.java,a\e\aed9af5135d2d446044742aeb10b58b9384169d4
-I
-src/AlmacenPrincipal.java,e\3\e30be1832ddd2743710831e49c7391a92ac4fbf4
