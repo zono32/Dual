@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0decfb27-f538-4c5a-9f43-ed005ab9b763" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../TEMA12/APP_Productos/.idea/sonarlint/issuestore/5/9/5997c0aff62903e57ee479e2fa06c5f55432e89a" beforeDir="false" afterPath="$PROJECT_DIR$/../TEMA12/APP_Productos/.idea/sonarlint/issuestore/5/9/5997c0aff62903e57ee479e2fa06c5f55432e89a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TEMA12/APP_Productos/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../TEMA12/APP_Productos/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TEMA12/APP_Productos/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../TEMA12/APP_Productos/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TEMA12/APP_Productos/EjemploConectores/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TEMA12/APP_Productos/EjemploConectores/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="0decfb27-f538-4c5a-9f43-ed005ab9b763" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,22 +41,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Principal.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/a21joaquinle/Desktop/workspace/DUAL/01_PROGRAMACION/3_EVALUACION/TEMA12/APP_Productos&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/a21joaquinle/Desktop/workspace/DUAL/01_PROGRAMACION/3_EVALUACION/RepasoRecuperacion/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Instituto.Principal.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.Principal.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/a21joaquinle/Desktop/workspace/DUAL/01_PROGRAMACION/3_EVALUACION/TEMA12/APP_Productos",
+    "onboarding.tips.debug.path": "C:/Users/a21joaquinle/Desktop/workspace/DUAL/01_PROGRAMACION/3_EVALUACION/RepasoRecuperacion/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
-}</component>
-  <component name="RunManager" selected="Application.Principal">
+}]]></component>
+  <component name="RunManager" selected="Application.Instituto.Principal">
+    <configuration name="Instituto.Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Instituto.Principal" />
+      <module name="RepasoRecuperacion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Instituto.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="RepasoRecuperacion" />
@@ -84,6 +93,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Instituto.Principal" />
         <item itemvalue="Application.Principal" />
         <item itemvalue="Application.Main" />
       </list>

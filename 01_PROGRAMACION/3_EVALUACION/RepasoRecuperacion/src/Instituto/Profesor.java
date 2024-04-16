@@ -58,9 +58,5 @@ public class Profesor extends Miembro{
         if(antiguedad > 3){
             this.setSueldo(sueldo * 1.15) ;
         }
-
-
-
-
     }
 }
