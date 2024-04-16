@@ -116,7 +116,7 @@ public class Principal {
         return p;
     }
 
-    private static Comercial altaComercial() {
+    private static Comercial altaComercial() {//////////try catch
         Scanner sc = new Scanner(System.in);
         Comercial c;
         int edad;
@@ -143,8 +143,8 @@ public class Principal {
     private static HashMap<Integer, Producto> crearRegistroComercial() {
         HashMap<Integer, Producto> reg  = new HashMap<>();
         reg.put(0, new Bazar("Limpieza", 2, "Lejía"));
-        reg.put(1, new Comestible( "Pasta", 1.5,LocalDate.of(2024, 04, 10)));
-        reg.put(2, new Comestible( "Tomates", 3.8, LocalDate.of(2024, 04, 15)));
+        reg.put(1, new Comestible( "Pasta", 1.5,LocalDate.of(2024, 04, 18)));
+        reg.put(2, new Comestible( "Tomates", 3.8, LocalDate.of(2024, 04, 25)));
         reg.put(3, new Bazar("Mascotas", 10 ,"Pienso gatos"));
         reg.put(4, new Bazar("Menaje", 8.9, "Sartén"));
 
@@ -157,12 +157,50 @@ public class Principal {
     }
 
     private static void especialidadComerciales() {
+        int comestiblesTotal= 0 ;
+        int bazarTotal = 0;
+
     }
 
     private static void costeProductos() {
+        double costeP = 0;
+        int sum = 0;
+        for(Producto p : productos) {
+            sum++;
+           if (p instanceof Comestible){
+               costeP = costeP + p.getPrecio();
+           }
+           if (costeP > 0){
+               System.out.println( "el precio medio de los productos comestibles es de: "+ costeP/sum);
+           }
+           else{
+               System.out.println("Todavía no se ha registrado ningún producto comestible");
+           }
+        }
     }
 
     private static void productosCaducidadProxima() {
+        /*
+        for(Producto p : productos) {
+            if (p instanceof Comestible) {
+                if (((Comestible) p).getFechaCaducidad().isBefore(LocalDate.now().plusDays(5))) {
+                    System.out.println(p);
+                }
+            }
+        }*/
+        for(Comercial c : comerciales){
+            HashMap<Integer, Producto> producto = c.getProducto();
+            for (int i = 0; i <producto.size() ; i++) {
+                Producto pt = producto.get(i);
+                if(pt instanceof Comestible){
+                    if(((Comestible) pt).getFechaCaducidad().isBefore((LocalDate.now().plusDays(5)))){
+                        System.out.println("el producto "+ pt.getNombre()+ " con fecha de caducidad "+ ((Comestible) pt).getFechaCaducidad()+ " está cerca de caducar o ya ha caducado");
+                    }
+
+                }
+
+            }
+        }
     }
 
     private static LocalDate ValidarFechaCaducidad( String fechaCaducidad){

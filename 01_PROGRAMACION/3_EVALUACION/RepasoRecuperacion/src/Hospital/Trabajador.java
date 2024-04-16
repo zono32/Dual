@@ -4,11 +4,11 @@ import java.time.LocalDate;
 
 public class Trabajador extends Persona{
     private LocalDate fechaIncorporación;
-    private String areaSanitaria;
+    private Area areaSanitaria;
     private String cargo;
     private double salario;
 
-    public Trabajador(String dni, String nombre, String direccion, int edad, LocalDate fechaIncorporación, String areaSanitaria, String cargo, double salario) {
+    public Trabajador(String dni, String nombre, String direccion, int edad, LocalDate fechaIncorporación, Area areaSanitaria, String cargo, double salario) {
         super(dni, nombre, direccion, edad);
         this.fechaIncorporación = fechaIncorporación;
         this.areaSanitaria = areaSanitaria;
@@ -24,11 +24,11 @@ public class Trabajador extends Persona{
         this.fechaIncorporación = fechaIncorporación;
     }
 
-    public String getAreaSanitaria() {
+    public Area getAreaSanitaria() {
         return areaSanitaria;
     }
 
-    public void setAreaSanitaria(String areaSanitaria) {
+    public void setAreaSanitaria(Area areaSanitaria) {
         this.areaSanitaria = areaSanitaria;
     }
 

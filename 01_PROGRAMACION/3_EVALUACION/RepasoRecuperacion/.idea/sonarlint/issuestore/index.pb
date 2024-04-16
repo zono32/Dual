@@ -13,3 +13,15 @@ V
 &src/ExamenRepaso/ExcepNumNegativo.java,b\5\b5e1b32f42277d7207bd6104c77667bb9370dcc2
 X
 (ZZ_EXAMEN_Solucion/AlmacenPrincipal.java,a\e\aed9af5135d2d446044742aeb10b58b9384169d4
+Y
+)src/ExamenRepaso/ExcepFechaCaducidad.java,5\9\5911631a25c370a1edd931c2c54e3d31b21a3142
+U
+%src/Hospital/EjercicioAppHospital.pdf,4\1\416523c7f8bbb9a7467d4ee649eb13f34b9b0b89
+L
+src/Hospital/Trabajador.java,e\c\ec06765e1bbbaf85e2085bb56155ed7bcaad68c2
+J
+src/Hospital/Paciente.java,f\a\fa6a9dc172aa67276846f295f3de5244c6ca0ff3
+I
+src/Hospital/Persona.java,5\b\5bb22de0c5f8668fc074568b72b391474340e62b
+K
+src/Hospital/Principal.java,d\9\d98de3582c96f43fbb988182e53e097a3c9496b6

@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class Comercial {
     private String nombre, apellidos, zona;
     private int edad;
-    private HashMap<Integer, Producto> producto;
+    private  HashMap<Integer, Producto> producto;
 
     public Comercial(String nombre, String apellidos, int edad, String zona, HashMap<Integer, Producto> producto) {
         this.nombre = nombre;
@@ -54,7 +54,7 @@ public class Comercial {
         this.edad = edad;
     }
 
-    public HashMap<Integer, Producto> getProducto() {
+    public  HashMap<Integer, Producto> getProducto() {
         return producto;
     }
 

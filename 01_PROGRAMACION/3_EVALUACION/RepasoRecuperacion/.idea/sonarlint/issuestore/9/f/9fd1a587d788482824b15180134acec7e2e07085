@@ -1,11 +1,11 @@
 
 ¨
 java:S1319
-"eThe type of "producto" should be an interface such as "Map" rather than the implementation "HashMap".(ò ›º8ø¡Ã›í1J$dd4abe6c-53d8-4583-a263-41eaa05f5859
+"eThe type of "producto" should be an interface such as "Map" rather than the implementation "HashMap".(ò ›º8ø¡Ã›í1J$a7487cfc-873f-4df6-9ba4-fba54528ac01
 µ
-java:S13199"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(”Ğ™³úÿÿÿÿ8ù¡Ã›í1J$e418993b-3559-4937-90ea-203c29ef95a5
+java:S13199"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(”Ğ™³úÿÿÿÿ8ù¡Ã›í1J$3c93370e-ff9a-4bfc-8a62-411a36d0da9b
 ¨
-java:S1319="eThe type of "producto" should be an interface such as "Map" rather than the implementation "HashMap".(Ø¯Ğ8ù¡Ã›í1J$022242d0-63f2-482e-a0ae-793a7cf691c1
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¸¹Ö¼ıÿÿÿÿ8ú¡Ã›í1J$84ea0106-d446-4584-8878-00b80406ba5d
+java:S1319="eThe type of "producto" should be an interface such as "Map" rather than the implementation "HashMap".(Ø¯Ğ8ù¡Ã›í1J$50ac3926-e09e-463c-8b9a-0dc95b074bfd
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¸¹Ö¼ıÿÿÿÿ8ú¡Ã›í1J$6748a605-1738-410b-aa78-00a0f0b59e31
 
-java:S1659"FDeclare "apellidos" and all following declarations on a separate line.(æ—¢¸úÿÿÿÿ8ş¡Ã›í1J$8057ffbf-802e-4bec-bb98-46d26dd920c2
+java:S1659"FDeclare "apellidos" and all following declarations on a separate line.(æ—¢¸úÿÿÿÿ8ş¡Ã›í1J$241f2569-6414-41a9-8d3d-35b5ed5d1278
