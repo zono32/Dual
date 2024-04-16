@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Listado de notas
+{% endblock %}
+
+{% block body %}	
+
+	<div >
+		<div >		
+
+			<table class="table">
+				<thead>
+					
+						<th>
+							Id
+						</th>
+						
+						<th>
+							Título
+						</th>
+						<th>
+							Descripción
+						</th>
+						<th>
+							Fecha modificación
+						</th>
+				
+				</thead>
+				<tbody>
+
+
+					{% for nota in notas %}
+						<tr>
+							<td>{{nota.id}}</td>
+							<td>{{nota.titulo}}</td>
+							<td>{{nota.descripcion}}</td>
+							<td>{{nota.fechaModificacion|date('Y-m-d')}}</td>
+						</tr>
+					{% else %}
+					<tr><td> No se han encontrado notas</td></tr>
+					{% endfor %}																	
+				</tbody>
+			</table>
+
+
+		</div>
+		</div>
+
+		{# <script src='{{ asset('js/inicio.js')}}'></script> #}
+
+
+	{% endblock %}

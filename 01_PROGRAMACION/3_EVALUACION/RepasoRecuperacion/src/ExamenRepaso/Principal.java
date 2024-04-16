@@ -17,7 +17,6 @@ public class Principal {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-
         int opcion;
         do {
 
@@ -97,7 +96,7 @@ public class Principal {
                 LocalDate fechaCaducidad = ValidarFechaCaducidad(sc.nextLine());
                 p= new Comestible(nombre, precio, fechaCaducidad);
             }
-            if (categoria.equalsIgnoreCase("bazar")){
+            else if (categoria.equalsIgnoreCase("bazar")){
                String tipo = sc.nextLine();
 
                p= new Bazar(nombre, precio, tipo);
@@ -178,11 +177,10 @@ public class Principal {
 
             }
         } catch (DateTimeException | ExcepFechaCaducidad e) {
-            System.out.println("La fecha introducida es incorrecta. Vuelva a introducir los datos.");;
+            System.out.println(e.getMessage());
+            //System.out.println("La fecha introducida es incorrecta. Vuelva a introducir los datos.");;
             altaProducto();
         }
-
-
         return fecha;
     }
 
