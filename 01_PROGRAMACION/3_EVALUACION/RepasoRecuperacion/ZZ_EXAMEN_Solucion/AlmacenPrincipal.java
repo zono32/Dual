@@ -84,10 +84,12 @@ public class AlmacenPrincipal {
                 System.out.println("Introduzca una fecha de caducidad (yyyy-MM-dd)");
                 fechaCad = validarFecha(sc.nextLine());
                 p = new Comestible(fechaCad, nombre, precio);
+
             } else if (categoria.equalsIgnoreCase("bazar")) {
                 System.out.println("Introduzca el tipo de producto:");
                 String tipo = sc.nextLine();
                 p = new Bazar(tipo, nombre, precio);
+
             } else {
                 System.err.println("Categoría no válida. Empiece de nuevo");
                 altaProducto();
@@ -128,7 +130,7 @@ public class AlmacenPrincipal {
     private static HashMap<Integer, Producto> crearRegistroComercial() {
         HashMap<Integer, Producto> reg = new HashMap<>();
         reg.put(0, new Bazar("Limpieza", "Lejía", 2));
-        reg.put(1, new Comestible(LocalDate.of(2024, Month.APRIL, 10), "Pasta", 1.5));
+        reg.put(1, new Comestible(LocalDate.of(2024, 04, 10), "Pasta", 1.5));
         reg.put(2, new Comestible(LocalDate.of(2024, Month.APRIL, 15), "Tomates", 3.8));
         reg.put(3, new Bazar("Mascotas", "Pienso gatos", 10));
         reg.put(4, new Bazar("Menaje", "Sartén", 8.9));

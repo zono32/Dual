@@ -43,7 +43,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Instituto.Principal.executor": "Debug",
+    "Application.Almacen.executor": "Run",
+    "Application.Fechas.Principal.executor": "Run",
+    "Application.Instituto.Principal.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.Principal.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -57,7 +59,12 @@
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Principal">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\Desktop\workSpace\Dual\01_PROGRAMACION\3_EVALUACION\RepasoRecuperacion\src\Fechas" />
+    </key>
+  </component>
+  <component name="RunManager">
     <configuration name="Instituto.Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Instituto.Principal" />
       <module name="RepasoRecuperacion" />
@@ -93,8 +100,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Principal" />
         <item itemvalue="Application.Instituto.Principal" />
+        <item itemvalue="Application.Principal" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
