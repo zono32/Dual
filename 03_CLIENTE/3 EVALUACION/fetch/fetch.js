@@ -26,8 +26,9 @@ fetch("https://reqres.in/api/users")
       nombre.innerHTML = i + " " + user.first_name //+ " " + user.avatar;      
       div_usuarios.appendChild(nombre);
       
-      let img = document.createElement("")
+      let img = document.createElement("img")
     })
+    
 
   
 
