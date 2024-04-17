@@ -25,3 +25,11 @@ I
 src/Hospital/Persona.java,5\b\5bb22de0c5f8668fc074568b72b391474340e62b
 K
 src/Hospital/Principal.java,d\9\d98de3582c96f43fbb988182e53e097a3c9496b6
+I
+src/Alamacen/Almacen.java,0\4\04e80a06708e8123d45a3ee398387f4ded6b20de
+W
+'src/Alamacen/ExcepProductoCaducado.java,f\1\f1036d5a28e34e5c79bbf1c10a92dae252851c74
+G
+src/Alamacen/Bazar.java,5\1\51ba3babfe283a45f1e5faeb35a60e3dbc117b07
+L
+src/Alamacen/Comestible.java,6\9\69435c8380f36037fe43b3556f6f2b3889793d51

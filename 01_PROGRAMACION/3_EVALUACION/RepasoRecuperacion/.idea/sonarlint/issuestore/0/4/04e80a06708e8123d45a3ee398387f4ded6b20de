@@ -1,0 +1,70 @@
+
+®
+java:S1319"kThe type of "comerciales" should be an interface such as "List" rather than the implementation "ArrayList".(´»î8—ñöäî1J$a9f71daf-56b5-4d39-8558-2a81a5375405
+±
+java:S1319"iThe type of "productos" should be an interface such as "List" rather than the implementation "ArrayList".(ù©”ñÿÿÿÿÿ8˜ñöäî1J$d456c250-2735-45a6-9789-7b0a4caa904d
+Ÿ
+java:S1488”"[Immediately return this expression instead of assigning it to the temporary variable "reg".(™Ö¶8˜ñöäî1J$897af432-2450-4eca-9b3a-9b2f98fcdac8
+š
+java:S1104"WMake comerciales a static final constant or non-public and provide accessors if needed.(´»î8™ñöäî1J$69f54d85-8765-41a5-9ffa-46f367eeaf55
+
+java:S1104"UMake productos a static final constant or non-public and provide accessors if needed.(ù©”ñÿÿÿÿÿ8™ñöäî1J$a7b8b941-fb4b-44b7-a123-d6ca7ac4c10f
+t
+java:S1444"1Make this "public static comerciales" field final(´»î8™ñöäî1J$45ea25ab-cec5-4b82-8fbc-29f160a65923
+w
+java:S1444"/Make this "public static productos" field final(ù©”ñÿÿÿÿÿ8™ñöäî1J$79f1cee1-f34c-4156-b56e-e7f7360c8edf
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Š–¡èûÿÿÿÿ8šñöäî1J$9ece5169-a76a-4252-af1e-5b9947d17eda
+Å
+java:S1186 "€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(õÜİö8Şñöäî1J$7784573b-d457-42ac-a657-a994685d27d6
+Ä
+java:S1186¥"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(”óôd8Şñöäî1J$d1760799-5922-4f2d-a576-3422888f0443
+Ä
+java:S1186©"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¦²T8Şñöäî1J$bffc0f51-8236-4588-9f78-be54ef681ed7
+`
+java:S2386"Make this member "protected".(´»î8àñöäî1J$84526683-31bc-4e88-87a3-e206ab90d076
+e
+java:S2386"Make this member "protected".(ù©”ñÿÿÿÿÿ8àñöäî1J$7c52997f-2dbc-463d-87ac-876f84c25cd7
+l	java:S106/"+Replace this use of System.out by a logger.(€X8åñöäî1J$52649034-24dc-478b-be51-923fc7a89662
+m	java:S1062"+Replace this use of System.out by a logger.(ŸæÑÂ8åñöäî1J$b156af2f-83fd-4066-977d-6e16244c5ec1
+m	java:S106<"+Replace this use of System.out by a logger.(Œ€ÿ8åñöäî1J$8bee54ce-93ee-4535-b5f1-33959847514e
+m	java:S106="+Replace this use of System.out by a logger.(¶Æ®š8åñöäî1J$8a07c472-ddf8-49aa-853c-a2d40e7bf646
+m	java:S106>"+Replace this use of System.out by a logger.(Œ€ÿ8åñöäî1J$2b6868e3-d426-4d0b-a6f9-36a8e5663018
+m	java:S106@"+Replace this use of System.out by a logger.(½¸ÿ¸8æñöäî1J$dce76ee9-5a0a-4891-bc6e-6995b1db22aa
+r	java:S106A"+Replace this use of System.out by a logger.(©Ü–¡ûÿÿÿÿ8æñöäî1J$b061ab66-3f73-4e16-9b5a-5311944e7c42
+r	java:S106B"+Replace this use of System.out by a logger.(óÕÚ›úÿÿÿÿ8æñöäî1J$90134d60-bc58-4f8f-a42c-8166f37b000f
+l	java:S106C"+Replace this use of System.out by a logger.(Œ÷É98æñöäî1J$c1be1f0d-5de1-4d43-a334-fab2ac1945f7
+r	java:S106D"+Replace this use of System.out by a logger.(Ş´¤‡øÿÿÿÿ8æñöäî1J$3fcae291-76fb-48f5-b3db-3368b525f838
+l	java:S106E"+Replace this use of System.out by a logger.(õ¬Ø8æñöäî1J$92689c0e-9c36-4dbc-8e56-416f22078d5d
+m	java:S106F"+Replace this use of System.out by a logger.(ã¥Æş8æñöäî1J$a3b79ea3-b89c-4faf-bd56-2470de54b142
+r	java:S106G"+Replace this use of System.out by a logger.(£‹í†üÿÿÿÿ8æñöäî1J$cde7a7b1-9261-4e79-bbae-c3b46b479439
+
+java:S1854L"7Remove this useless assignment to local variable "dtf".(ı«†×ÿÿÿÿÿ8çñöäî1J$6099d681-338c-4804-9117-11b5486d117b
+o
+java:S1659O"'Declare "categoria" on a separate line.(³«Ïœıÿÿÿÿ8èñöäî1J$df225ffe-2f33-4fef-aa5e-a9b3f9ffb985
+p
+java:S1481L"(Remove this unused "dtf" local variable.(ı«†×ÿÿÿÿÿ8èñöäî1J$28a7028c-25ac-4560-9e61-fc2489ef3463
+m	java:S106P"+Replace this use of System.out by a logger.(·„¾¹8éñöäî1J$9a7caa70-a844-453c-a084-29147869e068
+m	java:S106R"+Replace this use of System.out by a logger.(“ùÊ8éñöäî1J$2a5168cb-4b28-46ef-b6b5-9c3c109215a6
+l	java:S106V"+Replace this use of System.out by a logger.(­¼ˆ8éñöäî1J$a125850f-8223-4a69-a263-f02958943eb8
+r	java:S106]"+Replace this use of System.out by a logger.(£Ôóıÿÿÿÿ8êñöäî1J$9435bd23-e881-404b-8a7c-f79c797d759d
+r	java:S106a"+Replace this use of System.out by a logger.(Îíœİøÿÿÿÿ8êñöäî1J$cbc86ca3-dae3-4bbe-affc-7adb3da2e2a0
+ƒ	java:S125c"<This block of commented-out lines of code should be removed.(í„Ûüøÿÿÿÿ8êñöäî1J$acb3de8d-02e8-4665-aa54-ea67e540f273
+r	java:S106h"+Replace this use of System.out by a logger.(®ÿ ˜ıÿÿÿÿ8ëñöäî1J$a79ceb23-52db-488f-9696-247d9efc6eab
+m	java:S106l"+Replace this use of System.err by a logger.(¥ËÛò8ëñöäî1J$6278ff3c-c95a-44a5-b6c4-69f15463f326
+r	java:S106q"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8ëñöäî1J$85070200-0a19-4bb5-a098-f9ad94088738
+
+java:S1659z"FDeclare "apellidos" and all following declarations on a separate line.(ö„ß²şÿÿÿÿ8ìñöäî1J$6b60d39f-c21a-4452-9722-497eff2efde1
+r	java:S106{"+Replace this use of System.out by a logger.(ŞŠÅ“ûÿÿÿÿ8ìñöäî1J$ab83c62b-d4dc-440d-8233-6d3f5ea352a5
+m	java:S106~"+Replace this use of System.out by a logger.(“ùÊ8ìñöäî1J$b3e5acb3-96e3-48f7-bf14-43c7dfeeac58
+n	java:S106"+Replace this use of System.out by a logger.(†í±ù8íñöäî1J$47d5c1a2-bf29-4da3-865a-303d7036da0d
+s	java:S106„"+Replace this use of System.out by a logger.(õƒı‡ùÿÿÿÿ8íñöäî1J$a623b169-9c6b-4a12-9d78-015fdab86ae3
+n	java:S106‡"+Replace this use of System.out by a logger.(û‚’“8íñöäî1J$319c0848-ebee-43c6-af69-372c17bcc7b4
+n	java:S106‹"+Replace this use of System.out by a logger.(­‰Å”8íñöäî1J$867850e6-b0ea-49c1-822b-bf2c77101615
+„	java:S125•"<This block of commented-out lines of code should be removed.(øÖÌòøÿÿÿÿ8îñöäî1J$2741ab68-f674-4f01-9d67-43b235bf1bcd
+ˆ
+java:S6201"DReplace this instanceof check and cast with 'instanceof Bazar bazar'(¬¿ªî8ïñöäî1J$dc1288eb-de98-4288-ac90-6a1e2fca4559
+s	java:S106¹"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8Ñºøäî1J$c2d4fc9a-1bfb-44fb-b34f-726931ade91c
+
+java:S1128"ERemove this unused import 'java.nio.channels.ClosedChannelException'.(’ı½¤ûÿÿÿÿ8ğáøäî1J$b6200f9c-7b51-41e0-a4f5-c18da1bd3868
+z
+java:S1128"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛ8ñáøäî1J$cdc4e48c-44ea-4502-81d3-1f550d052122

@@ -21,23 +21,23 @@ java:S1659B"'Declare "categoria" on a separate line.(³«Ïœıÿÿÿÿ
 ?	java:S106J"+Replace this use of System.out by a logger.(­¼ˆ
 E	java:S106P"+Replace this use of System.out by a logger.(£Ôóıÿÿÿÿ
 E	java:S106T"+Replace this use of System.out by a logger.(‚×ÙÛüÿÿÿÿ
-E	java:S106X"+Replace this use of System.out by a logger.(Ğ‰¾ôùÿÿÿÿ
-@	java:S106\"+Replace this use of System.err by a logger.(¥ËÛò
-E	java:S106`"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ
+E	java:S106Y"+Replace this use of System.out by a logger.(Ğ‰¾ôùÿÿÿÿ
+@	java:S106^"+Replace this use of System.err by a logger.(¥ËÛò
+E	java:S106b"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ
 a
-java:S1659i"FDeclare "apellidos" and all following declarations on a separate line.(ö„ß²şÿÿÿÿ
-E	java:S106j"+Replace this use of System.out by a logger.(ŞŠÅ“ûÿÿÿÿ
-@	java:S106l"+Replace this use of System.out by a logger.(“ùÊ
-@	java:S106o"+Replace this use of System.out by a logger.(†í±ù
-E	java:S106r"+Replace this use of System.out by a logger.(õƒı‡ùÿÿÿÿ
-@	java:S106u"+Replace this use of System.out by a logger.(û‚’“
-E	java:S106x"+Replace this use of System.out by a logger.(–Ü²’ÿÿÿÿÿ
+java:S1659k"FDeclare "apellidos" and all following declarations on a separate line.(ö„ß²şÿÿÿÿ
+E	java:S106l"+Replace this use of System.out by a logger.(ŞŠÅ“ûÿÿÿÿ
+G	java:S106n"+Replace this use of System.out by a logger.(“ùÊ8ÉëÑäî1
+@	java:S106q"+Replace this use of System.out by a logger.(†í±ù
+E	java:S106t"+Replace this use of System.out by a logger.(õƒı‡ùÿÿÿÿ
+@	java:S106w"+Replace this use of System.out by a logger.(û‚’“
+E	java:S106z"+Replace this use of System.out by a logger.(–Ü²’ÿÿÿÿÿ
 >
-java:S1659"'Declare "contBazar" on a separate line.(„‚®†
-F	java:S106™"+Replace this use of System.out by a logger.(¦±Éüÿÿÿÿ
+java:S1659’"'Declare "contBazar" on a separate line.(„‚®†
+F	java:S106›"+Replace this use of System.out by a logger.(¦±Éüÿÿÿÿ
 C
-java:S1659",Declare "numComestibles" on a separate line.(çëš
-F	java:S106¦"+Replace this use of System.out by a logger.(›À®Ùúÿÿÿÿ
-F	java:S106¨"+Replace this use of System.out by a logger.(í¦Šÿÿÿÿÿ
-F	java:S106°"+Replace this use of System.out by a logger.(¤şÖûÿÿÿÿ
-A	java:S106¿"+Replace this use of System.out by a logger.(Ç”Ôà
+java:S1659 ",Declare "numComestibles" on a separate line.(çëš
+F	java:S106¨"+Replace this use of System.out by a logger.(›À®Ùúÿÿÿÿ
+M	java:S106ª"+Replace this use of System.out by a logger.(í¦Šÿÿÿÿÿ8ÑëÑäî1
+F	java:S106²"+Replace this use of System.out by a logger.(¤şÖûÿÿÿÿ
+A	java:S106Á"+Replace this use of System.out by a logger.(Ç”Ôà

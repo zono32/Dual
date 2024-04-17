@@ -93,14 +93,14 @@ public class Almacen {
             System.out.println("Introduzca categoría (Comestible/Bazar)");
             categoria = sc.nextLine();
 
-            if(categoria.equalsIgnoreCase("comestible")){
+            if(categoria.equalsIgnoreCase("c")){
                 System.out.println("por favor introduzca la fecha de caducidad del producto con el siguiente formato: dd/MM/yyyy");
                 LocalDate fechaCaducidad= comprobarFecha(sc.next());
                 //LocalDate fechaCaducidad = LocalDate.parse(fechaCad,dtf);
 
                 p = new Comestible(nombre,precio,fechaCaducidad);
 
-            } else if (categoria.equalsIgnoreCase("bazar")) {
+            } else if (categoria.equalsIgnoreCase("b")) {
                 System.out.println("por favor introduzca el tipo de producto ");
                 String tipo = sc.next();
                 p = new Bazar(nombre,precio,tipo);
@@ -158,9 +158,12 @@ public class Almacen {
     }
 
     private static void especialidadComerciales() {
+
+
     }
 
     private static void costeProductos() {
+        
     }
 
     private static void productosCaducidadProxima() {
@@ -177,6 +180,7 @@ public class Almacen {
                 throw new ExcepFechaCaducidad("ERROR: el producto está caducado");
             }
             return fechacaducidad;
+
         } catch (DateTimeParseException | ExcepFechaCaducidad e) {
             System.out.println(e.getMessage());
             altaProducto();
