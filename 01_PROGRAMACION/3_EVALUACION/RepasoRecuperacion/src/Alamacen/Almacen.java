@@ -146,8 +146,13 @@ public class Almacen {
     // Los elementos en el registro pueden introducirse manualmente, sin necesidad de solicitarlos por teclado.
     private static HashMap<Integer, Producto> crearRegistroComercial() {
         HashMap<Integer, Producto> reg = new HashMap<>();
-        //reg.put(0,Manzana,);
-        //reg.put();
+        reg.put(0,new Comestible("tomate", 2.5, LocalDate.of(2024,10,1)));
+        reg.put(1,new Comestible("manzana", 1.5, LocalDate.of(2024,5,1)));
+        reg.put(2,new Comestible("pera", 1.5, LocalDate.of(2024,4,20)));
+        reg.put(3,new Bazar("legia",3.5,"limpieza"));
+        reg.put(4,new Bazar("escoba",3.5,"limpieza"));
+        reg.put(5,new Bazar("pantalon",3.5,"ropa"));
+        reg.put(6,new Bazar("camisa",3.5,"ropa"));
 
         return reg;
     }
@@ -163,7 +168,7 @@ public class Almacen {
     }
 
     private static void costeProductos() {
-        
+
     }
 
     private static void productosCaducidadProxima() {

@@ -399,11 +399,11 @@ DELIMITER //
 DROP PROCEDURE IF EXISTS  agregarOficina //
 CREATE PROCEDURE agregarOficina( 
 
-	nombre VARCHAR(50),
-	numero INT,
-    dimension INT, 
-    ubicacion VARCHAR(50), 
-    Mesas INT)
+	IN nombre VARCHAR(50),
+	IN numero INT,
+    IN dimension INT, 
+    IN ubicacion VARCHAR(50), 
+    IN Mesas INT)
     
 	BEGIN
     
@@ -422,10 +422,10 @@ DELIMITER //
 DROP PROCEDURE IF EXISTS  agregarEmpleado //
 CREATE PROCEDURE agregarEmpleado(
 
-	NIF VARCHAR(9),
-    Nombre VARCHAR(50), 
-    apellidos VARCHAR(50), 
-    incorporación DATE)
+	IN NIF VARCHAR(9),
+    IN Nombre VARCHAR(50), 
+    IN apellidos VARCHAR(50), 
+    IN incorporación DATE)
     
 	BEGIN
     INSERT	INTO Empleado	
@@ -443,13 +443,13 @@ DELIMITER //
 DROP PROCEDURE IF EXISTS  agregarContratacion //
 CREATE PROCEDURE agregarContratacion(
 
-	Contrato VARCHAR(40), 
-    Inicio  DATE,
-    Fin DATE, 
-    Trabajador INT, 
-    Oficina INT, 
-    Puesto VARCHAR(50), 
-    Jefe INT)
+	IN Contrato VARCHAR(40), 
+    IN Inicio  DATE,
+    IN Fin DATE, 
+    IN Trabajador INT, 
+    IN Oficina INT, 
+    IN Puesto VARCHAR(50), 
+    IN Jefe INT)
     
 	BEGIN
     INSERT INTO Contratacion
@@ -467,10 +467,10 @@ DELIMITER //
 DROP PROCEDURE IF EXISTS  agregarSalario //
 CREATE PROCEDURE agregarSalario (
 
-	Puesto VARCHAR(50), 
-    Base INT, 
-    Incremento INT, 
-    Productividad INT)
+	IN Puesto VARCHAR(50), 
+    IN Base INT, 
+    IN Incremento INT, 
+    IN Productividad INT)
     
 	BEGIN
     INSERT INTO Salario 
@@ -487,8 +487,8 @@ DELIMITER //
 DROP PROCEDURE IF EXISTS  despedirTrabajador //
 CREATE PROCEDURE despedirTrabajador(
 
-	Trabajador INT, 
-    Despido DATE)
+	IN Trabajador INT, 
+    IN Despido DATE)
     
 	BEGIN    
 		UPDATE contratacion    
@@ -504,12 +504,12 @@ DELIMITER //
 DROP PROCEDURE IF EXISTS  contratarTrabajador //
 CREATE PROCEDURE contratarTrabajador(
 
-	Trabajador INT, 
-    Contrato VARCHAR(40),
-    Fecha DATE	,
-    OficinaTrabajo INT,
-    Puesto VARCHAR(50),
-    Jefe INT)
+	IN Trabajador INT, 
+    IN Contrato VARCHAR(40),
+    IN Fecha DATE	,
+    IN OficinaTrabajo INT,
+    IN Puesto VARCHAR(50),
+    IN Jefe INT)
     
     BEGIN
 	INSERT INTO Contratacion
