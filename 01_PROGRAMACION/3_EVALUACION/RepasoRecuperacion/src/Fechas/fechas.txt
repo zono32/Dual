@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         // Fecha recibida como String
         String fechaString = "17/04/2024";
-        
+
         // Formato de fecha esperado
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 

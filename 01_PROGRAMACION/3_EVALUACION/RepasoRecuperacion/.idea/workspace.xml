@@ -43,8 +43,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Almacen.executor": "Run",
     "Application.Fechas.Principal.executor": "Run",
-    "Application.Instituto.Principal.executor": "Debug",
+    "Application.Instituto.Principal.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.Principal.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -99,8 +100,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Principal" />
         <item itemvalue="Application.Instituto.Principal" />
+        <item itemvalue="Application.Principal" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
