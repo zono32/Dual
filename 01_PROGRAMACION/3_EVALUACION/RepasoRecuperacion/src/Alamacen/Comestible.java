@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class Comestible extends Producto{
 
-    private LocalDate fechaCaducidad;
+    LocalDate fechaCaducidad;
 
     public Comestible(String nombre, double precio, LocalDate fechaCaducidad) {
         super(nombre, precio);

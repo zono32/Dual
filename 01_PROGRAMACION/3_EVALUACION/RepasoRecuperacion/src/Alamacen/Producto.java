@@ -1,6 +1,6 @@
 package Alamacen;
 
-public abstract class Producto {
+public class Producto {
     private String nombre;
     private double precio;
 
@@ -27,7 +27,7 @@ public abstract class Producto {
 
     @Override
     public String toString() {
-        return "Productos{" +
+        return "Producto{" +
                 "nombre='" + nombre + '\'' +
                 ", precio=" + precio +
                 '}';
