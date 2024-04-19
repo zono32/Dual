@@ -1,0 +1,32 @@
+
+›
+java:S2293]"YReplace the type specification in this constructor call with the diamond operator ("<>").(Æä·D8ŞÈÿ•ï1J$ee941ec4-9fc6-40e3-bc83-fc52c1212ac1
+
+java:S1192^"KDefine a constant instead of duplicating this literal "26/02/2010" 4 times.(ı³ş8ßÈÿ•ï1J$b514937c-fa5b-4025-bf8a-508d27d55db9
+®
+java:S1319	"lThe type of "veterinarios" should be an interface such as "List" rather than the implementation "ArrayList".(ƒ³ß08ßÈÿ•ï1J$e218106d-fa7b-4bea-b6c1-3edf5042faf7
+š
+java:S1104	"XMake veterinarios a static final constant or non-public and provide accessors if needed.(ƒ³ß08àÈÿ•ï1J$33c1ac62-adeb-4b95-8a36-5bdfad139231
+t
+java:S1444	"2Make this "public static veterinarios" field final(ƒ³ß08àÈÿ•ï1J$6efab404-6902-40f8-9ac7-521560699fe9
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(½ëÓìÿÿÿÿÿ8áÈÿ•ï1J$f40cef1f-622d-40ee-956e-85133037175e
+l	java:S106!"+Replace this use of System.out by a logger.(€X8çÈÿ•ï1J$ab464e81-54d1-4c71-ba20-1b56cd6eecdb
+m	java:S106$"+Replace this use of System.out by a logger.(Ó£”ã8çÈÿ•ï1J$5b05fa0b-6d9e-44df-86d2-f2209b066e35
+r	java:S106-"+Replace this use of System.out by a logger.(ÀÏ°ıÿÿÿÿ8èÈÿ•ï1J$53428372-34b0-4c0e-8406-eee4e2aa1fbd
+m	java:S106."+Replace this use of System.out by a logger.(ûëÅ•8èÈÿ•ï1J$4700475c-8239-4c3b-b22e-9a55915ea425
+r	java:S106/"+Replace this use of System.out by a logger.(ÀÏ°ıÿÿÿÿ8èÈÿ•ï1J$633a9970-933a-4685-8e4b-1b75c8a4b13f
+m	java:S1061"+Replace this use of System.out by a logger.(½¸ÿ¸8èÈÿ•ï1J$01f36537-336c-4273-a8be-6e7b291ef0a2
+r	java:S1062"+Replace this use of System.out by a logger.(ÌÁ¦úüÿÿÿÿ8èÈÿ•ï1J$d8541ebd-20e2-449e-9072-b51038c859b4
+m	java:S1063"+Replace this use of System.out by a logger.(ùÄ«œ8èÈÿ•ï1J$3534f079-bdc3-4976-a2dc-857b9c801757
+r	java:S1064"+Replace this use of System.out by a logger.(ˆ¢æøÿÿÿÿ8èÈÿ•ï1J$a59e727c-40ca-4532-b6dd-00fdbd5cfb7f
+m	java:S1065"+Replace this use of System.out by a logger.(Í™ô›8èÈÿ•ï1J$2f80f79f-739f-4b8b-b59a-49b87a3a0fec
+m	java:S1066"+Replace this use of System.out by a logger.(•Ú”š8èÈÿ•ï1J$4ff906fc-8c29-47c5-822c-bb3a5eda2a4e
+u
+java:S1481:"-Remove this unused "datosdni" local variable.(¥ıÅüÿÿÿÿ8éÈÿ•ï1J$8e5f7314-673d-468d-8367-3805544e6cd6
+r	java:S106>"+Replace this use of System.out by a logger.(äêÈ½ùÿÿÿÿ8êÈÿ•ï1J$781a68be-11ca-484c-8a4b-a74e7a53ef58
+m	java:S106A"+Replace this use of System.out by a logger.(Ô‘¿’8êÈÿ•ï1J$63e2951a-0205-48f4-93a4-6829fe824aac
+m	java:S106G"+Replace this use of System.out by a logger.(“‚İ©8êÈÿ•ï1J$93ee545f-8419-4f16-a051-806c0aac5065
+r	java:S106K"+Replace this use of System.out by a logger.(äÉòÓùÿÿÿÿ8êÈÿ•ï1J$b2871c0f-eb36-4e22-96a9-324264ad61d9
+r	java:S106S"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8ëÈÿ•ï1J$ac84841f-465d-419c-9870-b1311eb53237
+r	java:S106V"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8ëÈÿ•ï1J$6303fced-8bad-4f3f-8e4b-34dad11cf538
+	java:S100e"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ˜Õ8íÈÿ•ï1J$ac2b7717-b2d6-4bd4-8b84-ee6b19c6792c
