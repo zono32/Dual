@@ -1,7 +1,6 @@
 package Alamacen;
 
-public class Bazar extends Producto {
-
+public class Bazar extends Producto{
     private String tipo;
 
     public Bazar(String nombre, double precio, String tipo) {
@@ -21,6 +20,6 @@ public class Bazar extends Producto {
     public String toString() {
         return "Bazar{" +
                 "tipo='" + tipo + '\'' +
-                '}';
+                "} " + super.toString();
     }
 }

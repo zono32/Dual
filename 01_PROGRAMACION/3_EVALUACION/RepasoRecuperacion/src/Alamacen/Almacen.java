@@ -1,9 +1,5 @@
 package Alamacen;
 
-import ExamenRepaso.ExcepFechaCaducidad;
-
-import java.nio.channels.ClosedChannelException;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
@@ -14,11 +10,10 @@ import java.util.Scanner;
 
 public class Almacen {
 
-    public static ArrayList<Comercial> comerciales = new ArrayList<>();
-    public static ArrayList<Producto> productos = new ArrayList<>();
+    public static ArrayList<Producto>productos = new ArrayList<>();
+    public static  ArrayList<Comercial>comerciales = new ArrayList<>();
 
     public static void main(String[] args) {
-
         Scanner sc = new Scanner(System.in);
         int opcion;
         do {
@@ -26,10 +21,10 @@ public class Almacen {
             opcion = sc.nextInt();
             switch (opcion){
                 case 1:
-                    altaProducto();
+                    productos.add(altaProducto());
                     break;
                 case 2:
-                    altaComercial();
+                    comerciales.add(altaComercial());
                     break;
                 case 3:
                     eliminarProductosLimpieza();
@@ -43,12 +38,14 @@ public class Almacen {
                 case 6:
                     productosCaducidadProxima();
                     break;
+
                 case 7:
                     System.out.println("Hasta pronto");
                     break;
                 default:
-                    System.out.println("Por favor elija una opción correcta");
+                    System.out.println("elija la opción adecuada");
                     break;
+
             }
 
         }
@@ -73,53 +70,51 @@ public class Almacen {
 
     private static Producto altaProducto() {
         Scanner sc = new Scanner(System.in);
-        DateTimeFormatter dtf= DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        Producto p =null;
-        double precio;
+
+        Producto p = null;
+        double precio ;
         String nombre, categoria;
         System.out.println("-------- Alta productos ---------");
-        try {
+
+        try{
             System.out.println("Introduzca nombre");
             nombre = sc.nextLine();
 
             sc = new Scanner(System.in);
             System.out.println("Introduzca precio");
             precio = sc.nextDouble();
-            if(precio < 0){
-                throw new ExcepNumeroNegativo("ERROR: por favor introduzca un precio válido");
+            if( precio< 0){
+                throw new ExcepNumNeg("ERROR: por favor introduzca un precio valido");
             }
 
             sc = new Scanner(System.in);
-            System.out.println("Introduzca categoría (Comestible/Bazar)");
+            System.out.println("Introduzca categoría (C - Comestible/ B - Bazar)");
             categoria = sc.nextLine();
-
             if(categoria.equalsIgnoreCase("c")){
-                System.out.println("por favor introduzca la fecha de caducidad del producto con el siguiente formato: dd/MM/yyyy");
-                LocalDate fechaCaducidad= comprobarFecha(sc.next());
-                //LocalDate fechaCaducidad = LocalDate.parse(fechaCad,dtf);
+                System.out.println("por favor introduzca la fecha de caducidad con el siguiente formato dd/MM/yyyy ");
+                LocalDate fechaCaducidad = fechaCaducidad(sc.next());
 
                 p = new Comestible(nombre,precio,fechaCaducidad);
 
             } else if (categoria.equalsIgnoreCase("b")) {
-                System.out.println("por favor introduzca el tipo de producto ");
+                System.out.println("introduzca el tipo de producto");
                 String tipo = sc.next();
-                p = new Bazar(nombre,precio,tipo);
-            } else {
-                System.err.println("Categoría no válida. Empiece de nuevo");
-                altaProducto();
+
+                p = new Bazar(nombre, precio, tipo);
             }
 
-        }catch (InputMismatchException | ExcepNumeroNegativo e ) {
-            System.out.println( e.getMessage());
+        }catch (InputMismatchException |ExcepNumNeg e){
+            System.out.println(e.getMessage());
+            altaProducto();
         }
-
         return p;
     }
 
     private static Comercial altaComercial() {
         Scanner sc = new Scanner(System.in);
-        int edad = 0;
-        String nombre="", apellidos ="", zona ="";
+
+        int edad =0;
+        String nombre ="", apellidos="", zona ="";
         System.out.println("-------- Alta comerciales ---------");
 
         try{
@@ -135,8 +130,8 @@ public class Almacen {
             System.out.println("Introduzca edad");
             edad = sc.nextInt();
 
-        }catch (InputMismatchException e){
-            System.out.println("algun dato es incorrecto");
+        }catch ( InputMismatchException e){
+            System.out.println("alguno de los datos no es válido");
             altaComercial();
         }
         return new Comercial(nombre, apellidos, edad, zona, crearRegistroComercial());
@@ -145,52 +140,48 @@ public class Almacen {
     // En el siguiente método, cambiar tipo de dato de retorno al tipo de colección elegida para el registro de los comerciales
     // Los elementos en el registro pueden introducirse manualmente, sin necesidad de solicitarlos por teclado.
     private static HashMap<Integer, Producto> crearRegistroComercial() {
-        HashMap<Integer, Producto> reg = new HashMap<>();
-        reg.put(0,new Comestible("tomate", 2.5, LocalDate.of(2024,10,1)));
-        reg.put(1,new Comestible("manzana", 1.5, LocalDate.of(2024,5,1)));
-        reg.put(2,new Comestible("pera", 1.5, LocalDate.of(2024,4,20)));
-        reg.put(3,new Bazar("legia",3.5,"limpieza"));
-        reg.put(4,new Bazar("escoba",3.5,"limpieza"));
-        reg.put(5,new Bazar("pantalon",3.5,"ropa"));
-        reg.put(6,new Bazar("camisa",3.5,"ropa"));
+        HashMap<Integer, Producto> reg = null;
+
+        reg.put(0, new Bazar("legia" ,2.78, "limpieza"));
+        reg.put(1, new Comestible("manzana", 1.5,  LocalDate.of(2024,04,25)));
 
         return reg;
     }
 
     private static void eliminarProductosLimpieza() {
 
-        productos.removeIf(p -> p instanceof Bazar && ((Bazar)p).getTipo().equalsIgnoreCase("limpieza"));
+        productos.removeIf( p-> p instanceof Bazar && ((Bazar)p).getTipo().equalsIgnoreCase("limpieza"));
     }
 
     private static void especialidadComerciales() {
-
-
     }
 
     private static void costeProductos() {
+
 
     }
 
     private static void productosCaducidadProxima() {
     }
 
-    public static LocalDate comprobarFecha( String fecha){
-        LocalDate fechacaducidad = null;
+
+    public static LocalDate fechaCaducidad(String fecha) {
+
+
+        LocalDate fechaCaducidad = null;
         try {
             DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-            fechacaducidad = LocalDate.parse(fecha,dtf);
+            fechaCaducidad = LocalDate.parse(fecha, dtf);
 
             LocalDate ahora = LocalDate.now();
-            if(fechacaducidad.isBefore(ahora)){
-                throw new ExcepFechaCaducidad("ERROR: el producto está caducado");
+            if (fechaCaducidad.isBefore(ahora)) {
+                throw new EscepProdCaducado("Producto caducado");
             }
-            return fechacaducidad;
 
-        } catch (DateTimeParseException | ExcepFechaCaducidad e) {
+        } catch (DateTimeParseException | EscepProdCaducado e) {
             System.out.println(e.getMessage());
             altaProducto();
         }
-        return fechacaducidad;
+        return fechaCaducidad;
     }
-
 }

@@ -1,20 +1,21 @@
 package Alamacen;
 
-import java.io.StringReader;
 import java.util.HashMap;
 
 public class Comercial {
-    private String nombre, apellidos,zona;
-    private int edad;
 
-    private HashMap<Integer, Producto> ventas;
+   private String nombre;
+   private String apellidos;
+   private int edad;
+   private String zona;
+   private HashMap<Integer, Producto> registro;
 
-    public Comercial(String nombre, String apellidos, int edad, String zona, HashMap<Integer, Producto> ventas) {
+    public Comercial(String nombre, String apellidos, int edad, String zona, HashMap<Integer, Producto> registro) {
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.zona = zona;
         this.edad = edad;
-        this.ventas = ventas;
+        this.registro = registro;
     }
 
     public String getNombre() {
@@ -33,14 +34,6 @@ public class Comercial {
         this.apellidos = apellidos;
     }
 
-    public String getZona() {
-        return zona;
-    }
-
-    public void setZona(String zona) {
-        this.zona = zona;
-    }
-
     public int getEdad() {
         return edad;
     }
@@ -49,12 +42,20 @@ public class Comercial {
         this.edad = edad;
     }
 
-    public HashMap<Integer, Producto> getVentas() {
-        return ventas;
+    public String getZona() {
+        return zona;
     }
 
-    public void setVentas(HashMap<Integer, Producto> ventas) {
-        this.ventas = ventas;
+    public void setZona(String zona) {
+        this.zona = zona;
+    }
+
+    public HashMap<Integer, Producto> getRegistro() {
+        return registro;
+    }
+
+    public void setRegistro(HashMap<Integer, Producto> registro) {
+        this.registro = registro;
     }
 
     @Override
@@ -62,9 +63,9 @@ public class Comercial {
         return "Comercial{" +
                 "nombre='" + nombre + '\'' +
                 ", apellidos='" + apellidos + '\'' +
-                ", zona='" + zona + '\'' +
                 ", edad=" + edad +
-                ", ventas=" + ventas +
+                ", zona='" + zona + '\'' +
+                ", registro=" + registro +
                 '}';
     }
 }
