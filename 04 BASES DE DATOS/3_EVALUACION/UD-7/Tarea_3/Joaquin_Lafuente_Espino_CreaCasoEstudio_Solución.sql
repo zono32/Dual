@@ -2,9 +2,9 @@
 #---------------------------------------------------------------------------------------
 #	CREACIÓN DE LA BASE DE DATOS Empresa
 #---------------------------------------------------------------------------------------
-DROP DATABASE IF EXISTS	Empresa;
-CREATE DATABASE			Empresa;
-USE						Empresa;
+DROP DATABASE IF EXISTS	EmpresaOracle;
+CREATE DATABASE			EmpresaOracle;
+USE						EmpresaOracle;
 #------------------------------------------------------------------------------------------------------
 #  BORRAMOS LAS TABLAS
 #------------------------------------------------------------------------------------------------------
@@ -16,29 +16,29 @@ DROP TABLE IF EXISTS agentes;     DROP TABLE IF EXISTS agentesCopia;
 #  CREAMOS LAS TABLAS
 #------------------------------------------------------------------------------------------------------
 create table oficinas (
-     identificador     int not null primary key,
-     nombre          varchar(40) not null unique,
-     domicilio     varchar(40),
-     localidad     varchar(20),
+     identificador     	int not null primary key,
+     nombre          	varchar(40) not null unique,
+     domicilio     		varchar(40),
+     localidad     		varchar(20),
      codigo_postal      varchar(5)
 );
 
 create table familias (
-     identificador     int not null primary key,
-     nombre          varchar(40) not null unique,
-     familia          int references familias,
-     oficina          int references oficinas
+     identificador     	int not null primary key,
+     nombre          	varchar(40) not null unique,
+     familia          	int references familias,
+     oficina          	int references oficinas
 );
 
 create table agentes (
-     identificador     int not null primary key,
-     nombre          varchar(60) not null,
-     usuario          varchar(20) not null unique,
-     clave          varchar(20) not null,
-     habilidad     int not null,
-     categoria     int not null,
-     familia          int references familias,
-     oficina          int references oficinas
+     identificador     	int not null primary key,
+     nombre          	varchar(60) not null,
+     usuario          	varchar(20) not null unique,
+     clave          	varchar(20) not null,
+     habilidad     		int not null,
+     categoria     		int not null,
+     familia          	int references familias,
+     oficina          	int references oficinas
 );
 #------------------------------------------------------------------------------------------------------
 #  CREAMOS LAS TABLAS COPIA
@@ -210,7 +210,7 @@ CREATE PROCEDURE agregarDatos()
     
     DELIMITER //
 DROP FUNCTION IF EXISTS contarMiembrosFamilia//
-CREATE FUNCTION contarMiembrosFamilia(familiaContar INT)
+CREATE FUNCTION contarMiembrosFamilia(familiaContar VARCHAR(40))
 RETURNS INT
 DETERMINISTIC
 BEGIN
@@ -228,7 +228,6 @@ DELIMITER ;
 #------------------------------------------------------------------------------------------------------
 
 DELIMITER //
-
 DROP FUNCTION IF EXISTS obtenerNombreFamilia//
 CREATE FUNCTION obtenerNombreFamilia(idFamilia INT)
 RETURNS VARCHAR(40)
@@ -246,7 +245,7 @@ BEGIN
     END IF;
         RETURN nombreFamilia;
     
-END;
+END
 //
 DELIMITER ;
 
@@ -371,7 +370,7 @@ CREATE PROCEDURE mostrarOficinas()
 
 BEGIN
 
-DECLARE 	FIN	INT	DEFAULT	FALSE;
+DECLARE DONE INT	DEFAULT	FALSE;
     DECLARE var_id		INT;
         DECLARE	var_nom		VARCHAR( 40 );
         DECLARE	var_dom 	VARCHAR( 40 );
@@ -379,18 +378,23 @@ DECLARE 	FIN	INT	DEFAULT	FALSE;
         DECLARE	var_cp		VARCHAR(  5 );
 
         DECLARE	cursorOficinas	CURSOR FOR SELECT * FROM oficinas;
-        DECLARE	CONTINUE	HANDLER FOR NOT	FOUND	SET FIN = TRUE;		
+        DECLARE	CONTINUE	HANDLER FOR NOT	FOUND	SET DONE = TRUE;	
+        
+        DROP TEMPORARY TABLE IF EXISTS temp_oficinas;
+		CREATE TEMPORARY TABLE temp_oficinas (
+        datosOficinas VARCHAR(255));
         
         OPEN cursorOficinas;
         leerOficinas:	LOOP
             FETCH cursorOficinas INTO var_id, var_nom, var_dom, var_loc, var_cp;
-            IF	FIN	THEN
+            IF	DONE THEN
 					LEAVE	leerOficinas;	
             END IF;
             
-            SELECT CONCAT('Identificador: ' , var_id , ', Nombre: ' , var_nom , ', Domicilio: ' , var_dom,  ', Localidad: ',  var_loc, ', Código Postal: ', var_cp );
-        END LOOP;
-        CLOSE cursorOficinas;
+				INSERT INTO temp_oficinas VALUES (CONCAT('Identificador: ', var_id, ', Nombre: ', var_nom, ', Domicilio: ', var_dom, ', Localidad: ', var_loc, ', Código Postal: ', var_cp));
+				END LOOP leerOficinas;
+		CLOSE cursorOficinas;
+		SELECT datosOficinas AS "Datos de las oficinas" FROM temp_oficinas;
     END 
     
 // 
@@ -403,26 +407,30 @@ DELIMITER ;
     CREATE PROCEDURE mostrarFamilias()
     
     BEGIN
-        DECLARE	FIN	INT	DEFAULT	FALSE;	
+        DECLARE	DONE INT DEFAULT FALSE;	
         DECLARE var_id INT;
         DECLARE var_nom VARCHAR(40);
         DECLARE var_fam INT;
         DECLARE var_ofi INT;        
         
         DECLARE cursorFamilias CURSOR FOR SELECT identificador, nombre, familia, oficina FROM familias;        
-        DECLARE CONTINUE HANDLER FOR NOT FOUND SET FIN = TRUE;
-      
+        DECLARE CONTINUE HANDLER FOR NOT FOUND SET DONE = TRUE;
+        
+		DROP TEMPORARY TABLE IF EXISTS temp_familias;
+		CREATE TEMPORARY TABLE temp_familias (
+        datosFamilias VARCHAR(255));
+    
         OPEN cursorFamilias;       
         leerFamilias: LOOP
             FETCH cursorFamilias INTO var_id, var_nom, var_fam, var_ofi;          
-            IF FIN THEN
+            IF DONE THEN
                 LEAVE leerFamilias;
             END IF;
      
-            SELECT CONCAT('Identificador: ', var_id, ', Nombre: ', var_nom, ', Familia: ', var_fam, ', Oficina: ', var_ofi);
-        END LOOP leerFamilias;
-        
-        CLOSE cursorFamilias;
+			INSERT INTO temp_familias VALUES(CONCAT('Identificador: ', var_id, ', Nombre: ', var_nom, ', Familia: ', IFNULL(var_fam, 'null'), ', Oficina: ', IFNULL(var_ofi, 'null')));
+			END LOOP leerFamilias;				
+    CLOSE cursorFamilias;
+    SELECT datosFamilias AS "Datos de las familias"  FROM temp_familias;
     END 
 // 
 DELIMITER ;
@@ -433,7 +441,7 @@ DELIMITER ;
     CREATE PROCEDURE mostrarAgentes()
     
     BEGIN
-        DECLARE FIN INT DEFAULT FALSE;
+        DECLARE DONE INT DEFAULT FALSE;
         DECLARE var_id INT;
         DECLARE var_nom VARCHAR(60);
         DECLARE var_usu VARCHAR(20);
@@ -442,27 +450,32 @@ DELIMITER ;
         DECLARE var_cat INT;
         DECLARE var_fam INT;
         DECLARE var_ofi INT;
-        DECLARE resultado TEXT DEFAULT '';
-        DECLARE linea TEXT;
+     
         
         DECLARE cursorAgentes CURSOR FOR SELECT identificador, nombre, usuario, clave, habilidad, categoria, familia, oficina FROM agentes;      
-        DECLARE CONTINUE HANDLER FOR NOT FOUND SET FIN = TRUE;
+        DECLARE CONTINUE HANDLER FOR NOT FOUND SET DONE = TRUE;
+        
+        DROP TEMPORARY TABLE IF EXISTS temp_agentes;
+		CREATE TEMPORARY TABLE temp_agentes (
+        datosAgentes VARCHAR(255));
 
         OPEN cursorAgentes;
         leerAgentes: LOOP
             FETCH cursorAgentes INTO var_id, var_nom, var_usu, var_cla, var_hab, var_cat, var_fam, var_ofi;
-            IF FIN THEN
-            	SELECT resultado AS 'Agentes';
+            IF DONE THEN            	
                LEAVE leerAgentes;
             END IF;
-            SET linea = (SELECT CONCAT('Identificador: ', var_id, ', Nombre: ', var_nom, ', Usuario: ', var_usu, ', Clave: ', var_cla, ', Habilidad: ', var_hab, ', Categoría: ', var_cat, ', Familia: ', var_fam, ', Oficina: ', var_ofi));
-            SET resultado = CONCAT(resultado, "\n", linea);
-        END LOOP leerAgentes;
-        CLOSE cursorAgentes;
+            
+			INSERT INTO temp_agentes VALUES( CONCAT('Identificador: ', var_id, ', Nombre: ', var_nom, ', Usuario: ', var_usu, ', Clave: ', var_cla, ', Habilidad: ', var_hab, ', Categoría: ', var_cat, ', Familia: ', IFNULL(var_fam, 'null'), ', Oficina: ', IFNULL(var_ofi,'null')));
+			END LOOP leerAgentes;
+    CLOSE cursorAgentes;
+    SELECT datosAgentes AS "Datos de los agentes" FROM temp_agentes;
     END 
 // 
 DELIMITER ;
+
 #------------------------------------------------------------------------------------------------------
+
 DELIMITER //
 DROP PROCEDURE IF EXISTS mostrarDatos//
 CREATE PROCEDURE mostrarDatos()
@@ -480,5 +493,5 @@ DELIMITER ;
 
 CALL agregarDatos();
 CALL mostrarDatos();
-select obtenerNombreFamilia( 10 ) FROM dual;
+select obtenerNombreFamilia( 21 );
 CALL mostrarOficinas();
