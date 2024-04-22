@@ -1,0 +1,8 @@
+
+€
+java:S1319"eThe type of "registro" should be an interface such as "Map" rather than the implementation "HashMap".(Š¦æÐùÿÿÿÿ
+ˆ
+java:S13195"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(×ìî³øÿÿÿÿ
+€
+java:S13199"eThe type of "registro" should be an interface such as "Map" rather than the implementation "HashMap".(å‘æÝûÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Š–¡èûÿÿÿÿ

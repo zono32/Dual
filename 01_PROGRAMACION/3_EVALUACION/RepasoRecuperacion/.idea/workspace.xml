@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0decfb27-f538-4c5a-9f43-ed005ab9b763" name="Changes" comment="" />
+    <list default="true" id="0decfb27-f538-4c5a-9f43-ed005ab9b763" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../TEMA12/Joaquin Lafuente Espino Recuperación 2 trimestre/.idea/sonarlint/issuestore/1/3/13d6f8eec40f8ae760306f1e560e9ba6723292f2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEMA12/Joaquin Lafuente Espino Recuperación 2 trimestre/.idea/sonarlint/issuestore/7/f/7f8f6b5873bd41b24a7c9bf99045b0891a75a625" beforeDir="false" afterPath="$PROJECT_DIR$/../TEMA12/Joaquin Lafuente Espino Recuperación 2 trimestre/.idea/sonarlint/issuestore/7/f/7f8f6b5873bd41b24a7c9bf99045b0891a75a625" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEMA12/Joaquin Lafuente Espino Recuperación 2 trimestre/.idea/sonarlint/issuestore/9/2/924f089edb4af5ee45c8a9d1129cd28e2b368138" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEMA12/Joaquin Lafuente Espino Recuperación 2 trimestre/.idea/sonarlint/issuestore/c/5/c50e4acf76e16f5729add93babc2eca10d443b59" beforeDir="false" afterPath="$PROJECT_DIR$/../TEMA12/Joaquin Lafuente Espino Recuperación 2 trimestre/.idea/sonarlint/issuestore/c/5/c50e4acf76e16f5729add93babc2eca10d443b59" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEMA12/Joaquin Lafuente Espino Recuperación 2 trimestre/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../TEMA12/Joaquin Lafuente Espino Recuperación 2 trimestre/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEMA12/Joaquin Lafuente Espino Recuperación 2 trimestre/.idea/sonarlint/securityhotspotstore/1/3/13d6f8eec40f8ae760306f1e560e9ba6723292f2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEMA12/Joaquin Lafuente Espino Recuperación 2 trimestre/.idea/sonarlint/securityhotspotstore/9/2/924f089edb4af5ee45c8a9d1129cd28e2b368138" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEMA12/Joaquin Lafuente Espino Recuperación 2 trimestre/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../TEMA12/Joaquin Lafuente Espino Recuperación 2 trimestre/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEMA12/Joaquin Lafuente Espino Recuperación 2 trimestre/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TEMA12/Joaquin Lafuente Espino Recuperación 2 trimestre/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEMA12/Joaquin Lafuente Espino Recuperación 2 trimestre/src/Clinica/VeterinarioPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TEMA12/Joaquin Lafuente Espino Recuperación 2 trimestre/src/Clinica/VeterinarioPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../05_E.DESARROLLO/3_EVALUACION/recuperacion/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../05_E.DESARROLLO/3_EVALUACION/recuperacion/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,24 +53,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Almacen.executor": "Run",
-    "Application.Fechas.Principal.executor": "Run",
-    "Application.Instituto.Principal.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.Principal.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/USER/Desktop/Joaquin Lafuente Espino Recuperación 2 trimestre",
-    "onboarding.tips.debug.path": "C:/Users/a21joaquinle/Desktop/workspace/DUAL/01_PROGRAMACION/3_EVALUACION/RepasoRecuperacion/src/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Almacen.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Fechas.Principal.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Instituto.Principal.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Principal.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/USER/Desktop/Joaquin Lafuente Espino Recuperación 2 trimestre&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/a21joaquinle/Desktop/workspace/DUAL/01_PROGRAMACION/3_EVALUACION/RepasoRecuperacion/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\USER\Desktop\workSpace\Dual\01_PROGRAMACION\3_EVALUACION\RepasoRecuperacion\src\Fechas" />

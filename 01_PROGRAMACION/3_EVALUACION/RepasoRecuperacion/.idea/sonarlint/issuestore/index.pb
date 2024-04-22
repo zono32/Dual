@@ -33,3 +33,15 @@ G
 src/Alamacen/Bazar.java,5\1\51ba3babfe283a45f1e5faeb35a60e3dbc117b07
 L
 src/Alamacen/Comestible.java,6\9\69435c8380f36037fe43b3556f6f2b3889793d51
+I
+src/Fechas/Principal.java,e\4\e41c548d3c95f2e61eede0b60b2d88cafe744a41
+E
+src/Fechas/fechas.txt,e\6\e606f3706394f6f5101e7652465c212d5c67c0d2
+K
+src/Alamacen/Comercial.java,7\6\7620277432422e1ad66f3e19ded118d5f9df27bb
+S
+#src/Alamacen/EscepProdCaducado.java,1\a\1a30579e4341caea9f2e47cc75d3fd98d3792471
+M
+src/Alamacen/ExcepNumNeg.java,9\a\9a8e44dfb46ab74d59e9439d229f1122e72084a9
+J
+src/Alamacen/Producto.java,7\1\71526c9c0dd564cf75af14af44471fbfd3a67bb4

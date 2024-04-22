@@ -3,12 +3,12 @@
 ‡	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚ÒéüÿÿÿÿJ$dcb17eee-88e4-445a-842c-46a75e87f7fd
 ˆ
 java:S1192\"GDefine a constant instead of duplicating this literal "idProd" 4 times.(ø¡£ôÿÿÿÿÿJ$7280a294-73eb-44f1-9313-d9d01296acfb
-‹
-java:S22593"H"NullPointerException" will be thrown when invoking method "insertar()".(¡Î­“8Àå–î1J$46f31b40-fd84-4a7a-81cd-fc3863e8076a
 ‰
 java:S22597"F"NullPointerException" will be thrown when invoking method "listar()".(ôêŠº8¿å–î1J$16f8eab6-8d00-4102-952e-68d63c4dc75e
 ‰
 java:S2259 "FA "NullPointerException" could be thrown; "conexion" is nullable here.(«ìô£8¾å–î1J$84ef705d-4218-414d-adb5-f7736fe8f37a
+‹
+java:S22593"H"NullPointerException" will be thrown when invoking method "insertar()".(¡Î­“8Àå–î1J$46f31b40-fd84-4a7a-81cd-fc3863e8076a
 ‹
 java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(Ğ¿·æ8Âå–î1J$62510232-981e-422e-a316-8e086aa1d811
 ƒ	java:S125"<This block of commented-out lines of code should be removed.(íüØôüÿÿÿÿ8÷–î1J$2ca61057-0f2a-430c-a28f-6d0cae03499e

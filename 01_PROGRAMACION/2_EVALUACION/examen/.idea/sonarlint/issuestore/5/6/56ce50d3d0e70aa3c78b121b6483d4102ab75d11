@@ -1,0 +1,23 @@
+
+t
+java:S1488<"YImmediately return this expression instead of assigning it to the temporary variable "c".(Ÿ‰òÒÿÿÿÿÿ
+W
+java:S4973"<Strings and Boxed types should be compared using "equals()".(Û›ÓÊùÿÿÿÿ
+Â
+java:S1598"«This file "Operaciones.java" should be located in "ZZ_EXAMEN" directory, not in "C:\Users\a21joaquinle\Desktop\workspace\DUAL\01_PROGRAMACION\2_EVALUACION\examen\almacen".(ñö÷Ã
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ñö÷Ã
+U
+java:S1118":Add a private constructor to hide the implicit public one.(€Æñ®øÿÿÿÿ
+_
+java:S1854
+"DRemove this useless assignment to local variable "fechaDeCaducidad".(·÷‚»üÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(®Âà³üÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(Å¼çÿÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(ÇĞÒø
+E	java:S106"+Replace this use of System.out by a logger.(Û¹ëˆşÿÿÿÿ
+E	java:S106 "+Replace this use of System.out by a logger.(‘´èüÿÿÿÿ
+E	java:S1060"+Replace this use of System.out by a logger.(şÅùÿÿÿÿ
+E	java:S1063"+Replace this use of System.out by a logger.(Áëˆıÿÿÿÿ
+@	java:S1066"+Replace this use of System.out by a logger.(åÈ¥õ
+?	java:S1069"+Replace this use of System.out by a logger.(‚™…
+E	java:S106A"+Replace this use of System.out by a logger.(ÛÍãĞşÿÿÿÿ

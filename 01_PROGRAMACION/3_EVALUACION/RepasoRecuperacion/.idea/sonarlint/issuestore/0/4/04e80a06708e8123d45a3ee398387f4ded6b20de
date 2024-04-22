@@ -1,69 +1,59 @@
 
-’
-java:S1192˜"IDefine a constant instead of duplicating this literal "limpieza" 3 times.(è·°äúÿÿÿÿ8Ã—èçî1J$5cfe3177-cdae-42a8-9066-8ced0ced6df6
-®
-java:S1319"kThe type of "comerciales" should be an interface such as "List" rather than the implementation "ArrayList".(´»î8èÑççî1J$223fe32e-dc26-4a81-bc7c-1d177ad272d0
 ±
-java:S1319"iThe type of "productos" should be an interface such as "List" rather than the implementation "ArrayList".(ù©”ñÿÿÿÿÿ8èÑççî1J$c65e7314-1378-4b9f-a505-c3935914c7f6
-š
-java:S1104"WMake comerciales a static final constant or non-public and provide accessors if needed.(´»î8éÑççî1J$5a979c7c-f735-4603-a3c7-917f3233ffea
+java:S1319"iThe type of "productos" should be an interface such as "List" rather than the implementation "ArrayList".(ù©”ñÿÿÿÿÿ8Î¦¿¸ï1J$9506d13c-1d10-4351-bac2-ba4cbd9e98a0
+®
+java:S1319"kThe type of "comerciales" should be an interface such as "List" rather than the implementation "ArrayList".(´»î8Ï¦¿¸ï1J$f3837c75-084d-4706-aa96-daa6253b570d
 
-java:S1104"UMake productos a static final constant or non-public and provide accessors if needed.(ù©”ñÿÿÿÿÿ8éÑççî1J$b1455570-acab-446c-8972-e1aeeb9698dd
-t
-java:S1444"1Make this "public static comerciales" field final(´»î8éÑççî1J$040bfe6b-ad54-4733-a50c-c2c815e98e9a
+java:S1104"UMake productos a static final constant or non-public and provide accessors if needed.(ù©”ñÿÿÿÿÿ8Ğ¦¿¸ï1J$7f8aff2a-cff2-4dd3-bc04-a930639a5347
+š
+java:S1104"WMake comerciales a static final constant or non-public and provide accessors if needed.(´»î8Ğ¦¿¸ï1J$c799810a-b9f4-447e-bab7-92cd527769e6
 w
-java:S1444"/Make this "public static productos" field final(ù©”ñÿÿÿÿÿ8éÑççî1J$ba6fc2bf-9d45-48d4-b06e-aaa7c2094338
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Š–¡èûÿÿÿÿ8êÑççî1J$c673f200-22b2-4c72-b29c-384ab1a9d323
+java:S1444"/Make this "public static productos" field final(ù©”ñÿÿÿÿÿ8Ğ¦¿¸ï1J$92e88139-79c7-4ea2-9cb8-eba089cdf0e0
+t
+java:S1444"1Make this "public static comerciales" field final(´»î8Ğ¦¿¸ï1J$8f55d595-8190-4b9f-88d9-c02d30016492
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Š–¡èûÿÿÿÿ8êÑççî1J$e7b2298f-f5d7-46e0-b9fa-b6e4ffd04c79
+Š
+java:S2259‘"AA "NullPointerException" could be thrown; "reg" is nullable here.(•²Îÿùÿÿÿÿ8œ§¿¸ï1J$862dc725-2f3c-4317-ad51-d8bba07a5870
 Å
-java:S1186¥"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(õÜİö8©Òççî1J$36bf89f5-41ad-4568-8d75-ee3aa2b88a9a
+java:S1186œ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(õÜİö8§¿¸ï1J$deecd6b8-f916-4128-8a81-314bdf5578bf
 Ä
-java:S1186ª"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(”óôd8©Òççî1J$a7d22cc3-576f-4278-a6fb-7c4d7226e9bd
+java:S1186Ÿ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(”óôd8§¿¸ï1J$e52f677a-53da-445a-b9c8-ed9fabd4d2d3
 Ä
-java:S1186®"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¦²T8©Òççî1J$e6cc5783-9243-46fb-a486-fa9d32793d89
-`
-java:S2386"Make this member "protected".(´»î8ªÒççî1J$8ffa50f2-e230-4ebe-ad4e-d7f3ed48723a
+java:S1186¤"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¦²T8§¿¸ï1J$d1e2d494-0b14-4339-b0a3-03e435cc7b15
 e
-java:S2386"Make this member "protected".(ù©”ñÿÿÿÿÿ8ªÒççî1J$13e5153c-4d61-4fc1-a062-65f4222748f8
-l	java:S106/"+Replace this use of System.out by a logger.(€X8¯Òççî1J$b7b30469-2f4a-4a2a-a4a5-75768b52a68e
-m	java:S1062"+Replace this use of System.out by a logger.(ŸæÑÂ8¯Òççî1J$66c22e23-0447-4aa8-8afa-61bc8af9f1fe
-m	java:S106<"+Replace this use of System.out by a logger.(Œ€ÿ8¯Òççî1J$28760a1e-6fe9-4869-91de-cbfca236119c
-m	java:S106="+Replace this use of System.out by a logger.(¶Æ®š8°Òççî1J$cf0eb058-5ca1-4a41-8c7b-2244e0d191ee
-m	java:S106>"+Replace this use of System.out by a logger.(Œ€ÿ8°Òççî1J$ac3dfa70-8c80-4fa7-a5eb-0e1671341191
-m	java:S106@"+Replace this use of System.out by a logger.(½¸ÿ¸8°Òççî1J$aa4073d6-3b5f-48e6-a7e7-cc412dd113c3
-r	java:S106A"+Replace this use of System.out by a logger.(©Ü–¡ûÿÿÿÿ8°Òççî1J$9950707c-5148-4ed3-b05c-021eac05d453
-r	java:S106B"+Replace this use of System.out by a logger.(óÕÚ›úÿÿÿÿ8°Òççî1J$128c4354-21cd-418f-8b7d-e9358865e54e
-l	java:S106C"+Replace this use of System.out by a logger.(Œ÷É98°Òççî1J$073d3a28-ad67-4200-8d3a-06a61d1e7561
-r	java:S106D"+Replace this use of System.out by a logger.(Ş´¤‡øÿÿÿÿ8°Òççî1J$94341cc5-3cbb-4d7d-8dea-3902f43a6930
-l	java:S106E"+Replace this use of System.out by a logger.(õ¬Ø8°Òççî1J$2fac352d-42b5-4f84-8b0b-079c9b125eae
-m	java:S106F"+Replace this use of System.out by a logger.(ã¥Æş8°Òççî1J$fe37d37b-72d3-4f14-a141-5c9bde1be902
-r	java:S106G"+Replace this use of System.out by a logger.(£‹í†üÿÿÿÿ8°Òççî1J$318f070f-4248-44ee-9886-9c62746dbd74
-
-java:S1854L"7Remove this useless assignment to local variable "dtf".(ı«†×ÿÿÿÿÿ8±Òççî1J$1b849afb-3075-4e28-97b0-0f9fc26b1ddf
+java:S2386"Make this member "protected".(ù©”ñÿÿÿÿÿ8Ÿ§¿¸ï1J$c4437725-1296-4b60-830d-a5568cc90a01
+`
+java:S2386"Make this member "protected".(´»î8Ÿ§¿¸ï1J$a79ed20f-6bd5-4d87-92ed-19eabb98f5fe
+l	java:S106+"+Replace this use of System.out by a logger.(€X8°Òççî1J$a32b2049-fe6f-4422-a693-6b0b0850a3be
+m	java:S106."+Replace this use of System.out by a logger.(…Ë‰˜8°Òççî1J$9eeb6ff7-859e-45a8-87e0-1e81f5bfa833
+m	java:S1069"+Replace this use of System.out by a logger.(Œ€ÿ8°Òççî1J$2d05d381-f3a8-4737-8eed-4d0cbf51d223
+m	java:S106:"+Replace this use of System.out by a logger.(¶Æ®š8°Òççî1J$21434152-ea5b-435e-87e9-15d9c935f13b
+m	java:S106;"+Replace this use of System.out by a logger.(Œ€ÿ8°Òççî1J$b2835778-b1ec-46a3-8fbf-989d74341d4a
+m	java:S106="+Replace this use of System.out by a logger.(½¸ÿ¸8°Òççî1J$34a5b2d1-4db3-4cde-b4f7-eb86295987d0
+r	java:S106>"+Replace this use of System.out by a logger.(©Ü–¡ûÿÿÿÿ8°Òççî1J$bec9f311-bbf0-42b9-a15b-ccc6a996e19f
+r	java:S106?"+Replace this use of System.out by a logger.(óÕÚ›úÿÿÿÿ8©§¿¸ï1J$db6dc39e-8404-4c3f-b348-4fe82c50b199
+l	java:S106@"+Replace this use of System.out by a logger.(Œ÷É98©§¿¸ï1J$fc73181c-446d-43ce-ad64-a44ecdbbae34
+r	java:S106A"+Replace this use of System.out by a logger.(Ş´¤‡øÿÿÿÿ8ª§¿¸ï1J$b278df02-25d0-407c-9870-64ee69b30aa3
+l	java:S106B"+Replace this use of System.out by a logger.(õ¬Ø8ª§¿¸ï1J$c6b9f264-b1dc-4eea-8d26-f9b1d1499a8f
+m	java:S106C"+Replace this use of System.out by a logger.(ã¥Æş8ª§¿¸ï1J$29f8edb5-8efb-40d9-87f7-36dc1ed2bce3
+r	java:S106D"+Replace this use of System.out by a logger.(£‹í†üÿÿÿÿ8ª§¿¸ï1J$73501067-698c-4e92-b3a3-29b20dc6e3a5
 o
-java:S1659O"'Declare "categoria" on a separate line.(³«Ïœıÿÿÿÿ8±Òççî1J$38638a0b-fa85-47a5-9590-96ada11c84eb
-p
-java:S1481L"(Remove this unused "dtf" local variable.(ı«†×ÿÿÿÿÿ8²Òççî1J$35cb5cc7-7f61-4ab2-9640-bd949b1c886d
-m	java:S106P"+Replace this use of System.out by a logger.(·„¾¹8²Òççî1J$c12afca6-6103-475b-b92e-c6a508ef5ebb
-m	java:S106R"+Replace this use of System.out by a logger.(“ùÊ8²Òççî1J$ebd5ed42-454b-4427-b0dd-8f799924c7a9
-l	java:S106V"+Replace this use of System.out by a logger.(­¼ˆ8³Òççî1J$dd61af5d-79e8-4818-a22a-6d79b6daafb8
-r	java:S106]"+Replace this use of System.out by a logger.(£Ôóıÿÿÿÿ8³Òççî1J$f6f45373-8555-4c0f-acc5-625ac63280a1
-r	java:S106a"+Replace this use of System.out by a logger.(Îíœİøÿÿÿÿ8³Òççî1J$8e95ad11-5269-4eb4-a535-ba8ebd474dda
-ƒ	java:S125c"<This block of commented-out lines of code should be removed.(í„Ûüøÿÿÿÿ8³Òççî1J$b48c557e-ef86-4784-99e9-0e3ef7ac5186
-r	java:S106h"+Replace this use of System.out by a logger.(®ÿ ˜ıÿÿÿÿ8´Òççî1J$b0511553-de7e-46cf-9a19-aea91adc2d32
-m	java:S106l"+Replace this use of System.err by a logger.(¥ËÛò8´Òççî1J$7856ce7f-f54c-4ae3-930d-915904793efb
-r	java:S106q"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8´Òççî1J$4bdc2087-1e90-4fc8-995a-e3391712d873
+java:S1659L"'Declare "categoria" on a separate line.(³«Ïœıÿÿÿÿ8¬§¿¸ï1J$0fa2fee0-cbe7-4100-9563-f60b9c7cf17c
+m	java:S106M"+Replace this use of System.out by a logger.(·„¾¹8­§¿¸ï1J$f8cdcbc2-32bd-4208-a6fe-9443c84805cb
+m	java:S106P"+Replace this use of System.out by a logger.(“ùÊ8­§¿¸ï1J$75e684d4-ac95-46db-9ef2-70579bbaae6c
+l	java:S106T"+Replace this use of System.out by a logger.(­¼ˆ8®§¿¸ï1J$36fe41a1-ff5e-41d1-89e7-cbe7a0e46ca9
+r	java:S106["+Replace this use of System.out by a logger.(°×ñııÿÿÿÿ8¯§¿¸ï1J$5c69219a-6c55-4cd6-a4f9-831d307719b8
+m	java:S106^"+Replace this use of System.out by a logger.(–®åæ8¯§¿¸ï1J$eb6e586c-62f4-44cf-8780-18961cb2d99d
+m	java:S106d"+Replace this use of System.out by a logger.(Ë¥ØŞ8°§¿¸ï1J$168b910e-5e9e-4635-9fd6-193b1444e020
+r	java:S106k"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8±§¿¸ï1J$6bfbacd5-b96a-4bda-ac3b-ca1d1fef1c31
 
-java:S1659z"FDeclare "apellidos" and all following declarations on a separate line.(ö„ß²şÿÿÿÿ8µÒççî1J$c96b4a74-ccf0-4e2d-944c-275aa2932ed0
-r	java:S106{"+Replace this use of System.out by a logger.(ŞŠÅ“ûÿÿÿÿ8µÒççî1J$6d1a8d72-e9a1-4a18-b5cb-b7a5f1d2bdbb
-m	java:S106~"+Replace this use of System.out by a logger.(“ùÊ8µÒççî1J$85eafd71-fa2e-4765-8861-1359ae42ce62
-n	java:S106"+Replace this use of System.out by a logger.(†í±ù8µÒççî1J$9f12d0eb-b87f-48b8-9e3b-3c0dac22417b
-s	java:S106„"+Replace this use of System.out by a logger.(õƒı‡ùÿÿÿÿ8µÒççî1J$a4fe01d2-a1d5-414c-82e6-9c65d3c63277
-n	java:S106‡"+Replace this use of System.out by a logger.(û‚’“8µÒççî1J$5333f575-291f-43a9-a61d-f590b6e9dffe
-n	java:S106‹"+Replace this use of System.out by a logger.(­‰Å”8µÒççî1J$8207a1c2-4fd6-4ba6-8ee2-9c8faa67dcc2
+java:S1659u"FDeclare "apellidos" and all following declarations on a separate line.(ö„ß²şÿÿÿÿ8²§¿¸ï1J$1967e7cb-b15d-47db-85b6-f19b5f448378
+r	java:S106v"+Replace this use of System.out by a logger.(ŞŠÅ“ûÿÿÿÿ8²§¿¸ï1J$d8bef3a0-d82a-4c69-95c9-711ff20e6476
+m	java:S106y"+Replace this use of System.out by a logger.(“ùÊ8³§¿¸ï1J$70e2db12-cf03-4de5-a9b1-3ae001bcb00b
+m	java:S106|"+Replace this use of System.out by a logger.(†í±ù8³§¿¸ï1J$76b8b29e-2dd4-49f5-8ec7-c1cfc6c29597
+r	java:S106"+Replace this use of System.out by a logger.(õƒı‡ùÿÿÿÿ8´§¿¸ï1J$befc647c-acbf-43c7-8d5a-22fafcd167f6
+n	java:S106‚"+Replace this use of System.out by a logger.(û‚’“8´§¿¸ï1J$3edd80ea-34a5-4d8e-9501-1886b98e7f4f
+n	java:S106†"+Replace this use of System.out by a logger.(¡¬ÙÔ8µ§¿¸ï1J$b3d00464-9edc-4147-8c3d-e57c931616bf
 ˆ
-java:S6201¢"DReplace this instanceof check and cast with 'instanceof Bazar bazar'(¬¿ªî8·Òççî1J$7f3bf259-cc44-4776-be74-2a8e32c0b464
-s	java:S106¾"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8¸Òççî1J$12345036-4fd7-4d7d-bc84-e3c0b8db9bf0
-
-java:S1128"ERemove this unused import 'java.nio.channels.ClosedChannelException'.(’ı½¤ûÿÿÿÿ8¹Òççî1J$c4daaeef-047e-41a9-a915-788c094aa17e
-z
-java:S1128"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛ8¹Òççî1J$d85356a8-b7b8-4039-9338-f69cbfceedb2
+java:S6201™"DReplace this instanceof check and cast with 'instanceof Bazar bazar'(¬¿ªî8Â§¿¸ï1J$988d880e-e4f0-407a-8aa4-3cb80343d1ce
+s	java:S106¶"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8Ä§¿¸ï1J$8f889a28-51de-42f3-9d5f-aae3d93df06f
