@@ -27,8 +27,6 @@ K
 src/Hospital/Principal.java,d\9\d98de3582c96f43fbb988182e53e097a3c9496b6
 I
 src/Alamacen/Almacen.java,0\4\04e80a06708e8123d45a3ee398387f4ded6b20de
-W
-'src/Alamacen/ExcepProductoCaducado.java,f\1\f1036d5a28e34e5c79bbf1c10a92dae252851c74
 G
 src/Alamacen/Bazar.java,5\1\51ba3babfe283a45f1e5faeb35a60e3dbc117b07
 L
