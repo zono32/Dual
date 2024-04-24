@@ -4,7 +4,8 @@ namespace App\Entity;
 
 use App\Repository\NotaRepository;
 use DateTime;
-use App\Validator as AppValidator; 
+use App\Validator as AppValidator;
+use Doctrine\DBAL\Types\Types; 
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
@@ -28,7 +29,7 @@ class Nota
 
 
     #[ORM\Column(type: 'datetime')]
-    private ?DateTime $fechaModificion = null;
+    private ?DateTime $fechaModificacion = null;
 
     public function getId(): ?int
     {
@@ -61,12 +62,24 @@ class Nota
 
     public function getFechaModificion(): ?\DateTimeInterface
     {
-        return $this->fechaModificion;
+        return $this->fechaModificacion;
     }
 
     public function setFechaModificion(\DateTimeInterface $fechaModificion): static
     {
-        $this->fechaModificion = $fechaModificion;
+        $this->fechaModificacion = $fechaModificion;
+
+        return $this;
+    }
+
+    public function getFechaModificacion(): ?\DateTimeInterface
+    {
+        return $this->fechaModificacion;
+    }
+
+    public function setFechaModificacion(\DateTimeInterface $fechaModificacion): static
+    {
+        $this->fechaModificacion = $fechaModificacion;
 
         return $this;
     }
