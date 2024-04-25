@@ -1,6 +1,7 @@
+<?php
 // src/Service/ExampleService.php
 // ...
-<?php
+
 use Symfony\Bundle\SecurityBundle\Security;
 use Symfony\Component\HttpFoundation\RequestStack;
 
