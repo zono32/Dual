@@ -1,0 +1,29 @@
+Aquí tienes la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:05,000
+Las aserciones también permiten fácilmente echar la culpa a lugares específicos.
+
+2
+00:00:05,000 --> 00:00:09,000
+Supongamos que tengo una función f con una precondición y una postcondición,
+
+3
+00:00:09,000 --> 00:00:12,000
+y llamamos a f y se cumple la precondición de f.
+
+4
+00:00:12,000 --> 00:00:19,000
+Ahora, f llama a g y ahora, la precondición aquí se viola y se lanza una excepción.
+
+5
+00:00:19,000 --> 00:00:25,000
+Pregunta de prueba, ¿quién tiene la culpa aquí? ¿Es f porque viola la precondición de g?
+
+6
+00:00:25,000 --> 00:00:32,000
+¿Es g porque lanza una excepción? ¿O son tanto f como g porque son incompatibles?
+
+7
+00:00:32,000 --> 99:59:59,000
+Ahora es tu turno.

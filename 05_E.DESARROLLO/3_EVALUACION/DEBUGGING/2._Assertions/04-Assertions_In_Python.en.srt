@@ -1,0 +1,49 @@
+Aquí tienes la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:05,000
+Bienvenido de nuevo. ¿Cuál es la respuesta a esto? Bueno, muy simple, vamos a probarlo.
+
+2
+00:00:05,000 --> 00:00:10,000
+Aquí hay una aserción fallida: `2+2=5`. Veamos, cuando ejecutamos todo esto, ¿qué obtenemos?
+
+3
+00:00:10,000 --> 00:00:15,000
+Aquí está el resultado de la traza inversa. Obtenemos el error de aserción. Obtenemos la aserción que falló.
+
+4
+00:00:15,000 --> 00:00:18,000
+Al menos obtenemos la línea y el código, que es lo mismo.
+
+5
+00:00:18,000 --> 00:00:24,000
+Obtenemos la ubicación: línea 1 con mal funcionamiento y la lista de llamadores.
+
+6
+00:00:24,000 --> 00:00:28,000
+Entonces hemos visto la lista de llamadores, la ubicación de la aserción en el programa,
+
+7
+00:00:28,000 --> 00:00:30,000
+y la aserción fallida en sí.
+
+8
+00:00:30,000 --> 00:00:36,000
+Lo que no obtenemos es la ubicación del defecto en el código porque el defecto que realmente
+
+9
+00:00:36,000 --> 00:00:43,000
+causa la infección que luego provoca que la aserción falle puede estar en una ubicación completamente diferente.
+
+10
+00:00:43,000 --> 00:00:49,000
+Ese es el objetivo de la depuración, tratar de encontrar el defecto que causa que una aserción falle.
+
+11
+00:00:49,000 --> 00:00:55,000
+Sin embargo, durante este curso, encontrarás técnicas que te ayudarán mucho a descubrir
+
+12
+00:00:55,000 --> 99:59:59,000
+dónde está el defecto que causa que una aserción falle, y todo esto automáticamente.

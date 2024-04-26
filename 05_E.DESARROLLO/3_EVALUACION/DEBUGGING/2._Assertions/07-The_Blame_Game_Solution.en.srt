@@ -1,0 +1,33 @@
+Aquí tienes la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:04,000
+La respuesta correcta es que f es responsable porque viola la precondición de g.
+
+2
+00:00:04,000 --> 00:00:07,000
+Las pre y post condiciones generalmente se consideran especificaciones--
+
+3
+00:00:07,000 --> 00:00:11,000
+es decir, tienen la autoridad para determinar qué está bien y qué está mal,
+
+4
+00:00:11,000 --> 00:00:16,000
+y si violas una precondición, esto significa que el llamante está equivocado.
+
+5
+00:00:16,000 --> 00:00:19,000
+g lanza una excepción y eso es solo el mensajero. No disparamos al mensajero.
+
+6
+00:00:19,000 --> 00:00:23,000
+Y f y g, bueno, obviamente son incompatibles--sí, eso es correcto,
+
+7
+00:00:23,000 --> 00:00:29,000
+pero dado que las pre y post condiciones sirven como especificaciones, definitivamente f es culpable
+
+8
+00:00:29,000 --> 99:59:59,000
+por violar esta especificación y g está bien; solo lanzó la excepción.

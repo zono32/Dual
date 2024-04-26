@@ -1,0 +1,41 @@
+Aquí tienes la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:03,000
+Muchas gracias por su respuesta. La prueba del pudín está en el comer.
+
+2
+00:00:03,000 --> 00:00:09,000
+Así que lo que hacemos es simplemente presionar ejecutar y presionar ejecutar de nuevo y vemos--
+
+3
+00:00:09,000 --> 00:00:14,000
+obtenemos un error de aserción y de hecho es la postcondición de la raíz cuadrada la que ha fallado.
+
+4
+00:00:14,000 --> 00:00:18,000
+Entonces, la respuesta correcta es que falla la postcondición de la raíz cuadrada.
+
+5
+00:00:18,000 --> 00:00:24,000
+Así que vimos que la postcondición de la raíz cuadrada, principalmente elevar al cuadrado la raíz cuadrada,
+
+6
+00:00:24,000 --> 00:00:26,000
+no es igual al valor original.
+
+7
+00:00:26,000 --> 00:00:31,000
+Esto es extraño porque todo lo que usamos es invocar la función de raíz cuadrada estándar de Python.
+
+8
+00:00:31,000 --> 00:00:36,000
+¿Significa esto que la función de raíz cuadrada de Python está mal y finalmente,
+
+9
+00:00:36,000 --> 00:00:40,000
+a través de pruebas aleatorias sistemáticas, encontramos el error?
+
+10
+00:00:40,000 --> 99:59:59,000
+Déjame mostrarte lo que realmente está pasando aquí.

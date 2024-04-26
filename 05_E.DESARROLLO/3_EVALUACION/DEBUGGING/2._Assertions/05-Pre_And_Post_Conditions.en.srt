@@ -1,0 +1,169 @@
+Aquí tienes la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:06,000
+Hasta ahora, podríamos haber encontrado aserciones en pruebas, en particular, en pruebas unitarias.
+
+2
+00:00:06,000 --> 00:00:12,000
+Aquí, las aserciones se utilizan para verificar los resultados de una sola ejecución, principalmente la ejecución de prueba.
+
+3
+00:00:12,000 --> 00:00:18,000
+Lo que vamos a examinar son las aserciones que están integradas en el código del programa en sí.
+
+4
+00:00:18,000 --> 00:00:21,000
+Donde se verifica todas las ejecuciones a la vez.
+
+5
+00:00:21,000 --> 00:00:25,000
+Un ejemplo clásico del uso de aserciones es un programa de raíz cuadrada.
+
+6
+00:00:25,000 --> 00:00:29,000
+Al principio, al invocar la raíz cuadrada, queremos asegurarnos
+
+7
+00:00:29,000 --> 00:00:32,000
+de que x, el parámetro, no sea negativo.
+
+8
+00:00:32,000 --> 00:00:37,000
+Omitiré el cálculo real de las raíces cuadradas aquí porque es el tema de otra clase,
+
+9
+00:00:37,000 --> 00:00:42,000
+pero antes de devolver la raíz cuadrada real, queremos asegurarnos
+
+10
+00:00:42,000 --> 00:00:44,000
+de que la raíz cuadrada realmente es una raíz cuadrada.
+
+11
+00:00:44,000 --> 00:00:47,000
+¿Cómo lo hacemos? Bueno, elevamos al cuadrado la raíz cuadrada
+
+12
+00:00:47,000 --> 00:00:51,000
+y verificamos si es idéntica al argumento original x.
+
+13
+00:00:51,000 --> 00:00:56,000
+Estos dos tipos de aserciones forman un par y ambos tienen objetivos muy específicos.
+
+14
+00:00:56,000 --> 00:01:00,000
+Una aserción que se llama al principio de una función
+
+15
+00:01:00,000 --> 00:01:04,000
+y que verifica las propiedades del argumento se llama precondición.
+
+16
+00:01:04,000 --> 00:01:08,000
+Una aserción que verifica el resultado de un cálculo
+
+17
+00:01:08,000 --> 00:01:11,000
+antes de que se devuelva realmente se llama postcondición.
+
+18
+00:01:11,000 --> 00:01:14,000
+Si tienes verificaciones explícitas en tu código,
+
+19
+00:01:14,000 --> 00:01:18,000
+esto aumenta enormemente tus posibilidades de encontrar rápidamente el error.
+
+20
+00:01:18,000 --> 00:01:23,000
+Porque estas verificaciones se invocarán cada vez que se ejecute la función
+
+21
+00:01:23,000 --> 00:01:26,000
+y si no fallan, sabes que el cálculo
+
+22
+00:01:26,000 --> 00:01:29,000
+es realmente correcto, lo cual es algo bueno.
+
+23
+00:01:29,000 --> 00:01:33,000
+Si recuerdas, nuestra cadena causa-efecto tiene una sucesión de estados de programa
+
+24
+00:01:33,000 --> 00:01:38,000
+donde un defecto introduce una infección que luego se propaga hasta convertirse en la falla.
+
+25
+00:01:38,000 --> 00:01:42,000
+Imagina lo que sucede si realmente tienes aserciones en tu código
+
+26
+00:01:42,000 --> 00:01:45,000
+que verifican grandes partes de tu estado.
+
+27
+00:01:45,000 --> 00:01:48,000
+Ahora imagina lo que sucede si tienes aserciones en tu código
+
+28
+00:01:48,000 --> 00:01:53,000
+que verifican grandes partes de tu estado para ver si son válidas o no.
+
+29
+00:01:53,000 --> 00:01:58,000
+Supongamos que tienes una aserción que verifica todas estas áreas cada vez que se invoca una función,
+
+30
+00:01:58,000 --> 00:02:02,000
+entonces no verías la falla solo al final, sino que la verías
+
+31
+00:02:02,000 --> 00:02:05,000
+tan pronto como la infección se propague.
+
+32
+00:02:05,000 --> 00:02:09,000
+Si tienes otra aserción que cubre esta parte del estado,
+
+33
+00:02:09,000 --> 00:02:12,000
+entonces verías la falla en el mismo momento en que se introduce.
+
+34
+00:02:12,000 --> 00:02:16,000
+Lo cual, por supuesto, también significa que puedes identificar inmediatamente
+
+35
+00:02:16,000 --> 00:02:20,000
+el defecto que causa la infección.
+
+36
+00:02:20,000 --> 00:02:24,000
+Cuanto antes veas una infección, por ejemplo, porque una aserción falla,
+
+37
+00:02:24,000 --> 00:02:27,000
+más corta será la cadena causa-efecto que debes investigar.
+
+38
+00:02:27,000 --> 00:02:32,000
+Además, si tienes partes del estado que están cubiertas por aserciones que pasan
+
+39
+00:02:32,000 --> 00:02:38,000
+y estas aserciones no fallan, entonces sabemos que el estado en este punto no está infectado
+
+40
+00:02:38,000 --> 00:02:43,000
+y, por lo tanto, en tu búsqueda, puedes centrarte en aquellas partes del estado
+
+41
+00:02:43,000 --> 00:02:48,000
+que no están cubiertas por aserciones que pasan, y todo esto sucede automáticamente
+
+42
+00:02:48,000 --> 99:59:59,000
+con cada ejecución, cada ejecución de prueba e incluso en producción.

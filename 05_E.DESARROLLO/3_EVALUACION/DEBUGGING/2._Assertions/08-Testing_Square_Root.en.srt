@@ -1,0 +1,97 @@
+Aquí tienes la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:05,000
+Si tienes aserciones en tu código, no solo puedes detectar errores con mucha más facilidad
+
+2
+00:00:05,000 --> 00:00:08,000
+sino que también puedes probar tu código de manera mucho más completa.
+
+3
+00:00:08,000 --> 00:00:12,000
+En particular, puedes separar dos cosas. Una prueba consiste en dos partes.
+
+4
+00:00:12,000 --> 00:00:16,000
+Primero, necesitamos generar una ejecución y, segundo, necesitamos verificar el resultado.
+
+5
+00:00:16,000 --> 00:00:20,000
+Con aserciones en tu código, verificar los resultados ya está hecho,
+
+6
+00:00:20,000 --> 00:00:22,000
+así que podemos centrarnos en generar las pruebas.
+
+7
+00:00:22,000 --> 00:00:26,000
+Permíteme ilustrar con un ejemplo muy simple.
+
+8
+00:00:26,000 --> 00:00:31,000
+La idea es que vamos a tomar una función de raíz cuadrada con aserciones integradas
+
+9
+00:00:31,000 --> 00:00:34,000
+y solo usar pruebas aleatorias para probarla.
+
+10
+00:00:34,000 --> 00:00:38,000
+Aquí hay una implementación muy simple de la función de raíz cuadrada.
+
+11
+00:00:38,000 --> 00:00:42,000
+Simplemente invertimos la función de raíz cuadrada incorporada de Python del módulo math,
+
+12
+00:00:42,000 --> 00:00:47,000
+y hemos configurado las aserciones apropiadas para verificar la precondición y la postcondición.
+
+13
+00:00:47,000 --> 00:00:51,000
+Ahora, para el controlador de pruebas, he configurado un bucle con 1000 iteraciones
+
+14
+00:00:51,000 --> 00:01:00,000
+y generamos números aleatorios en el rango de 0 a 9,999.99.
+
+15
+00:01:00,000 --> 00:01:05,000
+Esto es aleatorio con la función `random` que devuelve un valor entre 0 y 1.
+
+16
+00:01:05,000 --> 00:01:08,000
+Este es un número de punto flotante y proviene del módulo random.
+
+17
+00:01:08,000 --> 00:01:14,000
+Y luego alimentamos este número aleatorio a una función de raíz cuadrada asumiendo el resultado en z.
+
+18
+00:01:14,000 --> 00:01:17,000
+Ten en cuenta que no hacemos ninguna aserción aquí abajo
+
+19
+00:01:17,000 --> 00:01:20,000
+porque las aserciones aquí arriba ya se han encargado de todo.
+
+20
+00:01:20,000 --> 00:01:22,000
+Cuando todas las pruebas son exitosas, imprimimos 'done' (hecho).
+
+21
+00:01:22,000 --> 00:01:26,000
+Así que esta es nuestra prueba y la pregunta es, ¿qué va a pasar?
+
+22
+00:01:26,000 --> 00:01:31,000
+¿Es que el programa termina de manera ordenada, imprimiendo 'done' y todas las pruebas son rápidas?
+
+23
+00:01:31,000 --> 00:01:38,000
+¿Es que falla la precondición de la raíz cuadrada? ¿Es que falla la postcondición de la raíz cuadrada?
+
+24
+00:01:38,000 --> 99:59:59,000
+O pensando en Python, ¿vemos algo completamente diferente? Te toca.

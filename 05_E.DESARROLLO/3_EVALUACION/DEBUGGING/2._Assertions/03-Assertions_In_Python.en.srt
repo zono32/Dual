@@ -1,0 +1,29 @@
+A continuación se presenta la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:05,000
+Ahora, compara el nivel de salida de diagnóstico que hemos visto en C y C++
+
+2
+00:00:05,000 --> 00:00:08,000
+con la cantidad de salida de diagnóstico que obtienes en Python.
+
+3
+00:00:08,000 --> 00:00:14,000
+Si escribes `assert 2+2=5` como condición que evalúa a falso.
+
+4
+00:00:14,000 --> 00:00:18,000
+Entonces, ¿qué información se obtiene de una aserción fallida en Python?
+
+5
+00:00:18,000 --> 00:00:24,000
+¿Obtienes la condición de la aserción fallida? En nuestro caso, `2+2=5`.
+
+6
+00:00:24,000 --> 00:00:29,000
+¿La ubicación de la aserción en el programa? En nuestro caso, línea 1.
+
+7
+00:00:29,000 --> 99:59:59,000
+¿La ubicación del defecto en el código o la lista de llamadores? Pruébalo tú mismo, te toca.

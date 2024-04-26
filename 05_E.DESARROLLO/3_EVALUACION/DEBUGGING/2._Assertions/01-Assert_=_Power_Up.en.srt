@@ -1,0 +1,97 @@
+A continuación se presenta la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:04,000
+Bienvenido de nuevo. Esta es la segunda unidad del curso de depuración.
+
+2
+00:00:04,000 --> 00:00:10,000
+Este tema es establecer expectativas. Hoy, exploraremos las aserciones.
+
+3
+00:00:10,000 --> 00:00:15,000
+Es decir, declaraciones en el programa que verifican automáticamente errores durante la ejecución.
+
+4
+00:00:15,000 --> 00:00:19,000
+Las aserciones son, de lejos, la herramienta de depuración más poderosa,
+
+5
+00:00:19,000 --> 00:00:23,000
+en particular porque son la clave para automatizar la depuración.
+
+6
+00:00:23,000 --> 00:00:25,000
+Es decir, depurar mientras duermes.
+
+7
+00:00:25,000 --> 00:00:30,000
+Si la depuración fuera un videojuego y te estuvieran acechando errores,
+
+8
+00:00:30,000 --> 00:00:39,000
+entonces las aserciones serían una píldora de poder que te ayudaría a atrapar todos los errores.
+
+9
+00:00:39,000 --> 00:00:43,000
+Específicamente, aprenderemos cómo escribir aserciones,
+
+10
+00:00:43,000 --> 00:00:49,000
+cómo verificar las aserciones y cómo inferir aserciones a partir de ejecuciones automáticamente.
+
+11
+00:00:49,000 --> 00:00:52,000
+En nuestra última lección, ya habíamos conocido la palabra clave `assert` de Python.
+
+12
+00:00:52,000 --> 00:00:57,000
+En general, la declaración `assert condition` evalúa la condición,
+
+13
+00:00:57,000 --> 00:01:02,000
+y su comportamiento depende de si la condición se evalúa como verdadera o falsa.
+
+14
+00:01:02,000 --> 00:01:06,000
+Si la condición se cumple, procedemos como de costumbre.
+
+15
+00:01:06,000 --> 00:01:08,000
+Sin embargo, si la condición no se cumple,
+
+16
+00:01:08,000 --> 00:01:12,000
+entonces interrumpimos la ejecución del programa lanzando una excepción.
+
+17
+00:01:12,000 --> 00:01:17,000
+Cuando escribes tu condición, asumes que la condición se cumplirá.
+
+18
+00:01:17,000 --> 00:01:20,000
+Esto normalmente es útil cuando estás escribiendo una prueba.
+
+19
+00:01:20,000 --> 00:01:23,000
+Por ejemplo, si queremos probar la función de raíz cuadrada,
+
+20
+00:01:23,000 --> 00:01:30,000
+podemos escribir una función de prueba que asegure que la raíz cuadrada de 4 es 2 y que la raíz cuadrada de 9 es 3,
+
+21
+00:01:30,000 --> 00:01:35,000
+y si alguna de estas pruebas falla, es decir, si el resultado de la raíz cuadrada de 4 no es 2,
+
+22
+00:01:35,000 --> 00:01:39,000
+entonces la aserción fallará y lanzará una excepción.
+
+23
+00:01:39,000 --> 00:01:44,000
+Dicha funcionalidad de aserción está disponible en todos los lenguajes de programación.
+
+24
+00:01:44,000 --> 99:59:59,000
+Incluso podrías escribir tu propia función de aserción.

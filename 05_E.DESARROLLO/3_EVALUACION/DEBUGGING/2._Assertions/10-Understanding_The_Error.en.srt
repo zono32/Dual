@@ -1,0 +1,101 @@
+Aquí tienes la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:08,000
+¿Por qué falla la postcondición de la raíz cuadrada? La respuesta es simple, pero no tanto.
+
+2
+00:00:08,000 --> 00:00:11,000
+Lo que nos falta aquí es información de diagnóstico.
+
+3
+00:00:11,000 --> 00:00:16,000
+No sabemos los valores de r o z o cualquier cosa que suceda en el medio.
+
+4
+00:00:16,000 --> 00:00:20,000
+Así que lo que hacemos es establecer un marco que nos permita acceder a ellos.
+
+5
+00:00:20,000 --> 00:00:27,000
+Entonces, lo que hemos hecho aquí es establecer un bloque `try-except` alrededor de la función de raíz cuadrada,
+
+6
+00:00:27,000 --> 00:00:31,000
+que atrapa la aserción y cuando se lanza una aserción,
+
+7
+00:00:31,000 --> 00:00:37,000
+o se produce algún otro tipo de error, imprimimos el parámetro ofensivo r
+
+8
+00:00:37,000 --> 00:00:42,000
+y salimos del bucle, así que veamos qué sucede aquí si invocamos todo.
+
+9
+00:00:42,000 --> 00:00:52,000
+Aquí está el valor malo, 8<i>436.9207865. Vaya, valor mágico.</i>
+
+10
+00:00:52,000 --> 00:00:56,000
+Entonces, ¿por qué no podemos simplemente elevar esto al cuadrado? ¿Qué está mal aquí?
+
+11
+00:00:56,000 --> 00:00:58,000
+Entonces, imprimimos el valor y ahora vamos
+
+12
+00:00:58,000 --> 00:01:04,000
+y realmente elevamos al cuadrado la raíz cuadrada y la multiplicamos por sí misma.
+
+13
+00:01:04,000 --> 00:01:12,000
+Veamos qué obtenemos: nuevamente, ejecutamos todo y 2123.01753488
+
+14
+00:01:12,000 --> 00:01:17,000
+y esto es 2123.01753488.
+
+15
+00:01:17,000 --> 00:01:22,000
+Bueno, por todos los medios y medidas, estos dos me parecen idénticos.
+
+16
+00:01:22,000 --> 00:01:24,000
+¿Por qué falló la aserción anterior?
+
+17
+00:01:24,000 --> 00:01:28,000
+Podemos resolver el misterio simplemente observando la diferencia numérica entre estos dos valores.
+
+18
+00:01:28,000 --> 00:01:32,000
+Veamos cuál es la diferencia numérica entre
+
+19
+00:01:32,000 --> 00:01:35,000
+la raíz cuadrada elevada al cuadrado y el valor original.
+
+20
+00:01:35,000 --> 00:01:40,000
+Aquí llega otro valor que falla 9,049 y algo, y aquí al final,
+
+21
+00:01:40,000 --> 00:01:47,000
+ves la diferencia: es de 10^-12, lo que significa que 12 dígitos después de la coma
+
+22
+00:01:47,000 --> 00:01:53,000
+tenemos una diferencia entre r y la √r².
+
+23
+00:01:53,000 --> 00:01:55,000
+La razón por la que esta aserción falló fue simplemente un error de redondeo,
+
+24
+00:01:55,000 --> 00:01:59,000
+los números son los mismos hasta el dígito 11.
+
+25
+00:01:59,000 --> 99:59:59,000
+En el dígito 12, en realidad son diferentes y por eso falló la aserción.
