@@ -1,0 +1,59 @@
+A continuación, te presento la traducción del texto manteniendo el mismo formato:
+
+```
+1
+00:00:00,000 --> 00:00:07,000
+Entonces, en este punto, sabemos que la variable quote debe haberse establecido como verdadera en algún momento.
+
+2
+00:00:07,000 --> 00:00:13,000
+Porque inicialmente era falsa, pero ya sabemos que si se hubiera mantenido falsa,
+
+3
+00:00:13,000 --> 00:00:19,000
+entonces el carácter de menor que nunca se habría agregado a la salida.
+
+4
+00:00:19,000 --> 00:00:24,000
+Así que ahora hemos deducido que quote debe haberse establecido,
+
+5
+00:00:24,000 --> 00:00:29,000
+y solo hay un lugar en el programa donde se establece quote, que es aquí abajo.
+
+6
+00:00:29,000 --> 00:00:35,000
+Así que podemos deducir que esta larga condición, que verifica quote,
+
+7
+00:00:35,000 --> 00:00:42,000
+debe haberse cumplido en algún punto anterior al signo de menor que.
+
+8
+00:00:42,000 --> 00:00:45,000
+¿Por qué debe haber sido verdadera en algún punto anterior?
+
+9
+00:00:45,000 --> 00:00:49,000
+Bueno, porque en el momento en que el símbolo izquierdo era el signo de menor que
+
+10
+00:00:49,000 --> 00:00:52,000
+entonces la condición no se sostuvo.
+
+11
+00:00:52,000 --> 00:00:59,000
+Eso simplemente asumió que era el carácter justo antes del signo de menor que.
+
+12
+00:00:59,000 --> 00:01:03,000
+Entonces, la variable tag nunca se había establecido como verdadera.
+
+13
+00:01:03,000 --> 00:01:07,000
+Era falsa desde el principio y lo fue hasta el final.
+
+14
+00:01:07,000 --> 99:59:59,000
+Si miras esta condición, ¿cuál era el valor de c? Y nuevamente, te toca a ti.
+```

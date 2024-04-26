@@ -1,0 +1,68 @@
+
+1
+00:00:00,000 --> 00:00:05,000
+Lo que vamos a discutir hoy es cómo los errores se propagan en un programa,
+
+2
+00:00:05,000 --> 00:00:08,000
+es decir, de una variable a otra,
+
+3
+00:00:08,000 --> 00:00:13,000
+porque estas mismas dependencias luego nos ayudan a razonar hacia atrás.
+
+4
+00:00:13,000 --> 00:00:16,000
+Y este es nuestro segundo tema:
+
+5
+00:00:16,000 --> 00:00:21,000
+cómo podemos rastrear estas dependencias desde una falla observable
+
+6
+00:00:21,000 --> 00:00:23,000
+hasta una infección anterior
+
+7
+00:00:23,000 --> 00:00:26,000
+y luego a un defecto en el código.
+
+8
+00:00:26,000 --> 00:00:29,000
+Y para esto vamos a usar el método de Sherlock Holmes
+
+9
+00:00:29,000 --> 00:00:34,000
+que, por supuesto, es: "Elemental, mi querido Watson."
+
+10
+00:00:34,000 --> 00:00:38,000
+Pero primero, un cuestionario. ¿Te gusta Sherlock Holmes?
+
+11
+00:00:38,000 --> 00:00:40,000
+Aquí tienes tus opciones.
+
+12
+00:00:40,000 --> 00:00:43,000
+¿Es más como: "¡Soy su mayor fanático!"
+
+13
+00:00:43,000 --> 00:00:45,000
+O: "¿No está, como, desactualizado?"
+
+14
+00:00:45,000 --> 00:00:47,000
+O: "En realidad, lo encuentro molesto."
+
+15
+00:00:47,000 --> 00:00:49,000
+O: "¿Sherlock quién?"
+
+16
+00:00:49,000 --> 00:00:54,000
+Consejo: La respuesta a este cuestionario no determinará tu calificación
+
+17
+00:00:54,000 --> 99:59:59,000
+ni determinará el siguiente paso. Disfruta.

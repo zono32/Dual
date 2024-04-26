@@ -1,0 +1,137 @@
+
+1
+00:00:00,000 --> 00:00:03,000
+Bienvenidos de nuevo a nuestro curso sobre depuración.
+
+2
+00:00:03,000 --> 00:00:06,000
+El tema de hoy es rastrear los orígenes,
+
+3
+00:00:06,000 --> 00:00:09,000
+lo que significa cómo comenzar con una falla
+
+4
+00:00:09,000 --> 00:00:13,000
+y rastrear los orígenes de la falla hasta encontrar el defecto que la causa.
+
+5
+00:00:13,000 --> 00:00:15,000
+Pero antes de llegar allí, una pequeña historia.
+
+6
+00:00:15,000 --> 00:00:18,000
+Si eres fanático de Sherlock Holmes,
+
+7
+00:00:18,000 --> 00:00:22,000
+puede que recuerdes esta escena famosa en "Un escándalo en Bohemia."
+
+8
+00:00:22,000 --> 00:00:26,000
+Aquí tenemos al Dr. Watson y a Sherlock Holmes sentados junto a la chimenea.
+
+9
+00:00:26,000 --> 00:00:28,000
+No se han visto en algún tiempo,
+
+10
+00:00:28,000 --> 00:00:33,000
+y Sherlock comenta que Watson ha ganado 7 libras y media desde la última vez que se vieron.
+
+11
+00:00:33,000 --> 00:00:35,000
+Y Watson dice, "¿Cómo lo sabes?"
+
+12
+00:00:35,000 --> 00:00:38,000
+Y Sherlock responde, "Lo veo. Lo deduzco."
+
+13
+00:00:38,000 --> 00:00:42,000
+No solo descubre Sherlock que Watson ha ganado 7 libras,
+
+14
+00:00:42,000 --> 00:00:46,000
+también comenta que Watson se ha mojado mucho últimamente
+
+15
+00:00:46,000 --> 00:00:50,000
+y que su criada es torpe y descuidada.
+
+16
+00:00:50,000 --> 00:00:54,000
+Nuevamente, Watson pregunta, "¿Cómo demonios descubriste eso?"
+
+17
+00:00:54,000 --> 00:00:59,000
+"Oh, es de una simplicidad absoluta", dice Sherlock.
+
+18
+00:00:59,000 --> 00:01:03,000
+Lo que Holmes ve es que en el interior del zapato del Dr. Watson
+
+19
+00:01:03,000 --> 00:01:06,000
+hay una pequeña cantidad de rasguños,
+
+20
+00:01:06,000 --> 00:01:08,000
+que puede ver a la luz del fuego.
+
+21
+00:01:08,000 --> 00:01:13,000
+Deduce que estos rasguños fueron aplicados por alguien
+
+22
+00:01:13,000 --> 00:01:18,000
+que intentó limpiar el zapato de manera muy descuidada,
+
+23
+00:01:18,000 --> 00:01:21,000
+posiblemente la criada del Dr. Watson.
+
+24
+00:01:21,000 --> 00:01:25,000
+Y dado que el zapato tuvo que ser limpiado con un dispositivo tan tosco,
+
+25
+00:01:25,000 --> 00:01:30,000
+es probable que proviniera del barro por el que el Dr. Watson tuvo que correr
+
+26
+00:01:30,000 --> 00:01:32,000
+mientras se mojaba mucho.
+
+27
+00:01:32,000 --> 00:01:37,000
+Así es como Sherlock Holmes, a partir de una única observación,
+
+28
+00:01:37,000 --> 00:01:41,000
+puede deducir todos los eventos que llevaron a esta observación.
+
+29
+00:01:41,000 --> 00:01:45,000
+Debo agregar que, ante esta explicación,
+
+30
+00:01:45,000 --> 00:01:52,000
+el Dr. Watson exclama, "Sherlock, cuando te escucho dar tus razones,
+
+31
+00:01:52,000 --> 00:01:56,000
+siempre me parece tan ridículamente simple
+
+32
+00:01:56,000 --> 00:01:59,000
+que fácilmente podría hacerlo yo mismo.
+
+33
+00:01:59,000 --> 00:02:04,000
+Aunque, en cada instancia sucesiva de tu razonamiento,
+
+34
+00:02:04,000 --> 99:59:59,000
+me desconcierto hasta que explicas tu proceso."
+```

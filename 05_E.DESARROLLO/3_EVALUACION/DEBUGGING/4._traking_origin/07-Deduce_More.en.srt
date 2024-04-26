@@ -1,0 +1,29 @@
+
+1
+00:00:00,000 --> 00:00:02,000
+Pero hay más que podemos deducir del código.
+
+2
+00:00:02,000 --> 00:00:06,000
+Dado que el carácter era un signo de menor que,
+
+3
+00:00:06,000 --> 00:00:10,000
+tenemos una condición que verifica específicamente los signos de menor que, aquí arriba.
+
+4
+00:00:10,000 --> 00:00:14,000
+Sin embargo, esta condición aparentemente no resultó ser verdadera.
+
+5
+00:00:14,000 --> 00:00:18,000
+Por lo tanto, ahora podemos deducir el valor de la variable quote.
+
+6
+00:00:18,000 --> 00:00:20,000
+¿Cuál era el valor de la variable quote aquí?
+
+7
+00:00:20,000 --> 99:59:59,000
+Te toca a ti.
+```

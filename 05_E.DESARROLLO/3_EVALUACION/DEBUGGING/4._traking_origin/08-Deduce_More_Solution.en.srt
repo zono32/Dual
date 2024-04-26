@@ -1,0 +1,25 @@
+
+1
+00:00:00,000 --> 00:00:04,000
+Y ahora la respuesta--c era un signo de menor que.
+
+2
+00:00:04,000 --> 00:00:11,000
+Esta parte de la condición es verdadera, pero esta línea no se ejecutó. En cambio, se ejecutó esta línea.
+
+3
+00:00:11,000 --> 00:00:14,000
+Y, por lo tanto, toda esta condición debe haber sido falsa.
+
+4
+00:00:14,000 --> 00:00:19,000
+Dado que era falsa, quote debe haber sido verdadera porque ese es el valor
+
+5
+00:00:19,000 --> 00:00:22,000
+que convierte toda la condición en falsa.
+
+6
+00:00:22,000 --> 99:59:59,000
+Esta es la respuesta correcta.
+```

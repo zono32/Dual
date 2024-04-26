@@ -1,0 +1,15 @@
+1
+00:00:00,000 --> 00:00:06,000
+Hemos asumido que tag fue falso todo el tiempo, lo que al observar la intención de esta condición
+
+2
+00:00:06,000 --> 00:00:12,000
+significa que esta condición nunca debería haber resultado ser verdadera de todos modos.
+
+3
+00:00:12,000 --> 00:00:16,000
+Con los ojos de Sherlock Holmes, sin embargo, deduciríamos de inmediato que esta condición
+
+4
+00:00:16,000 --> 99:59:59,000
+solo puede mantenerse cuando la primera cláusula es verdadera, es decir, c era una comilla doble.

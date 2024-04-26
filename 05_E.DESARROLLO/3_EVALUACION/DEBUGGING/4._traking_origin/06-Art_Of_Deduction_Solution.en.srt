@@ -1,0 +1,18 @@
+
+
+1
+00:00:00,000 --> 00:00:02,000
+Aquí viene la respuesta al cuestionario.
+
+2
+00:00:02,000 --> 00:00:04,000
+Dado que esto aquí se ejecutó
+
+3
+00:00:04,000 --> 00:00:08,000
+y esta condición aquí arriba es que tag no podría haberse establecido,
+
+4
+00:00:08,000 --> 99:59:59,000
+podemos deducir que tag debe haber sido falso.
+```
