@@ -1,0 +1,77 @@
+A continuación se presenta la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:04,000
+Entonces, una manera muy simple--no es realmente eficiente, pero funciona--
+
+2
+00:00:04,000 --> 00:00:09,000
+es abrir el archivo, leer todas las líneas que luego vienen en un arreglo indexado por 0,
+
+3
+00:00:09,000 --> 00:00:12,000
+y luego simplemente tomamos el número de línea menos 1.
+
+4
+00:00:12,000 --> 00:00:14,000
+En el arreglo, las líneas comienzan con 0;
+
+5
+00:00:14,000 --> 00:00:16,000
+sin embargo, en nuestra traza las líneas comienzan con el número 1.
+
+6
+00:00:16,000 --> 00:00:21,000
+Y dado que las líneas ya contienen el carácter de nueva línea requerido,
+
+7
+00:00:21,000 --> 00:00:26,000
+ponemos una coma al final para suprimir el segundo carácter de nueva línea
+
+8
+00:00:26,000 --> 00:00:28,000
+que de otra manera sería emitido por la declaración `print`.
+
+9
+00:00:28,000 --> 00:00:30,000
+Vamos a probar esto.
+
+10
+00:00:30,000 --> 00:00:32,000
+Ejecutamos todo, y ahora con cada línea
+
+11
+00:00:32,000 --> 00:00:34,000
+se debería abrir el nombre del archivo, se debería leer la línea,
+
+12
+00:00:34,000 --> 00:00:37,000
+y se debería imprimir la línea ejecutada.
+
+13
+00:00:37,000 --> 00:00:40,000
+Ejecutamos todo, y esto es lo que obtenemos.
+
+14
+00:00:40,000 --> 00:00:43,000
+Ves que primero `tag` es falso, se está ejecutando,
+
+15
+00:00:43,000 --> 00:00:45,000
+luego `quote` es falso, se está ejecutando,
+
+16
+00:00:45,000 --> 00:00:48,000
+`out` siendo establecido en la cadena vacía se está ejecutando,
+
+17
+00:00:48,000 --> 00:00:51,000
+y aquí ahora puedes ver todo el programa
+
+18
+00:00:51,000 --> 00:00:56,000
+una por una mientras produce la salida.
+
+19
+00:00:56,000 --> 99:59:59,000
+Y esto es lo que conforma la traza real del programa.

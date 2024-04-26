@@ -1,0 +1,37 @@
+A continuación se presenta la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:03,000
+Nuevamente, la traza dinámica nos da la respuesta.
+
+2
+00:00:03,000 --> 00:00:10,000
+Tenemos la variable `quote`, que se lee aquí y se estableció por última vez aquí.
+
+3
+00:00:10,000 --> 00:00:14,000
+Así que esto se convierte en parte de la porción dinámica.
+
+4
+00:00:14,000 --> 00:00:17,000
+De la misma manera, tenemos `quote` que se lee aquí arriba, por ejemplo,
+
+5
+00:00:17,000 --> 00:00:19,000
+y se establece aquí.
+
+6
+00:00:19,000 --> 00:00:22,000
+Esto también se convierte en parte de la porción dinámica.
+
+7
+00:00:22,000 --> 00:00:27,000
+Sin embargo, estas dos líneas, `tag` siendo establecido en verdadero y `tag` siendo establecido en falso,
+
+8
+00:00:27,000 --> 00:00:33,000
+nunca se ejecutan y, por lo tanto, los valores que establecen en `tag`--
+
+9
+00:00:33,000 --> 99:59:59,000
+por lo tanto, estas dos declaraciones no se convierten en parte de la porción dinámica.

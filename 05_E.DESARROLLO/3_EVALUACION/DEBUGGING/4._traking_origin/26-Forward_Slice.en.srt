@@ -1,0 +1,45 @@
+A continuación se presenta la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:04,000
+Cuando hay porciones hacia atrás, también hay porciones hacia adelante.
+
+2
+00:00:04,000 --> 00:00:09,000
+Una porción hacia adelante contiene todas las declaraciones que dependen de una declaración específica.
+
+3
+00:00:09,000 --> 00:00:13,000
+Como ejemplo, vamos a crear una porción hacia adelante
+
+4
+00:00:13,000 --> 00:00:16,000
+de la inicialización de la variable `out`.
+
+5
+00:00:16,000 --> 00:00:20,000
+De manera muy obvia, la declaración de retorno final es parte de la porción hacia adelante
+
+6
+00:00:20,000 --> 00:00:25,000
+porque lee de una variable que se establece aquí, a saber, `out`;
+
+7
+00:00:25,000 --> 00:00:28,000
+por lo tanto, depende de datos de esta declaración anterior.
+
+8
+00:00:28,000 --> 00:00:30,000
+Y, por lo tanto, es parte de la porción hacia adelante.
+
+9
+00:00:30,000 --> 00:00:32,000
+Ahora para el quiz:
+
+10
+00:00:32,000 --> 00:00:36,000
+¿Qué otras declaraciones están contenidas en la porción hacia adelante de `S`?
+
+11
+00:00:36,000 --> 99:59:59,000
+Marca todas las que correspondan.

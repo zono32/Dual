@@ -1,0 +1,37 @@
+A continuación se presenta la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:03,000
+Bueno, en primer lugar, esto es un defecto
+
+2
+00:00:03,000 --> 00:00:06,000
+porque si una declaración produce una infección
+
+3
+00:00:06,000 --> 00:00:09,000
+entonces debe ser errónea en sí misma, y un error en el código
+
+4
+00:00:09,000 --> 00:00:12,000
+es lo que normalmente llamamos un defecto.
+
+5
+00:00:12,000 --> 00:00:16,000
+Dado que un defecto en esta situación implica que podemos solucionarlo
+
+6
+00:00:16,000 --> 00:00:19,000
+de modo que la infección desaparezca, también es una causa,
+
+7
+00:00:19,000 --> 00:00:22,000
+porque causa la infección en cuestión.
+
+8
+00:00:22,000 --> 00:00:25,000
+Sin embargo, el término infección solo se aplica a los estados del programa.
+
+9
+00:00:25,000 --> 99:59:59,000
+Por lo tanto, no es aplicable aquí.

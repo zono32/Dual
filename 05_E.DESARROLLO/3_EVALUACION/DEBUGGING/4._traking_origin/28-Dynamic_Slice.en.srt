@@ -1,0 +1,225 @@
+A continuación se presenta la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:04,000
+Lo interesante de las porciones es que pueden determinarse automáticamente.
+
+2
+00:00:04,000 --> 00:00:07,000
+Es decir, una herramienta de porciones puede determinar automáticamente
+
+3
+00:00:07,000 --> 00:00:10,000
+porciones hacia atrás de declaraciones individuales
+
+4
+00:00:10,000 --> 00:00:12,000
+y porciones hacia adelante de declaraciones individuales.
+
+5
+00:00:12,000 --> 00:00:16,000
+Estas herramientas de porciones estáticas, por lo tanto, pueden ayudarte a enfocarte
+
+6
+00:00:16,000 --> 00:00:18,000
+en partes específicas del programa,
+
+7
+00:00:18,000 --> 00:00:21,000
+diciéndote las posibles influencias de una declaración
+
+8
+00:00:21,000 --> 00:00:24,000
+o las posibles influencias hacia una declaración.
+
+9
+00:00:24,000 --> 00:00:27,000
+Sin embargo, las porciones se vuelven aún más interesantes
+
+10
+00:00:27,000 --> 00:00:29,000
+cuando las aplicamos no solo a programas
+
+11
+00:00:29,000 --> 00:00:31,000
+sino a ejecuciones reales.
+
+12
+00:00:31,000 --> 00:00:34,000
+Esto se llama porciones dinámicas.
+
+13
+00:00:34,000 --> 00:00:38,000
+Esto se aplica a ejecuciones en lugar de programas.
+
+14
+00:00:38,000 --> 00:00:41,000
+Es decir, en lugar de razonar en un programa
+
+15
+00:00:41,000 --> 00:00:44,000
+de dónde vino un valor,
+
+16
+00:00:44,000 --> 00:00:47,000
+observas la ejecución real, típicamente la ejecución fallida,
+
+17
+00:00:47,000 --> 00:00:50,000
+y por lo tanto, no solo sabes qué podría haber pasado,
+
+18
+00:00:50,000 --> 00:00:53,000
+sino que realmente ves lo que ha pasado.
+
+19
+00:00:53,000 --> 00:00:57,000
+La base de una porción dinámica no es el programa sino una traza.
+
+20
+00:00:57,000 --> 00:01:03,000
+Una traza enumera las declaraciones en el programa en el orden en el que se ejecutaron.
+
+21
+00:01:03,000 --> 00:01:07,000
+Por lo tanto, si la línea 3, por ejemplo, se ejecutó 4 veces seguidas,
+
+22
+00:01:07,000 --> 00:01:11,000
+entonces la traza contendrá la línea 3 cuatro veces
+
+23
+00:01:11,000 --> 00:01:13,000
+seguida por la línea 4, seguida por la línea 5,
+
+24
+00:01:13,000 --> 00:01:16,000
+y posiblemente volver a la línea 3 en caso de que haya un bucle.
+
+25
+00:01:16,000 --> 00:01:20,000
+Dentro de la traza, ahora podemos mirar nuevamente las dependencias.
+
+26
+00:01:20,000 --> 00:01:24,000
+Es decir, mirando qué variables se han leído
+
+27
+00:01:24,000 --> 00:01:27,000
+y qué variables se han escrito.
+
+28
+00:01:27,000 --> 00:01:31,000
+Y si encontramos, por ejemplo, que al final de la traza
+
+29
+00:01:31,000 --> 00:01:33,000
+alguna variable está mal,
+
+30
+00:01:33,000 --> 00:01:38,000
+podemos ahora seguir las dependencias en la ejecución
+
+31
+00:01:38,000 --> 00:01:42,000
+y nuevamente usar esto como base para depurar
+
+32
+00:01:42,000 --> 00:01:45,000
+al seguir la cadena de causa y efecto a través del programa.
+
+33
+00:01:45,000 --> 00:01:48,000
+Lo primero que necesitamos para esto es una traza.
+
+34
+00:01:48,000 --> 00:01:51,000
+Déjame mostrarte cómo obtener trazas para programas de Python.
+
+35
+00:01:51,000 --> 00:01:56,000
+Así que aquí, nuevamente, tenemos nuestra función original de eliminar la marca de HTML,
+
+36
+00:01:56,000 --> 00:02:00,000
+y lo que he escrito aquí abajo es, nuevamente, una función de trazado
+
+37
+00:02:00,000 --> 00:02:03,000
+que accede al nombre de archivo del código
+
+38
+00:02:03,000 --> 00:02:06,000
+así como al número de línea actual que se está ejecutando,
+
+39
+00:02:06,000 --> 00:02:08,000
+y lo imprimimos en la salida estándar.
+
+40
+00:02:08,000 --> 00:02:12,000
+Grabamos esto como nuestra función de trazado.
+
+41
+00:02:12,000 --> 00:02:16,000
+Usemos la versión "con errores" de la función de eliminar la marca de HTML aquí
+
+42
+00:02:16,000 --> 00:02:18,000
+para tener un poco más de diversión,
+
+43
+00:02:18,000 --> 00:02:21,000
+y la alimentamos con esta entrada muy simple, solo 2 caracteres,
+
+44
+00:02:21,000 --> 00:02:25,000
+comillas dobles y signo de menor que, que debería exponer el error.
+
+45
+00:02:25,000 --> 00:02:27,000
+Si vamos y ejecutamos esto,
+
+46
+00:02:27,000 --> 00:02:31,000
+entonces deberíamos poder ver la secuencia de líneas a medida que se ejecutan.
+
+47
+00:02:31,000 --> 00:02:33,000
+Y hacemos clic en Ejecutar.
+
+48
+00:02:33,000 --> 00:02:36,000
+Lo que vemos aquí es que primero se ejecutó la línea 4,
+
+49
+00:02:36,000 --> 00:02:40,000
+luego la línea 6, luego la línea 9, luego la línea 11,
+
+50
+00:02:40,000 --> 00:02:46,000
+la línea 13, la línea 14, y así es como avanzamos a través de la ejecución del programa.
+
+51
+00:02:46,000 --> 00:02:48,000
+Ahora, para un poco de ejercicio de programación.
+
+52
+00:02:48,000 --> 00:02:50,000
+Completa el programa que acabas de ver
+
+53
+00:02:50,000 --> 00:02:52,000
+para que imprima las líneas de código reales
+
+54
+00:02:52,000 --> 00:02:55,000
+en lugar de solo el nombre del archivo y el número.
+
+55
+00:02:55,000 --> 00:02:58,000
+Es decir, reemplaza la salida del nombre de archivo y número
+
+56
+00:02:58,000 --> 99:59:59,000
+por la línea de código real que está en ese archivo en esa posición.

@@ -1,0 +1,65 @@
+A continuación se presenta la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:04,000
+Bien. Vamos a completar esto. Estamos aquí en `quote` igual a no `quote`.
+
+2
+00:00:04,000 --> 00:00:09,000
+Esto depende de control de esta declaración anterior, que nuevamente lee de `C`,
+
+3
+00:00:09,000 --> 00:00:13,000
+que ya hemos visto las dependencias de `C` antes, pero también lee de `tag`.
+
+4
+00:00:13,000 --> 00:00:17,000
+Así que esto depende de todos los lugares donde se establece `tag`, y luego esto
+
+5
+00:00:17,000 --> 00:00:22,000
+es hasta aquí arriba, y luego si `tag` se establece o no, implica
+
+6
+00:00:22,000 --> 00:00:25,000
+una dependencia de control hacia las condiciones gobernantes.
+
+7
+00:00:25,000 --> 00:00:30,000
+Lo que suele ser más interesante en la porción hacia atrás en sí misma, es lo que
+
+8
+00:00:30,000 --> 00:00:33,000
+no está contenido en la porción hacia atrás.
+
+9
+00:00:33,000 --> 00:00:36,000
+Es decir, las declaraciones que no se verifican.
+
+10
+00:00:36,000 --> 00:00:39,000
+Lo que ves aquí son las declaraciones que no forman parte de la porción hacia atrás,
+
+11
+00:00:39,000 --> 00:00:45,000
+son declaraciones que se refieren a `out`, estableciendo `out`, verificando `out` y devolviendo `out`,
+
+12
+00:00:45,000 --> 00:00:53,000
+pero nada de lo que le sucede a `out` tiene un efecto en `tag` en este punto.
+
+13
+00:00:53,000 --> 00:00:57,000
+Y esto es precisamente lo que nos da la porción hacia atrás.
+
+14
+00:00:57,000 --> 00:01:04,000
+Nos dice si queremos saber por qué se ejecutó esta declaración.
+
+15
+00:01:04,000 --> 00:01:11,000
+Bueno, sabemos que no puede depender de `out`, porque no hay dependencia de `tag`
+
+16
+00:01:11,000 --> 99:59:59,000
+hacia `out` de ninguna manera, o `out` no puede influir en el valor de `tag` de ninguna manera.

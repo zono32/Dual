@@ -1,0 +1,161 @@
+A continuación se presenta la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:05,000
+Cuando razonamos sobre un programa, nuestro razonamiento sigue estas dependencias.
+
+2
+00:00:05,000 --> 00:00:09,000
+En este caso, si queremos saber de dónde proviene `C` o de dónde proviene `quote`,
+
+3
+00:00:09,000 --> 00:00:14,000
+seguimos las dependencias hasta las ubicaciones específicas, y podemos hacerlo nuevamente.
+
+4
+00:00:14,000 --> 00:00:16,000
+Si estamos aquí arriba, por ejemplo,
+
+5
+00:00:16,000 --> 00:00:19,000
+y queremos saber de dónde proviene `C`, bueno, `C` proviene de `S`,
+
+6
+00:00:19,000 --> 00:00:21,000
+y `S` proviene de aquí arriba.
+
+7
+00:00:21,000 --> 00:00:25,000
+`S` primero baja aquí, luego define `C`, y luego `C` se verifica.
+
+8
+00:00:25,000 --> 00:00:27,000
+De igual manera, si queremos saber de dónde proviene `quote`,
+
+9
+00:00:27,000 --> 00:00:29,000
+`quote` proviene de esta sentencia.
+
+10
+00:00:29,000 --> 00:00:32,000
+Entonces vemos nuevamente, aquí se está escribiendo `quote`, aquí se está leyendo `quote`.
+
+11
+00:00:32,000 --> 00:00:34,000
+Por lo tanto, esta sentencia depende de sí misma,
+
+12
+00:00:34,000 --> 00:00:37,000
+y `quote`, nuevamente, puede provenir de esta ubicación,
+
+13
+00:00:37,000 --> 00:00:39,000
+o puede provenir de la asignación original.
+
+14
+00:00:39,000 --> 00:00:42,000
+Es precisamente a lo largo de estas relaciones
+
+15
+00:00:42,000 --> 00:00:44,000
+que estructuramos nuestro razonamiento.
+
+16
+00:00:44,000 --> 00:00:48,000
+¿De dónde proviene este valor y dónde se estableció?
+
+17
+00:00:48,000 --> 00:00:50,000
+Si echamos un vistazo a esta sentencia, sin embargo,
+
+18
+00:00:50,000 --> 00:00:54,000
+encontraremos rápidamente que las dependencias de datos no son suficientes
+
+19
+00:00:54,000 --> 00:00:59,000
+porque el valor de `quote` aquí puede depender del valor anterior de `quote`,
+
+20
+00:00:59,000 --> 00:01:02,000
+pero también necesitamos tener en cuenta
+
+21
+00:01:02,000 --> 00:01:06,000
+que esta sentencia tenía que ejecutarse en primer lugar.
+
+22
+00:01:06,000 --> 00:01:11,000
+Para ser ejecutada, depende de condiciones anteriores.
+
+23
+00:01:11,000 --> 00:01:13,000
+Este es el concepto de dependencia de control.
+
+24
+00:01:13,000 --> 00:01:19,000
+Si hay alguna sentencia que controla si se ejecuta o no la sentencia B,
+
+25
+00:01:19,000 --> 00:01:24,000
+entonces B es dependiente de control de esa misma sentencia.
+
+26
+00:01:24,000 --> 00:01:26,000
+En nuestro ejemplo aquí arriba, por ejemplo,
+
+27
+00:01:26,000 --> 00:01:31,000
+la condición en A controla si se ejecuta o no la sentencia B.
+
+28
+00:01:31,000 --> 00:01:36,000
+Por lo tanto, B es dependiente de control de A.
+
+29
+00:01:36,000 --> 00:01:42,000
+Nuevamente, tales dependencias guían nuestro razonamiento.
+
+30
+00:01:42,000 --> 00:01:45,000
+Encontramos que B se ejecutó,
+
+31
+00:01:45,000 --> 00:01:48,000
+y queremos saber por qué se ejecutó después de todo.
+
+32
+00:01:48,000 --> 00:01:51,000
+Para averiguar por qué se ejecutó,
+
+33
+00:01:51,000 --> 00:01:54,000
+seguimos las dependencias de control.
+
+34
+00:01:54,000 --> 00:01:56,000
+Aquí hay un quiz.
+
+35
+00:01:56,000 --> 00:01:59,000
+¿De qué otra sentencia depende B?
+
+36
+00:01:59,000 --> 00:02:02,000
+¿Es esta para `C` en `S`?
+
+37
+00:02:02,000 --> 00:02:06,000
+¿Es esta la primera sentencia `if`?
+
+38
+00:02:06,000 --> 00:02:09,000
+¿Es esta la primera sentencia `elif`?
+
+39
+00:02:09,000 --> 00:02:13,000
+¿O es esta la última sentencia `elif`?
+
+40
+00:02:13,000 --> 99:59:59,000
+Marca todo lo que aplique.

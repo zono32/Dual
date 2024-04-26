@@ -1,0 +1,41 @@
+A continuación se presenta la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:02,000
+Eso fue bastante fácil.
+
+2
+00:00:02,000 --> 00:00:06,000
+Lo que necesitamos verificar son simplemente las declaraciones que leen la variable `out` aquí arriba,
+
+3
+00:00:06,000 --> 00:00:11,000
+que está aquí abajo: `out = out + c` y la aserción final.
+
+4
+00:00:11,000 --> 00:00:15,000
+Ahora podemos verificar si algo más depende de
+
+5
+00:00:15,000 --> 00:00:17,000
+la ejecución de estas declaraciones.
+
+6
+00:00:17,000 --> 00:00:21,000
+La única que está en el bucle es aquí: `out = out + c`,
+
+7
+00:00:21,000 --> 00:00:25,000
+pero ninguna de las otras declaraciones aquí arriba retiene algo de `out`.
+
+8
+00:00:25,000 --> 00:00:30,000
+Así que si quieres saber cómo esta configuración afecta las cosas aguas abajo,
+
+9
+00:00:30,000 --> 00:00:34,000
+la porción hacia adelante te dirá: "Bueno, solo puede afectar estas 3 líneas aquí abajo."
+
+10
+00:00:34,000 --> 99:59:59,000
+Nada más en el medio se verá afectado por el valor de `out`.

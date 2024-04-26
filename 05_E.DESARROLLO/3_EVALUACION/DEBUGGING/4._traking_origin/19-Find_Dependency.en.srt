@@ -1,0 +1,125 @@
+A continuación se presenta la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:02,000
+Echemos un vistazo nuevamente
+
+2
+00:00:02,000 --> 00:00:04,000
+a nuestra función de eliminar la marca de HTML.
+
+3
+00:00:04,000 --> 00:00:08,000
+Aquí estoy volviendo a la versión anterior,
+
+4
+00:00:08,000 --> 00:00:10,000
+que está más o menos arreglada.
+
+5
+00:00:10,000 --> 00:00:14,000
+Ahora veamos esta condición aquí arriba.
+
+6
+00:00:14,000 --> 00:00:16,000
+Queremos saber de dónde podría
+
+7
+00:00:16,000 --> 00:00:18,000
+haber venido posiblemente el valor central.
+
+8
+00:00:18,000 --> 00:00:21,000
+Para hacerlo, seguimos las dependencias de datos.
+
+9
+00:00:21,000 --> 00:00:23,000
+¿Qué sentencias son las que
+
+10
+00:00:23,000 --> 00:00:25,000
+dependen de datos de esta sentencia?
+
+11
+00:00:25,000 --> 00:00:27,000
+Para hacerlo, observaremos los lugares
+
+12
+00:00:27,000 --> 00:00:29,000
+donde se escribiría `quote`.
+
+13
+00:00:29,000 --> 00:00:32,000
+Y también que serían ejecutados
+
+14
+00:00:32,000 --> 00:00:35,000
+antes de que se ejecute esta sentencia.
+
+15
+00:00:35,000 --> 00:00:38,000
+Por ejemplo, esta sentencia dependería de datos
+
+16
+00:00:38,000 --> 00:00:40,000
+de esa sentencia anterior.
+
+17
+00:00:40,000 --> 00:00:43,000
+Porque aquí se está escribiendo `quote`,
+
+18
+00:00:43,000 --> 00:00:45,000
+y aquí se está leyendo `quote`.
+
+19
+00:00:45,000 --> 00:00:48,000
+Por lo tanto, la sentencia A aquí arriba establece el estado
+
+20
+00:00:48,000 --> 00:00:51,000
+que B sigue procesando más tarde.
+
+21
+00:00:51,000 --> 00:00:54,000
+Si quieres entender cómo se comporta B,
+
+22
+00:00:54,000 --> 00:00:56,000
+seguimos las dependencias de datos hacia A
+
+23
+00:00:56,000 --> 00:00:59,000
+y encontramos que esta es una de las sentencias
+
+24
+00:00:59,000 --> 00:01:01,000
+que establece el estado del que depende B.
+
+25
+00:01:01,000 --> 00:01:03,000
+Ahora, un quiz.
+
+26
+00:01:03,000 --> 00:01:07,000
+¿Cuáles son las otras sentencias de las que depende B?
+
+27
+00:01:07,000 --> 00:01:09,000
+¿Es esta para `C` en `S`,
+
+28
+00:01:09,000 --> 00:01:13,000
+es este `elf of C equals the greater sign and not quote`,
+
+29
+00:01:13,000 --> 00:01:15,000
+es este `quote equals not quote`,
+
+30
+00:01:15,000 --> 00:01:18,000
+o es este `out equals out plus C`?
+
+31
+00:01:18,000 --> 99:59:59,000
+Verifica todo lo que aplique.

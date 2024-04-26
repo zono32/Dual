@@ -1,0 +1,45 @@
+A continuación se presenta la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:07,000
+La sentencia `for` aquí arriba, de hecho, controla si este bloque completo se ejecuta o no.
+
+2
+00:00:07,000 --> 00:00:12,000
+Por lo tanto, también controla si B se ejecuta o no.
+
+3
+00:00:12,000 --> 00:00:17,000
+Si esta condición se cumple, entonces `tag` se establece en verdadero.
+
+4
+00:00:17,000 --> 00:00:23,000
+Si no se cumple, la ejecución se reanuda para las condiciones restantes.
+
+5
+00:00:23,000 --> 00:00:28,000
+Y, por lo tanto, esta condición `if` también controla si esto se ejecuta.
+
+6
+00:00:28,000 --> 00:00:31,000
+Lo mismo ocurre para la otra condición.
+
+7
+00:00:31,000 --> 00:00:35,000
+La última condición, sin embargo, solo controla si el carácter
+
+8
+00:00:35,000 --> 00:00:37,000
+será editado o no.
+
+9
+00:00:37,000 --> 00:00:41,000
+No tiene influencia sobre si se establece el código o no.
+
+10
+00:00:41,000 --> 00:00:48,000
+Por lo tanto, esta sentencia no influye en si B se ejecuta o no.
+
+11
+00:00:48,000 --> 99:59:59,000
+B no depende de control sobre ella.

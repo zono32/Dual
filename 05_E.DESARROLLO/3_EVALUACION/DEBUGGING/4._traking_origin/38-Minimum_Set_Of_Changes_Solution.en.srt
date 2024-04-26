@@ -1,0 +1,77 @@
+A continuación se presenta la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:04,000
+Aquí nuevamente tenemos un programa de eliminación de marcas HTML.
+
+2
+00:00:04,000 --> 00:00:07,000
+Aquí está la entrada que normalmente pasa.
+
+3
+00:00:07,000 --> 00:00:11,000
+Si hago clic en ejecutar, lo que obtengo es solo una comilla simple.
+
+4
+00:00:11,000 --> 00:00:14,000
+Es decir, probablemente se eliminó la etiqueta de apertura,
+
+5
+00:00:14,000 --> 00:00:17,000
+y, por supuesto, la aserción no se disparó.
+
+6
+00:00:17,000 --> 00:00:19,000
+Ahora estoy configurando una función de seguimiento,
+
+7
+00:00:19,000 --> 00:00:23,000
+que monitorea específicamente el momento.
+
+8
+00:00:23,000 --> 00:00:28,000
+La cabecera del bucle aquí en la línea 8 se alcanza por segunda vez.
+
+9
+00:00:28,000 --> 00:00:33,000
+Ahí es cuando configuro la variable `quote` a verdadero
+
+10
+00:00:33,000 --> 00:00:35,000
+como se encontró en la ejecución fallida.
+
+11
+00:00:35,000 --> 00:00:39,000
+Entonces, la pregunta es si al configurar la variable `quote`
+
+12
+00:00:39,000 --> 00:00:43,000
+en el valor encontrado en la ejecución fallida en este momento,
+
+13
+00:00:43,000 --> 00:00:48,000
+ya podemos convertir la ejecución que pasaba previamente en una ejecución fallida.
+
+14
+00:00:48,000 --> 00:00:51,000
+Descubrimos esto haciendo clic en ejecutar.
+
+15
+00:00:51,000 --> 00:00:55,000
+Como puedes ver, simplemente configurando la variable `quote` a verdadero,
+
+16
+00:00:55,000 --> 00:00:58,000
+ahora hemos disparado la aserción.
+
+17
+00:00:58,000 --> 00:01:04,000
+Esto significa que simplemente configurar la variable `quote` a verdadero
+
+18
+00:01:04,000 --> 00:01:06,000
+es suficiente para hacer que la ejecución que pasaba ahora falle.
+
+19
+00:01:06,000 --> 99:59:59,000
+Por lo tanto, hemos identificado a `quote` como una causa de la falla.

@@ -1,0 +1,117 @@
+A continuación se presenta la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:03,000
+Para concluir, vamos a utilizar la depuración delta
+
+2
+00:00:03,000 --> 00:00:05,000
+para hacer algo bastante interesante,
+
+3
+00:00:05,000 --> 00:00:08,000
+a saber, darnos un diagnóstico completo sobre lo que sucede
+
+4
+00:00:08,000 --> 00:00:10,000
+cuando el programa falla.
+
+5
+00:00:10,000 --> 00:00:13,000
+Nuestro diagnóstico se verá algo así:
+
+6
+00:00:13,000 --> 00:00:15,000
+Primero, esta variable tenía este valor.
+
+7
+00:00:15,000 --> 00:00:18,000
+Esto hizo que esta otra variable obtuviera este otro valor.
+
+8
+00:00:18,000 --> 00:00:21,000
+Luego, esta tercera variable se establece en este otro valor.
+
+9
+00:00:21,000 --> 00:00:24,000
+Eso es lo que finalmente hizo que el programa se bloqueara.
+
+10
+00:00:24,000 --> 00:00:28,000
+En otras palabras, lo que obtenemos es una cadena de causa-efecto
+
+11
+00:00:28,000 --> 00:00:32,000
+a lo largo del programa, que explica cómo se produjo la falla
+
+12
+00:00:32,000 --> 00:00:34,000
+en todo esto automáticamente.
+
+13
+00:00:34,000 --> 00:00:38,000
+Esta cadena de causa-efecto puede o no incluir los valores infectados,
+
+14
+00:00:38,000 --> 00:00:40,000
+pero con frecuencia lo hace.
+
+15
+00:00:40,000 --> 00:00:43,000
+Incluso si no lo hace, te ayuda a comprender inmediatamente
+
+16
+00:00:43,000 --> 00:00:45,000
+cómo se produjo la falla.
+
+17
+00:00:45,000 --> 00:00:47,000
+La idea básica es la siguiente:
+
+18
+00:00:47,000 --> 00:00:50,000
+Si podemos cambiar cualquiera de estas variables
+
+19
+00:00:50,000 --> 00:00:53,000
+de modo que la falla ya no ocurra,
+
+20
+00:00:53,000 --> 00:00:55,000
+entonces hemos encontrado una causa de falla.
+
+21
+00:00:55,000 --> 00:00:58,000
+¿Cómo deberíamos cambiar una variable?
+
+22
+00:00:58,000 --> 00:01:01,000
+Después de todo, las variables pueden tomar valores arbitrarios.
+
+23
+00:01:01,000 --> 00:01:03,000
+La regla no es hacer que usen valores arbitrarios,
+
+24
+00:01:03,000 --> 00:01:06,000
+sino usar valores de una ejecución exitosa.
+
+25
+00:01:06,000 --> 00:01:09,000
+Es decir, durante la ejecución cambiamos las variables
+
+26
+00:01:09,000 --> 00:01:12,000
+de los valores encontrados en la ejecución fallida
+
+27
+00:01:12,000 --> 00:01:15,000
+a valores encontrados en una ejecución exitosa.
+
+28
+00:01:15,000 --> 00:01:18,000
+Si podemos cambiar el valor de una variable de modo que la falla desaparezca,
+
+29
+00:01:18,000 --> 99:59:59,000
+tenemos una causa de falla.

@@ -1,0 +1,17 @@
+
+
+1
+00:00:00,000 --> 00:00:03,000
+Eso debió haber sido un hueso duro de roer.
+
+2
+00:00:03,000 --> 00:00:06,000
+La respuesta correcta es No.
+
+3
+00:00:06,000 --> 00:00:08,000
+La aserción no puede fallar.
+
+4
+00:00:08,000 --> 99:59:59,000
+Vamos a ver por qué este es el caso en la siguiente sección del curso.

@@ -1,0 +1,165 @@
+A continuación se presenta la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:04,000
+Aquí nuevamente está nuestro programa de eliminación de marcas HTML.
+
+2
+00:00:04,000 --> 00:00:09,000
+Si invocamos la eliminación de marcas HTML con `s` siendo una comilla simple
+
+3
+00:00:09,000 --> 00:00:12,000
+seguida de un signo menor que, pasa.
+
+4
+00:00:12,000 --> 00:00:17,000
+Sin embargo, si es una comilla doble seguida de un signo menor que, falla.
+
+5
+00:00:17,000 --> 00:00:21,000
+Por lo tanto, esta diferencia en la entrada original determina
+
+6
+00:00:21,000 --> 00:00:23,000
+si la ejecución pasa o falla.
+
+7
+00:00:23,000 --> 00:00:27,000
+Vamos a ejecutar el programa un poco más, pero detener la ejecución
+
+8
+00:00:27,000 --> 00:00:31,000
+cuando se alcance la cabecera del bucle por segunda vez.
+
+9
+00:00:31,000 --> 00:00:34,000
+Ahora nuevamente podemos examinar el estado.
+
+10
+00:00:34,000 --> 00:00:36,000
+La variable `s` permanece sin cambios en este punto.
+
+11
+00:00:36,000 --> 00:00:40,000
+El carácter `c` sigue siendo el primer carácter procesado.
+
+12
+00:00:40,000 --> 00:00:42,000
+¿Qué es diferente?
+
+13
+00:00:42,000 --> 00:00:44,000
+En la ejecución que pasa, es una comilla simple.
+
+14
+00:00:44,000 --> 00:00:46,000
+En la ejecución que falla, es una comilla doble.
+
+15
+00:00:46,000 --> 00:00:50,000
+La variable `tag` es falsa en ambos casos.
+
+16
+00:00:50,000 --> 00:00:52,000
+La variable `quote` es diferente.
+
+17
+00:00:52,000 --> 00:00:55,000
+En la ejecución que pasa, es falsa.
+
+18
+00:00:55,000 --> 00:00:59,000
+En la ejecución que falla, es verdadera.
+
+19
+00:00:59,000 --> 00:01:02,000
+En la ejecución que pasa, la variable `out` contiene una comilla simple.
+
+20
+00:01:02,000 --> 00:01:08,000
+Mientras que, en la ejecución que falla, la variable `out` está vacía.
+
+21
+00:01:08,000 --> 00:01:16,000
+Lo que ves en este punto es que cuatro variables, a saber, `s`, `c`, `quote` y `out`,
+
+22
+00:01:16,000 --> 00:01:19,000
+tienen valores diferentes.
+
+23
+00:01:19,000 --> 00:01:22,000
+Ahora puedes imaginar que si estuviéramos en la ejecución que pasa,
+
+24
+00:01:22,000 --> 00:01:25,000
+y estableciéramos estas cuatro variables
+
+25
+00:01:25,000 --> 00:01:29,000
+en los valores encontrados en la ejecución que falla,
+
+26
+00:01:29,000 --> 00:01:34,000
+entonces efectivamente convertiríamos la ejecución que pasa en una ejecución que falla,
+
+27
+00:01:34,000 --> 00:01:36,000
+lo que significa que estas cuatro variables,
+
+28
+00:01:36,000 --> 00:01:41,000
+que difieren, conforman una causa de la falla.
+
+29
+00:01:41,000 --> 00:01:48,000
+Sin embargo, basta con establecer solo un subconjunto de estas variables
+
+30
+00:01:48,000 --> 00:01:50,000
+en los valores encontrados en la ejecución que falla.
+
+31
+00:01:50,000 --> 00:01:55,000
+Solo un subconjunto de estas variables necesita ser cambiado
+
+32
+00:01:55,000 --> 00:02:00,000
+para provocar que la aserción falle,
+
+33
+00:02:00,000 --> 00:02:04,000
+y por lo tanto, que toda la ejecución falle.
+
+34
+00:02:04,000 --> 00:02:07,000
+Así que, aquí hay una pregunta.
+
+35
+00:02:07,000 --> 00:02:11,000
+¿Cuáles de estas cuatro variables pueden establecerse en valores de la ejecución que falla
+
+36
+00:02:11,000 --> 00:02:13,000
+para hacer que la ejecución que pasa falle?
+
+37
+00:02:13,000 --> 00:02:18,000
+¿Es `s`, `c`, `quote`, `out`,
+
+38
+00:02:18,000 --> 00:02:23,000
+o es una combinación de múltiples variables?
+
+39
+00:02:23,000 --> 00:02:28,000
+Pista: Si dijiste todas las cuatro, esta es la respuesta correcta.
+
+40
+00:02:28,000 --> 00:02:33,000
+Lo que quiero es un conjunto mínimo de variables.
+
+41
+00:02:33,000 --> 99:59:59,000
+Te toca a ti.

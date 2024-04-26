@@ -1,0 +1,53 @@
+A continuación se presenta la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:04,000
+Lo que puedes ver ahora es que, aunque hemos demostrado formalmente que nuestro código
+
+2
+00:00:04,000 --> 00:00:08,000
+no puede violar esta aserción, todavía puede haber otros problemas,
+
+3
+00:00:08,000 --> 00:00:11,000
+que simplemente no están especificados correctamente aún.
+
+4
+00:00:11,000 --> 00:00:16,000
+Así que cualquier prueba solo puede ser tan buena como la especificación en la que se basa.
+
+5
+00:00:16,000 --> 00:00:19,000
+Lo que, por supuesto, nuevamente es un llamado a buenas aserciones.
+
+6
+00:00:19,000 --> 00:00:24,000
+Porque si tienes buenas aserciones, obtienes buenas especificaciones, y esto
+
+7
+00:00:24,000 --> 00:00:27,000
+no solo te ayudará mucho en la depuración, también mejorará tus pruebas,
+
+8
+00:00:27,000 --> 00:00:32,000
+y como hemos visto, incluso puede permitir el uso de herramientas de deducción automática.
+
+9
+00:00:32,000 --> 00:00:34,000
+Pero ahora, para un ejercicio de programación.
+
+10
+00:00:34,000 --> 00:00:38,000
+Realmente me molesta mucho que esta función aún no esté completamente terminada.
+
+11
+00:00:38,000 --> 00:00:44,000
+Por favor, toma esta función y arréglala de manera que la marca de HTML se elimine correctamente.
+
+12
+00:00:44,000 --> 00:00:47,000
+Prometo que esta será la última vez que arreglaremos esta función.
+
+13
+00:00:47,000 --> 99:59:59,000
+Te toca a ti.

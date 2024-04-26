@@ -1,0 +1,125 @@
+A continuación se presenta la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:06,000
+En nuestro ejemplo, la porción dinámica excluyó solo 2 líneas del programa,
+
+2
+00:00:06,000 --> 00:00:08,000
+a saber, estas 2 líneas.
+
+3
+00:00:08,000 --> 00:00:11,000
+Esto puede no parecer mucho en términos de reducción.
+
+4
+00:00:11,000 --> 00:00:16,000
+En un programa más grande, sin embargo, una porción dinámica puede reducir
+
+5
+00:00:16,000 --> 00:00:19,000
+considerablemente el número de declaraciones a revisar.
+
+6
+00:00:19,000 --> 00:00:22,000
+Primero, contienen solo líneas ejecutadas.
+
+7
+00:00:22,000 --> 00:00:25,000
+Es decir, las líneas ejecutadas no se convierten en parte de la
+
+8
+00:00:25,000 --> 00:00:28,000
+porción dinámica en primer lugar.
+
+9
+00:00:28,000 --> 00:00:33,000
+Y, por supuesto, una línea que nunca se ejecuta no puede tener nada que ver con un error.
+
+10
+00:00:33,000 --> 00:00:36,000
+Sin embargo, podría tener algo que ver con una solución.
+
+11
+00:00:36,000 --> 00:00:41,000
+En segundo lugar, solo contienen declaraciones que realmente influyen en la salida.
+
+12
+00:00:41,000 --> 00:00:45,000
+Si tu salida contiene varias partes independientes,
+
+13
+00:00:45,000 --> 00:00:48,000
+entonces una porción dinámica de solo esa parte
+
+14
+00:00:48,000 --> 00:00:52,000
+será mucho, mucho más pequeña que el programa completo.
+
+15
+00:00:52,000 --> 00:00:57,000
+En 2010, realizamos un estudio sobre 7 errores en programas de Java
+
+16
+00:00:57,000 --> 00:01:01,000
+y medimos el tamaño de sus porciones dinámicas.
+
+17
+00:01:01,000 --> 00:01:06,000
+Para empezar, en promedio solo el 7.3% de las líneas
+
+18
+00:01:06,000 --> 00:01:08,000
+fueron realmente ejecutadas,
+
+19
+00:01:08,000 --> 00:01:11,000
+lo que significa que una simple herramienta de cobertura
+
+20
+00:01:11,000 --> 00:01:15,000
+que te dice qué declaraciones se ejecutan y cuáles no
+
+21
+00:01:15,000 --> 00:01:21,000
+realmente enfocará la búsqueda en una parte muy pequeña del programa.
+
+22
+00:01:21,000 --> 00:01:23,000
+Al observar la porción dinámica,
+
+23
+00:01:23,000 --> 00:01:26,000
+la reducción de tamaño se vuelve aún más evidente
+
+24
+00:01:26,000 --> 00:01:31,000
+porque, nuevamente, en promedio la porción dinámica abarcaba solo el 2.8%
+
+25
+00:01:31,000 --> 00:01:33,000
+de las líneas en el programa.
+
+26
+00:01:33,000 --> 00:01:36,000
+Dado que existen buenas herramientas disponibles
+
+27
+00:01:36,000 --> 00:01:39,000
+que calculan porciones dinámicas automáticamente,
+
+28
+00:01:39,000 --> 00:01:42,000
+usar una herramienta así en primer lugar te dirá inmediatamente
+
+29
+00:01:42,000 --> 00:01:46,000
+qué lugares del programa puedes ignorar de manera segura
+
+30
+00:01:46,000 --> 00:01:51,000
+porque no se ejecutan o porque no pueden haber influido
+
+31
+00:01:51,000 --> 99:59:59,000
+en la salida con respecto al error.

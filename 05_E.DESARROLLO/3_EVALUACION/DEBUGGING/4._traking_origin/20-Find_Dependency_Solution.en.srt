@@ -1,0 +1,53 @@
+A continuación se presenta la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:04,000
+Verifiquemos las variables que lee B.
+
+2
+00:00:04,000 --> 00:00:06,000
+Esta es la variable `C` y la variable `quote`.
+
+3
+00:00:06,000 --> 00:00:10,000
+Primero, revisemos `C`. ¿Dónde se está escribiendo `C`?
+
+4
+00:00:10,000 --> 00:00:13,000
+`C` se está asignando aquí en esta sentencia `for`.
+
+5
+00:00:13,000 --> 00:00:17,000
+Por lo tanto, esta sentencia es en efecto de la que B depende.
+
+6
+00:00:17,000 --> 00:00:19,000
+Siguiente más abajo.
+
+7
+00:00:19,000 --> 00:00:23,000
+Aquí tenemos `C` y `quote` de nuevo, pero solo están siendo leídas y no escritas.
+
+8
+00:00:23,000 --> 00:00:27,000
+Por lo tanto, estas no influyen en los datos en B.
+
+9
+00:00:27,000 --> 00:00:31,000
+Aquí abajo tenemos `quote equals not quote`. Esto es obvio.
+
+10
+00:00:31,000 --> 00:00:37,000
+`Quote` se está estableciendo, y por lo tanto, tenemos una dependencia de datos.
+
+11
+00:00:37,000 --> 00:00:40,000
+Finalmente, aquí tenemos `out equals out plus C`.
+
+12
+00:00:40,000 --> 00:00:46,000
+Aquí se está escribiendo la variable `out`, pero nada aquí lee la variable `out`.
+
+13
+00:00:46,000 --> 99:59:59,000
+Por lo tanto, no hay dependencia de datos.

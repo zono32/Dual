@@ -1,0 +1,37 @@
+A continuación se presenta la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:06,000
+Aún así, lo que pueden encontrar las herramientas automatizadas y lo que pueden encontrar los humanos, solo es correcto
+
+2
+00:00:06,000 --> 00:00:11,000
+con respecto a la especificación.
+
+3
+00:00:11,000 --> 00:00:15,000
+Y en este punto, no tenemos una especificación completa sobre lo que realmente debe hacer una función de eliminar
+
+4
+00:00:15,000 --> 00:00:17,000
+la marca de HTML.
+
+5
+00:00:17,000 --> 00:00:21,000
+Uno de mis estudiantes de doctorado me envió esta entrada.
+
+6
+00:00:21,000 --> 00:00:24,000
+Aquí está la marca de HTML, y aquí está el texto real.
+
+7
+00:00:24,000 --> 00:00:27,000
+Si alimentamos esto en el programa, ¿cuál es la salida?
+
+8
+00:00:27,000 --> 00:00:33,000
+¿Cuál es el resultado de la función de eliminar la marca de HTML cuando le damos esta cadena?
+
+9
+00:00:33,000 --> 99:59:59,000
+Te toca a ti.

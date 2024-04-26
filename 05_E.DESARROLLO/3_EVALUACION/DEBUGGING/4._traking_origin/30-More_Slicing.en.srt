@@ -1,0 +1,189 @@
+A continuación se presenta la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:03,000
+Aquí nuevamente tenemos nuestra traza dinámica,
+
+2
+00:00:03,000 --> 00:00:05,000
+ahora un poco más grande.
+
+3
+00:00:05,000 --> 00:00:10,000
+Recuerda que la entrada era una comilla doble seguida de un signo de menor que.
+
+4
+00:00:10,000 --> 00:00:16,000
+Lo que obtenemos al final es la salida, que es solo el signo de menor que.
+
+5
+00:00:16,000 --> 00:00:21,000
+En la traza dinámica, ahora podemos, nuevamente, seguir la dependencia hacia atrás.
+
+6
+00:00:21,000 --> 00:00:24,000
+Por ejemplo, desde `out`--`out` se lee aquí.
+
+7
+00:00:24,000 --> 00:00:26,000
+¿Dónde fue escrita por última vez?
+
+8
+00:00:26,000 --> 00:00:29,000
+Eso está por aquí, por lo que esto depende de esta declaración anterior.
+
+9
+00:00:29,000 --> 00:00:31,000
+Aquí tenemos `out` que se está leyendo.
+
+10
+00:00:31,000 --> 00:00:34,000
+Ahora, en la traza dinámica, puedes seguir todo esto
+
+11
+00:00:34,000 --> 00:00:38,000
+y ver dónde se escribió por última vez, nuevamente,
+
+12
+00:00:38,000 --> 00:00:40,000
+que está aquí arriba.
+
+13
+00:00:40,000 --> 00:00:44,000
+Y aquí tenemos el carácter `c`, que proviene de la segunda iteración del bucle `for`.
+
+14
+00:00:44,000 --> 00:00:49,000
+Y esto se relaciona con `s`, que depende de la entrada.
+
+15
+00:00:49,000 --> 00:00:53,000
+Entonces, nuevamente, tenemos una cadena de dependencias: `out` va aquí arriba,
+
+16
+00:00:53,000 --> 00:00:55,000
+aquí arriba, aquí arriba, aquí arriba,
+
+17
+00:00:55,000 --> 00:00:58,000
+y también puedes ver esto como una cadena de causa-efecto.
+
+18
+00:00:58,000 --> 00:01:03,000
+`s` tenía este valor; por lo tanto, `c` se convirtió en un signo de menor que,
+
+19
+00:01:03,000 --> 00:01:10,000
+que fue editado, lo que finalmente resultó en que la entrada también tuviera un signo de menor que.
+
+20
+00:01:10,000 --> 00:01:15,000
+Nuevamente, podemos usar estas dependencias para construir una porción.
+
+21
+00:01:15,000 --> 00:01:18,000
+Sin embargo, ahora la porción sería una porción dinámica
+
+22
+00:01:18,000 --> 00:01:22,000
+porque se basa en la traza dinámica.
+
+23
+00:01:22,000 --> 00:01:25,000
+Comenzando con la declaración `assert`,
+
+24
+00:01:25,000 --> 00:01:30,000
+vemos que `out=out+c` se está ejecutando,
+
+25
+00:01:30,000 --> 00:01:32,000
+y por lo tanto es parte de nuestra porción.
+
+26
+00:01:32,000 --> 00:01:36,000
+Vemos que la inicialización de `out` es parte de nuestra porción.
+
+27
+00:01:36,000 --> 00:01:39,000
+Vemos que el bucle `for` es parte de nuestra porción.
+
+28
+00:01:39,000 --> 00:01:43,000
+Y, por supuesto, cuando llamamos a "remove HTML markup"
+
+29
+00:01:43,000 --> 00:01:47,000
+donde se establece `s`, esto también se convierte en parte de nuestra porción dinámica.
+
+30
+00:01:47,000 --> 00:01:50,000
+Hasta ahora solo hemos visto dependencias de datos dinámicas,
+
+31
+00:01:50,000 --> 00:01:53,000
+pero por supuesto también hay dependencias de control dinámicas.
+
+32
+00:01:53,000 --> 00:01:59,000
+Cada condición que se evalúa, es decir, se ejecuta y controla
+
+33
+00:01:59,000 --> 00:02:02,000
+si una declaración en cuestión se ejecuta o no,
+
+34
+00:02:02,000 --> 00:02:04,000
+construye una dependencia de control dinámica.
+
+35
+00:02:04,000 --> 00:02:07,000
+Por lo tanto, dado que ejecutamos `out=out+c`,
+
+36
+00:02:07,000 --> 00:02:11,000
+las condiciones de control también forman parte de la porción dinámica.
+
+37
+00:02:11,000 --> 00:02:16,000
+A partir de estas condiciones, nuevamente obtenemos más dependencias de datos dinámicas,
+
+38
+00:02:16,000 --> 00:02:20,000
+que puedes buscar nuevamente en nuestra traza dinámica.
+
+39
+00:02:20,000 --> 00:02:24,000
+Por ejemplo, aquí la variable `tag`, que se lee aquí,
+
+40
+00:02:24,000 --> 00:02:26,000
+se configuró por última vez aquí arriba.
+
+41
+00:02:26,000 --> 00:02:32,000
+Por lo tanto, esta condición depende de datos de esta inicialización.
+
+42
+00:02:32,000 --> 00:02:34,000
+Así que aquí tienes un quiz.
+
+43
+00:02:34,000 --> 00:02:40,000
+¿Qué otras declaraciones en el programa también forman parte de la porción dinámica?
+
+44
+00:02:40,000 --> 00:02:43,000
+¿Es `quote=false`?
+
+45
+00:02:43,000 --> 00:02:45,000
+¿Es `tag=true`?
+
+46
+00:02:45,000 --> 00:02:47,000
+¿Es `tag=false`?
+
+47
+00:02:47,000 --> 99:59:59,000
+¿O es `quote=not quote`?

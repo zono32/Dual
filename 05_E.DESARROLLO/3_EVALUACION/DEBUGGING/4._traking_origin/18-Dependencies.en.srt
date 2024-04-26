@@ -1,0 +1,109 @@
+A continuación se presenta la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:02,000
+Después de esta breve desviación, volvamos a
+
+2
+00:00:02,000 --> 00:00:04,000
+el proceso de deducción real.
+
+3
+00:00:04,000 --> 00:00:07,000
+Cuando razonas sobre lo que podría haber sucedido en un programa,
+
+4
+00:00:07,000 --> 00:00:11,000
+vemos nuevamente la ejecución del programa como una sucesión de estados.
+
+5
+00:00:11,000 --> 00:00:14,000
+Y luego razonamos hacia atrás desde lo que
+
+6
+00:00:14,000 --> 00:00:17,000
+observamos hasta lo que podría haber sucedido antes.
+
+7
+00:00:17,000 --> 00:00:20,000
+Este razonamiento, este razonamiento hacia atrás
+
+8
+00:00:20,000 --> 00:00:24,000
+se estructura en función de las formas en que eventos anteriores
+
+9
+00:00:24,000 --> 00:00:27,000
+en el programa podrían haber influido en eventos posteriores.
+
+10
+00:00:27,000 --> 00:00:29,000
+El concepto más importante al
+
+11
+00:00:29,000 --> 00:00:33,000
+razonar hacia atrás se llama dependencia de datos.
+
+12
+00:00:33,000 --> 00:00:35,000
+La idea es la siguiente:
+
+13
+00:00:35,000 --> 00:00:38,000
+Tenemos 2 sentencias, digamos A y B en el programa,
+
+14
+00:00:38,000 --> 00:00:40,000
+y ahora A escribe una variable,
+
+15
+00:00:40,000 --> 00:00:42,000
+que luego es leída por B.
+
+16
+00:00:42,000 --> 00:00:45,000
+En nuestro ejemplo de arriba, A puede haber escrito esta variable,
+
+17
+00:00:45,000 --> 00:00:47,000
+y luego será leída por B.
+
+18
+00:00:47,000 --> 00:00:50,000
+Entonces decimos que estas 2 sentencias son dependientes de datos entre sí.
+
+19
+00:00:50,000 --> 00:00:53,000
+B es dependiente de datos de A
+
+20
+00:00:53,000 --> 00:00:55,000
+porque hay un flujo de datos
+
+21
+00:00:55,000 --> 00:00:57,000
+de la sentencia A a la sentencia B.
+
+22
+00:00:57,000 --> 00:01:00,000
+Este concepto de dependencia de datos nos permite
+
+23
+00:01:00,000 --> 00:01:03,000
+rastrear hacia atrás las posibles ubicaciones en el estado
+
+24
+00:01:03,000 --> 00:01:05,000
+así como las sentencias que los causaron
+
+25
+00:01:05,000 --> 00:01:08,000
+en la ejecución del programa y, por lo tanto,
+
+26
+00:01:08,000 --> 00:01:12,000
+aislar las posibles causas de una infección
+
+27
+00:01:12,000 --> 99:59:59,000
+y posteriormente el fallo.

@@ -1,0 +1,57 @@
+A continuación se presenta la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:05,000
+La pregunta es: ¿Podemos hacer algo así automáticamente?
+
+2
+00:00:05,000 --> 00:00:07,000
+La respuesta es sí.
+
+3
+00:00:07,000 --> 00:00:10,000
+Podemos hacerlo usando la depuración delta.
+
+4
+00:00:10,000 --> 00:00:12,000
+La idea es la siguiente.
+
+5
+00:00:12,000 --> 00:00:17,000
+En una ubicación dada, extraemos el estado de la ejecución fallida
+
+6
+00:00:17,000 --> 00:00:20,000
+así como de una ejecución exitosa.
+
+7
+00:00:20,000 --> 00:00:23,000
+Luego vamos y comparamos los estados.
+
+8
+00:00:23,000 --> 00:00:27,000
+Lo que obtenemos es un conjunto de diferencias
+
+9
+00:00:27,000 --> 00:00:33,000
+entre estados encontrados en la ejecución exitosa y estados encontrados en la ejecución fallida
+
+10
+00:00:33,000 --> 00:00:35,000
+para cada variable individual.
+
+11
+00:00:35,000 --> 00:00:42,000
+Con la depuración delta, ahora podemos encontrar un subconjunto mínimo de estas
+
+12
+00:00:42,000 --> 00:00:48,000
+diferencias que hace que la ejecución que pasa falle.
+
+13
+00:00:48,000 --> 00:00:51,000
+Este subconjunto mínimo en la ubicación dada
+
+14
+00:00:51,000 --> 99:59:59,000
+es la variable que causa la falla.

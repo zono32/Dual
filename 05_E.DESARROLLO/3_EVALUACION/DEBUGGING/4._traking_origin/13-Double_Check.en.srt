@@ -1,0 +1,331 @@
+A continuación se presenta la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:02,000
+De hecho, con esta solución aplicada,
+
+2
+00:00:02,000 --> 00:00:05,000
+la aserción ya no puede fallar.
+
+3
+00:00:05,000 --> 00:00:07,000
+Así es como va el argumento.
+
+4
+00:00:07,000 --> 00:00:09,000
+Para que la aserción falle,
+
+5
+00:00:09,000 --> 00:00:12,000
+la variable `out` debe contener un signo de menor que.
+
+6
+00:00:12,000 --> 00:00:16,000
+Dado que este es el único lugar donde se están agregando caracteres,
+
+7
+00:00:16,000 --> 00:00:18,000
+no se puede establecer la etiqueta.
+
+8
+00:00:18,000 --> 00:00:20,000
+La variable `quote`, sin embargo, debe estar configurada,
+
+9
+00:00:20,000 --> 00:00:22,000
+porque de lo contrario, habríamos pasado
+
+10
+00:00:22,000 --> 00:00:24,000
+por esa primera rama aquí.
+
+11
+00:00:24,000 --> 00:00:27,000
+Pero entonces, `quote` solo puede configurarse en esta misma ubicación,
+
+12
+00:00:27,000 --> 00:00:29,000
+pero esto no puede ser así
+
+13
+00:00:29,000 --> 00:00:30,000
+porque desde el paso 2,
+
+14
+00:00:30,000 --> 00:00:33,000
+ya sabemos que no se puede establecer la etiqueta,
+
+15
+00:00:33,000 --> 00:00:36,000
+y por lo tanto, tenemos una contradicción entre los dos,
+
+16
+00:00:36,000 --> 00:00:38,000
+lo que significa que la aserción nunca fallará.
+
+17
+00:00:38,000 --> 00:00:41,000
+Quote erat demonstratum,
+
+18
+00:00:41,000 --> 00:00:43,000
+significa lo que se demostró que se probó.
+
+19
+00:00:43,000 --> 00:00:45,000
+Esta fue una buena prueba, ¿no?
+
+20
+00:00:45,000 --> 00:00:49,000
+Debo confesar que no confío del todo en mi propia prueba.
+
+21
+00:00:49,000 --> 00:00:52,000
+Es muy similar a la cita de Don Knuth
+
+22
+00:00:52,000 --> 00:00:55,000
+quien una vez dijo cuidado con los errores en el código anterior.
+
+23
+00:00:55,000 --> 00:00:58,000
+Solo lo he demostrado correcto, no lo he probado.
+
+24
+00:00:58,000 --> 00:01:00,000
+Así que para verificar si mi código
+
+25
+00:01:00,000 --> 00:01:03,000
+ahora sería realmente correcto con respecto a esta aserción,
+
+26
+00:01:03,000 --> 00:01:07,000
+usé una herramienta de deducción automática.
+
+27
+00:01:07,000 --> 00:01:09,000
+La herramienta que utilicé se llama Pex.
+
+28
+00:01:09,000 --> 00:01:12,000
+Esta es una herramienta experimental de investigación de Microsoft,
+
+29
+00:01:12,000 --> 00:01:14,000
+que es un probador muy, muy minucioso,
+
+30
+00:01:14,000 --> 00:01:18,000
+que obtiene posibles entradas del código del programa.
+
+31
+00:01:18,000 --> 00:01:21,000
+Así que Pex hace los mismos pasos de deducción que
+
+32
+00:01:21,000 --> 00:01:24,000
+Sherlock Holmes haría o como yo lo haría o como tú lo harías
+
+33
+00:01:24,000 --> 00:01:26,000
+para llegar a entradas
+
+34
+00:01:26,000 --> 00:01:29,000
+que causen que falle una aserción incorporada.
+
+35
+00:01:29,000 --> 00:01:32,000
+Y mi idea era que, si Pex no encontraba nada,
+
+36
+00:01:32,000 --> 00:01:34,000
+entonces es probable que mi programa sea realmente correcto.
+
+37
+00:01:34,000 --> 00:01:36,000
+Vamos a ver a Pex en acción.
+
+38
+00:01:36,000 --> 00:01:40,000
+La herramienta Pex tiene su propia página web donde puedes probarla.
+
+39
+00:01:40,000 --> 00:01:45,000
+Se llama [www.pexforfun.com](http://www.pexforfun.com).
+
+40
+00:01:45,000 --> 00:01:48,000
+Aquí puedes ingresar un código
+
+41
+00:01:48,000 --> 00:01:51,000
+que deseas que Pex pruebe automáticamente.
+
+42
+00:01:51,000 --> 00:01:54,000
+Y como Pex funciona para los lenguajes
+
+43
+00:01:54,000 --> 00:01:57,000
+C sharp, Visual Basic y F sharp,
+
+44
+00:01:57,000 --> 00:02:01,000
+convertí nuestra función de eliminar la marca HTML a C sharp.
+
+45
+00:02:01,000 --> 00:02:04,000
+Aquí ves la función, la he renombrado a puzzle
+
+46
+00:02:04,000 --> 00:02:06,000
+para que coincida con las convenciones de Pex for fun.
+
+47
+00:02:06,000 --> 00:02:08,000
+Aquí está la precondición.
+
+48
+00:02:08,000 --> 00:02:11,000
+La cadena que se ha pasado no debe ser nula,
+
+49
+00:02:11,000 --> 00:02:13,000
+lo cual es algo especial de C sharp.
+
+50
+00:02:13,000 --> 00:02:16,000
+Y aquí tenemos el bucle sobre todos los elementos individuales,
+
+51
+00:02:16,000 --> 00:02:18,000
+estableciendo `tag` y estableciendo `quote`,
+
+52
+00:02:18,000 --> 00:02:20,000
+o agregando los caracteres al resultado.
+
+53
+00:02:20,000 --> 00:02:22,000
+Al final, tenemos una aserción.
+
+54
+00:02:22,000 --> 00:02:26,000
+El resultado no debe contener un carácter de menor que.
+
+55
+00:02:26,000 --> 00:02:28,000
+Primero probemos esto en la versión con errores
+
+56
+00:02:28,000 --> 00:02:31,000
+y veamos si Pex puede encontrar el error.
+
+57
+00:02:31,000 --> 00:02:33,000
+Hacemos clic en "Ask Pex" (preguntar a Pex),
+
+58
+00:02:33,000 --> 00:02:36,000
+y ahora ves una serie de entradas interesantes,
+
+59
+00:02:36,000 --> 00:02:39,000
+y todas estas serían entradas que cubren varias partes del código.
+
+60
+00:02:39,000 --> 00:02:42,000
+Al final, lo que ves aquí,
+
+61
+00:02:42,000 --> 00:02:43,000
+es un mensaje de error.
+
+62
+00:02:43,000 --> 00:02:46,000
+La aserción ha fallado,
+
+63
+00:02:46,000 --> 00:02:48,000
+y la aserción falla precisamente en nuestra entrada defectuosa,
+
+64
+00:02:48,000 --> 00:02:52,000
+comillas dobles seguidas de un signo de menor que.
+
+65
+00:02:52,000 --> 00:02:55,000
+Así que Pex ha podido, al pasar por el código,
+
+66
+00:02:55,000 --> 00:02:57,000
+llegar a la misma entrada fallida exacta
+
+67
+00:02:57,000 --> 00:02:59,000
+como en nuestro ejemplo de deducción.
+
+68
+00:02:59,000 --> 00:03:01,000
+Ahora he ido y arreglado el programa.
+
+69
+00
+
+:03:01,000 --> 00:03:03,000
+La pregunta es si Pex puede ahora
+
+70
+00:03:03,000 --> 00:03:06,000
+encontrar una entrada que haga que falle la aserción.
+
+71
+00:03:06,000 --> 00:03:08,000
+Y de nuevo, le preguntamos a Pex.
+
+72
+00:03:08,000 --> 00:03:10,000
+Y de nuevo, presenta una serie de entradas interesantes.
+
+73
+00:03:10,000 --> 00:03:13,000
+Todas estas entradas interesantes hacen que el programa funcione correctamente.
+
+74
+00:03:13,000 --> 00:03:16,000
+Es decir, a pesar de sus mejores esfuerzos,
+
+75
+00:03:16,000 --> 00:03:19,000
+y Pex es realmente muy bueno en detectar errores,
+
+76
+00:03:19,000 --> 00:03:22,000
+Pex no ha encontrado una sola entrada
+
+77
+00:03:22,000 --> 00:03:24,000
+que haga que falle la aserción.
+
+78
+00:03:24,000 --> 00:03:28,000
+Así que para el programa corregido, incluso Pex dice que esto es correcto,
+
+79
+00:03:28,000 --> 00:03:31,000
+y yo mismo también he dicho que esto es correcto.
+
+80
+00:03:31,000 --> 00:03:35,000
+Si no confías en una herramienta de deducción automática, puedes creerme a mí,
+
+81
+00:03:35,000 --> 00:03:39,000
+y si no me crees a mí, puedes confiar en una herramienta de deducción automática.
+
+82
+00:03:39,000 --> 99:59:59,000
+Juntos creamos un gran nivel de confianza en este programa.
