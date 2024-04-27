@@ -1,0 +1,93 @@
+Aquí tienes el texto traducido siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:03,000
+La respuesta a esta pregunta es sí,
+
+2
+00:00:03,000 --> 00:00:08,000
+o al menos que la estructura del equipo puede importar.
+
+3
+00:00:08,000 --> 00:00:14,000
+Un estudio muy interesante en Microsoft examinó cómo se componían los equipos responsables
+
+4
+00:00:14,000 --> 00:00:17,000
+de características individuales.
+
+5
+00:00:17,000 --> 00:00:22,000
+Más específicamente, el estudio buscaba cuán distante
+
+6
+00:00:22,000 --> 00:00:25,000
+era el gerente común de un equipo.
+
+7
+00:00:25,000 --> 00:00:30,000
+Si hubiera un gerente común directo para todos los miembros del equipo,
+
+8
+00:00:30,000 --> 00:00:35,000
+esa distancia sería 1, y si su gerente común estuviera, digamos,
+
+9
+00:00:35,000 --> 00:00:41,000
+a dos niveles de distancia, entonces la distancia sería 2.
+
+10
+00:00:41,000 --> 00:00:49,000
+Si el gerente común más bajo de un equipo fuera, digamos, Steve Ballmer,
+
+11
+00:00:49,000 --> 00:00:54,000
+el gerente de Microsoft, entonces la distancia sería 7 u 8 o cualquiera que sea
+
+12
+00:00:54,000 --> 00:00:58,000
+el número de niveles de gestión en Microsoft.
+
+13
+00:00:58,000 --> 00:01:04,000
+Ahora, resultó que cuanto mayor era esta distancia, más propensos a errores eran
+
+14
+00:01:04,000 --> 00:01:07,000
+los módulos producidos por ese equipo.
+
+15
+00:01:07,000 --> 00:01:13,000
+La suposición es que si no hay una gestión conjunta en un equipo
+
+16
+00:01:13,000 --> 00:01:17,000
+donde cada decisión primero debe subir al nivel más alto y luego volver,
+
+17
+00:01:17,000 --> 00:01:20,000
+esto dificulta particularmente el trabajo en equipo.
+
+18
+00:01:20,000 --> 00:01:23,000
+También hace que sea difícil tomar decisiones,
+
+19
+00:01:23,000 --> 00:01:28,000
+y hace que sea difícil crear una responsabilidad común
+
+20
+00:01:28,000 --> 00:01:30,000
+para el módulo en el que estás trabajando.
+
+21
+00:01:30,000 --> 00:01:33,000
+Este estudio se realizó en Windows Vista.
+
+22
+00:01:33,000 --> 00:01:39,000
+Como resultado de ese estudio, Microsoft reorganizó los equipos
+
+23
+00:01:39,000 --> 99:59:59,000
+para versiones posteriores de Windows de manera que situaciones como estas ya no ocurrieran.

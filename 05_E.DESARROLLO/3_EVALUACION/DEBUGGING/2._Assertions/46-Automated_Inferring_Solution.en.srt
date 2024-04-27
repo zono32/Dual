@@ -1,0 +1,73 @@
+Aquí tienes el texto traducido siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:02,000
+Muchas gracias, y ahora por la respuesta.
+
+2
+00:00:02,000 --> 00:00:07,000
+La respuesta es que si queremos tener rangos correctos para las variables de entrada
+
+3
+00:00:07,000 --> 00:00:09,000
+así como para las variables de salida,
+
+4
+00:00:09,000 --> 00:00:13,000
+necesitamos proporcionar estos rangos al llamar a raíz cuadrada.
+
+5
+00:00:13,000 --> 00:00:17,000
+En nuestro caso, el rango correcto para x es de 0 a maxint.
+
+6
+00:00:17,000 --> 00:00:22,000
+Si invocamos raíz cuadrada con 0, y si invocamos raíz cuadrada con el número entero máximo,
+
+7
+00:00:22,000 --> 00:00:26,000
+lo que vamos a obtener es que x es mayor o igual que 0
+
+8
+00:00:26,000 --> 00:00:30,000
+y x es menor o igual que maxint,
+
+9
+00:00:30,000 --> 00:00:32,000
+lo cual es en realidad el rango correcto.
+
+10
+00:00:32,000 --> 00:00:36,000
+De la misma manera, hemos aprendido que el valor de retorno siempre es mayor o igual que 0,
+
+11
+00:00:36,000 --> 00:00:40,000
+y siempre es menor o igual que la raíz cuadrada de maxint.
+
+12
+00:00:40,000 --> 00:00:44,000
+Si invocamos la raíz cuadrada con un valor de 1, esto no cambiará mucho.
+
+13
+00:00:44,000 --> 00:00:48,000
+Ampliaremos ligeramente el rango, pero no obtendremos el 0 aquí.
+
+14
+00:00:48,000 --> 00:00:50,000
+Esto en realidad no es necesario.
+
+15
+00:00:50,000 --> 00:00:56,000
+Si invocamos raíz cuadrada con -1, entonces en realidad violaremos la precondición implícita.
+
+16
+00:00:56,000 --> 00:00:59,000
+Esperemos que raíz cuadrada entonces falle
+
+17
+00:00:59,000 --> 00:01:02,000
+de manera que Daikon pueda deducir que si invocamos raíz cuadrada
+
+18
+00:01:02,000 --> 99:59:59,000
+con un número negativo, falla. Estos dos son los valores correctos.

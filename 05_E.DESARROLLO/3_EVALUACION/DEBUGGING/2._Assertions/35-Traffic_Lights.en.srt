@@ -1,0 +1,87 @@
+1
+00:00:00,000 --> 00:00:06,000
+Con todas estas consideraciones, imaginemos que estamos trabajando en un sistema de semáforos.
+
+2
+00:00:06,000 --> 00:00:10,000
+Tenemos tres colores aquí: rojo, ámbar y verde.
+
+3
+00:00:10,000 --> 00:00:12,000
+Ahora, tenemos un pequeño fragmento de código aquí,
+
+4
+00:00:12,000 --> 00:00:15,000
+que afecta el tráfico en función del semáforo.
+
+5
+00:00:15,000 --> 00:00:18,000
+Supongamos que esto es parte de alguna simulación de tráfico.
+
+6
+00:00:18,000 --> 00:00:21,000
+Entonces, si la luz está en rojo, el tráfico debe detenerse.
+
+7
+00:00:21,000 --> 00:00:25,000
+Si la luz está en ámbar, el tráfico debe prepararse para detenerse.
+
+8
+00:00:25,000 --> 00:00:28,000
+Y si la luz está en verde, el tráfico debe avanzar.
+
+9
+00:00:28,000 --> 00:00:32,000
+Ahora, siendo buenos programadores, siempre asumimos que algo va mal
+
+10
+00:00:32,000 --> 00:00:37,000
+si la luz no es ni roja, ni ámbar, ni verde,
+
+11
+00:00:37,000 --> 00:00:41,000
+lo cual, en principio, no debería suceder, pero debido a algún error, podría ocurrir.
+
+12
+00:00:41,000 --> 00:00:46,000
+¿Qué debería ir aquí donde está el signo de interrogación? Te daré cuatro opciones.
+
+13
+00:00:46,000 --> 00:00:49,000
+Primero, imprimir "Esto no puede suceder" en la consola
+
+14
+00:00:49,000 --> 00:00:52,000
+con la esperanza de que alguien eventualmente lo vea.
+
+15
+00:00:52,000 --> 00:00:55,000
+Segundo, lanzar una excepción de aserción.
+
+16
+00:00:55,000 --> 00:00:58,000
+Sabemos que el programa se abortará inmediatamente.
+
+17
+00:00:58,000 --> 00:01:03,000
+Tercero, escribir assert false, documentando claramente que esto no se espera.
+
+18
+00:01:03,000 --> 00:01:09,000
+Última opción, escribir pass, que es una declaración de Python que no hace nada.
+
+19
+00:01:09,000 --> 00:01:13,000
+Después de todo, este error en el semáforo puede desaparecer eventualmente
+
+20
+00:01:13,000 --> 00:01:17,000
+en el siguiente ciclo cuando volvamos a un estado definido.
+
+21
+00:01:17,000 --> 00:01:20,000
+¿Cuál de estas cuatro es la mejor opción para usar aquí
+
+22
+00:01:20,000 --> 99:59:59,000
+considerando los pros y los contras de las aserciones que hemos visto? Te toca.

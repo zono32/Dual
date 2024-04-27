@@ -1,0 +1,29 @@
+Aquí tienes el texto traducido siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:06,000
+Al final del día, lo que el área de minería de dicha información ha descubierto, sin embargo,
+
+2
+00:00:06,000 --> 00:00:12,000
+es que aunque puede haber reglas generales, también hay muchas y muchas
+
+3
+00:00:12,000 --> 00:00:17,000
+características específicas de los proyectos que se correlacionan con la densidad de errores.
+
+4
+00:00:17,000 --> 00:00:24,000
+Por lo tanto, es recomendable primero echar un vistazo a tus propios datos de defectos
+
+5
+00:00:24,000 --> 00:00:27,000
+y luego averiguar cuáles son los puntos calientes
+
+6
+00:00:27,000 --> 00:00:32,000
+y pensar en posibles formas de aprender de errores pasados y mejorar las cosas
+
+7
+00:00:32,000 --> 99:59:59,000
+para el futuro.

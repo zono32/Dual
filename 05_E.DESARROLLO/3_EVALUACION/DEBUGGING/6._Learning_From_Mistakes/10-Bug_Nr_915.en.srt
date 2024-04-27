@@ -1,0 +1,9 @@
+Aquí tienes el texto traducido siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:06,000
+Ahora para un cuestionario: ¿Cuándo se presentó el error número 915?
+
+2
+00:00:06,000 --> 99:59:59,000
+¿Fue esto en 1992, 1998, 2002 o 2009?

@@ -1,0 +1,67 @@
+1
+00:00:00,000 --> 00:00:05,000
+Otra implicación es que no debes usar aserciones para verificar precondiciones públicas,
+
+2
+00:00:05,000 --> 00:00:09,000
+que son condiciones que tu programa debe verificar de todos modos
+
+3
+00:00:09,000 --> 00:00:12,000
+para garantizar la integridad de los datos provenientes de terceros.
+
+4
+00:00:12,000 --> 00:00:17,000
+Por ejemplo, si tienes, digamos, un sitio web o dispositivo, myaccount.com,
+
+5
+00:00:17,000 --> 00:00:21,000
+donde los usuarios pueden ingresar cantidades arbitrarias de datos para ser procesados,
+
+6
+00:00:21,000 --> 00:00:25,000
+entonces no uses una aserción para verificar la integridad de estos datos;
+
+7
+00:00:25,000 --> 00:00:30,000
+en su lugar, utiliza una verificación que no sea opcional y que siempre permanezca activa.
+
+8
+00:00:30,000 --> 00:00:34,000
+En nuestro ejemplo aquí es algo que no deberías escribir.
+
+9
+00:00:34,000 --> 00:00:38,000
+Aquí, obtenemos una entrada, la convertimos en un entero, la almacenamos y depositamos
+
+10
+00:00:38,000 --> 00:00:41,000
+y luego usamos una aserción para verificar estos datos externos
+
+11
+00:00:41,000 --> 00:00:44,000
+para asegurarnos de que el depósito sea mayor o igual a 0.
+
+12
+00:00:44,000 --> 00:00:48,000
+Tan pronto como se desactiva la aserción, esta verificación ya no se realizará,
+
+13
+00:00:48,000 --> 00:00:52,000
+por lo que sería posible ingresar números de depósito negativos.
+
+14
+00:00:52,000 --> 00:00:54,000
+Lo que debes hacer en su lugar es una verificación regular.
+
+15
+00:00:54,000 --> 00:00:59,000
+Si tienes datos no válidos que provienen de un tercero, lanza una excepción,
+
+16
+00:00:59,000 --> 00:01:02,000
+detén la ejecución, muestra un mensaje de error
+
+17
+00:01:02,000 --> 99:59:59,000
+o haz lo que sea más apropiado para la situación.

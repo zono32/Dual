@@ -1,0 +1,111 @@
+1
+00:00:00,000 --> 00:00:04,000
+A veces, durante la depuración, hay situaciones en las que deseas asegurarte
+
+2
+00:00:04,000 --> 00:00:07,000
+de que alguna propiedad se mantenga durante toda la ejecución.
+
+3
+00:00:07,000 --> 00:00:09,000
+Permíteme darte un ejemplo de eso.
+
+4
+00:00:09,000 --> 00:00:15,000
+Supón que tienes un programa de Python muy grande con docenas o incluso cientos de módulos.
+
+5
+00:00:15,000 --> 00:00:20,000
+Supongamos que, debido a alguna decisión de diseño, existe una variable global llamada *flag*
+
+6
+00:00:20,000 --> 00:00:24,000
+que es accesible desde todos estos módulos y todos estos módulos
+
+7
+00:00:24,000 --> 00:00:30,000
+podrían cambiar el valor de *flag*; leer *flag*, escribir en *flag*.
+
+8
+00:00:30,000 --> 00:00:34,000
+Pero ahora tienes una ejecución en la que *flag* no debería estar activada y sin embargo lo está.
+
+9
+00:00:34,000 --> 00:00:38,000
+Y tienes todos estos lugares en el programa donde se podría establecer la variable,
+
+10
+00:00:38,000 --> 00:00:41,000
+pero no sabes dónde está ocurriendo.
+
+11
+00:00:41,000 --> 00:00:45,000
+Lo que deseas tener en esta situación es una comprobación que se ejecute
+
+12
+00:00:45,000 --> 00:00:48,000
+en todo momento durante la ejecución del programa
+
+13
+00:00:48,000 --> 00:00:52,000
+y que monitoree el momento en que *flag* se establece en verdadero.
+
+14
+00:00:52,000 --> 00:00:58,000
+De una unidad anterior, puedes recordar la funcionalidad de rastreo en Python.
+
+15
+00:00:58,000 --> 00:01:02,000
+Al usar la función `sys.settrace`, puedes especificar una función.
+
+16
+00:01:02,000 --> 00:01:08,000
+Aquí, `trace` se ejecutará después de que se ejecute cada línea de tu programa.
+
+17
+00:01:08,000 --> 00:01:13,000
+Y podemos configurar esta función `trace` para que después de cada línea,
+
+18
+00:01:13,000 --> 00:01:20,000
+verifique el estado de la variable global *flag* y aborte la ejecución tan pronto como *flag* se convierta en verdadero.
+
+19
+00:01:20,000 --> 00:01:26,000
+Como cualquier función de rastreo, se devuelve a sí misma para que se ejecute con la siguiente línea.
+
+20
+00:01:26,000 --> 00:01:30,000
+Tan pronto como tengas este verificador en su lugar, *flag* se verificará
+
+21
+00:01:30,000 --> 00:01:35,000
+después de cada línea de ejecución y podrás monitorear exactamente dónde se establece *flag*.
+
+22
+00:01:35,000 --> 00:01:39,000
+Y esto, por supuesto, es cierto para estructuras de datos arbitrarias.
+
+23
+00:01:39,000 --> 00:01:44,000
+Si tienes estructuras de datos, digamos *store*, que pueden ser accedidas
+
+24
+00:01:44,000 --> 00:01:50,000
+desde muchos lugares, entonces una llamada a *store.checkRep* asegurará que *store*
+
+25
+00:01:50,000 --> 00:01:53,000
+sea consistente para cada línea ejecutada.
+
+26
+00:01:53,000 --> 00:01:57,000
+Solo asegúrate de desactivarlo mientras *store* ejecuta sus propios métodos
+
+27
+00:01:57,000 --> 99:59:59,000
+porque mientras se ejecutan estos métodos internos,
+
+28
+00:02:00,000 --> 99:59:59,000
+*store* naturalmente violará sus propias invariantes de datos internas.

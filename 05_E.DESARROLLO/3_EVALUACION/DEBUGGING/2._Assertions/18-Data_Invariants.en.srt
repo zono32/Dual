@@ -1,0 +1,161 @@
+Aquí tienes la traducción al español siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:08,000
+En este punto hemos visto que escribir aserciones perfectas que cubran todos los errores es bastante difícil,
+
+2
+00:00:08,000 --> 00:00:13,000
+pero esto no debería impedirnos escribir aserciones que detecten tantos errores como sea posible,
+
+3
+00:00:13,000 --> 00:00:16,000
+y esto es particularmente útil en la depuración.
+
+4
+00:00:16,000 --> 00:00:19,000
+Dado que las aserciones son automáticas, pueden verificar
+
+5
+00:00:19,000 --> 00:00:24,000
+varias ejecuciones de una función a la vez; de hecho, todas las ejecuciones.
+
+6
+00:00:24,000 --> 00:00:29,000
+Sin embargo, también pueden verificar grandes porciones de datos al mismo tiempo y todo de forma automatizada.
+
+7
+00:00:29,000 --> 00:00:34,000
+¿Qué quiero decir con grandes porciones de datos? Permíteme ilustrarlo con un ejemplo.
+
+8
+00:00:34,000 --> 00:00:37,000
+Supongamos que queremos implementar una clase de tiempo.
+
+9
+00:00:37,000 --> 00:00:42,000
+Un tiempo que consiste en horas, minutos y segundos, y queremos usar aserciones
+
+10
+00:00:42,000 --> 00:00:46,000
+para verificar automáticamente si un objeto de tiempo es coherente.
+
+11
+00:00:46,000 --> 00:00:50,000
+Es decir, si las horas están en el rango correcto, los minutos están en el rango correcto,
+
+12
+00:00:50,000 --> 00:00:52,000
+y los segundos también están en el rango correcto.
+
+13
+00:00:52,000 --> 00:00:57,000
+Aquí está nuestra clase de tiempo: comenzamos con un inicializador o constructor que toma
+
+14
+00:00:57,000 --> 00:01:00,000
+tres argumentos: la hora, el minuto y el segundo,
+
+15
+00:01:00,000 --> 00:01:05,000
+con valores predeterminados de 0 para cada uno y los asignamos a atributos individuales
+
+16
+00:01:05,000 --> 00:01:09,000
+en horas, minutos y segundos dentro de un objeto de tiempo.
+
+17
+00:01:09,000 --> 00:01:13,000
+Aquí hay un número de métodos inspectores que nos dan acceso a los atributos internos:
+
+18
+00:01:13,000 --> 00:01:15,000
+horas, minutos y segundos.
+
+19
+00:01:15,000 --> 00:01:20,000
+Después de agregar métodos inspectores que nos dan las horas, los minutos y los segundos,
+
+20
+00:01:20,000 --> 00:01:23,000
+ahora necesitamos una forma de imprimir el objeto de tiempo.
+
+21
+00:01:23,000 --> 00:01:30,000
+Para esto, Python proporciona un método especial. Se llama el método `repr` para representación.
+
+22
+00:01:30,000 --> 00:01:35,000
+El método interno con dos guiones bajos antes y después, y lo que hace es
+
+23
+00:01:35,000 --> 00:01:40,000
+este método se llama cada vez que un objeto de la clase particular se va a imprimir,
+
+24
+00:01:40,000 --> 00:01:44,000
+y esto devuelve una representación de cadena del objeto.
+
+25
+00:01:44,000 --> 00:01:50,000
+Entonces, ¿qué hace? Estamos utilizando el método `string format` aquí, que toma una serie de argumentos,
+
+26
+00:01:50,000 --> 00:01:55,000
+y formatea cada uno de estos argumentos según la especificación de formato escrita aquí en esa cadena.
+
+27
+00:01:55,000 --> 00:02:02,000
+Por ejemplo, `:2d` imprime el argumento numérico aquí con dos dígitos:
+
+28
+00:02:02,000 --> 00:02:07,000
+Los minutos también tienen dos dígitos y los segundos también tienen dos dígitos.
+
+29
+00:02:07,000 --> 00:02:09,000
+Este formato aún no es perfecto.
+
+30
+00:02:09,000 --> 00:02:11,000
+Realmente queremos ceros a la izquierda aquí
+
+31
+00:02:11,000 --> 00:02:16,000
+y queremos horas, minutos y segundos separados por dos puntos.
+
+32
+00:02:16,000 --> 00:02:22,000
+Entonces, aquí tienes una cadena: primero las horas con dos dígitos y ceros a la izquierda, luego los minutos con dos dígitos y ceros a la izquierda,
+
+33
+00:02:22,000 --> 00:02:25,000
+y luego los segundos con dos dígitos y ceros a la izquierda.
+
+34
+00:02:25,000 --> 00:02:27,000
+Probemos cómo funciona esto.
+
+35
+00:02:27,000 --> 00:02:32,000
+Estoy inicializando un objeto de tiempo aquí: 13 horas, 0 minutos, 0 segundos.
+
+36
+00:02:32,000 --> 00:02:36,000
+Estamos usando un reloj de 24 horas aquí y lo estoy imprimiendo.
+
+37
+00:02:36,000 --> 00:02:40,000
+Al imprimirlo, debería invocar este método `repr`, que automáticamente
+
+38
+00:02:40,000 --> 00:02:43,000
+proporcionará una agradable representación de cadena de nuestro tiempo.
+
+39
+00:02:43,000 --> 00:02:46,000
+Ejecutemos todo esto y obtenemos una agradable representación
+
+40
+00:02:46,000 --> 99:59:59,000
+13 horas, 0 minutos y 0 segundos, la 1 p.m. por la tarde.

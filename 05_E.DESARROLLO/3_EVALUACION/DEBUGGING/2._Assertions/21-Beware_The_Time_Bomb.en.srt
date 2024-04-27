@@ -1,0 +1,141 @@
+Aquí tienes la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:06,000
+Lo que ves aquí es un ejemplo de un problema que comúnmente se conoce como bomba de tiempo.
+
+2
+00:00:06,000 --> 00:00:12,000
+Una bomba de tiempo es una infección en el código que solo espera explotar en tu cara como una falla.
+
+3
+00:00:12,000 --> 00:00:16,000
+Aquí hay algo que definitivamente está mal y está ahí dormido.
+
+4
+00:00:16,000 --> 00:00:19,000
+Puede estar ahí durante millones de ciclos.
+
+5
+00:00:19,000 --> 00:00:23,000
+Solo cuando se accede o se procesa es cuando la bomba de tiempo explota.
+
+6
+00:00:23,000 --> 00:00:27,000
+Y esto es difícil de depurar porque tienes que averiguar
+
+7
+00:00:27,000 --> 00:00:32,000
+dónde se plantó originalmente la bomba de tiempo y configuró, ahí es donde las aserciones salvan el día.
+
+8
+00:00:32,000 --> 00:00:37,000
+Una aserción prohíbe las bombas de tiempo al verificar si los datos son seguros
+
+9
+00:00:37,000 --> 00:00:40,000
+en el mismo momento en que se están almacenando.
+
+10
+00:00:40,000 --> 00:00:44,000
+Cuando estamos creando un objeto de tiempo, por ejemplo, podríamos usar aserciones
+
+11
+00:00:44,000 --> 00:00:49,000
+para asegurarnos de que los argumentos estén realmente dentro de los rangos especificados.
+
+12
+00:00:49,000 --> 00:00:53,000
+Por ejemplo, podríamos decir que la hora debe estar entre 0 y 23.
+
+13
+00:00:53,000 --> 00:00:58,000
+Al mismo tiempo, le damos una pista al usuario de que el tiempo usa el formato de 24 horas.
+
+14
+00:00:58,000 --> 00:01:03,000
+También queremos asegurarnos de que los minutos y los segundos estén dentro de los rangos adecuados
+
+15
+00:01:03,000 --> 00:01:06,000
+entre 0 y 59, respectivamente.
+
+16
+00:01:06,000 --> 00:01:09,000
+Esta sintaxis especial que ves aquí es una especialidad de Python
+
+17
+00:01:09,000 --> 00:01:13,000
+que permite encadenar múltiples comparaciones en una.
+
+18
+00:01:13,000 --> 00:01:17,000
+En realidad, ahora que lo pienso, 59 no es correcto aquí.
+
+19
+00:01:17,000 --> 00:01:21,000
+Hay años en los que hay segundos bisiestos y, si hay un segundo bisiesto,
+
+20
+00:01:21,000 --> 00:01:24,000
+entonces en realidad puede haber 61 segundos en un minuto.
+
+21
+00:01:24,000 --> 00:01:27,000
+Por lo tanto, para ser perfectamente correcto, esto debe ser 60 aquí arriba.
+
+22
+00:01:27,000 --> 00:01:33,000
+Esto sigue siendo una clase de tiempo muy simple, se ajusta a su uso, por ejemplo, la hora local.
+
+23
+00:01:33,000 --> 00:01:39,000
+No nos importan las zonas horarias o los calendarios o el horario de verano o cualquier otra cosa en este momento.
+
+24
+00:01:39,000 --> 00:01:43,000
+La clase de tiempo real es mucho más complicada que esta.
+
+25
+00:01:43,000 --> 00:01:47,000
+Ahora, veamos si estas aserciones nos ayudan a evitar las bombas de tiempo.
+
+26
+00:01:47,000 --> 00:01:50,000
+Todavía tenemos la cadena pasada aquí.
+
+27
+00:01:50,000 --> 00:01:54,000
+Veamos si nuestra aserción lo detecta. Nuevamente, presiona y ejecuta.
+
+28
+00:01:54,000 --> 00:01:59,000
+Y ve, al ingresar 2 minutos después de la medianoche como una cadena, la aserción falla
+
+29
+00:01:59,000 --> 00:02:04,000
+porque la cadena no está entre los valores de 0 y 23.
+
+30
+00:02:04,000 --> 00:02:09,000
+¿Qué pasa si pasamos valores negativos aquí, por ejemplo, las horas son válidas, los minutos son negativos,
+
+31
+00:02:09,000 --> 00:02:13,000
+los segundos son válidos, presiona ejecutar, y nuevamente obtenemos una aserción fallida--
+
+32
+00:02:13,000 --> 00:02:18,000
+ahora, obtenemos la aserción fallida de que los minutos no están dentro del rango correcto,
+
+33
+00:02:18,000 --> 00:02:20,000
+lo cual es exactamente lo que queríamos detectar.
+
+34
+00:02:20,000 --> 00:02:25,000
+Con estas aserciones aquí arriba, cualquier intento de establecer cualquier objeto de tiempo
+
+35
+00:02:25,000 --> 99:59:59,000
+en un estado ilegal será detectado de inmediato.

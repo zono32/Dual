@@ -1,0 +1,45 @@
+Aquí tienes el texto traducido siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:05,000
+El único hecho que permite inferir la mayoría, si no todos los demás hechos,
+
+2
+00:00:05,000 --> 00:00:08,000
+es el historial del problema.
+
+3
+00:00:08,000 --> 00:00:11,000
+Primero que todo, el historial del problema es crucial para reproducir el error.
+
+4
+00:00:11,000 --> 00:00:16,000
+Si repetimos los pasos, entonces esperamos encontrar el mismo comportamiento
+
+5
+00:00:16,000 --> 00:00:19,000
+en contraste con el comportamiento esperado.
+
+6
+00:00:19,000 --> 00:00:22,000
+También podríamos ser capaces de resumir lo que está ocurriendo
+
+7
+00:00:22,000 --> 00:00:26,000
+y posiblemente incluso observar el estado en el momento en que ocurrió la falla,
+
+8
+00:00:26,000 --> 00:00:31,000
+obteniendo más información como un volcado de núcleo
+
+9
+00:00:31,000 --> 00:00:34,000
+o las funciones actualmente activas.
+
+10
+00:00:34,000 --> 00:00:38,000
+Entonces, el historial del problema de todos estos hechos es el más crucial
+
+11
+00:00:38,000 --> 99:59:59,000
+y el más importante en un informe de errores.

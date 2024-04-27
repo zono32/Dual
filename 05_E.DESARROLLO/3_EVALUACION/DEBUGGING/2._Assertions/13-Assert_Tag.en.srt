@@ -1,0 +1,73 @@
+Aquí tienes la traducción al español siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:03,000
+Las aserciones en el código llegaron para quedarse.
+
+2
+00:00:03,000 --> 00:00:09,000
+Las usamos para detectar errores, lo que también podemos hacer durante las pruebas, pero también sirven
+
+3
+00:00:09,000 --> 00:00:14,000
+como herramienta de documentación para los programadores porque muestran cuáles son los supuestos
+
+4
+00:00:14,000 --> 00:00:19,000
+de los métodos individuales y qué se supone que produce el método individual.
+
+5
+00:00:19,000 --> 00:00:23,000
+Apliquemos las aserciones a otro programa, un viejo favorito nuestro:
+
+6
+00:00:23,000 --> 00:00:26,000
+nuestro eliminador de HTML con errores de la primera unidad.
+
+7
+00:00:26,000 --> 00:00:29,000
+Así que aquí tenemos de nuevo la función para eliminar marcadores HTML,
+
+8
+00:00:29,000 --> 00:00:31,000
+que ya conocemos de la primera unidad.
+
+9
+00:00:31,000 --> 00:00:36,000
+Aquí también, una simple aserción habría sido suficiente para detectar el error, principalmente una aserción
+
+10
+00:00:36,000 --> 00:00:40,000
+que verifica la inexistencia de etiquetas HTML en la salida.
+
+11
+00:00:40,000 --> 00:00:46,000
+Una aserción como esta podría ser algo así: simplemente verificamos si hay algún signo de menor que
+
+12
+00:00:46,000 --> 00:00:49,000
+que es el comienzo de una etiqueta HTML en la salida.
+
+13
+00:00:49,000 --> 00:00:53,000
+Vemos que no hay ninguno, y si hubiera uno, la aserción fallaría inmediatamente.
+
+14
+00:00:53,000 --> 00:00:55,000
+Entonces aquí viene la pregunta.
+
+15
+00:00:55,000 --> 00:01:00,000
+Con esta aserción, ¿qué entrada causaría que la aserción lanzara una excepción?
+
+16
+00:01:00,000 --> 00:01:08,000
+¿Sería "foo" en negrita, "foo" entre comillas y negrita, "foo" en negrita y entre comillas,
+
+17
+00:01:08,000 --> 00:01:11,000
+o "foo" en negrita y entre comillas simples?
+
+18
+00:01:11,000 --> 99:59:59,000
+¿Cuál de estas entradas hace que la aserción falle? Te toca a ti.

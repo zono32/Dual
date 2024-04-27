@@ -1,0 +1,193 @@
+Aquí tienes el texto traducido siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:04,000
+A medida que tu base de datos de problemas se llena con más y más informes de problemas,
+
+2
+00:00:04,000 --> 00:00:08,000
+con el tiempo querrás hacer un poco de mantenimiento.
+
+3
+00:00:08,000 --> 00:00:15,000
+Porque a medida que estas bases de datos se llenan, también se acumulan una serie de problemas.
+
+4
+00:00:15,000 --> 00:00:17,000
+El primero son los duplicados.
+
+5
+00:00:17,000 --> 00:00:20,000
+Si tienes un usuario que informa un problema,
+
+6
+00:00:20,000 --> 00:00:24,000
+es probable que otros usuarios también informen el mismo problema.
+
+7
+00:00:24,000 --> 00:00:29,000
+Es decir, tienes múltiples informes de problemas que todos se refieren a la misma clase de fallas.
+
+8
+00:00:29,000 --> 00:00:32,000
+Estos informes de problemas se llaman duplicados.
+
+9
+00:00:32,000 --> 00:00:35,000
+Como gerente, tu tarea es identificar tales duplicados.
+
+10
+00:00:35,000 --> 00:00:40,000
+Querrás hacerlo para evitar que saturen las estadísticas,
+
+11
+00:00:40,000 --> 00:00:44,000
+pero también querrás que los duplicados se refieran entre sí.
+
+12
+00:00:44,000 --> 00:00:47,000
+De esta manera, cuando te encuentres con un informe de problema,
+
+13
+00:00:47,000 --> 00:00:52,000
+descubrirás que, hey, este es un duplicado de este informe de error original,
+
+14
+00:00:52,000 --> 00:00:55,000
+y todos estos otros también son duplicados.
+
+15
+00:00:55,000 --> 00:00:59,000
+Te gusta mantener los duplicados, sin embargo, en tu base de datos,
+
+16
+00:00:59,000 --> 00:01:02,000
+porque todos ellos pueden informar sobre diferentes ángulos del problema
+
+17
+00:01:02,000 --> 00:01:06,000
+y estos ángulos pueden ser útiles para resolver el problema.
+
+18
+00:01:06,000 --> 00:01:11,000
+Ten en cuenta que los mecanismos de diagnóstico automáticos, como la depuración estadística
+
+19
+00:01:11,000 --> 00:01:15,000
+o la depuración delta, son excelentes herramientas para identificar duplicados
+
+20
+00:01:15,000 --> 00:01:21,000
+porque encontrarán similitudes entre todos los informes de errores individuales
+
+21
+00:01:21,000 --> 00:01:27,000
+con respecto a características similares en la entrada o en la ejecución.
+
+22
+00:01:27,000 --> 00:01:29,000
+A continuación están los problemas obsoletos.
+
+23
+00:01:29,000 --> 00:01:34,000
+Con el tiempo, tu base de datos se llenará de informes de problemas no resueltos--
+
+24
+00:01:34,000 --> 00:01:39,000
+problemas que no se pudieron reproducir o problemas que pueden haberse solucionado en alguna versión posterior
+
+25
+00:01:39,000 --> 00:01:41,000
+y problemas de baja prioridad.
+
+26
+00:01:41,000 --> 00:01:45,000
+Tener miles de problemas no resueltos desanima a los desarrolladores.
+
+27
+00:01:45,000 --> 00:01:48,000
+Saturan las búsquedas en la base de datos,
+
+28
+00:01:48,000 --> 00:01:50,000
+y son malos para la moral.
+
+29
+00:01:50,000 --> 00:01:54,000
+Una base de datos de problemas que tiene muchos problemas obsoletos es como
+
+30
+00:01:54,000 --> 00:01:57,000
+un cajón desbordado de calcetines.
+
+31
+00:01:57,000 --> 00:02:01,000
+No encuentras los calcetines que necesitas, y el cajón te hace sentir culpable
+
+32
+00:02:01,000 --> 00:02:04,000
+por no tirar tus calcetines viejos.
+
+33
+00:02:04,000 --> 00:02:11,000
+Lo que debes hacer es con el tiempo simplemente declarar informes de problemas obsoletos
+
+34
+00:02:11,000 --> 00:02:16,000
+y deshacerte de los calcetines que ya no quieres.
+
+35
+00:02:16,000 --> 00:02:18,000
+¿Cuándo un problema es obsoleto?
+
+36
+00:02:18,000 --> 00:02:21,000
+Un problema es obsoleto si nunca se solucionará.
+
+37
+00:02:21,000 --> 00:02:24,000
+Por ejemplo, porque el programa ya no se soporta
+
+38
+00:02:24,000 --> 00:02:28,000
+o el problema es viejo y solo ocurrió una vez
+
+39
+00:02:28,000 --> 00:02:31,000
+o el problema es viejo y solo ocurrió internamente.
+
+40
+00:02:31,000 --> 00:02:34,000
+No quieres eliminar realmente estos problemas,
+
+41
+00:02:34,000 --> 00:02:37,000
+pero puedes etiquetarlos con una resolución apropiada.
+
+42
+00:02:37,000 --> 00:02:44,000
+En Bugzilla, por ejemplo, hay una resolución especial "NO SE SOLUCIONARÁ" para estos problemas obsoletos.
+
+43
+00:02:44,000 --> 00:02:48,000
+Finalmente, los problemas no solo se almacenan en la base de datos de problemas,
+
+44
+00:02:48,000 --> 00:02:53,000
+sino que también pueden ser casos de prueba que reproduzcan el problema exacto.
+
+45
+00:02:53,000 --> 00:02:56,000
+Como regla general, tan pronto como tengas un caso de prueba
+
+46
+00:02:56,000 --> 00:03:02,000
+que reproduzca el problema, el caso de prueba hace que el informe de problema sea obsoleto.
+
+47
+00:03:02,000 --> 00:03:08,000
+Es decir, tan pronto como tengas un caso de prueba, puedes poner una marca especial
+
+48
+00:03:08,000 --> 99:59:59,000
+en la base de datos de problemas indicando que el problema ahora está siendo abordado por la prueba.

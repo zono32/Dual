@@ -1,0 +1,149 @@
+Aquí tienes el texto traducido siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:07,000
+Entonces, ahora hemos visto que cada vez que un usuario informa un problema en la base de datos de problemas
+
+2
+00:00:07,000 --> 00:00:10,000
+o un desarrollador, o cualquier persona,
+
+3
+00:00:10,000 --> 00:00:16,000
+finalmente un desarrollador o un equipo de desarrolladores examinará el problema
+
+4
+00:00:16,000 --> 00:00:18,000
+y realizará una corrección apropiada en el programa.
+
+5
+00:00:18,000 --> 00:00:23,000
+Dichas correcciones también se almacenan en una base de datos:
+
+6
+00:00:23,000 --> 00:00:27,000
+a saber, una base de datos de versiones donde se almacenan todos los cambios.
+
+7
+00:00:27,000 --> 00:00:30,000
+Dicha base de datos de versiones también se llama base de datos de cambios,
+
+8
+00:00:30,000 --> 00:00:37,000
+un repositorio, o el sistema de gestión de configuración, un sistema de control de versiones.
+
+9
+00:00:37,000 --> 00:00:39,000
+Elige tu término.
+
+10
+00:00:39,000 --> 00:00:41,000
+Hoy en día hay muchos sistemas de control de versiones
+
+11
+00:00:41,000 --> 00:00:46,000
+que ayudan a almacenar estos cambios y las versiones resultantes.
+
+12
+00:00:46,000 --> 00:00:51,000
+Dado que usar una base de datos de versiones es lo primero que se debe usar en cualquier tipo
+
+13
+00:00:51,000 --> 00:00:53,000
+de desarrollo de software civilizado,
+
+14
+00:00:53,000 --> 00:00:58,000
+asumiré simplemente que usas algo así en tu día a día de todos modos.
+
+15
+00:00:58,000 --> 00:01:02,000
+Sin embargo, ocurre algo interesante cuando vinculas la información
+
+16
+00:01:02,000 --> 00:01:07,000
+de la base de datos de problemas con la información de la base de datos de versiones.
+
+17
+00:01:07,000 --> 00:01:13,000
+Supongamos que la base de datos de problemas tiene un informe de problema #347
+
+18
+00:01:13,000 --> 00:01:16,000
+donde dice que "removeHTMLmarkup falla".
+
+19
+00:01:16,000 --> 00:01:20,000
+Supongamos que la base de datos de versiones ha registrado un cambio
+
+20
+00:01:20,000 --> 00:01:26,000
+en la función llamada "removeHTMLmarkup" en precisamente esta ubicación
+
+21
+00:01:26,000 --> 00:01:32,000
+con un comentario que indica que esto ahora cierra el informe de problema #347,
+
+22
+00:01:32,000 --> 00:01:40,000
+que es un cambio que bien podría haberse realizado después de que se presentó inicialmente el problema.
+
+23
+00:01:40,000 --> 00:01:45,000
+Ahora podemos relacionar el cambio con el informe de problema real,
+
+24
+00:01:45,000 --> 00:01:53,000
+porque el mensaje de cambio tiene el número real del informe de problema aquí,
+
+25
+00:01:53,000 --> 00:01:57,000
+y podemos usarlo para recuperar el informe de problema preciso.
+
+26
+00:01:57,000 --> 00:02:02,000
+Dado que también sabemos dónde se ha aplicado el cambio,
+
+27
+00:02:02,000 --> 00:02:04,000
+a saber, en esta parte del archivo,
+
+28
+00:02:04,000 --> 00:02:11,000
+ahora tenemos un enlace desde la base de datos de problemas a un lugar específico en el código.
+
+29
+00:02:11,000 --> 00:02:16,000
+Esto nos permite, para cada parte del código, identificar
+
+30
+00:02:16,000 --> 00:02:19,000
+los problemas que estuvieron asociados con él.
+
+31
+00:02:19,000 --> 00:02:25,000
+Lo que hacemos es tomar la parte del código, ver todos los cambios que se realizaron,
+
+32
+00:02:25,000 --> 00:02:29,000
+y observar los problemas a los que se refieren estos cambios.
+
+33
+00:02:29,000 --> 00:02:34,000
+Entonces podemos, por ejemplo, descubrir que "removeHTMLmarkup"
+
+34
+00:02:34,000 --> 00:02:39,000
+a lo largo de la historia de este mismo curso ha tenido tres correcciones
+
+35
+00:02:39,000 --> 00:02:42,000
+hasta que finalmente funcionó.
+
+36
+00:02:42,000 --> 00:02:46,000
+Tener tres correcciones hasta que una función realmente funciona es bastante malo.
+
+37
+00:02:46,000 --> 99:59:59,000
+Realmente deberíamos preocuparnos por la calidad de nuestro código.

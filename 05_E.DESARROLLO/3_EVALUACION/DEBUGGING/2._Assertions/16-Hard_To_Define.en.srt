@@ -1,0 +1,21 @@
+Aquí tienes la traducción al español siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:04,000
+¿Cuál de estas postcondiciones será difícil de verificar?
+
+2
+00:00:04,000 --> 00:00:12,000
+El nivel de audio no debe superar los 80 decibeles, el gato animado debe caminar como un gato real,
+
+3
+00:00:12,000 --> 00:00:18,000
+en condiciones atmosféricas específicas, la simulación del atardecer debe producir un destello verde,
+
+4
+00:00:18,000 --> 00:00:22,000
+o el tiempo de respuesta debe estar por debajo de 10 ms.
+
+5
+00:00:22,000 --> 99:59:59,000
+Adelante.

@@ -1,0 +1,41 @@
+A continuación se presenta la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:04,000
+Podemos encontrar la respuesta a esta pregunta directamente dentro de nuestro entorno.
+
+2
+00:00:04,000 --> 00:00:10,000
+Primero, simplemente ejecutamos la inicialización, es decir, pasamos una cadena aquí y simplemente ejecutamos
+
+3
+00:00:10,000 --> 00:00:13,000
+y no pasa nada, no hay mensaje de error, por lo que esto está bien.
+
+4
+00:00:13,000 --> 00:00:16,000
+De hecho, es posible pasar un objeto de tipo cadena aquí.
+
+5
+00:00:16,000 --> 00:00:20,000
+Ahora, cuando intentamos imprimirlo y ejecutamos todo esto, obtenemos un mensaje de error
+
+6
+00:00:20,000 --> 00:00:24,000
+porque ahora lo que tenemos es que el formato aquí arriba ya no es apropiado
+
+7
+00:00:24,000 --> 00:00:29,000
+para un objeto de tipo cadena, es decir, Python no sabe cómo formatear una cadena
+
+8
+00:00:29,000 --> 00:00:31,000
+con dos dígitos y un cero inicial.
+
+9
+00:00:31,000 --> 00:00:35,000
+Como se ve, tan pronto como imprimimos el objeto, obtenemos un error
+
+10
+00:00:35,000 --> 99:59:59,000
+y, por lo tanto, la respuesta correcta aquí es que obtenemos un error al imprimir.

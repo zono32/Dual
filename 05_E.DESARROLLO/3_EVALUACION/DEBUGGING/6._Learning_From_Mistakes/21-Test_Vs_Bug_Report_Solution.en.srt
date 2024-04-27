@@ -1,0 +1,29 @@
+Aquí tienes el texto traducido siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:03,000
+Con una prueba automática, y esta es la principal ventaja,
+
+2
+00:00:03,000 --> 00:00:07,000
+siempre puedes verificar si el problema persiste ejecutando la prueba automatizada.
+
+3
+00:00:07,000 --> 00:00:11,000
+Una prueba automática abierta, por definición, reproduce el problema.
+
+4
+00:00:11,000 --> 00:00:15,000
+Si la prueba falla, sí, puedes comenzar a depurar de inmediato.
+
+5
+00:00:15,000 --> 00:00:18,000
+Y durante la ejecución puedes consultar tanta información como sea necesario,
+
+6
+00:00:18,000 --> 00:00:21,000
+porque siempre puedes reproducirlo.
+
+7
+00:00:21,000 --> 99:59:59,000
+Por lo tanto, todas las cuatro opciones se aplican.

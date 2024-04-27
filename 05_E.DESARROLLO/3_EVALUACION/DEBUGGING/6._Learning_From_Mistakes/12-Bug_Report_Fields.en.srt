@@ -1,0 +1,137 @@
+Aquí tienes el texto traducido siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:03,000
+¿Cómo se clasifican todos estos problemas?
+
+2
+00:00:03,000 --> 00:00:08,000
+Veamos en la búsqueda avanzada para ver cuáles son los atributos individuales
+
+3
+00:00:08,000 --> 00:00:11,000
+de un informe de error.
+
+4
+00:00:11,000 --> 00:00:14,000
+Aquí arriba puedes ver el estado del problema.
+
+5
+00:00:14,000 --> 00:00:19,000
+¿Es un problema nuevo o es un problema resuelto?
+
+6
+00:00:19,000 --> 00:00:24,000
+Si es un problema resuelto, puedes buscar la resolución aquí.
+
+7
+00:00:24,000 --> 00:00:28,000
+¿Fue solucionado, o es algo que no será solucionado?
+
+8
+00:00:28,000 --> 00:00:31,000
+Más abajo puedes ver la versión
+
+9
+00:00:31,000 --> 00:00:35,000
+de Mozilla que está afectada por el problema
+
+10
+00:00:35,000 --> 00:00:41,000
+así como la severidad y la prioridad del problema.
+
+11
+00:00:41,000 --> 00:00:43,000
+¿Qué significan estos campos?
+
+12
+00:00:43,000 --> 00:00:45,000
+Vamos a verlos en detalle.
+
+13
+00:00:45,000 --> 00:00:47,000
+Entonces, ¿qué son todos estos campos?
+
+14
+00:00:47,000 --> 00:00:52,000
+Primero está la severidad, que describe el impacto del problema en el usuario.
+
+15
+00:00:52,000 --> 00:00:57,000
+Los problemas más severos se clasifican como bloqueadores o detenedores.
+
+16
+00:00:57,000 --> 00:01:02,000
+Estos son problemas que efectivamente detienen todo desarrollo adicional.
+
+17
+00:01:02,000 --> 00:01:06,000
+Luego están los problemas críticos, problemas mayores, problemas menores,
+
+18
+00:01:06,000 --> 00:01:10,000
+hasta llegar a solicitudes de mejoras.
+
+19
+00:01:10,000 --> 00:01:13,000
+Las solicitudes de mejoras son problemas que un usuario
+
+20
+00:01:13,000 --> 00:01:15,000
+le gustaría ver en alguna versión futura.
+
+21
+00:01:15,000 --> 00:01:19,000
+También se almacenan en la base de datos de problemas.
+
+22
+00:01:19,000 --> 00:01:22,000
+Digamos que otros problemas son más severos en este momento.
+
+23
+00:01:22,000 --> 00:01:25,000
+La prioridad define cuán pronto se abordará el problema.
+
+24
+00:01:25,000 --> 00:01:29,000
+Los problemas con la prioridad más alta se abordarán primero.
+
+25
+00:01:29,000 --> 00:01:32,000
+Los problemas con menor prioridad se abordarán más tarde.
+
+26
+00:01:32,000 --> 00:01:36,000
+El ID de error es un identificador o número único,
+
+27
+00:01:36,000 --> 00:01:40,000
+lo que te permite identificar con precisión un solo problema.
+
+28
+00:01:40,000 --> 00:01:42,000
+Los comentarios son dejados por los desarrolladores
+
+29
+00:01:42,000 --> 00:01:45,000
+añadiendo información adicional sobre el error
+
+30
+00:01:45,000 --> 00:01:48,000
+o proponiendo soluciones sobre cómo abordar el error.
+
+31
+00:01:48,000 --> 00:01:50,000
+Por último, notificaciones.
+
+32
+00:01:50,000 --> 00:01:52,000
+Estos son los interesados.
+
+33
+00:01:52,000 --> 00:01:55,000
+Quienquiera que esté listado aquí será notificado automáticamente
+
+34
+00:01:55,000 --> 99:59:59,000
+siempre que un problema obtenga un nuevo estado.

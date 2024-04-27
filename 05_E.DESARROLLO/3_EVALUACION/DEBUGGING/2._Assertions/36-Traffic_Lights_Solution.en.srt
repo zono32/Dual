@@ -1,0 +1,107 @@
+1
+00:00:00,000 --> 00:00:05,000
+Gracias. Ahora vamos por la respuesta. Discutamos las opciones una por una.
+
+2
+00:00:05,000 --> 00:00:09,000
+Primero, imprimir "esto no puede suceder". Genial. Va a la consola.
+
+3
+00:00:09,000 --> 00:00:14,000
+Probablemente irá a algún registro, pero es poco probable que alguien lo note,
+
+4
+00:00:14,000 --> 00:00:19,000
+lo que significa que nuestro semáforo, bueno, en nuestra simulación, estará en un estado indefinido,
+
+5
+00:00:19,000 --> 00:00:23,000
+posiblemente significando que el tráfico también estará en un estado indefinido.
+
+6
+00:00:23,000 --> 00:00:28,000
+¿Qué sucede si tenemos múltiples semáforos y uno de ellos no es ni rojo, ni amarillo, ni verde?
+
+7
+00:00:28,000 --> 00:00:31,000
+Esto causará muchos problemas interesantes.
+
+8
+00:00:31,000 --> 00:00:34,000
+Así que simplemente imprimir esto en la consola no es suficiente.
+
+9
+00:00:34,000 --> 00:00:40,000
+Este problema es demasiado grave. Estamos violando la invariante de datos aquí, lo que también descarta la última opción.
+
+10
+00:00:40,000 --> 00:00:45,000
+Eso no es una buena opción. Ahora para las dos opciones restantes, y esta es una elección difícil.
+
+11
+00:00:45,000 --> 00:00:50,000
+Podríamos tener la aserción aquí, assert false, lo cual sería bueno, pero ten en cuenta
+
+12
+00:00:50,000 --> 00:00:53,000
+que esto también podría desactivarse--
+
+13
+00:00:53,000 --> 00:00:57,000
+por ejemplo, al invocar el intérprete de Python con -O.
+
+14
+00:00:57,000 --> 00:01:01,000
+Sin embargo, en esta situación particular, no hay razón para desactivar esta aserción
+
+15
+00:01:01,000 --> 00:01:06,000
+porque, bueno, si se ejecuta, plantea una excepción de inmediato
+
+16
+00:01:06,000 --> 00:01:10,000
+y si no se ejecuta, todo está bien.
+
+17
+00:01:10,000 --> 00:01:13,000
+Eso significa que al desactivarlo, no obtenemos ningún ahorro.
+
+18
+00:01:13,000 --> 00:01:17,000
+Entonces, la mejor opción es simplemente plantear una excepción de aserción de manera simple
+
+19
+00:01:17,000 --> 00:01:22,000
+y así documentar que algo está saliendo realmente mal en el programa.
+
+20
+00:01:22,000 --> 00:01:26,000
+Esto no perjudicará el rendimiento en absoluto, obviamente, porque solo se activará
+
+21
+00:01:26,000 --> 00:01:28,000
+cuando todos los demás controles ya hayan fallado.
+
+22
+00:01:28,000 --> 00:01:32,000
+Sin embargo, si este fuera un programa de producción, es posible que desees crear
+
+23
+00:01:32,000 --> 00:01:36,000
+algún bloque global try-catch en el programa,
+
+24
+00:01:36,000 --> 00:01:43,000
+o en Python, esto sería un bloque global try-except que atraparía todas las excepciones de aserción
+
+25
+00:01:43,000 --> 00:01:48,000
+y luego mostraría un cuadro de diálogo diciendo "Oh, hemos encontrado un error fatal", posiblemente ofreciendo
+
+26
+00:01:48,000 --> 00:01:54,000
+algún mecanismo de recuperación o la capacidad de guardar el progreso que se ha realizado hasta ahora
+
+27
+00:01:54,000 --> 99:59:59,000
+de modo que el usuario no se enfrente simplemente a la pérdida de todo su trabajo.

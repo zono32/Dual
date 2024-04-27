@@ -1,0 +1,97 @@
+Aquí tienes la traducción al español siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:02,000
+Y ahora para la respuesta a nuestro cuestionario.
+
+2
+00:00:02,000 --> 00:00:06,000
+En general, cualquier cosa que puedas medir también puede convertirse en una postcondición,
+
+3
+00:00:06,000 --> 00:00:10,000
+y si es una condición física, entonces es típicamente muy fácil.
+
+4
+00:00:10,000 --> 00:00:13,000
+El nivel de audio no debe superar los 80 db.
+
+5
+00:00:13,000 --> 00:00:16,000
+Asumiendo que tenemos una forma de medir el nivel de audio, lo cual cualquier
+
+6
+00:00:16,000 --> 00:00:20,000
+software de audio decente debería tener, sí--esto es fácil de convertir en una postcondición.
+
+7
+00:00:20,000 --> 00:00:25,000
+Convierte esto en una postcondición y salvarás millones y millones de oídos de daños.
+
+8
+00:00:25,000 --> 00:00:29,000
+Lo siguiente, el gato animado debe caminar como un gato real. Ah, gato real.
+
+9
+00:00:29,000 --> 00:00:33,000
+Si alguna vez hay una especificación de lo que hace que un gato sea un gato real,
+
+10
+00:00:33,000 --> 00:00:36,000
+me encantaría mucho verlo.
+
+11
+00:00:36,000 --> 00:00:39,000
+Estoy bastante seguro de que los gatos saben exactamente qué hacer y qué no hacer.
+
+12
+00:00:39,000 --> 00:00:41,000
+Para todos los demás, sigue siendo un misterio.
+
+13
+00:00:41,000 --> 00:00:46,000
+Bajo condiciones atmosféricas específicas, la simulación del atardecer debe producir un destello verde.
+
+14
+00:00:46,000 --> 00:00:49,000
+Y he aquí, eso es lo que hizo un estudiante de doctorado en mi departamento.
+
+15
+00:00:49,000 --> 00:00:55,000
+Se especializaba en gráficos por computadora y su tesis de doctorado fue una simulación perfecta del atardecer,
+
+16
+00:00:55,000 --> 00:00:58,000
+y de hecho, en la realidad, bajo condiciones específicas,
+
+17
+00:00:58,000 --> 00:01:02,000
+puedes ver un destello verde durante un atardecer durante solo un segundo.
+
+18
+00:01:02,000 --> 00:01:06,000
+Creo que solo unas pocas centenas de personas han sido testigos de esto
+
+19
+00:01:06,000 --> 00:01:08,000
+y solo se ha grabado en película dos veces hasta ahora,
+
+20
+00:01:08,000 --> 00:01:14,000
+y bueno, tener verde o algo de verde en una imagen--es bastante fácil de verificar.
+
+21
+00:01:14,000 --> 00:01:19,000
+Así que estoy bastante seguro de que también tuvo una postcondición que demostró que tuvo éxito,
+
+22
+00:01:19,000 --> 00:01:22,000
+y finalmente el tiempo de respuesta debe ser inferior a 10 ms.
+
+23
+00:01:22,000 --> 00:01:25,000
+Eso es sencillo. El tiempo es algo que es fácil de medir.
+
+24
+00:01:25,000 --> 99:59:59,000
+Esto también puede convertirse en una simple postcondición.

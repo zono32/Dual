@@ -1,0 +1,27 @@
+1
+00:00:00,000 --> 00:00:04,000
+Bienvenido de nuevo. Tenemos el problema de que no podemos pasar parámetros de punto flotante aquí.
+
+2
+00:00:04,000 --> 00:00:08,000
+Y si se hace más tarde, resulta en errores al imprimir, por lo que queremos
+
+3
+00:00:08,000 --> 00:00:11,000
+convertirlos automáticamente en enteros.
+
+4
+00:00:11,000 --> 00:00:16,000
+¿Cómo lo hacemos? Bueno, simplemente usamos la función int de Python,
+
+5
+00:00:16,000 --> 00:00:20,000
+que crea automáticamente un entero a partir del objeto que se pasa aquí,
+
+6
+00:00:20,000 --> 00:00:24,000
+y para hacer todo perfecto, también lo hacemos en las aserciones.
+
+7
+00:00:24,000 --> 99:59:59,000
+Y esta es la respuesta al cuestionario.

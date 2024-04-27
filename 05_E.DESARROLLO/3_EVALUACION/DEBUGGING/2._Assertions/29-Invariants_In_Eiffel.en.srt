@@ -1,0 +1,71 @@
+1
+00:00:01,000 --> 00:00:03,000
+Gracias por tu trabajo.
+
+2
+00:00:03,000 --> 00:00:07,000
+Si encuentras que escribir todos estos chequeadores de invariantes se vuelve tedioso,
+
+3
+00:00:07,000 --> 00:00:11,000
+puedes considerar un lenguaje donde los invariantes, precondiciones y postcondiciones,
+
+4
+00:00:11,000 --> 00:00:14,000
+estén integrados.
+
+5
+00:00:14,000 --> 00:00:19,000
+Este es el caso del lenguaje Eiffel de Bertrand Meyer.
+
+6
+00:00:19,000 --> 00:00:23,000
+En Eiffel, los invariantes son parte de las clases.
+
+7
+00:00:23,000 --> 00:00:27,000
+El invariante también tiene un nombre, por lo que si se viola un invariante,
+
+8
+00:00:27,000 --> 00:00:30,000
+el nombre del invariante se convierte en parte del mensaje de diagnóstico.
+
+9
+00:00:30,000 --> 00:00:34,000
+Aquí tenemos `root` no tiene padre y lo que hace es simplemente verificar
+
+10
+00:00:34,000 --> 00:00:38,000
+si el atributo `root` es un puntero válido, es decir, que no es un puntero nulo.
+
+11
+00:00:38,000 --> 00:00:44,000
+Aquí tenemos el invariante `root` es negro, que simplemente verifica que el atributo `color`
+
+12
+00:00:44,000 --> 00:00:47,000
+del nodo raíz sea negro.
+
+13
+00:00:47,000 --> 00:00:51,000
+Una vez que defines un invariante, se verificará automáticamente.
+
+14
+00:00:51,000 --> 00:00:55,000
+De hecho, se verificará precisamente de acuerdo con las reglas que establecimos previamente.
+
+15
+00:00:55,000 --> 00:01:01,000
+¿Recuerdas cuándo verifica Eiffel sus invariantes?
+
+16
+00:01:01,000 --> 00:01:05,000
+¿Es siempre que se lea un atributo de clase, siempre que se escriba un atributo,
+
+17
+00:01:05,000 --> 00:01:14,000
+al principio de cada método público en la clase o al final de cada método público?
+
+18
+00:01:14,000 --> 00:01:19,000
+Marca todas las respuestas que apliquen.

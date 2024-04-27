@@ -1,0 +1,55 @@
+1
+00:00:00,000 --> 00:00:06,000
+Puede que hayas escuchado la historia del cohete Ariane 5, que explotó en su primer vuelo
+
+2
+00:00:06,000 --> 00:00:11,000
+debido a un error de software, a veces denominado el error de software más costoso de la historia.
+
+3
+00:00:11,000 --> 00:00:14,000
+¿Sabes por qué explotó el Ariane 5?
+
+4
+00:00:14,000 --> 00:00:19,000
+Explotó simplemente porque tenía un error en una conversión de entero de 64 bits a entero de 16 bits.
+
+5
+00:00:19,000 --> 00:00:23,000
+Lo interesante, sin embargo, es que normalmente
+
+6
+00:00:23,000 --> 00:00:28,000
+el código en realidad tenía muchas verificaciones para rastrear tal conversión ilegal.
+
+7
+00:00:28,000 --> 00:00:33,000
+Estas verificaciones fueron desactivadas en el Ariane 5 por razones de rendimiento.
+
+8
+00:00:33,000 --> 00:00:36,000
+Imagina lo que habría pasado si la computadora en el Ariane 5
+
+9
+00:00:36,000 --> 00:00:43,000
+hubiera sido un poco más eficiente para cubrir esta verificación particular de una conversión de 64 bits
+
+10
+00:00:43,000 --> 00:00:48,000
+a un entero de 16 bits, entonces la aserción se habría activado incluso durante el lanzamiento,
+
+11
+00:00:48,000 --> 00:00:54,000
+pero el Ariane 5 en realidad tiene muy buenos mecanismos de recuperación para aserciones fallidas.
+
+12
+00:00:54,000 --> 00:00:57,000
+Habría recuperado, quizás el vuelo podría haber ido bien
+
+13
+00:00:57,000 --> 00:01:00,000
+y habríamos escapado del error de software más costoso de la historia.
+
+14
+00:01:00,000 --> 99:59:59,000
+$317,000,000 se fueron al cielo por una aserción que faltaba.

@@ -1,0 +1,49 @@
+Aquí tienes el texto traducido siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:03,000
+Vamos a averiguarlo--simplemente ingresamos el número de error
+
+2
+00:00:03,000 --> 00:00:09,000
+en el campo de búsqueda y obtenemos el error número 915.
+
+3
+00:00:09,000 --> 00:00:11,000
+Entonces, ¿cuándo fue reportado?
+
+4
+00:00:11,000 --> 00:00:18,000
+Este es uno de los errores más antiguos en Mozilla, y en este momento en 2012
+
+5
+00:00:18,000 --> 00:00:21,000
+aún no se ha solucionado.
+
+6
+00:00:21,000 --> 00:00:24,000
+Eso es después de casi 14 años.
+
+7
+00:00:24,000 --> 00:00:26,000
+Aún así, este error tiene bastante historia.
+
+8
+00:00:26,000 --> 00:00:29,000
+Cientos y cientos de personas--
+
+9
+00:00:29,000 --> 00:00:33,000
+Bueno, vamos a decir que decenas y decenas de personas
+
+10
+00:00:33,000 --> 00:00:38,000
+han hecho cientos y cientos de comentarios con el tiempo.
+
+11
+00:00:38,000 --> 00:00:43,000
+Esto parece un error difícil de solucionar.
+
+12
+00:00:43,000 --> 99:59:59,000
+Entonces, la respuesta correcta aquí es 1998.

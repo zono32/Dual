@@ -1,0 +1,37 @@
+Aquí tienes el texto traducido siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:02,000
+Ahora para el cuestionario.
+
+2
+00:00:02,000 --> 00:00:09,000
+Uno de estos 5 hechos permite inferir la mayoría, si no todos los demás,
+
+3
+00:00:09,000 --> 00:00:13,000
+y, por lo tanto, es el más crucial de estos 5.
+
+4
+00:00:13,000 --> 00:00:15,000
+¿Cuál es?
+
+5
+00:00:15,000 --> 00:00:18,000
+¿Es el historial del problema?
+
+6
+00:00:18,000 --> 00:00:21,000
+¿Información de diagnóstico?
+
+7
+00:00:21,000 --> 00:00:24,000
+¿El comportamiento experimentado?
+
+8
+00:00:24,000 --> 00:00:27,000
+¿El comportamiento esperado?
+
+9
+00:00:27,000 --> 99:59:59,000
+¿O un resumen de una línea?

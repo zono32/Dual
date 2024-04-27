@@ -1,0 +1,65 @@
+Aquí tienes el texto traducido siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:05,000
+Resulta que, sí, si ha habido muchos errores en un lugar,
+
+2
+00:00:05,000 --> 00:00:10,000
+es probable que haya más errores en ese mismo lugar.
+
+3
+00:00:10,000 --> 00:00:14,000
+Esto es más interesante, porque todos los errores que vemos ya se han corregido,
+
+4
+00:00:14,000 --> 00:00:18,000
+por lo que asumirías que con el tiempo habría menos errores.
+
+5
+00:00:18,000 --> 00:00:20,000
+Pero no es así.
+
+6
+00:00:20,000 --> 00:00:23,000
+Con los errores es como pescar.
+
+7
+00:00:23,000 --> 00:00:28,000
+Encuentras muchos errores en un lugar un día.
+
+8
+00:00:28,000 --> 00:00:33,000
+Al día siguiente, los peces se reunirán en el mismo lugar nuevamente,
+
+9
+00:00:33,000 --> 00:00:36,000
+posiblemente porque los peces gustan de los mismos lugares una y otra vez,
+
+10
+00:00:36,000 --> 00:00:43,000
+excepto que para los peces tenemos una buena teoría sobre cómo se reproducen.
+
+11
+00:00:43,000 --> 00:00:45,000
+Para los errores, no.
+
+12
+00:00:45,000 --> 00:00:48,000
+Hay un poco de hipótesis, sin embargo.
+
+13
+00:00:48,000 --> 00:00:53,000
+La suposición es que los mismos factores que han contribuido a los errores en el pasado
+
+14
+00:00:53,000 --> 00:00:57,000
+seguirán contribuyendo en el futuro.
+
+15
+00:00:57,000 --> 00:01:03,000
+En términos generales, las correcciones pasadas y, un poco menos, los cambios pasados
+
+16
+00:01:03,000 --> 99:59:59,000
+son buenos indicadores de futuras correcciones.

@@ -1,0 +1,109 @@
+Aquí tienes el texto traducido siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:04,000
+Entonces, cuando gestionas un producto exitoso,
+
+2
+00:00:04,000 --> 00:00:08,000
+recibirás muchos de estos informes de errores,
+
+3
+00:00:08,000 --> 00:00:11,000
+y debes asegurarte de que ningún informe de error se pierda
+
+4
+00:00:11,000 --> 00:00:19,000
+y también de que todos estos informes de errores sean manejados en un tiempo finito.
+
+5
+00:00:19,000 --> 00:00:22,000
+Antes de eso, tendrás que almacenar estos informes de problemas en algún lugar
+
+6
+00:00:22,000 --> 00:00:29,000
+donde puedas clasificarlos, marcarlos y evaluarlos.
+
+7
+00:00:29,000 --> 00:00:32,000
+Esto es hablar de una base de datos de problemas.
+
+8
+00:00:32,000 --> 00:00:36,000
+Hablando simplemente, una base de datos de problemas contiene todos los problemas
+
+9
+00:00:36,000 --> 00:00:39,000
+que alguna vez ocurrieron con algún producto.
+
+10
+00:00:39,000 --> 00:00:42,000
+Cada vez que alguien reporta un problema,
+
+11
+00:00:42,000 --> 00:00:47,000
+ya sea a través de un medio automático o como un usuario regular,
+
+12
+00:00:47,000 --> 00:00:51,000
+todos estos problemas se almacenan en la base de datos de problemas.
+
+13
+00:00:51,000 --> 00:00:54,000
+Podrías preguntarte cuántos de estos informes de errores
+
+14
+00:00:54,000 --> 00:00:59,000
+terminan en grandes empresas con el tiempo.
+
+15
+00:00:59,000 --> 00:01:02,000
+En realidad, estas bases de datos de problemas son enormes.
+
+16
+00:01:02,000 --> 00:01:05,000
+No sé cómo es esto para Apple,
+
+17
+00:01:05,000 --> 00:01:10,000
+pero he sido el primer investigador no relacionado con Microsoft en echar un vistazo a
+
+18
+00:01:10,000 --> 00:01:12,000
+la base de datos de problemas de Microsoft.
+
+19
+00:01:12,000 --> 00:01:15,000
+No puedo decirte el número exacto de informes de errores que hay allí,
+
+20
+00:01:15,000 --> 00:01:21,000
+pero si consideras que Microsoft ha vendido 450 millones
+
+21
+00:01:21,000 --> 00:01:24,000
+de licencias de Windows 7.
+
+22
+00:01:24,000 --> 00:01:27,000
+Si cada usuario experimenta al menos un bloqueo al mes,
+
+23
+00:01:27,000 --> 00:01:31,000
+son más de 37 millones de informes de errores cada año.
+
+24
+00:01:31,000 --> 00:01:35,000
+Esto es solo de personas que realmente hacen clic en el botón de enviar.
+
+25
+00:01:35,000 --> 00:01:39,000
+Supongo que hay un número de personas que usan Microsoft
+
+26
+00:01:39,000 --> 00:01:42,000
+pero no tienen una licencia adecuada y prefieren no decirle a Microsoft
+
+27
+00:01:42,000 --> 99:59:59,000
+sobre sus problemas.

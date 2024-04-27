@@ -1,0 +1,33 @@
+Aquí tienes el texto traducido siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:02,000
+Ahora para la respuesta.
+
+2
+00:00:02,000 --> 00:00:07,000
+El usuario ha informado el error, y Dora ha confirmado que es válido.
+
+3
+00:00:07,000 --> 00:00:12,000
+Se le asignó a Erol, pero Erol ya ha solucionado el error.
+
+4
+00:00:12,000 --> 00:00:15,000
+Por lo tanto, actualmente estamos en un estado resuelto.
+
+5
+00:00:15,000 --> 00:00:21,000
+Lo que no ha ocurrido todavía es que alguien más haya verificado la corrección,
+
+6
+00:00:21,000 --> 00:00:27,000
+y lo que tampoco ha ocurrido todavía es que la corrección realmente se haya enviado al usuario,
+
+7
+00:00:27,000 --> 00:00:29,000
+por ejemplo, mediante el lanzamiento de un nuevo producto.
+
+8
+00:00:29,000 --> 99:59:59,000
+Por lo tanto, la respuesta correcta es resuelto.

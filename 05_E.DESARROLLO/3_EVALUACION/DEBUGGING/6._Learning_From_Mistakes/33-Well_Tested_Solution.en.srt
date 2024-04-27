@@ -1,0 +1,49 @@
+Aquí tienes el texto traducido siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:03,000
+La respuesta a esa pregunta es no.
+
+2
+00:00:03,000 --> 00:00:06,000
+De hecho, sucede lo contrario.
+
+3
+00:00:06,000 --> 00:00:09,000
+Cuanto más minuciosamente se prueba una pieza de código,
+
+4
+00:00:09,000 --> 00:00:13,000
+más probabilidades hay de que tenga errores.
+
+5
+00:00:13,000 --> 00:00:16,000
+La historia va en la otra dirección.
+
+6
+00:00:16,000 --> 00:00:21,000
+Los buenos gerentes tienen una buena intuición sobre dónde están los errores,
+
+7
+00:00:21,000 --> 00:00:26,000
+y luego, al decidir dónde y cómo probar,
+
+8
+00:00:26,000 --> 00:00:30,000
+apuntan a las ubicaciones donde se sospecha que hay más errores.
+
+9
+00:00:30,000 --> 00:00:34,000
+Por lo tanto, en un programa como Firefox, por ejemplo,
+
+10
+00:00:34,000 --> 00:00:40,000
+se realizan muchas pruebas para JavaScript, por ejemplo.
+
+11
+00:00:40,000 --> 00:00:42,000
+Por lo tanto, tiene una alta cobertura,
+
+12
+00:00:42,000 --> 99:59:59,000
+pero aún así quedan muchos, muchos errores porque las pruebas aparentemente no pueden encontrar todos los errores.

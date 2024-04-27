@@ -1,0 +1,123 @@
+1
+00:00:00,000 --> 00:00:05,000
+Ahora, un poco de consejo sobre las aserciones. Primero que todo, las aserciones toman tiempo.
+
+2
+00:00:05,000 --> 00:00:09,000
+Si por cada operación en una gran estructura de datos, tienes que recorrer el árbol
+
+3
+00:00:09,000 --> 00:00:12,000
+para verificar su consistencia,
+
+4
+00:00:12,000 --> 00:00:16,000
+estas operaciones ya no serán en tiempo logarítmico, sino al menos en tiempo lineal.
+
+5
+00:00:16,000 --> 00:00:20,000
+Una verificación sobre un resultado de raíz cuadrada no importará mucho,
+
+6
+00:00:20,000 --> 00:00:23,000
+pero si necesitas recorrer grandes estructuras de datos, sí lo hará.
+
+7
+00:00:23,000 --> 00:00:26,000
+Por eso las aserciones pueden desactivarse.
+
+8
+00:00:26,000 --> 00:00:31,000
+La forma en que se activan y desactivan las aserciones varía según el lenguaje utilizado.
+
+9
+00:00:31,000 --> 00:00:38,000
+En Python, existe una opción -O que desactiva las aserciones. -O significa optimizado.
+
+10
+00:00:38,000 --> 00:00:46,000
+En C/C++, la opción del compilador -DNDEBUG para no depurar también desactiva las aserciones.
+
+11
+00:00:46,000 --> 00:00:52,000
+En Java, hay una opción -ea para habilitar las aserciones que las activa.
+
+12
+00:00:52,000 --> 00:00:56,000
+Java es especial por tener las aserciones desactivadas por defecto.
+
+13
+00:00:56,000 --> 00:01:01,000
+No es sorprendente que la palabra clave assert en Java sea la menos utilizada
+
+14
+00:01:01,000 --> 00:01:05,000
+de todas las palabras clave en Java, lo que a mi juicio es una gran pena.
+
+15
+00:01:05,000 --> 00:01:10,000
+El hecho de que las aserciones se puedan desactivar y con frecuencia lo harán también implica
+
+16
+00:01:10,000 --> 00:01:14,000
+que las aserciones no deben cambiar la semántica del programa.
+
+17
+00:01:14,000 --> 00:01:19,000
+Ya sea que las aserciones estén activadas o desactivadas, el comportamiento del programa debe ser el mismo.
+
+18
+00:01:19,000 --> 00:01:23,000
+Supongamos que estás desarrollando esta aplicación de mapas genial,
+
+19
+00:01:23,000 --> 00:01:28,000
+que también admite la configuración de pines para ubicaciones individuales.
+
+20
+00:01:28,000 --> 00:01:31,000
+Ahora, quieres asegurarte de que si eliminas una ubicación,
+
+21
+00:01:31,000 --> 00:01:34,000
+la función adecuada devuelve el valor correcto, por lo que simplemente la eliminas.
+
+22
+00:01:34,000 --> 00:01:38,000
+Y si estás en lo correcto, assert map.remove location igual a True,
+
+23
+00:01:38,000 --> 00:01:43,000
+para asegurarte de que remove location devuelve el valor verdadero es peligroso
+
+24
+00:01:43,000 --> 00:01:49,000
+porque si la aserción está desactivada aquí, no solo se elimina la verificación
+
+25
+00:01:49,000 --> 00:01:51,000
+sino también la llamada a remove.
+
+26
+00:01:51,000 --> 00:01:56,000
+En general, si algo en tu aserción tiene efectos secundarios como este,
+
+27
+00:01:56,000 --> 00:01:59,000
+no lo incluyas en la aserción.
+
+28
+00:01:59,000 --> 00:02:05,000
+Lo que debes hacer es colocar la funcionalidad en un código que esté fuera de la aserción
+
+29
+00:02:05,000 --> 00:02:08,000
+y luego usar la aserción solo para verificar el resultado.
+
+30
+00:02:08,000 --> 00:02:12,000
+De esta manera, si la aserción está desactivada, no tiene efecto
+
+31
+00:02:12,000 --> 00:02:16,000
+entonces la semántica del programa seguirá siendo la misma, excepto que las verificaciones desaparecerán.
