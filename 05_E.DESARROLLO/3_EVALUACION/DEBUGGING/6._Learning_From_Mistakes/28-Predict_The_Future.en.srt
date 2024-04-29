@@ -1,0 +1,17 @@
+Aquí tienes el texto traducido siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:05,000
+Si hay muchos errores en un lugar específico,
+
+2
+00:00:05,000 --> 00:00:08,000
+¿habrá más en el futuro?
+
+3
+00:00:08,000 --> 00:00:14,000
+Recuerda que si decimos que encontramos muchos errores en un lugar, ya los hemos corregido.
+
+4
+00:00:14,000 --> 99:59:59,000
+¿Cuál es tu suposición?

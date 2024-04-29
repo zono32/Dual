@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Aquí tienes la traducción al castellano del texto siguiendo el mismo formato:
+=======
+Aquí tienes la traducción al español siguiendo el mismo formato:
+>>>>>>> 001f716fa5bbce12cae45bb45931253fb5cb57c5
 
 1
 00:00:00,000 --> 00:00:03,000
@@ -10,6 +14,7 @@ Debes estar preparado para varias iteraciones hasta que las precondiciones y pos
 
 3
 00:00:08,000 --> 00:00:12,000
+<<<<<<< HEAD
 Una cadena típica de herramientas se ve así.
 
 4
@@ -27,6 +32,25 @@ Estas entradas de prueba han sido verificadas por las precondiciones,
 7
 00:00:23,000 --> 00:00:27,000
 y los resultados del cálculo serán verificados por las postcondiciones.
+=======
+Una cadena de herramientas típica se ve así.
+
+4
+00:00:12,000 --> 00:00:17,000
+Aquí, tenemos entradas de prueba que provienen de un generador aleatorio o sistemático,
+
+5
+00:00:17,000 --> 00:00:20,000
+o de usuarios o de producción.
+
+6
+00:00:20,000 --> 00:00:23,000
+Estas entradas de prueba han sido verificadas por precondiciones,
+
+7
+00:00:23,000 --> 00:00:27,000
+y los resultados del cálculo serán verificados por postcondiciones.
+>>>>>>> 001f716fa5bbce12cae45bb45931253fb5cb57c5
 
 8
 00:00:27,000 --> 00:00:30,000
@@ -38,11 +62,19 @@ puedes ser demasiado permisivo o demasiado estricto.
 
 10
 00:00:33,000 --> 00:00:38,000
+<<<<<<< HEAD
 Si eres demasiado permisivo con tus precondiciones, esto significa que entradas
 
 11
 00:00:38,000 --> 00:00:43,000
 que no deberían entrar en la función, entrarán y resultarán en un comportamiento arbitrario.
+=======
+Si eres demasiado permisivo con tus precondiciones, esto significa que las entradas,
+
+11
+00:00:38,000 --> 00:00:43,000
+que no deberían ingresar a la función, ingresan y luego resultan en un comportamiento arbitrario.
+>>>>>>> 001f716fa5bbce12cae45bb45931253fb5cb57c5
 
 12
 00:00:43,000 --> 00:00:46,000
@@ -58,7 +90,11 @@ Lo mismo también se aplica a las postcondiciones.
 
 15
 00:00:53,000 --> 00:00:59,000
+<<<<<<< HEAD
 Si eres demasiado permisivo con tus postcondiciones, esto significa que no detectarás varios errores.
+=======
+Si eres demasiado permisivo con tus postcondiciones, esto significa que no detectarás muchos errores.
+>>>>>>> 001f716fa5bbce12cae45bb45931253fb5cb57c5
 
 16
 00:00:59,000 --> 00:01:04,000
@@ -70,6 +106,7 @@ La clave es encontrar el equilibrio adecuado entre estos dos.
 
 18
 00:01:08,000 --> 00:01:10,000
+<<<<<<< HEAD
 No queremos ser demasiado permisivos ni demasiado estrictos.
 
 19
@@ -83,6 +120,21 @@ que capturen exactamente lo que el programa está haciendo.
 21
 00:01:16,000 --> 00:01:21,000
 Sin embargo, en la práctica, encontrarás que mientras escribir precondiciones suele ser fácil,
+=======
+No queremos ser demasiado permisivos. No queremos ser demasiado estrictos.
+
+19
+00:01:10,000 --> 00:01:13,000
+En teoría, te gustaría tener precondiciones y postcondiciones
+
+20
+00:01:13,000 --> 00:01:16,000
+que capturen exactamente lo que hace el programa.
+
+21
+00:01:16,000 --> 00:01:21,000
+Sin embargo, en la práctica, encontrarás que, si bien escribir precondiciones es típicamente fácil,
+>>>>>>> 001f716fa5bbce12cae45bb45931253fb5cb57c5
 
 22
 00:01:21,000 --> 00:01:24,000
@@ -94,11 +146,19 @@ Por lo tanto, es muy común que las postcondiciones solo verifiquen una parte de
 
 24
 00:01:29,000 --> 00:01:34,000
+<<<<<<< HEAD
 y que las postcondiciones sean simples pero un poco permisivas, es decir, que pasen por alto errores.
 
 25
 00:01:34,000 --> 00:01:40,000
 Mientras que para las precondiciones, es frecuente llegar al nivel correcto de precisión.
+=======
+que son tus postcondiciones que son simples pero un poco demasiado permisivas, es decir, errores omitidos.
+
+25
+00:01:34,000 --> 00:01:40,000
+Mientras que para las precondiciones, es frecuente poder encontrar el nivel adecuado de precisión.
+>>>>>>> 001f716fa5bbce12cae45bb45931253fb5cb57c5
 
 26
 00:01:40,000 --> 00:01:43,000
@@ -110,11 +170,19 @@ Para darte un ejemplo simple de por qué escribir postcondiciones correctas no e
 
 28
 00:01:49,000 --> 00:01:54,000
+<<<<<<< HEAD
 permíteme darte un ejemplo muy simple. Supongamos que tenemos una función de clasificación.
 
 29
 00:01:54,000 --> 00:02:00,000
 La precondición para una función de clasificación es simple. Básicamente, asumimos que x es una lista.
+=======
+Déjame darte un ejemplo muy simple. Supongamos que tenemos una función de clasificación.
+
+29
+00:01:54,000 --> 00:02:00,000
+La precondición para una función de clasificación es simple. Básicamente, simplemente asumimos que x es una lista.
+>>>>>>> 001f716fa5bbce12cae45bb45931253fb5cb57c5
 
 30
 00:02:00,000 --> 00:02:03,000
@@ -134,11 +202,19 @@ Primero, asumimos que la lista y que devolveremos está realmente ordenada,
 
 34
 00:02:14,000 --> 00:02:20,000
+<<<<<<< HEAD
 pero también debemos asegurarnos de que la lista que devolvemos es una permutación de nuestra lista de entrada.
 
 35
 00:02:20,000 --> 00:02:26,000
 Entonces, vamos a verificar si la lista está ordenada. Iteramos sobre los elementos de y.
+=======
+pero también necesitamos asegurarnos de que la lista que devolvemos es una permutación de nuestra lista de entrada.
+
+35
+00:02:20,000 --> 00:02:26,000
+Así que vamos a verificar si la lista está ordenada. Iteramos sobre los elementos de y.
+>>>>>>> 001f716fa5bbce12cae45bb45931253fb5cb57c5
 
 36
 00:02:26,000 --> 00:02:32,000
@@ -150,6 +226,7 @@ Lo que ves aquí es que para verificar la postcondición,
 
 38
 00:02:37,000 --> 00:02:39,000
+<<<<<<< HEAD
 necesitamos idear otra función,
 
 39
@@ -163,6 +240,21 @@ La propiedad que se verifica aquí es básicamente si está ordenada, como se de
 41
 00:02:47,000 --> 00:02:52,000
 Esto significa que cualquier aserción que puedas tener aquí sería igual a cualquier cosa que tengas aquí,
+=======
+tuvimos que crear otra función,
+
+39
+00:02:39,000 --> 00:02:42,000
+que ahora debería comenzar a verificarse en qué.
+
+40
+00:02:42,000 --> 00:02:47,000
+La propiedad que se está verificando aquí es esencialmente el orden descrito aquí.
+
+41
+00:02:47,000 --> 00:02:52,000
+Lo que significa que cualquier aserción que puedas tener aquí sería igual a cualquier cosa que tengas aquí
+>>>>>>> 001f716fa5bbce12cae45bb45931253fb5cb57c5
 
 42
 00:02:52,000 --> 00:02:54,000
@@ -170,11 +262,19 @@ así que simplemente tienes que creer que esto es cierto.
 
 43
 00:02:54,000 --> 00:03:01,000
+<<<<<<< HEAD
 Bueno, no solo lo creo, también he realizado varias pruebas, por lo que estoy bastante seguro de que esto funciona.
 
 44
 00:03:01,000 --> 00:03:04,000
 Ahora, esto es solo ordenar. También tienes que determinar si es una permutación.
+=======
+Bueno, no lo creí, pero hice varias pruebas, así que estoy bastante seguro de que esto funciona.
+
+44
+00:03:01,000 --> 00:03:04,000
+Ahora, esto es solo una clasificación. También debes crear su permutación.
+>>>>>>> 001f716fa5bbce12cae45bb45931253fb5cb57c5
 
 45
 00:03:04,000 --> 00:03:06,000
@@ -182,6 +282,7 @@ Esto también es algo que debes definir.
 
 46
 00:03:06,000 --> 00:03:13,000
+<<<<<<< HEAD
 Funciones auxiliares como "is_sorted" o "is_permutation" serán útiles más adelante en el futuro
 
 47
@@ -191,3 +292,14 @@ porque es posible que puedas reutilizarlas para otros propósitos.
 48
 00:03:16,000 --> 99:59:59,000
 Incluso podrían convertirse en parte de una biblioteca.
+=======
+Las funciones auxiliares como una clasificación o su permutación probablemente sean útiles en el futuro
+
+47
+00:03:13,000 --> 00:03:16,000
+porque puedes reutilizarlas para otros propósitos.
+
+48
+00:03:16,000 --> 99:59:59,000
+Incluso pueden convertirse en parte de una biblioteca.
+>>>>>>> 001f716fa5bbce12cae45bb45931253fb5cb57c5

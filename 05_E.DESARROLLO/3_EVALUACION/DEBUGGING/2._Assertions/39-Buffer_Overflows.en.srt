@@ -1,0 +1,75 @@
+1
+00:00:00,000 --> 00:00:05,000
+Ni que decir tiene que este comportamiento de los programas en C y C++
+
+2
+00:00:05,000 --> 00:00:08,000
+abre la puerta a muchas formas de abusar del sistema.
+
+3
+00:00:08,000 --> 00:00:15,000
+Es posible que hayas oído hablar de desbordamientos de búfer, que explotan precisamente esta vulnerabilidad en C y C++,
+
+4
+00:00:15,000 --> 00:00:20,000
+donde las personas no solo leen, sino que también escriben más allá de los elementos de una matriz
+
+5
+00:00:20,000 --> 00:00:25,000
+para inyectar código malicioso en ubicaciones seleccionadas de la memoria.
+
+6
+00:00:25,000 --> 00:00:29,000
+Esto abre la puerta a todo tipo de hacks interesantes, por supuesto.
+
+7
+00:00:29,000 --> 00:00:31,000
+¿Cómo se pueden detectar tales errores?
+
+8
+00:00:31,000 --> 00:00:34,000
+Lo que necesitamos es un invariante del sistema que monitoree continuamente
+
+9
+00:00:34,000 --> 00:00:38,000
+los límites de una matriz contra lecturas y escrituras.
+
+10
+00:00:38,000 --> 00:00:45,000
+Lo que una herramienta puede hacer, por ejemplo, es monitorear constantemente las áreas no inicializadas
+
+11
+00:00:45,000 --> 00:00:49,000
+contra lecturas y escrituras con cada instrucción individual.
+
+12
+00:00:49,000 --> 00:00:55,000
+Y cada vez que el programa intenta acceder a alguna memoria del sistema que no está asignada,
+
+13
+00:00:55,000 --> 00:01:01,000
+lo que sucede es que el comprobador de invariantes genera una excepción o aborta el programa
+
+14
+00:01:01,000 --> 00:01:05,000
+y, por lo tanto, nos permite detectar este tipo de error.
+
+15
+00:01:05,000 --> 00:01:10,000
+Las herramientas para C y C++ que hacen esto incluyen herramientas como Electric Fence,
+
+16
+00:01:10,000 --> 00:01:17,000
+que precisamente coloca bloques antes y después de cada bloque de memoria asignada
+
+17
+00:01:17,000 --> 00:01:22,000
+y, por lo tanto, detecta cuando se realizan lecturas y escrituras fuera de estas áreas asignadas.
+
+18
+00:01:22,000 --> 00:01:28,000
+Y la segunda herramienta importante aquí es Valgrind, que es un intérprete de binarios x86
+
+19
+00:01:28,000 --> 99:59:59,000
+que también nos permite monitorear accesos a código no inicializado para programas en C y C++.

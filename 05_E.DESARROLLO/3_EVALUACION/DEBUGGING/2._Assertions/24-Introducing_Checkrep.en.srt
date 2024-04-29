@@ -1,0 +1,175 @@
+1
+00:00:00,000 --> 00:00:05,000
+Ahora hemos visto cómo podemos verificar los parámetros de entrada a través de la clase `time`.
+
+2
+00:00:05,000 --> 00:00:10,000
+Pero, ¿qué sucede si hay más setters que getters, lo que puede comprometer el estado?
+
+3
+00:00:10,000 --> 00:00:14,000
+Supongamos que tenemos un método `advance` que toma un número de segundos
+
+4
+00:00:14,000 --> 00:00:16,000
+por los cuales avanzar el tiempo.
+
+5
+00:00:16,000 --> 00:00:22,000
+Por ejemplo, un valor de 3600 adelantaría el tiempo una hora,
+
+6
+00:00:22,000 --> 00:00:26,000
+mientras que un valor de -60 retrasaría el tiempo un minuto.
+
+7
+00:00:26,000 --> 00:00:30,000
+Aquí está nuestro método `advance`. Me salto los detalles de la computación en este momento.
+
+8
+00:00:30,000 --> 00:00:33,000
+Pero, en cambio, nos enfocamos en la postcondición.
+
+9
+00:00:33,000 --> 00:00:38,000
+Asumimos que tenemos un método `seconds since midnight` que devuelve el número de segundos
+
+10
+00:00:38,000 --> 00:00:42,000
+que han transcurrido en este mismo día, entonces podemos establecer una postcondición
+
+11
+00:00:42,000 --> 00:00:47,000
+que simplemente dice que después de avanzar el tiempo, los nuevos segundos desde la medianoche
+
+12
+00:00:47,000 --> 00:00:50,000
+deberían ser el valor anterior más el desplazamiento de segundos.
+
+13
+00:00:50,000 --> 00:00:53,000
+Todo esto módulo el número de segundos en un día, de modo que
+
+14
+00:00:53,000 --> 00:00:59,000
+podríamos ocuparnos de otros avances que van más allá o antes de la medianoche.
+
+15
+00:00:59,000 --> 00:01:03,000
+El método `seconds since midnight` es bastante sencillo de implementar.
+
+16
+00:01:03,000 --> 00:01:07,000
+Entonces, las horas por 3600 más los minutos por 60 más los segundos.
+
+17
+00:01:07,000 --> 00:01:12,000
+Entonces, nuevamente, usamos la función auxiliar para ayudarnos a definir nuestra postcondición,
+
+18
+00:01:12,000 --> 00:01:18,000
+pero para que todo esto funcione, necesitamos asegurarnos de que incluso después de la compleja computación,
+
+19
+00:01:18,000 --> 00:01:21,000
+el estado del objeto `time` sigue siendo el mismo.
+
+20
+00:01:21,000 --> 00:01:26,000
+Es decir, los minutos, horas y segundos siguen estando dentro de los rangos correctos
+
+21
+00:01:26,000 --> 00:01:31,000
+sin importar lo que suceda en esta compleja computación y esto no se verifica en este punto.
+
+22
+00:01:31,000 --> 00:01:36,000
+Lo que necesitamos aquí es una propiedad que siempre se cumpla.
+
+23
+00:01:36,000 --> 00:01:40,000
+En problemas de informática, a esto lo llamamos una invariante.
+
+24
+00:01:40,000 --> 00:01:46,000
+Una invariante es una condición que siempre se cumple para un objeto de datos. ¿Qué significa siempre?
+
+25
+00:01:46,000 --> 00:01:50,000
+Siempre significa desde la perspectiva del usuario de ese objeto.
+
+26
+00:01:50,000 --> 00:01:54,000
+Es decir, al principio y al final de cada método público.
+
+27
+00:01:54,000 --> 00:01:59,000
+Mientras se ejecuta el método, las invariantes pueden y frecuentemente deben ser violadas.
+
+28
+00:01:59,000 --> 00:02:03,000
+Pero cuando el método termina, las invariantes deben volver a cumplirse.
+
+29
+00:02:03,000 --> 00:02:09,000
+Para un objeto `time`, la condición invariante ya está codificada aquí en el verificador de argumentos
+
+30
+00:02:09,000 --> 00:02:16,000
+en la precondición del inicializador, pero ahora queremos verificar esta condición una y otra vez.
+
+31
+00:02:16,000 --> 00:02:18,000
+Al principio y al final de cada método público.
+
+32
+00:02:18,000 --> 00:02:21,000
+Lo que hacemos es escribir un verificador de invariantes.
+
+33
+00:02:21,000 --> 00:02:23,000
+Este verificador de invariante llamado `checkRep` aquí
+
+34
+00:02:23,000 --> 00:02:29,000
+verifica si la representación interna es correcta.
+
+35
+00:02:29,000 --> 00:02:31,000
+En nuestro caso, simplemente establecemos tres aserciones para verificar si
+
+36
+00:02:31,000 --> 00:02:35,000
+las horas, minutos y segundos están dentro de los rangos correctos.
+
+37
+00:02:35,000 --> 00:02:39,000
+Una vez que tenemos un verificador de este tipo, ahora podemos usarlo en todas las funciones
+
+38
+00:02:39,000 --> 00:02:42,000
+al principio o al final según corresponda.
+
+39
+00:02:42,000 --> 00:02:45,000
+Por ejemplo, después de la inicialización, invocamos `checkRep`
+
+40
+00:02:45,000 --> 00:02:50,000
+para asegurarnos de que el estado interno esté dentro de los rangos correctos.
+
+41
+00:02:50,000 --> 00:02:53,000
+Esto también es cierto para setters como `advance`.
+
+42
+00:02:53,000 --> 00:02:58,000
+Antes de cambiar algo, verificamos si la invariante está satisfecha
+
+43
+00:02:58,000 --> 00:03:03,000
+y hacemos lo mismo después de la computación para que, si la computación de alguna manera altera
+
+44
+00:03:03,000 --> 99:59:59,000
+las horas, minutos o segundos, entonces `checkRep` lo detectará inmediatamente.

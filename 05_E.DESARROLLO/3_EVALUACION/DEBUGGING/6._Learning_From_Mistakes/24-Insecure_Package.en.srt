@@ -1,0 +1,65 @@
+Aquí tienes el texto traducido siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:07,000
+Lo que ves aquí es una representación de todas las clases en Firefox.
+
+2
+00:00:07,000 --> 00:00:11,000
+Cada clase aquí en esta imagen es un rectángulo.
+
+3
+00:00:11,000 --> 00:00:15,000
+Cuanto más grande sea el rectángulo, más líneas de código hay en esa clase.
+
+4
+00:00:15,000 --> 00:00:20,000
+Estos rectángulos están anidados en carpetas y paquetes.
+
+5
+00:00:20,000 --> 00:00:26,000
+El color del rectángulo indica cuántos problemas de seguridad se han solucionado
+
+6
+00:00:26,000 --> 00:00:28,000
+en esa clase en particular.
+
+7
+00:00:28,000 --> 00:00:33,000
+Lo que vemos aquí, por ejemplo, es el modelo de objetos del documento,
+
+8
+00:00:33,000 --> 00:00:37,000
+que tiene una buena cantidad de correcciones de seguridad.
+
+9
+00:00:37,000 --> 00:00:41,000
+Pero hay más áreas con muchos problemas de seguridad.
+
+10
+00:00:41,000 --> 00:00:43,000
+Aquí tenemos JavaScript.
+
+11
+00:00:43,000 --> 00:00:45,000
+Aquí tenemos diseño HTML.
+
+12
+00:00:45,000 --> 00:00:50,000
+Aquí tenemos una biblioteca para mostrar el contenido.
+
+13
+00:00:50,000 --> 00:00:52,000
+Ahora para el cuestionario.
+
+14
+00:00:52,000 --> 00:00:58,000
+¿Cuál de estos cuatro paquetes ha tenido más problemas de seguridad en el pasado?
+
+15
+00:00:58,000 --> 00:01:02,000
+¿Es JavaScript? ¿Es diseño HTML?
+
+16
+00:01:02,000 --> 99:59:59,000
+¿Es el DOM? ¿O es la base de contenido?

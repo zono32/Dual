@@ -1,0 +1,57 @@
+Aquí tienes el texto traducido siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:03,000
+Tenemos un usuario que informa que su programa de dibujo
+
+2
+00:00:03,000 --> 00:00:07,000
+no puede abrir un documento guardado por una versión anterior.
+
+3
+00:00:07,000 --> 00:00:11,000
+Él adjunta el documento en cuestión a su informe de error.
+
+4
+00:00:11,000 --> 00:00:13,000
+Aquí está la desarrolladora Dora.
+
+5
+00:00:13,000 --> 00:00:17,000
+Ella puede confirmar que la falla realmente ocurre
+
+6
+00:00:17,000 --> 00:00:19,000
+y que el informe de error es un informe de error real.
+
+7
+00:00:19,000 --> 00:00:21,000
+Aquí está el desarrollador Erol.
+
+8
+00:00:21,000 --> 00:00:25,000
+Él soluciona el error y ahora puede procesar correctamente el documento.
+
+9
+00:00:25,000 --> 00:00:30,000
+¿Cuál es el estado del informe de error en este punto?
+
+10
+00:00:30,000 --> 00:00:32,000
+¿Está asignado?
+
+11
+00:00:32,000 --> 00:00:34,000
+¿Está resuelto?
+
+12
+00:00:34,000 --> 00:00:36,000
+¿Está verificado?
+
+13
+00:00:36,000 --> 00:00:39,000
+¿O está cerrado?
+
+14
+00:00:39,000 --> 99:59:59,000
+Marca la respuesta correcta.

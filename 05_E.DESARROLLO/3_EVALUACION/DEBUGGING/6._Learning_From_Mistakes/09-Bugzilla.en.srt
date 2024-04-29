@@ -1,0 +1,125 @@
+Aquí tienes el texto traducido siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:03,000
+En la mayoría de las bases de datos de problemas, sin embargo,
+
+2
+00:00:03,000 --> 00:00:07,000
+son personas reales quienes ingresan y clasifican los informes de problemas.
+
+3
+00:00:07,000 --> 00:00:10,000
+Echemos un vistazo a una base de datos de problemas real
+
+4
+00:00:10,000 --> 00:00:13,000
+para hacernos una idea de cómo se ven.
+
+5
+00:00:13,000 --> 00:00:15,000
+Afortunadamente, para muchos proyectos de código abierto
+
+6
+00:00:15,000 --> 00:00:20,000
+hay bases de datos de problemas que están fácilmente disponibles.
+
+7
+00:00:20,000 --> 00:00:24,000
+Por ejemplo, echemos un vistazo a Bugzilla,
+
+8
+00:00:24,000 --> 00:00:27,000
+la base de datos de errores para todos los productos de Mozilla,
+
+9
+00:00:27,000 --> 00:00:30,000
+en particular el navegador Firefox.
+
+10
+00:00:30,000 --> 00:00:36,000
+Esta base de datos de problemas contiene más de 700,000 problemas.
+
+11
+00:00:36,000 --> 00:00:39,000
+Por supuesto, la mayoría de ellos han sido solucionados en este punto.
+
+12
+00:00:39,000 --> 00:00:43,000
+Supongamos que tengo un problema con un cursor parpadeante.
+
+13
+00:00:43,000 --> 00:00:48,000
+Ingreso los términos de búsqueda para el error, hago clic en búsqueda rápida,
+
+14
+00:00:48,000 --> 00:00:51,000
+y aquí veo todos los problemas que ocurren actualmente,
+
+15
+00:00:51,000 --> 00:00:55,000
+o al menos que han sido reportados por los usuarios,
+
+16
+00:00:55,000 --> 00:00:58,000
+con respecto al cursor de texto y al parpadeo.
+
+17
+00:00:58,000 --> 00:01:02,000
+Por ejemplo, aquí tenemos "el cursor parpadeante no se mueve"
+
+18
+00:01:02,000 --> 00:01:05,000
+cuando se introduce un espacio.
+
+19
+00:01:05,000 --> 00:01:07,000
+Podemos obtener detalles sobre este error.
+
+20
+00:01:07,000 --> 00:01:11,000
+Este es el informe de error original presentado hace diez años.
+
+21
+00:01:11,000 --> 00:01:13,000
+Vamos por uno más reciente.
+
+22
+00:01:13,000 --> 00:01:18,000
+Aquí está "agregar atajos de teclado para el ajuste de valores CSS".
+
+23
+00:01:18,000 --> 00:01:21,000
+Ves el informe de error--ves el producto al que se aplica,
+
+24
+00:01:21,000 --> 00:01:23,000
+en este caso Firefox.
+
+25
+00:01:23,000 --> 00:01:25,000
+Ves cuándo fue reportado.
+
+26
+00:01:25,000 --> 00:01:28,000
+Aquí está el informe de error original, y ahora ves
+
+27
+00:01:28,000 --> 00:01:31,000
+a los desarrolladores hablando sobre el problema.
+
+28
+00:01:31,000 --> 00:01:36,000
+También puedes seguir la historia mientras los desarrolladores sugieren parches
+
+29
+00:01:36,000 --> 00:01:38,000
+para el error.
+
+30
+00:01:38,000 --> 00:01:40,000
+Al final, discuten alternativas posibles
+
+31
+00:01:40,000 --> 99:59:59,000
+sobre cómo abordar ese error.

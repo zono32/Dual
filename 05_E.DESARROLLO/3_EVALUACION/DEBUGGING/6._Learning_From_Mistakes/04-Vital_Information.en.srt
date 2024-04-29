@@ -1,0 +1,89 @@
+Aquí tienes el texto traducido siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:04,000
+¿Qué es esta información vital que debe incluirse en el informe de errores?
+
+2
+00:00:04,000 --> 00:00:10,000
+En un estudio de 2008 que involucró a 165 desarrolladores de Apache, Eclipse y Mozilla,
+
+3
+00:00:10,000 --> 00:00:16,000
+los hechos más importantes que los desarrolladores necesitaban eran datos sobre el problema.
+
+4
+00:00:16,000 --> 00:00:18,000
+Primero, el historial del problema.
+
+5
+00:00:18,000 --> 00:00:21,000
+Es decir, los pasos necesarios para reproducir el problema.
+
+6
+00:00:21,000 --> 00:00:25,000
+Por ejemplo, inicia la vista previa y luego abre el archivo adjunto.
+
+7
+00:00:25,000 --> 00:00:28,000
+Segundo, información de diagnóstico.
+
+8
+00:00:28,000 --> 00:00:33,000
+Es decir, volcados de núcleo, que son volcados de memoria del estado final del programa antes de que se bloquee,
+
+9
+00:00:33,000 --> 00:00:39,000
+rastros de pila, las funciones que estaban activas en el momento en que ocurrió la falla, o registros.
+
+10
+00:00:39,000 --> 00:00:42,000
+Cualquier cosa que el sistema haya registrado sobre el estado final,
+
+11
+00:00:42,000 --> 00:00:44,000
+y lo que el programa ha registrado hasta el momento.
+
+12
+00:00:44,000 --> 00:00:47,000
+Luego, el comportamiento experimentado.
+
+13
+00:00:47,000 --> 00:00:49,000
+Esto es lo que el usuario vio.
+
+14
+00:00:49,000 --> 00:00:51,000
+Por ejemplo, vista previa se estrelló.
+
+15
+00:00:51,000 --> 00:00:54,000
+Luego, el comportamiento esperado.
+
+16
+00:00:54,000 --> 00:00:57,000
+Esto es útil como una verificación de la realidad.
+
+17
+00:00:57,000 --> 00:01:01,000
+¿El usuario espera lo mismo que el desarrollador?
+
+18
+00:01:01,000 --> 00:01:05,000
+Principalmente, esto es solo lo opuesto al comportamiento experimentado.
+
+19
+00:01:05,000 --> 00:01:08,000
+Finalmente, un resumen de una línea.
+
+20
+00:01:08,000 --> 00:01:12,000
+Este es típicamente la base para buscar un informe de errores,
+
+21
+00:01:12,000 --> 00:01:16,000
+así como para decidir la severidad de un problema.
+
+22
+00:01:16,000 --> 99:59:59,000
+Por ejemplo, vista previa se estrelló al abrir un archivo PDF.

@@ -1,0 +1,173 @@
+Aquí tienes la traducción al español siguiendo el formato original:
+
+1
+00:00:00,000 --> 00:00:04,000
+Aquí está nuestro verificador de invariantes para la clase de árbol Rojo-Negro.
+
+2
+00:00:04,000 --> 00:00:08,000
+Queremos asegurarnos de que el nodo raíz es negro. Puedes cometer un error.
+
+3
+00:00:08,000 --> 00:00:12,000
+Digamos que mueves el self.tree hacia arriba y de repente la raíz se vuelve roja.
+
+4
+00:00:12,000 --> 00:00:14,000
+Esta aserción se encargará de esto.
+
+5
+00:00:14,000 --> 00:00:18,000
+Y como puedes ver aquí, estamos configurando funciones de ayuda para desglosar
+
+6
+00:00:18,000 --> 00:00:21,000
+el invariante en piezas manejables más pequeñas.
+
+7
+00:00:21,000 --> 00:00:24,000
+Queremos asegurarnos de que no hay ciclos en el árbol.
+
+8
+00:00:24,000 --> 00:00:28,000
+Queremos asegurarnos de que los punteros a los padres sean consistentes.
+
+9
+00:00:28,000 --> 00:00:33,000
+Es decir, si un nodo apunta a su padre, entonces también debería ser un hijo de este padre.
+
+10
+00:00:33,000 --> 00:00:39,000
+Queremos asegurarnos de que en ambos subárboles el número de nodos negros es igual.
+
+11
+00:00:39,000 --> 00:00:43,000
+Ese es un nombre de función largo y claro, que lo dice todo.
+
+12
+00:00:43,000 --> 00:00:48,000
+Y finalmente, queremos asegurarnos de que los nodos rojos solo tengan hijos negros
+
+13
+00:00:48,000 --> 00:00:51,000
+y, al mismo tiempo, que los nodos negros solo tengan hijos rojos.
+
+14
+00:00:51,000 --> 00:00:56,000
+No estoy seguro de si necesitamos hacer esto un método separado.
+
+15
+00:00:56,000 --> 00:01:00,000
+De alguna manera, estos verificadores son bastante triviales, es decir, líneas sencillas.
+
+16
+00:01:00,000 --> 00:01:06,000
+Otros requieren una búsqueda en todo el subárbol y, por lo general, se llaman recursivamente.
+
+17
+00:01:06,000 --> 00:01:12,000
+Y ahora, para cada método que cambie el estado, puedes invocar el verificador de invariantes.
+
+18
+00:01:12,000 --> 00:01:16,000
+Lo haces al principio. Lo haces al final.
+
+19
+00:01:16,000 --> 00:01:20,000
+Y cuando todas tus aserciones pasan, puedes estar seguro de que tu árbol Rojo-Negro
+
+20
+00:01:20,000 --> 00:01:22,000
+nunca se corromperá.
+
+21
+00:01:22,000 --> 00:01:27,000
+Sin embargo, si algo sale mal, obtendrás un mensaje de error en el momento exacto
+
+22
+00:01:27,000 --> 00:01:29,000
+en que haces que el árbol Rojo-Negro sea inconsistente.
+
+23
+00:01:29,000 --> 00:01:35,000
+Recibirás la aserción precisa que falló y no implantarás bombas de tiempo.
+
+24
+00:01:35,000 --> 00:01:40,000
+Porque si se satisface la precondición y se viola la postcondición,
+
+25
+00:01:40,000 --> 00:01:44,000
+sabrás que es precisamente este método, el método de inserción en este caso,
+
+26
+00:01:44,000 --> 00:01:47,000
+el que causó la violación del invariante de datos.
+
+27
+00:01:47,000 --> 00:01:52,000
+Esto de los árboles Rojo-Negro es algo algo personal para mí.
+
+28
+00:01:52,000 --> 00:01:56,000
+Hace diez años, cuando era asistente de enseñanza, mi profesor tuvo la genial idea
+
+29
+00:01:56,000 --> 00:02:00,000
+de que los estudiantes implementaran árboles Rojo-Negro como un ejercicio de programación.
+
+30
+00:02:00,000 --> 00:02:05,000
+Y nosotros, como asistentes de enseñanza, tuvimos la genial idea de crear pruebas automáticas
+
+31
+00:02:05,000 --> 00:02:10,000
+realmente difíciles para las tareas de los estudiantes, lo que resultó en una combinación desastrosa
+
+32
+00:02:10,000 --> 00:02:12,000
+porque escribir un árbol Rojo-Negro es una cosa
+
+33
+00:02:12,000 --> 00:02:15,000
+y escribir un árbol Rojo-Negro que funcione es otra.
+
+34
+00:02:15,000 --> 00:02:19,000
+En ese momento, realmente no sabía cómo depurar y mis estudiantes tampoco
+
+35
+00:02:19,000 --> 00:02:24,000
+y mi profesor tampoco, así que nosotros, como asistentes de enseñanza, pasábamos horas y horas
+
+36
+00:02:24,000 --> 00:02:29,000
+con nuestros estudiantes en la noche avanzando paso a paso y tratando de entender
+
+37
+00:02:29,000 --> 00:02:35,000
+dónde en la operación de inserción número N este puntero particular finalmente se movía
+
+38
+00:02:35,000 --> 00:02:41,000
+a esta otra ubicación, lo cual era un dolor total de descifrar.
+
+39
+00:02:41,000 --> 00:02:45,000
+En particular, con los depuradores regulares, generalmente pasábamos por todo
+
+40
+00:02:45,000 --> 00:02:50,000
+y finalmente perdíamos el momento, así que teníamos que reiniciar una y otra vez.
+
+41
+00:02:50,000 --> 00:02:55,000
+Y si pienso en cuántas horas, probablemente días y semanas,
+
+42
+00:02:55,000 --> 00:03:00,000
+he perdido hurgando en estas estructuras de datos, mientras que con un solo verificador de invariantes
+
+43
+00:03:00,000 --> 99:59:59,000
+los podría haber encontrado en minutos, todavía lo lamento.

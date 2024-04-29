@@ -1,0 +1,61 @@
+A continuación se presenta la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:03,000
+Ahora, todo esto está bien y funciona bien.
+
+2
+00:00:03,000 --> 00:00:08,000
+No hay errores aquí, pero no hay nada que evite el mal uso de mi clase.
+
+3
+00:00:08,000 --> 00:00:12,000
+Por ejemplo, nada me impide ingresar números aquí que no tienen sentido alguno.
+
+4
+00:00:12,000 --> 00:00:20,000
+Por ejemplo, podría ingresar -1 como la hora o -2 como los minutos o -3 como los segundos.
+
+5
+00:00:20,000 --> 00:00:23,000
+Este no es un tiempo válido donde tendríamos que inventar
+
+6
+00:00:23,000 --> 00:00:27,000
+una nueva definición de lo que es un tiempo válido.
+
+7
+00:00:27,000 --> 00:00:35,000
+Aun así, podemos instanciar tal objeto e incluso imprimirlo como -1, -2, -3.
+
+8
+00:00:35,000 --> 00:00:42,000
+Entonces, todavía estamos hablando de tres números, pero dado que Python no ofrece verificación estática de tipos--
+
+9
+00:00:42,000 --> 00:00:47,000
+es decir, la verificación de tipos cuando el programa se está compilando o se ha ejecutado.
+
+10
+00:00:47,000 --> 00:00:52,000
+No hay nada que me impida pasar objetos que tienen un tipo completamente diferente.
+
+11
+00:00:52,000 --> 00:00:58,000
+Entonces, podría pasar una cadena aquí, por ejemplo, y luego las horas se inicializarían con la cadena--
+
+12
+00:00:58,000 --> 00:01:02,000
+esto significa que obtendría un objeto de tiempo aquí, que es completamente inválido.
+
+13
+00:01:02,000 --> 00:01:08,000
+Entonces, mi situación es: estoy pasando alguna cadena aquí en el atributo de horas.
+
+14
+00:01:08,000 --> 00:01:14,000
+Y ahora para una pregunta, si hago esto, ¿obtengo un error al inicializar el objeto de tiempo
+
+15
+00:01:14,000 --> 99:59:59,000
+o al imprimir el objeto de tiempo o nunca?

@@ -1,0 +1,201 @@
+Aquí tienes el texto traducido siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:05,000
+En 1992 hice mi tesis de maestría sobre una herramienta
+
+2
+00:00:05,000 --> 00:00:08,000
+que tomaría un programa y lo visualizaría
+
+3
+00:00:08,000 --> 00:00:11,000
+en varias formas gráficas.
+
+4
+00:00:11,000 --> 00:00:15,000
+Produciría texto correctamente formateado, diagramas de flujo,
+
+5
+00:00:15,000 --> 00:00:18,000
+o diagramas de Nassi–Shneiderman.
+
+6
+00:00:18,000 --> 00:00:23,000
+Y también podrías editar estos en un editor.
+
+7
+00:00:23,000 --> 00:00:26,000
+Más tarde continué con mi doctorado,
+
+8
+00:00:26,000 --> 00:00:29,000
+que completé en 1997 sobre un tema llamado
+
+9
+00:00:29,000 --> 00:00:32,000
+gestión de configuración con lógica de características.
+
+10
+00:00:32,000 --> 00:00:35,000
+La idea era usar la lógica descriptiva para modelar
+
+11
+00:00:35,000 --> 00:00:39,000
+cambios en variancias y detectar inconsistencias.
+
+12
+00:00:39,000 --> 00:00:42,000
+Esto fue bastante interesante, pero el problema era que
+
+13
+00:00:42,000 --> 00:00:46,000
+aparentemente ningún desarrollador estaba dispuesto a aprender lógicas descriptivas.
+
+14
+00:00:46,000 --> 00:00:49,000
+Además, la gestión de configuración estaba esencialmente
+
+15
+00:00:49,000 --> 00:00:51,000
+resuelta, así que me decepcioné.
+
+16
+00:00:51,000 --> 00:00:55,000
+Fue entonces cuando una estudiante mía, Dorothea Litkehaus, llegó,
+
+17
+00:00:55,000 --> 00:00:58,000
+y desarrollamos la idea de usar
+
+18
+00:00:58,000 --> 00:01:02,000
+mi antigua biblioteca para visualizar programas
+
+19
+00:01:02,000 --> 00:01:06,000
+para visualizar estructuras de datos en lugar de programas.
+
+20
+00:01:06,000 --> 00:01:10,000
+Finalmente, estaría haciendo algo útil.
+
+21
+00:01:10,000 --> 00:01:14,000
+La herramienta resultante se convirtió en un depurador llamado DDD
+
+22
+00:01:14,000 --> 00:01:17,000
+para depurador de visualización de datos.
+
+23
+00:01:17,000 --> 00:01:19,000
+Esto es lo que parecía DDD.
+
+24
+00:01:19,000 --> 00:01:21,000
+Tenía una interfaz de línea de comandos
+
+25
+00:01:21,000 --> 00:01:24,000
+para que pudieras ingresar comandos arbitrarios.
+
+26
+00:01:24,000 --> 00:01:26,000
+También verías el código fuente.
+
+27
+00:01:26,000 --> 00:01:29,000
+Podrías establecer puntos de interrupción,
+
+28
+00:01:29,000 --> 00:01:32,000
+y ver la posición actual de ejecución.
+
+29
+00:01:32,000 --> 00:01:34,000
+Lo interesante de DDD, sin embargo,
+
+30
+00:01:34,000 --> 00:01:37,000
+como dice el nombre, depurador de visualización de datos,
+
+31
+00:01:37,000 --> 00:01:40,000
+fue la capacidad de mostrar estructuras de datos.
+
+32
+00:01:40,000 --> 00:01:46,000
+Por ejemplo, aquí arriba hemos visualizado esa lista de punteros,
+
+33
+00:01:46,000 --> 00:01:51,000
+y ahora puedo hacer doble clic en el puntero para ver a qué apunta.
+
+34
+00:01:51,000 --> 00:01:54,000
+Este es el elemento al que apunta el puntero.
+
+35
+00:01:54,000 --> 00:01:57,000
+Puedo verificar a qué apunta self.
+
+36
+00:01:57,000 --> 00:02:00,000
+Obviamente, apunta a sí mismo.
+
+37
+00:02:00,000 --> 00:02:02,000
+Puedo buscar el siguiente valor.
+
+38
+00:02:02,000 --> 00:02:04,000
+Nuevamente, buscar self,
+
+39
+00:02:04,000 --> 00:02:07,000
+y nuevamente buscar el siguiente valor
+
+40
+00:02:07,000 --> 00:02:12,000
+y ver que toda la cosa se convierte en realidad en una lista enlazada.
+
+41
+00:02:12,000 --> 00:02:15,000
+No hace falta decir que, a medida que sigo avanzando por el programa,
+
+42
+00:02:15,000 --> 00:02:17,000
+y a medida que los valores cambian,
+
+43
+00:02:17,000 --> 00:02:22,000
+la pantalla se actualizaría automáticamente de igual manera.
+
+44
+00:02:22,000 --> 00:02:24,000
+DDD eventualmente se convirtió en software libre,
+
+45
+00:02:24,000 --> 00:02:27,000
+y fue adoptado por el proyecto GNU.
+
+46
+00:02:27,000 --> 00:02:30,000
+Por lo tanto, se convirtió en GNU DDD,
+
+47
+00:02:30,000 --> 00:02:34,000
+y se volvió muy popular entre los programadores de C y C++.
+
+48
+00:02:34,000 --> 00:02:38,000
+Hoy en día incluso hay soporte para Python incorporado en DDD,
+
+49
+00:02:38,000 --> 00:02:40,000
+pero ya no lo mantengo
+
+50
+00:02:40,000 --> 99:59:59,000
+así que no sé qué tan bien funciona.

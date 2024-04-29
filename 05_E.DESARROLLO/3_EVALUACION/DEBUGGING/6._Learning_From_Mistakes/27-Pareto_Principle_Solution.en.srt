@@ -1,0 +1,125 @@
+Aquí tienes el texto traducido siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:04,000
+La respuesta a esa pregunta es sí. Se correlaciona.
+
+2
+00:00:04,000 --> 00:00:09,000
+Cuanta más experiencia, mayor es la densidad de errores.
+
+3
+00:00:09,000 --> 00:00:13,000
+Esto puede sorprenderte, pero aquí está la historia detrás de ello.
+
+4
+00:00:13,000 --> 00:00:19,000
+Analizamos la base de datos de errores de Eclipse y verificamos la experiencia y contribuciones
+
+5
+00:00:19,000 --> 00:00:22,000
+de los desarrolladores individuales.
+
+6
+00:00:22,000 --> 00:00:27,000
+Resultó que el líder del proyecto Eclipse, Eric Gamma,
+
+7
+00:00:27,000 --> 00:00:33,000
+tenía la segunda densidad de defectos más alta en su código entre todos los desarrolladores.
+
+8
+00:00:33,000 --> 00:00:37,000
+Ahora, Eric Gamma no es precisamente un desconocido.
+
+9
+00:00:37,000 --> 00:00:40,000
+Le dio al mundo las pruebas unitarias.
+
+10
+00:00:40,000 --> 00:00:42,000
+Le dio al mundo los patrones de diseño.
+
+11
+00:00:42,000 --> 00:00:45,000
+Y le dio al mundo el entorno de programación Eclipse,
+
+12
+00:00:45,000 --> 00:00:48,000
+siempre con un equipo, por supuesto, pero aun así.
+
+13
+00:00:48,000 --> 00:00:58,000
+¿Por qué su densidad de errores sería la segunda más alta entre todos los desarrolladores de Eclipse?
+
+14
+00:00:58,000 --> 00:01:00,000
+La razón es simple.
+
+15
+00:01:00,000 --> 00:01:03,000
+Supongamos que eres tú. Se te ha asignado corregir un error.
+
+16
+00:01:03,000 --> 00:01:08,000
+Miras el problema y encuentras que es terriblemente difícil.
+
+17
+00:01:08,000 --> 00:01:12,000
+Lo que haces es delegar el problema a tu jefe,
+
+18
+00:01:12,000 --> 00:01:15,000
+que tiene mucha más experiencia que tú.
+
+19
+00:01:15,000 --> 00:01:17,000
+Ahora tu jefe mira el código y dice,
+
+20
+00:01:17,000 --> 00:01:21,000
+"Ahhhhh... esto es algo que no puedo manejar".
+
+21
+00:01:21,000 --> 00:01:26,000
+Lo delega a su líder, y este dice,
+
+22
+00:01:26,000 --> 00:01:33,000
+"Ah, esto parece realmente, realmente, realmente difícil.
+
+23
+00:01:33,000 --> 00:01:36,000
+Solo una persona en el mundo puede hacer eso".
+
+24
+00:01:36,000 --> 00:01:42,000
+Este es Eric Gamma, el líder del equipo, que no tiene a nadie más a quien delegar.
+
+25
+00:01:42,000 --> 00:01:47,000
+Como líder del equipo, recibe los problemas más difíciles,
+
+26
+00:01:47,000 --> 00:01:54,000
+es decir, aquellos problemas en los que las posibilidades de cometer un error son mayores.
+
+27
+00:01:54,000 --> 00:02:00,000
+Aun así, él es el hombre adecuado, porque cualquier otra persona lidiando con estos problemas
+
+28
+00:02:00,000 --> 00:02:04,000
+en promedio, haría un trabajo peor que Eric Gamma.
+
+29
+00:02:04,000 --> 00:02:09,000
+Así es como las personas más experimentadas obtienen las tareas más difíciles,
+
+30
+00:02:09,000 --> 00:02:15,000
+posiblemente introducen más defectos, pero aún así, en general, son precisamente
+
+31
+00:02:15,000 --> 99:59:59,000
+las personas adecuadas para hacer el trabajo.

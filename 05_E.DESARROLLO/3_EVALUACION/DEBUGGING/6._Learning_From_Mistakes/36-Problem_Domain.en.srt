@@ -1,0 +1,13 @@
+Aquí tienes el texto traducido siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:04,000
+Última hipótesis: ¿es el dominio del problema?
+
+2
+00:00:04,000 --> 00:00:09,000
+Es decir, ¿el dominio del problema que tu módulo está tratando de abordar?
+
+3
+00:00:09,000 --> 99:59:59,000
+Elige tu opción.

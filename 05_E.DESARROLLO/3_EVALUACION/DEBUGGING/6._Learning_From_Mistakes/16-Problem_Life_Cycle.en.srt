@@ -1,0 +1,133 @@
+Aquí tienes el texto traducido siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:03,000
+Supón que acabas de llenar un nuevo informe de problema.
+
+2
+00:00:03,000 --> 00:00:05,000
+¿Qué sucede a continuación?
+
+3
+00:00:05,000 --> 00:00:07,000
+En una base de datos de problemas como Bugzilla,
+
+4
+00:00:07,000 --> 00:00:11,000
+el problema pasa por una serie de etapas.
+
+5
+00:00:11,000 --> 00:00:13,000
+Inicialmente, el informe de problema no está confirmado.
+
+6
+00:00:13,000 --> 00:00:16,000
+Si toda la información en el informe de problema es válida,
+
+7
+00:00:16,000 --> 00:00:20,000
+entonces pasa al estado nuevo.
+
+8
+00:00:20,000 --> 00:00:26,000
+Un gerente o la junta de control de cambios de software asigna el error a un desarrollador individual
+
+9
+00:00:26,000 --> 00:00:28,000
+que ahora trabaja en él.
+
+10
+00:00:28,000 --> 00:00:30,000
+El desarrollador resuelve el problema,
+
+11
+00:00:30,000 --> 00:00:35,000
+y para resolverlo el desarrollador puede elegir entre múltiples resoluciones.
+
+12
+00:00:35,000 --> 00:00:39,000
+Puede ser "arreglado", lo que significa que el problema ha sido abordado.
+
+13
+00:00:39,000 --> 00:00:42,000
+El problema puede ser marcado como un duplicado,
+
+14
+00:00:42,000 --> 00:00:46,000
+lo que significa que el problema ya existe en otro lugar de la base de datos
+
+15
+00:00:46,000 --> 00:00:50,000
+y, por lo tanto, posiblemente alguien más ya esté trabajando en él.
+
+16
+00:00:50,000 --> 00:00:53,000
+El problema puede tener una resolución de inválido,
+
+17
+00:00:53,000 --> 00:00:56,000
+lo que significa que el problema no es un problema
+
+18
+00:00:56,000 --> 00:00:58,000
+o no contiene los hechos relevantes.
+
+19
+00:00:58,000 --> 00:01:03,000
+Una resolución de "no se solucionará" significa que el problema nunca será solucionado,
+
+20
+00:01:03,000 --> 00:01:09,000
+lo cual es un resultado algo triste para quien lo presentó originalmente.
+
+21
+00:01:09,000 --> 00:01:13,000
+Luego tenemos "funciona para mí" como resolución,
+
+22
+00:01:13,000 --> 00:01:16,000
+lo que significa que el desarrollador no pudo reproducir el problema.
+
+23
+00:01:16,000 --> 00:01:20,000
+Ten en cuenta que si el informe de error es inválido o un duplicado,
+
+24
+00:01:20,000 --> 00:01:25,000
+esto también puede descubrirse en una etapa anterior de esto,
+
+25
+00:01:25,000 --> 00:01:29,000
+y el problema se resuelve inmediatamente, en cierto sentido.
+
+26
+00:01:29,000 --> 00:01:36,000
+Si la resolución es "arreglado", entonces la solución generalmente es verificada por el equipo de aseguramiento de calidad
+
+27
+00:01:36,000 --> 00:01:43,000
+y tan pronto como el producto final se lance con la solución en él,
+
+28
+00:01:43,000 --> 00:01:46,000
+el informe de error se marca como cerrado.
+
+29
+00:01:46,000 --> 00:01:49,000
+En caso de que el problema vuelva a ocurrir,
+
+30
+00:01:49,000 --> 00:01:55,000
+pasa a un estado de reabierto y luego necesita ser reasignado a un desarrollador.
+
+31
+00:01:55,000 --> 00:01:58,000
+Esto también puede suceder desde el estado resuelto.
+
+32
+00:01:58,000 --> 00:02:01,000
+Si surge información adicional, por ejemplo,
+
+33
+00:02:01,000 --> 99:59:59,000
+que hace que la resolución original quede obsoleta.

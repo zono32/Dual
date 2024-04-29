@@ -1,0 +1,25 @@
+Aquí tienes el texto traducido siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:03,000
+Siguiente hipótesis: pruebas.
+
+2
+00:00:03,000 --> 00:00:08,000
+Puedes medir cuán bien están probadas las partes individuales de tu producto.
+
+3
+00:00:08,000 --> 00:00:13,000
+Si una pieza de código tiene una alta cobertura de pruebas,
+
+4
+00:00:13,000 --> 00:00:16,000
+esto significa que estaría bien probada.
+
+5
+00:00:16,000 --> 00:00:21,000
+La pregunta es: ¿el código que está bien probado es menos propenso a errores?
+
+6
+00:00:21,000 --> 99:59:59,000
+Elige tu opción.

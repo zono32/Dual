@@ -1,0 +1,143 @@
+1
+00:00:00,000 --> 00:00:04,000
+So, we have looked at individual developers and past bugs,
+
+2
+00:00:04,000 --> 00:00:11,000
+at complexity, at tests, at team structure, and at the problem domain.
+
+3
+00:00:11,000 --> 00:00:16,000
+Developers get assigned to tasks that are hard in the first place,
+
+4
+00:00:16,000 --> 00:00:20,000
+and tasks that are hard call for more bugs.
+
+5
+00:00:20,000 --> 00:00:23,000
+That is, also more past bugs.
+
+6
+00:00:23,000 --> 00:00:26,000
+Also, more testing.
+
+7
+00:00:26,000 --> 00:00:31,000Aquí tienes el texto traducido siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:04,000
+Entonces, hemos analizado a desarrolladores individuales y errores pasados,
+
+2
+00:00:04,000 --> 00:00:11,000
+la complejidad, las pruebas, la estructura del equipo y el dominio del problema.
+
+3
+00:00:11,000 --> 00:00:16,000
+A los desarrolladores se les asignan tareas que son difíciles desde el principio,
+
+4
+00:00:16,000 --> 00:00:20,000
+y las tareas difíciles conducen a más errores.
+
+5
+00:00:20,000 --> 00:00:23,000
+Es decir, también a más errores pasados.
+
+6
+00:00:23,000 --> 00:00:26,000
+Además, más pruebas.
+
+7
+00:00:26,000 --> 00:00:31,000
+Todo esto nos lleva a que el dominio sea el factor más importante
+
+8
+00:00:31,000 --> 00:00:36,000
+para determinar de dónde provienen realmente los errores.
+
+9
+00:00:36,000 --> 00:00:41,000
+Si el dominio cambia con frecuencia, esto llevará a más errores.
+
+10
+00:00:41,000 --> 00:00:50,000
+Si el dominio es complejo en sí mismo, como JavaScript o en Eclipse el compilador,
+
+11
+00:00:50,000 --> 00:00:53,000
+esto llevará a más errores.
+
+12
+00:00:53,000 --> 00:00:56,000
+Si el dominio no está bien definido--
+
+13
+00:00:56,000 --> 00:01:02,000
+por ejemplo, porque el equipo no puede ponerse de acuerdo sobre qué hacer--
+
+14
+00:01:02,000 --> 00:01:06,000
+entonces esto también provoca más errores.
+
+15
+00:01:06,000 --> 00:01:11,000
+Lo que podemos hacer, sin embargo, es observando errores pasados,
+
+16
+00:01:11,000 --> 00:01:18,000
+identificar qué partes del dominio y posiblemente otras influencias
+
+17
+00:01:18,000 --> 00:01:21,000
+correlacionan con errores pasados.
+
+18
+00:01:21,000 --> 99:59:59,000
+Esto puede darnos una idea de cómo evitar tales errores en el futuro.
+All of this leads us to the domain as being the most important factor
+
+8
+00:00:31,000 --> 00:00:36,000
+in determining where bugs actually come from.
+
+9
+00:00:36,000 --> 00:00:41,000
+If the domain changes frequently, this will lead to more bugs.
+
+10
+00:00:41,000 --> 00:00:50,000
+If the domain is complex in itself, such as JavaScript or in eclipse the compiler,
+
+11
+00:00:50,000 --> 00:00:53,000
+this will lead to more bugs.
+
+12
+00:00:53,000 --> 00:00:56,000
+If the domain is not well-defined--
+
+13
+00:00:56,000 --> 00:01:02,000
+for instance, because the team cannot agree on what to do--
+
+14
+00:01:02,000 --> 00:01:06,000
+then this also calls for more bugs.
+
+15
+00:01:06,000 --> 00:01:11,000
+What we can do, though, is by looking at past bugs,
+
+16
+00:01:11,000 --> 00:01:18,000
+identify which parts of the domain and possibly other influences
+
+17
+00:01:18,000 --> 00:01:21,000
+correlate with past bugs.
+
+18
+00:01:21,000 --> 99:59:59,000
+This may give us a handle on how to avoid such mistakes in the future.

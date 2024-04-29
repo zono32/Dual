@@ -1,0 +1,39 @@
+1
+00:00:00,000 --> 00:00:05,000
+Y nuevamente, si piensas en un programa como una sucesión de estados que pasan la aserción
+
+2
+00:00:05,000 --> 00:00:08,000
+puede decirte inmediatamente que hay grandes partes del estado
+
+3
+00:00:08,000 --> 00:00:11,000
+donde la infección no pudo haber tenido lugar.
+
+4
+00:00:11,000 --> 00:00:17,000
+Si estos fueran los objetos de tiempo en tu estado, sabrías que todos tienen valores correctos
+
+5
+00:00:17,000 --> 00:00:19,000
+porque ninguna de sus aserciones ha fallado.
+
+6
+00:00:19,000 --> 00:00:22,000
+Sin embargo, queda un problema con nuestra clase Time.
+
+7
+00:00:22,000 --> 00:00:26,000
+Todavía puedes pasar números de punto flotante como argumentos aquí
+
+8
+00:00:26,000 --> 00:00:30,000
+y luego obtener un error mientras intentamos imprimir la hora.
+
+9
+00:00:30,000 --> 00:00:36,000
+Entonces, aquí tienes tu ejercicio de programación, extiende el código para que todos los parámetros aquí
+
+10
+00:00:36,000 --> 99:59:59,000
+se conviertan automáticamente a enteros.

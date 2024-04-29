@@ -1,0 +1,45 @@
+Aquí tienes el texto traducido siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:05,000
+Como se mencionó antes, la prioridad define cuán pronto se solucionará un error.
+
+2
+00:00:05,000 --> 00:00:11,000
+Por supuesto, puede ser deseable que se solucionen primero los errores severos,
+
+3
+00:00:11,000 --> 00:00:14,000
+pero un error severo puede afectar solo a un usuario.
+
+4
+00:00:14,000 --> 00:00:17,000
+Cientos de otros usuarios pueden sufrir por problemas menores,
+
+5
+00:00:17,000 --> 00:00:20,000
+los cuales, por lo tanto, pueden tener que ser abordados primero.
+
+6
+00:00:20,000 --> 00:00:24,000
+Lo mismo ocurre con los errores que han estado presentes por más tiempo.
+
+7
+00:00:24,000 --> 00:00:28,000
+Nuevamente, estos pueden no ser importantes para muchos usuarios.
+
+8
+00:00:28,000 --> 00:00:31,000
+Aquellos que son los más fáciles de solucionar.
+
+9
+00:00:31,000 --> 00:00:33,000
+Bueno, si un problema es fácil de solucionar,
+
+10
+00:00:33,000 --> 00:00:37,000
+ciertamente aumenta la probabilidad de que se solucione pronto.
+
+11
+00:00:37,000 --> 99:59:59,000
+Una vez más, estos problemas pueden no ser importantes.

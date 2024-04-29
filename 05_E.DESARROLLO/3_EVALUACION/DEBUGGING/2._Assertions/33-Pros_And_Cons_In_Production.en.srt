@@ -1,0 +1,123 @@
+1
+00:00:00,000 --> 00:00:04,000
+Finalmente, siempre es una buena pregunta si las aserciones en el código de producción
+
+2
+00:00:04,000 --> 00:00:06,000
+deben permanecer habilitadas o no.
+
+3
+00:00:06,000 --> 00:00:11,000
+Aquí hay algunos puntos a considerar. Primero, es mejor fallar que tener datos incorrectos.
+
+4
+00:00:11,000 --> 00:00:14,000
+Si tu programa falla con una aserción, sabes que hay un error.
+
+5
+00:00:14,000 --> 00:00:18,000
+Si simplemente produce un mal resultado sin verificarlo realmente,
+
+6
+00:00:18,000 --> 00:00:21,000
+esto puede tener consecuencias mucho peores que fallar.
+
+7
+00:00:21,000 --> 00:00:27,000
+Segundo, cuanto más activas estén las aserciones, más fácil será encontrar el defecto.
+
+8
+00:00:27,000 --> 00:00:30,000
+Tercero, los defectos en el campo son difíciles de rastrear,
+
+9
+00:00:30,000 --> 00:00:36,000
+lo que significa que una aserción te da la oportunidad de encontrar el defecto antes de que llegue al campo,
+
+10
+00:00:36,000 --> 00:00:38,000
+en particular, en combinación con las pruebas en bruto.
+
+11
+00:00:38,000 --> 00:00:42,000
+e incluso en el campo, si las aserciones todavía están habilitadas,
+
+12
+00:00:42,000 --> 00:00:45,000
+todavía tienes una mejor oportunidad de encontrar defectos porque,
+
+13
+00:00:45,000 --> 00:00:48,000
+bueno, obtienes el fallo en lugar de producir datos incorrectos.
+
+14
+00:00:48,000 --> 00:00:54,000
+Por el lado de los detractores, ¿qué habla en contra de que las aserciones estén habilitadas en código de producción?
+
+15
+00:00:54,000 --> 00:00:57,000
+Tenemos rendimiento, rendimiento, rendimiento.
+
+16
+00:00:57,000 --> 00:01:01,000
+Si tienes una gran estructura de datos con muchas verificaciones globales y dejas esto habilitado,
+
+17
+00:01:01,000 --> 00:01:03,000
+el rendimiento sufrirá.
+
+18
+00:01:03,000 --> 00:01:08,000
+Sin embargo, hay una gran cantidad de aserciones que impactan el rendimiento de manera marginal.
+
+19
+00:01:08,000 --> 00:01:13,000
+Verificar si un resultado es mayor o igual a cero o cosas similares
+
+20
+00:01:13,000 --> 00:01:16,000
+no impactará el rendimiento de una manera medible.
+
+21
+00:01:16,000 --> 00:01:19,000
+La respuesta aquí es primero dejar las aserciones activadas
+
+22
+00:01:19,000 --> 00:01:22,000
+y luego medir qué aserciones realmente impactan el rendimiento
+
+23
+00:01:22,000 --> 00:01:25,000
+y posiblemente desactivarlas y dejar las demás habilitadas.
+
+24
+00:01:25,000 --> 00:01:30,000
+Lo segundo es que las aserciones, cuando fallan, normalmente hacen que el programa se bloquee,
+
+25
+00:01:30,000 --> 00:01:33,000
+o al menos interrumpen la ejecución inmediatamente.
+
+26
+00:01:33,000 --> 00:01:35,000
+Esto no es muy amigable para el usuario.
+
+27
+00:01:35,000 --> 00:01:38,000
+Debes dar a tus usuarios una oportunidad de recuperarse
+
+28
+00:01:38,000 --> 00:01:41,000
+incluso si una aserción encuentra que algo ha salido mal.
+
+29
+00:01:41,000 --> 00:01:47,000
+Pero, nuevamente, si tu programa falla debido a una aserción fallida, ¿cuál es la alternativa?
+
+30
+00:01:47,000 --> 00:01:50,000
+La alternativa es seguir trabajando con datos incorrectos
+
+31
+00:01:50,000 --> 99:59:59,000
+y los datos incorrectos pueden producir resultados aún peores más adelante.

@@ -1,0 +1,33 @@
+Aquí tienes el texto traducido siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:03,000
+Este último punto requiere un cuestionario.
+
+2
+00:00:03,000 --> 00:00:07,000
+¿Por qué es mejor tener una prueba automatizada en lugar de un informe de problema?
+
+3
+00:00:07,000 --> 00:00:11,000
+¿Es porque siempre puedes verificar si el problema persiste
+
+4
+00:00:11,000 --> 00:00:13,000
+al ejecutar la prueba automatizada?
+
+5
+00:00:13,000 --> 00:00:16,000
+¿Es porque siempre puedes reproducir el problema?
+
+6
+00:00:16,000 --> 00:00:19,000
+¿Si la prueba falla, puedes comenzar a depurar de inmediato?
+
+7
+00:00:19,000 --> 00:00:24,000
+¿O puedes consultar tanta información adicional como necesites?
+
+8
+00:00:24,000 --> 99:59:59,000
+Marca todas las que correspondan.

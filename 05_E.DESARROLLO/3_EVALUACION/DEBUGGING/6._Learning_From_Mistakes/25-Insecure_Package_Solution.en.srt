@@ -1,0 +1,93 @@
+Aquí tienes el texto traducido siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:02,000
+La respuesta es JavaScript.
+
+2
+00:00:02,000 --> 00:00:05,000
+Aquí abajo ves más de una docena de clases
+
+3
+00:00:05,000 --> 00:00:08,000
+que todas han tenido muchos problemas de seguridad.
+
+4
+00:00:08,000 --> 00:00:11,000
+Esta es la respuesta correcta.
+
+5
+00:00:11,000 --> 00:00:19,000
+Uno podría preguntarse por qué los problemas terminan en un pequeño número de lugares
+
+6
+00:00:19,000 --> 00:00:25,000
+y que partes tan grandes del código permanezcan sin ningún problema.
+
+7
+00:00:25,000 --> 00:00:28,000
+Para JavaScript esto es bastante claro.
+
+8
+00:00:28,000 --> 00:00:32,000
+Esta parte contiene el intérprete de JavaScript,
+
+9
+00:00:32,000 --> 00:00:36,000
+que interactúa a través de muchas, muchas interfaces con el sistema.
+
+10
+00:00:36,000 --> 00:00:40,000
+Todas estas son posibles vectores de ataque.
+
+11
+00:00:40,000 --> 00:00:45,000
+No es una sorpresa que JavaScript tenga tantos problemas de seguridad.
+
+12
+00:00:45,000 --> 00:00:50,000
+Además, es notoriamente difícil lograr que un intérprete funcione correctamente.
+
+13
+00:00:50,000 --> 00:00:54,000
+El diseño HTML puede sorprender.
+
+14
+00:00:54,000 --> 00:01:02,000
+Después de todo, esto es solo reorganizar los elementos de la interfaz de usuario apropiados en la pantalla.
+
+15
+00:01:02,000 --> 00:01:05,000
+¿Por qué habría problemas de seguridad relacionados con eso?
+
+16
+00:01:05,000 --> 00:01:07,000
+La razón es el *cross-site scripting*.
+
+17
+00:01:07,000 --> 00:01:12,000
+Tan pronto como diseñas múltiples fuentes en una página,
+
+18
+00:01:12,000 --> 00:01:17,000
+puede ser que una fuente intente acceder a elementos de la otra fuente,
+
+19
+00:01:17,000 --> 00:01:20,000
+utilizando tu pantalla como un túnel.
+
+20
+00:01:20,000 --> 00:01:25,000
+Estos problemas están justo aquí dentro del diseño HTML.
+
+21
+00:01:25,000 --> 00:01:33,000
+El modelo de objetos del documento también permite acceder y manipular elementos individuales.
+
+22
+00:01:33,000 --> 00:01:37,000
+Esto nuevamente es una puerta abierta para problemas de seguridad
+
+23
+00:01:37,000 --> 99:59:59,000
+así como para la base de contenido. Realmente no lo sé.

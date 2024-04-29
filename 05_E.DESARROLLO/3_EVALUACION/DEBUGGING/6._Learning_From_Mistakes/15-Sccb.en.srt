@@ -1,0 +1,73 @@
+Aquí tienes el texto traducido siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:03,000
+Muchas organizaciones utilizan una junta de control de cambios de software,
+
+2
+00:00:03,000 --> 00:00:06,000
+o SCCB, para establecer prioridades.
+
+3
+00:00:06,000 --> 00:00:10,000
+Este es un grupo de personas que revisan la base de datos de problemas
+
+4
+00:00:10,000 --> 00:00:14,000
+y se encargan del manejo de los problemas.
+
+5
+00:00:14,000 --> 00:00:20,000
+Este grupo generalmente está compuesto por desarrolladores, probadores y gerentes.
+
+6
+00:00:20,000 --> 00:00:26,000
+Lo que hacen es hacer un seguimiento de los problemas resueltos y no resueltos,
+
+7
+00:00:26,000 --> 00:00:29,000
+asignar una prioridad a problemas individuales,
+
+8
+00:00:29,000 --> 00:00:33,000
+y luego asignar estos problemas a desarrolladores individuales.
+
+9
+00:00:33,000 --> 00:00:36,000
+Como puedes ver, una base de datos de problemas es una herramienta muy importante
+
+10
+00:00:36,000 --> 00:00:39,000
+en la gestión de un producto.
+
+11
+00:00:39,000 --> 00:00:43,000
+Toda la discusión sobre todas las características eventualmente se almacena aquí.
+
+12
+00:00:43,000 --> 00:00:47,000
+Incluso puedes usarlo como una herramienta para la gestión de requisitos.
+
+13
+00:00:47,000 --> 00:00:52,000
+Cuando el proyecto comienza, ingresas un solo problema aquí,
+
+14
+00:00:52,000 --> 00:00:55,000
+que indica que falta el producto.
+
+15
+00:00:55,000 --> 00:00:58,000
+Luego agregas más requisitos y más requisitos,
+
+16
+00:00:58,000 --> 00:01:02,000
+que eventualmente deberán ser cumplidos.
+
+17
+00:01:02,000 --> 00:01:07,000
+Una junta como la SCCB luego decide quién debe hacerse cargo de
+
+18
+00:01:07,000 --> 99:59:59,000
+qué problema y cuándo.

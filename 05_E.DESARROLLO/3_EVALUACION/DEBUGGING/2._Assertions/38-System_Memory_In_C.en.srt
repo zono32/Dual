@@ -1,0 +1,127 @@
+1
+00:00:00,000 --> 00:00:05,000
+En Python, tener accesos arbitrarios de lectura y escritura en todo el programa
+
+2
+00:00:05,000 --> 00:00:08,000
+hacia una única ubicación es bastante poco común.
+
+3
+00:00:08,000 --> 00:00:12,000
+Sin embargo, hay lenguajes en los que cualquier función que se ejecute
+
+4
+00:00:12,000 --> 00:00:19,000
+puede acceder a cualquier parte de la memoria, ya sea a propósito o por accidente.
+
+5
+00:00:19,000 --> 00:00:24,000
+Esto es especialmente cierto para lenguajes en los que la memoria está bajo control del programador,
+
+6
+00:00:24,000 --> 00:00:27,000
+como C y C++.
+
+7
+00:00:27,000 --> 00:00:35,000
+Para ilustrar por qué en lenguajes como C y C++ la gestión de memoria puede ser un gran problema,
+
+8
+00:00:35,000 --> 00:00:40,000
+permíteme mostrarte un breve fragmento de código en C que puede causar muchos problemas.
+
+9
+00:00:40,000 --> 00:00:45,000
+En C y también en C++, obtienes memoria llamando a una función especial
+
+10
+00:00:45,000 --> 00:00:48,000
+llamada `malloc` para el *memory allocator* (asignador de memoria).
+
+11
+00:00:48,000 --> 00:00:51,000
+Cuando invocas `malloc`, le das como argumento el número de bytes
+
+12
+00:00:51,000 --> 00:00:54,000
+que te gustaría tener para tu estructura de datos.
+
+13
+00:00:54,000 --> 00:01:01,000
+Estríctamente hablando, es el número de caracteres, pero vamos a omitir eso.
+
+14
+00:01:01,000 --> 00:01:07,000
+El efecto de esta declaración es que obtendrás un conjunto de bytes
+
+15
+00:01:07,000 --> 00:01:10,000
+y recibirás un puntero que apunta al inicio de esta memoria asignada.
+
+16
+00:01:10,000 --> 00:01:16,000
+Lo que realmente tienes aquí es una matriz de 10 caracteres.
+
+17
+00:01:16,000 --> 00:01:20,000
+Puedes escribir estos caracteres uno por uno. Por ejemplo, en la ubicación 5, almacenamos una *x*.
+
+18
+00:01:20,000 --> 00:01:27,000
+En C, como en otros lenguajes, las matrices comienzan con un índice de 0.
+
+19
+00:01:27,000 --> 00:01:34,000
+Por lo que 5 es en realidad el sexto elemento de la matriz. También podemos leer elementos de la matriz.
+
+20
+00:01:34,000 --> 00:01:37,000
+Por ejemplo, podemos acceder al décimo elemento de la matriz
+
+21
+00:01:37,000 --> 00:01:43,000
+y almacenar el carácter resultante en *y*.
+
+22
+00:01:43,000 --> 00:01:47,000
+El único problema es que no hay un décimo carácter.
+
+23
+00:01:47,000 --> 00:01:53,000
+La matriz tiene solo 10 elementos y este sería el undécimo elemento.
+
+24
+00:01:53,000 --> 00:01:59,000
+El comportamiento del programa en C en este momento se vuelve indefinido.
+
+25
+00:01:59,000 --> 00:02:05,000
+Es decir, cualquier cosa puede suceder. Es posible que algún valor completamente aleatorio se almacene en *y*.
+
+26
+00:02:05,000 --> 00:02:10,000
+Esto es lo más probable. También es posible que el programa se detenga de inmediato.
+
+27
+00:02:10,000 --> 00:02:16,000
+También es posible que tu programa, de repente, se convierta en un juego de aventuras
+
+28
+00:02:16,000 --> 00:02:08,000
+y te permita explorar cuevas colosales.
+
+29
+00:02:16,000 --> 00:02:08,000
+Eso es un resultado muy poco probable, pero ten en cuenta que en una versión del compilador GLU,
+
+30
+00:02:22,000 --> 00:02:28,000
+los programadores de GLU se divirtieron diciendo:
+
+31
+00:02:28,000 --> 00:02:22,000
+"Bueno, en un comportamiento indefinido, cualquier cosa puede suceder, así que simplemente hagamos de esto un juego".
+
+32
+00:02:28,000 --> 99:59:59,000
+Esto no fue muy apreciado por los programadores.

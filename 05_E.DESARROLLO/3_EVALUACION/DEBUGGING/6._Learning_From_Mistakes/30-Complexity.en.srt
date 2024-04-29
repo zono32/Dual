@@ -1,0 +1,17 @@
+Aquí tienes el texto traducido siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:03,000
+Siguiente hipótesis: complejidad.
+
+2
+00:00:03,000 --> 00:00:10,000
+¿Es cierto que el código complejo tiene más errores que el código simple?
+
+3
+00:00:10,000 --> 00:00:16,000
+¿Podemos usar, por ejemplo, métricas de código para predecir dónde estarán la mayoría de los errores en el futuro?
+
+4
+00:00:16,000 --> 99:59:59,000
+Elige tu opción.

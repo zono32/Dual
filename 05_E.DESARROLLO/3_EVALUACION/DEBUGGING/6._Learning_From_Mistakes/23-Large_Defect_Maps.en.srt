@@ -1,0 +1,65 @@
+Aquí tienes el texto traducido siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:04,000
+Lo interesante es que podemos hacer esto
+
+2
+00:00:04,000 --> 00:00:07,000
+para todas las partes del programa.
+
+3
+00:00:07,000 --> 00:00:09,000
+Para cada función del programa,
+
+4
+00:00:09,000 --> 00:00:14,000
+podemos revisar los cambios y descubrir qué problemas
+
+5
+00:00:14,000 --> 00:00:19,000
+se abordaron en ese archivo específico o en esa función específica.
+
+6
+00:00:19,000 --> 00:00:24,000
+Lo que obtenemos de esta manera es un recuento de defectos para cada ubicación.
+
+7
+00:00:24,000 --> 00:00:33,000
+Es decir, la cantidad de problemas que se han solucionado en ese archivo o función.
+
+8
+00:00:33,000 --> 00:00:39,000
+En 2007, mis estudiantes y yo creamos una herramienta que generaba
+
+9
+00:00:39,000 --> 00:00:45,000
+un mapeo de las bases de datos de versiones y bases de datos de problemas
+
+10
+00:00:45,000 --> 00:00:47,000
+de programas de código abierto.
+
+11
+00:00:47,000 --> 00:00:54,000
+Por ejemplo, aplicaríamos esto en Firefox, el navegador web,
+
+12
+00:00:54,000 --> 00:00:58,000
+para descubrir dónde se encontraban la mayoría de los defectos.
+
+13
+00:00:58,000 --> 00:01:02,000
+Más específicamente, estaríamos buscando defectos de seguridad,
+
+14
+00:01:02,000 --> 00:01:07,000
+es decir, problemas relacionados con cuestiones de seguridad.
+
+15
+00:01:07,000 --> 00:01:13,000
+Lo que obtendríamos es precisamente la ubicación donde se encuentran la mayoría
+
+16
+00:01:13,000 --> 99:59:59,000
+de los errores de seguridad.

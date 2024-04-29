@@ -1,0 +1,23 @@
+1
+00:00:00,000 --> 00:00:04,000
+Aquí viene la respuesta. Bueno, eso en realidad fue un cuestionario bastante aburrido.
+
+2
+00:00:04,000 --> 00:00:08,000
+Por supuesto, los invariantes de datos, si se trata de estructuras de datos grandes, cubren gran parte del espacio.
+
+3
+00:00:08,000 --> 00:00:11,000
+Si son estructuras de datos que se utilizan con frecuencia,
+
+4
+00:00:11,000 --> 00:00:13,000
+se verifican con frecuencia con cada uso.
+
+5
+00:00:13,000 --> 00:00:17,000
+Los invariantes de datos forman una parte importante de todo tipo de pre- y postcondiciones.
+
+6
+00:00:17,000 --> 99:59:59,000
+Finalmente, las aserciones que escribes aquí proporcionan una documentación útil para los programadores.

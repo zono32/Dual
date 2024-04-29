@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Aquí tienes la traducción al castellano del texto siguiendo el mismo formato:
+=======
+Aquí tienes la traducción al castellano siguiendo el mismo formato:
+>>>>>>> 001f716fa5bbce12cae45bb45931253fb5cb57c5
 
 1
 00:00:00,000 --> 00:00:02,000
@@ -6,6 +10,7 @@ Aquí tienes la traducción al castellano del texto siguiendo el mismo formato:
 
 2
 00:00:02,000 --> 00:00:08,000
+<<<<<<< HEAD
 Vamos a introducir un parámetro: el epsilon, que nos dice la desviación máxima
 
 3
@@ -23,3 +28,22 @@ Ahora vamos a tomar este ejemplo y establecer una postcondición adecuada aquí,
 6
 00:00:21,000 --> 99:59:59,000
 de tal manera que la diferencia entre y² y x nunca sea mayor que eps.
+=======
+Vamos a introducir un parámetro: el épsilon, que nos indica la desviación máxima
+
+3
+00:00:08,000 --> 00:00:13,000
+del resultado actual como un número absoluto, y le vamos a dar un valor predeterminado--
+
+4
+00:00:13,000 --> 00:00:16,000
+digamos que hasta siete dígitos después de la coma está bien.
+
+5
+00:00:16,000 --> 00:00:21,000
+Ahora vamos a tomar este ejemplo y configurar una condición posterior adecuada aquí,
+
+6
+00:00:21,000 --> 99:59:59,000
+de modo que la diferencia entre y² y x nunca sea mayor que épsilon.
+>>>>>>> 001f716fa5bbce12cae45bb45931253fb5cb57c5

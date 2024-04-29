@@ -1,0 +1,59 @@
+1
+00:00:00,000 --> 00:00:06,000
+Los desbordamientos de búfer también son el tema de una de mis historias de errores favoritas,
+
+2
+00:00:06,000 --> 00:00:09,000
+reportada por Isenstadt en 1997.
+
+3
+00:00:09,000 --> 00:00:14,000
+En una ocasión, tenía un sistema que funcionaba solo bajo circunstancias muy específicas;
+
+4
+00:00:14,000 --> 00:00:17,000
+a veces funcionaba, a veces no.
+
+5
+00:00:17,000 --> 00:00:21,000
+Las partes cruciales de la memoria en esta historia son dos variables:
+
+6
+00:00:21,000 --> 00:00:27,000
+una es el día de la semana y la otra es una variable que llamaremos "ok".
+
+7
+00:00:27,000 --> 00:00:31,000
+"Ok" puede tomar un valor de "sí" o "no".
+
+8
+00:00:31,000 --> 00:00:35,000
+Por defecto, en esta historia, "ok" se establece en "no".
+
+9
+00:00:35,000 --> 00:00:39,000
+Sin embargo, "ok" debe establecerse en "sí" para que funcione.
+
+10
+00:00:39,000 --> 00:00:45,000
+Ahora, el día de la semana en este arreglo de ocho caracteres podría ser algo como "Monday".
+
+11
+00:00:45,000 --> 00:00:48,000
+Y el lunes, el programa no funcionaba.
+
+12
+00:00:48,000 --> 00:00:50,000
+Tampoco funcionaba el domingo.
+
+13
+00:00:50,000 --> 00:00:55,000
+Ni funcionaba el martes, pero habría un día de la semana
+
+14
+00:00:55,000 --> 00:01:00,000
+y solo en ese día de la semana en el que el programa funcionaba bien.
+
+15
+00:01:00,000 --> 99:59:59,000
+¿Qué día es ese? Adelante.

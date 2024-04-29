@@ -1,0 +1,9 @@
+Aquí tienes el texto traducido siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:04,000
+La siguiente hipótesis interesante: ¿tiene la estructura del equipo
+
+2
+00:00:04,000 --> 99:59:59,000
+alguna influencia en cuántos errores produce ese mismo equipo?

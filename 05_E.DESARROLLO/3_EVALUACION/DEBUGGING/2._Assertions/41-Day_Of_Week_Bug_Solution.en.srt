@@ -1,0 +1,31 @@
+1
+00:00:00,000 --> 00:00:02,000
+Ahora la respuesta. Ya les di algunas pistas.
+
+2
+00:00:02,000 --> 00:00:08,000
+No funciona el domingo. No funciona el lunes. Tampoco funciona el martes.
+
+3
+00:00:08,000 --> 00:00:11,000
+Sin embargo, ¿qué pasa un miércoles?
+
+4
+00:00:11,000 --> 00:00:16,000
+Ves, la palabra "Wednesday" no encaja realmente en este espacio del día de la semana.
+
+5
+00:00:16,000 --> 00:00:20,000
+Lo que obtenemos aquí es un simple desbordamiento de búfer,
+
+6
+00:00:20,000 --> 00:00:23,000
+por lo que la variable "ok" se sobrescribe con "Y",
+
+7
+00:00:23,000 --> 00:00:29,000
+que en realidad es el valor de aceptación que el programa necesita en esta variable para funcionar.
+
+8
+00:00:29,000 --> 99:59:59,000
+Tenemos la curiosa situación de un programa que solo funciona los miércoles.

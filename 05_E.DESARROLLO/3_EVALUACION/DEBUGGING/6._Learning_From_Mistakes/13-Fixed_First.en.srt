@@ -1,0 +1,29 @@
+Aquí tienes el texto traducido siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:02,000
+Ahora para un cuestionario...
+
+2
+00:00:02,000 --> 00:00:05,000
+¿Qué problemas se solucionan primero?
+
+3
+00:00:05,000 --> 00:00:08,000
+¿Son aquellos con la mayor severidad?
+
+4
+00:00:08,000 --> 00:00:10,000
+¿Aquellos con la mayor prioridad?
+
+5
+00:00:10,000 --> 00:00:13,000
+¿Aquellos que han estado presentes por más tiempo?
+
+6
+00:00:13,000 --> 00:00:17,000
+¿O aquellos que son más fáciles de solucionar?
+
+7
+00:00:17,000 --> 99:59:59,000
+Elige tu opción.

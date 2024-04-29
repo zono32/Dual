@@ -1,0 +1,57 @@
+Aquí tienes el texto traducido siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:03,000
+Muchos sistemas operativos te permiten enviar informes de errores
+
+2
+00:00:03,000 --> 00:00:07,000
+más o menos automáticamente tan pronto como un programa se bloquea.
+
+3
+00:00:07,000 --> 00:00:11,000
+Este es el cuadro de diálogo que aparece en un sistema macOS.
+
+4
+00:00:11,000 --> 00:00:14,000
+Esencialmente, Apple te hace solo una pregunta,
+
+5
+00:00:14,000 --> 00:00:19,000
+y esa es de nuevo los pasos necesarios para reproducir el problema.
+
+6
+00:00:19,000 --> 00:00:24,000
+Todo lo demás se puede deducir a partir de eso.
+
+7
+00:00:24,000 --> 00:00:26,000
+Además, el informe de errores también incluye
+
+8
+00:00:26,000 --> 00:00:29,000
+detalles del problema y configuración del sistema,
+
+9
+00:00:29,000 --> 00:00:32,000
+que es, por ejemplo, el número de versión del programa que se bloqueó,
+
+10
+00:00:32,000 --> 00:00:36,000
+el proceso actual, fecha y hora,
+
+11
+00:00:36,000 --> 00:00:40,000
+las funciones que estaban activas en el momento del bloqueo,
+
+12
+00:00:40,000 --> 00:00:44,000
+así como cualquier hardware conectado a la máquina.
+
+13
+00:00:44,000 --> 00:00:47,000
+Aquí están los pasos necesarios para reproducir el problema,
+
+14
+00:00:47,000 --> 99:59:59,000
+y enviamos todo a Apple.

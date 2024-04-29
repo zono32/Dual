@@ -1,0 +1,151 @@
+1
+00:00:00,000 --> 00:00:05,000
+Supongamos que tienes un programa grande, grande, sin controles aleatorios
+
+2
+00:00:05,000 --> 00:00:07,000
+y debes realizar la depuración.
+
+3
+00:00:07,000 --> 00:00:10,000
+¿Dónde deberías comenzar en ese programa?
+
+4
+00:00:10,000 --> 00:00:14,000
+Sugeriría que lo primero que hagas es definir invariantes de datos.
+
+5
+00:00:14,000 --> 00:00:20,000
+Esto cubrirá inmediatamente grandes partes del estado del programa y atrapará muchos defectos.
+
+6
+00:00:20,000 --> 00:00:24,000
+Lo siguiente es proporcionar precondiciones que verifiquen los invariantes de datos, por supuesto,
+
+7
+00:00:24,000 --> 00:00:29,000
+pero que también verifiquen precondiciones específicas para las funciones en cuestión.
+
+8
+00:00:29,000 --> 00:00:33,000
+Por último, proporciona postcondiciones en cualquier método que consideres sospechoso.
+
+9
+00:00:33,000 --> 00:00:37,000
+Comienza con las postcondiciones parciales y luego expándelas cada vez más
+
+10
+00:00:37,000 --> 00:00:40,000
+para capturar más y más del comportamiento correcto.
+
+11
+00:00:40,000 --> 00:00:43,000
+¿Por qué comenzamos con invariantes de datos y precondiciones?
+
+12
+00:00:43,000 --> 00:00:47,000
+Bueno, porque generalmente son más fáciles de escribir, atrapan muchos errores,
+
+13
+00:00:47,000 --> 00:00:51,000
+y porque solo nos importa si un método funciona o no
+
+14
+00:00:51,000 --> 00:00:56,000
+si en realidad recibe el argumento correcto y comienza con un estado correcto.
+
+15
+00:00:56,000 --> 00:01:01,000
+Además, si estás usando C o C++, ejecuta una verificación de invariantes del sistema.
+
+16
+00:01:01,000 --> 00:01:03,000
+Deberías ejecutar la verificación de invariantes del sistema por la simple razón
+
+17
+00:01:03,000 --> 00:01:06,000
+de que verificará todo tipo de corrupción de memoria,
+
+18
+00:01:06,000 --> 00:01:10,000
+y si tu programa tiene problemas con corrupción de memoria,
+
+19
+00:01:10,000 --> 00:01:14,000
+entonces todas estas otras aserciones son completamente irrelevantes porque darán resultados aleatorios.
+
+20
+00:01:14,000 --> 00:01:19,000
+Ejecutar una herramienta como Valgrind puede detectar muchos problemas de memoria
+
+21
+00:01:19,000 --> 00:01:23,000
+y todo lo que se necesita es ejecutar tu programa una vez con Valgrind habilitado.
+
+22
+00:01:23,000 --> 00:01:28,000
+Un colega mío recientemente se trasladó de la academia a una empresa de petróleo y gas
+
+23
+00:01:28,000 --> 00:01:30,000
+y estuvo a cargo de las pruebas.
+
+24
+00:01:30,000 --> 00:01:34,000
+Introdujo la primera aserción en su código
+
+25
+00:01:34,000 --> 00:01:38,000
+y de inmediato, esa única aserción, descubrió docenas de errores.
+
+26
+00:01:38,000 --> 00:01:40,000
+Los ingenieros estaban asombrados.
+
+27
+00:01:40,000 --> 00:01:44,000
+Nunca habían visto algo así antes, y esta es una experiencia.
+
+28
+00:01:44,000 --> 00:01:47,000
+Bueno, no estoy seguro de si deberías tener esa experiencia también,
+
+29
+00:01:47,000 --> 00:01:51,000
+pero si te encuentras con un código que no tiene aserciones,
+
+30
+00:01:51,000 --> 00:01:53,000
+comienza a agregar algunas y te sorprenderás.
+
+31
+00:01:53,000 --> 00:01:57,000
+¿Por qué deberíamos comenzar con invariantes de datos? Esta es una pregunta de examen.
+
+32
+00:01:57,000 --> 00:02:03,000
+Primera opción, cubren gran parte del estado. Segunda opción, se verifican con frecuencia.
+
+33
+00:02:03,000 --> 00:02:06,000
+Forman pre y postcondiciones implícitas
+
+34
+00:02:06,000 --> 00:02:12,000
+porque los invariantes de datos deberían mantenerse al principio y al final de cada método público.
+
+35
+00:02:12,000 --> 00:02:15,000
+Última opción, proporcionan documentación útil
+
+36
+00:02:15,000 --> 00:02:20,000
+porque documentan exactamente cómo se organiza la estructura de datos
+
+37
+00:02:20,000 --> 00:02:22,000
+y qué supuestos no debe violar el programa.
+
+38
+00:02:22,000 --> 99:59:59,000
+Selecciona todas las que correspondan. Adelante.

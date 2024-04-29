@@ -1,0 +1,35 @@
+1
+00:00:00,000 --> 00:00:03,000
+Bien, ahora vamos a la respuesta. ¿Cuándo verifica Eiffel sus invariantes?
+
+2
+00:00:03,000 --> 00:00:09,000
+Bueno, lo hace precisamente como definimos antes y como recomendamos verificar los invariantes,
+
+3
+00:00:09,000 --> 00:00:14,000
+es decir, al principio de cada método público y al final de cada método público.
+
+4
+00:00:14,000 --> 00:00:18,000
+Si observas cuándo se lee o escribe un atributo, esto también sucede
+
+5
+00:00:18,000 --> 00:00:23,000
+dentro de los métodos de la clase y en particular, digamos que accedes primero a un atributo,
+
+6
+00:00:23,000 --> 00:00:26,000
+luego a otro atributo y luego a otro atributo.
+
+7
+00:00:26,000 --> 00:00:30,000
+Entre esos pasos, puede haber alguna inconsistencia que será descubierta por el invariante.
+
+8
+00:00:30,000 --> 00:00:35,000
+Así que, mientras algún método de la clase esté operando, incluyendo la lectura y escritura de atributos,
+
+9
+00:00:35,000 --> 99:59:59,000
+no queremos verificar el invariante, razón por la cual estos dos no deben verificarse.

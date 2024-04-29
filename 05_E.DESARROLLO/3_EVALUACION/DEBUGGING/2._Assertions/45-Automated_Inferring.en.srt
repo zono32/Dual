@@ -1,0 +1,203 @@
+1
+00:00:00,000 --> 00:00:06,000
+Déjame mostrarte cómo funciona esto con un ejemplo.
+
+2
+00:00:06,000 --> 00:00:09,000
+Aquí tienes una función de raíz cuadrada.
+
+3
+00:00:09,000 --> 00:00:11,000
+Toma x y devuelve la raíz cuadrada.
+
+4
+00:00:11,000 --> 00:00:14,000
+Supongamos que lo invocamos con los valores 2, 4 y 16.
+
+5
+00:00:14,000 --> 00:00:17,000
+Cuando invocamos la raíz cuadrada con el valor de 2,
+
+6
+00:00:17,000 --> 00:00:23,000
+podríamos inferir que x tiene un valor de 2 y eps tiene un valor de 10^-7.
+
+7
+00:00:23,000 --> 00:00:26,000
+Sin embargo, también se instanciarían estos patrones:
+
+8
+00:00:26,000 --> 00:00:31,000
+x es menor o igual que 2 y x es mayor o igual que 2,
+
+9
+00:00:31,000 --> 00:00:34,000
+porque estos patrones también se mantienen para los valores que observamos.
+
+10
+00:00:34,000 --> 00:00:37,000
+En la siguiente iteración, invocamos la raíz cuadrada con el número 4.
+
+11
+00:00:37,000 --> 00:00:41,000
+Ahora, el invariante de que x siempre es 2 se elimina.
+
+12
+00:00:41,000 --> 00:00:46,000
+Lo que obtenemos ahora, sin embargo, es que x siendo menor o igual que 4 todavía se mantiene.
+
+13
+00:00:46,000 --> 00:00:50,000
+Podemos hacerlo fusionando el invariante anterior con uno nuevo.
+
+14
+00:00:50,000 --> 00:00:54,000
+x mayor o igual que 2 todavía se mantiene para el nuevo valor.
+
+15
+00:00:54,000 --> 00:00:58,000
+Cuando invocamos la raíz cuadrada de 16, ahora retenemos el invariante
+
+16
+00:00:58,000 --> 00:01:02,000
+de que x es menor o igual que 16 y mayor o igual que 2.
+
+17
+00:01:02,000 --> 00:01:04,000
+Esto es lo que obtenemos al final.
+
+18
+00:01:04,000 --> 00:01:09,000
+x está entre 2 y 16, y eps siempre es 10^-7.
+
+19
+00:01:09,000 --> 00:01:13,000
+Para la postcondición, obtenemos rangos similares para el valor devuelto.
+
+20
+00:01:13,000 --> 00:01:16,000
+El valor devuelto está entre la raíz cuadrada de 2 y 4,
+
+21
+00:01:16,000 --> 00:01:18,000
+que es la raíz cuadrada de 16.
+
+22
+00:01:18,000 --> 00:01:20,000
+Sin embargo, también obtenemos que el valor devuelto al cuadrado es igual a x,
+
+23
+00:01:20,000 --> 00:01:24,000
+y obtenemos esto porque Daikon tiene un patrón adecuado para eso,
+
+24
+00:01:24,000 --> 00:01:31,000
+a saber, un patrón donde la multiplicación de dos variables es igual a una tercera variable.
+
+25
+00:01:31,000 --> 00:01:36,000
+Esto se instancia con un valor devuelto, nuevamente con un valor devuelto y con x,
+
+26
+00:01:36,000 --> 00:01:39,000
+y este patrón luego se mantiene para todas las ejecuciones,
+
+27
+00:01:39,000 --> 00:01:41,000
+al menos para todas las ejecuciones con números enteros.
+
+28
+00:01:41,000 --> 00:01:45,000
+Si usamos números de punto flotante, entonces también entra en juego eps,
+
+29
+00:01:45,000 --> 00:01:49,000
+debido a errores de redondeo, y entonces este patrón ya no se descubriría.
+
+30
+00:01:49,000 --> 00:01:53,000
+Cualquier cosa que Daikon pueda producir está limitada a la biblioteca de patrones que tiene,
+
+31
+00:01:53,000 --> 00:01:57,000
+pero si agregas más patrones, entonces podrás descubrir más propiedades,
+
+32
+00:01:57,000 --> 00:02:00,000
+lo que llevará a Daikon un poco más de tiempo, sin embargo, para descubrirlas.
+
+33
+00:02:00,000 --> 00:02:03,000
+Aún así, incluso con un conjunto perfecto de patrones,
+
+34
+00:02:03,000 --> 00:02:06,000
+los enfoques como estos dependen de los números reales
+
+35
+00:02:06,000 --> 00:02:08,000
+que se les proporcionen.
+
+36
+00:02:08,000 --> 00:02:11,000
+Lo que Daikon produce es relevante para todas las ejecuciones observadas,
+
+37
+00:02:11,000 --> 00:02:14,000
+pero todos sabemos que la verdadera precondición para la raíz cuadrada
+
+38
+00:02:14,000 --> 00:02:17,000
+no tiene restricciones específicas de rango sobre x
+
+39
+00:02:17,000 --> 00:02:19,000
+excepto que x debe ser mayor o igual a 0.
+
+40
+00:02:19,000 --> 00:02:24,000
+De igual forma, el valor devuelto de la raíz cuadrada no necesariamente está entre la raíz cuadrada de 2
+
+41
+00:02:24,000 --> 00:02:26,000
+y la raíz cuadrada de 16,
+
+42
+00:02:26,000 --> 00:02:29,000
+pero en realidad puede ser cualquier cosa que, nuevamente, sea mayor que 0.
+
+43
+00:02:29,000 --> 00:02:35,000
+Las herramientas de inferencia dinámica de invariantes pueden funcionar bien
+
+44
+00:02:35,000 --> 00:02:38,000
+si tienen un buen conjunto de pruebas desde el principio.
+
+45
+00:02:38,000 --> 00:02:42,000
+¿Cómo podemos obtener los rangos correctos para x y el valor devuelto?
+
+46
+00:02:42,000 --> 00:02:45,000
+¿Invocando la raíz cuadrada con un valor de 0?
+
+47
+00:02:45,000 --> 00:02:49,000
+¿Invocando la raíz cuadrada con un valor de 1?
+
+48
+00:02:49,000 --> 00:02:56,000
+¿Invocando la raíz cuadrada con un valor de maxint, donde maxint es el entero más alto disponible?
+
+49
+00:02:56,000 --> 00:02:59,000
+¿O invocando la raíz cuadrada con un valor negativo?
+
+50
+00:02:59,000 --> 00:03:01,000
+Pista: necesitas múltiples invocaciones.
+
+51
+00:03:01,000 --> 99:59:59,000
+Elige aquellas que necesitas para obtener los rangos correctos. Adelante.

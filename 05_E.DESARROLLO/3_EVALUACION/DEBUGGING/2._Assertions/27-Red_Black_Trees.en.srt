@@ -1,0 +1,217 @@
+Aquí tienes la traducción al castellano siguiendo el formato original:
+
+1
+00:00:00,000 --> 00:00:04,000
+Hemos visto que con las aserciones podemos asegurar que los objetos
+
+2
+00:00:04,000 --> 00:00:06,000
+estén en un estado consistente todo el tiempo.
+
+3
+00:00:06,000 --> 00:00:11,000
+Puedes imaginar que esto sería más útil para estructuras de datos grandes y complejas.
+
+4
+00:00:11,000 --> 00:00:15,000
+Es decir, estructuras con muchas invariantes que deben mantenerse
+
+5
+00:00:15,000 --> 00:00:19,000
+o que podrían ser violadas debido a errores de programación.
+
+6
+00:00:19,000 --> 00:00:24,000
+Permíteme ilustrar esto con una de las estructuras de datos más complicadas jamás inventadas,
+
+7
+00:00:24,000 --> 00:00:26,000
+que es un árbol Rojo-Negro.
+
+8
+00:00:26,000 --> 00:00:28,000
+Aquí tienes un ejemplo de un árbol Rojo-Negro.
+
+9
+00:00:28,000 --> 00:00:32,000
+Un árbol Rojo-Negro es una estructura de datos para representar arreglos asociativos,
+
+10
+00:00:32,000 --> 00:00:34,000
+también conocidos como mapeos.
+
+11
+00:00:34,000 --> 00:00:36,000
+Si quiero buscar un elemento en un árbol Rojo-Negro,
+
+12
+00:00:36,000 --> 00:00:39,000
+puedo hacerlo en un tiempo casi logarítmico.
+
+13
+00:00:39,000 --> 00:00:42,000
+Y lo haré como en todos los árboles de búsqueda, verificando si el elemento
+
+14
+00:00:42,000 --> 00:00:47,000
+que busco es más pequeño o más grande que el elemento que estoy mirando.
+
+15
+00:00:47,000 --> 00:00:51,000
+Supongamos que quiero verificar si el número 22 está en mi árbol Rojo-Negro.
+
+16
+00:00:51,000 --> 00:00:56,000
+Comienzo en la raíz, que es 13. Estoy buscando 22, que es más grande que 13.
+
+17
+00:00:56,000 --> 00:01:02,000
+Entonces sigo por la rama derecha. 22 es más grande que 17, así que sigo por la rama derecha.
+
+18
+00:01:02,000 --> 00:01:06,000
+22 es más pequeño que 25, así que ahora sigo por la rama izquierda,
+
+19
+00:01:06,000 --> 00:01:09,000
+y aquí termino exactamente en el elemento que estaba buscando.
+
+20
+00:01:09,000 --> 00:01:13,000
+Los árboles Rojo-Negro no solo garantizan la búsqueda en tiempo logarítmico,
+
+21
+00:01:13,000 --> 00:01:19,000
+sino también la inserción y también la eliminación, lo que los convierte en una excelente opción
+
+22
+00:01:19,000 --> 00:01:22,000
+para todo tipo de operaciones de búsqueda.
+
+23
+00:01:22,000 --> 00:01:24,000
+Pero también son muy, muy difíciles de depurar.
+
+24
+00:01:24,000 --> 00:01:28,000
+La razón por la que son difíciles de depurar es que tienen una serie de propiedades
+
+25
+00:01:28,000 --> 00:01:31,000
+que deben mantenerse en todo momento.
+
+26
+00:01:31,000 --> 00:01:35,000
+Para empezar, siempre deben ser árboles. No puede haber ningún ciclo en ellos.
+
+27
+00:01:35,000 --> 00:01:39,000
+Un nodo negro debe tener hijos rojos, y un nodo rojo debe tener hijos negros.
+
+28
+00:01:39,000 --> 00:01:43,000
+El número de elementos en los subárboles debe ser bastante igual
+
+29
+00:01:43,000 --> 00:01:48,000
+con respecto al número de nodos negros, y si algún elemento apunta a un hijo
+
+30
+00:01:48,000 --> 00:01:53,000
+el hijo mantiene el puntero, entonces esto debe apuntar de nuevo al padre existente.
+
+31
+00:01:53,000 --> 00:01:58,000
+Entonces, la búsqueda en un árbol Rojo-Negro es fácil, pero la inserción y la eliminación son realmente complicadas.
+
+32
+00:01:58,000 --> 00:02:02,000
+Para tener una idea de cuán complicadas son, echemos un vistazo a Wikipedia
+
+33
+00:02:02,000 --> 00:02:04,000
+lo que escribieron sobre los árboles Rojo-Negro.
+
+34
+00:02:04,000 --> 00:02:07,000
+Entonces, esta es la página de Wikipedia sobre árboles Rojo-Negro.
+
+35
+00:02:07,000 --> 00:02:11,000
+Aquí está la inserción. Estos son dos funciones de ayuda, abuelo y tío.
+
+36
+00:02:11,000 --> 00:02:19,000
+Ahora vamos a 1, 2, 3 casos diferentes, todos con código individual que debe manejarse.
+
+37
+00:02:19,000 --> 00:02:22,000
+Aquí está el caso número 4, y aquí está el caso número 5.
+
+38
+00:02:22,000 --> 00:02:26,000
+La eliminación es aún más complicada. Esta es la descripción formal.
+
+39
+00:02:26,000 --> 00:02:28,000
+Necesitamos una función de ayuda llamada hermano.
+
+40
+00:02:28,000 --> 00:02:32,000
+Aquí está una función de ayuda para eliminar un hijo, lo cual es fácil.
+
+41
+00:02:32,000 --> 00:02:38,000
+Y ahora vienen todos los casos especiales: caso 1, caso 2, caso 3, caso 4, caso 5 y caso 6.
+
+42
+00:02:38,000 --> 00:02:44,000
+Y, por supuesto, puedes imaginar lo fácil que es cometer errores en cualquiera de estos casos.
+
+43
+00:02:44,000 --> 00:02:47,000
+Podría tener algún puntero apuntando al nodo equivocado,
+
+44
+00:02:47,000 --> 00:02:51,000
+y nuevamente podría crear muchas bombas de tiempo
+
+45
+00:02:51,000 --> 00:02:54,000
+lo que es por lo que normalmente no implementamos árboles Rojo-Negro
+
+46
+00:02:54,000 --> 00:02:58,000
+sino que más bien confiamos en árboles Rojo-Negro implementados en alguna biblioteca.
+
+47
+00:02:58,000 --> 00:03:01,000
+Sin embargo, si estuvieras implementando un árbol Rojo-Negro,
+
+48
+00:03:01,000 --> 00:03:05,000
+digamos, como parte de un ejercicio de programación, por ejemplo, está bien.
+
+49
+00:03:05,000 --> 00:03:09,000
+O estás trabajando en algo que es similar a un árbol Rojo-Negro,
+
+50
+00:03:09,000 --> 00:03:11,000
+pero que aún no tiene su página en Wikipedia.
+
+51
+00:03:11,000 --> 00:03:15,000
+Entonces realmente necesitas asegurarte de no cometer errores
+
+52
+00:03:15,000 --> 00:03:17,000
+y de no crear una bomba de tiempo aquí.
+
+53
+00:03:17,000 --> 00:03:20,000
+Si trabajas en una estructura de datos tan compleja como esta,
+
+54
+00:03:20,000 --> 99:59:59,000
+lo primero que debes escribir es un verificador de invariantes.
