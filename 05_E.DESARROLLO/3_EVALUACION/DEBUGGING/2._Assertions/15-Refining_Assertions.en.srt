@@ -1,0 +1,193 @@
+Aquí tienes la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:03,000
+Escribir aserciones no siempre es fácil.
+
+2
+00:00:03,000 --> 00:00:08,000
+Debes estar preparado para varias iteraciones hasta que las precondiciones y postcondiciones sean precisas.
+
+3
+00:00:08,000 --> 00:00:12,000
+Una cadena típica de herramientas se ve así.
+
+4
+00:00:12,000 --> 00:00:17,000
+Aquí, tenemos entradas de prueba, ya sea de generador aleatorio o generador sistemático
+
+5
+00:00:17,000 --> 00:00:20,000
+o provenientes de usuarios o de producción.
+
+6
+00:00:20,000 --> 00:00:23,000
+Estas entradas de prueba han sido verificadas por las precondiciones,
+
+7
+00:00:23,000 --> 00:00:27,000
+y los resultados del cálculo serán verificados por las postcondiciones.
+
+8
+00:00:27,000 --> 00:00:30,000
+Ahora, en cuanto a las precondiciones y postcondiciones,
+
+9
+00:00:30,000 --> 00:00:33,000
+puedes ser demasiado permisivo o demasiado estricto.
+
+10
+00:00:33,000 --> 00:00:38,000
+Si eres demasiado permisivo con tus precondiciones, esto significa que entradas
+
+11
+00:00:38,000 --> 00:00:43,000
+que no deberían entrar en la función, entrarán y resultarán en un comportamiento arbitrario.
+
+12
+00:00:43,000 --> 00:00:46,000
+Si eres demasiado estricto con las precondiciones,
+
+13
+00:00:46,000 --> 00:00:50,000
+esto significa que las entradas válidas resultarán en fallas de precondiciones.
+
+14
+00:00:50,000 --> 00:00:53,000
+Lo mismo también se aplica a las postcondiciones.
+
+15
+00:00:53,000 --> 00:00:59,000
+Si eres demasiado permisivo con tus postcondiciones, esto significa que no detectarás varios errores.
+
+16
+00:00:59,000 --> 00:01:04,000
+Si eres demasiado estricto, sin embargo, entonces detectarás errores donde no los hay.
+
+17
+00:01:04,000 --> 00:01:08,000
+La clave es encontrar el equilibrio adecuado entre estos dos.
+
+18
+00:01:08,000 --> 00:01:10,000
+No queremos ser demasiado permisivos ni demasiado estrictos.
+
+19
+00:01:10,000 --> 00:01:13,000
+En teoría, nos gustaría tener precondiciones y postcondiciones
+
+20
+00:01:13,000 --> 00:01:16,000
+que capturen exactamente lo que el programa está haciendo.
+
+21
+00:01:16,000 --> 00:01:21,000
+Sin embargo, en la práctica, encontrarás que mientras escribir precondiciones suele ser fácil,
+
+22
+00:01:21,000 --> 00:01:24,000
+escribir postcondiciones o funciones regulares puede ser muy difícil.
+
+23
+00:01:24,000 --> 00:01:29,000
+Por lo tanto, es muy común que las postcondiciones solo verifiquen una parte del estado real
+
+24
+00:01:29,000 --> 00:01:34,000
+y que las postcondiciones sean simples pero un poco permisivas, es decir, que pasen por alto errores.
+
+25
+00:01:34,000 --> 00:01:40,000
+Mientras que para las precondiciones, es frecuente llegar al nivel correcto de precisión.
+
+26
+00:01:40,000 --> 00:01:43,000
+¿Por qué las postcondiciones son tan complejas?
+
+27
+00:01:43,000 --> 00:01:49,000
+Para darte un ejemplo simple de por qué escribir postcondiciones correctas no es nada fácil,
+
+28
+00:01:49,000 --> 00:01:54,000
+permíteme darte un ejemplo muy simple. Supongamos que tenemos una función de clasificación.
+
+29
+00:01:54,000 --> 00:02:00,000
+La precondición para una función de clasificación es simple. Básicamente, asumimos que x es una lista.
+
+30
+00:02:00,000 --> 00:02:03,000
+Bueno, podríamos poner una aserción apropiada aquí,
+
+31
+00:02:03,000 --> 00:02:06,000
+pero la precondición es aceptar esencialmente cualquier cosa.
+
+32
+00:02:06,000 --> 00:02:09,000
+Para la postcondición, debemos asegurarnos de dos cosas.
+
+33
+00:02:09,000 --> 00:02:14,000
+Primero, asumimos que la lista y que devolveremos está realmente ordenada,
+
+34
+00:02:14,000 --> 00:02:20,000
+pero también debemos asegurarnos de que la lista que devolvemos es una permutación de nuestra lista de entrada.
+
+35
+00:02:20,000 --> 00:02:26,000
+Entonces, vamos a verificar si la lista está ordenada. Iteramos sobre los elementos de y.
+
+36
+00:02:26,000 --> 00:02:32,000
+Y si un elemento es mayor que su sucesor, devolvemos falso. De lo contrario, devolvemos verdadero.
+
+37
+00:02:32,000 --> 00:02:37,000
+Lo que ves aquí es que para verificar la postcondición,
+
+38
+00:02:37,000 --> 00:02:39,000
+necesitamos idear otra función,
+
+39
+00:02:39,000 --> 00:02:42,000
+que en realidad ahora debería verificarse con qué.
+
+40
+00:02:42,000 --> 00:02:47,000
+La propiedad que se verifica aquí es básicamente si está ordenada, como se describe aquí.
+
+41
+00:02:47,000 --> 00:02:52,000
+Esto significa que cualquier aserción que puedas tener aquí sería igual a cualquier cosa que tengas aquí,
+
+42
+00:02:52,000 --> 00:02:54,000
+así que simplemente tienes que creer que esto es cierto.
+
+43
+00:02:54,000 --> 00:03:01,000
+Bueno, no solo lo creo, también he realizado varias pruebas, por lo que estoy bastante seguro de que esto funciona.
+
+44
+00:03:01,000 --> 00:03:04,000
+Ahora, esto es solo ordenar. También tienes que determinar si es una permutación.
+
+45
+00:03:04,000 --> 00:03:06,000
+Esto también es algo que debes definir.
+
+46
+00:03:06,000 --> 00:03:13,000
+Funciones auxiliares como "is_sorted" o "is_permutation" serán útiles más adelante en el futuro
+
+47
+00:03:13,000 --> 00:03:16,000
+porque es posible que puedas reutilizarlas para otros propósitos.
+
+48
+00:03:16,000 --> 99:59:59,000
+Incluso podrían convertirse en parte de una biblioteca.

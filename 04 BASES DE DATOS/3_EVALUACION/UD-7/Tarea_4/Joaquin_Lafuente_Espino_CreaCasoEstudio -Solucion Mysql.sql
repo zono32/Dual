@@ -703,3 +703,9 @@ update agentes		set nombre = REPLACE( nombre, ' ', '' );
 CALL mostrarDatos();	CALL restaurarDatos();
 CALL borrarDatos();		CALL mostrarDatos();
 CALL restaurarDatos();	CALL mostrarDatos();
+
+call aumentarCategoriaAgentes();
+CALL mostrarDatos();
+
+call disminuirCategoriaAgentes();
+CALL mostrarDatos();

@@ -1,0 +1,25 @@
+Aquí tienes la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:02,000
+¿Cómo vamos a abordar esto?
+
+2
+00:00:02,000 --> 00:00:08,000
+Vamos a introducir un parámetro: el epsilon, que nos dice la desviación máxima
+
+3
+00:00:08,000 --> 00:00:13,000
+del resultado actual como un número absoluto y le vamos a dar un valor predeterminado--
+
+4
+00:00:13,000 --> 00:00:16,000
+digamos que hasta siete dígitos después de la coma sigue siendo aceptable.
+
+5
+00:00:16,000 --> 00:00:21,000
+Ahora vamos a tomar este ejemplo y establecer una postcondición adecuada aquí,
+
+6
+00:00:21,000 --> 99:59:59,000
+de tal manera que la diferencia entre y² y x nunca sea mayor que eps.

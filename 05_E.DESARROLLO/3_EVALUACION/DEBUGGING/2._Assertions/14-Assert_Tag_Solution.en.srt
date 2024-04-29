@@ -1,0 +1,45 @@
+Aquí tienes la traducción al castellano del texto siguiendo el mismo formato:
+
+1
+00:00:00,000 --> 00:00:03,000
+Gracias por tu arduo trabajo. Veamos estas entradas una por una.
+
+2
+00:00:03,000 --> 00:00:07,000
+La primera, bueno, son solo etiquetas y sin comillas; siempre ha funcionado.
+
+3
+00:00:07,000 --> 00:00:13,000
+La segunda, bueno, la segunda tendrá las comillas eliminadas de la entrada,
+
+4
+00:00:13,000 --> 00:00:16,000
+pero esto no será detectado por la aserción porque la aserción solo verifica
+
+5
+00:00:16,000 --> 00:00:19,000
+la presencia de etiquetas HTML y estas serán eliminadas.
+
+6
+00:00:19,000 --> 00:00:23,000
+Sin embargo, la tercera no tendrá las etiquetas HTML eliminadas, por lo que esta es la respuesta correcta.
+
+7
+00:00:23,000 --> 00:00:27,000
+Y la última tiene comillas simples, y las comillas simples funcionan como deberían.
+
+8
+00:00:27,000 --> 00:00:32,000
+Podemos verificar esto en nuestro entorno de programación. Podemos agregar una simple prueba aquí.
+
+9
+00:00:32,000 --> 00:00:35,000
+Esta es la entrada que debería hacer que la aserción falle, presionamos ejecutar,
+
+10
+00:00:35,000 --> 00:00:39,000
+y como puedes ver aquí abajo, la aserción realmente falló.
+
+11
+00:00:39,000 --> 99:59:59,000
+Te dejo probar las otras tres entradas.
