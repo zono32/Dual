@@ -1,26 +1,26 @@
 
-	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8‡Àöë1J$461a6cf5-5c75-4bfe-b1ab-d0a630e41703
-	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8‡Àöë1J$169ae66f-2ef2-48d4-84eb-8e9f201203d7
-	java:S1126"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8‡Àöë1J$3cb90d81-bd2c-44f2-9865-9571d01d306b
-	java:S112@"FDefine and throw a dedicated exception instead of using a generic one.(¼ÿ¾¹ÿÿÿÿÿ8‡Àöë1J$d0abb8f9-14c4-45a7-a50f-aaa40ef156af
+	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8‡Àöë1J$83b7cff0-ac56-446f-b3f2-d11f2f5374ef
+	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8‡Àöë1J$8fd6ad53-b277-4e7d-92e4-14f809281208
+	java:S112;"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8‡Àöë1J$b5afd40e-e3c5-4f59-a240-4d7e74aa25af
+	java:S112E"FDefine and throw a dedicated exception instead of using a generic one.(¼ÿ¾¹ÿÿÿÿÿ8‡Àöë1J$ae952986-5a7a-47ed-87cc-0462c531234e
 ’
-java:S1192"JDefine a constant instead of duplicating this literal "datos.txt" 3 times.(ÕÑ…¦ıÿÿÿÿ8‡Àöë1J$226648a1-c972-45e0-8307-cef4e9009d8d
-	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(æ´Ø%8‘‡Àöë1J$fbee03c0-3d2b-4026-9eae-d4e1ed0e822e
+java:S1192"JDefine a constant instead of duplicating this literal "datos.txt" 3 times.(ÕÑ…¦ıÿÿÿÿ8‡Àöë1J$070e24ca-225b-4cbf-b9ad-4577523fa7a2
+	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(æ´Ø%8‘‡Àöë1J$447e5569-edf8-4cf9-83bf-d7e57b601c7f
 ü
-java:S1598"¹This file "Ejercicio2_3.java" should be located in "ActividadesStreams\Boletin" directory, not in "C:\Users\a21joaquinle\Desktop\workspace\DUAL\01_PROGRAMACION\3_EVALUACION\Soluciones".(÷¦Ò^8‘‡Àöë1J$b92034ce-eef6-4cb3-8b45-7d1035ffe229
-›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(÷¦Ò^8’‡Àöë1J$1c7052ed-3bc3-4491-943e-d494786f4872
+java:S1598"¹This file "Ejercicio2_3.java" should be located in "ActividadesStreams\Boletin" directory, not in "C:\Users\a21joaquinle\Desktop\workspace\DUAL\01_PROGRAMACION\3_EVALUACION\Soluciones".(÷¦Ò^8‘‡Àöë1J$05a31da3-d181-4730-a104-0b2dedc2987d
+›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(÷¦Ò^8’‡Àöë1J$4e76ba01-5a35-40a8-acb0-44cba8e93988
 –
-java:S2095&"NUse try-with-resources or close this "DataOutputStream" in a "finally" clause.(¾ÔÚ±şÿÿÿÿ8™‡Àöë1J$71800289-1e81-48bc-b459-5f06180440c5
+java:S2095+"NUse try-with-resources or close this "DataOutputStream" in a "finally" clause.(¾ÔÚ±şÿÿÿÿ8™‡Àöë1J$cf05af63-2861-4346-8263-e43b53b5ff0b
 j
-java:S2189)""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8š‡Àöë1J$3b7b6873-0b0b-4573-999f-24a212f9c34a
+java:S2189.""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8š‡Àöë1J$a4f9fcc9-2350-49e3-87c5-9b6d2285d2f1
 ‡
-java:S2147"DCombine this catch with the one at line 23, which has the same body.(ï­£Ä8œ‡Àöë1J$2130dd75-2852-45b8-92af-9ad0e5f6e969
-m	java:S106"+Replace this use of System.out by a logger.(ÚˆÌ“8‡Àöë1J$d49ccb85-0801-46a1-9586-62709cacaf2e
-r	java:S106 "+Replace this use of System.out by a logger.(İª†ıúÿÿÿÿ8 ‡Àöë1J$12e4a908-adeb-460c-9f0d-56ffbf78b6db
-r	java:S106-"+Replace this use of System.out by a logger.(äÆ¡Ûüÿÿÿÿ8¢‡Àöë1J$1da2595c-4d9e-4bcf-ac52-5c65afcf34fb
-r	java:S1062"+Replace this use of System.err by a logger.(†óóùıÿÿÿÿ8¢‡Àöë1J$feff5738-bd84-4316-9d43-a3135d8e2088
-‚	java:S8993";Do something with the "boolean" value returned by "delete".(’Íğùÿÿÿÿ8£‡Àöë1J$6caeb109-4859-44cb-82ab-e6300ab5723b
+java:S2147"DCombine this catch with the one at line 23, which has the same body.(ï­£Ä8œ‡Àöë1J$f28a0869-519c-476d-97fe-3c89ace689e1
+m	java:S106"+Replace this use of System.out by a logger.(ÚˆÌ“8‡Àöë1J$0004fa72-ef3c-40b6-ba5c-d7f4831a4455
+r	java:S106%"+Replace this use of System.out by a logger.(İª†ıúÿÿÿÿ8 ‡Àöë1J$255d8b63-21f8-4a7d-b038-a85468df727e
+r	java:S1062"+Replace this use of System.out by a logger.(äÆ¡Ûüÿÿÿÿ8¢‡Àöë1J$0aae3576-4c4c-4e7d-b44c-655b9c76f530
+r	java:S1067"+Replace this use of System.err by a logger.(†óóùıÿÿÿÿ8¢‡Àöë1J$173dc0dd-c4f0-4f04-8f2d-9188f0806842
+‚	java:S8998";Do something with the "boolean" value returned by "delete".(’Íğùÿÿÿÿ8£‡Àöë1J$39eee829-fc3d-4b93-bb95-f5b8dead9781
 –
-java:S40423"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(’Íğùÿÿÿÿ8£‡Àöë1J$d5eb7633-cf04-4e1f-b7e0-a273ebc7e98d
+java:S40428"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(’Íğùÿÿÿÿ8£‡Àöë1J$ec46ad2f-d0b5-486e-9e18-9a83e7462781
 r
-java:S1128	"/Remove this unused import 'java.nio.file.Path'.(×²êÂ8¥‡Àöë1J$66650ca2-d173-4a8d-8ed3-ea4ffa8d3fcb
+java:S1128	"/Remove this unused import 'java.nio.file.Path'.(×²êÂ8¥‡Àöë1J$22f98af4-bb65-48ee-804f-a80bb1466f92
