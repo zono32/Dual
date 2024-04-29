@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+Aquí tienes la traducción al castellano siguiendo el mismo formato:
+=======
 Aquí tienes la traducción al español siguiendo el mismo formato:
+>>>>>>> 001f716fa5bbce12cae45bb45931253fb5cb57c5
 
 1
 00:00:00,000 --> 00:00:08,000
@@ -14,6 +18,17 @@ y esto es particularmente útil en la depuración.
 
 4
 00:00:16,000 --> 00:00:19,000
+<<<<<<< HEAD
+Dado que las aserciones están automatizadas, pueden verificar
+
+5
+00:00:19,000 --> 00:00:24,000
+varias ejecuciones de una función a la vez, de hecho, todas las ejecuciones.
+
+6
+00:00:24,000 --> 00:00:29,000
+Sin embargo, también pueden verificar grandes porciones de datos al mismo tiempo y de forma automática.
+=======
 Dado que las aserciones son automáticas, pueden verificar
 
 5
@@ -23,6 +38,7 @@ varias ejecuciones de una función a la vez; de hecho, todas las ejecuciones.
 6
 00:00:24,000 --> 00:00:29,000
 Sin embargo, también pueden verificar grandes porciones de datos al mismo tiempo y todo de forma automatizada.
+>>>>>>> 001f716fa5bbce12cae45bb45931253fb5cb57c5
 
 7
 00:00:29,000 --> 00:00:34,000
@@ -34,11 +50,19 @@ Supongamos que queremos implementar una clase de tiempo.
 
 9
 00:00:37,000 --> 00:00:42,000
+<<<<<<< HEAD
+Un tiempo que consiste en horas, minutos y segundos y queremos usar aserciones
+
+10
+00:00:42,000 --> 00:00:46,000
+para verificar automáticamente si un objeto de tiempo es consistente.
+=======
 Un tiempo que consiste en horas, minutos y segundos, y queremos usar aserciones
 
 10
 00:00:42,000 --> 00:00:46,000
 para verificar automáticamente si un objeto de tiempo es coherente.
+>>>>>>> 001f716fa5bbce12cae45bb45931253fb5cb57c5
 
 11
 00:00:46,000 --> 00:00:50,000
@@ -54,7 +78,11 @@ Aquí está nuestra clase de tiempo: comenzamos con un inicializador o construct
 
 14
 00:00:57,000 --> 00:01:00,000
+<<<<<<< HEAD
+tres argumentos: la hora, el minuto y el segundo
+=======
 tres argumentos: la hora, el minuto y el segundo,
+>>>>>>> 001f716fa5bbce12cae45bb45931253fb5cb57c5
 
 15
 00:01:00,000 --> 00:01:05,000
@@ -66,7 +94,11 @@ en horas, minutos y segundos dentro de un objeto de tiempo.
 
 17
 00:01:09,000 --> 00:01:13,000
+<<<<<<< HEAD
+Aquí hay un número de métodos de inspector que nos dan acceso a los atributos internos:
+=======
 Aquí hay un número de métodos inspectores que nos dan acceso a los atributos internos:
+>>>>>>> 001f716fa5bbce12cae45bb45931253fb5cb57c5
 
 18
 00:01:13,000 --> 00:01:15,000
@@ -74,7 +106,11 @@ horas, minutos y segundos.
 
 19
 00:01:15,000 --> 00:01:20,000
+<<<<<<< HEAD
+Después de agregar métodos de inspector que nos dan las horas, los minutos y los segundos,
+=======
 Después de agregar métodos inspectores que nos dan las horas, los minutos y los segundos,
+>>>>>>> 001f716fa5bbce12cae45bb45931253fb5cb57c5
 
 20
 00:01:20,000 --> 00:01:23,000
@@ -82,6 +118,37 @@ ahora necesitamos una forma de imprimir el objeto de tiempo.
 
 21
 00:01:23,000 --> 00:01:30,000
+<<<<<<< HEAD
+Para esto, Python proporciona un método especial. Se llama el método repr para representación.
+
+22
+00:01:30,000 --> 00:01:35,000
+El método interno con dos guiones bajos antes y después y lo que hace este método es
+
+23
+00:01:35,000 --> 00:01:40,000
+que este método se llama cada vez que se imprime un objeto de la clase particular,
+
+24
+00:01:40,000 --> 00:01:44,000
+y esto devuelve una representación en cadena del objeto.
+
+25
+00:01:44,000 --> 00:01:50,000
+Entonces, ¿qué hace? Estamos utilizando el método de formato de cadena aquí, que toma
+
+26
+00:01:50,000 --> 00:01:55,000
+una serie de argumentos y formatea cada uno de estos argumentos dados a la especificación de formato
+
+27
+00:01:55,000 --> 00:02:02,000
+escrita aquí en esa cadena. Por ejemplo, :2d imprime el argumento numérico aquí con dos dígitos--
+
+28
+00:02:02,000 --> 00:02:07,000
+los minutos también vienen en dos dígitos, los segundos también vienen en dos dígitos.
+=======
 Para esto, Python proporciona un método especial. Se llama el método `repr` para representación.
 
 22
@@ -111,6 +178,7 @@ Por ejemplo, `:2d` imprime el argumento numérico aquí con dos dígitos:
 28
 00:02:02,000 --> 00:02:07,000
 Los minutos también tienen dos dígitos y los segundos también tienen dos dígitos.
+>>>>>>> 001f716fa5bbce12cae45bb45931253fb5cb57c5
 
 29
 00:02:07,000 --> 00:02:09,000
@@ -118,6 +186,17 @@ Este formato aún no es perfecto.
 
 30
 00:02:09,000 --> 00:02:11,000
+<<<<<<< HEAD
+De hecho, queremos ceros a la izquierda aquí
+
+31
+00:02:11,000 --> 00:02:16,000
+y queremos que las horas, minutos y segundos estén separados por dos puntos.
+
+32
+00:02:16,000 --> 00:02:22,000
+Entonces aquí está la cadena, primero las horas con dos dígitos y ceros a la izquierda, luego los minutos con dos dígitos
+=======
 Realmente queremos ceros a la izquierda aquí
 
 31
@@ -127,6 +206,7 @@ y queremos horas, minutos y segundos separados por dos puntos.
 32
 00:02:16,000 --> 00:02:22,000
 Entonces, aquí tienes una cadena: primero las horas con dos dígitos y ceros a la izquierda, luego los minutos con dos dígitos y ceros a la izquierda,
+>>>>>>> 001f716fa5bbce12cae45bb45931253fb5cb57c5
 
 33
 00:02:22,000 --> 00:02:25,000
@@ -134,6 +214,33 @@ y luego los segundos con dos dígitos y ceros a la izquierda.
 
 34
 00:02:25,000 --> 00:02:27,000
+<<<<<<< HEAD
+Intentemos cómo funciona esto.
+
+35
+00:02:27,000 --> 00:02:32,000
+Estoy inicializando un objeto de tiempo aquí a 13 horas, 0 minutos, 0 segundos.
+
+36
+00:02:32,000 --> 00:02:36,000
+Estamos utilizando un reloj de 24 horas aquí y lo imprimo.
+
+37
+00:02:36,000 --> 00:02:40,000
+Imprimir esto ahora debería invocar este método repr, que automáticamente
+
+38
+00:02:40,000 --> 00:02:43,000
+proporcionará una representación en cadena agradable de nuestro tiempo.
+
+39
+00:02:43,000 --> 00:02:46,000
+Ejecutemos todo esto y obtenemos una representación agradable
+
+40
+00:02:46,000 --> 99:59:59,000
+13 horas, 0 minutos y 0 segundos, 1 pm en la tarde.
+=======
 Probemos cómo funciona esto.
 
 35
@@ -159,3 +266,4 @@ Ejecutemos todo esto y obtenemos una agradable representación
 40
 00:02:46,000 --> 99:59:59,000
 13 horas, 0 minutos y 0 segundos, la 1 p.m. por la tarde.
+>>>>>>> 001f716fa5bbce12cae45bb45931253fb5cb57c5

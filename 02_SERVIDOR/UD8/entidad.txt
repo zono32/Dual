@@ -1,0 +1,1 @@
+Un registro de peliculas String titulo de la pelicula, Float duracion, DateTaime en horas Fecha de estreno.

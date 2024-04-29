@@ -1,0 +1,9 @@
+https://symfony.com/doc/5.x/security.html#fetching-the-user-object
+
+### Bootstrap
+php bin/console importmap:require bootstrap
+php bin/console importmap:install
+php bin/console importmap:require bootstrap/dist/css/bootstrap.min.css
+
+Para poder usar los estilos de Bootstrap, los añadimos en app.js:
+import 'bootstrap/dist/css/bootstrap.min.css';
