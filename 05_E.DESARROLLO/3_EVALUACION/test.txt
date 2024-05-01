@@ -1,0 +1,312 @@
+
+
+1. **El concepto de inyección de dependencias, ¿con qué principio se le relaciona tradicionalmente?
+    - [x] Ninguno de los propuestos
+    - [ ] DI (Dependency Injection)
+    - [ ] LSP
+    - [ ] ISP
+
+2. **¿Dónde debes situar el archivo `.gitignore`?**
+    - [ ] Dentro del directorio .git
+    - [ ] Es un archivo oculto, así que da igual dónde lo situemos
+    - [ ] En el directorio src
+    - [x] En el directorio raíz del proyecto que hayas puesto en seguimiento
+
+3. **Si quieres añadir y hacer un commit de los cambios del directorio git al mismo tiempo, ejecutas el comando:**
+    - [x] `$ git commit -a -m 'terminado footer [ticket 112]'`
+    - [ ] `$ git commit -m 'terminado footer [ticket 112]'`
+    - [ ] Cualquiera de las propuestas
+    - [ ] `$ git commit -a 'terminado footer [ticket 112]'`
+
+4. **En DDD, cuál de los principios SOLID se asocia con la sentencia "Un módulo debe ser responsable ante un solo actor"?**
+    - [ ] Ninguno de los propuestos
+    - [ ] LSP
+    - [x] SRP (Principio de Responsabilidad Única)
+    - [ ] OCP
+
+5. **¿Cuáles de las siguientes acciones pueden llevarse a cabo con Maven/Gradle?**
+    - [ ] Crear un fichero de distribución jar.
+    - [ ] Testear el proyecto.
+    - [ ] Compilar el proyecto.
+    - [x] Todas las propuestas.
+
+6. **¿Qué contiene el archivo `POM.xml` o `build.gradle`?**
+    - [ ] Contiene valores por defecto para la mayoría de los proyectos.
+    - [ ] Contiene las dependencias del proyecto.
+    - [ ] Contiene detalles de configuración usados por Maven o Gradle para construir el proyecto.
+    - [x] Todas las propuestas.
+
+7. **Con independencia del IDE o gestor de proyecto JAVA que utilices, ¿cuál de estos ficheros deberías dejar sin seguimiento en git?
+    
+    - [x] Todos los propuestos.
+    - [ ] `.class`
+    - [ ] `.war`
+    - [ ] `.jar`
+
+8. **¿Qué línea debes añadir al archivo `.gitignore` para evitar el seguimiento del directorio `.vscode`?**
+    - [ ] .vscode *
+    - [ ] Se trata de un directorio oculto y, por tanto, por defecto git no hace seguimiento.
+    - [ ] # .vscode
+    - [x] .vscode/
+
+9. **¿Qué objetivos persigue la refactorización del código?**
+    - [x] Todas las propuestas.
+    - [ ] Que los futuros cambios salgan baratos
+    - [ ] No cambiar su comportamiento
+    - [ ] Hacerlo fácil de entender
+
+10. **¿Qué captura una excepción?**
+    - [ ] Una condición true/false.
+    - [x] Un evento que nunca debería ocurrir.
+    - [ ] Todas las propuestas.
+    - [ ] Errores en los datos que intercambian los métodos de los que eres responsable.
+
+11. **¿Cuáles son principios clave en el diseño de un programa orientado a objetos?**
+    - [ ] Una clase no debería conocer detalles internos de otras clases.
+    - [x] Todas las propuestas.
+    - [ ] Una clase debería presentar alta cohesión.
+    - [ ] Bajo acoplamiento entre clases.
+
+12. **¿Desde qué punto de vista se evalúa si una historia de usuario/a es valiosa?**
+    - [ ] Desde el punto de vista del equipo de desarrollo.
+    - [ ] Desde el punto de vista del scrum master.
+    - [ ] Según su dificultad técnica.
+    - [x] Desde el punto de vista del comprador del software.
+
+13. **¿Qué relación existe entre el modelo y el dominio en la DDD?**
+    - [x] El modelo son abstracciones que describen determinados aspectos del dominio.
+    - [ ] El modelo es una descripción mediante un diagrama UML de los objetos y clases necesarias para resolver un problema de diseño en un contexto o dominio particular.
+    - [ ] El modelo es una técnica para separar las capas del dominio y reflejarlas en la arquitectura en capas del software.
+    - [ ] Todas son correctas.
+
+14. **Indica qué deben cumplir los casos test:**
+    - [ ] Han de cubrir la mayor parte del código.
+    - [x] Todas las propuestas.
+    - [ ] Han de cubrir todos los posibles casos.
+    - [ ] Han de ser automáticos.
+
+15. **¿De qué se habla en una reunión de pie o daily?**
+    - [ ] Qué completaste ayer.
+    - [ ] De qué harás un commit hoy.
+    - [x] De todas las propuestas.
+    - [ ] Cuáles son tus obstáculos.
+
+16. **¿Cuáles de las siguientes son refactorizaciones admisibles?**
+    - [x] Todas las propuestas.
+    - [ ] Usar un break en vez de una variable de control en un loop.
+    - [ ] Reemplazar condicionales con polimorfismo.
+    - [ ] Utilizar un return en cuanto sabes la respuesta, en vez de asignar el valor a una variable y devolverla más tarde.
+
+17. **Cuando trabajas con JUnit para escribir casos test, estás realizando:**
+    - [x] Pruebas de caja blanca.
+    - [ ] Beta testing.
+    - [ ] Pruebas de caja negra.
+    - [ ] Unit testing.
+
+
+18. **¿Cuáles de los siguientes son términos del glosario de la DDD que hemos utilizado en nuestras sesiones de programación orientada a objetos y proyectos?**
+    - [ ] Agregación
+    - [x] Todas las propuestas.
+    - [ ] Ubiquitous Language
+    - [ ] Invariante
+
+19. **¿Cuándo finaliza un ciclo en la TDD?**
+    - [ ] Escribiendo la verificación que ha de pasar el código.
+    - [x] Escribiendo código bien diseñado y bien escrito (eficiente y óptimo).
+    - [ ] Escribiendo código de producción.
+    - [ ] Escribiendo código que pase el test, aunque no sea del todo eficiente y óptimo.
+
+20. **Para crear una nueva rama en git y saltar a ella, en un solo paso, puedes utilizar el comando:**
+    - [ ] $ git checkout rama_nueva
+    - [ ] $ git branch rama_nueva
+    - [ ] Con ninguno de los propuestos.
+    - [x] $ git checkout -b rama_nueva
+
+21. **¿Qué visibilidad debe tener un método de una clase JAVA?**
+    - [ ] La más alta posible.
+    - [x] La más baja posible.
+    - [ ] La que permita utilizarlo en el resto de las clases del paquete.
+    - [ ] La que permita añadirlo a la interfaz pública del objeto.
+
+22. **¿Cuáles de las siguientes son motivos para refactorizar?**
+    - [ ] Se utilizan comentarios para explicar el código.
+    - [x] Todos los propuestos.
+    - [ ] Una clase usa sólo una pequeña parte de las rutinas de la clase de la que hereda.
+    - [ ] Se han usado variables globales.
+
+23. **Maven /Gradle es:**
+    - [ ] Todas las propuestas.
+    - [ ] Una extensión de Eclipse
+    - [ ] Una extensión de VSCode
+    - [x] Un software de administración de proyectos.
+
+24. **¿Cuáles de las siguientes son características de la TDD?**
+    - [ ] La integración continua de código en el producto.
+    - [x] Que el programador mantenga el código escrito bajo control.
+    - [ ] Todas las propuestas.
+    - [ ] Escribir el máximo de código posible.
+
+25. **Cuando averiguas la causa de un error y modificas el código, has hecho:**
+    - [ ] Una prueba de caja negra.
+    - [ ] Testing
+    - [ ] Todas las propuestas.
+    - [x] Debugging
+
+26. **¿Qué crees que significa la idea "convention over configuration" o convención sobre la configuración, que está en el corazón de Maven /Gradle?**
+    - [x] Todas las propuestas.
+    - [ ] Que a los desarrolladores no se les exige crear el proceso de construcción ya que Maven /Gradle provee de comportamiento por defecto para cada tipo de proyecto.
+    - [ ] Es un paradigma que intenta disminuir el número de decisiones que debe realizar el programador/a sin perder flexibilidad.
+    - [ ] Que Maven /Gradle genera una estructura de directorios estándar para un proyecto Java y una ciclo de vida por defecto.
+
+27. **¿Para añadir una nueva librería al proyecto mediante Maven /Gradle, en qué sección del POM.xml /build.gradle has de añadir una nueva entrada?**
+    - [ ] <configuration> / application { }
+    - [ ] <plugins> / plugins { }
+    - [x] <dependencies> / dependencies { }
+    - [ ] <build> / jar { }
+
+28. **Las reuniones de pie o dailies se celebran:**
+    - [ ] Delante de un panel de actividades.
+    - [ ] Cuando el grupo decida, preferiblemente en el mismo lugar y a la misma hora.
+    - [x] Todas las propuestas son correctas.
+    - [ ] Por ejemplo, al empezar el día.
+
+29. **¿Qué anotación de JUnit 5 indica que un método ha de ejecutarse antes de cada caso test?**
+    - [ ] @Test
+    - [ ] @BeforeAll
+    - [ ] @Before
+    - [x] @BeforeEach
+
+30. **¿Cual de las siguientes relaciones emplearías para indicar que una clase usa otra clase?
+ Las respuestas van en orden con la imágenes.
+    - [ ] →
+    - [ ] —▻
+    - [ ] - - - ▻
+    - [x] - - - >
+    - [ ] —◊
+    - [ ] —♦
+
+31. **Para iniciar un proyecto con Maven /Gradle, ejecutas:**
+    - [ ] mvn package / gradle jar
+    - [x] mvn archetype:generate / gradle init
+    - [ ] mvn site / gradle javadoc
+    - [ ] mvn install / gradle assemble
+
+32. **¿Cuál de estos componentes Java posee siempre métodos abstractos, es decir, métodos que no están implementados?**
+    - [ ] Clase
+    - [x] Interfaz
+    - [ ] Método estático
+    - [ ] Clase estática
+
+33. **En las reuniones de pie o dailies (en Scrum), se persigue:**
+    - [ ] Crear sentimiento de equipo.
+    - [x] Todas las propuestas.
+    - [ ] Empezar el día "bien".
+    - [ ] Que todo el equipo observe y comprenda el estado del proyecto.
+
+34. **La repetición de casos test previamente ejecutados con el propósito de encontrar defectos en el software que previamente había pasado los mismos casos test, se llama:**
+    - [x] Test de regresión.
+    - [ ] Test de configuración.
+    - [ ] Test de estrés.
+    - [ ] Test de rendimiento.
+
+35. **Cuando en JUnit escribes los test que forman parte de la TDD para codificar una determinada clase que no involucra funcionalidades de otras clases, estás haciendo:**
+    - [ ] System testing.
+    - [ ] Integration testing.
+    - [ ] Component testing.
+    - [x] Unit testing.
+
+36. **Tienes que programar la actualización de la calidad de los ítems de un stock o inventario. Si tu código depende de sus tipos específicos en vez del tipo más general, ¿qué principio SOLID no se ha respetado?**
+    - [ ] ISP
+    - [x] DI
+    - [ ] OCP
+    - [ ] SRP
+
+37. **El principio SRP es sinónimo de:**
+    - [x] Alta cohesión
+    - [ ] Alto acoplamiento
+    - [ ] Todas las propuestas
+    - [ ] Abierto a la extensión
+
+38. **¿Por qué conviene declarar como final los atributos de un objeto que hagan referencia a otros objetos?**
+    - [x] Todas las propuestas.
+    - [ ] Para evitar que los objetos referenciados sean substituidos por otros una vez creado nuestro objeto.
+    - [ ] Es una cuestión importante a tener en cuenta en la refactorización de una clase.
+    - [ ] Para reducir la mutabilidad del objeto.
+
+39. **Si una clase realiza varias operaciones poco relacionadas entre sí, se dice que tiene:**
+    - [ ] Alta cohesión
+    - [ ] Bajo acoplamiento
+    - [x] Baja cohesión
+    - [ ] Alto acoplamiento
+
+40. **Para eliminar una rama en git, ejecutas el comando:**
+    - [ ] Ninguna de las propuestas.
+    - [x] $ git branch -d ticket
+    - [ ] $ git branch --del ticket
+    - [ ] $ git branch --remove ticket
+
+41. **Según la DDD, ¿cuál de estos conceptos sería una entidad en el modelo de venta de entradas para un evento?**
+    - [ ] El tipo de descuento de cada entrada.
+    - [ ] Entrada en papel o en formato QR Code (para el móvil).
+    - [x] Una entrada.
+    - [ ] Todas las propuestas.
+
+42. **LSP es sinónimo de:**
+    - [x] Diseño por contrato.
+    - [ ] Abierto a la modificación.
+    - [ ] Alta cohesión.
+    - [ ] Abierto a la extensión.
+
+43. **En la programación por parejas, todas las personas del equipo deben ir rotando (cambiando de pareja):**
+    - [ ] Para mejorar la concentración en las tareas a realizar.
+    - [ ] Para cohesionar el equipo.
+    - [x] Todas las propuestas son correctas.
+    - [ ] Para mejorar la moral de las personas.
+
+44. **En una clase con casos test:**
+    - [ ] Se puede reutilizar una estructura de datos para todos los casos test, que ha de ser declarada estática.
+    - [ ] El orden de ejecución de los test es aleatorio.
+    - [x] Todas las propuestas son correctas.
+    - [ ] Los test han de ser independientes.
+
+45. **Cuando ejecutas maven clean / gradle clean:**
+    - [x] Se elimina el directorio target / build
+    - [ ] Se elimina el directorio test
+    - [ ] Todas las propuestas son correctas.
+    - [ ] Se elimina el directorio bin.
+
+46. **¿Si utilizas Maven /Gradle, cuál de estos directorios deberías dejar sin seguimiento en Git?**
+    - [x] target / build
+    - [ ] src/main/test
+    - [ ] Todos los propuestos
+    - [ ] src/main/java
+
+47. **¿Cuál de las siguientes relaciones usarías para indicar una relación de generalización (herencia) entre clases?**
+    - Imagen sin leyenda
+    - [ ] →
+    - [x] —▻
+    - [ ] - - - ▻
+    - [ ] - - - >
+    - [ ] —◊
+    - [ ] —♦
+
+48. **¿Cuál de las siguientes relaciones usarías para indicar que una clase implementa una interfaz?**
+    - Imagen sin leyenda
+    - [ ] →
+    - [ ] —▻
+    - [x] - - - ▻
+    - [ ] - - - >
+    - [ ] —◊
+    - [ ] —♦
+
+49. **La deuda técnica:**
+    - [ ] Puede tomar la forma de código spaghetti, excesiva complejidad, duplicaciones, etc.
+    - [ ] Es la acumulación continua de atajos, hacks, código duplicado y otras desgracias que cometemos pretendiendo agilizar la entrega del proyecto.
+    - [ ] Se paga refactorizando el código.
+    - [x] Todas las propuestas son correctas.
+
+50. **¿Por qué deberíamos usar convenciones para nombrar las variables de nuestro código?**
+    - [ ] Todas las propuestas.
+    - [x] Para tomar una única decisión global y no múltiples locales.
+    - [ ] Para garantizar que todos/as escriban código utilizando el mismo idioma.
+    - [ ] Para utilizar en el proyecto siempre las mismas abreviaturas que resultan difíciles de entender.
