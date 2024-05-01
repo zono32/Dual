@@ -40,17 +40,17 @@ public class Main {
         crearBase(sentencia);
 
         do {
-            System.out.println("**** MENU ****\n"
-                    + "[1] Creación de la base de datos"
-                    + "[1] Insertar un nuevo departamento"
-                    + "[2] Insertar un nuevo empleado"
-                    + "[3] Borrar empleado"
-                    + "[4] Borrar departamento"
-                    + "[5] Consultar empleados de un departamento"
-                    + "[6] Consultar nombre de un departamento y localidad con el dni de un empleado"
-                    + "[7] Modificar salario o comisión de un empleado con su DNI"
-                    + "[8] Modificar nombre departamento a través de su localidad"
-                    + "[9] Salir");
+            System.out.println("**** MENU ****\n");
+            System.out.println("[0] Creación de la base de datos");
+            System.out.println("[1] Insertar un nuevo departamento");
+            System.out.println("[2] Insertar un nuevo empleado");
+            System.out.println("[3] Borrar empleado");
+            System.out.println("[4] Borrar departamento");
+            System.out.println("[5] Consultar empleados de un departamento");
+            System.out.println("[6] Consultar nombre de un departamento y localidad con el dni de un empleado");
+            System.out.println("[7] Modificar salario o comisión de un empleado con su DNI");
+            System.out.println("[8] Modificar nombre departamento a través de su localidad");
+            System.out.println("[9] Salir");
             op = sc.nextInt();
             sc.nextLine();
 
