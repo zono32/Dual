@@ -21,7 +21,7 @@ public class Main {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-        String url = "jdbc:mariadb://localhost:3306/?user=root&password=1234";
+        String url = "jdbc:mariadb://localhost:3306/?user=root&password=";
 
         try {
             conexion = DriverManager.getConnection(url);
@@ -40,19 +40,8 @@ public class Main {
         crearBase(sentencia);
 
         do {
-            System.out.println("**** MENU ****\n");
-            System.out.println("[0] Creación de la base de datos");
-            System.out.println("[1] Insertar un nuevo departamento");
-            System.out.println("[2] Insertar un nuevo empleado");
-            System.out.println("[3] Borrar empleado");
-            System.out.println("[4] Borrar departamento");
-            System.out.println("[5] Consultar empleados de un departamento");
-            System.out.println("[6] Consultar nombre de un departamento y localidad con el dni de un empleado");
-            System.out.println("[7] Modificar salario o comisión de un empleado con su DNI");
-            System.out.println("[8] Modificar nombre departamento a través de su localidad");
-            System.out.println("[9] Salir");
-            op = sc.nextInt();
-            sc.nextLine();
+            menu();
+            op= sc.nextInt();
 
             switch (op) {
                 case 0:
@@ -82,26 +71,48 @@ public class Main {
                 case 8:
                     modificarLocalidadDepartamento(sentencia);
                     break;
+                case 9:
+                    System.out.println("Hasta pronto");
+                    break;
                 default:
                     System.out.println("Por favor elija una de las opciones del menú");
             }
 
         } while (op != 9);
     }
-    private static void insertarDepartamento(Statement sentencia) {
-        System.out.println("Dame nombre del departamento");
-        String nombre = sc.nextLine();
-        System.out.println("Dime la localidad del departamento");
-        String loc = sc.nextLine();
-        sc = new Scanner(System.in);
 
-        System.out.println("DEPARTAMENTO CREADO CORRECTAMENTE");
+    private static void menu(){
+
+        System.out.println("**** MENU ****\n");
+        System.out.println("[0] Creación de la base de datos");
+        System.out.println("[1] Insertar un nuevo departamento");
+        System.out.println("[2] Insertar un nuevo empleado");
+        System.out.println("[3] Borrar empleado");
+        System.out.println("[4] Borrar departamento");
+        System.out.println("[5] Consultar empleados de un departamento");
+        System.out.println("[6] Consultar nombre de un departamento y localidad con el dni de un empleado");
+        System.out.println("[7] Modificar salario o comisión de un empleado con su DNI");
+        System.out.println("[8] Modificar nombre departamento a través de su localidad");
+        System.out.println("[9] Salir");
+    }
+
+    private static void insertarDepartamento(Statement sentencia) {
+
+        System.out.println("dime nombre del departamento");
+        String nombre = sc.next();
+
+        System.out.println("Dime la localidad del departamento");
+        String loc = sc.next();
+
 
         try {
-            sentencia.executeUpdate("INSERT INTO DEPARTAMENTO (Dnombre, Localidad) VALUES('" + nombre + "'," + loc + ")");
+            sentencia.executeUpdate("INSERT INTO DEPARTAMENTOS (Dnombre, Localidad) VALUES('" + nombre + "','" + loc + "')");
+            System.out.println("DEPARTAMENTO CREADO CORRECTAMENTE");
+
         } catch (SQLException e) {
             System.err.println("Se ha producido un error al insertar");
         }
+
     }
 
     public static void insertarEmpleado(Statement sentencia) {
@@ -111,19 +122,19 @@ public class Main {
             System.out.println("Inserción de un nuevo empleado:");
 
             System.out.println("Introduce el DNI:");
-            String dni = sc.nextLine();
+            String dni = sc.next();
 
             System.out.println("Introduce el nombre:");
-            String nombre = sc.nextLine();
+            String nombre = sc.next();
 
             System.out.println("Introduce los estudios:");
-            String estudios = sc.nextLine();
+            String estudios = sc.next();
 
             System.out.println("Introduce la dirección:");
-            String direccion = sc.nextLine();
+            String direccion = sc.next();
 
             System.out.println("Introduce la fecha de alta(YYYY-MM-DD):");
-            String fecha_alta = sc.nextLine();
+            String fecha_alta = sc.next();
 
             System.out.println("Introduce su salario:");
             int salario = sc.nextInt();
@@ -132,11 +143,13 @@ public class Main {
             int comision = sc.nextInt();
 
             System.out.println("Introduce su número del departamento:");
-            String num_departamento = sc.next();
+            int num_departamento = sc.nextInt();
+
 
             ResultSet rs = sentencia.executeQuery("SELECT * FROM Departamentos WHERE Nu_dept = '" + num_departamento + "'");
             if (!rs.next()) {
                 System.out.println("El departamento especificado no existe. Por favor, inserta un número de departamento válido.");
+                insertarEmpleado(sentencia);
                 return;
             }
 
@@ -146,18 +159,17 @@ public class Main {
             System.out.println("Empleado se ha creado correctamente.");
         } catch (SQLException e) {
             System.out.println("Error al crear el empleado: " + e.getMessage());
-        } finally {
-            sc.close();
         }
     }
 
 
     public static void borrarEmpleado(Statement sentencia) {
         System.out.println("Dame DNI del empleado a eliminar");
-        ResultSet res = buscarEmpleado(sentencia);
-        if (res != null) {
+        String dni = sc.next();
+        if (dni != null) {
             try {
-                sentencia.execute("DELETE from Empleados where Dni="+ res.getInt("Dni") +";");
+                sentencia.execute("DELETE from empresatarea.Empleados where Dni='"+ dni +"';");
+                System.out.println("Empleado borrado");
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
@@ -168,11 +180,12 @@ public class Main {
     }
     public static void borrarDepartamento(Statement sentencia) {
         System.out.println("Dame nombre del departamento a eliminar");
+        String nom = sc.next();
 
-        ResultSet res = buscarDepartamento(sentencia);
-        if (res != null) {
+        if (nom != null)  {
             try {
-                sentencia.execute("DELETE from Departamento where Nu_dep="+ res.getInt("Nu_dep") +";");
+                sentencia.execute("DELETE from empresatarea.Departamentos where Dnombre='"+ nom+"';");
+                System.out.println("El Departamento se ha borrado");
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
@@ -181,29 +194,42 @@ public class Main {
         }
 
     }
+
     public static void consultarEmpleadosPorDepartamento(Statement sentencia) {
         System.out.print("Introduce el nombre del departamento: ");
-        String nombreDept = sc.nextLine();
+        String nombreDept = sc.next();
 
         try {
 
-            String sql = "SELECT * FROM Empleados WHERE Nu_dept = (SELECT Nu_dept FROM Departamentos WHERE Dnombre = '" + nombreDept + "')";
+            String sql = "SELECT e.Dni, e.Nombre, e.Estudios, e.Dir, e.Fecha_alt, e.Salario, e.Comision, d.Dnombre " +
+                    "FROM Empleados e " +
+                    "JOIN Departamentos d ON e.Nu_dept = d.Nu_dept " +
+                    "WHERE d.Dnombre = '" + nombreDept + "'";
+
             ResultSet rs = sentencia.executeQuery(sql);
 
-            boolean empleadosEncontrados = false;
-            while (rs.next()) {
-                empleadosEncontrados = true;
-                System.out.println("DNI: " + rs.getString("Dni"));
-                System.out.println("Nombre: " + rs.getString("Nombre"));
-                System.out.println("Estudios: " + rs.getString("Estudios"));
-                System.out.println("Dirección: " + rs.getString("Dir"));
-                System.out.println("Fecha de alta: " + rs.getDate("Fecha_alt"));
-                System.out.println("Salario: " + rs.getInt("Salario"));
-                System.out.println("Comisión: " + rs.getInt("Comision"));
-                System.out.println("-----------------------------------------");
-            }
+            if (rs.next()) {
+                System.out.println("Empleados en el departamento '" + nombreDept + "':");
+                do {
+                    // Muestra los datos de cada empleado encontrado
+                    String dni = rs.getString("Dni");
+                    String nombre = rs.getString("Nombre");
+                    String estudios = rs.getString("Estudios");
+                    String direccion = rs.getString("Dir");
+                    String fechaAlt = rs.getString("Fecha_alt");
+                    int salario = rs.getInt("Salario");
+                    int comision = rs.getInt("Comision");
 
-            if (!empleadosEncontrados) {
+                    System.out.println("DNI: " + dni);
+                    System.out.println("Nombre: " + nombre);
+                    System.out.println("Estudios: " + estudios);
+                    System.out.println("Dirección: " + direccion);
+                    System.out.println("Fecha de alta: " + fechaAlt);
+                    System.out.println("Salario: " + salario);
+                    System.out.println("Comisión: " + comision);
+                    System.out.println("-------------------");
+                } while (rs.next());
+            } else {
                 System.out.println("No se encontraron empleados en el departamento '" + nombreDept + "'.");
             }
             rs.close();
@@ -211,19 +237,31 @@ public class Main {
             System.err.println("Error al consultar empleados del departamento: " + e.getMessage());
         }
     }
+
+
+
+
     public static void consultarDepartamentoPorEmpleado(Statement sentencia) {
         System.out.print("Introduce el DNI del empleado: ");
-        String dni = sc.nextLine();
+        String dniEmpleado = sc.next();
 
         try {
-            String sql = "SELECT d.Dnombre, d.Localidad FROM Empleados e JOIN Departamentos d ON e.Nu_dept = d.Nu_dept WHERE e.Dni = '" + dni + "'";
+            String sql = "SELECT d.Dnombre, d.Localidad " +
+                    "FROM Empleados e " +
+                    "JOIN Departamentos d ON e.Nu_dept = d.Nu_dept " +
+                    "WHERE e.Dni = '" + dniEmpleado + "'";
+
             ResultSet rs = sentencia.executeQuery(sql);
 
             if (rs.next()) {
-                System.out.println("Nombre del departamento: " + rs.getString("Dnombre"));
-                System.out.println("Localidad: " + rs.getString("Localidad"));
+                String nombreDept = rs.getString("Dnombre");
+                String localidadDept = rs.getString("Localidad");
+
+                System.out.println("El empleado con DNI '" + dniEmpleado + "' pertenece al departamento:");
+                System.out.println("Nombre del departamento: " + nombreDept);
+                System.out.println("Localidad del departamento: " + localidadDept);
             } else {
-                System.out.println("No se encontró empleado con el DNI: " + dni);
+                System.out.println("No se encontró ningún empleado con el DNI '" + dniEmpleado + "' o el empleado no está asociado a ningún departamento.");
             }
             rs.close();
         } catch (SQLException e) {
@@ -232,113 +270,80 @@ public class Main {
     }
 
 
+
     public static void modificarSalarioEmpleado(Statement sentencia) {
+        System.out.println("Dame DNI del empleado:");
+        String dniEmpleado = sc.next();
 
-        System.out.println("Dame DNI del Empeado");
-        ResultSet res = buscarEmpleado(sentencia);
-        if (res != null) {
+        try {
 
-            System.out.println("desea modificar su salario (s) o su comisión (c)?");
-            String resp = sc.next();
+            String consulta = "SELECT * FROM Empleados WHERE Dni = '" + dniEmpleado + "'";
+            ResultSet res = sentencia.executeQuery(consulta);
 
-            if(resp.equalsIgnoreCase("s")){
-                System.out.println("Introduzca su nuevo salario:");
-                int salario = sc.nextInt();
-                sc = new Scanner(System.in);
-                try {
-                    sentencia.executeUpdate("UPDATE Empleados set Salario='" + salario + "', Salario=" + salario +" where Dni = '" + res.getString("Dni") + "';");
-                } catch (SQLException e) {
-                    throw new RuntimeException(e);
+            if (res.next()) {
+                System.out.println("¿Desea modificar su salario (s) o su comisión (c)?");
+                String respuesta = sc.next();
+
+                if (respuesta.equalsIgnoreCase("s")) {
+                    System.out.println("Introduzca su nuevo salario:");
+                    int nuevoSalario = sc.nextInt();
+
+                    String consultaActualizacion = "UPDATE Empleados SET Salario = " + nuevoSalario +
+                            " WHERE Dni = '" + dniEmpleado + "'";
+                    sentencia.executeUpdate(consultaActualizacion);
+                    System.out.println("Salario del empleado actualizado correctamente.");
+
+                } else if (respuesta.equalsIgnoreCase("c")) {
+                    System.out.println("Introduzca su nueva comisión:");
+                    int nuevaComision = sc.nextInt();
+
+                    String consultaActualizacion = "UPDATE Empleados SET Comision = " + nuevaComision +
+                            " WHERE Dni = '" + dniEmpleado + "'";
+                    sentencia.executeUpdate(consultaActualizacion);
+                    System.out.println("Comisión del empleado actualizada correctamente.");
+
+                } else {
+                    System.out.println("por favor para modificar el salario introduzca una s \n" +
+                            "Si lo que desea modificar es la comisión intoduzca una c \nGracias");
+                    modificarSalarioEmpleado(sentencia);
                 }
-            } else if (resp.equalsIgnoreCase("c")) {
-                System.out.println("Introduzca su nueva comisión:");
-                int com = sc.nextInt();
-                sc = new Scanner(System.in);
-                try {
-                    sentencia.executeUpdate("UPDATE Empleados set Comision='" + com + "', Salario=" + com +" where Dni = '" + res.getString("Dni") + "';");
-                } catch (SQLException e) {
-                    throw new RuntimeException(e);
-                }
-            }else{
-                System.out.println("por favor para modificar el salario introduzca una s \nSi lo que desea modificar es la comisión intoduzca una c \nGracias");
+
+                res.close();
+
+            } else {
+                System.out.println("El empleado con DNI '" + dniEmpleado + "' no se encuentra en la base de datos.");
             }
 
-
-        } else {
-            System.out.println("El Empleado no se encuentra en la base de datos");
+        } catch (SQLException e) {
+            System.err.println("Error al modificar salario o comisión del empleado: " + e.getMessage());
         }
     }
+
     public static void modificarLocalidadDepartamento(Statement sentencia) {
-
-        System.out.println("Dame el nombre del Departamento para modificar su Localidad");
-        ResultSet res = buscarDepartamento(sentencia);
-        if (res != null) {
-            System.out.println("Introduzca su nueva Localidad:");
-           String localidad = sc.nextLine();
-            sc = new Scanner(System.in);
-            try {
-                sentencia.executeUpdate("UPDATE Departamento set Localidad='" + localidad + "', localidad=" + localidad +" where Dnombre = '" + res.getString("Dnombre") + "';");
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            }
-        } else {
-            System.out.println("El Departamentop no se encuentra en la base de datos");
-        }
-    }
-
-    public static ResultSet buscarEmpleado(Statement sentencia) {
-        String dni = null;
+        System.out.println("Dame el nombre del Departamento para modificar su Localidad:");
+        String nombreDepartamento = sc.next();
 
         try {
-            dni = sc.nextLine();
+            String consulta = "SELECT * FROM Departamentos WHERE Dnombre = '" + nombreDepartamento + "'";
+            ResultSet res = sentencia.executeQuery(consulta);
 
-            ResultSet result = sentencia.executeQuery("Select * from Empleados where Dni = '" + dni + "';");
+            if (res.next()) {
+                System.out.println("Introduzca su nueva Localidad:");
+                String nuevaLocalidad = sc.next();
 
-            if (result.next()) {
-                System.out.println("Los datos del empleado buscado son: ");
+                String consultaActualizacion = "UPDATE Departamentos SET Localidad = '" + nuevaLocalidad + "' " +
+                        "WHERE Dnombre = '" + nombreDepartamento + "'";
+                sentencia.executeUpdate(consultaActualizacion);
+                System.out.println("Localidad del departamento actualizada correctamente.");
 
-                System.out.println(" DNI: " + result.getString("Dni"));
-                System.out.println(" Nombre: " + result.getString("Nombre"));
-                System.out.println(" Estudios: " + result.getString("Estudios"));
-                System.out.println(" Dirección: " + result.getString("Dir"));
-                System.out.println(" Fecha de alta: " + result.getDate("Fecha_alt"));
-                System.out.println(" Salario: " + result.getInt("Salario"));
-                System.out.println(" Comisión: " + result.getInt("Comisión"));
-                System.out.println(" Numero de departamento: " + result.getInt("Nu_dept"));
-                System.out.println("-----------------------------------------");
-
-                return result;
+                res.close();
+            } else {
+                System.out.println("El departamento con nombre '" + nombreDepartamento + "' no se encuentra en la base de datos.");
             }
+
         } catch (SQLException e) {
-            System.out.println(e);
+            System.err.println("Error al modificar localidad del departamento: " + e.getMessage());
         }
-
-        return null;
-    }
-
-    public static ResultSet buscarDepartamento(Statement sentencia) {
-        int Nu_dep = 0;
-
-        try {
-            Nu_dep = sc.nextInt();
-
-            ResultSet result = sentencia.executeQuery("Select * from Departamento where Dnombre = '" + Nu_dep + "';");
-
-            if (result.next()) {
-                System.out.println("Los datos del departamento buscado son: ");
-
-                System.out.println(" Número de departamento: " + result.getInt("Nu_dep"));
-                System.out.println(" Nombre: " + result.getString("Dnombre"));
-                System.out.println(" Localidad: " + result.getString("Localidad"));
-                System.out.println("-----------------------------------------");
-
-                return result;
-            }
-        } catch (SQLException e) {
-            System.out.println(e);
-        }
-
-        return null;
     }
 
 }
