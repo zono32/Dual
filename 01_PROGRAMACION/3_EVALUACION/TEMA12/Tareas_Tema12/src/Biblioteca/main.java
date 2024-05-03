@@ -10,8 +10,6 @@ public class main {
     public static void main(String[] args) {
         Statement sentencia = null;
         Connection conexion = null;
-
-
         int op = 0;
 
         try {
