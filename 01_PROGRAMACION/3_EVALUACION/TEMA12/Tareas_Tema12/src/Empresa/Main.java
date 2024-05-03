@@ -211,7 +211,7 @@ public class Main {
             if (rs.next()) {
                 System.out.println("Empleados en el departamento '" + nombreDept + "':");
                 do {
-                    // Muestra los datos de cada empleado encontrado
+
                     String dni = rs.getString("Dni");
                     String nombre = rs.getString("Nombre");
                     String estudios = rs.getString("Estudios");
