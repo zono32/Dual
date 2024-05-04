@@ -1,0 +1,19 @@
+creo proyecto maven 
+	fijandome en la ubicacion 
+	edu.gorilas
+	nombre proyecto
+	quickstart
+
+git hub creo el nuevo repo
+	sigo los comandos y los meto en la consola del proyecto
+
+Añado el repo a git hub destock
+
+Readme
+
+pom
+
+git ignore
+	
+compile
+	

@@ -1,0 +1,28 @@
+
+`
+java:S1192!"JDefine a constant instead of duplicating this literal "[3] Exit
+" 3 times.(êö‡…
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(„Í¤¸şÿÿÿÿ
+U
+java:S1118":Add a private constructor to hide the implicit public one.(Šİ ûÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(²Ä•È
+H
+java:S6126"2Replace this String concatenation with Text block.(²Ä•È
+@	java:S106"+Replace this use of System.out by a logger.(Í·¸é
+H
+java:S6126"2Replace this String concatenation with Text block.(Í·¸é
+@	java:S106,"+Replace this use of System.out by a logger.(ÁÌÿÿ
+H
+java:S6126,"2Replace this String concatenation with Text block.(ÁÌÿÿ
+E	java:S106:"+Replace this use of System.out by a logger.(Ì«òûÿÿÿÿ
+M
+java:S6126:"2Replace this String concatenation with Text block.(Ì«òûÿÿÿÿ
+E	java:S106J"+Replace this use of System.out by a logger.(äÑÅñûÿÿÿÿ
+M
+java:S6126J"2Replace this String concatenation with Text block.(äÑÅñûÿÿÿÿ
+E	java:S106X"+Replace this use of System.out by a logger.(Â›®™ıÿÿÿÿ
+M
+java:S6126X"2Replace this String concatenation with Text block.(Â›®™ıÿÿÿÿ
+@	java:S106g"+Replace this use of System.out by a logger.(ëÒ€İ
+H
+java:S6126g"2Replace this String concatenation with Text block.(ëÒ€İ
