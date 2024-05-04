@@ -1,0 +1,61 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ListadoController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<table class="table table-dark table-striped table-bordered">
+		<thead>
+			<tr>
+				{# <th scope="row">1</th> #}
+				<th scope="col">#</th>
+				<th scope="col">Titulo</th>
+				<th scope="col">Duración</th>
+				<th scope="col">Extreno</th>
+				<th scope="col">Eliminar</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for pelicula in listado %}
+				<tr>
+					<td>{{ loop.index }}</td>
+					<td>{{ pelicula.titulo }}</td>
+					<td>{{ pelicula.duracion }}</td>
+					<td>{{ pelicula.fechaEstreno|date('Y-m-d') }}</td>
+					<td>
+					
+						<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal{{ loop.index }}">
+							Eliminar
+						</button>
+				
+						<div class="modal fade" id="exampleModal{{ loop.index }}" tabindex="-1" aria-labelledby="exampleModalLabel{{ loop.index }}" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h1 class="modal-title fs-5 text-black" id="exampleModalLabel{{ loop.index }}">Eliminar</h1>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body text-body text-center">
+										¿Estás seguro de que deseas eliminar este registro?
+									</div>
+									<div class="modal-footer">
+										<form action="{{ path('app_listado') }}" method="post">
+											<input type="hidden" name="id" value="{{ pelicula.id }}">
+											<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+											<button class="btn btn-primary" type="submit">Eliminar</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+
+{% endblock %}
