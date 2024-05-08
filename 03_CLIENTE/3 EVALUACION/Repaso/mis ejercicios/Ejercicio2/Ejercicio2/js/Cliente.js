@@ -7,12 +7,9 @@ export class Cliente {
         this.direccion = direccion;
     }
 
-
     mostrar() {
-
-       
-
-
+        
+        return `Nombre: ${this.nombre} DNI: ${this.dni} Dirección: ${this.direccion}`;
     }
 
 }
