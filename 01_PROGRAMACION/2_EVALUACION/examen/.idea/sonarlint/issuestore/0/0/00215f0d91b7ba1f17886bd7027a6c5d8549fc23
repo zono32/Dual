@@ -1,29 +1,29 @@
 
 í
-java:S1598"°This file "AlmacenPrincipal.java" should be located in "ZZ_EXAMEN" directory, not in "C:\Users\a21joaquinle\Desktop\workspace\DUAL\01_PROGRAMACION\2_EVALUACION\examen\almacen".(ñö÷ÃJ$b4293a46-88d4-4577-862a-4888db53dce3
-•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ñö÷ÃJ$12e9909f-ae67-44c3-aa62-a2e1ac912f0d
+java:S1598"°This file "AlmacenPrincipal.java" should be located in "ZZ_EXAMEN" directory, not in "C:\Users\a21joaquinle\Desktop\workspace\DUAL\01_PROGRAMACION\2_EVALUACION\examen\almacen".(ñö÷ÃJ$acaf0280-6f99-4533-a099-ec5c3c1a8c79
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ñö÷ÃJ$233d2607-9886-4b75-96b5-9f667ab1a4eb
 ¼
-java:S1186y"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ßÊÜ5J$6b9aff48-cbda-4874-939b-64c4a5021272
+java:S1186y"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ßÊÜ5J$152db2e4-c524-431c-9118-b0c638f5f824
 ½
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(õÜİöJ$bde53cd2-90ab-4194-b6a6-2217fcdd90b8
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(õÜİöJ$23b04325-a116-402d-81bb-38de80ab8361
 ½
-java:S1186‚"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(”óôdJ$ea9ec342-e6d2-4ad8-894e-724aa7508e7a
+java:S1186‚"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(”óôdJ$ef1564ad-c8bb-4485-b015-69c6fc102794
 ½
-java:S1186ˆ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¦²TJ$414caa14-30d0-44bf-89ce-9d24e438fb28
-f	java:S106*"+Replace this use of System.out by a logger.(ŞğâËJ$d71c8fbe-81a4-4ed6-b6cc-61d75ccdc2c4
-f	java:S1064"+Replace this use of System.out by a logger.(Œ€ÿJ$9be6f8ad-663a-4d3a-92fd-e2434d86ce4e
-f	java:S1065"+Replace this use of System.out by a logger.(¶Æ®šJ$c52b31a0-c75e-47e8-acb8-ad521b9e40a5
-f	java:S1066"+Replace this use of System.out by a logger.(Œ€ÿJ$0310cf37-67bd-412b-9c41-36a1a072a366
-f	java:S1068"+Replace this use of System.out by a logger.(½¸ÿ¸J$82eca992-ba62-43ee-b2b6-c17ba755be49
-k	java:S1069"+Replace this use of System.out by a logger.(©Ü–¡ûÿÿÿÿJ$d8be4de1-775b-466f-8034-db839a11d6ae
-k	java:S106:"+Replace this use of System.out by a logger.(óÕÚ›úÿÿÿÿJ$31512876-54a2-4df3-aa4b-d310cdcff53c
-e	java:S106;"+Replace this use of System.out by a logger.(Œ÷É9J$db41c845-49dc-4feb-b55b-412f4dfe9bc3
-k	java:S106<"+Replace this use of System.out by a logger.(Ş´¤‡øÿÿÿÿJ$a07e2257-9256-4917-8f8a-f8678a897004
-e	java:S106="+Replace this use of System.out by a logger.(õ¬ØJ$4a505408-dd1a-41de-8805-8f0d709e55f9
-f	java:S106>"+Replace this use of System.out by a logger.(ã¥ÆşJ$cef7a983-d33d-40e1-8fec-78e02bd899a2
-k	java:S106?"+Replace this use of System.out by a logger.(£‹í†üÿÿÿÿJ$0293d571-0f13-4af1-94a4-5ac5358c6fbc
-v	java:S125B"<This block of commented-out lines of code should be removed.(­¦Ê7J$c6fa1db8-113c-4bfe-b4ed-4116034715d8
-|	java:S125X"<This block of commented-out lines of code should be removed.(‹ª˜íúÿÿÿÿJ$50b17ba9-cc16-48af-8e7f-a5c31bf26382
-|	java:S125q"<This block of commented-out lines of code should be removed.(ığá˜ÿÿÿÿÿJ$8017955a-1002-4e18-a8ac-d36cfee4258c
+java:S1186ˆ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¦²TJ$1506dce8-e0e7-419c-9d08-bd52c4e27c73
+f	java:S106*"+Replace this use of System.out by a logger.(ŞğâËJ$0ed5379d-a7c4-42f6-a406-c88be58639be
+f	java:S1064"+Replace this use of System.out by a logger.(Œ€ÿJ$cea14169-5be3-4f77-8cd7-96856f0e8595
+f	java:S1065"+Replace this use of System.out by a logger.(¶Æ®šJ$1ebd1a80-429e-4e63-a779-179046543b74
+f	java:S1066"+Replace this use of System.out by a logger.(Œ€ÿJ$f629d29f-6937-4e26-9088-5a16be9646c3
+f	java:S1068"+Replace this use of System.out by a logger.(½¸ÿ¸J$f1bf8710-1c53-497e-9310-375ab3b042ab
+k	java:S1069"+Replace this use of System.out by a logger.(©Ü–¡ûÿÿÿÿJ$e4ba2ef2-65db-48c8-96b7-2a7a0dfbcaf2
+k	java:S106:"+Replace this use of System.out by a logger.(óÕÚ›úÿÿÿÿJ$dc9dc7d9-7d4a-4234-a0fe-aa03481c4124
+e	java:S106;"+Replace this use of System.out by a logger.(Œ÷É9J$d3c5cacc-c6c9-4a61-81f5-5b4bbb8d856c
+k	java:S106<"+Replace this use of System.out by a logger.(Ş´¤‡øÿÿÿÿJ$cdeacd22-eeb9-4009-8f4e-ee9170ff5313
+e	java:S106="+Replace this use of System.out by a logger.(õ¬ØJ$638a87cd-ef8a-4c4c-bb9a-226af4dbc050
+f	java:S106>"+Replace this use of System.out by a logger.(ã¥ÆşJ$269e2e56-c564-46b8-9937-4ef2d1127041
+k	java:S106?"+Replace this use of System.out by a logger.(£‹í†üÿÿÿÿJ$c23fcc38-373f-4543-a807-088536faf248
+v	java:S125B"<This block of commented-out lines of code should be removed.(­¦Ê7J$22f2757f-ef2c-4b99-a94d-1a3fbc18fa58
+|	java:S125X"<This block of commented-out lines of code should be removed.(‹ª˜íúÿÿÿÿJ$b556e7c5-37b6-4170-84b2-acf76a0e595b
+|	java:S125q"<This block of commented-out lines of code should be removed.(ığá˜ÿÿÿÿÿJ$0391d905-c851-4c8e-94c7-0e51d4e1379f
 s
-java:S1128"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛJ$3a13d478-3dc9-4944-bdb0-93f5ccf1ab57
+java:S1128"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛJ$9c50ccc3-5bb5-43c6-868a-219a539b82a6
