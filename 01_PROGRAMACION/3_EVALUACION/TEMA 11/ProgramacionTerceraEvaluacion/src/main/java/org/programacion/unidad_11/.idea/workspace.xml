@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="30380034-6957-4565-8552-7040e58d3b79" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../../../../Soluciones/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../Soluciones/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../../TEMA12/Tareas_Tema12/src/Biblioteca/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../../TEMA12/Tareas_Tema12/src/Biblioteca/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../../TEMA12/repaso3t/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../../TEMA12/repaso3t/src/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../../../../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2gBSdA0oJ5AtBuGjWGOHNWcE0Kk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/USER/Desktop/workSpace/Dual/01_PROGRAMACION/3_EVALUACION/TEMA 11/ProgramacionTerceraEvaluacion/src/main/java/org/programacion/unidad_11"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="30380034-6957-4565-8552-7040e58d3b79" name="Changes" comment="" />
+      <created>1715169562573</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715169562573</updated>
+    </task>
+    <servers />
+  </component>
+</project>

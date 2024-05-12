@@ -38,8 +38,6 @@ public class main {
         do {
            menu();
             op = sc.nextInt();
-            sc.nextLine();
-
             switch (op) {
                 case 1:
                     nuevoAutor(sentencia);
@@ -102,11 +100,11 @@ public class main {
 
     private static void nuevoAutor(Statement sentencia) {
         System.out.println("Dame el DNI del nuevo autor");
-        String dni = sc.nextLine();
+        String dni = sc.next();
         System.out.println("Dame el nuevo nombre del autor");
-        String nombre = sc.nextLine();
+        String nombre = sc.next();
         System.out.println("Dame la nacionalidad del nuevo autor");
-        String nacionalidad = sc.nextLine();
+        String nacionalidad = sc.next();
         sc = new Scanner(System.in);
 
         try {
@@ -118,13 +116,13 @@ public class main {
 
     private static void nuevoLibro(Statement sentencia) {
         System.out.println("Dame el título del libro");
-        String titulo = sc.nextLine();
+        String titulo = sc.next();
         System.out.println("Dame el precio del libro");
         float precio = sc.nextFloat();
 
         sc.nextLine();
         System.out.println("Dame el nombre del autor");
-        String autorNombre = sc.nextLine();
+        String autorNombre = sc.next();
 
         try {
             ResultSet resultado = sentencia.executeQuery("SELECT * FROM Autores WHERE Nombre = '" + autorNombre + "'");
@@ -144,14 +142,14 @@ public class main {
 
     private static void borrarLibro(Statement sentencia) {
         System.out.println("Dame nombre del libro que deseas eliminar");
-        String nombreLibro = sc.nextLine();
+        String nombreLibro = sc.next();
 
         try {
             ResultSet resultado = sentencia.executeQuery("SELECT * FROM Libros WHERE Titulo = '" + nombreLibro + "'");
 
             if (resultado.next()) {
                 System.out.println("¿Seguro que deseas eliminar el libro? (s para sí, n para no)");
-                String confirmacion = sc.nextLine();
+                String confirmacion = sc.next();
 
                 if (confirmacion.equalsIgnoreCase("s")) {
                     sentencia.executeUpdate("DELETE FROM Libros WHERE Titulo = '" + nombreLibro + "'");
@@ -170,7 +168,7 @@ public class main {
 
     private static void borrarAutor(Statement sentencia) {
         System.out.println("Dame el nombre del autor que deseas eliminar");
-        String nombreAutor = sc.nextLine();
+        String nombreAutor = sc.next();
 
         try {
             ResultSet resultado = sentencia.executeQuery("SELECT * FROM Autores WHERE Nombre = '" + nombreAutor + "'");
@@ -194,7 +192,7 @@ public class main {
 
     private static void consultarLibroPorTitulo(Statement sentencia) {
         System.out.println("Introduce el título del libro que deseas consultar:");
-        String tituloLibro = sc.nextLine();
+        String tituloLibro = sc.next();
 
         try {
             ResultSet resultado = sentencia.executeQuery("SELECT * FROM Libros WHERE Titulo = '" + tituloLibro + "'");
@@ -222,7 +220,7 @@ public class main {
 
     private static void consultarLibrosPorAutor(Statement sentencia) {
         System.out.println("Introduce el nombre del autor:");
-        String nombreAutor = sc.nextLine();
+        String nombreAutor = sc.next();
 
         try {
             ResultSet resultadoAutor = sentencia.executeQuery("SELECT DNI FROM Autores WHERE Nombre = '" + nombreAutor + "'");
@@ -313,14 +311,14 @@ public class main {
 
     private static void modificarLibroPorTitulo(Statement sentencia) {
         System.out.println("Introduce el título del libro que deseas modificar:");
-        String tituloLibro = sc.nextLine();
+        String tituloLibro = sc.next();
 
         try {
             ResultSet resultado = sentencia.executeQuery("SELECT * FROM Libros WHERE Titulo = '" + tituloLibro + "'");
 
             if (resultado.next()) {
                 System.out.println("Introduce el nuevo título del libro:");
-                String nuevoTitulo = sc.nextLine();
+                String nuevoTitulo = sc.next();
                 System.out.println("Introduce el nuevo precio del libro:");
                 float nuevoPrecio = sc.nextFloat();
                 sc.nextLine();
@@ -337,16 +335,16 @@ public class main {
 
     private static void modificarAutorPorDNI(Statement sentencia) {
         System.out.println("Introduce el DNI del autor que deseas modificar:");
-        String dniAutor = sc.nextLine();
+        String dniAutor = sc.next();
 
         try {
             ResultSet resultado = sentencia.executeQuery("SELECT * FROM Autores WHERE DNI = '" + dniAutor + "'");
 
             if (resultado.next()) {
                 System.out.println("Introduce el nuevo nombre del autor:");
-                String nuevoNombre = sc.nextLine();
+                String nuevoNombre = sc.next();
                 System.out.println("Introduce la nueva nacionalidad del autor:");
-                String nuevaNacionalidad = sc.nextLine();
+                String nuevaNacionalidad = sc.next();
 
                 sentencia.executeUpdate("UPDATE Autores SET Nombre = '" + nuevoNombre + "', Nacionalidad = '" + nuevaNacionalidad + "' WHERE DNI = '" + dniAutor + "'");
                 System.out.println("Autor modificado correctamente.");
