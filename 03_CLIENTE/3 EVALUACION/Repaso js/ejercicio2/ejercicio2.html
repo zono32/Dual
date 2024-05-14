@@ -1,0 +1,173 @@
+<html lang="es">
+
+<head>
+    <title>Consumo servicio rest con FECTH</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <style>
+        table,
+        td {
+            border: black solid 1pt;
+        }
+        h1{
+            text-align: center;
+        }
+        hr{
+            size:10px;
+            color:blue;
+            /* color: rgb(red, green, blue) */
+        }
+    </style>
+</head>
+
+<body>
+    <h1 > Compra Pizza </h2>
+
+        <div id="cliente">
+            
+
+        </div>
+        <hr>
+        <div id="pizzas">
+            
+
+        </div>
+        <hr>
+
+        <div id="ingredientes">
+            
+
+        </div>
+        
+       
+<script>
+
+
+
+
+    //Array objetos Clientes
+    const datosClientes = [
+    { id: 1, email: "michael.lawson@reqres.in", first_name: "Michael", last_name: "Lawson" },
+    { id: 2, email: "lindsay.ferguson@reqres.in", first_name: "Lindsay", last_name: "Ferguson" },
+    { id: 3, email: "tobias.funke@reqres.in", first_name: "Tobias", last_name: "Funke" },
+    { id: 4, email: "byron.fields@reqres.in", first_name: "Byron", last_name: "Fields" }
+    ];
+// Array de objetos pizzas
+    const datosPizza = [
+        { nombre: "Pizza margarita", precio: 20, identificador: 1, ingredientes: ["Champiñones", "Jamón Cocido"] },
+        { nombre: "Pizza barbacoa", precio: 25, identificador: 2, ingredientes: ["Carne", "Salsa barbacoa", "Extra de queso"] },
+        { nombre: "Pizza atún", precio: 22, identificador: 3, ingredientes: ["Atún", "Aceitunas negras", "Anchoa"] }
+    ];
+
+    let idCliente = parseInt(prompt("por favor introduce un indentificador del cliente"))
+
+    let clienteEncontrado = datosClientes.find(cliente =>cliente.id == idCliente);
+    let pizzaEncontrada = datosPizza.find( pizza =>pizza.identificador == idCliente)
+    let cliente = document.getElementById("cliente");
+    let ingredientes = document.getElementById("ingredientes");
+    let divPizzas = document.getElementById("pizzas");
+
+    let mostrarCliente = () => {
+
+        if(clienteEncontrado){
+        let nombreCliente = clienteEncontrado.first_name;
+        let apellidoCliente = clienteEncontrado.last_name;
+    
+        let h1 = document.createElement("h1");
+        h1.innerHTML= nombreCliente+" "+apellidoCliente;
+        cliente.appendChild(h1);
+
+        }else{
+            alert("El cliente no existe");
+        }
+    }
+
+
+
+    let mostrarTabla =()=>{
+
+        const table = document.createElement("table");
+        let encabezado = document.createElement("tr")
+        let encNombre =  document.createElement("th");
+        let encPrecio =  document.createElement("th");
+
+        encNombre.innerHTML = "Nombre";
+        encPrecio.innerHTML = "Precio";
+
+        encabezado.appendChild(encNombre);
+        encabezado.appendChild(encPrecio);
+        table.appendChild(encabezado);
+
+        for (let i = 0; i < datosPizza.length; i++) {
+            const element = datosPizza[i];
+
+            let nombre = datosPizza[i].nombre;
+            let precio = datosPizza[i].precio;
+            let tr = document.createElement("tr")
+            let tdnom =  document.createElement("td");
+            let tdpre =  document.createElement("td");
+            tdnom.innerHTML = nombre;
+            tdpre.innerHTML = precio;
+
+            tr.appendChild(tdnom);
+            tr.appendChild(tdpre);
+
+            table.appendChild(tr);            
+        }
+
+        divPizzas.appendChild(table)
+
+    }
+
+    let mostrarPizzas =()=> {
+
+        if(pizzaEncontrada){
+            let h1 = document.createElement("h1");
+            h1.innerHTML = "Los ingredientes de la "+pizzaEncontrada.nombre+" son:";
+            ingredientes.appendChild(h1);
+
+            pizzaEncontrada.ingredientes.forEach(ingrediente => {
+                let h2 = document.createElement("h2");
+                h2.innerHTML= ingrediente; 
+                ingredientes.appendChild(h2); 
+                        
+            });
+
+        }else{
+            alert("la pizza no existe")
+        }
+        crearBoton(); 
+
+    }
+
+
+    let crearBoton = ()=>{
+        let boton = document.createElement("button");
+        boton.innerHTML = "comprar"
+        ingredientes.appendChild(boton);
+        boton.addEventListener("click", comprarPizza);
+
+    }
+
+    let comprarPizza =()=>{
+        localStorage.setItem(idCliente, JSON.stringify(pizzaEncontrada))
+    }
+
+
+
+    document.addEventListener("DOMContentLoaded", e =>{
+        mostrarCliente();
+        mostrarTabla();
+        setTimeout (() =>{mostrarPizzas()}, 2000);
+    })
+
+    console.log(idCliente);
+
+    
+</script>
+
+</body>
+
+</html>

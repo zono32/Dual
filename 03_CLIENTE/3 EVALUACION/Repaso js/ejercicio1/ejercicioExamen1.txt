@@ -1,0 +1,36 @@
+Ejercicio 1: Crea un programa JavaScript que se ejecute en el navegador que muestre el el
+siguiente aspecto y funcionalidad (4 puntos)
+Funcionamiento:
+▪ Apartado 1: El usuario introduce un valor en el cuadro de texto. Al pulsar el botón crear
+comprueba si es numérico. En caso de que no lo sea crea una nueva viñeta con el
+contenido. Si el valor es numérico muestra un alert. En cualquiera de los dos casos se debe
+limpiar el cuadro de texto y asignar el foco.
+▪ Apartado 2: Al pulsar el botón derecho sobre cada elemento de la lista modifica el aspecto.
+El color de fondo se debe generar a través de una función de forma aleatoria.
+Apartado 3: Al hacer clic sobre cada elemento de la lista, lo elimina
+▪ Apartado 4: Funcionalidad con delegación de eventos, funciones, sintaxis flecha,
+declaración de variables 
+
+Html: 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Tarea 5.1</title>
+</head>
+
+<body>
+	<form name="formulario">
+		<input type="text" name="texto" id="texto" />
+		<input type="button" name="boton" value="Crear" />
+	</form>
+	<ul id="lista">
+
+	</ul>
+</body>
+
+
+</html>
+
+apartado 1: la viñeta se crea en id=lista

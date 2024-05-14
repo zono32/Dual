@@ -1,0 +1,151 @@
+Ejercicio 2: Crea un programa JavaScript que se ejecute en el navegador que muestre el el
+siguiente aspecto y funcionalidad (6 puntos)
+
+◦ Funcionamiento:
+
+▪ Apartado 1: El usuario introduce un identificador de cliente con prompt.
+"Introduce el identificador de cliente" (Aceptar/ Cancelar)
+
+Recorre el array de clientes. Si lo encuentra muestra el nombre creando un nodo de tipo H1 (en el div con id="cliente"),
+con su nombre. Debes crear una función para mostrar los datos del cliente.
+
+▪ En caso de que no lo encuentre muestra un alert.
+
+Apartado 2: Recorrer el array de artículos y mostrar los datos en formato tabla. Debe
+resolverse en una función. Los nodos (table, td, tr), deben crearse utilizando los métodos
+específicos de la estructura DOM.
+
+
+▪ Apartado 3: Utilizando el mismo identificador del cliente, busca la pizza cuyo identificador
+sea igual al identificador del cliente. Si lo encuentra muestra los ingredientes de la pizza,
+creando la estructura de nodos para que tenga el siguiente aspecto:
+
+(dentro del div id="ingredientes"
+un h2 que ponga) los ingredientes de Pizza barbacoa son
+
+(en un h1 muestra una lista de ingredientes)
+Carne
+Salsa barbacoa
+Extra de queso
+
+(boton) Comprar
+
+
+Apartado 4: Crear botón Comprar:
+
+Apartado 5: Al pulsar el botón Comprar, almacena en el LocalStorage.
+
+▪ Apartado 6: Utilizar find, funciones flecha, o/y map, declaración correcta de variables, etc.
+
+▪ Apartado 7: Al cargar los ingredientes de la pizza que el resultado se muestre transcurrido
+unos segundos.
+
+
+<html lang="es">
+
+<head>
+    <title>Consumo servicio rest con FECTH</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <style>
+        table,
+        td {
+            border: black solid 1pt;
+        }
+        h1{
+            text-align: center;
+        }
+        hr{
+            size:10px;
+            color:blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 > Compra Pizza </h2>
+
+        <div id="cliente">
+            
+
+        </div>
+        <hr>
+        <div id="pizzas">
+            
+
+        </div>
+        <hr>
+
+        <div id="ingredientes">
+            
+
+        </div>
+
+<script>
+    //Declarar un array de objetos de clientes
+    var datosClientes = [{
+        id: 1,
+        email: "michael.lawson@reqres.in",
+        first_name: "Michael",
+        last_name: "Lawson"
+    },
+        {
+            id: 2,
+            email: "lindsay.ferguson@reqres.in",
+            first_name: "Lindsay", "last_name": "Ferguson"
+        }
+        , {
+            id: 3,
+            email: "tobias.funke@reqres.in",
+            first_name: "Tobias",
+            last_name: "Funke"
+        },
+        {
+            id: 4,
+            email: "byron.fields@reqres.in",
+            first_name: "Byron",
+            last_name: "Fields"
+        }];
+    //Declara un array de objetos de pizzas
+    var datosPizza = [
+        {
+            nombre: "Pizza margarita",
+            precio: 20,
+            identificador: 1,
+            ingredientes: [
+                "Champiñones",
+                "Jamón Cocido"
+            ]
+        },
+        {
+            nombre: "Pizza barbacoa",
+            precio: 25,
+            identificador: 2,
+            ingredientes: [
+                "Carne",
+                "Salsa barbacoa",
+                "Extra de queso"
+            ]
+        },
+        {
+            nombre: "Pizza atún",
+            precio: 22,
+            identificador: 3,
+            ingredientes: [
+                "Atún",
+                "Aceitunas negras",
+                "Anchoa"
+            ]
+        }
+    ];
+let idIntroducido = prompt("Introduce el identificador de cliente: ");
+datosClientes.forEach(id){
+
+    }
+</script>
+       
+</body>
+
+</html>
