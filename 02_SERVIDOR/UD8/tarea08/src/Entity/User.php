@@ -36,14 +36,14 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     private ?string $password = null;
 
     /**
-     * @var Collection<int, Mobile>
+     * @var Collection<int, Pelicula>
      */
-    #[ORM\OneToMany(targetEntity: Mobile::class, mappedBy: 'usuario', orphanRemoval: true)]
-    private Collection $mobiles;
+    #[ORM\OneToMany(targetEntity: Pelicula::class, mappedBy: 'usuario')]
+    private Collection $peliculas;
 
     public function __construct()
     {
-        $this->mobiles = new ArrayCollection();
+        $this->peliculas = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -122,29 +122,29 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     }
 
     /**
-     * @return Collection<int, Mobile>
+     * @return Collection<int, Pelicula>
      */
-    public function getMobiles(): Collection
+    public function getPeliculas(): Collection
     {
-        return $this->mobiles;
+        return $this->peliculas;
     }
 
-    public function addMobile(Mobile $mobile): static
+    public function addPelicula(Pelicula $pelicula): static
     {
-        if (!$this->mobiles->contains($mobile)) {
-            $this->mobiles->add($mobile);
-            $mobile->setUsuario($this);
+        if (!$this->peliculas->contains($pelicula)) {
+            $this->peliculas->add($pelicula);
+            $pelicula->setUsuario($this);
         }
 
         return $this;
     }
 
-    public function removeMobile(Mobile $mobile): static
+    public function removePelicula(Pelicula $pelicula): static
     {
-        if ($this->mobiles->removeElement($mobile)) {
+        if ($this->peliculas->removeElement($pelicula)) {
             // set the owning side to null (unless already changed)
-            if ($mobile->getUsuario() === $this) {
-                $mobile->setUsuario(null);
+            if ($pelicula->getUsuario() === $this) {
+                $pelicula->setUsuario(null);
             }
         }
 

@@ -34,8 +34,10 @@ class RegistrationController extends AbstractController
 
             // do anything else you need here, like send an email
 
-            return $this->redirectToRoute('_profiler_home');
-        }
+            return $this->redirectToRoute('app_login');
+        }else {
+            $this->addFlash('warning', 'usuario no válido');
+    }
 
         return $this->render('registration/register.html.twig', [
             'registrationForm' => $form,
