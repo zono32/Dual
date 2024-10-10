@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca>
+<libro>
+<titulo>El señor de los anillos</titulo>
+<autor> J. R. R. Tolkien</autor>
+<género> literatura fantástica, Alta fantasía, Aventuras, Libro de caballerías, Fantasía heroica</género>
+<editorial>Ediciones Minotauro</editorial>
+<fecha_de_publicacion>29 de julio de 1954</fecha_de_publicacion>
+<isbn> 9788845292613</isbn>
+</libro>
+<libro>
+<titulo>Los dioses del norte</titulo>
+<autor>Jara Santamaría</autor>
+<género> literatura fantástica, Alta fantasía, Aventuras, </género>
+<editorial>Ediciones Minotauro</editorial>
+<fecha_de_publicacion>4 abril 2019</fecha_de_publicacion>
+<isbn>9788845292632</isbn>
+</libro>
+<libro>
+<titulo>El viento del Norte</titulo>
+<autor>Alexandria Warwick</autor>
+<género> literatura fantástica, Alta fantasía, Aventuras, Libro de caballerías, Fantasía heroica</género>
+<editorial>Ediciones Minotauro</editorial>
+<fecha_de_publicacion>30 mayo 2024</fecha_de_publicacion>
+<isbn>9788845292555</isbn>
+</libro>
+</biblioteca>
